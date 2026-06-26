@@ -1,0 +1,84 @@
+# =============================================================================
+#  .gitignore — version-control CODE + DOCS + RESULTS only.
+#  Model checkpoints, datasets, and rendered images are huge and regenerable;
+#  back those up to Hugging Face / rsync — NOT git. See PUBLICATION_STRATEGY.md.
+# =============================================================================
+
+# ---- Editor / aider / OS ----
+.aider*
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.conda/
+venv/
+.venv/
+
+# ---- Model checkpoints & weights (regenerable; HF/rsync, not git) ----
+checkpoints*/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.npy
+*.npz
+
+# ---- Datasets / images / synthetic renders / labels (back up separately) ----
+benchmarks/
+Bengali/
+Bengali_gt/
+synth_*/
+synthetic_curriculum/
+annotated_images_ritu1/
+gt/
+mlt_17_bengali_gt/
+archive/
+fonts_synth/
+*.png
+*.jpg
+*.jpeg
+*.bmp
+*.tif
+*.tiff
+*.gif
+*.PNG
+*.JPG
+*.JPEG
+*.BMP
+*.TIF
+*.TIFF
+*.GIF
+*.ttf
+*.otf
+*.woff
+*.woff2
+
+# ---- Third-party / vendored repos (have their own upstreams) ----
+IndicPhotoOCR/
+Sreyojyoti_Tesseract/
+**/langdata_lstm/
+
+# ---- Caches ----
+.cache/
+hf_home/
+*.cache.v4/
+
+# ---- Logs / PIDs / runtime junk ----
+*.log
+*.pid
+nohup.out
+
+# ---- Reference papers (not our work) ----
+1-s2.0-*.pdf
+
+# ---- Re-include small, paper-critical figures despite the image ignore above ----
+!figures/
+!figures/**

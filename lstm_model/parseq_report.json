@@ -1,0 +1,54 @@
+{
+  "ours": {
+    "n": 370,
+    "parseq": {
+      "WRR": 66.76,
+      "char_accuracy": 84.57,
+      "1-NED": 86.03,
+      "CER": 15.43
+    },
+    "parseq_WRR_CI95": [
+      61.891891891891895,
+      71.62162162162163
+    ],
+    "fusion": {
+      "WRR": 64.59,
+      "char_accuracy": 82.84,
+      "1-NED": 84.33,
+      "CER": 17.16
+    },
+    "fusion_only_correct": 50,
+    "parseq_only_correct": 58,
+    "mcnemar_p": 0.5007663934164361,
+    "fusion_minus_parseq_WRR_CI95": [
+      -7.5675675675675675,
+      3.2432432432432434
+    ]
+  },
+  "bstd": {
+    "n": 1368,
+    "parseq": {
+      "WRR": 77.27,
+      "char_accuracy": 92.89,
+      "1-NED": 93.57,
+      "CER": 7.11
+    },
+    "parseq_WRR_CI95": [
+      75.07309941520468,
+      79.53216374269006
+    ],
+    "fusion": {
+      "WRR": 62.13,
+      "char_accuracy": 84.1,
+      "1-NED": 85.62,
+      "CER": 15.9
+    },
+    "fusion_only_correct": 78,
+    "parseq_only_correct": 285,
+    "mcnemar_p": 8.004127474619371e-29,
+    "fusion_minus_parseq_WRR_CI95": [
+      -17.690058479532162,
+      -12.5
+    ]
+  }
+}

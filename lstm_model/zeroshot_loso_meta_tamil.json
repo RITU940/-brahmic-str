@@ -1,0 +1,34 @@
+{
+  "script": "Tamil",
+  "targets": [
+    "tamil"
+  ],
+  "sources": [
+    "bengali",
+    "assamese",
+    "hindi",
+    "marathi",
+    "gujarati",
+    "punjabi",
+    "kannada",
+    "malayalam",
+    "odia",
+    "telugu"
+  ],
+  "seed": 42,
+  "per_source_train": 700,
+  "per_source_val": 90,
+  "n_src_train": 7000,
+  "n_src_val": 900,
+  "n_target_test": 513,
+  "n_synth": 3240,
+  "src_vocab_size": 1624,
+  "fonts": [
+    "Lohit-Tamil-Classical.ttf",
+    "Lohit-Tamil.ttf",
+    "FreeSerif.ttf",
+    "Samyak-Tamil.ttf"
+  ],
+  "target_token_coverage_by_source_vocab_pct": 88.78,
+  "target_type_coverage_by_source_vocab_pct": 66.47
+}

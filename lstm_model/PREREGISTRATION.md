@@ -1,0 +1,118 @@
+# Pre-Registration — Tokenization-Granularity Law + Zero-Shot Cross-Script STR
+
+**Frozen:** 2026-06-18, **before** any `checkpoints_law_*` / `fusion_law_*` results
+existed (the Dravidian training run launched the same day; no law-branch WRRs had been
+observed at freeze time). This document fixes the hypotheses, the independent variables,
+the dependent variables, and the statistical tests *in advance*. Deviations must be
+logged in §8 with justification.
+
+**Why this exists:** the central claim is a *predictive relationship*. The credibility
+of such a claim collapses if descriptors or tests are chosen after seeing the outcomes
+(p-hacking / HARKing). Fixing them now is the defense. See the integrity standards in
+`GROUNDBREAKING_RESEARCH_PLAN.md`.
+
+---
+
+## 1. Hypotheses (stated before results)
+
+- **H1 (polarity).** Whether the grapheme branch beats the BPE branch on a script is
+  predicted by a single, pre-chosen script descriptor (primary: **neutral fertility** =
+  mean GPT-2 byte-level-BPE tokens per grapheme cluster). Prediction: grapheme wins
+  **iff** fertility exceeds a threshold lying between Hindi (3.40, BPE won in prior runs)
+  and Bengali (3.92, grapheme won).
+- **H2 (fusion gain).** The dual-branch fusion gain (fusion WRR − best single-branch WRR)
+  **increases with branch disagreement**, and disagreement is itself predicted by
+  fertility. Operationally: fusion gain correlates positively with fertility and with
+  measured per-sample disagreement.
+- **H3 (unifying / the spine).** The same descriptor that predicts H1/H2 also predicts
+  **which held-out script transfers best in the zero-shot setting** (Part ②): higher-
+  fertility, structurally-shared scripts transfer more.
+
+**Directional, falsifiable prediction (Finding 2 from §9 of the tracker):** the four
+Dravidian scripts (Tamil 6.07, Malayalam 6.02, Telugu 5.42, Kannada 5.29) should show
+the **largest** grapheme-branch wins. If they do not, H1 in its simple-threshold form
+is falsified (see §6).
+
+## 2. Independent variables (descriptors) — the pre-specified horse-race
+
+All computed from BSTD **train** labels only, **tokenizer-/result-blind**, by
+`measure_script_descriptors.py` (already produces several; the starred ones to be added
+BEFORE reading law results). The point is to test fertility *against* competitors, not
+to assume it wins — this directly answers the "fertility is a weak predictor" literature
+(Beyond Fertility / STRR, arXiv 2510.09947).
+
+1. **neutral_fertility** — mean GPT-2 BPE tokens / grapheme cluster. *(PRIMARY — fixed in advance.)*
+2. **bytes_per_cluster** — mean UTF-8 bytes / cluster (tokenizer-free fertility proxy).
+3. **grapheme_entropy** — Shannon entropy of the cluster distribution.
+4. **conjunct_density** — fraction of clusters containing a virama.
+5. **clusters_per_word**, **chars_per_cluster** — script-complexity controls.
+6. ★ **bpe_cluster_fragmentation** — fraction of grapheme clusters the neutral BPE
+   splits into >1 token (a cleaner per-cluster cousin of fertility).
+7. ★ **strr** — Single-Token Retention Rate: fraction of whole words encoded as a single
+   neutral-BPE token (the metric arXiv 2510.09947 proposes as better than fertility).
+
+**Explicitly NOT used (honesty):** morphological-consistency F1 / morphological edit
+distance require gold morpheme segmentation we do not have for these scripts; we will
+say so rather than approximate and over-claim.
+
+## 3. Dependent variables (from `fusion_law_<lang>.log` + `conf_law_*`)
+
+- **polarity** ∈ {grapheme, bpe} = sign of (grapheme WRR − BPE WRR). *(H1)*
+- **grapheme_advantage** = grapheme WRR − BPE WRR (signed, continuous).
+- **fusion_gain** = fusion WRR − max(grapheme WRR, BPE WRR). *(H2)*
+- **disagreement** = fraction of test samples where the two branches' top-1 outputs
+  differ (per-sample; thousands of points — this is where the statistical power lives).
+- For Part ②: zero-shot WRR per held-out script at Rungs A/B/C.
+
+## 4. Design controls
+
+- **Equal training budget:** all languages capped to the **b1800** splits
+  (1,620 train / 180 val; FULL official test). Prevents the script effect from being
+  confounded by data volume (Hindi had 3× Bengali's data — Finding 4). Fixed seed 42.
+- **Identical training recipe** across all languages/branches (same LoRA r, epochs, lr,
+  batch size; only the tokenizer differs between branches).
+- **One uncapped sensitivity run** (a high-fertility + a low-fertility script trained on
+  all available data) to confirm the relationship is not an artifact of the cap.
+
+## 5. Statistical analysis plan (fixed in advance)
+
+- **H1:** logistic regression of polarity on each descriptor (one at a time);
+  **leave-one-script-out cross-validation**; report per-descriptor LOSO accuracy.
+  Primary test uses `neutral_fertility`; others reported as the horse-race.
+- **H2:** linear regression of `fusion_gain` on `neutral_fertility` and on
+  `disagreement`; report R², slope, and **bootstrap 95% CIs** (resampling scripts).
+- **Per-sample power:** because N_scripts is small (~9–13), back every per-script claim
+  with per-sample analysis — paired bootstrap / McNemar on the test samples for
+  branch-vs-branch and fusion-vs-best.
+- **Multiple comparisons:** the horse-race tests several descriptors; report all tried
+  (no silent dropping) and treat only the pre-registered primary as confirmatory; the
+  rest are exploratory.
+- **H3:** rank-correlation (Spearman) between the descriptor and zero-shot transfer WRR
+  across held-out scripts.
+
+## 6. Success / falsification criteria (committed now)
+
+- **Law supported if:** the primary descriptor predicts polarity for **≥8/9 Brahmic
+  scripts under LOSO** AND explains `fusion_gain` with **R² > ~0.6** (bootstrap CI
+  excluding 0 slope).
+- **Law falsified / downgraded if:** Dravidian scripts do **not** show the largest
+  grapheme wins, OR LOSO polarity accuracy ≤ chance, OR fusion-gain slope CI includes 0.
+  In that case we report the negative result honestly and pivot the framing to "fusion
+  helps regardless, but is not predictable from fertility" (still publishable, weaker).
+- A competitor descriptor (STRR / fragmentation) beating fertility is **not** a failure —
+  it is a finding; we report whichever predicts best.
+
+## 7. Part ② (zero-shot) protocol — fixed
+
+- **Shared abugida space** via deterministic Unicode rules (`build_shared_grapheme_space.py`,
+  to be written). Leave-one-script-out: train on 8 Brahmic scripts, test the 9th.
+- **Three rungs, all reported:** A = zero target data; B (headline) = + synthetic
+  font-rendered target words, no real images; C = + 50–100 real target words (slope).
+- **Baselines:** Florence-2 zero-shot (already 0.0 on disk) and a BPE model under the
+  same protocol.
+- **Success bar:** clearly-above-baseline Rung-B WRR on ≥1 held-out script, and H3
+  rank-correlation positive.
+
+## 8. Deviation log (append-only)
+
+- *(none yet — freeze 2026-06-18)*

@@ -1,0 +1,181 @@
+{
+  "n": 11,
+  "rows": [
+    {
+      "lang": "assamese",
+      "script": "Bengali",
+      "fertility": 3.9379,
+      "bpe": 26.71,
+      "grph": 27.51,
+      "fusion": 31.56,
+      "grapheme_advantage": 0.8,
+      "polarity": 1,
+      "fusion_gain": 4.05
+    },
+    {
+      "lang": "bengali",
+      "script": "Bengali",
+      "fertility": 3.9243,
+      "bpe": 27.12,
+      "grph": 30.04,
+      "fusion": 31.87,
+      "grapheme_advantage": 2.92,
+      "polarity": 1,
+      "fusion_gain": 1.83
+    },
+    {
+      "lang": "gujarati",
+      "script": "Gujarati",
+      "fertility": 4.9033,
+      "bpe": 27.09,
+      "grph": 26.7,
+      "fusion": 33.6,
+      "grapheme_advantage": -0.39,
+      "polarity": 0,
+      "fusion_gain": 6.51
+    },
+    {
+      "lang": "hindi",
+      "script": "Devanagari",
+      "fertility": 3.3981,
+      "bpe": 40.78,
+      "grph": 29.82,
+      "fusion": 42.94,
+      "grapheme_advantage": -10.96,
+      "polarity": 0,
+      "fusion_gain": 2.16
+    },
+    {
+      "lang": "kannada",
+      "script": "Kannada",
+      "fertility": 5.2884,
+      "bpe": 21.81,
+      "grph": 23.75,
+      "fusion": 30.83,
+      "grapheme_advantage": 1.94,
+      "polarity": 1,
+      "fusion_gain": 7.08
+    },
+    {
+      "lang": "malayalam",
+      "script": "Malayalam",
+      "fertility": 6.0228,
+      "bpe": 15.17,
+      "grph": 20.84,
+      "fusion": 26.69,
+      "grapheme_advantage": 5.67,
+      "polarity": 1,
+      "fusion_gain": 5.85
+    },
+    {
+      "lang": "marathi",
+      "script": "Devanagari",
+      "fertility": 3.2521,
+      "bpe": 48.66,
+      "grph": 36.79,
+      "fusion": 52.84,
+      "grapheme_advantage": -11.87,
+      "polarity": 0,
+      "fusion_gain": 4.18
+    },
+    {
+      "lang": "odia",
+      "script": "Odia",
+      "fertility": 5.1738,
+      "bpe": 33.14,
+      "grph": 47.41,
+      "fusion": 52.39,
+      "grapheme_advantage": 14.27,
+      "polarity": 1,
+      "fusion_gain": 4.98
+    },
+    {
+      "lang": "punjabi",
+      "script": "Gurmukhi",
+      "fertility": 3.1689,
+      "bpe": 54.78,
+      "grph": 44.25,
+      "fusion": 57.83,
+      "grapheme_advantage": -10.53,
+      "polarity": 0,
+      "fusion_gain": 3.05
+    },
+    {
+      "lang": "tamil",
+      "script": "Tamil",
+      "fertility": 6.0744,
+      "bpe": 28.07,
+      "grph": 36.84,
+      "fusion": 46.39,
+      "grapheme_advantage": 8.77,
+      "polarity": 1,
+      "fusion_gain": 9.55
+    },
+    {
+      "lang": "telugu",
+      "script": "Telugu",
+      "fertility": 5.4166,
+      "bpe": 21.28,
+      "grph": 26.79,
+      "fusion": 33.76,
+      "grapheme_advantage": 5.51,
+      "polarity": 1,
+      "fusion_gain": 6.97
+    }
+  ],
+  "H1_horserace": {
+    "neutral_fertility*": {
+      "loso_acc": 0.9090909090909091,
+      "pearson_adv": 0.8233573216955724,
+      "spearman_adv": 0.8090909090909091
+    },
+    "bytes_per_cluster": {
+      "loso_acc": 0.7272727272727273,
+      "pearson_adv": 0.4865660702437435,
+      "spearman_adv": 0.5909090909090909
+    },
+    "grapheme_entropy": {
+      "loso_acc": 0.8181818181818182,
+      "pearson_adv": -0.014969523644299968,
+      "spearman_adv": 0.045454545454545456
+    },
+    "conjunct_density": {
+      "loso_acc": 0.8181818181818182,
+      "pearson_adv": 0.640679513462578,
+      "spearman_adv": 0.7727272727272727
+    },
+    "bpe_frag": {
+      "loso_acc": 0.36363636363636365,
+      "pearson_adv": -0.3671740371284052,
+      "spearman_adv": -0.2545454545454546
+    },
+    "strr": {
+      "loso_acc": 0.6363636363636364,
+      "pearson_adv": NaN,
+      "spearman_adv": NaN
+    },
+    "clusters_per_word": {
+      "loso_acc": 0.8181818181818182,
+      "pearson_adv": 0.6866965057898579,
+      "spearman_adv": 0.7727272727272727
+    }
+  },
+  "H2_grapheme_advantage": {
+    "slope": 6.407631129675643,
+    "intercept": -28.894879499552598,
+    "r2": 0.6779172791897066,
+    "slope_CI95": [
+      3.3697472836047906,
+      9.206479622565624
+    ]
+  },
+  "H2_fusion_gain": {
+    "slope": 1.7961232948598551,
+    "intercept": -3.145733769281023,
+    "r2": 0.6983327344418064,
+    "slope_CI95": [
+      1.0458258877062139,
+      2.672683814680472
+    ]
+  }
+}

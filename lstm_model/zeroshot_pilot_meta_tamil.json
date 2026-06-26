@@ -1,0 +1,16 @@
+{
+  "sources": [
+    "telugu",
+    "kannada",
+    "malayalam"
+  ],
+  "target": "tamil",
+  "seed": 42,
+  "n_src_train": 4860,
+  "n_src_val": 540,
+  "n_target_test": 513,
+  "n_synth": 3240,
+  "src_vocab_size": 1287,
+  "target_token_coverage_by_source_vocab_pct": 87.9,
+  "target_type_coverage_by_source_vocab_pct": 65.87
+}

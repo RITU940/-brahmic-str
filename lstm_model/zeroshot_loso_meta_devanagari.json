@@ -1,0 +1,36 @@
+{
+  "script": "Devanagari",
+  "targets": [
+    "hindi",
+    "marathi"
+  ],
+  "sources": [
+    "bengali",
+    "assamese",
+    "gujarati",
+    "punjabi",
+    "kannada",
+    "malayalam",
+    "odia",
+    "tamil",
+    "telugu"
+  ],
+  "seed": 42,
+  "per_source_train": 700,
+  "per_source_val": 90,
+  "n_src_train": 6300,
+  "n_src_val": 810,
+  "n_target_test": 6042,
+  "n_synth": 6480,
+  "src_vocab_size": 1606,
+  "fonts": [
+    "Gargi.ttf",
+    "sahadeva.ttf",
+    "kalimati.ttf",
+    "FreeSerifBold.ttf",
+    "FreeSerif.ttf",
+    "samanata.ttf"
+  ],
+  "target_token_coverage_by_source_vocab_pct": 94.35,
+  "target_type_coverage_by_source_vocab_pct": 62.9
+}

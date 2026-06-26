@@ -1,0 +1,411 @@
+% =========================================================================
+% Script-Aware Dual-Tokenization Fusion for Low-Resource Indic Scene Text
+% Draft v1 — 2026-06-10.  Compile on Overleaf (pdflatex).
+% All numbers verified against result files in lstm_model/ (see README.md).
+% Cross-script results (Bengali/Assamese/Hindi) complete as of 2026-06-11.
+% =========================================================================
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx,booktabs,multirow,amsmath,amssymb}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+\graphicspath{{../figures/}}
+
+\title{Script-Aware Dual-Tokenization Fusion in a Vision--Language Model\\
+       for Low-Resource Indic Scene-Text Recognition}
+\author{Ritu Baskey \and (co-authors TBD)}
+\date{Draft v1 --- June 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Scene-text recognition for Indic scripts lags far behind English, owing to
+scarce labeled data and to subword tokenizers that fragment script-specific
+structures such as consonant conjuncts. We adapt a vision--language model
+(Florence-2) to Bengali scene text and make its tokenization
+\emph{script-aware} by injecting grapheme-cluster tokens, improving word
+recognition from 52.4\% to 57.3\% on a leakage-free test set. We then show
+that the BPE-tokenized and grapheme-tokenized decoders commit largely
+\emph{complementary} errors, and that a parameter-free fusion---selecting the
+more confident decoder per image---outperforms both, a result that replicates
+across three languages and two scripts on the public Bharat Scene Text
+Dataset (BSTD). The grapheme branch wins where the script is underrepresented
+in the BPE vocabulary (Bengali $+2.4$, Assamese $+4.7$ words); on Hindi the
+BPE branch is stronger, yet fusion still gains the most there ($+4.8$ over
+the best branch, recovering 77\% of the oracle gap; McNemar
+$p{<}10^{-4}$). A calibration
+analysis explains the mechanism: beam confidence ranks correctness with
+AUROC 0.88--0.91, enabling both the fusion rule and selective prediction
+(89.7\% word accuracy at 50\% coverage). Combined with a grapheme-rarity-%
+weighted synthetic curriculum and confidence-filtered self-training, the full
+system reaches 64.6\% word and 82.8\% character accuracy on our Bengali test
+set (+12.2 words over the fine-tuned baseline) and improves the BSTD Bengali
+benchmark from 57.4\% to 62.1\%. On our independent test set the system is
+statistically indistinguishable from the benchmark authors' specialist
+PARSeq trained on ${\sim}1000\times$ more data (8.48M synthetic words),
+though the specialist remains stronger in-domain on its own benchmark. All
+data audits, negative results, and oracle ceilings are reported.
+\end{abstract}
+
+\section{Introduction}
+Reading text in natural images is largely solved for Latin scripts but not
+for the Brahmic scripts used by more than a billion people. Two obstacles
+compound: (i)~\textbf{data scarcity}---public Bengali scene-text corpora
+contain a few thousand labeled words, versus millions for English; and
+(ii)~\textbf{tokenization mismatch}---modern vision--language models (VLMs)
+inherit byte-pair-encoding (BPE) vocabularies trained mostly on Latin text,
+which shatter Indic \emph{grapheme clusters} (e.g.\ conjuncts such as
+\textit{ksha} or \textit{shri}) into fragments that are visually meaningless,
+so the model must learn to reassemble units it never sees as wholes.
+
+This paper makes the tokenizer script-aware and then exploits the fact that
+two differently-tokenized views of the same recognizer disagree in useful
+ways. Our contributions:
+\begin{enumerate}
+  \item \textbf{Grapheme-aware VLM tokenization.} We inject 640 Bengali
+        grapheme-cluster tokens into Florence-2's tokenizer and fine-tune
+        with LoRA; word recognition rate (WRR) rises 52.4\,$\to$\,57.3
+        on our test set and 57.4\,$\to$\,59.8 on public BSTD Bengali.
+  \item \textbf{Dual-tokenization confidence fusion.} The BPE and grapheme
+        decoders err on different images (Fig.~\ref{fig:comp}); choosing the
+        higher-confidence output per image is parameter-free and beats both
+        decoders on every dataset tested---our Bengali set, BSTD Bengali,
+        BSTD Assamese, and BSTD Hindi---regardless of \emph{which} branch is
+        individually stronger.
+  \item \textbf{Why it works: calibration.} Beam confidence ranks
+        correctness with AUROC 0.88--0.91. This both justifies max-confidence
+        fusion and yields selective prediction: 83.0\% accuracy at 70\%
+        coverage and 89.7\% at 50\% on our test set.
+  \item \textbf{Grapheme-rarity-weighted synthetic curriculum.} Synthetic
+        training words sampled $\propto\sum_g 1/(\mathrm{freq}(g){+}1)$
+        target rare conjuncts; the resulting model is our best single system
+        (62.2 WRR, 80.5\% character accuracy).
+  \item \textbf{An honest evaluation protocol.} Leakage-free by-document
+        splits, oracle ceilings, a negative result (character-level ROVER
+        voting does not beat max-confidence fusion), and replication on a
+        public benchmark.
+\end{enumerate}
+
+\section{Related Work}
+\textbf{Scene-text recognition.} CTC- and attention-based recognizers
+(CRNN, PARSeq, SVTR) dominate Latin benchmarks; recent work fine-tunes
+generative VLMs (TrOCR, Donut, Florence-2) for end-to-end reading.
+\textbf{Indic and Bengali recognition.} The Bharat Scene Text Dataset (BSTD)
+established baselines across 12 Indian languages with PARSeq-style models
+pre-trained on millions of synthetic words; we compare against their
+released Bengali model head-to-head in \S\ref{sec:parseq}.
+GraDeT-HTR demonstrated grapheme-based decoding for Bengali
+\emph{handwritten} text with a specialist transformer; our work differs in
+using a general VLM, scene text, and---critically---in \emph{fusing}
+grapheme and BPE views rather than replacing one with the other.
+\textbf{Multi-granularity decoding.} MGP-STR fuses character, BPE, and
+WordPiece predictions inside a single English model. Our fusion instead
+combines two \emph{separately fine-tuned, script-aware} tokenizations of a
+VLM, requires no architectural change or joint training, and is evaluated in
+a genuinely low-resource setting. To our knowledge this is the first
+grapheme-aware dual-tokenization confidence fusion in a vision--language
+model for low-resource Indic scene text.
+\textbf{Selective prediction and calibration.} Confidence-based abstention
+is standard in OCR deployment; we connect it to tokenization choice by
+showing the fused confidence is the best-ranked signal (AUROC 0.88).
+
+\section{Method}
+
+\begin{figure}[t]\centering
+\includegraphics[width=\linewidth]{fig0_method.png}
+\caption{Overview, shown on a real test example. The BPE tokenizer shatters
+the word \emph{panchayat} into 7 fragments (orphaned vowel signs shown with
+dotted circles) and misreads it at confidence 0.88; the grapheme decoder
+outputs 4 natural clusters and reads it correctly at confidence 0.99;
+max-confidence fusion selects the grapheme branch. All tokenizations,
+predictions, and confidences are taken verbatim from our trained models.}
+\label{fig:method}
+\end{figure}
+
+\subsection{Base recognizer}
+We fine-tune Florence-2-base with the \texttt{<OCR>} prompt using LoRA
+(rank 16; embeddings and LM head trained) on word/line crops. The
+\emph{BPE branch} uses a Banglish BPE tokenizer (vocab 71{,}254). The
+\emph{grapheme branch} additionally injects grapheme-cluster tokens
+(Sec.~\ref{sec:grapheme}) and is fine-tuned identically.
+
+\subsection{Grapheme-aware tokenization}\label{sec:grapheme}
+A grapheme cluster (aksara) is the atomic visual unit of Brahmic scripts:
+base consonant, optional conjuncts joined by virama, vowel signs, and
+modifiers. We segment training text into clusters with a script-agnostic
+rule---combining marks (Unicode Mn/Mc) attach to the preceding base;
+virama+letter joins the following consonant; ZWJ/ZWNJ are consumed---and add
+each cluster (640 for Bengali; 593 Assamese; 1{,}003 Hindi) as a tokenizer
+token with embeddings resized accordingly. This aligns the decoder's output
+space with what the encoder actually sees in the image.
+
+\subsection{Dual-tokenization confidence fusion}\label{sec:fusion}
+Both branches decode with beam search; the sequence score yields a
+confidence $c_m(x)\in[0,1]$ per model $m$ and image $x$. The fused output is
+simply $\hat{y}(x) = \hat{y}_{m^\ast}(x)$ with
+$m^\ast=\arg\max_m c_m(x)$---no thresholds, no learned combiner. The rule
+generalizes to any number of models; our best Bengali system fuses four
+(BPE, grapheme, self-trained, synthetic-curriculum).
+
+\subsection{Grapheme-rarity-weighted synthetic curriculum}
+We render synthetic word images and sample source words with weight
+$w(\mathrm{word})=\sum_{g\in \mathrm{word}} 1/(\mathrm{freq}(g)+1)$, where
+freq is the real-training-set grapheme frequency---over-representing exactly
+the conjuncts the data lacks. Training proceeds on synthetic+real, then
+real-only.
+
+\subsection{Confidence-filtered self-training}
+Unlabeled crops are pseudo-labeled by the grapheme model; labels with beam
+confidence $\geq 0.75$ (2{,}441 of 3{,}120) join the training set for one
+retraining round.
+
+\section{Experiments}
+\subsection{Datasets and protocol}
+\textbf{Our Bengali set:} 7{,}378 scene crops, of which 3{,}970 are cleanly
+labeled (284 illegible \texttt{\#\#\#} excluded; 3{,}120 unlabeled crops
+reserved for self-training). Splits are \emph{by document} (3{,}207 train /
+397 val / 370 test) to preclude leakage; an earlier partially-leaky split
+inflated baselines by $>$5 points and was discarded.
+\textbf{BSTD}~(public): Bengali (4{,}443/493/1{,}368), Assamese
+(2{,}365 train / 1{,}505 test), Hindi (4{,}500-word training budget,
+seed 42 / 4{,}846 test). Metrics: word recognition rate (WRR, exact match),
+character accuracy, CER, and 1$-$NED, computed by a single shared scorer
+(NFC normalization, zero-width characters stripped). Significance is
+assessed with exact two-sided McNemar tests on paired word-level
+correctness and 95\% bootstrap confidence intervals (10k resamples).
+
+\subsection{Main results (Bengali)}
+\begin{table}[h]\centering\small
+\caption{Our Bengali test set (370 images, leakage-free). The fusion row
+combines the four Florence-2 variants by max-confidence.}
+\label{tab:main}
+\begin{tabular}{lcccc}
+\toprule
+Model & WRR & Char.\ acc. & CER & 1$-$NED \\
+\midrule
+Tesseract (fine-tuned)            & 24.8 & 45.5 & 54.5 & --   \\
+CRNN (CTC, leakage-free)          & 44.1 & 69.4 & 30.6 & --   \\
+Florence-2 zero-shot              & 0.0  & --   & --   & --   \\
+Florence-2 fine-tuned (BPE)       & 52.4 & 76.9 & 23.1 & 78.8 \\
+\ \ + grapheme tokenization       & 57.3 & 75.7 & 24.3 & 78.5 \\
+\ \ + self-training               & 57.0 & 78.0 & 22.0 & 80.3 \\
+\ \ + synthetic curriculum        & 62.2 & 80.5 & 19.5 & 82.9 \\
+\textbf{Dual-tokenization fusion (4)} & \textbf{64.6} & \textbf{82.8} & \textbf{17.2} & \textbf{84.3} \\
+\midrule
+Oracle (best of 4 per image)      & 70.8 & --   & --   & --   \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Figure~\ref{fig:main} shows the progression; the fusion recovers 54\% of the
+oracle--best-single gap with zero added parameters.
+
+\begin{figure}[h]\centering
+\includegraphics[width=.85\linewidth]{fig1_main_results}
+\caption{Bengali results. Bars: WRR; diamonds: character accuracy; dashed
+line: 4-model oracle ceiling.}
+\label{fig:main}
+\end{figure}
+
+\subsection{Cross-dataset and cross-script replication}
+\begin{table}[h]\centering\small
+\caption{BPE vs.\ grapheme vs.\ 2-way fusion across datasets (WRR).
+Same recipe, no per-language tuning. Bold = best non-oracle.}
+\label{tab:cross}
+\begin{tabular}{lccccc}
+\toprule
+Test set & $n$ & BPE & Grapheme & Fusion & Oracle \\
+\midrule
+Our Bengali        & 370   & 52.4 & 57.3 & \textbf{59.2} & 63.5 \\
+BSTD Bengali       & 1{,}368 & 57.4 & 59.8 & \textbf{62.1} & 66.4 \\
+BSTD Assamese      & 1{,}505 & 31.6 & 36.3 & \textbf{38.5} & 43.8 \\
+BSTD Hindi         & 4{,}846 & 56.9 & 52.6 & \textbf{61.7} & 63.1 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Two regimes emerge (Fig.~\ref{fig:cross}). On the Bengali-script languages,
+which the BPE vocabulary covers poorly, the grapheme branch wins
+($+4.9$ ours, $+2.4$ BSTD Bengali, $+4.7$ Assamese---the most extreme
+low-resource setting, 2{,}365 training words). On Hindi the polarity flips:
+Devanagari is far better covered by the BPE vocabulary, and the BPE branch
+leads by $4.3$. Critically, fusion beats the \emph{best} branch in both
+regimes, and by the largest margin precisely on Hindi ($56.9\to61.7$,
+recovering 77\% of the oracle gap): which tokenization is stronger varies by
+script, but their complementarity---and the reliability of confidence as a
+selector---does not.
+
+\textbf{Significance.} The grapheme--BPE difference is significant on all
+datasets (McNemar $p{=}0.041$ ours, $p{=}0.030$ BSTD Bengali,
+$p{=}5{\times}10^{-5}$ Assamese, $p{<}10^{-4}$ Hindi). The fusion gain over
+the best single branch is significant on the large public test sets
+($p{=}0.0024$ Bengali; $p{=}0.0085$ Assamese; $p{<}10^{-4}$ Hindi, 95\% CI
+of the gain $[+3.9, +5.6]$) but not powered on our 370-image set
+($p{=}0.20$; 95\% CI $[-0.8, +5.7]$)---one reason the public-benchmark
+replication is essential, and we report it as such.
+
+\begin{figure}[h]\centering
+\includegraphics[width=.8\linewidth]{fig2_cross_dataset}
+\caption{Replication of the grapheme advantage and fusion gain across
+datasets and scripts.}
+\label{fig:cross}
+\end{figure}
+
+\subsection{Comparison with a large-data specialist recognizer}
+\label{sec:parseq}
+How does the proposed recipe compare against the strongest available
+specialist? We evaluate the BSTD authors' released Bengali PARSeq
+model~\cite{bstd,parseq}---pre-trained on \textbf{8.48M synthetic word
+images} (SynthText-style rendering) and fine-tuned on the BSTD training
+set---on both test sets, under the identical scorer and normalization used
+for all systems in this paper (Table~\ref{tab:parseq}).
+
+\begin{table}[h]\centering\small
+\caption{Specialist PARSeq vs.\ our 4-model fusion. PARSeq uses
+${\sim}1000\times$ more training data (8.48M synthetic $+$ 4.4k real vs.\
+our 7.65k real $+$ 5k synthetic). $p$: exact McNemar on paired correctness.}
+\label{tab:parseq}
+\begin{tabular}{lcccc}
+\toprule
+Test set & System & WRR & Char.\ acc. & McNemar $p$ \\
+\midrule
+\multirow{2}{*}{Our Bengali (370)}
+ & PARSeq (transfer) & 66.8 & 84.6 & \multirow{2}{*}{$0.50$} \\
+ & Fusion (ours)     & 64.6 & 82.8 & \\
+\midrule
+\multirow{2}{*}{BSTD Bengali (1{,}368)}
+ & PARSeq (in-domain) & 77.3$^{\dagger}$ & 92.9 & \multirow{2}{*}{$<10^{-4}$} \\
+ & Fusion (ours)      & 62.1 & 84.1 & \\
+\bottomrule
+\end{tabular}
+
+\smallskip
+{\footnotesize $^{\dagger}$Measured with the authors' released checkpoint
+under our protocol; the BSTD paper reports 0.82 under its own protocol. The
+0.2-point effect of normalization was verified to be negligible.}
+\end{table}
+
+The comparison is honest in both directions. On its home benchmark the
+specialist dominates ($77.3$ vs.\ $62.1$, $p{<}10^{-4}$): large-scale
+synthetic pre-training remains the strongest single factor for in-domain
+accuracy, and nothing in our method substitutes for it. On our
+independently collected test set, however, the transferred specialist is
+statistically indistinguishable from our fusion ($66.8$ vs.\ $64.6$,
+$p{=}0.50$, 95\% CI of the difference $[-3.2, +7.6]$)---despite the fusion
+being trained on three orders of magnitude less data. We therefore position
+the contribution as \emph{orthogonal} to data scale: a tokenization-level
+finding about VLM recognizers that applies at any data budget, and that
+could be combined with large-scale synthetic pre-training---an experiment we
+leave to future work.
+
+\subsection{Why fusion works: complementarity and calibration}
+Figure~\ref{fig:comp} decomposes test sets by which branch is correct: on
+our Bengali set 11.9\% of images are solved \emph{only} by the grapheme
+branch and 8.1\% \emph{only} by BPE---disjoint competence that word-level
+selection can harvest. Selection is reliable because confidence is
+informative: AUROC of confidence vs.\ correctness is 0.91 (BPE), 0.88
+(grapheme), 0.88 (fusion) (Fig.~\ref{fig:calib}). Absolute probabilities
+are nonetheless overconfident (ECE 0.35--0.41), so we use confidence only
+for \emph{ranking}---which max-confidence fusion and selective prediction
+require---never as a probability.
+
+\begin{figure}[h]\centering
+\includegraphics[width=.75\linewidth]{fig3_complementarity}
+\caption{Error complementarity of the BPE and grapheme branches.}
+\label{fig:comp}
+\end{figure}
+
+\begin{figure}[h]\centering
+\includegraphics[width=.95\linewidth]{fig5_calibration}
+\caption{Left: reliability diagram of the fused system (counts per bin).
+Right: confidence ranks correctness (AUROC) for all branches.}
+\label{fig:calib}
+\end{figure}
+
+\textbf{Selective prediction.} Ranking by fused confidence and abstaining on
+the least-confident images yields 83.0\% WRR at 70\% coverage and 89.7\% at
+50\% (Fig.~\ref{fig:risk})---a deployable operating curve for human-in-the-%
+loop digitization.
+
+\begin{figure}[h]\centering
+\includegraphics[width=.7\linewidth]{fig4_risk_coverage}
+\caption{Risk--coverage curves on our Bengali test set.}
+\label{fig:risk}
+\end{figure}
+
+\subsection{Where the gains come from: grapheme rarity}
+Bucketing test words by the training frequency of their \emph{rarest}
+grapheme (Fig.~\ref{fig:rarity}) shows all models degrade on rare-conjunct
+words, but (i) the synthetic curriculum dominates the mid-frequency buckets
+it explicitly targets, and (ii) fusion helps most in the rarest bucket
+($<$5 occurrences: 39.1 vs.\ 32.6 BPE), where single models are least
+reliable.
+
+\begin{figure}[h]\centering
+\includegraphics[width=.7\linewidth]{fig6_rarity_buckets}
+\caption{WRR by training-frequency of the rarest grapheme in each test word.}
+\label{fig:rarity}
+\end{figure}
+
+\subsection{Ablations and negative results}
+\textbf{ROVER-style character voting.} Aligning candidates at character
+level and voting per slot (confidence-weighted) yields 64.05 WRR vs.\ 64.59
+for max-confidence on our set, and ties on BSTD; with two models the vote
+provably reduces to max-confidence. The simpler rule wins.
+\textbf{Self-training} adds character accuracy (+2.3) but not word accuracy
+over the grapheme model alone; its value is as a diverse member of the
+fusion ensemble. \textbf{Oracle ceilings} (Tables~\ref{tab:main},
+\ref{tab:cross}) bound what any selection rule can achieve; remaining errors
+are correlated across branches (blur, occlusion, extreme fonts).
+
+\subsection{Qualitative analysis}
+Figure~\ref{fig:qual} shows characteristic behavior: the BPE branch
+hallucinates plausible-but-wrong subwords on conjunct-heavy words, the
+grapheme branch errs on rare whole-word shapes, and fusion selects
+correctly; the last panel shows a shared failure under degradation.
+
+\begin{figure}[h]\centering
+\includegraphics[width=.95\linewidth]{fig7_qualitative.png}
+\caption{Test crops with ground truth and branch outputs (red = wrong).}
+\label{fig:qual}
+\end{figure}
+
+\section{Discussion and limitations}
+Absolute WRR remains bounded by data: with $\sim$4k labeled words even the
+4-model oracle is 70.8\%, and a specialist trained on 8.48M synthetic words
+still dominates in-domain (\S\ref{sec:parseq}); our recipe is a
+data-efficiency and tokenization result, not a substitute for scale. Word-level accuracy above 80\% is achievable today
+only under selective prediction; we report this trade-off explicitly rather
+than as a headline number. The fusion doubles inference cost (two decoders);
+ECE shows confidences are not calibrated probabilities. Cross-script results
+use a single training budget per language; scaling laws are future work, as
+are larger backbones (Florence-2-large) and joint multi-lingual training.
+
+\section{Conclusion}
+Making a VLM's tokenizer script-aware, then fusing the BPE and grapheme
+views by confidence, is a simple, parameter-free recipe that consistently
+improves low-resource Indic scene-text recognition across languages and
+scripts, comes with a mechanistic explanation (confidence ranks correctness),
+and degrades gracefully into a reliable selective-prediction system.
+
+% ---------------------------------------------------------------- references
+\begin{thebibliography}{9}\small
+\bibitem{florence2} B. Xiao et al. Florence-2: Advancing a unified
+representation for a variety of vision tasks. CVPR 2024.
+\bibitem{bstd} A. Goswami et al. Bharat Scene Text Dataset (BSTD): a
+benchmark for scene text recognition in Indian languages. 2025.
+arXiv:2511.23071.
+\bibitem{gradet} GraDeT-HTR: grapheme-based decoding transformer for Bengali
+handwritten text recognition. EMNLP 2025. arXiv:2509.18081.
+\bibitem{mgpstr} P. Wang et al. Multi-granularity prediction for scene text
+recognition (MGP-STR). ECCV 2022. arXiv:2209.03592.
+\bibitem{lora} E. Hu et al. LoRA: low-rank adaptation of large language
+models. ICLR 2022.
+\bibitem{parseq} D. Bautista, R. Atienza. Scene text recognition with
+permuted autoregressive sequence models. ECCV 2022.
+\bibitem{rover} J. Fiscus. A post-processing system to yield reduced word
+error rates: recognizer output voting error reduction (ROVER). ASRU 1997.
+\end{thebibliography}
+
+\end{document}

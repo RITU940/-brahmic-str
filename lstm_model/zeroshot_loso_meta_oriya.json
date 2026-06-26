@@ -1,0 +1,33 @@
+{
+  "script": "Oriya",
+  "targets": [
+    "odia"
+  ],
+  "sources": [
+    "bengali",
+    "assamese",
+    "hindi",
+    "marathi",
+    "gujarati",
+    "punjabi",
+    "kannada",
+    "malayalam",
+    "tamil",
+    "telugu"
+  ],
+  "seed": 42,
+  "per_source_train": 700,
+  "per_source_val": 90,
+  "n_src_train": 7000,
+  "n_src_val": 900,
+  "n_target_test": 1044,
+  "n_synth": 3240,
+  "src_vocab_size": 1676,
+  "fonts": [
+    "FreeSerif.ttf",
+    "utkal.ttf",
+    "Lohit-Odia.ttf"
+  ],
+  "target_token_coverage_by_source_vocab_pct": 92.64,
+  "target_type_coverage_by_source_vocab_pct": 77.58
+}

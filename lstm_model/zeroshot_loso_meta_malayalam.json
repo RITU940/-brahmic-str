@@ -1,0 +1,36 @@
+{
+  "script": "Malayalam",
+  "targets": [
+    "malayalam"
+  ],
+  "sources": [
+    "bengali",
+    "assamese",
+    "hindi",
+    "marathi",
+    "gujarati",
+    "punjabi",
+    "kannada",
+    "odia",
+    "tamil",
+    "telugu"
+  ],
+  "seed": 42,
+  "per_source_train": 700,
+  "per_source_val": 90,
+  "n_src_train": 7000,
+  "n_src_val": 900,
+  "n_target_test": 547,
+  "n_synth": 3240,
+  "src_vocab_size": 1587,
+  "fonts": [
+    "Rachana-Bold.ttf",
+    "Manjari-Regular.otf",
+    "Chilanka-Regular.otf",
+    "Karumbi-Regular.ttf",
+    "RaghuMalayalamSans-Regular.ttf",
+    "Gayathri-Thin.otf"
+  ],
+  "target_token_coverage_by_source_vocab_pct": 79.18,
+  "target_type_coverage_by_source_vocab_pct": 69.09
+}

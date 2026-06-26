@@ -1,0 +1,36 @@
+{
+  "script": "Bengali",
+  "targets": [
+    "bengali",
+    "assamese"
+  ],
+  "sources": [
+    "hindi",
+    "marathi",
+    "gujarati",
+    "punjabi",
+    "kannada",
+    "malayalam",
+    "odia",
+    "tamil",
+    "telugu"
+  ],
+  "seed": 42,
+  "per_source_train": 700,
+  "per_source_val": 90,
+  "n_src_train": 6300,
+  "n_src_val": 810,
+  "n_target_test": 2873,
+  "n_synth": 6480,
+  "src_vocab_size": 1631,
+  "fonts": [
+    "MuktiNarrowBold.ttf",
+    "mitra.ttf",
+    "FreeSansOblique.ttf",
+    "LikhanNormal.ttf",
+    "MuktiNarrow.ttf",
+    "Lohit-Bengali.ttf"
+  ],
+  "target_token_coverage_by_source_vocab_pct": 87.34,
+  "target_type_coverage_by_source_vocab_pct": 69.22
+}
