@@ -46,7 +46,7 @@ Updated as rungs finish. WRR/CharAcc/CER in %. (— = not done yet.)
 
 | # | Script | Rung A WRR | Rung B WRR | CharAcc (B) | CER (B) | N(test) | Status |
 |---|--------|-----------|-----------|-------------|---------|---------|--------|
-| 1 | tamil      | **0.0** | _running (ep12/15 @ 09:51 26-Jun)_ | — | — | 513  | A done; B training |
+| 1 | tamil      | 0.0 | **9.16** | 39.0 | 61.0 | 513  | ✅ done |
 | 2 | telugu     | — | — | — | — | 545  | queued |
 | 3 | kannada    | — | — | — | — | 720  | queued |
 | 4 | malayalam  | — | — | — | — | 547  | queued |
@@ -61,6 +61,7 @@ Updated as rungs finish. WRR/CharAcc/CER in %. (— = not done yet.)
 
 **Append-only rung log:**
 - `2026-06-25 23:08` — [RESULT LOSO RUNG A tamil] N=513 WRR=0.0 CharAcc=4.8 CER=95.2 (expected baseline).
+- `2026-06-26 ~14:00` — [RESULT LOSO RUNG B tamil] N=513 WRR=9.16 CharAcc=39.0 CER=61.0 — **transfer works**: 0→9.16 WRR, 4.8→39.0 CharAcc with ZERO real Tamil images (vs pilot B=9.94, consistent).
 
 ---
 
