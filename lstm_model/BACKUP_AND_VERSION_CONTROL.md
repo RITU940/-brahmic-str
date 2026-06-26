@@ -5,7 +5,7 @@ server3 (`cvpr-gamma`) with **no commits and no off-server copy** — one disk f
 ## What lives where (the rule)
 | Artifact | Size | Home | Status |
 |---|---|---|---|
-| Code, scripts, docs, manuscript, result/config JSONs | ~110 MB | **git → GitHub (private)** | ✅ committed locally (`bf4079f`); push = TODO |
+| Code, scripts, docs, manuscript, result/config JSONs | ~110 MB | **git → GitHub (private)** | ✅ DONE → `git@github.com:RITU940/-brahmic-str.git` (note leading hyphen) |
 | Trained model adapters (`*/best_model/`) | 454 MB each | **Hugging Face Hub** or rsync | TODO |
 | Datasets, annotations, synth images, fonts | ~GBs | **rsync** to 2nd machine / drive | TODO (`backup_research.sh`) |
 | Intermediate `epoch_*` checkpoints | ~2 GB each | regenerable — don't back up | skip |
