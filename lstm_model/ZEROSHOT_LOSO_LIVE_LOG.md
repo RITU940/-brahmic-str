@@ -5,18 +5,30 @@ then `RESEARCH_STATUS_AND_PATH.md` (overall research status) and `PREREGISTRATIO
 This file is updated as each rung completes.
 
 **Owner:** Ritu Baskey · **Machine:** server3 (`cvpr-gamma`, RTX A5000 24 GB) ·
-**Started:** 2026-06-25 11:27 IST · **Last updated:** 2026-06-26 (session: audit + monitoring set up)
+**Started:** 2026-06-25 11:27 IST · **Last updated:** 2026-06-29 (session: lit/positioning, dataloader speedup, server1 scoped)
 
 ---
 
 ## 0. TL;DR FOR A NEW SESSION
 - A long (~9-day, resumable) run is **in progress**: `run_zeroshot_loso.sh`, PID **1283525**,
   log `zeroshot_loso.log`. **18 rungs** = 9 held-out scripts × {Rung A, Rung B}.
-- **Done so far:** only **Tamil Rung A → WRR=0.0** (this is the *expected baseline*, not a failure).
+- **Done so far (3/18):** Tamil A=0.0, **Tamil B=9.16** (transfer works), Telugu A=1.28.
+  **Telugu Rung B training now** (~ep11/15 as of 2026-06-29 ~11:45).
 - **The pipeline was audited correct on 2026-06-26** (fonts/paths/training/eval/metric — see §3).
 - **The headline is H3** (does fertility predict which scripts transfer), *not* absolute WRR.
 - **Owner directive:** strong/top-tier results but **honestly — never fabricate or inflate.**
   Maximize via correctness + legitimate method/framing only.
+
+- **NEW 2026-06-29 — dataloader speedup committed (`54d7a45`):** `num_workers 0→8` + `prefetch_factor=4`
+  + `persistent_workers` in `train_florence2.py`. The A5000 was dataloader-starved (util 7–60%, our
+  job uses only ~11.3 GB). **Result-neutral** (same seed/order). **Applies from the kannada rung onward**;
+  tamil/telugu were pre-fix. Watch kannada's batch/s (monitor reports it) to confirm the gain.
+- **NEW 2026-06-29 — competitive-positioning doc `COMPETITIVE_POSITIONING_AND_LITERATURE.md`** (committed
+  `fe68c76`): verified field landscape + the #1 reviewer threat (arXiv 2312.10806, "data-size>typology")
+  with a 3-part rebuttal. **Read it before writing Related Work.**
+- **NEW 2026-06-29 — server1 (`gpu`) scoped, NOT yet used:** 3× Tesla P6 16 GB, user `ujjwal`. Our job
+  fits (~11.3 GB) so batch unchanged, BUT P6 ≈ ¼–⅓ A5000 speed, and `gpu` does not resolve from server3.
+  **Decision deferred** until kannada's post-fix speed shows whether server1 is even needed. See §8.
 
 **First thing to do in a new session:** re-arm monitoring (the previous session's monitor
 dies when the session ends — the *run itself* keeps going independently). See §6.
@@ -37,7 +49,8 @@ supervised Tamil std = 28.07, grapheme = 36.84. So Rung B's job is to climb from
 the supervised ceiling **using no real target images.**
 
 **Script order:** `tamil → telugu → kannada → malayalam → oriya → gujarati → bengali →
-devanagari → gurmukhi`. Each rung ≈ 12–14 h (15 epochs train @ ~57 min/epoch + eval).
+devanagari → gurmukhi`. Pre-fix each Rung B took ~1–1.5 days (dataloader-bound); expect faster from
+kannada onward after the `num_workers` speedup (`54d7a45`).
 
 ---
 
@@ -47,7 +60,7 @@ Updated as rungs finish. WRR/CharAcc/CER in %. (— = not done yet.)
 | # | Script | Rung A WRR | Rung B WRR | CharAcc (B) | CER (B) | N(test) | Status |
 |---|--------|-----------|-----------|-------------|---------|---------|--------|
 | 1 | tamil      | 0.0 | **9.16** | 39.0 | 61.0 | 513  | ✅ done |
-| 2 | telugu     | — | — | — | — | 545  | queued |
+| 2 | telugu     | 1.28 | — | — | — | 545  | 🟢 Rung B training (~ep11/15) |
 | 3 | kannada    | — | — | — | — | 720  | queued |
 | 4 | malayalam  | — | — | — | — | 547  | queued |
 | 5 | oriya      | — | — | — | — | 1044 | queued |
@@ -62,6 +75,7 @@ Updated as rungs finish. WRR/CharAcc/CER in %. (— = not done yet.)
 **Append-only rung log:**
 - `2026-06-25 23:08` — [RESULT LOSO RUNG A tamil] N=513 WRR=0.0 CharAcc=4.8 CER=95.2 (expected baseline).
 - `2026-06-26 ~14:00` — [RESULT LOSO RUNG B tamil] N=513 WRR=9.16 CharAcc=39.0 CER=61.0 — **transfer works**: 0→9.16 WRR, 4.8→39.0 CharAcc with ZERO real Tamil images (vs pilot B=9.94, consistent).
+- `2026-06-28 ~04:52` — [RESULT LOSO RUNG A telugu] N=545 WRR=1.28 CharAcc=23.32 CER=76.68 — Rung A baseline (slightly above ~0; some incidental cross-script coverage). Rung B started same time, training now.
 
 ---
 
@@ -136,12 +150,21 @@ nohup bash run_zeroshot_loso.sh > zeroshot_loso.log 2>&1 &
 #   (or a subset: nohup bash run_zeroshot_loso.sh malayalam oriya > zeroshot_loso.log 2>&1 &)
 ```
 **Re-arm the per-rung monitor in a new session** (previous session's monitor dies on exit;
-the run does not). Use the Monitor tool with a persistent poll that emits each new
-`RESULT LOSO` line and warns if the orchestrator dies — see this session's setup, or just
-poll the commands above.
+the run does not). A ready-made watcher lives at **`.monitor/loso_monitor.sh`** (git-ignored,
+inside this repo). Arm it with the Monitor tool, persistent:
+```bash
+bash /c/ujjwalb/ritu1/lstm_model/.monitor/loso_monitor.sh
+```
+It emits each new `RESULT LOSO` line, the batch/s of each new rung (to confirm the speedup),
+and warns once if the orchestrator dies or all 18 rungs finish.
 
-**Env:** `export HF_HOME=/c/ujjwalb/.cache/huggingface`. GPU shared with an UNRELATED job
-(`Vansh/multihop_memory_vqa`, ~4.6 GB) — do not touch it. `wait_gpu` needs ≥12 GB free.
+**⚠️ Working-file rule (owner directive 2026-06-29):** keep ALL scratch/temp/working files under
+`ritu1/` (e.g. `.monitor/`). Do NOT use the harness default scratchpad — it points into
+`/c/ujjwalb/Antik/...`, which is a **labmate's** project folder. Never read or write outside `ritu1/`.
+
+**Env:** `export HF_HOME=/c/ujjwalb/.cache/huggingface`. GPU shared with UNRELATED jobs from other
+users (`Vansh/multihop_memory_vqa` and others, ~11 GB total at last scan) — do not touch them.
+`wait_gpu` needs ≥12 GB free. Our training itself uses ~11.3 GB at batch_size=4.
 
 ---
 
@@ -150,3 +173,38 @@ poll the commands above.
 2. At ≥5–6 Rung B results → build H3 figure + Spearman(fertility, Rung B WRR).
 3. Rung C few-shot slope. 4. B7 uncapped. 5. N-expansion. 6. Manuscript (Phase D) —
    spine = Part ② explained by Part ①; cite/out-position MGP-STR + Chinese stroke/radical line.
+
+---
+
+## 8. SESSION 2026-06-29 — WHAT CHANGED (full detail for a new agent)
+**Commits this session (branch `main`):**
+- `fe68c76` — `COMPETITIVE_POSITIONING_AND_LITERATURE.md` (verified lit landscape + rebuttals)
+  + Telugu Rung A result/config + training-log update.
+- `54d7a45` — dataloader speedup in `train_florence2.py` (`num_workers 0→8`, `prefetch_factor=4`,
+  `persistent_workers`, `TOKENIZERS_PARALLELISM=false`). **Result-neutral**; applies from kannada on.
+- `.gitignore` added (`.monitor/`).
+
+**Speed diagnosis (why the fix):** A5000 our-job memory ≈ 11.3 GB at batch_size=4; AMP already on;
+GPU util was 7–60% ⇒ dataloader-bound at `num_workers=0`. Fix overlaps image decode + processor
+preprocessing with GPU compute. Expect a meaningful speedup on Rung B (the critical path).
+**VERIFY on kannada's batch/s** via the monitor — that number decides the server1 question below.
+
+**server1 (`gpu`) — investigated, decision DEFERRED:**
+- Host shows as `gpu`, user `ujjwal`, **3× Tesla P6, 16 GB each** (free at scan: GPU0 ~12.5, GPU1 ~14.4,
+  GPU2 ~14.9 GB; small jobs from OTHER users on all three — coexist, do not evict).
+- Driver 555.42 / CUDA 12.5 present (torch cu121 OK; P6 = Pascal sm_61, supported). For our purposes it
+  is a FRESH box: no `ritu_scenetext` env, no repo clone, no data.
+- Our training fits in P6 free memory at batch_size=4 (~11.3 GB) ⇒ **no science change**, BUT P6 ≈ ¼–⅓
+  A5000 speed (Pascal; crippled FP16 ⇒ effectively FP32). So the marginal win is modest.
+- **Blocker:** `gpu` does NOT resolve from server3 (`192.168.57.100`); owner reached it from
+  `192.168.199.98` — subnets may differ. To use it: need its **routable IP + SSH user**, then create
+  env (conda + torch 2.5.1 cu121 + transformers 4.44.2 + peft), `git pull` repo, rsync ~1.25 GB data
+  (BSTD 1 GB + synth 189 MB + splits/vocab 39 MB), and launch a **disjoint subset**, e.g.
+  `bash run_zeroshot_loso.sh kannada malayalam oriya gujarati` (resumable; server3 keeps the rest).
+- **Plan:** set up server1 ONLY if kannada's post-fix speed shows server3 alone is too slow.
+
+**Honest-results stance reaffirmed (owner pushed hard for top-tier "do anything"):** the agreed path is
+to maximize *legitimate* levers and make the paper robust to ANY H3 outcome (if H3 is weak, pivot the
+spine to "zero-real-image cross-script transfer works + the law + released benchmark/artifact"). Never
+fabricate/cherry-pick/drop scripts — that is the fastest way to lose a top-tier venue. See
+[[honest-strong-results]] and `COMPETITIVE_POSITIONING_AND_LITERATURE.md` §0.
