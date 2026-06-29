@@ -568,13 +568,20 @@ def main():
     
     collate_fn = collate_fn_factory(processor, DEFAULT_CONFIG['max_length'])
     
+    # Parallel data loading: the GPU was starving at num_workers=0 (util 7-60%,
+    # dataloader-bound). Workers overlap image decode + processor preprocessing with
+    # GPU compute. Does NOT change results — sampling/shuffle uses the main-process
+    # generator, so batch order is identical regardless of worker count.
+    os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")  # avoid fork deadlock/warning
     train_loader = DataLoader(
         train_dataset, batch_size=args.batch_size, shuffle=True,
-        collate_fn=collate_fn, num_workers=0, pin_memory=True
+        collate_fn=collate_fn, num_workers=8, pin_memory=True,
+        persistent_workers=True, prefetch_factor=4
     )
     val_loader = DataLoader(
         val_dataset, batch_size=args.batch_size, shuffle=False,
-        collate_fn=collate_fn, num_workers=0, pin_memory=True
+        collate_fn=collate_fn, num_workers=4, pin_memory=True,
+        persistent_workers=True, prefetch_factor=4
     )
     
     # ── Optimizer, Scheduler & AMP Scaler ──
