@@ -5,15 +5,19 @@ then `RESEARCH_STATUS_AND_PATH.md` (overall research status) and `PREREGISTRATIO
 This file is updated as each rung completes.
 
 **Owner:** Ritu Baskey · **Machine:** server3 (`cvpr-gamma`, RTX A5000 24 GB) ·
-**Started:** 2026-06-25 11:27 IST · **Last updated:** 2026-06-29 (session: lit/positioning, dataloader speedup, server1 scoped)
+**Started:** 2026-06-25 11:27 IST · **Last updated:** 2026-07-02 (session: run died in power outage; new Telugu-B + Kannada-A logged; awaiting GPU to relaunch)
 
 ---
 
 ## 0. TL;DR FOR A NEW SESSION
-- A long (~9-day, resumable) run is **in progress**: `run_zeroshot_loso.sh`, PID **1283525**,
-  log `zeroshot_loso.log`. **18 rungs** = 9 held-out scripts × {Rung A, Rung B}.
-- **Done so far (3/18):** Tamil A=0.0, **Tamil B=9.16** (transfer works), Telugu A=1.28.
-  **Telugu Rung B training now** (~ep11/15 as of 2026-06-29 ~11:45).
+- A long (~9-day, resumable) run: `run_zeroshot_loso.sh`, log `zeroshot_loso.log`.
+  **18 rungs** = 9 held-out scripts × {Rung A, Rung B}. **⚠️ CURRENTLY DEAD** — the box lost
+  power ~Jun 30; the orchestrator + training process died mid-Kannada-Rung-B (ep6/15). Needs relaunch.
+- **Done so far (5/18):** Tamil A=0.0, **Tamil B=9.16**, Telugu A=1.28, **Telugu B=19.82** (strong —
+  2× Tamil), Kannada A=2.78. **Kannada Rung B must be re-run** (died at ep6, no result).
+- **⏳ Waiting on GPU to relaunch (2026-07-02):** box is back up but full of OTHER users' jobs
+  (~16.3/24.5 GB used, only ~8.2 GB free); our job needs ~11.3 GB. A background watcher polls until
+  ≥12 GB frees, then relaunches with **`HF_HUB_OFFLINE=1`** (see §9).
 - **The pipeline was audited correct on 2026-06-26** (fonts/paths/training/eval/metric — see §3).
 - **The headline is H3** (does fertility predict which scripts transfer), *not* absolute WRR.
 - **Owner directive:** strong/top-tier results but **honestly — never fabricate or inflate.**
@@ -60,8 +64,8 @@ Updated as rungs finish. WRR/CharAcc/CER in %. (— = not done yet.)
 | # | Script | Rung A WRR | Rung B WRR | CharAcc (B) | CER (B) | N(test) | Status |
 |---|--------|-----------|-----------|-------------|---------|---------|--------|
 | 1 | tamil      | 0.0 | **9.16** | 39.0 | 61.0 | 513  | ✅ done |
-| 2 | telugu     | 1.28 | — | — | — | 545  | 🟢 Rung B training (~ep11/15) |
-| 3 | kannada    | — | — | — | — | 720  | queued |
+| 2 | telugu     | 1.28 | **19.82** | 54.43 | 45.57 | 545  | ✅ done |
+| 3 | kannada    | 2.78 | — | — | — | 720  | 🔴 A done; B DIED ep6 (power) — re-run |
 | 4 | malayalam  | — | — | — | — | 547  | queued |
 | 5 | oriya      | — | — | — | — | 1044 | queued |
 | 6 | gujarati   | — | — | — | — | 1015 | queued |
@@ -76,6 +80,9 @@ Updated as rungs finish. WRR/CharAcc/CER in %. (— = not done yet.)
 - `2026-06-25 23:08` — [RESULT LOSO RUNG A tamil] N=513 WRR=0.0 CharAcc=4.8 CER=95.2 (expected baseline).
 - `2026-06-26 ~14:00` — [RESULT LOSO RUNG B tamil] N=513 WRR=9.16 CharAcc=39.0 CER=61.0 — **transfer works**: 0→9.16 WRR, 4.8→39.0 CharAcc with ZERO real Tamil images (vs pilot B=9.94, consistent).
 - `2026-06-28 ~04:52` — [RESULT LOSO RUNG A telugu] N=545 WRR=1.28 CharAcc=23.32 CER=76.68 — Rung A baseline (slightly above ~0; some incidental cross-script coverage). Rung B started same time, training now.
+- `2026-06-29 ~21:18` — [RESULT LOSO RUNG B telugu] N=545 WRR=19.82 CharAcc=54.43 CER=45.57 — **strong transfer, 2× Tamil** (Tamil B=9.16). 1.28→19.82 WRR, 23.3→54.4 CharAcc with ZERO real Telugu images. Second H3 data point.
+- `2026-06-30 ~05:30` — [RESULT LOSO RUNG A kannada] N=720 WRR=2.78 CharAcc=19.25 CER=80.75 — Rung A baseline. Kannada Rung B started 05:56, batch ~1.3/s.
+- `2026-06-30 ~10:04` — **RUN DIED** mid-Kannada-Rung-B at ep6/15 (best_model ep6 saved). Machine lost power → network down (HF DNS-resolution errors flood the tail) → orchestrator + training killed. No Kannada-B result JSON; **B re-runs from scratch on relaunch.** Discovered 2026-07-02.
 
 ---
 
@@ -208,3 +215,32 @@ to maximize *legitimate* levers and make the paper robust to ANY H3 outcome (if 
 spine to "zero-real-image cross-script transfer works + the law + released benchmark/artifact"). Never
 fabricate/cherry-pick/drop scripts — that is the fastest way to lose a top-tier venue. See
 [[honest-strong-results]] and `COMPETITIVE_POSITIONING_AND_LITERATURE.md` §0.
+
+---
+
+## 9. SESSION 2026-07-02 — POWER OUTAGE POST-MORTEM + RELAUNCH PLAN
+**What happened:** discovered the run had been **dead ~2 days**. Between 2026-06-29 and 2026-06-30
+it completed **Telugu Rung B = 19.82** (strong) and **Kannada Rung A = 2.78**, then the box lost
+power ~Jun 30 10:04 during **Kannada Rung B (ep6/15)**. The training log tail is a wall of
+`huggingface.co` DNS-resolution failures — that was the **network dropping as the machine went down**,
+NOT a pipeline bug. Orchestrator + training process both gone; no Kannada-B result JSON.
+
+**State now:** box is back up but **contended** — other users' jobs hold ~16.3/24.5 GB (98% util),
+only ~8.2 GB free; our job needs ~11.3 GB + `wait_gpu` wants ≥12 GB. So we **wait for headroom.**
+
+**Relaunch plan (auto):** a background watcher polls GPU free memory every 3 min; once ≥12 GB frees,
+relaunch resumable (skips the 4 finished rungs, re-runs Kannada B onward). **Two hardening changes at
+relaunch:**
+1. `export HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1` — Florence-2 base is cached locally, so a network
+   blip can never again flood the log / risk the run. Result-neutral.
+2. Re-arm `.monitor/loso_monitor.sh` so a silent death is caught in minutes, not days.
+
+Exact relaunch (run from `lstm_model/`, after GPU frees):
+```bash
+cd /c/ujjwalb/ritu1/lstm_model
+export HF_HOME=/c/ujjwalb/.cache/huggingface HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1
+nohup bash run_zeroshot_loso.sh > zeroshot_loso.log 2>&1 &
+```
+
+**H3 so far (2 Rung B points):** Tamil 9.16, Telugu 19.82 — Telugu (higher token-cov 92.3 vs Tamil
+88.8) transfers much better, directionally consistent with H3. Need ≥5–6 for the Spearman.
