@@ -237,9 +237,10 @@ NOT a pipeline bug. Orchestrator + training process both gone; no Kannada-B resu
 **State now:** box is back up but **contended** — other users' jobs hold ~16.3/24.5 GB (98% util),
 only ~8.2 GB free; our job needs ~11.3 GB + `wait_gpu` wants ≥12 GB. So we **wait for headroom.**
 
-**Relaunch plan (auto):** a background watcher polls GPU free memory every 3 min; once ≥12 GB frees,
-relaunch resumable (skips the 4 finished rungs, re-runs Kannada B onward). **Two hardening changes at
-relaunch:**
+**Relaunch plan (auto):** **`.monitor/gpu_relaunch_watcher.sh`** polls GPU free memory every 3 min
+and, once ≥12 GB frees, **relaunches the run ITSELF via nohup** (needs no internet, no agent; guards
+against double-launch; logs to `.monitor/gpu_relaunch.log`). Resumable — skips finished rungs,
+re-runs Kannada B onward. **Two hardening changes at relaunch:**
 1. `export HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1` — Florence-2 base is cached locally, so a network
    blip can never again flood the log / risk the run. Result-neutral.
 2. Re-arm `.monitor/loso_monitor.sh` so a silent death is caught in minutes, not days.
