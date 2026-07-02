@@ -3,10 +3,19 @@
 Cross-Script Scene-Text Recognition.
 **Owner:** Ritu Baskey · **This doc created:** 2026-06-25 · **Machine:** server3 (`cvpr-gamma`, RTX A5000 24 GB)
 
-> **NEW-SESSION AGENT: READ THIS FIRST**, then `GROUNDBREAKING_RESEARCH_PLAN.md` (full
-> history) and `PREREGISTRATION.md` (frozen analysis plan). This file is the current
-> source of truth for *where we are*, *what was verified*, and *the exact path forward*.
-> Every claim below was checked against files on disk on 2026-06-25.
+> **NEW-SESSION AGENT: READ `ZEROSHOT_LOSO_LIVE_LOG.md` FIRST** (live run state — updated
+> every session), then this file, then `GROUNDBREAKING_RESEARCH_PLAN.md` (full history) and
+> `PREREGISTRATION.md` (frozen analysis plan **+ §8 amendments of 2026-07-02**). Every claim
+> below was checked against files on disk on 2026-06-25; run-state facts here are SUPERSEDED
+> by the live log.
+>
+> **2026-07-02 additions** (details in the live log §9 and `PREREGISTRATION.md` §8):
+> `PROSPECTIVE_PREDICTIONS_H3.md` (timestamped rank predictions for the 7 unfinished Rung-B
+> scripts, commit `047c30c`; fertility-P1 vs coverage-P2, malayalam decisive) ·
+> Rung **Bbpe** BPE-baseline phase appended to `run_zeroshot_loso.sh` (27 rungs total now) ·
+> `compute_visual_similarity.py` → `visual_similarity_descriptors.json` (visual-similarity
+> control for the H3 horse-race) · orchestrator resume bug fixed (`.train_done` sentinel) ·
+> `COMPETITIVE_POSITIONING_AND_LITERATURE.md` + `PUBLICATION_STRATEGY.md` for positioning/venues.
 
 ---
 

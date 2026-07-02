@@ -11,13 +11,22 @@ This file is updated as each rung completes.
 
 ## 0. TL;DR FOR A NEW SESSION
 - A long (~9-day, resumable) run: `run_zeroshot_loso.sh`, log `zeroshot_loso.log`.
-  **18 rungs** = 9 held-out scripts × {Rung A, Rung B}. **⚠️ CURRENTLY DEAD** — the box lost
+  **27 rungs** = 9 held-out scripts × {Rung A, Rung B, Rung **Bbpe**} — the Bbpe BPE-baseline
+  phase (same protocol, stock tokenizer) was appended 2026-07-02 per PREREGISTRATION §7/§8;
+  it runs AFTER the main 18, tamil/telugu first. **⚠️ CURRENTLY DEAD** — the box lost
   power ~Jun 30; the orchestrator + training process died mid-Kannada-Rung-B (ep6/15). Needs relaunch.
 - **Done so far (5/18):** Tamil A=0.0, **Tamil B=9.16**, Telugu A=1.28, **Telugu B=19.82** (strong —
   2× Tamil), Kannada A=2.78. **Kannada Rung B must be re-run** (died at ep6, no result).
 - **⏳ Waiting on GPU to relaunch (2026-07-02):** box is back up but full of OTHER users' jobs
   (~16.3/24.5 GB used, only ~8.2 GB free); our job needs ~11.3 GB. A background watcher polls until
   ≥12 GB frees, then relaunches with **`HF_HUB_OFFLINE=1`** (see §9).
+- **2026-07-02 paper-hardening (all committed, see §9 for detail):** PREREGISTRATION §8 amendments
+  filed (H3 horse-race incl. coverage + visual-similarity; BPE baseline; outage housekeeping) while
+  7/9 Rung-B results are unobserved; **`PROSPECTIVE_PREDICTIONS_H3.md`** commits rank predictions
+  for the 7 unknown scripts (commit `047c30c` = prospectivity proof; **malayalam is the decisive
+  script** between fertility-P1 and coverage-P2); orchestrator resume bug FIXED (would have evaluated
+  kannada-B's partial ep6 ckpt); `compute_visual_similarity.py` computes the vissim descriptor
+  (CPU-only, frozen encoder) → `visual_similarity_descriptors.json`.
 - **The pipeline was audited correct on 2026-06-26** (fonts/paths/training/eval/metric — see §3).
 - **The headline is H3** (does fertility predict which scripts transfer), *not* absolute WRR.
 - **Owner directive:** strong/top-tier results but **honestly — never fabricate or inflate.**
@@ -265,5 +274,11 @@ transfer) and WITH coverage — handled honestly via the §8 amendments below.
    Total rungs now **27** (monitor EXPECTED updated). Partial kannada ckpt set aside as
    `checkpoints_zeroshot_loso_rungB_kannada.partial_ep6_poweroutage_20260630`; `.train_done`
    sentinels touched in the 5 completed ckpt dirs.
-4. Still TODO from this plan: compute the visual-similarity descriptor (render + embed, no
-   training); Rung C; H3 figure at ≥5–6 points; N-expansion (pre-register first).
+4. **`compute_visual_similarity.py` written & run (CPU-only, never touches the LOSO GPU):**
+   top-50 grapheme clusters per script (same `segment_graphemes_indic` as the descriptor
+   pipeline) × 3 fontconfig-verified fonts (same `resolve_fonts` as the synth pipeline) →
+   ~150 glyph images/script → frozen Florence-2 vision encoder (mean-pooled, L2-normed) →
+   9×9 mean-pairwise-cosine matrix → `visual_similarity_descriptors.json`. Enters the H3
+   horse-race as the exploratory visual-similarity control (§8 Amendment 2 / answers arXiv
+   2312.10806 with data).
+5. Still TODO: Rung C; H3 figure at ≥5–6 points; N-expansion (pre-register first).
