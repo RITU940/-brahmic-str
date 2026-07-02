@@ -116,3 +116,40 @@ say so rather than approximate and over-claim.
 ## 8. Deviation log (append-only)
 
 - *(none yet — freeze 2026-06-18)*
+- **2026-07-02 — AMENDMENT 1 (H3 descriptor horse-race made explicit).** Filed when exactly
+  **2/9 Rung-B results were known** (tamil WRR 9.16, telugu WRR 19.82; kannada Rung B crashed
+  at epoch 6 in a power outage and was never evaluated — no other Rung-B value has been
+  observed by anyone). §5 already defines H3 as Spearman(descriptor, Rung-B WRR) with
+  `neutral_fertility` as the confirmatory primary. We now state explicitly that the full §2
+  descriptor set **plus the token-coverage / type-coverage signals** (computed 2026-06-25,
+  result-blind, from source-vocab coverage of the held-out script's test tokens; values frozen
+  in `RESEARCH_STATUS_AND_PATH.md` §5 before any Rung-B result existed) enter the H3 horse-race
+  as exploratory competitors. Fertility remains the sole confirmatory predictor; all
+  competitors are reported, no silent dropping (§5 multiple-comparisons rule applies).
+  **Disclosed honestly:** at filing time the 2 known points trend *against* fertility
+  (higher-fertility Tamil transferred worse) and *with* token coverage. The remaining 7 Rung-B
+  results (kannada, malayalam, oriya, gujarati, bengali, devanagari, gurmukhi) are unobserved
+  at filing; rank predictions for them are committed in `PROSPECTIVE_PREDICTIONS_H3.md` in the
+  same git commit as this amendment. Per §6, a competitor beating fertility is a finding, not
+  a failure, and will be reported as such.
+- **2026-07-02 — AMENDMENT 2 (visual-similarity control descriptor added to H3 horse-race).**
+  To directly test the visual-similarity hypothesis of arXiv 2312.10806 ("visual/appearance
+  similarity, not typology, drives cross-lingual STR transfer") with data rather than argument:
+  define `visual_similarity(script)` = mean pairwise cosine similarity between the held-out
+  script's rendered glyph images and the source scripts' rendered glyph images, embedded with
+  the **frozen** Florence-2 vision encoder (no training; same fonts as the synth pipeline).
+  Result-blind by construction (uses no WRR). Enters the H3 horse-race as exploratory. If it
+  out-predicts the structural descriptors, we report that honestly.
+- **2026-07-02 — AMENDMENT 3 (BPE baseline implementation detail).** §7 pre-registered "a BPE
+  model under the same protocol" as a baseline; the orchestrator as implemented ran only
+  grapheme-space rungs. Implemented now as **Rung Bbpe**: identical splits, training recipe,
+  seed, and evaluation as Rung B, but stock Florence-2 tokenizer (no grapheme-vocab injection).
+  Runs for all 9 scripts after the main 18 rungs complete (tamil, telugu first). At filing, the
+  grapheme Rung-B numbers for tamil/telugu are known but their BPE counterparts are not; for
+  the other 7 scripts neither is known. Purpose: test whether the shared-grapheme pivot space
+  is necessary for zero-real-image transfer, vs. any synthetic fine-tuning sufficing.
+- **2026-07-02 — housekeeping (non-analytic).** Kannada Rung B is retrained from scratch after
+  the 2026-06-30 power outage (partial epoch-6 checkpoint set aside, never evaluated). The
+  orchestrator's resume check was hardened (train-completion sentinel) so a mid-training crash
+  can never cause evaluation of an undertrained checkpoint. `HF_HUB_OFFLINE=1` set (model is
+  fully cached locally; removes network as a failure mode). None of these affect analysis.

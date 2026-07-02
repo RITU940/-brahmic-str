@@ -235,12 +235,35 @@ relaunch:**
    blip can never again flood the log / risk the run. Result-neutral.
 2. Re-arm `.monitor/loso_monitor.sh` so a silent death is caught in minutes, not days.
 
-Exact relaunch (run from `lstm_model/`, after GPU frees):
+Exact relaunch (run from `lstm_model/`, after GPU frees — offline env now baked into the script):
 ```bash
 cd /c/ujjwalb/ritu1/lstm_model
-export HF_HOME=/c/ujjwalb/.cache/huggingface HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1
 nohup bash run_zeroshot_loso.sh > zeroshot_loso.log 2>&1 &
 ```
 
 **H3 so far (2 Rung B points):** Tamil 9.16, Telugu 19.82 — Telugu (higher token-cov 92.3 vs Tamil
 88.8) transfers much better, directionally consistent with H3. Need ≥5–6 for the Spearman.
+⚠️ NB: the 2 points trend AGAINST fertility-as-predictor (Tamil has HIGHER fertility but LOWER
+transfer) and WITH coverage — handled honestly via the §8 amendments below.
+
+**LATER SAME SESSION (2026-07-02) — paper-hardening changes, all committed:**
+1. **PREREGISTRATION.md §8 amendments filed** (while 7/9 Rung-B results are still unobserved):
+   (1) H3 descriptor horse-race made explicit (fertility stays confirmatory primary; coverage +
+   §2 set + visual-similarity are declared competitors, all reported); (2) visual-similarity
+   descriptor defined (frozen Florence-2 vision encoder on rendered glyphs — answers arXiv
+   2312.10806 with data); (3) BPE baseline (Rung Bbpe) implementation logged.
+2. **`PROSPECTIVE_PREDICTIONS_H3.md` created** — timestamped rank predictions for the 7 unknown
+   Rung-B scripts under P1 (fertility) and P2 (coverage), + declared bet (P2 wins), + scoring
+   rule. The git commit/push hash is the proof of prospectivity. **Malayalam is the decisive
+   script** (P1's best, P2's worst). Manuscript will cite the commit hash.
+3. **`run_zeroshot_loso.sh` upgraded:** (a) `HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1` baked in;
+   (b) resume bug FIXED — old check skipped training if `best_model` existed, which would have
+   silently EVALUATED KANNADA-B'S PARTIAL EP6 CHECKPOINT on relaunch; now uses a
+   `.train_done` sentinel + skips whole rung when its result JSON exists + train-failure guard;
+   (c) **BPE-baseline phase appended** (Rung `Bbpe` × 9 scripts, tamil/telugu first, identical
+   protocol minus grapheme injection) — the ablation that causally links Part ① to Part ②.
+   Total rungs now **27** (monitor EXPECTED updated). Partial kannada ckpt set aside as
+   `checkpoints_zeroshot_loso_rungB_kannada.partial_ep6_poweroutage_20260630`; `.train_done`
+   sentinels touched in the 5 completed ckpt dirs.
+4. Still TODO from this plan: compute the visual-similarity descriptor (render + embed, no
+   training); Rung C; H3 figure at ≥5–6 points; N-expansion (pre-register first).
