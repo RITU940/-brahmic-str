@@ -1,0 +1,205 @@
+{
+  "metadata": {
+    "model": "microsoft/Florence-2-base",
+    "pooling": "mean visual tokens, L2-norm",
+    "topk_clusters": 50,
+    "max_fonts": 3,
+    "definition": "mean over 8 other scripts of mean pairwise cosine between glyph embeddings",
+    "preregistration": "PREREGISTRATION.md §8 Amendment 2 (2026-07-02); result-blind",
+    "per_script": {
+      "Bengali": {
+        "n_clusters": 50,
+        "fonts": [
+          "/usr/share/fonts/truetype/fonts-beng-extra/MuktiNarrowBold.ttf",
+          "/usr/share/fonts/truetype/fonts-beng-extra/mitra.ttf",
+          "/usr/share/fonts/truetype/freefont/FreeSansOblique.ttf"
+        ],
+        "n_glyph_images": 150
+      },
+      "Devanagari": {
+        "n_clusters": 50,
+        "fonts": [
+          "/usr/share/fonts/truetype/Gargi/Gargi.ttf",
+          "/usr/share/fonts/truetype/Sahadeva/sahadeva.ttf",
+          "/usr/share/fonts/truetype/fonts-deva-extra/kalimati.ttf"
+        ],
+        "n_glyph_images": 149
+      },
+      "Gujarati": {
+        "n_clusters": 50,
+        "fonts": [
+          "/usr/share/fonts/truetype/fonts-yrsa-rasa/Rasa-Light.ttf",
+          "/usr/share/fonts/truetype/fonts-gujr-extra/padmaa.ttf",
+          "/usr/share/fonts/truetype/samyak-fonts/Samyak-Gujarati.ttf"
+        ],
+        "n_glyph_images": 150
+      },
+      "Gurmukhi": {
+        "n_clusters": 50,
+        "fonts": [
+          "/usr/share/fonts/truetype/kacst/mry_KacstQurn.ttf",
+          "/usr/share/fonts/truetype/lohit-punjabi/Lohit-Gurmukhi.ttf",
+          "/usr/share/fonts/truetype/freefont/FreeSerifBold.ttf"
+        ],
+        "n_glyph_images": 150
+      },
+      "Kannada": {
+        "n_clusters": 50,
+        "fonts": [
+          "/usr/share/fonts/truetype/lohit-kannada/Lohit-Kannada.ttf",
+          "/usr/share/fonts/truetype/Navilu/Navilu.ttf",
+          "/usr/share/fonts/truetype/Gubbi/Gubbi.ttf"
+        ],
+        "n_glyph_images": 150
+      },
+      "Malayalam": {
+        "n_clusters": 50,
+        "fonts": [
+          "/usr/share/fonts/truetype/malayalam/Rachana-Bold.ttf",
+          "/usr/share/fonts/opentype/malayalam/Manjari-Regular.otf",
+          "/usr/share/fonts/opentype/malayalam/Chilanka-Regular.otf"
+        ],
+        "n_glyph_images": 150
+      },
+      "Oriya": {
+        "n_clusters": 50,
+        "fonts": [
+          "/usr/share/fonts/truetype/freefont/FreeSerif.ttf",
+          "/usr/share/fonts/truetype/fonts-orya-extra/utkal.ttf",
+          "/usr/share/fonts/truetype/lohit-oriya/Lohit-Odia.ttf"
+        ],
+        "n_glyph_images": 150
+      },
+      "Tamil": {
+        "n_clusters": 50,
+        "fonts": [
+          "/usr/share/fonts/truetype/lohit-tamil-classical/Lohit-Tamil-Classical.ttf",
+          "/usr/share/fonts/truetype/lohit-tamil/Lohit-Tamil.ttf",
+          "/usr/share/fonts/truetype/freefont/FreeSerif.ttf"
+        ],
+        "n_glyph_images": 150
+      },
+      "Telugu": {
+        "n_clusters": 50,
+        "fonts": [
+          "/usr/share/fonts/truetype/fonts-telu-extra/Pothana2000.ttf",
+          "/usr/share/fonts/truetype/lohit-telugu/Lohit-Telugu.ttf",
+          "/usr/share/fonts/truetype/fonts-telu-extra/vemana2000.ttf"
+        ],
+        "n_glyph_images": 150
+      }
+    }
+  },
+  "pairwise_mean_cosine": {
+    "Bengali": {
+      "Bengali": 0.9480922222137451,
+      "Devanagari": 0.940977931022644,
+      "Gujarati": 0.9395957589149475,
+      "Gurmukhi": 0.890776515007019,
+      "Kannada": 0.9323712587356567,
+      "Malayalam": 0.9242904186248779,
+      "Oriya": 0.9301667809486389,
+      "Tamil": 0.9352506399154663,
+      "Telugu": 0.9290585517883301
+    },
+    "Devanagari": {
+      "Bengali": 0.940977931022644,
+      "Devanagari": 0.9503206014633179,
+      "Gujarati": 0.9248466491699219,
+      "Gurmukhi": 0.8966463208198547,
+      "Kannada": 0.9170349836349487,
+      "Malayalam": 0.90240877866745,
+      "Oriya": 0.9161840677261353,
+      "Tamil": 0.9260619282722473,
+      "Telugu": 0.9076333045959473
+    },
+    "Gujarati": {
+      "Bengali": 0.9395957589149475,
+      "Devanagari": 0.9248466491699219,
+      "Gujarati": 0.9566141963005066,
+      "Gurmukhi": 0.8718563914299011,
+      "Kannada": 0.9388450384140015,
+      "Malayalam": 0.941491961479187,
+      "Oriya": 0.9420270323753357,
+      "Tamil": 0.9408659934997559,
+      "Telugu": 0.941681981086731
+    },
+    "Gurmukhi": {
+      "Bengali": 0.890776515007019,
+      "Devanagari": 0.8966463208198547,
+      "Gujarati": 0.8718563914299011,
+      "Gurmukhi": 0.8805842995643616,
+      "Kannada": 0.8725950717926025,
+      "Malayalam": 0.8585220575332642,
+      "Oriya": 0.8714599609375,
+      "Tamil": 0.8792266845703125,
+      "Telugu": 0.8640563488006592
+    },
+    "Kannada": {
+      "Bengali": 0.9323712587356567,
+      "Devanagari": 0.9170349836349487,
+      "Gujarati": 0.9388450384140015,
+      "Gurmukhi": 0.8725950717926025,
+      "Kannada": 0.9473091959953308,
+      "Malayalam": 0.9395058155059814,
+      "Oriya": 0.9379711151123047,
+      "Tamil": 0.929349422454834,
+      "Telugu": 0.9436843395233154
+    },
+    "Malayalam": {
+      "Bengali": 0.9242904186248779,
+      "Devanagari": 0.90240877866745,
+      "Gujarati": 0.941491961479187,
+      "Gurmukhi": 0.8585220575332642,
+      "Kannada": 0.9395058155059814,
+      "Malayalam": 0.9517988562583923,
+      "Oriya": 0.9399564266204834,
+      "Tamil": 0.9313004016876221,
+      "Telugu": 0.9435421228408813
+    },
+    "Oriya": {
+      "Bengali": 0.9301667809486389,
+      "Devanagari": 0.9161840677261353,
+      "Gujarati": 0.9420270323753357,
+      "Gurmukhi": 0.8714599609375,
+      "Kannada": 0.9379711151123047,
+      "Malayalam": 0.9399564266204834,
+      "Oriya": 0.9461948275566101,
+      "Tamil": 0.9346003532409668,
+      "Telugu": 0.9389441013336182
+    },
+    "Tamil": {
+      "Bengali": 0.9352506399154663,
+      "Devanagari": 0.9260619282722473,
+      "Gujarati": 0.9408659934997559,
+      "Gurmukhi": 0.8792266845703125,
+      "Kannada": 0.929349422454834,
+      "Malayalam": 0.9313004016876221,
+      "Oriya": 0.9346003532409668,
+      "Tamil": 0.9412566423416138,
+      "Telugu": 0.9285553693771362
+    },
+    "Telugu": {
+      "Bengali": 0.9290585517883301,
+      "Devanagari": 0.9076333045959473,
+      "Gujarati": 0.941681981086731,
+      "Gurmukhi": 0.8640563488006592,
+      "Kannada": 0.9436843395233154,
+      "Malayalam": 0.9435421228408813,
+      "Oriya": 0.9389441013336182,
+      "Tamil": 0.9285553693771362,
+      "Telugu": 0.948716402053833
+    }
+  },
+  "visual_similarity": {
+    "Bengali": 0.9278109818696976,
+    "Devanagari": 0.9164742454886436,
+    "Gujarati": 0.9301513507962227,
+    "Gurmukhi": 0.8756424188613892,
+    "Kannada": 0.9264196306467056,
+    "Malayalam": 0.9226272478699684,
+    "Oriya": 0.9264137297868729,
+    "Tamil": 0.9256513491272926,
+    "Telugu": 0.9246445149183273
+  }
+}
