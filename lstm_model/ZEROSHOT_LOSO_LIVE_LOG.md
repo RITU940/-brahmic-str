@@ -5,7 +5,7 @@ then `RESEARCH_STATUS_AND_PATH.md` (overall research status) and `PREREGISTRATIO
 This file is updated as each rung completes.
 
 **Owner:** Ritu Baskey · **Machine:** server3 (`cvpr-gamma`, RTX A5000 24 GB) ·
-**Started:** 2026-06-25 11:27 IST · **Last updated:** 2026-07-02 (session: run died in power outage; new Telugu-B + Kannada-A logged; awaiting GPU to relaunch)
+**Started:** 2026-06-25 11:27 IST · **Last updated:** 2026-07-03 (session: relaunch path verified end-to-end; stale-worktree incident fixed; vissim JSON + prof summary committed; GPU still contended — watcher alive)
 
 ---
 
@@ -27,6 +27,11 @@ This file is updated as each rung completes.
   script** between fertility-P1 and coverage-P2); orchestrator resume bug FIXED (would have evaluated
   kannada-B's partial ep6 ckpt); `compute_visual_similarity.py` computes the vissim descriptor
   (CPU-only, frozen encoder) → `visual_similarity_descriptors.json`.
+- **2026-07-03 (see §10):** full relaunch path VERIFIED end-to-end (sentinels, data, offline HF cache
+  incl. banglish tokenizer, bash-5 Bbpe path, disk); working-tree copy of THIS FILE was found silently
+  reverted to a pre-07-02 version and restored from HEAD (**lesson: `git diff` the handoff docs at
+  session start — git HEAD is the source of truth**); `visual_similarity_descriptors.json` committed
+  result-blind (`c5e7c28`); 2-page prof summary added (`prof_abstract/`, `8c75e97`+`909b161`).
 - **The pipeline was audited correct on 2026-06-26** (fonts/paths/training/eval/metric — see §3).
 - **The headline is H3** (does fertility predict which scripts transfer), *not* absolute WRR.
 - **Owner directive:** strong/top-tier results but **honestly — never fabricate or inflate.**
@@ -283,3 +288,57 @@ transfer) and WITH coverage — handled honestly via the §8 amendments below.
    horse-race as the exploratory visual-similarity control (§8 Amendment 2 / answers arXiv
    2312.10806 with data).
 5. Still TODO: Rung C; H3 figure at ≥5–6 points; N-expansion (pre-register first).
+
+---
+
+## 10. SESSION 2026-07-03 — VERIFICATION, INCIDENT FIX, PROF SUMMARY (GPU still blocked)
+
+**Run state all day:** DEAD (since Jun 30), GPU contended the whole session (~7.9 GB free vs 12 needed;
+other users' jobs unchanged). `.monitor/gpu_relaunch_watcher.sh` confirmed ALIVE and polling every 3 min
+— it relaunches the run itself when ≥12 GB frees, no agent/session needed. A session monitor watches
+`.monitor/gpu_relaunch.log` for the relaunch outcome and then execs `loso_monitor.sh`.
+
+**⚠️ INCIDENT — stale worktree copy of this file:** at session start, the working-tree copy of
+`ZEROSHOT_LOSO_LIVE_LOG.md` was found silently REVERTED to a pre-2026-07-02 state (27→18 rungs, §8/§9
+hardening notes gone, `WRRare` typo introduced; mtime 3 min after the last commit — the previous session
+apparently saved a stale buffer over it). Diff-verified a strict regression, backed up to
+`.monitor/ZEROSHOT_LOSO_LIVE_LOG.stale_worktree_20260703.md.bak`, restored via `git checkout`.
+**Standing lesson: at session start, `git diff` the handoff docs; a dirty worktree on them likely
+means corruption, and git HEAD is the source of truth.**
+
+**Relaunch path VERIFIED end-to-end (not assumed):**
+- Resume logic traced: 5 finished rungs skip via result JSONs; all 5 `.train_done` sentinels on disk;
+  kannada-B dir absent (partial renamed aside) → retrains from scratch; internal `wait_gpu` re-guards.
+- Offline mode PROVEN: with `HF_HUB_OFFLINE=1`, processor + trust-remote-code config + full 231M-param
+  Florence-2 weights + banglish tokenizer (vocab 71,254) all load from cache, CPU-only; no `.incomplete`
+  blobs. Tokenizer behavior identical to finished rungs.
+- Data complete for all 22 remaining rungs (36 splits/vocab files, 9 synth dirs exact counts);
+  bash 5.0.17 OK for the empty-`GRAPH_ARGS` Bbpe path (`set -u`); disk 194 GB free vs ~60 needed;
+  old `zeroshot_loso.log` backed up (`.monitor/zeroshot_loso.log.pre_relaunch_20260703.bak`) since
+  relaunch truncates it.
+
+**Committed this session (all pushed):**
+- `c5e7c28` — `visual_similarity_descriptors.json` committed BEFORE any further Rung-B result exists
+  (completes the result-blind evidence chain of `047c30c`). NB: its dynamic range is tight (8/9 scripts
+  within 0.917–0.930; Gurmukhi apart at 0.876) — rankings noise-sensitive; report as-is if it loses.
+- `8c75e97` + `909b161` — **`prof_abstract/`**: 2-page abstract-style PDF for the supervisor
+  (`RESEARCH_SUMMARY_RITU.pdf` + build scripts + 2 new figures: pivot-space diagram, zero-shot bar
+  chart). Answers: which scripts attempted (all 9 supervised; zero-shot 2 done + kannada mid-run),
+  what the shared representation is (Unicode offset pivot), which script held out for Telugu 19.8
+  (Telugu itself). To refresh after new results: edit data lists in `make_fig_zeroshot.py`, re-run
+  the two fig scripts + `make_pdf.py` (system python3; fpdf2 in user site). A blanket `*.png`
+  gitignore rule hides new PNGs — `git add -f` figure files intentionally committed.
+
+**Honest publishability read (2026-07-03):** publishable at a good venue ~certain given honesty +
+prereg; STRONG (CORE-A) is a coin flip decided by the 7 unobserved Rung-B results — a clean rank
+correlation for EITHER declared predictor keeps the top-tier story; noisy/no ordering → benchmark +
+negative-result paper (moderate tier). Timeline (WACV R2 Aug 28) is the biggest practical risk while
+the GPU stays contended.
+
+**server1 fallback (if contention drags past ~this weekend):** revive §8 plan — 3× Tesla P6 16 GB.
+P6 is Pascal (sm_61, crippled FP16 ⇒ FP32): expect ~4–6× slower per rung than the post-fix A5000
+(Rung B ≈ 1.5–2.5 days/script on one P6), BUT three cards run three scripts in parallel and a slow
+free GPU beats a fast blocked one. Setup needed: routable IP + SSH from owner (host `gpu` does not
+resolve from server3), conda env (torch 2.5.1 cu121 / transformers 4.44.2 / peft 0.13), git clone,
+rsync ~1.25 GB data. Priority subset: `bash run_zeroshot_loso.sh malayalam oriya gujarati`
+(malayalam = decisive script; disjoint from server3's resumable set; result JSONs merge trivially).
