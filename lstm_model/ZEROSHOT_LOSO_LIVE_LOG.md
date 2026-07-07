@@ -83,7 +83,7 @@ Updated as rungs finish. WRR/CharAcc/CER in %. (— = not done yet.)
 | 2 | telugu     | 1.28 | **19.82** | 54.43 | 45.57 | 545  | ✅ done |
 | 3 | kannada    | 2.78 | **15.42** | 46.37 | 53.63 | 720  | ✅ done (B re-run after outage) |
 | 4 | malayalam  | 0.18 | **9.69** | 34.57 | 65.43 | 547  | ✅ done — decisive rung: P1 flagship FAILED, P2 tier confirmed |
-| 5 | oriya      | — | — | — | — | 1044 | 🟡 Rung A training (started 2026-07-07 19:37) |
+| 5 | oriya      | 0.77 | — | — | — | 1044 | 🟡 A done; B training since 2026-07-07 23:20 (H3 point #5 = figure threshold) |
 | 6 | gujarati   | — | — | — | — | 1015 | queued |
 | 7 | bengali    | — | — | — | — | 2873 | queued |
 | 8 | devanagari | — | — | — | — | 6042 | queued |
@@ -103,6 +103,7 @@ Updated as rungs finish. WRR/CharAcc/CER in %. (— = not done yet.)
 - `2026-07-06 18:48` — [RESULT LOSO RUNG B kannada] N=720 WRR=15.42 CharAcc=46.37 CER=53.63 — third H3 point; full from-scratch re-train + eval in ~6¾ h (speedup confirmed at scale). **Prospective hit:** `PROSPECTIVE_PREDICTIONS_H3.md` (result-blind, commit `047c30c`) staked exploratory estimate "kannada ~15".
 - `2026-07-07 08:45` — malayalam Rung A training started (orchestrator's `wait_gpu` rode out overnight contention, down to ~1 GB free). 1.8–1.9 batch/s, ep9/15 by 11:26 — healthy. **Malayalam is the decisive H3 script** (P1-fertility's best vs P2-coverage's worst).
 - `2026-07-07 ~13:30` — [RESULT LOSO RUNG A malayalam] N=547 WRR=0.18 CharAcc=2.74 CER=97.26 — expected ~0 baseline; LOWEST Rung A of the 4 so far (tamil 0.0 < mal 0.18 < telugu 1.28 < kannada 2.78), consistent with malayalam having the lowest token coverage (79.2). Rung B (the decisive rung) started 13:36, 1.6 batch/s — result expected ~20:30–21:30 IST tonight.
+- `2026-07-07 23:20` — [RESULT LOSO RUNG A oriya] N=1044 WRR=0.77 CharAcc=10.09 CER=89.91 — 4th straight Rung A < 5, as predicted ("every Rung A stays low", 047c30c). Rung B oriya (H3 point #5 — the prereg figure threshold) started 23:20 at 2.0 batch/s; result expected ~05:30–07:00 IST 2026-07-08. P2 estimate for oriya: ~21.
 - `2026-07-07 19:37` — [RESULT LOSO RUNG B malayalam] N=547 WRR=9.69 CharAcc=34.57 CER=65.43 — **THE DECISIVE RESULT.** Honest scoring: **P1 (fertility, prereg primary) flagship FAILED** — P1 ranked malayalam BEST of the 7 unknowns (fertility 6.02); realized bottom-tier, far below kannada (15.42) and telugu (19.82) which P1 ranked beneath it. **P2 (coverage, declared bet) directionally RIGHT** — predicted malayalam WORST; realized bottom-tier ✓ — but its crude estimate "~0–4" undershot (9.69). The malayalam>tamil inversion (9.69 vs 9.16) is a statistical tie (Δ≈3 words of ~530; two-proportion z≈0.3). Descriptive Spearman(coverage, B-WRR) over the 4 observed points = 0.8; confirmatory scoring stays as declared (Spearman over the 7 unknowns when all exist; 2/7 observed). **Phenomenon-claim gift:** even the predicted-worst script gains 0.18→9.69 with zero real images — transfer does not collapse on low-coverage scripts. Oriya Rung A started 19:37.
 
 ---
