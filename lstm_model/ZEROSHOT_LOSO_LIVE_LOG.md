@@ -5,7 +5,7 @@ then `RESEARCH_STATUS_AND_PATH.md` (overall research status) and `PREREGISTRATIO
 This file is updated as each rung completes.
 
 **Owner:** Ritu Baskey · **Machine:** server3 (`cvpr-gamma`, RTX A5000 24 GB) ·
-**Started:** 2026-06-25 11:27 IST · **Last updated:** 2026-07-03 (session: relaunch path verified end-to-end; stale-worktree incident fixed; vissim JSON + prof summary committed; GPU still contended — watcher alive)
+**Started:** 2026-06-25 11:27 IST · **Last updated:** 2026-07-07 (session: auto-relaunch WORKED 2026-07-06; Kannada B=15.42 — prospective "~15" hit; malayalam Rung A training; monitor re-armed)
 
 ---
 
@@ -13,13 +13,13 @@ This file is updated as each rung completes.
 - A long (~9-day, resumable) run: `run_zeroshot_loso.sh`, log `zeroshot_loso.log`.
   **27 rungs** = 9 held-out scripts × {Rung A, Rung B, Rung **Bbpe**} — the Bbpe BPE-baseline
   phase (same protocol, stock tokenizer) was appended 2026-07-02 per PREREGISTRATION §7/§8;
-  it runs AFTER the main 18, tamil/telugu first. **⚠️ CURRENTLY DEAD** — the box lost
-  power ~Jun 30; the orchestrator + training process died mid-Kannada-Rung-B (ep6/15). Needs relaunch.
-- **Done so far (5/18):** Tamil A=0.0, **Tamil B=9.16**, Telugu A=1.28, **Telugu B=19.82** (strong —
-  2× Tamil), Kannada A=2.78. **Kannada Rung B must be re-run** (died at ep6, no result).
-- **⏳ Waiting on GPU to relaunch (2026-07-02):** box is back up but full of OTHER users' jobs
-  (~16.3/24.5 GB used, only ~8.2 GB free); our job needs ~11.3 GB. A background watcher polls until
-  ≥12 GB frees, then relaunches with **`HF_HUB_OFFLINE=1`** (see §9).
+  it runs AFTER the main 18, tamil/telugu first. **✅ ALIVE again** — after the ~Jun 30 power
+  outage + ~6 days of GPU contention, the §9 watcher auto-relaunched the run 2026-07-06 12:03 (see §11).
+- **Done so far (6/27):** Tamil A=0.0, **Tamil B=9.16**, Telugu A=1.28, **Telugu B=19.82**,
+  Kannada A=2.78, **Kannada B=15.42** — all 3 Rung-B points rank-ordered exactly by token coverage (P2).
+- **✅ RESOLVED 2026-07-06:** the §9 relaunch watcher fired at 12:03 (18.6 GB free), relaunched the
+  run itself with **`HF_HUB_OFFLINE=1`** baked in, and exited. Kannada B re-trained from scratch in
+  ~6¾ h (vs ~1–1.5 days pre-fix — the `num_workers` speedup is CONFIRMED, ~1.8–1.9 batch/s).
 - **2026-07-02 paper-hardening (all committed, see §9 for detail):** PREREGISTRATION §8 amendments
   filed (H3 horse-race incl. coverage + visual-similarity; BPE baseline; outage housekeeping) while
   7/9 Rung-B results are unobserved; **`PROSPECTIVE_PREDICTIONS_H3.md`** commits rank predictions
@@ -79,8 +79,8 @@ Updated as rungs finish. WRR/CharAcc/CER in %. (— = not done yet.)
 |---|--------|-----------|-----------|-------------|---------|---------|--------|
 | 1 | tamil      | 0.0 | **9.16** | 39.0 | 61.0 | 513  | ✅ done |
 | 2 | telugu     | 1.28 | **19.82** | 54.43 | 45.57 | 545  | ✅ done |
-| 3 | kannada    | 2.78 | — | — | — | 720  | 🔴 A done; B DIED ep6 (power) — re-run |
-| 4 | malayalam  | — | — | — | — | 547  | queued |
+| 3 | kannada    | 2.78 | **15.42** | 46.37 | 53.63 | 720  | ✅ done (B re-run after outage) |
+| 4 | malayalam  | — | — | — | — | 547  | 🟡 Rung A training (started 2026-07-07 08:45) |
 | 5 | oriya      | — | — | — | — | 1044 | queued |
 | 6 | gujarati   | — | — | — | — | 1015 | queued |
 | 7 | bengali    | — | — | — | — | 2873 | queued |
@@ -97,6 +97,9 @@ Updated as rungs finish. WRR/CharAcc/CER in %. (— = not done yet.)
 - `2026-06-29 ~21:18` — [RESULT LOSO RUNG B telugu] N=545 WRR=19.82 CharAcc=54.43 CER=45.57 — **strong transfer, 2× Tamil** (Tamil B=9.16). 1.28→19.82 WRR, 23.3→54.4 CharAcc with ZERO real Telugu images. Second H3 data point.
 - `2026-06-30 ~05:30` — [RESULT LOSO RUNG A kannada] N=720 WRR=2.78 CharAcc=19.25 CER=80.75 — Rung A baseline. Kannada Rung B started 05:56, batch ~1.3/s.
 - `2026-06-30 ~10:04` — **RUN DIED** mid-Kannada-Rung-B at ep6/15 (best_model ep6 saved). Machine lost power → network down (HF DNS-resolution errors flood the tail) → orchestrator + training killed. No Kannada-B result JSON; **B re-runs from scratch on relaunch.** Discovered 2026-07-02.
+- `2026-07-06 12:03` — **AUTO-RELAUNCH WORKED:** `gpu_relaunch_watcher.sh` saw 18,595 MiB free (≥12,000), relaunched `run_zeroshot_loso.sh` itself via nohup (PID 1937079) and exited. No human/agent involved — the §9/§10 recovery infra worked unattended.
+- `2026-07-06 18:48` — [RESULT LOSO RUNG B kannada] N=720 WRR=15.42 CharAcc=46.37 CER=53.63 — third H3 point; full from-scratch re-train + eval in ~6¾ h (speedup confirmed at scale). **Prospective hit:** `PROSPECTIVE_PREDICTIONS_H3.md` (result-blind, commit `047c30c`) staked exploratory estimate "kannada ~15".
+- `2026-07-07 08:45` — malayalam Rung A training started (orchestrator's `wait_gpu` rode out overnight contention, down to ~1 GB free). 1.8–1.9 batch/s, ep9/15 by 11:26 — healthy. **Malayalam is the decisive H3 script** (P1-fertility's best vs P2-coverage's worst).
 
 ---
 
@@ -342,3 +345,41 @@ free GPU beats a fast blocked one. Setup needed: routable IP + SSH from owner (h
 resolve from server3), conda env (torch 2.5.1 cu121 / transformers 4.44.2 / peft 0.13), git clone,
 rsync ~1.25 GB data. Priority subset: `bash run_zeroshot_loso.sh malayalam oriya gujarati`
 (malayalam = decisive script; disjoint from server3's resumable set; result JSONs merge trivially).
+---
+
+## 11. SESSION 2026-07-07 — AUTO-RELAUNCH WORKED; KANNADA B = 15.42 (PROSPECTIVE "~15" HIT)
+
+**Run state:** ALIVE. The recovery infrastructure built in §9/§10 worked unattended, end-to-end:
+`gpu_relaunch_watcher.sh` fired 2026-07-06 12:03 (18,595 MiB free ≥ 12,000), relaunched the
+orchestrator via nohup (PID 1937079), logged `RELAUNCHED OK`, and exited. Resume logic behaved
+exactly as verified in §10: the 5 finished rungs were skipped via their result JSONs and kannada-B
+re-trained from scratch (partial ep6 ckpt had been set aside). Result landed 18:48 the same day.
+
+**Kannada Rung B = 15.42 WRR / 46.37 CharAcc / 53.63 CER (N=720).**
+- **H3 now has 3 points, perfectly rank-ordered by token coverage (P2):** telugu 92.3 → 19.82,
+  kannada 90.8 → 15.42, tamil 88.8 → 9.16. Fertility (P1) remains directionally wrong on the
+  observed points (tamil = highest fertility of the three, lowest transfer).
+- **Prospective scoring:** `PROSPECTIVE_PREDICTIONS_H3.md` (commit `047c30c`, filed before this
+  result existed) gave the exploratory point estimate **kannada ~15 → realized 15.42**. Cite the
+  commit hash in the manuscript; this is exactly the evidence chain that file exists to create.
+- Speedup confirmed at scale: full Rung-B train+eval ≈ 6¾ h (pre-fix ~1–1.5 days), 1.8–1.9 batch/s
+  ⇒ server3 alone is fast enough for the WACV timeline IF contention stays moderate; server1 (§8)
+  stays a fallback only.
+
+**Now training:** malayalam Rung A (started 2026-07-07 08:45 after `wait_gpu` rode out overnight
+contention; ep9/15, loss ~0.28, ~11.2 GB, healthy at 11:26). Malayalam Rung B — **the decisive
+script** (P1's predicted best vs P2's predicted worst, P2 crude estimate ~0–4 WRR) — expected
+within ~a day, contention permitting. Then oriya → gurmukhi, then the 9 Bbpe rungs.
+
+**Monitor re-armed** this session (session Monitor → `loso_monitor.sh`). ⚠️ NB: the relaunch
+truncated `zeroshot_loso.log`, so the monitor's counter only sees post-relaunch RESULT lines
+(max 22 of 27): completion will surface as `[WARN orchestrator STOPPED] 22/27`, not `[DONE]` —
+interpret accordingly.
+
+**Committed this session:** kannada-B result + conf JSONs, this log update, and
+`.claude/settings.json` (allows background sessions to edit this working copy directly —
+the live-log workflow requires it; owner-approved). **Deliberately NOT committed:**
+`training_log_florence2_grapheme.json` — it is overwritten in place by the live malayalam-A
+training (a mid-epoch snapshot would be misleading); commit it at a rung boundary. NB the
+kannada-B in-memory training curve in that file has already been overwritten by malayalam-A;
+the per-rung text log `train_zeroshot_loso_rungB_kannada.log` retains the full curve.
