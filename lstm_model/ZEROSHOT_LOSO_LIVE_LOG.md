@@ -80,7 +80,7 @@ Updated as rungs finish. WRR/CharAcc/CER in %. (— = not done yet.)
 | 1 | tamil      | 0.0 | **9.16** | 39.0 | 61.0 | 513  | ✅ done |
 | 2 | telugu     | 1.28 | **19.82** | 54.43 | 45.57 | 545  | ✅ done |
 | 3 | kannada    | 2.78 | **15.42** | 46.37 | 53.63 | 720  | ✅ done (B re-run after outage) |
-| 4 | malayalam  | — | — | — | — | 547  | 🟡 Rung A training (started 2026-07-07 08:45) |
+| 4 | malayalam  | 0.18 | — | — | — | 547  | 🟡 A done; **B training since 2026-07-07 13:36 — THE DECISIVE RUNG** |
 | 5 | oriya      | — | — | — | — | 1044 | queued |
 | 6 | gujarati   | — | — | — | — | 1015 | queued |
 | 7 | bengali    | — | — | — | — | 2873 | queued |
@@ -100,6 +100,7 @@ Updated as rungs finish. WRR/CharAcc/CER in %. (— = not done yet.)
 - `2026-07-06 12:03` — **AUTO-RELAUNCH WORKED:** `gpu_relaunch_watcher.sh` saw 18,595 MiB free (≥12,000), relaunched `run_zeroshot_loso.sh` itself via nohup (PID 1937079) and exited. No human/agent involved — the §9/§10 recovery infra worked unattended.
 - `2026-07-06 18:48` — [RESULT LOSO RUNG B kannada] N=720 WRR=15.42 CharAcc=46.37 CER=53.63 — third H3 point; full from-scratch re-train + eval in ~6¾ h (speedup confirmed at scale). **Prospective hit:** `PROSPECTIVE_PREDICTIONS_H3.md` (result-blind, commit `047c30c`) staked exploratory estimate "kannada ~15".
 - `2026-07-07 08:45` — malayalam Rung A training started (orchestrator's `wait_gpu` rode out overnight contention, down to ~1 GB free). 1.8–1.9 batch/s, ep9/15 by 11:26 — healthy. **Malayalam is the decisive H3 script** (P1-fertility's best vs P2-coverage's worst).
+- `2026-07-07 ~13:30` — [RESULT LOSO RUNG A malayalam] N=547 WRR=0.18 CharAcc=2.74 CER=97.26 — expected ~0 baseline; LOWEST Rung A of the 4 so far (tamil 0.0 < mal 0.18 < telugu 1.28 < kannada 2.78), consistent with malayalam having the lowest token coverage (79.2). Rung B (the decisive rung) started 13:36, 1.6 batch/s — result expected ~20:30–21:30 IST tonight.
 
 ---
 
