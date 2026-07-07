@@ -383,3 +383,18 @@ the live-log workflow requires it; owner-approved). **Deliberately NOT committed
 training (a mid-epoch snapshot would be misleading); commit it at a rung boundary. NB the
 kannada-B in-memory training curve in that file has already been overwritten by malayalam-A;
 the per-rung text log `train_zeroshot_loso_rungB_kannada.log` retains the full curve.
+
+**Standing auto-recovery armed 2026-07-07 (later same session, owner request):**
+`gpu_relaunch_watcher.sh` is ONE-SHOT (exits after a single relaunch, or immediately if the run is
+alive), so a new **`.monitor/loso_guardian.sh`** now provides standing protection: a flock'd loop
+(max one instance) that, whenever the orchestrator is dead with <27 result JSONs on disk, invokes
+the watcher (waits for ≥12 GB free, relaunches detached, exits) and then resumes guarding; it
+retires itself once all 27 results exist. Armed two ways: (a) running detached NOW (own session via
+setsid, survives disconnect/session end); (b) **user crontab `@reboot` entry** ⇒ a power outage now
+auto-recovers with no human in the loop (cron is active; `run_zeroshot_loso.sh` is env-self-contained
+— absolute conda python, `HF_HOME` + offline flags exported inside the script — so cron's minimal
+env is fine). Verified live: flock dedupe (second launch exits), watcher's double-launch guard
+(exits when orchestrator alive). Log: `.monitor/guardian.log`.
+**⚠️ When the 27-rung run fully completes: remove the crontab line (`crontab -l`, then `crontab -r`
+or edit) — the guardian retires itself, but the @reboot entry would re-arm a stale watcher-wait
+on the next boot.**
