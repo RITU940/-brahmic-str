@@ -5,7 +5,7 @@ then `RESEARCH_STATUS_AND_PATH.md` (overall research status) and `PREREGISTRATIO
 This file is updated as each rung completes.
 
 **Owner:** Ritu Baskey · **Machine:** server3 (`cvpr-gamma`, RTX A5000 24 GB) ·
-**Started:** 2026-06-25 11:27 IST · **Last updated:** 2026-07-07 (session: auto-relaunch WORKED 2026-07-06; Kannada B=15.42 — prospective "~15" hit; malayalam Rung A training; monitor re-armed)
+**Started:** 2026-06-25 11:27 IST · **Last updated:** 2026-07-07 evening (auto-relaunch WORKED; Kannada B=15.42 — "~15" hit; **Malayalam B=9.69 — decisive rung: P1-fertility's flagship FAILED, P2-coverage directionally right**; guardian + @reboot armed)
 
 ---
 
@@ -15,8 +15,10 @@ This file is updated as each rung completes.
   phase (same protocol, stock tokenizer) was appended 2026-07-02 per PREREGISTRATION §7/§8;
   it runs AFTER the main 18, tamil/telugu first. **✅ ALIVE again** — after the ~Jun 30 power
   outage + ~6 days of GPU contention, the §9 watcher auto-relaunched the run 2026-07-06 12:03 (see §11).
-- **Done so far (6/27):** Tamil A=0.0, **Tamil B=9.16**, Telugu A=1.28, **Telugu B=19.82**,
-  Kannada A=2.78, **Kannada B=15.42** — all 3 Rung-B points rank-ordered exactly by token coverage (P2).
+- **Done so far (8/27):** Tamil A=0.0/**B=9.16**, Telugu A=1.28/**B=19.82**, Kannada A=2.78/**B=15.42**,
+  Malayalam A=0.18/**B=9.69** (decisive script). Coverage (P2) leads the horse-race (descriptive
+  Spearman=0.8 over 4 B points); **fertility-P1's flagship prediction (malayalam = best transferrer)
+  FAILED** — malayalam landed bottom-tier, statistically tied with tamil.
 - **✅ RESOLVED 2026-07-06:** the §9 relaunch watcher fired at 12:03 (18.6 GB free), relaunched the
   run itself with **`HF_HUB_OFFLINE=1`** baked in, and exited. Kannada B re-trained from scratch in
   ~6¾ h (vs ~1–1.5 days pre-fix — the `num_workers` speedup is CONFIRMED, ~1.8–1.9 batch/s).
@@ -80,8 +82,8 @@ Updated as rungs finish. WRR/CharAcc/CER in %. (— = not done yet.)
 | 1 | tamil      | 0.0 | **9.16** | 39.0 | 61.0 | 513  | ✅ done |
 | 2 | telugu     | 1.28 | **19.82** | 54.43 | 45.57 | 545  | ✅ done |
 | 3 | kannada    | 2.78 | **15.42** | 46.37 | 53.63 | 720  | ✅ done (B re-run after outage) |
-| 4 | malayalam  | 0.18 | — | — | — | 547  | 🟡 A done; **B training since 2026-07-07 13:36 — THE DECISIVE RUNG** |
-| 5 | oriya      | — | — | — | — | 1044 | queued |
+| 4 | malayalam  | 0.18 | **9.69** | 34.57 | 65.43 | 547  | ✅ done — decisive rung: P1 flagship FAILED, P2 tier confirmed |
+| 5 | oriya      | — | — | — | — | 1044 | 🟡 Rung A training (started 2026-07-07 19:37) |
 | 6 | gujarati   | — | — | — | — | 1015 | queued |
 | 7 | bengali    | — | — | — | — | 2873 | queued |
 | 8 | devanagari | — | — | — | — | 6042 | queued |
@@ -101,6 +103,7 @@ Updated as rungs finish. WRR/CharAcc/CER in %. (— = not done yet.)
 - `2026-07-06 18:48` — [RESULT LOSO RUNG B kannada] N=720 WRR=15.42 CharAcc=46.37 CER=53.63 — third H3 point; full from-scratch re-train + eval in ~6¾ h (speedup confirmed at scale). **Prospective hit:** `PROSPECTIVE_PREDICTIONS_H3.md` (result-blind, commit `047c30c`) staked exploratory estimate "kannada ~15".
 - `2026-07-07 08:45` — malayalam Rung A training started (orchestrator's `wait_gpu` rode out overnight contention, down to ~1 GB free). 1.8–1.9 batch/s, ep9/15 by 11:26 — healthy. **Malayalam is the decisive H3 script** (P1-fertility's best vs P2-coverage's worst).
 - `2026-07-07 ~13:30` — [RESULT LOSO RUNG A malayalam] N=547 WRR=0.18 CharAcc=2.74 CER=97.26 — expected ~0 baseline; LOWEST Rung A of the 4 so far (tamil 0.0 < mal 0.18 < telugu 1.28 < kannada 2.78), consistent with malayalam having the lowest token coverage (79.2). Rung B (the decisive rung) started 13:36, 1.6 batch/s — result expected ~20:30–21:30 IST tonight.
+- `2026-07-07 19:37` — [RESULT LOSO RUNG B malayalam] N=547 WRR=9.69 CharAcc=34.57 CER=65.43 — **THE DECISIVE RESULT.** Honest scoring: **P1 (fertility, prereg primary) flagship FAILED** — P1 ranked malayalam BEST of the 7 unknowns (fertility 6.02); realized bottom-tier, far below kannada (15.42) and telugu (19.82) which P1 ranked beneath it. **P2 (coverage, declared bet) directionally RIGHT** — predicted malayalam WORST; realized bottom-tier ✓ — but its crude estimate "~0–4" undershot (9.69). The malayalam>tamil inversion (9.69 vs 9.16) is a statistical tie (Δ≈3 words of ~530; two-proportion z≈0.3). Descriptive Spearman(coverage, B-WRR) over the 4 observed points = 0.8; confirmatory scoring stays as declared (Spearman over the 7 unknowns when all exist; 2/7 observed). **Phenomenon-claim gift:** even the predicted-worst script gains 0.18→9.69 with zero real images — transfer does not collapse on low-coverage scripts. Oriya Rung A started 19:37.
 
 ---
 
