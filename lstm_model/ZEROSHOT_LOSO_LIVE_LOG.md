@@ -1,6 +1,6 @@
 # ZERO-SHOT LOSO — LIVE RUN LOG & SESSION HANDOFF
 **Purpose:** single source of truth for the *running* 9-script zero-shot LOSO experiment
-(Part ② of the Brahmic-STR paper). A new-session agent should read **this file first**,
+(Part ② of the Brahmic-STR paper). Each new session starts by reading **this file first**,
 then `RESEARCH_STATUS_AND_PATH.md` (overall research status) and `PREREGISTRATION.md`.
 This file is updated as each rung completes.
 
@@ -100,7 +100,7 @@ Updated as rungs finish. WRR/CharAcc/CER in %. (— = not done yet.)
 - `2026-06-29 ~21:18` — [RESULT LOSO RUNG B telugu] N=545 WRR=19.82 CharAcc=54.43 CER=45.57 — **strong transfer, 2× Tamil** (Tamil B=9.16). 1.28→19.82 WRR, 23.3→54.4 CharAcc with ZERO real Telugu images. Second H3 data point.
 - `2026-06-30 ~05:30` — [RESULT LOSO RUNG A kannada] N=720 WRR=2.78 CharAcc=19.25 CER=80.75 — Rung A baseline. Kannada Rung B started 05:56, batch ~1.3/s.
 - `2026-06-30 ~10:04` — **RUN DIED** mid-Kannada-Rung-B at ep6/15 (best_model ep6 saved). Machine lost power → network down (HF DNS-resolution errors flood the tail) → orchestrator + training killed. No Kannada-B result JSON; **B re-runs from scratch on relaunch.** Discovered 2026-07-02.
-- `2026-07-06 12:03` — **AUTO-RELAUNCH WORKED:** `gpu_relaunch_watcher.sh` saw 18,595 MiB free (≥12,000), relaunched `run_zeroshot_loso.sh` itself via nohup (PID 1937079) and exited. No human/agent involved — the §9/§10 recovery infra worked unattended.
+- `2026-07-06 12:03` — **AUTO-RELAUNCH WORKED:** `gpu_relaunch_watcher.sh` saw 18,595 MiB free (≥12,000), relaunched `run_zeroshot_loso.sh` itself via nohup (PID 1937079) and exited. No manual step involved — the §9/§10 recovery infra worked unattended.
 - `2026-07-06 18:48` — [RESULT LOSO RUNG B kannada] N=720 WRR=15.42 CharAcc=46.37 CER=53.63 — third H3 point; full from-scratch re-train + eval in ~6¾ h (speedup confirmed at scale). **Prospective hit:** `PROSPECTIVE_PREDICTIONS_H3.md` (result-blind, commit `047c30c`) staked exploratory estimate "kannada ~15".
 - `2026-07-07 08:45` — malayalam Rung A training started (orchestrator's `wait_gpu` rode out overnight contention, down to ~1 GB free). 1.8–1.9 batch/s, ep9/15 by 11:26 — healthy. **Malayalam is the decisive H3 script** (P1-fertility's best vs P2-coverage's worst).
 - `2026-07-07 ~13:30` — [RESULT LOSO RUNG A malayalam] N=547 WRR=0.18 CharAcc=2.74 CER=97.26 — expected ~0 baseline; LOWEST Rung A of the 4 so far (tamil 0.0 < mal 0.18 < telugu 1.28 < kannada 2.78), consistent with malayalam having the lowest token coverage (79.2). Rung B (the decisive rung) started 13:36, 1.6 batch/s — result expected ~20:30–21:30 IST tonight.
@@ -185,7 +185,7 @@ nohup bash run_zeroshot_loso.sh > zeroshot_loso.log 2>&1 &
 ```
 **Re-arm the per-rung monitor in a new session** (previous session's monitor dies on exit;
 the run does not). A ready-made watcher lives at **`.monitor/loso_monitor.sh`** (git-ignored,
-inside this repo). Arm it with the Monitor tool, persistent:
+inside this repo). Keep it running in a spare terminal (tmux/screen), persistent:
 ```bash
 bash /c/ujjwalb/ritu1/lstm_model/.monitor/loso_monitor.sh
 ```
@@ -193,7 +193,7 @@ It emits each new `RESULT LOSO` line, the batch/s of each new rung (to confirm t
 and warns once if the orchestrator dies or all 18 rungs finish.
 
 **⚠️ Working-file rule (owner directive 2026-06-29):** keep ALL scratch/temp/working files under
-`ritu1/` (e.g. `.monitor/`). Do NOT use the harness default scratchpad — it points into
+`ritu1/` (e.g. `.monitor/`). NEVER write scratch files into
 `/c/ujjwalb/Antik/...`, which is a **labmate's** project folder. Never read or write outside `ritu1/`.
 
 **Env:** `export HF_HOME=/c/ujjwalb/.cache/huggingface`. GPU shared with UNRELATED jobs from other
@@ -210,7 +210,7 @@ users (`Vansh/multihop_memory_vqa` and others, ~11 GB total at last scan) — do
 
 ---
 
-## 8. SESSION 2026-06-29 — WHAT CHANGED (full detail for a new agent)
+## 8. SESSION 2026-06-29 — WHAT CHANGED (full detail for a new session)
 **Commits this session (branch `main`):**
 - `fe68c76` — `COMPETITIVE_POSITIONING_AND_LITERATURE.md` (verified lit landscape + rebuttals)
   + Telugu Rung A result/config + training-log update.
@@ -256,7 +256,7 @@ NOT a pipeline bug. Orchestrator + training process both gone; no Kannada-B resu
 only ~8.2 GB free; our job needs ~11.3 GB + `wait_gpu` wants ≥12 GB. So we **wait for headroom.**
 
 **Relaunch plan (auto):** **`.monitor/gpu_relaunch_watcher.sh`** polls GPU free memory every 3 min
-and, once ≥12 GB frees, **relaunches the run ITSELF via nohup** (needs no internet, no agent; guards
+and, once ≥12 GB frees, **relaunches the run ITSELF via nohup** (needs no internet, no manual step; guards
 against double-launch; logs to `.monitor/gpu_relaunch.log`). Resumable — skips finished rungs,
 re-runs Kannada B onward. **Two hardening changes at relaunch:**
 1. `export HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1` — Florence-2 base is cached locally, so a network
@@ -308,7 +308,7 @@ transfer) and WITH coverage — handled honestly via the §8 amendments below.
 
 **Run state all day:** DEAD (since Jun 30), GPU contended the whole session (~7.9 GB free vs 12 needed;
 other users' jobs unchanged). `.monitor/gpu_relaunch_watcher.sh` confirmed ALIVE and polling every 3 min
-— it relaunches the run itself when ≥12 GB frees, no agent/session needed. A session monitor watches
+— it relaunches the run itself when ≥12 GB frees, no manual step needed. A watcher tails
 `.monitor/gpu_relaunch.log` for the relaunch outcome and then execs `loso_monitor.sh`.
 
 **⚠️ INCIDENT — stale worktree copy of this file:** at session start, the working-tree copy of
@@ -381,14 +381,13 @@ contention; ep9/15, loss ~0.28, ~11.2 GB, healthy at 11:26). Malayalam Rung B �
 script** (P1's predicted best vs P2's predicted worst, P2 crude estimate ~0–4 WRR) — expected
 within ~a day, contention permitting. Then oriya → gurmukhi, then the 9 Bbpe rungs.
 
-**Monitor re-armed** this session (session Monitor → `loso_monitor.sh`). ⚠️ NB: the relaunch
+**Monitor re-armed** this session (`loso_monitor.sh`, persistent). ⚠️ NB: the relaunch
 truncated `zeroshot_loso.log`, so the monitor's counter only sees post-relaunch RESULT lines
 (max 22 of 27): completion will surface as `[WARN orchestrator STOPPED] 22/27`, not `[DONE]` —
 interpret accordingly.
 
-**Committed this session:** kannada-B result + conf JSONs, this log update, and
-`.claude/settings.json` (allows background sessions to edit this working copy directly —
-the live-log workflow requires it; owner-approved). **Deliberately NOT committed:**
+**Committed this session:** kannada-B result + conf JSONs and this log update.
+**Deliberately NOT committed:**
 `training_log_florence2_grapheme.json` — it is overwritten in place by the live malayalam-A
 training (a mid-epoch snapshot would be misleading); commit it at a rung boundary. NB the
 kannada-B in-memory training curve in that file has already been overwritten by malayalam-A;

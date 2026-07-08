@@ -3,7 +3,7 @@
 Cross-Script Scene-Text Recognition.
 **Owner:** Ritu Baskey · **This doc created:** 2026-06-25 · **Machine:** server3 (`cvpr-gamma`, RTX A5000 24 GB)
 
-> **NEW-SESSION AGENT: READ `ZEROSHOT_LOSO_LIVE_LOG.md` FIRST** (live run state — updated
+> **NEW SESSION: READ `ZEROSHOT_LOSO_LIVE_LOG.md` FIRST** (live run state — updated
 > every session), then this file, then `GROUNDBREAKING_RESEARCH_PLAN.md` (full history) and
 > `PREREGISTRATION.md` (frozen analysis plan **+ §8 amendments of 2026-07-02**). Every claim
 > below was checked against files on disk on 2026-06-25; run-state facts here are SUPERSEDED
@@ -95,7 +95,7 @@ multi-script zero-shot numbers (not one script at ~10%).
 
 ---
 
-## 4. VERIFIED ENVIRONMENT FACTS (so a new agent doesn't re-derive / make mistakes)
+## 4. VERIFIED ENVIRONMENT FACTS (so a new session doesn't re-derive / repeat mistakes)
 - **We are ON server3** now (`cvpr-gamma`), working dir `/c/ujjwalb/ritu1/lstm_model`, `HOME=/c/ujjwalb`.
 - **Python env:** `/c/ujjwalb/.conda/envs/ritu_scenetext/bin/python` (3.10, torch 2.5.1+cu121, transformers 4.44.2, peft 0.13.0). `export HF_HOME=/c/ujjwalb/.cache/huggingface`.
 - **GPU:** RTX A5000, 24 GB. Shared with an UNRELATED job `python train.py` (PID 551517, user=ujjwalb, dir `Vansh/multihop_memory_vqa`) using ~4.6 GB — **NOT ours, do not touch.**

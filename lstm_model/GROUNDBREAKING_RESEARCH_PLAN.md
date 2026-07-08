@@ -37,7 +37,7 @@ real near-term deliverable; journal acceptance comes months later — review cyc
 
 ---
 
-## ★ RIGOR & INTEGRITY STANDARDS (binding — this is what keeps "AI flags" off the work)
+## ★ RIGOR & INTEGRITY STANDARDS (binding — this is what keeps integrity questions off the work)
 
 1. **Pre-register before peeking.** The analysis plan (hypotheses, descriptors,
    dependent variables, statistical tests, success/falsification criteria) is fixed
@@ -59,7 +59,7 @@ real near-term deliverable; journal acceptance comes months later — review cyc
 
 ## ★ SESSION CONTINUITY (read this first in a new session)
 
-A fresh agent should, in order: (1) read this file top-to-bottom; (2) read
+When resuming this work, in order: (1) read this file top-to-bottom; (2) read
 `PREREGISTRATION.md` (the fixed analysis plan); (3) read `PROF_REPORT.md` for the
 prior (pre-pivot) results; (4) check §8 cross-check log + §9 progress log for the
 latest verified disk state; (5) re-verify any number it intends to use against the
@@ -336,7 +336,7 @@ spine.
 
 ## 9. Progress log & preliminary findings
 
-### ⭐ SESSION HANDOFF — 2026-06-25 (NEW AGENT: READ THIS + `RESEARCH_STATUS_AND_PATH.md` FIRST) ⭐
+### ⭐ SESSION HANDOFF — 2026-06-25 (NEW SESSION: READ THIS + `RESEARCH_STATUS_AND_PATH.md` FIRST) ⭐
 **Machine moved:** we are now WORKING ON server3 directly (`cvpr-gamma`), not via ssh from
 isiserver (isiserver storage was full). Working dir `/c/ujjwalb/ritu1/lstm_model`.
 **See the new master doc `RESEARCH_STATUS_AND_PATH.md`** — it has the brutal honest

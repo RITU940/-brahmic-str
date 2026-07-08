@@ -1,4 +1,4 @@
-# Pocket Handoff — Bengali Scene-Text OCR Paper (for a fresh AI agent)
+# Pocket Handoff — Bengali Scene-Text OCR Paper (quick-resume notes)
 
 ## 1. Goal
 Produce a **strong, honest, first-authored journal/conference METHOD paper** (not a survey)
@@ -13,8 +13,8 @@ by 2026-06-30**; acceptance can come later. First author = Ritu (the user).
   poll `nvidia-smi --query-gpu=memory.free` and require **>=12 GB free** before launching
   training (a 4 GB guard caused an OOM crash mid-run once). Set
   `PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True`.
-- Long runs go through harness background jobs (`run_in_background: true`) so completion
-  re-invokes the agent; detached `&` does NOT notify.
+- Long runs go through `nohup ... &` with a log file; check the log tail for
+  completion (a bare `&` gives no notification).
 - PEFT eval gotcha: load adapter with `PeftModel.from_pretrained(bare_resized_base, ckpt)` —
   do NOT call `get_peft_model` first or it silently loads nothing. (Already correct in code.)
 
