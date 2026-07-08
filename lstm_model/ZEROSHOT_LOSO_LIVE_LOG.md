@@ -15,10 +15,11 @@ This file is updated as each rung completes.
   phase (same protocol, stock tokenizer) was appended 2026-07-02 per PREREGISTRATION §7/§8;
   it runs AFTER the main 18, tamil/telugu first. **✅ ALIVE again** — after the ~Jun 30 power
   outage + ~6 days of GPU contention, the §9 watcher auto-relaunched the run 2026-07-06 12:03 (see §11).
-- **Done so far (10/27):** Tamil A=0.0/**B=9.16**, Telugu A=1.28/**B=19.82**, Kannada A=2.78/**B=15.42**,
-  Malayalam A=0.18/**B=9.69** (decisive script), Oriya A=0.77/**B=25.38** (best yet). **Coverage (P2)
-  leads the horse-race: Spearman=+0.90 over 5 B points vs fertility −0.90**; P1's flagship prediction
-  (malayalam = best transferrer) FAILED; all 5 Rung A baselines < 5 as predicted.
+- **Done so far (12/27):** Tamil A=0.0/**B=9.16**, Telugu A=1.28/**B=19.82**, Kannada A=2.78/**B=15.42**,
+  Malayalam A=0.18/**B=9.69** (decisive script), Oriya A=0.77/**B=25.38** (best yet), Gujarati
+  A=3.05/**B=15.86** (P2's predicted best — MISSED, landed 3rd; first dent). **Coverage still leads:
+  Spearman +0.77 over 6 B points vs fertility −0.71, vis-sim −0.14**; P1's flagship FAILED; all 6
+  Rung A baselines < 5 as predicted. **Devanagari is now pivotal** for the prospective P2 score.
 - **✅ RESOLVED 2026-07-06:** the §9 relaunch watcher fired at 12:03 (18.6 GB free), relaunched the
   run itself with **`HF_HUB_OFFLINE=1`** baked in, and exited. Kannada B re-trained from scratch in
   ~6¾ h (vs ~1–1.5 days pre-fix — the `num_workers` speedup is CONFIRMED, ~1.8–1.9 batch/s).
@@ -84,8 +85,8 @@ Updated as rungs finish. WRR/CharAcc/CER in %. (— = not done yet.)
 | 3 | kannada    | 2.78 | **15.42** | 46.37 | 53.63 | 720  | ✅ done (B re-run after outage) |
 | 4 | malayalam  | 0.18 | **9.69** | 34.57 | 65.43 | 547  | ✅ done — decisive rung: P1 flagship FAILED, P2 tier confirmed |
 | 5 | oriya      | 0.77 | **25.38** | 56.37 | 43.63 | 1044 | ✅ done — BEST transfer yet; high-coverage script lands on top, as P2 requires |
-| 6 | gujarati   | 3.05 | — | — | — | 1015 | 🟡 A done; **B training since 2026-07-08 08:09 — P2's predicted BEST (est ~35)** |
-| 7 | bengali    | — | — | — | — | 2873 | queued |
+| 6 | gujarati   | 3.05 | **15.86** | 38.49 | 61.51 | 1015 | ✅ done — MISSED est ~35; rank 3rd not 1st (tie w/ kannada). Honest dent in P2 |
+| 7 | bengali    | — | — | — | — | 2873 | 🟡 Rung A training (started 2026-07-08 13:23) |
 | 8 | devanagari | — | — | — | — | 6042 | queued |
 | 9 | gurmukhi   | — | — | — | — | 2879 | queued |
 
@@ -106,6 +107,7 @@ Updated as rungs finish. WRR/CharAcc/CER in %. (— = not done yet.)
 - `2026-07-07 23:20` — [RESULT LOSO RUNG A oriya] N=1044 WRR=0.77 CharAcc=10.09 CER=89.91 — 4th straight Rung A < 5, as predicted ("every Rung A stays low", 047c30c). Rung B oriya (H3 point #5 — the prereg figure threshold) started 23:20 at 2.0 batch/s; result expected ~05:30–07:00 IST 2026-07-08. P2 estimate for oriya: ~21.
 - `2026-07-08 04:28` — [RESULT LOSO RUNG B oriya] N=1044 WRR=25.38 CharAcc=56.37 CER=43.63 — **best transfer of the campaign**; P2 estimate was ~21. **H3 at 5 points: Spearman(coverage)=+0.90, Spearman(fertility)=−0.90** (n=5 one-sided p≈0.04 descriptively; confirmatory test remains the 7-script prospective score, now 3/7 observed with P2's internal order perfect: oriya>kannada>malayalam, and P1's exactly reversed). Prereg ≥5–6-point threshold reached → H3 figure buildable; building at 6 points once gujarati B lands. Gujarati Rung A started 04:28, 2.0 batch/s.
 - `2026-07-08 ~08:05` — [RESULT LOSO RUNG A gujarati] N=1015 WRR=3.05 CharAcc=15.71 CER=84.29 — 5th straight Rung A < 5 as predicted; highest baseline of the five, consistent with gujarati's highest token coverage (97.3, incidental-coverage effect). Rung B started 08:09 (2.1 batch/s) — **P2's predicted best transferrer (est ~35)**; result expected ~14:30–15:30 IST.
+- `2026-07-08 13:23` — [RESULT LOSO RUNG B gujarati] N=1015 WRR=15.86 CharAcc=38.49 CER=61.51 — **first real miss for P2**: predicted BEST (crude est ~35), realized 3rd of 6 (behind oriya 25.38, telugu 19.82; statistical tie with kannada 15.42). **H3 at 6 points: token-coverage +0.77, type-coverage +0.60, fertility −0.71, vis-sim −0.14** — coverage still clearly leads, but n=6 one-sided p<0.05 needs 0.829, so descriptively not significant at 6; the 7-script prospective score can still clear the 0.786 two-sided bar IF devanagari lands high (dev per-estimate → ρ(P2)≈0.86; dev mid-table → below threshold). **Devanagari is now the pivotal remaining script.** Honest note: gujarati underperforming its 97.3 coverage suggests coverage saturates at the top / other factors bind (test-set difficulty? font/style gap?) — investigate AFTER all 9 results are in (no mid-race analysis changes); report per prereg §6 either way. Bengali Rung A started 13:23 (2× synth, N(test)=2873 — covariates disclosed in 047c30c).
 - `2026-07-07 19:37` — [RESULT LOSO RUNG B malayalam] N=547 WRR=9.69 CharAcc=34.57 CER=65.43 — **THE DECISIVE RESULT.** Honest scoring: **P1 (fertility, prereg primary) flagship FAILED** — P1 ranked malayalam BEST of the 7 unknowns (fertility 6.02); realized bottom-tier, far below kannada (15.42) and telugu (19.82) which P1 ranked beneath it. **P2 (coverage, declared bet) directionally RIGHT** — predicted malayalam WORST; realized bottom-tier ✓ — but its crude estimate "~0–4" undershot (9.69). The malayalam>tamil inversion (9.69 vs 9.16) is a statistical tie (Δ≈3 words of ~530; two-proportion z≈0.3). Descriptive Spearman(coverage, B-WRR) over the 4 observed points = 0.8; confirmatory scoring stays as declared (Spearman over the 7 unknowns when all exist; 2/7 observed). **Phenomenon-claim gift:** even the predicted-worst script gains 0.18→9.69 with zero real images — transfer does not collapse on low-coverage scripts. Oriya Rung A started 19:37.
 
 ---
