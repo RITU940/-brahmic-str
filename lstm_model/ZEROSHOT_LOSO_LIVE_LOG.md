@@ -15,11 +15,13 @@ This file is updated as each rung completes.
   phase (same protocol, stock tokenizer) was appended 2026-07-02 per PREREGISTRATION §7/§8;
   it runs AFTER the main 18, tamil/telugu first. **✅ ALIVE again** — after the ~Jun 30 power
   outage + ~6 days of GPU contention, the §9 watcher auto-relaunched the run 2026-07-06 12:03 (see §11).
-- **Done so far (12/27):** Tamil A=0.0/**B=9.16**, Telugu A=1.28/**B=19.82**, Kannada A=2.78/**B=15.42**,
-  Malayalam A=0.18/**B=9.69** (decisive script), Oriya A=0.77/**B=25.38** (best yet), Gujarati
-  A=3.05/**B=15.86** (P2's predicted best — MISSED, landed 3rd; first dent). **Coverage still leads:
-  Spearman +0.77 over 6 B points vs fertility −0.71, vis-sim −0.14**; P1's flagship FAILED; all 6
-  Rung A baselines < 5 as predicted. **Devanagari is now pivotal** for the prospective P2 score.
+- **Done so far (16/27):** Tamil A=0.0/**B=9.16**, Telugu A=1.28/**B=19.82**, Kannada A=2.78/**B=15.42**,
+  Malayalam A=0.18/**B=9.69**, Oriya A=0.77/**B=25.38**, Gujarati A=3.05/**B=15.86** (P2's predicted
+  best — missed, 4th), Bengali A=1.39/**B=27.08** (NEW BEST from 2nd-lowest coverage — the 2×-synth
+  covariate disclosed at filing dominates), Devanagari A=5.46 (⚠ breaches the "<5" line by 0.46).
+  **At 7 B points: coverage +0.29 raw / +0.77 among equal-synth scripts; fertility −0.82 (refuted).**
+  Emerging story: synth quantity ≫ coverage (within budget) ≫ fertility/vis-sim (nothing).
+  Devanagari B (2× synth, cov 94.3) expected HIGH ~25+ — the pattern's next test, ~17:00 IST.
 - **✅ RESOLVED 2026-07-06:** the §9 relaunch watcher fired at 12:03 (18.6 GB free), relaunched the
   run itself with **`HF_HUB_OFFLINE=1`** baked in, and exited. Kannada B re-trained from scratch in
   ~6¾ h (vs ~1–1.5 days pre-fix — the `num_workers` speedup is CONFIRMED, ~1.8–1.9 batch/s).
@@ -86,8 +88,8 @@ Updated as rungs finish. WRR/CharAcc/CER in %. (— = not done yet.)
 | 4 | malayalam  | 0.18 | **9.69** | 34.57 | 65.43 | 547  | ✅ done — decisive rung: P1 flagship FAILED, P2 tier confirmed |
 | 5 | oriya      | 0.77 | **25.38** | 56.37 | 43.63 | 1044 | ✅ done — BEST transfer yet; high-coverage script lands on top, as P2 requires |
 | 6 | gujarati   | 3.05 | **15.86** | 38.49 | 61.51 | 1015 | ✅ done — MISSED est ~35; rank 3rd not 1st (tie w/ kannada). Honest dent in P2 |
-| 7 | bengali    | 1.39 | — | — | — | 2873 | 🟡 A done; B training since 2026-07-08 16:53 (2× synth; P2 est ~5) |
-| 8 | devanagari | — | — | — | — | 6042 | queued |
+| 7 | bengali    | 1.39 | **27.08** | 57.77 | 42.23 | 2873 | ✅ done — NEW BEST from 2nd-lowest coverage; the disclosed 2×-synth covariate dominates |
+| 8 | devanagari | 5.46 | — | — | — | 6042 | 🟡 A done (highest baseline, tracks coverage; ⚠ breaches the "<5" line — see log); B training since 06:01 |
 | 9 | gurmukhi   | — | — | — | — | 2879 | queued |
 
 **Raw result so far:** `result_zs_loso_rungA_tamil.json` =
@@ -109,6 +111,8 @@ Updated as rungs finish. WRR/CharAcc/CER in %. (— = not done yet.)
 - `2026-07-08 ~08:05` — [RESULT LOSO RUNG A gujarati] N=1015 WRR=3.05 CharAcc=15.71 CER=84.29 — 5th straight Rung A < 5 as predicted; highest baseline of the five, consistent with gujarati's highest token coverage (97.3, incidental-coverage effect). Rung B started 08:09 (2.1 batch/s) — **P2's predicted best transferrer (est ~35)**; result expected ~14:30–15:30 IST.
 - `2026-07-08 13:23` — [RESULT LOSO RUNG B gujarati] N=1015 WRR=15.86 CharAcc=38.49 CER=61.51 — **first real miss for P2**: predicted BEST (crude est ~35), realized 3rd of 6 (behind oriya 25.38, telugu 19.82; statistical tie with kannada 15.42). **H3 at 6 points: token-coverage +0.77, type-coverage +0.60, fertility −0.71, vis-sim −0.14** — coverage still clearly leads, but n=6 one-sided p<0.05 needs 0.829, so descriptively not significant at 6; the 7-script prospective score can still clear the 0.786 two-sided bar IF devanagari lands high (dev per-estimate → ρ(P2)≈0.86; dev mid-table → below threshold). **Devanagari is now the pivotal remaining script.** Honest note: gujarati underperforming its 97.3 coverage suggests coverage saturates at the top / other factors bind (test-set difficulty? font/style gap?) — investigate AFTER all 9 results are in (no mid-race analysis changes); report per prereg §6 either way. Bengali Rung A started 13:23 (2× synth, N(test)=2873 — covariates disclosed in 047c30c).
 - `2026-07-08 16:53` — [RESULT LOSO RUNG A bengali] N=2873 WRR=1.39 CharAcc=17.7 CER=82.3 — 6th straight Rung A < 5 as predicted. Rung B started 16:53 (1.9 batch/s; 13,480 train samples with 2× synth — disclosed covariate); result expected ~02:00–02:30 IST 2026-07-09. P2 crude est for bengali: ~5 (its coverage 87.3 is 2nd-lowest); a mid-teens result would suggest the 2× synth covariate lifts it, exactly as flagged in 047c30c.
+- `2026-07-09 01:26` — [RESULT LOSO RUNG B bengali] N=2873 WRR=27.08 CharAcc=57.77 CER=42.23 — **NEW BEST, and a plot twist**: P2's crude est was ~5 (coverage 87.3, 2nd-lowest). The covariate DISCLOSED AT FILING (047c30c §4: bengali & devanagari have 2× synth, 6480 vs 3240, "may lift them above the coverage line") did exactly that. **H3 at 7 points: coverage +0.29, fertility −0.82** (raw, all scripts). Descriptive decomposition per the disclosed covariate: **among the six equal-synth (3240) scripts, coverage holds +0.77**; the one 2×-synth script observed sits far above its coverage line. Emerging honest picture: **synthetic-exposure quantity is the dominant factor, pivot-space coverage orders transfer within a fixed synth budget, fertility is decisively refuted** (−0.82). NB this partially agrees with arXiv 2312.10806's data-size view — for TARGET-side synthetic quantity — while still showing a structural coverage effect at fixed budget; the declared 7-script scoring (§6 of 047c30c) will be reported unchanged regardless. Implied expectation for devanagari (2× synth, cov 94.3): HIGH, ~25+.
+- `2026-07-09 06:01` — [RESULT LOSO RUNG A devanagari] N=6042 WRR=5.46 CharAcc=31.57 CER=68.43 — highest Rung-A baseline (tracks its 94.3 coverage). **⚠ Honest note: this marginally BREACHES the prospective "every Rung A < 5" line (047c30c §5)** — score it 7/8 correct with one 0.46-point breach, reported as-is. Rung B (2× synth, the pattern's next test) started 06:01 at 1.6 batch/s; result expected ~16:30–17:30 IST.
 - `2026-07-07 19:37` — [RESULT LOSO RUNG B malayalam] N=547 WRR=9.69 CharAcc=34.57 CER=65.43 — **THE DECISIVE RESULT.** Honest scoring: **P1 (fertility, prereg primary) flagship FAILED** — P1 ranked malayalam BEST of the 7 unknowns (fertility 6.02); realized bottom-tier, far below kannada (15.42) and telugu (19.82) which P1 ranked beneath it. **P2 (coverage, declared bet) directionally RIGHT** — predicted malayalam WORST; realized bottom-tier ✓ — but its crude estimate "~0–4" undershot (9.69). The malayalam>tamil inversion (9.69 vs 9.16) is a statistical tie (Δ≈3 words of ~530; two-proportion z≈0.3). Descriptive Spearman(coverage, B-WRR) over the 4 observed points = 0.8; confirmatory scoring stays as declared (Spearman over the 7 unknowns when all exist; 2/7 observed). **Phenomenon-claim gift:** even the predicted-worst script gains 0.18→9.69 with zero real images — transfer does not collapse on low-coverage scripts. Oriya Rung A started 19:37.
 
 ---
