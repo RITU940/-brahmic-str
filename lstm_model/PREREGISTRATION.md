@@ -153,3 +153,55 @@ say so rather than approximate and over-claim.
   orchestrator's resume check was hardened (train-completion sentinel) so a mid-training crash
   can never cause evaluation of an undertrained checkpoint. `HF_HUB_OFFLINE=1` set (model is
   fully cached locally; removes network as a failure mode). None of these affect analysis.
+- **2026-07-09 — AMENDMENT 4 (three Part-② extensions, designs fixed BEFORE any of them runs).**
+  Filed with 8/9 Rung-B results observed (gurmukhi pending; its quantitative prediction is already
+  filed in `PROSPECTIVE_PREDICTION_GURMUKHI.md`, committed and pushed before its training). None of
+  the experiments below has started at filing; the Bbpe phase (Amendment 3) has also not yet begun.
+  Motivating observation, disclosed at 047c30c filing and realized since: the 2×-synthetic-exposure
+  covariate dominates (the two 2×-synth scripts, bengali 27.08 and devanagari 30.09, are the top two
+  results), fertility is refuted (Spearman −0.88 at 8 points), and coverage orders transfer within a
+  fixed synth budget (+0.77 among the six equal-synth scripts).
+
+  **(a) Synthetic-exposure scaling study.** Scripts fixed now: **malayalam, kannada, telugu**
+  (chosen to span token coverage 79.2 / 90.8 / 92.3 with the three smallest test sets 547/720/545 —
+  cheap evaluation; all three are 1×-synth scripts so the existing 3240-image Rung-B result is
+  reused as the middle point). Budgets: **{810, 1620, 3240*, 6480, 12960}** synthetic images
+  (*existing). Smaller budgets = random subset of the existing 3240 set (seed 42); larger budgets =
+  additional words rendered by the SAME pipeline, fonts, and verification (`prepare_zeroshot_loso.py`
+  protocol). Training recipe identical to Rung B in every other respect (same LoRA config, lr,
+  batch size, 15 epochs, seed 42). DV: Rung-B WRR (CharAcc/CER reported alongside). Analysis fixed
+  in advance: per-script fit WRR = α + β·log2(synth), and joint two-factor fit
+  WRR = a + b·tok_cov + c·log2(synth/3240); report R² and bootstrap CIs for β and c.
+  **Declared point prediction to test:** the natural 2× experiment estimates c ≈ +12.3 WRR per
+  doubling (fit of 2026-07-09, `PROSPECTIVE_PREDICTION_GURMUKHI.md`); we test whether the swept c
+  is compatible. Saturation/concavity, if seen, is reported as-is; a flat curve falsifies the
+  synth-quantity account and is reported per §6.
+
+  **(b) Out-of-benchmark validation on Khmer.** Purpose: test whether the recipe extends beyond
+  BSTD and beyond India — Khmer is a Brahmi-descended abugida in a different Unicode block
+  (U+1780–17FF, coeng-based stacking) with an independent benchmark (KhmerST, ACCV 2024;
+  WildKhmerST if suitable word crops can be derived). Protocol: train on ALL NINE BSTD scripts as
+  sources (Khmer is outside BSTD, so this is not LOSO; stated openly) + 3240 synthetic Khmer images
+  from the same pipeline (fonts via fc-match with per-image blank verification; the grapheme
+  segmenter's virama rule must handle U+17D2 — an engineering check, timeboxed to 3 days, done
+  BEFORE the prediction is filed). Evaluation: real Khmer test images; primary metric CER, with
+  word-level WRR where word crops are derivable (deviation from the BSTD word-crop protocol is
+  forced by the line-level source data and disclosed here). **Prediction protocol fixed now:**
+  before the Khmer rung trains, compute Khmer token coverage result-blind (same 2026-06-25 method)
+  and file `PROSPECTIVE_PREDICTION_KHMER.md` from the frozen two-factor model, committed and pushed
+  first. A near-zero result is the boundary-of-transfer finding and is reported per §6.
+
+  **(c) Frontier-VLM baseline.** To quantify the script gap in current-generation models: evaluate
+  one or two open vision-language models (Qwen2.5-VL-7B-Instruct; optionally a Qwen3-VL size that
+  fits inference on free GPU windows) zero-shot on the nine BSTD test sets (and the Khmer test set
+  if (b) runs), with a fixed simple prompt ("Read the text in the image."), greedy decoding, and
+  the SAME normalization/WRR metric as all our results. Declared caveat: these models' training
+  data is unknown and may contain real text in these scripts, so they are an UPPER-bound reference
+  for off-the-shelf capability, not a like-for-like comparison to our zero-real-target protocol;
+  results reported whatever they show, including any script where the frontier model is strong.
+
+  **(d) Standing prediction protocol.** The two-factor model (coefficients frozen in
+  `PROSPECTIVE_PREDICTION_GURMUKHI.md`, refit only at declared checkpoints after new results are
+  public) is the designated instrument for all future per-script predictions; each prediction is
+  filed in its own `PROSPECTIVE_PREDICTION_<script>.md`, committed and pushed before the run it
+  predicts, with point, ±1·RMSE and ±2·RMSE bands, and misses reported exactly like hits.
