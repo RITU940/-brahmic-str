@@ -56,7 +56,7 @@ pdf.multi_cell(CW, 4.8, "A predictive tokenization law and zero-shot cross-scrip
 pdf.ln(0.8)
 pdf.set_font("dv", "", 7.8)
 pdf.set_text_color(*MUT)
-pdf.multi_cell(CW, 3.6, "Ritu Baskey  ·  research summary  ·  3 July 2026  ·  every number here comes from a result file on disk and is reproducible; nothing is estimated or projected",
+pdf.multi_cell(CW, 3.6, "Ritu Baskey  ·  research summary  ·  10 July 2026  ·  every number here comes from a result file on disk and is reproducible; nothing is estimated or projected",
                new_x="LMARGIN", new_y="NEXT")
 rule()
 
@@ -70,8 +70,9 @@ para("Scene-text recognition — reading shop signs, banners and posters in phot
      "a standard tokenizer spends per written character unit) predicts, before any training, which tokenization wins on which "
      "script — correct on 8 of 9 Brahmic scripts, 90.9% under leave-one-script-out validation. (3) A shared \"abugida pivot "
      "space\" that maps all nine scripts into one output vocabulary, in which a model trained on eight scripts reads the ninth "
-     "— a script it has never seen one real photograph of — at up to 19.8% exact-word accuracy (base model: 0.0%). A "
-     "pre-registered 27-experiment run now in progress completes result (3) across all nine scripts.", size=8.7, color=INK)
+     "— a script it has never seen one real photograph of — at 9.2–30.1% exact-word accuracy, now demonstrated on ALL NINE "
+     "scripts (base model: 0.0% on every one; no-exposure baselines ≤ 5.5%). The running ablation shows the stock tokenizer "
+     "transfers 2–4× worse under the identical protocol — the pivot space is what carries the transfer.", size=8.7, color=INK)
 rule()
 
 head("1", "Scripts and data attempted so far")
@@ -80,7 +81,8 @@ para("All nine Brahmic scripts have been trained and evaluated in the supervised
      "Gujarati, Oriya (Odia), Tamil, Telugu, Kannada and Malayalam — plus English (Latin) as a control. Added to this: our own "
      "lab-annotated Bengali set (7,378 crops; I re-built its train/test split after finding photo-level leakage in the old one), "
      "and font-rendered synthetic data for every script. In total 44 fine-tuned model variants, all on a single shared RTX A5000. "
-     "The zero-shot study (§4–5) covers the same nine scripts: Tamil and Telugu complete, Kannada in progress, six queued.")
+     "The zero-shot study (§4–5) covers the same nine scripts: all nine complete as of 9 July (18 experiments); the "
+     "BPE-ablation phase is running now.")
 
 head("2", "Result 1 — script-aware tokenization + fusion (the completed Bengali paper)")
 para("Base model Florence-2 (a small vision-language model), fine-tuned with LoRA. Injecting whole grapheme-cluster tokens "
@@ -111,13 +113,13 @@ head("4", "The shared representation: one \"abugida pivot space\" for all nine s
 para("What is the shared representation? A deterministic, invertible Unicode offset map. Because the Brahmic scripts descend "
      "from a common ancestor, their Unicode blocks are aligned: the same sound sits at the same offset in every block. Shifting "
      "each character by a fixed per-script constant maps every script into one shared block (Devanagari's), losslessly:", lh=3.7)
-pdf.image(f"{BASE}/prof_abstract/fig_pivot.png", x=13 + (CW - 160) / 2, w=160)
+pdf.image(f"{BASE}/prof_abstract/fig_pivot.png", x=13 + (CW - 148) / 2, w=148)
 pdf.ln(0.8)
 para("A model trained to output pivot text learns ONE output vocabulary shared by all scripts: a script it never saw still lands "
      "on output units it already knows from the other eight — the structural prerequisite for zero-shot transfer. Round-trip "
      "fidelity was verified word-by-word over the full benchmark before use.", size=7.9, color=MUT, lh=3.4)
 
-head("5", "Result 3 (in progress) — reading a held-out script with zero real images")
+head("5", "Result 3 (complete) — reading a held-out script with zero real images, all nine scripts")
 para("Leave-one-script-out protocol, pre-registered: hold out one script entirely; train on 7,000 real photos of the ten other "
      "languages (in pivot space). Rung A adds nothing else — the held-out script is never seen in any form. Rung B additionally "
      "adds 3,240 synthetic font-rendered words of the held-out script — still zero real photographs of it. Evaluate exact-word "
@@ -128,31 +130,37 @@ para("So, to answer directly: when Telugu is read at 19.8%, Telugu itself was th
      style="B", color=INK, lh=3.7)
 pdf.image(f"{BASE}/prof_abstract/fig_zeroshot.png", x=13 + (CW - 136) / 2, w=136)
 pdf.ln(0.8)
-para("Transfer is real and large: +9.2 points on Tamil and +18.5 on Telugu over the no-exposure baseline, from synthetic renders "
-     "alone — Telugu's zero-real-image model already reaches 59% of a supervised model trained on 1,620 real Telugu images (and "
-     "54% character accuracy). The honest remaining gap is synthetic-to-real domain shift, which the few-shot rung (adding just "
-     "50–100 real words) will measure next.", size=7.9, color=MUT, lh=3.4)
+para("Transfer is real and large on every script: word accuracy 9.2–30.1% from synthetic renders alone, i.e. 20–85% of each "
+     "script's supervised reference (median ≈ 48%), with character accuracy up to 58%. The two scripts trained with double "
+     "synthetic exposure (Bengali, Devanagari — a covariate disclosed in advance) are the top two results: transfer scales with "
+     "synthetic quantity, which the pre-registered scaling study will now measure deliberately. The honest remaining gap is "
+     "synthetic-to-real domain shift, which the few-shot rung (adding just 50–100 real words) will measure next.", size=7.9, color=MUT, lh=3.4)
 
 head("6", "The falsifiable bet currently on the table")
-para("Which property predicts WHICH scripts transfer best — the law's fertility, or source-vocabulary coverage? On 2 July, with "
-     "7 of 9 outcomes still unknown even to us, ranked predictions under both were committed to the public git history (commit "
-     "047c30c); Malayalam is the decisive case (fertility's predicted best transferer, coverage's worst). Whichever loses is "
-     "reported in full. A visual-similarity control descriptor was likewise committed result-blind (c5e7c28) to test the "
-     "literature's strongest objection — \"appearance, not structure, drives transfer\" — with data.", lh=3.7)
+para("The bet is now resolved, and the loser is reported in full: fertility — the pre-registered primary — is refuted as a "
+     "transfer predictor (rank correlation −0.80 across all nine scripts; its decisive prediction, Malayalam best, landed near "
+     "the bottom). Coverage won the committed head-to-head (+0.32 vs −0.71 over the seven predicted scripts) and orders transfer "
+     "within a fixed synthetic budget (+0.61); synthetic quantity dominates overall. The visual-similarity control committed "
+     "result-blind (c5e7c28) also fails to predict (−0.14), answering the literature's \"appearance drives transfer\" objection "
+     "with data. The method now makes numerical calls: Gurmukhi's accuracy was predicted (16.2, band 8.2–24.1) and pushed to git "
+     "3½ hours before its training began; it realized 22.16 — inside the committed band, and the miss direction (better than "
+     "called) is reported as-is. Next call: Khmer, on an external benchmark.", lh=3.7)
 
 head("7", "Status and trajectory")
-para("5 of 27 pre-registered experiments are complete (a power outage on 30 June cost three days; the run resumes automatically "
-     "when the shared GPU frees, fully crash-hardened). Next: the remaining 22 experiments (~1 GPU-week), the 9-script "
-     "prediction-vs-transfer correlation, the few-shot rung, an extension toward 15–20 scripts. Plan: arXiv preprint mid-July; "
-     "main paper to WACV 2027 (Round 2, 28 Aug); the completed Bengali paper to IJDAR / ICDAR 2027.", lh=3.7)
+para("20 of 27 pre-registered experiments are complete: the main 18 finished on 9 July; the BPE ablation is 2/9 in (stock "
+     "tokenizer transfers 2–4× worse — the pivot is necessary). Next, all pre-registered in Amendment 4 before running: finish "
+     "the ablation (~2 days), a synthetic-exposure scaling study on three scripts, an out-of-benchmark validation on Khmer "
+     "(different country, different Unicode block, accuracy to be predicted and pushed before training), a frontier-VLM "
+     "baseline, and the few-shot rung. Plan: arXiv preprint ~20 July; main paper to WACV 2027 (Round 2, 28 Aug); the completed "
+     "Bengali paper to IJDAR now.", lh=3.7)
 
 rule(0.6, 1.4)
 pdf.set_font("dv", "I", 7.2)
 pdf.set_text_color(*MUT)
 pdf.multi_cell(CW, 3.15,
-    "Integrity: hypotheses/descriptors/tests pre-registered before results (frozen 18 Jun 2026; amendments logged with git "
-    "timestamps); train/test splits leakage-audited; pipeline audited end-to-end 26 Jun; negative results reported (Gujarati "
-    "near-tie miss; ROVER fusion no better than max-confidence; STRR degenerate). All claims trace to result files in the repo.")
+    "Integrity: hypotheses/descriptors/tests pre-registered before results (frozen 18 Jun; amendments git-timestamped); "
+    "splits leakage-audited; pipeline audited end-to-end; negative results reported in full (fertility refuted as transfer "
+    "predictor; Gujarati near-tie; STRR degenerate). All claims trace to result files in the repo.")
 
 pdf.output(OUT)
 print("pages:", pdf.pages_count if hasattr(pdf, "pages_count") else pdf.page, "->", OUT)
