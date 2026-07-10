@@ -32,3 +32,14 @@ post-result — scored as weakly prospective; this file is committed AND pushed 
  "point":16.2,"band_1rmse":[12.2,20.2],"band_2rmse":[8.2,24.1],
  "rungA_prediction":"WRR < 5"}
 ```
+
+---
+## SCORED — 2026-07-09 22:41 IST (result observed after this file was pushed at 13:44)
+**Realized: 22.16 WRR** (CharAcc 44.1, CER 55.9, N=2879).
+- vs point 16.2: **miss by +5.96 (≈1.5·RMSE), in the under-prediction direction** (the script
+  transferred BETTER than called).
+- ±1·RMSE band [12.2, 20.2]: **OUTSIDE** (above by 1.96).
+- ±2·RMSE band [8.2, 24.1]: **INSIDE.**
+- Rung A < 5: **HIT** (0.59).
+Scored per the rule above; reported as-is. Model refit at this declared checkpoint (9 points):
+WRR = -35.79 + 0.583·tok_cov + 11.48·is_2x_synth, RMSE 4.18 — instrument for the Khmer prediction.
