@@ -1,13 +1,13 @@
 % =========================================================================
 % Script-Aware Dual-Tokenization Fusion for Low-Resource Indic Scene Text
 % Draft v2 (IJDAR submission) — 2026-07-12.
-% Springer Nature template: compile on Overleaf against sn-jrnl.cls
+% Springer Nature template: compile on Overleaf against sn-jnl.cls
 % (Springer Nature LaTeX template, two-column option), pdflatex.
 % All numbers re-verified 2026-07-12 with verify_paper_numbers.py against
 % the per-image prediction files in lstm_model/ (see README.md).
 % FILL BEFORE SUBMISSION: author list, affiliation, email, funding.
 % =========================================================================
-\documentclass[iicol,pdflatex,sn-mathphys-num]{sn-jrnl}
+\documentclass[iicol,pdflatex,sn-mathphys-num]{sn-jnl}
 
 \usepackage{graphicx}
 \usepackage{booktabs}
@@ -217,7 +217,7 @@ is assessed with exact two-sided McNemar tests on paired word-level
 correctness and 95\% bootstrap confidence intervals (10k resamples).
 
 \subsection{Main results (Bengali)}
-\begin{table}[h]\centering\small
+\begin{table}[t]\centering\footnotesize\setlength{\tabcolsep}{3pt}
 \caption{Our Bengali test set (370 images, leakage-free). The fusion row
 combines the four Florence-2 variants by max-confidence.}
 \label{tab:main}
@@ -251,7 +251,7 @@ line: 4-model oracle ceiling.}
 \end{figure}
 
 \subsection{Cross-dataset and cross-script results}
-\begin{table}[h]\centering\small
+\begin{table}[t]\centering\footnotesize\setlength{\tabcolsep}{3pt}
 \caption{BPE vs.\ grapheme vs.\ 2-way fusion across datasets (WRR).
 Same recipe, no per-language tuning. Bold = best non-oracle.}
 \label{tab:cross}
@@ -301,7 +301,7 @@ training words per language, identical hyperparameters, no per-language
 tuning---and fused them by max-confidence. Table~\ref{tab:repl} and
 Fig.~\ref{fig:repl} report WRR on each language's full real test set.
 
-\begin{table}[h]\centering\small
+\begin{table*}[t]\centering\small
 \caption{Fixed-budget (1{,}800 train words) replication. $\Delta$ = fusion
 minus the better branch; $p$ = exact McNemar, fusion vs.\ better branch.
 Fusion wins in 12/12 languages.}
@@ -324,7 +324,7 @@ Malayalam & Malayalam  & 547      & 15.2 & 20.8 & \textbf{26.7} & $+5.9$ \\
 English   & Latin      & 12{,}568 & 49.0 & 50.8 & \textbf{54.3} & $+3.5$ \\
 \bottomrule
 \end{tabular}
-\end{table}
+\end{table*}
 
 \begin{figure*}[t]\centering
 \includegraphics[width=.8\textwidth]{fig8_replication}
@@ -361,7 +361,7 @@ images} (SynthText-style rendering) and fine-tuned on the BSTD training
 set---on both test sets, under the identical scorer and normalization used
 for all systems in this paper (Table~\ref{tab:parseq}).
 
-\begin{table}[h]\centering\small
+\begin{table*}[t]\centering\small
 \caption{Specialist PARSeq vs.\ our 4-model fusion. PARSeq uses
 ${\sim}1000\times$ more training data (8.48M synthetic $+$ 4.4k real vs.\
 our 7.65k real $+$ 5k synthetic). $p$: exact McNemar on paired correctness.}
@@ -384,7 +384,7 @@ Test set & System & WRR & Char.\ acc. & McNemar $p$ \\
 {\footnotesize $^{\dagger}$Measured with the authors' released checkpoint
 under our protocol; the BSTD paper reports 0.82 under its own protocol. The
 0.2-point effect of normalization was verified to be negligible.}
-\end{table}
+\end{table*}
 
 The comparison is honest in both directions. On its home benchmark the
 specialist dominates ($77.3$ vs.\ $62.1$, $p{<}10^{-4}$): large-scale
@@ -445,7 +445,7 @@ at $t{=}0.99$ the cascade recovers 91--98\% of the gain at a mean decode
 cost of ${\sim}1.5\times$. The doubled inference cost of fusion is thus a
 tunable deployment knob, not a fixed tax.
 
-\begin{table}[h]\centering\small
+\begin{table}[t]\centering\footnotesize\setlength{\tabcolsep}{3pt}
 \caption{Cascade at $t{=}0.95$: BPE decodes first; the grapheme branch runs
 only when BPE confidence $<t$. ``2nd'' = fraction of images decoded twice;
 ``gain'' = share of the full-fusion WRR gain retained.}

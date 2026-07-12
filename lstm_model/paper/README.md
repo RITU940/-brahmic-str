@@ -1,11 +1,12 @@
 # Paper draft — how to build and what's verified
 
-**Draft v2 (2026-07-12), IJDAR submission format.** Compile on
-[Overleaf](https://overleaf.com): open the *Springer Nature LaTeX Template*
-from the Overleaf gallery, replace its `main.tex` with `paper/main.tex`,
-and upload the `figures/` folder (keep the `../figures/` layout or drop the
-figure files next to `main.tex` and delete the `\graphicspath` line).
-Compiler: pdfLaTeX. Class: `sn-jrnl` with `[iicol]` (two-column).
+**Draft v2 (2026-07-12), IJDAR submission format.** The compiled PDF is
+`paper/main.pdf` (9 pp, two-column). The folder is self-contained: the
+Springer Nature class `sn-jnl.cls` is bundled, so to rebuild, zip `paper/`
+together with the sibling `figures/` folder, upload to
+[Overleaf](https://overleaf.com) (New Project -> Upload Project), set
+`paper/main.tex` as the main document, compiler pdfLaTeX. Verified to
+compile end-to-end on 2026-07-12.
 
 **Before submission fill in `main.tex`:** author list, affiliation block,
 funding declaration (all marked `FILL`).
