@@ -1,15 +1,15 @@
 {
   "std_ours": {
     "n": 370,
-    "WRR": 51.62,
-    "ECE": 0.4131,
-    "AUROC": 0.9082,
+    "WRR": 52.43,
+    "ECE": 0.405,
+    "AUROC": 0.909,
     "risk_coverage": {
-      "acc@50%cov": 85.95,
-      "acc@70%cov": 69.88,
-      "acc@80%cov": 62.5,
-      "acc@90%cov": 56.76,
-      "acc@100%cov": 51.62
+      "acc@50%cov": 86.49,
+      "acc@70%cov": 71.04,
+      "acc@80%cov": 63.51,
+      "acc@90%cov": 57.66,
+      "acc@100%cov": 52.43
     },
     "reliability_bins": [
       {
@@ -64,21 +64,21 @@
         "bin": "0.9-1.0",
         "n": 269,
         "avg_conf": 0.982,
-        "accuracy": 0.673
+        "accuracy": 0.684
       }
     ]
   },
   "grph_ours": {
     "n": 370,
-    "WRR": 55.41,
-    "ECE": 0.3758,
-    "AUROC": 0.8816,
+    "WRR": 57.3,
+    "ECE": 0.3569,
+    "AUROC": 0.8917,
     "risk_coverage": {
-      "acc@50%cov": 86.49,
-      "acc@70%cov": 73.75,
-      "acc@80%cov": 67.57,
-      "acc@90%cov": 60.96,
-      "acc@100%cov": 55.41
+      "acc@50%cov": 88.11,
+      "acc@70%cov": 76.45,
+      "acc@80%cov": 69.93,
+      "acc@90%cov": 63.06,
+      "acc@100%cov": 57.3
     },
     "reliability_bins": [
       {
@@ -129,21 +129,21 @@
         "bin": "0.9-1.0",
         "n": 272,
         "avg_conf": 0.982,
-        "accuracy": 0.717
+        "accuracy": 0.743
       }
     ]
   },
   "selftrain_ours": {
     "n": 370,
-    "WRR": 55.14,
-    "ECE": 0.3927,
-    "AUROC": 0.8859,
+    "WRR": 57.03,
+    "ECE": 0.3738,
+    "AUROC": 0.8836,
     "risk_coverage": {
-      "acc@50%cov": 85.41,
-      "acc@70%cov": 74.13,
-      "acc@80%cov": 67.57,
-      "acc@90%cov": 60.96,
-      "acc@100%cov": 55.14
+      "acc@50%cov": 86.49,
+      "acc@70%cov": 76.06,
+      "acc@80%cov": 69.59,
+      "acc@90%cov": 63.06,
+      "acc@100%cov": 57.03
     },
     "reliability_bins": [
       {
@@ -186,27 +186,27 @@
         "bin": "0.8-0.9",
         "n": 61,
         "avg_conf": 0.853,
-        "accuracy": 0.098
+        "accuracy": 0.115
       },
       {
         "bin": "0.9-1.0",
         "n": 279,
         "avg_conf": 0.986,
-        "accuracy": 0.706
+        "accuracy": 0.728
       }
     ]
   },
   "synthaug_ours": {
     "n": 370,
-    "WRR": 60.54,
-    "ECE": 0.3407,
-    "AUROC": 0.886,
+    "WRR": 62.16,
+    "ECE": 0.3245,
+    "AUROC": 0.8936,
     "risk_coverage": {
-      "acc@50%cov": 89.73,
-      "acc@70%cov": 79.15,
-      "acc@80%cov": 72.64,
-      "acc@90%cov": 66.97,
-      "acc@100%cov": 60.54
+      "acc@50%cov": 91.89,
+      "acc@70%cov": 80.69,
+      "acc@80%cov": 74.32,
+      "acc@90%cov": 68.47,
+      "acc@100%cov": 62.16
     },
     "reliability_bins": [
       {
@@ -243,7 +243,7 @@
         "bin": "0.7-0.8",
         "n": 23,
         "avg_conf": 0.752,
-        "accuracy": 0.043
+        "accuracy": 0.087
       },
       {
         "bin": "0.8-0.9",
@@ -255,21 +255,21 @@
         "bin": "0.9-1.0",
         "n": 286,
         "avg_conf": 0.987,
-        "accuracy": 0.748
+        "accuracy": 0.766
       }
     ]
   },
   "std_bstd": {
     "n": 1368,
-    "WRR": 57.31,
-    "ECE": 0.3821,
-    "AUROC": 0.8882,
+    "WRR": 57.38,
+    "ECE": 0.3814,
+    "AUROC": 0.8885,
     "risk_coverage": {
-      "acc@50%cov": 88.74,
-      "acc@70%cov": 75.47,
-      "acc@80%cov": 69.2,
-      "acc@90%cov": 62.88,
-      "acc@100%cov": 57.31
+      "acc@50%cov": 88.89,
+      "acc@70%cov": 75.57,
+      "acc@80%cov": 69.29,
+      "acc@90%cov": 62.96,
+      "acc@100%cov": 57.38
     },
     "reliability_bins": [
       {
@@ -326,21 +326,21 @@
         "bin": "0.9-1.0",
         "n": 1136,
         "avg_conf": 0.986,
-        "accuracy": 0.673
+        "accuracy": 0.674
       }
     ]
   },
   "grph_bstd": {
     "n": 1368,
-    "WRR": 59.58,
-    "ECE": 0.3537,
-    "AUROC": 0.8893,
+    "WRR": 59.8,
+    "ECE": 0.3515,
+    "AUROC": 0.8897,
     "risk_coverage": {
-      "acc@50%cov": 90.35,
-      "acc@70%cov": 78.5,
-      "acc@80%cov": 71.85,
-      "acc@90%cov": 65.48,
-      "acc@100%cov": 59.58
+      "acc@50%cov": 90.5,
+      "acc@70%cov": 78.81,
+      "acc@80%cov": 72.12,
+      "acc@90%cov": 65.72,
+      "acc@100%cov": 59.8
     },
     "reliability_bins": [
       {
@@ -393,21 +393,21 @@
         "bin": "0.9-1.0",
         "n": 1091,
         "avg_conf": 0.987,
-        "accuracy": 0.72
+        "accuracy": 0.723
       }
     ]
   },
   "fusion4_ours": {
     "n": 370,
-    "WRR": 62.97,
-    "ECE": 0.3501,
-    "AUROC": 0.8804,
+    "WRR": 64.59,
+    "ECE": 0.3339,
+    "AUROC": 0.8916,
     "risk_coverage": {
-      "acc@50%cov": 89.73,
-      "acc@70%cov": 83.01,
-      "acc@80%cov": 77.36,
-      "acc@90%cov": 69.67,
-      "acc@100%cov": 62.97
+      "acc@50%cov": 91.35,
+      "acc@70%cov": 84.94,
+      "acc@80%cov": 79.05,
+      "acc@90%cov": 71.47,
+      "acc@100%cov": 64.59
     },
     "reliability_bins": [
       {
@@ -454,7 +454,7 @@
         "bin": "0.9-1.0",
         "n": 343,
         "avg_conf": 0.989,
-        "accuracy": 0.679
+        "accuracy": 0.697
       }
     ]
   }

@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, BASE)
-from metrics import evaluate_corpus
+from metrics import evaluate_corpus, normalize_bengali
 from build_grapheme_vocab_lang import segment_graphemes_indic
 
 FIG = os.path.join(BASE, 'figures')
@@ -24,7 +24,9 @@ plt.rcParams.update({'font.size': 11, 'axes.spines.top': False,
 C = {'std': '#4878CF', 'grph': '#EE854A', 'self': '#6ACC65',
      'syn': '#956CB4', 'fus': '#D65F5F', 'orc': '#999999'}
 
-norm = lambda s: (s or '').strip()
+# same normalization as the WRR scorer (metrics.py), so oracle /
+# complementarity / bucket numbers share one protocol with the tables
+norm = lambda s: normalize_bengali(s or '')
 
 
 def load_conf(tag):

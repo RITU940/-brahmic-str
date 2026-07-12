@@ -11,6 +11,7 @@ Outputs: calibration_report.json + printed table.
 """
 import os, sys, json
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from metrics import normalize_bengali
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 
@@ -18,7 +19,8 @@ def load(tag):
     return json.load(open(os.path.join(BASE, f'conf_{tag}.json')))
 
 def correctness(rows):
-    return [1 if (r['gt'] or '').strip() == (r['pred'] or '').strip() else 0 for r in rows]
+    return [1 if normalize_bengali(r['gt'] or '') == normalize_bengali(r['pred'] or '') else 0
+            for r in rows]
 
 def ece(confs, corr, n_bins=10):
     n = len(confs)
@@ -92,7 +94,8 @@ def main():
         for i in range(n):
             c, p = max(((D[t][i]['conf'], D[t][i]['pred']) for t in tags4), key=lambda x: x[0])
             fused_pred.append(p); fused_conf.append(c)
-        corr = [1 if (gts[i] or '').strip() == (fused_pred[i] or '').strip() else 0 for i in range(n)]
+        corr = [1 if normalize_bengali(gts[i] or '') == normalize_bengali(fused_pred[i] or '') else 0
+                for i in range(n)]
         e, bins = ece(fused_conf, corr)
         a = auroc(fused_conf, corr)
         rc, _ = risk_coverage(fused_conf, corr)

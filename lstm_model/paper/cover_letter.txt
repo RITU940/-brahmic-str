@@ -1,0 +1,56 @@
+Dear Editors,
+
+Please consider our manuscript "Script-Aware Dual-Tokenization Fusion in a
+Vision-Language Model for Low-Resource Indic Scene-Text Recognition" for
+publication in the International Journal on Document Analysis and
+Recognition, under the open topical collection "Computer Vision Systems for
+Document Analysis and Recognition".
+
+Scene-text recognition for the Brahmic scripts of South Asia trails English
+by a wide margin, and one overlooked reason is tokenization: the BPE
+vocabularies inherited by modern vision-language models fragment Indic
+grapheme clusters into visually meaningless pieces. The manuscript makes a
+vision-language recognizer (Florence-2) script-aware by injecting
+grapheme-cluster tokens, and shows that the BPE-tokenized and
+grapheme-tokenized decoders make largely complementary errors. A
+parameter-free rule - keep the more confident decoder's output per image -
+beats both branches on every dataset we test. The central evidence is a
+uniform-protocol replication across twelve languages covering nine Brahmic
+scripts and a Latin control: fusion exceeds the better branch in all
+twelve (mean +5.0 WRR, each gain individually significant by exact McNemar
+test), and which branch wins flips with the script while the fusion gain
+does not. A calibration analysis explains the mechanism, and yields both a
+selective-prediction operating curve for human-in-the-loop digitization
+(91.4% word accuracy at 50% coverage) and a cascade that keeps 66-85% of
+the fusion gain while invoking the second decoder on a minority of images.
+
+Relative to prior work: MGP-STR fuses granularities inside a single Latin
+model with learned weights; GraDeT-HTR replaces BPE with graphemes for
+Bengali handwriting. Ours is, to our knowledge, the first grapheme-aware
+dual-tokenization confidence fusion in a vision-language model for scene
+text, evaluated across the Brahmic scripts, and it neither modifies the
+architecture nor requires joint training. We compare honestly against the
+strongest available specialist (the BSTD authors' PARSeq, pre-trained on
+8.48M synthetic words): it dominates in-domain, while on our independently
+collected test set our system is statistically indistinguishable from it
+despite using three orders of magnitude less data.
+
+We took particular care with evaluation hygiene: leakage-free by-document
+splits, one shared scorer for every number, exact McNemar tests with
+bootstrap confidence intervals, oracle ceilings, and reported negative
+results. All datasets, splits, per-image predictions with confidences, and
+the script that recomputes every number in the paper will be released upon
+publication.
+
+The manuscript is original, is not under consideration elsewhere, and all
+authors have approved the submission. [If a preprint is posted: A preprint
+has been deposited on arXiv (arXiv:XXXX.XXXXX), in line with Springer
+Nature's preprint policy.]
+
+Thank you for your consideration.
+
+Sincerely,
+Ritu Baskey (corresponding author)
+[AFFILIATION]
+[EMAIL]
+On behalf of all authors

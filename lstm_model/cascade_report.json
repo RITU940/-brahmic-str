@@ -1,0 +1,126 @@
+{
+ "ours_bengali": {
+  "n": 370,
+  "wrr_bpe": 52.43,
+  "wrr_fusion": 59.19,
+  "points": [
+   {
+    "t": 0.8,
+    "wrr": 54.59,
+    "second_pass_pct": 9.5,
+    "gain_retained_pct": 32.0
+   },
+   {
+    "t": 0.9,
+    "wrr": 56.22,
+    "second_pass_pct": 27.3,
+    "gain_retained_pct": 56.0
+   },
+   {
+    "t": 0.95,
+    "wrr": 58.11,
+    "second_pass_pct": 39.2,
+    "gain_retained_pct": 84.0
+   },
+   {
+    "t": 0.99,
+    "wrr": 58.65,
+    "second_pass_pct": 52.7,
+    "gain_retained_pct": 92.0
+   }
+  ]
+ },
+ "bstd_bengali": {
+  "n": 1368,
+  "wrr_bpe": 57.38,
+  "wrr_fusion": 62.13,
+  "points": [
+   {
+    "t": 0.8,
+    "wrr": 57.89,
+    "second_pass_pct": 5.6,
+    "gain_retained_pct": 10.8
+   },
+   {
+    "t": 0.9,
+    "wrr": 59.58,
+    "second_pass_pct": 16.9,
+    "gain_retained_pct": 46.2
+   },
+   {
+    "t": 0.95,
+    "wrr": 60.53,
+    "second_pass_pct": 26.6,
+    "gain_retained_pct": 66.2
+   },
+   {
+    "t": 0.99,
+    "wrr": 61.7,
+    "second_pass_pct": 42.0,
+    "gain_retained_pct": 90.8
+   }
+  ]
+ },
+ "bstd_assamese": {
+  "n": 1505,
+  "wrr_bpe": 31.63,
+  "wrr_fusion": 38.54,
+  "points": [
+   {
+    "t": 0.8,
+    "wrr": 33.49,
+    "second_pass_pct": 17.8,
+    "gain_retained_pct": 26.9
+   },
+   {
+    "t": 0.9,
+    "wrr": 35.75,
+    "second_pass_pct": 41.5,
+    "gain_retained_pct": 59.6
+   },
+   {
+    "t": 0.95,
+    "wrr": 37.28,
+    "second_pass_pct": 57.5,
+    "gain_retained_pct": 81.7
+   },
+   {
+    "t": 0.99,
+    "wrr": 38.41,
+    "second_pass_pct": 76.3,
+    "gain_retained_pct": 98.1
+   }
+  ]
+ },
+ "bstd_hindi": {
+  "n": 4846,
+  "wrr_bpe": 56.93,
+  "wrr_fusion": 61.68,
+  "points": [
+   {
+    "t": 0.8,
+    "wrr": 59.41,
+    "second_pass_pct": 10.4,
+    "gain_retained_pct": 52.2
+   },
+   {
+    "t": 0.9,
+    "wrr": 59.97,
+    "second_pass_pct": 19.6,
+    "gain_retained_pct": 63.9
+   },
+   {
+    "t": 0.95,
+    "wrr": 60.96,
+    "second_pass_pct": 32.3,
+    "gain_retained_pct": 84.8
+   },
+   {
+    "t": 0.99,
+    "wrr": 61.49,
+    "second_pass_pct": 50.6,
+    "gain_retained_pct": 96.1
+   }
+  ]
+ }
+}
