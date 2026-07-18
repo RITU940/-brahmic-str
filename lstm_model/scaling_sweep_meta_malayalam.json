@@ -1,0 +1,34 @@
+{
+  "tag": "malayalam",
+  "script": "Malayalam",
+  "seed": 42,
+  "pool_records": 2393,
+  "unused_records": 773,
+  "additional_word_images": 1546,
+  "new_images": 9720,
+  "render_failures": 0,
+  "blank_rate_pct": 0.0,
+  "fonts": [
+    "Rachana-Bold.ttf",
+    "Manjari-Regular.otf",
+    "Chilanka-Regular.otf",
+    "Karumbi-Regular.ttf",
+    "RaghuMalayalamSans-Regular.ttf",
+    "Gayathri-Thin.otf"
+  ],
+  "budgets": [
+    810,
+    1620,
+    6480,
+    12960,
+    3240
+  ],
+  "lexicon_unique_words_per_budget": {
+    "810": 634,
+    "1620": 1023,
+    "6480": 1821,
+    "12960": 1821,
+    "3240": 1311
+  },
+  "nested": "810⊂1620⊂3240⊂6480⊂12960"
+}

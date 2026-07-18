@@ -448,3 +448,59 @@ accepts, then work. Outcomes:
    scaling-sweep prep (render 6480/12960 synth for mal/kan/tel), VLM baseline runner.
 4. Devanagari/gurmukhi/bengali/gujarati Bbpe expected over ~the next day; at 9/9 update
    numbers.tex ratios + abstract/intro wording (grep for `TODO(bbpe)`).
+
+---
+
+## 13. SESSION 2026-07-18 (cont.) — AMENDMENT 5, SCALING SWEEP ARMED, VLM PREP, FULL AUTOMATION CHAIN
+
+**Everything below was set up while Bbpe gujarati trained (ep6/15, 3.2 batch/s). The remaining
+campaign now runs UNATTENDED end-to-end; a fresh session mainly needs to READ results and update
+the paper. State of automation:**
+
+```
+LOSO (4 Bbpe rungs left) ──done(27/27)──▶ chain: VLM baseline (if .vlm_ready) ──▶ scaling sweep (12 runs)
+   ▲ loso_guardian + @reboot                 ▲ .monitor/scale_chain.sh            ▲ scale_guardian + @reboot
+```
+
+1. **PREREGISTRATION Amendment 5 filed + pushed 47bc407 BEFORE any sweep data existed.** Reason:
+   4a's "additional words" is impossible at the top budget — BSTD full-train pools are only
+   mal 2393 / kan 2208 / tel 2215 records vs 3240/6480 word-slots needed. Fixed design: nested
+   subsets 810⊂1620⊂3240⊂6480⊂12960; 6480 = +3240 new renders (previously-UNUSED train records
+   ×2 first = "additional words", then cycled top-up); 12960 = +6480 more cycled renders (no new
+   words exist — 6480→12960 is render-quantity at fixed lexicon, interpretation rule disclosed).
+   Run order declared: 6480 → 1620 → 810 → 12960, each over (mal, kan, tel). Test text NEVER read.
+2. **`PROSPECTIVE_PREDICTION_SCALING.md` filed + pushed (same commit):** 12 per-rung points from
+   the frozen 9-pt instrument (+11.48/doubling, clip at Rung A, ±4.18/±8.36 bands) + fixed
+   falsification rules (checkable: e.g. malayalam-810 ≥ ~8.5 falsifies linearity at the low end).
+3. **Data BUILT & verified (`prepare_scaling_sweep.py`):** 29,160 new images (0 failures, fonts
+   asserted identical to original meta), 24 splits+vocab files (`splits_zs_scale{B}_{tag}.json`),
+   provenance in `scaling_sweep_meta_{tag}.json`. Spot-checked a render visually: correctly
+   shaped Malayalam (raqm env used — NEVER system python for rendering).
+4. **`run_scaling_sweep.sh`** mirrors the audited LOSO orchestrator exactly (result-JSON skip +
+   `.train_done` sentinel + wait_gpu + same train/eval/metric); emits `[RESULT SCALE {B} {tag}]`
+   → `result_zs_scale{B}_{tag}.json`. **`.monitor/scale_chain.sh`** (ARMED, flock'd) waits for
+   LOSO 27/27 + orchestrator dead, then runs the VLM baseline in the free-GPU window, then
+   launches the sweep. **`.monitor/scale_guardian.sh`** (ARMED + 2nd `@reboot` crontab line)
+   relaunches the chain if everything dies with <12 scale results; retires at 12.
+5. **VLM baseline (Amendment 4c) READY:** isolated venv `/c/ujjwalb/ritu1/.tools/vlm_venv`
+   (transformers 4.51.3 over the SAME torch 2.5.1cu121 — the ritu_scenetext env was NOT touched:
+   4.44.2 lacks Qwen2.5-VL and upgrading mid-campaign could break Florence-2 training).
+   `eval_vlm_baseline.py` = declared protocol (fixed prompt, greedy, same metric, native-script
+   gt) + a DISCLOSED lenient secondary score (substring/token credit — biased in the VLM's favor,
+   anti-strawman). `run_vlm_baseline.sh` refuses to start unless ≥20 GB GPU free. Qwen2.5-VL-7B
+   (~16 GB) downloading in background → touches `.monitor/.vlm_ready` on success; if absent the
+   chain skips VLM (rerun manually later — resumable per tag).
+6. **Khmer (4b) derisked:** KhmerST GitLab repo verified publicly clonable
+   (gitlab.com/vannkinhnom123/khmerst, 1,544 images, line-level polygons → word-crop derivation
+   is the disclosed engineering step). Not cloned yet — dedicated timeboxed session, drop-dead
+   ~Aug 8, PROSPECTIVE_PREDICTION_KHMER.md must be pushed BEFORE its training.
+7. **Watch items:** disk at 95% (106 GB free at session; sweep ckpts ~30 GB + Qwen 16 GB fit,
+   but check `df` each session; pruning old epoch_N snapshot subdirs of COMPLETED rungs is the
+   safe lever if needed — never touch best_model or .train_done). Monitor line counters are
+   log-relative (log truncated at each relaunch) — completion may surface as
+   `[WARN orchestrator STOPPED] N/27`; TRUST the result-JSON count (`ls result_zs_*|wc -l`).
+8. **Next session checklist:** (a) `ls result_zs_loso_rung*|wc -l` (27?) and
+   `ls result_zs_scale*|wc -l` (12?); (b) fill `paper_wacv/numbers.tex` TODOs (grep `TODO(`),
+   update Bbpe wording at 9/9 + scaling Fig. 3 at 12/12, score PROSPECTIVE_PREDICTION_SCALING;
+   (c) `result_vlm_qwen25_*` → paper §4.5 table; (d) figures (`make_wacv_figs.py` to write) +
+   `verify_wacv_numbers.py`; (e) Khmer session; (f) commit results at rung boundaries.

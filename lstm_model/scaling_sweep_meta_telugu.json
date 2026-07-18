@@ -1,0 +1,31 @@
+{
+  "tag": "telugu",
+  "script": "Telugu",
+  "seed": 42,
+  "pool_records": 2215,
+  "unused_records": 595,
+  "additional_word_images": 1190,
+  "new_images": 9720,
+  "render_failures": 0,
+  "blank_rate_pct": 0.0,
+  "fonts": [
+    "Pothana2000.ttf",
+    "Lohit-Telugu.ttf",
+    "vemana2000.ttf"
+  ],
+  "budgets": [
+    810,
+    1620,
+    6480,
+    12960,
+    3240
+  ],
+  "lexicon_unique_words_per_budget": {
+    "810": 612,
+    "1620": 1003,
+    "6480": 1647,
+    "12960": 1647,
+    "3240": 1276
+  },
+  "nested": "810⊂1620⊂3240⊂6480⊂12960"
+}

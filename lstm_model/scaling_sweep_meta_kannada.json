@@ -1,0 +1,31 @@
+{
+  "tag": "kannada",
+  "script": "Kannada",
+  "seed": 42,
+  "pool_records": 2208,
+  "unused_records": 588,
+  "additional_word_images": 1176,
+  "new_images": 9720,
+  "render_failures": 0,
+  "blank_rate_pct": 0.0,
+  "fonts": [
+    "Lohit-Kannada.ttf",
+    "Navilu.ttf",
+    "Gubbi.ttf"
+  ],
+  "budgets": [
+    810,
+    1620,
+    6480,
+    12960,
+    3240
+  ],
+  "lexicon_unique_words_per_budget": {
+    "810": 592,
+    "1620": 955,
+    "6480": 1586,
+    "12960": 1586,
+    "3240": 1220
+  },
+  "nested": "810⊂1620⊂3240⊂6480⊂12960"
+}
