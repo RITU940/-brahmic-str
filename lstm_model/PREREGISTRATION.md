@@ -205,3 +205,37 @@ say so rather than approximate and over-claim.
   public) is the designated instrument for all future per-script predictions; each prediction is
   filed in its own `PROSPECTIVE_PREDICTION_<script>.md`, committed and pushed before the run it
   predicts, with point, ±1·RMSE and ±2·RMSE bands, and misses reported exactly like hits.
+
+- **2026-07-18 — AMENDMENT 5 (scaling-study word-pool constraint + fixed implementation).**
+  Filed BEFORE any Amendment-4a run exists (0/12 trained; data generation for the sweep starts
+  after this amendment is committed). While implementing 4a we checked the word source and found
+  a constraint the 4a filing missed: synthetic words come from the target language's BSTD
+  **train-split text** (never test text — rendering test-split words would leak test vocabulary
+  and is forbidden, unchanged), and the full train pools are **malayalam 2,393 / kannada 2,208 /
+  telugu 2,215 records** (the base 3,240-image set already uses 1,620 of them at 2 renders
+  each). The declared budgets {6480, 12960} therefore cannot be met by "additional words" alone
+  (6480 needs 3,240 word-slots; 12960 needs 6,480). Fixed implementation, declared now:
+  1. **810 / 1620:** prefix of a single seed-42 shuffle of the existing 3,240-image list
+     (⇒ nested subsets 810 ⊂ 1620 ⊂ 3240), as filed in 4a.
+  2. **6480:** existing 3,240 + 3,240 NEW images rendered by the same pipeline/fonts/verification
+     (`prepare_zeroshot_loso.py` functions imported, not reimplemented), new-render rng =
+     fresh `random.Random(42)`. New images use **previously-unused train records first**
+     (588–773 per language, ×2 renders each = "additional words" as 4a intended), then top up by
+     cycling the full train pool. Fonts are asserted identical to the recorded per-script font
+     lists in `zeroshot_loso_meta_*.json`; blank-rate assert <20% unchanged.
+  3. **12960:** the 6480 set + 6,480 further renders cycling the full pool (no new words exist).
+     Nested: 6480 ⊂ 12960.
+  4. **Disclosed interpretation rule, fixed in advance:** the 3240→6480 step is the faithful
+     test of the natural experiment's per-doubling coefficient (it adds mostly new words, as
+     bengali/devanagari did); the 6480→12960 step raises render quantity at (near-)fixed
+     lexicon, so a flattening there cannot distinguish synth-quantity saturation from lexicon
+     exhaustion — both readings will be reported. Lexicon sizes reported per rung.
+  5. **Run order, fixed now:** budget phases 6480 → 1620 → 810 → 12960, each over
+     (malayalam, kannada, telugu). Rationale: the declared-c test first; cheap rungs next;
+     the longest rung last. Training recipe/args identical to Rung B (same orchestrator recipe,
+     grapheme injection ON, per-budget vocab built from that budget's train set by the same
+     `build_vocab`).
+  6. Per-rung point predictions from the 9-pt two-factor instrument (+11.48·log2(synth/3240)
+     extension, RMSE 4.18 bands) are filed in `PROSPECTIVE_PREDICTION_SCALING.md`, committed and
+     pushed before the first sweep run trains; where the linear-in-log2 extrapolation falls below
+     the script's Rung-A baseline it is clipped to that baseline, with the clip disclosed there.
