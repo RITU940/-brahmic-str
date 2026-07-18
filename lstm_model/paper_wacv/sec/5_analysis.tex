@@ -1,0 +1,62 @@
+\section{What Predicts Transfer?}
+\label{sec:analysis}
+
+This section reports the campaign's confirmatory analysis exactly as preregistered, including the
+falsification of our own primary hypothesis.
+
+\subsection{The preregistered primary fails}
+\label{sec:fertility-fails}
+
+Fertility --- the property that governs the supervised grapheme-vs-BPE trade-off
+(Sec.~\ref{sec:pivot}) --- was preregistered as the primary transfer predictor (H3). It is
+refuted: Spearman $\rho=\spearFert$ across the nine Rung-B results --- directionally
+\emph{opposite} to the hypothesis. The flagship case was called in advance by the declared
+competitor: our prospective prediction file ranked Malayalam best under fertility (P1) and worst
+under coverage (P2); it realized bottom-tier (\wrrBmalayalam\ WRR). We report this as a genuine
+falsification, consistent with fertility skepticism in the LLM-tokenizer
+literature~\cite{beyondfertility} and with the data-centric view of STR
+transfer~\cite{crosslingstr}.
+
+\subsection{The two-factor account}
+\label{sec:twofactor}
+
+Two result-blind quantities explain the campaign. \textbf{(i) Synthetic budget dominates.} The
+two scripts with the disclosed $2\times$ synthetic budget (Bengali, Devanagari) are the top two
+results (\wrrBbengali, \wrrBdevanagari\ WRR) --- Bengali from the second-\emph{lowest} coverage.
+\textbf{(ii) Coverage orders transfer within a budget.} Among the seven equal-budget scripts,
+pivot-space token coverage correlates at $\rho=\spearCovEqual$ (raw, all nine: \spearCovRaw). The
+joint fit
+$\mathrm{WRR} = \tfIntercept + \tfCovCoef\cdot\mathrm{cov} + \tfTwoxBonus\cdot\mathbb{1}[2\times]$
+attains RMSE \tfRMSE\ WRR across all nine scripts, with both $2\times$ residuals near zero. A
+frozen-encoder visual-similarity control --- rendered glyphs embedded by the recognizer's own
+vision encoder --- predicts nothing ($\rho=\spearVissim$), separating the structural coverage
+effect from the visual-similarity account of~\cite{crosslingstr}.
+\TODO{report bootstrap CIs for both coefficients; cross-check \spearVissim\ at 9 points.}
+
+\subsection{Prospective scorecard}
+\label{sec:scorecard}
+
+% Fig 4: the receipts figure — filed-vs-realized with bands, commit timeline
+\begin{figure}[t]
+  \centering
+  \fbox{\parbox{0.95\linewidth}{\centering\vspace{1.6cm}\TODO{Fig.~4: prediction receipts ---
+  for each filed forecast, the committed point + $\pm1\sigma/\pm2\sigma$ bands vs.\ realized WRR,
+  with commit-and-push timestamps relative to training start}\vspace{1.6cm}}}
+  \caption{Every quantitative forecast filed during the campaign, scored against the rule fixed
+  at filing time. Hits and misses are both shown.}
+  \label{fig:receipts}
+\end{figure}
+
+Three forecasts were filed before their runs; all are scored (Fig.~\ref{fig:receipts}).
+\textbf{Kannada}: exploratory point $\predKannada$ WRR, filed with two scripts observed;
+realized \realKannada. \textbf{Devanagari}: directional call (high, ${\sim}25+$) committed before
+the result existed but pushed after --- we therefore label it only weakly prospective and lean on
+it for nothing. \textbf{Gurmukhi} (final script): point \predGurmukhi\ WRR, bands
+$\pm1\sigma$ \predGurmukhiOneSig\ / $\pm2\sigma$ \predGurmukhiTwoSig, committed \emph{and pushed}
+3.7 hours before training began; realized \realGurmukhi\ --- outside the $\pm1\sigma$ band
+(under-called by $1.5\sigma$), inside $\pm2\sigma$. The declared rank bet between the two
+preregistered predictors resolved for coverage over fertility ($\rho$ $+0.32$ vs.\ $-0.71$ on the
+seven forecast scripts), with neither ranking alone significant --- which is why the two-factor
+account, not a single-predictor law, is our claim. The model's honest summary: transfer is
+forecastable to roughly $\pm\tfRMSE$ WRR ($1\sigma$) from two quantities computable
+\emph{before} training --- and the misses are part of the record.

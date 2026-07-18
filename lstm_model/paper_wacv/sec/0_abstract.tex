@@ -1,0 +1,19 @@
+\begin{abstract}
+Scene-text recognition (STR) is effectively solved for Latin script yet fails for most of the
+world's writing systems, and collecting labeled real images for every script is not a scalable
+answer. We ask a stronger question: can a recognizer read a script for which \emph{no real labeled
+image exists at all} --- and can its accuracy be \emph{predicted before training}? We construct a
+shared grapheme pivot space spanning nine Brahmic scripts and fine-tune a compact open
+vision--language model in it under a leave-one-script-out protocol: the held-out script is seen
+only as rendered synthetic images, never as a real photograph. On real scene-text benchmarks the
+held-out scripts reach \wrrBmin--\wrrBmax\% word recognition (character accuracy up to
+\chaBbengali\%), against source-only baselines of \wrrAtamil--\wrrAdevanagari\%. Replacing the
+grapheme pivot with the stock BPE tokenizer degrades transfer on every script (up to
+$3.9\times$) at comparable character accuracy, showing that the pivot, not fine-tuning alone,
+converts character evidence into word reads. % TODO(bbpe): final 9/9 range when ablation completes The campaign was run under a frozen preregistration: our primary hypothesis --- that
+tokenizer fertility predicts which scripts transfer --- was \emph{falsified} (Spearman
+$\spearFert$) and is reported as such; the surviving two-factor account (synthetic-exposure budget
+and pivot-space coverage) was itself tested prospectively, with point predictions and error bands
+committed to a version-controlled archive before each remaining run and scored as hits and misses.
+We release the pivot construction, rendering pipeline, and the zero-real-image evaluation protocol.
+\end{abstract}

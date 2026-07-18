@@ -1,0 +1,97 @@
+% ---------------------------------------------------------------------------
+% numbers.tex — single source for every campaign number quoted in the paper.
+% Values are re-derived from the result JSONs by verify_wacv_numbers.py; run it
+% before every submission build and diff against this file.
+% ---------------------------------------------------------------------------
+
+% ---- Rung A (source-only baseline) WRR, % ----
+\newcommand{\wrrAtamil}{0.0}
+\newcommand{\wrrAtelugu}{1.28}
+\newcommand{\wrrAkannada}{2.78}
+\newcommand{\wrrAmalayalam}{0.18}
+\newcommand{\wrrAoriya}{0.77}
+\newcommand{\wrrAgujarati}{3.05}
+\newcommand{\wrrAbengali}{1.39}
+\newcommand{\wrrAdevanagari}{5.46}
+\newcommand{\wrrAgurmukhi}{0.59}
+
+% ---- Rung B (+ synthetic target, zero real) WRR, % ----
+\newcommand{\wrrBtamil}{9.16}
+\newcommand{\wrrBtelugu}{19.82}
+\newcommand{\wrrBkannada}{15.42}
+\newcommand{\wrrBmalayalam}{9.69}
+\newcommand{\wrrBoriya}{25.38}
+\newcommand{\wrrBgujarati}{15.86}
+\newcommand{\wrrBbengali}{27.08}
+\newcommand{\wrrBdevanagari}{30.09}
+\newcommand{\wrrBgurmukhi}{22.16}
+\newcommand{\wrrBmin}{9.16}
+\newcommand{\wrrBmax}{30.09}
+
+% ---- Rung B character accuracy (1 - CER), % ----
+\newcommand{\chaBtamil}{39.0}
+\newcommand{\chaBtelugu}{54.43}
+\newcommand{\chaBkannada}{46.37}
+\newcommand{\chaBmalayalam}{34.57}
+\newcommand{\chaBoriya}{56.37}
+\newcommand{\chaBgujarati}{38.49}
+\newcommand{\chaBbengali}{57.77}
+\newcommand{\chaBdevanagari}{57.16}
+\newcommand{\chaBgurmukhi}{44.1}
+
+% ---- test-set sizes ----
+\newcommand{\ntamil}{513}\newcommand{\ntelugu}{545}\newcommand{\nkannada}{720}
+\newcommand{\nmalayalam}{547}\newcommand{\noriya}{1044}\newcommand{\ngujarati}{1015}
+\newcommand{\nbengali}{2873}\newcommand{\ndevanagari}{6042}\newcommand{\ngurmukhi}{2879}
+
+% ---- Rung Bbpe (stock-BPE ablation) WRR, % — 5/9 observed, 4 running ----
+\newcommand{\wrrPtamil}{2.34}
+\newcommand{\wrrPtelugu}{10.28}
+\newcommand{\wrrPkannada}{13.33}
+\newcommand{\wrrPmalayalam}{4.2}
+\newcommand{\wrrPoriya}{14.94}
+\newcommand{\chaPtamil}{30.45}
+\newcommand{\chaPtelugu}{55.1}
+\newcommand{\chaPkannada}{48.76}
+\newcommand{\chaPmalayalam}{31.16}
+\newcommand{\chaPoriya}{50.64}
+% TODO(bbpe): gujarati (training), bengali, devanagari, gurmukhi
+% NB observed pivot/BPE WRR ratios so far: 3.9, 1.9, 1.16, 2.3, 1.7 — direction 5/5 for
+% the pivot but magnitude varies; final abstract/intro wording must use the 9/9 range.
+
+% ---- pivot-space token coverage (result-blind, computed 2026-06-25), % ----
+\newcommand{\covgujarati}{97.3}\newcommand{\covdevanagari}{94.3}\newcommand{\covoriya}{92.6}
+\newcommand{\covtelugu}{92.3}\newcommand{\covkannada}{90.8}\newcommand{\covgurmukhi}{90.7}
+\newcommand{\covtamil}{88.8}\newcommand{\covbengali}{87.3}\newcommand{\covmalayalam}{79.2}
+
+% ---- campaign-level statistics (9 Rung-B points) ----
+\newcommand{\spearCovRaw}{+0.37}      % Spearman(token coverage, WRR), all nine
+\newcommand{\spearCovEqual}{+0.61}    % among the seven equal-synth (3240) scripts
+\newcommand{\spearFert}{-0.80}        % Spearman(fertility, WRR) — preregistered primary, refuted
+\newcommand{\spearVissim}{-0.14}      % frozen-encoder visual-similarity control (TODO verify at 9 pts)
+% two-factor fit at the 9-point checkpoint: WRR = a + b*tok_cov + c*is2x
+\newcommand{\tfIntercept}{-35.79}
+\newcommand{\tfCovCoef}{0.583}
+\newcommand{\tfTwoxBonus}{11.48}
+\newcommand{\tfRMSE}{4.18}
+
+% ---- prospective predictions (filed, committed and pushed before each run) ----
+\newcommand{\predKannada}{{\sim}15}\newcommand{\realKannada}{15.42}
+\newcommand{\predGurmukhi}{16.2}
+\newcommand{\predGurmukhiOneSig}{[12.2, 20.2]}
+\newcommand{\predGurmukhiTwoSig}{[8.2, 24.1]}
+\newcommand{\realGurmukhi}{22.16}
+
+% ---- Part-1 law (12 balanced-budget runs, N=11 fits) ----
+\newcommand{\lawRsqAdv}{0.678}
+\newcommand{\lawRsqFusion}{0.698}
+\newcommand{\lawLoso}{90.9}
+\newcommand{\lawPolarity}{8/9}
+
+% ---- external anchors (different axis: they use real labeled target data) ----
+\newcommand{\parseqSynth}{{\sim}47}
+\newcommand{\parseqFinetuned}{{\sim}73}
+\newcommand{\florenceRawZS}{0.0}
+% TODO(vlm): Qwen2.5-VL-7B zero-shot per-script numbers (Amendment 4c)
+% TODO(scaling): per-budget WRR for malayalam/kannada/telugu x {810,1620,3240,6480,12960} (4a)
+% TODO(khmer): prediction + realized (4b)

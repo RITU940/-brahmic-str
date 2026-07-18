@@ -1,0 +1,100 @@
+\section{Experiments}
+\label{sec:experiments}
+
+Before any absolute number: supervised recognizers fine-tuned on real labeled target images reach
+$\parseqFinetuned\%$ WRR on this benchmark~\cite{bstd}. Those systems answer a different question
+--- they presuppose the labeled data whose absence defines our setting. The comparisons that
+match our question are: the source-only baseline (Rung~A), the raw pre-trained VLM (WRR
+$\florenceRawZS$), the stock-BPE ablation, frontier VLMs prompted zero-shot on the same test
+sets, and our own forecasts.
+
+\subsection{Main result: every unseen script becomes readable}
+\label{sec:mainresult}
+
+\begin{table}[t]
+  \centering\small
+  \setlength{\tabcolsep}{4.2pt}
+  \begin{tabular}{lrrrrr}
+    \toprule
+     & & \multicolumn{2}{c}{WRR (\%)} & \multicolumn{2}{c}{Rung B} \\
+    \cmidrule(lr){3-4}\cmidrule(lr){5-6}
+    Script & $N$ & A & B & CharAcc & B$_{\mathrm{bpe}}$ \\
+    \midrule
+    Tamil      & \ntamil      & \wrrAtamil      & \textbf{\wrrBtamil}      & \chaBtamil      & \wrrPtamil \\
+    Telugu     & \ntelugu     & \wrrAtelugu     & \textbf{\wrrBtelugu}     & \chaBtelugu     & \wrrPtelugu \\
+    Kannada    & \nkannada    & \wrrAkannada    & \textbf{\wrrBkannada}    & \chaBkannada    & \wrrPkannada \\
+    Malayalam  & \nmalayalam  & \wrrAmalayalam  & \textbf{\wrrBmalayalam}  & \chaBmalayalam  & \wrrPmalayalam \\
+    Oriya      & \noriya      & \wrrAoriya      & \textbf{\wrrBoriya}      & \chaBoriya      & \wrrPoriya \\
+    Gujarati   & \ngujarati   & \wrrAgujarati   & \textbf{\wrrBgujarati}   & \chaBgujarati   & \TODO{run} \\
+    Bengali    & \nbengali    & \wrrAbengali    & \textbf{\wrrBbengali}    & \chaBbengali    & \TODO{run} \\
+    Devanagari & \ndevanagari & \wrrAdevanagari & \textbf{\wrrBdevanagari} & \chaBdevanagari & \TODO{run} \\
+    Gurmukhi   & \ngurmukhi   & \wrrAgurmukhi   & \textbf{\wrrBgurmukhi}   & \chaBgurmukhi   & \TODO{run} \\
+    \bottomrule
+  \end{tabular}
+  \caption{Zero-real-image transfer across nine held-out Brahmic scripts (real test images).
+  Rung~A: source scripts only. Rung~B: + synthetic target renderings, zero real target images.
+  B$_{\mathrm{bpe}}$: Rung~B with the grapheme-cluster vocabulary removed (stock tokenizer),
+  identical data and seed. \TODO{fill remaining B$_{\mathrm{bpe}}$ cells as rungs complete;
+  add per-script 95\% CIs (bootstrap over samples).}}
+  \label{tab:main}
+\end{table}
+
+Table~\ref{tab:main} is the campaign's core. Every one of the nine scripts moves from a
+near-floor source-only baseline (\wrrAtamil--\wrrAdevanagari\% WRR; the raw pre-trained model
+reads none of them) to \wrrBmin--\wrrBmax\% WRR with character accuracy \chaBmalayalam--%
+\chaBbengali\% --- without a single real target image. Transfer does not collapse even on the
+hardest script (Malayalam, lowest pivot coverage at \covmalayalam\%: still
+$\wrrAmalayalam\!\rightarrow\!\wrrBmalayalam$). Rung-A baselines track incidental pivot-space
+coverage (highest for Devanagari, \wrrAdevanagari\%), confirming the pivot shares structure
+before any target exposure.
+
+% Fig 2: grouped bars A/B/Bbpe per script
+\begin{figure}[t]
+  \centering
+  \fbox{\parbox{0.95\linewidth}{\centering\vspace{1.6cm}\TODO{Fig.~2: nine-script grouped bars
+  (A / B / B$_{\mathrm{bpe}}$), CharAcc markers overlaid}\vspace{1.6cm}}}
+  \caption{Transfer by script. \TODO{generate from result JSONs (make\_wacv\_figs.py).}}
+  \label{fig:bars}
+\end{figure}
+
+\subsection{The pivot is the mechanism: BPE ablation}
+\label{sec:ablation}
+
+Removing the grapheme-cluster vocabulary --- same pivot strings, same images, same seed ---
+degrades every script observed so far: Tamil \wrrBtamil\ $\rightarrow$ \wrrPtamil\ WRR
+($3.9\times$), Malayalam \wrrBmalayalam\ $\rightarrow$ \wrrPmalayalam\ ($2.3\times$), Telugu
+\wrrBtelugu\ $\rightarrow$ \wrrPtelugu\ ($1.9\times$), Oriya \wrrBoriya\ $\rightarrow$
+\wrrPoriya\ ($1.7\times$), Kannada \wrrBkannada\ $\rightarrow$ \wrrPkannada\ ($1.2\times$) ---
+the margin varies, the direction never does. The character-accuracy pattern is diagnostic: on
+Telugu the BPE model \emph{matches} the pivot model's character accuracy (\chaPtelugu\% vs.\
+\chaBtelugu\%), and on Kannada slightly exceeds it (\chaPkannada\% vs.\ \chaBkannada\%), yet
+word accuracy drops in every case. Synthetic fine-tuning alone teaches the model to see the
+characters; the cluster-level output space is what assembles them into correct whole words.
+\TODO{complete for the remaining four scripts (preregistered Amendment 3; runs in progress);
+report the paired per-script test and the final ratio range.}
+
+\subsection{Dose--response: synthetic budget}
+\label{sec:scaling}
+
+\TODO{Preregistered Amendment 4a: malayalam/kannada/telugu $\times$
+\{810, 1620, 3240, 6480, 12960\} synthetic images, identical recipe; per-script
+$\mathrm{WRR}=\alpha+\beta\log_2(\mathrm{synth})$ and joint two-factor fit; test of the frozen
+$c\approx+\tfTwoxBonus$ WRR-per-doubling prediction. Fig.~3 = dose--response curves. Runs queued
+after the ablation completes.}
+
+\subsection{Out-of-benchmark: Khmer}
+\label{sec:khmer}
+
+\TODO{Preregistered Amendment 4b: train on all nine benchmark scripts + synthetic Khmer
+(different Unicode block, coeng-based stacking, outside the benchmark and outside India);
+evaluate on KhmerST~\cite{khmerst}. PROSPECTIVE\_PREDICTION\_KHMER filed from the frozen
+two-factor model before training. Timeboxed; paper stands without it if the segmenter/crop
+engineering misses the freeze date.}
+
+\subsection{Frontier-VLM reference}
+\label{sec:vlm}
+
+\TODO{Preregistered Amendment 4c: Qwen2.5-VL-7B~\cite{qwen25vl} prompted zero-shot on the same
+nine real test sets, same normalization and metric. Declared caveat: unknown training data makes
+this an upper-bound reference for off-the-shelf capability, not a like-for-like comparison.
+Context: frontier models read fewer than thirty of 100+ scripts~\cite{glotocr}.}

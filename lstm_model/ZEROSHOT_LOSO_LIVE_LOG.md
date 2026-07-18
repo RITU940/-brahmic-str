@@ -5,7 +5,7 @@ then `RESEARCH_STATUS_AND_PATH.md` (overall research status) and `PREREGISTRATIO
 This file is updated as each rung completes.
 
 **Owner:** Ritu Baskey · **Machine:** server3 (`cvpr-gamma`, RTX A5000 24 GB) ·
-**Started:** 2026-06-25 11:27 IST · **Last updated:** 2026-07-07 evening (auto-relaunch WORKED; Kannada B=15.42 — "~15" hit; **Malayalam B=9.69 — decisive rung: P1-fertility's flagship FAILED, P2-coverage directionally right**; guardian + @reboot armed)
+**Started:** 2026-06-25 11:27 IST · **Last updated:** 2026-07-18 morning (**RUN RESUMED 2026-07-17 22:36 IST** after the 07-10 stop — GPU was free again; Bbpe now 5/9: kannada 13.33, malayalam 4.2, oriya 14.94 landed overnight, gujarati training; guardian + @reboot + monitor re-armed; WACV strategy doc + full manuscript draft started, see §12)
 
 ---
 
@@ -120,6 +120,8 @@ Updated as rungs finish. WRR/CharAcc/CER in %. (— = not done yet.)
 - `2026-07-10 04:03` — [RESULT LOSO RUNG Bbpe tamil] N=513 WRR=2.34 CharAcc=30.45 CER=69.55 — **ablation evidence #1: the grapheme pivot matters.** Stock tokenizer, identical protocol/data/seed: 2.34 vs grapheme-pivot 9.16 WRR (3.9× worse).
 - `2026-07-10 09:17` — [RESULT LOSO RUNG Bbpe telugu] N=545 WRR=10.28 CharAcc=55.1 CER=44.9 — **evidence #2:** 10.28 vs 19.82 (1.9× worse). Notably CharAcc is nearly EQUAL (55.1 vs 54.4): BPE reads characters but fails whole words — the pivot converts character-level ability into word-level reads. Bbpe kannada training (2.2 batch/s).
 - `2026-07-10 13:30` — **RUN STOPPED INTENTIONALLY (owner request — GPU ceded to a labmate).** State at stop: 20/27 rungs done (main 18 complete + Bbpe tamil/telugu); Bbpe kannada killed at ep12/15 — it re-runs from scratch on resume (the `.train_done` sentinel guard makes the partial ckpt harmless). **The entire auto-recovery stack was DISARMED with it:** guardian killed, `@reboot` crontab line removed, session monitor stopped — the run will NOT self-resume. GPU verified free (54 MiB). **To resume the remaining 7 Bbpe rungs (~35 GPU-h):** `cd lstm_model && nohup bash run_zeroshot_loso.sh > zeroshot_loso.log 2>&1 &` (resumable, skips all finished rungs), then re-arm `.monitor/loso_guardian.sh` detached + re-add the crontab line + re-arm the session monitor.
+- `2026-07-17 22:36` — **RUN RESUMED** (owner directed a research-then-work session on the WACV paper; GPU found fully free, 54 MiB). Old log backed up (`.monitor/zeroshot_loso.log.pre_relaunch_20260717.bak`); partial Bbpe-kannada ckpt set aside (`...partial_ep12_gpucede_20260710`); orchestrator relaunched (skipped the 20 finished rungs correctly); guardian re-armed detached + `@reboot` crontab line re-added + session monitor armed.
+- `2026-07-18 ~00:00–06:13` — [RESULT LOSO RUNG Bbpe kannada] N=720 WRR=13.33 CharAcc=48.76 · [RESULT LOSO RUNG Bbpe malayalam] N=547 WRR=4.2 CharAcc=31.16 · [RESULT LOSO RUNG Bbpe oriya] N=1044 WRR=14.94 CharAcc=50.64 — **Bbpe 5/9. Direction 5/5 for the grapheme pivot, but the margin VARIES: ratios now 3.9× (tamil), 2.3× (malayalam), 1.9× (telugu), 1.7× (oriya), 1.16× (kannada).** Honest note: kannada's gap is small (13.33 vs 15.42) and its Bbpe CharAcc is actually HIGHER (48.76 vs 46.37) — the "pivot converts char ability into word reads" story holds, but "2–4×" is no longer the honest range; paper wording softened to "every script, up to 3.9×" pending 9/9. Gujarati Bbpe training (started 10:02 IST).
 - `2026-07-07 19:37` — [RESULT LOSO RUNG B malayalam] N=547 WRR=9.69 CharAcc=34.57 CER=65.43 — **THE DECISIVE RESULT.** Honest scoring: **P1 (fertility, prereg primary) flagship FAILED** — P1 ranked malayalam BEST of the 7 unknowns (fertility 6.02); realized bottom-tier, far below kannada (15.42) and telugu (19.82) which P1 ranked beneath it. **P2 (coverage, declared bet) directionally RIGHT** — predicted malayalam WORST; realized bottom-tier ✓ — but its crude estimate "~0–4" undershot (9.69). The malayalam>tamil inversion (9.69 vs 9.16) is a statistical tie (Δ≈3 words of ~530; two-proportion z≈0.3). Descriptive Spearman(coverage, B-WRR) over the 4 observed points = 0.8; confirmatory scoring stays as declared (Spearman over the 7 unknowns when all exist; 2/7 observed). **Phenomenon-claim gift:** even the predicted-worst script gains 0.18→9.69 with zero real images — transfer does not collapse on low-coverage scripts. Oriya Rung A started 19:37.
 
 ---
@@ -418,3 +420,31 @@ env is fine). Verified live: flock dedupe (second launch exits), watcher's doubl
 **⚠️ When the 27-rung run fully completes: remove the crontab line (`crontab -l`, then `crontab -r`
 or edit) — the guardian retires itself, but the @reboot entry would re-arm a stale watcher-wait
 on the next boot.**
+
+---
+
+## 12. SESSION 2026-07-17/18 — WACV PIVOT: STRATEGY + RESUME + MANUSCRIPT
+
+**Owner directive:** research thoroughly whether the work clears the top-tier bar and what WACV
+accepts, then work. Outcomes:
+1. **`WACV_STRATEGY.md`** (new) — venue intel verified live (R2: enroll Aug 21 / paper Aug 28 /
+   decisions Oct 9, **NO rebuttal in R2**; three tracks, we target **Algorithms**; 8pp + unlimited
+   refs; arXiv explicitly allowed), fresh preemption scan (five new 2026 cites, **no preemption** —
+   closest is Task-Analogies HTR 2604.09713, Latin-only, leaves unseen scripts to future work),
+   honest verdict + experiment priority stack + how-we-lose list. Read it first next session.
+2. **Run resumed + recovery stack re-armed** (see rung log above). Remaining after Bbpe: Amendment-4a
+   scaling sweep (needs 6480/12960 synth rendering FIRST — CPU job, not yet started), 4c VLM baseline
+   (inference in GPU gaps), 4b Khmer (engineering timeboxed, drop-dead ~Aug 8).
+3. **`paper_wacv/` manuscript started on the official WACV 2027 author kit** (downloaded from
+   wacv.thecvf.com; compiles LOCALLY via `/c/ujjwalb/ritu1/.tools/tectonic main.tex` — no Overleaf
+   round-trip needed; 7pp review-format PDF builds clean, 0 undefined citations).
+   Structure: `numbers.tex` (every campaign number as a macro — future verify_wacv_numbers.py
+   regenerates it), `sec/0_abstract..6_conclusion`, `main.bib` (28 entries pulled from the arXiv API
+   by `make_bib.py` — titles/authors machine-fetched, not hand-typed). Full prose drafted for
+   abstract/intro/related/method/analysis/limitations/conclusion; experiments section has the real
+   9-script table + 5/9 Bbpe + red TODO slots for scaling/Khmer/VLM/figures.
+   **Anonymity rules honored:** no names, receipts cited as "version-controlled archive, hashes in
+   supp, anonymized for review". **TODO next:** figures 1/2/4 (make_wacv_figs.py), verify script,
+   scaling-sweep prep (render 6480/12960 synth for mal/kan/tel), VLM baseline runner.
+4. Devanagari/gurmukhi/bengali/gujarati Bbpe expected over ~the next day; at 9/9 update
+   numbers.tex ratios + abstract/intro wording (grep for `TODO(bbpe)`).
