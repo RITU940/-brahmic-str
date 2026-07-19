@@ -545,3 +545,118 @@ LOSO (4 Bbpe rungs left) ──done(27/27)──▶ chain: VLM baseline (if .vlm
    (make_wacv_figs.py: Fig 2 bars from result JSONs, Fig 4 receipts timeline) + bootstrap CIs
    for Table 1; (d) Khmer session (clone KhmerST, crops, PROSPECTIVE_PREDICTION_KHMER.md pushed
    BEFORE training; drop-dead ~Aug 8); (e) freeze Aug 14 → enroll Aug 21 → submit Aug 28.
+
+---
+
+## 15. HANDOFF FOR NEXT SESSION (filed 2026-07-19 ~14:00 IST) — STATE, AUTOMATION, EXACT COMMANDS
+
+**Read §14 first for what changed today. This section = everything a cold session needs.**
+
+### 15.1 What is running RIGHT NOW (nothing needs a human until 12/12)
+- **Sweep 2/12 done** (mal-6480 = 11.7, kan-6480 = 19.17), **telugu-6480 training** since ~13:20
+  (PID family 4093400, ritu_scenetext env). ~5 h/run incl. eval ⇒ **12/12 expected ~Jul 21 late**.
+  Declared order (Amendment 5): 6480 → 1620 → 810 → 12960, each over (mal, kan, tel).
+- **Qwen2.5-VL-7B resume download** running (`.monitor/resume_qwen_download.sh`, launched 13:33);
+  the two missing shards were ~2.9 GB fetched at filing. On verified completion it touches
+  `.monitor/.vlm_ready`. If it died: rerun the script — idempotent, resumes blobs.
+- **`.monitor/vlm_chain.sh` ARMED** (flock + @reboot): waits for scale 12/12 + orchestrator dead
+  + `.vlm_ready`, then runs `run_vlm_baseline.sh` (refuses <20 GB GPU free), touches
+  `result_vlm_qwen25_done`, retires. Logs → `.monitor/vlm_chain.log`, `vlm_baseline.log`.
+- **Crontab now (loso_guardian line REMOVED at 27/27):**
+  `@reboot .monitor/scale_guardian.sh` · `@reboot .monitor/vlm_chain.sh`
+
+### 15.2 Morning-check commands
+```bash
+cd /c/ujjwalb/ritu1/lstm_model
+ls result_zs_scale*_*.json | wc -l          # 12 = sweep done
+ls result_vlm_qwen25_* 2>/dev/null          # per-tag VLM results (after sweep)
+tail -5 .monitor/vlm_chain.log .monitor/scale_guardian.log scaling_sweep.log
+ls .monitor/.vlm_ready                      # exists = model verified on disk
+python3 verify_wacv_numbers.py              # must stay 69/69 (extend for new macros)
+df -h /c                                    # was 114 GB free after §14 pruning
+```
+
+### 15.3 At 12/12 — scoring is PRE-COMMITTED, follow it mechanically
+Score against `PROSPECTIVE_PREDICTION_SCALING.md` (frozen rules, commit 47bc407):
+per-rung points, clip-to-RungA rule at the low end, faithful-step rule = 3-script MEAN gain in
+[+7.3, +15.7] hits / outside ±2·RMSE misses. Current tally: mal-6480 gain +2.0 and kan-6480
++3.75 both undershoot ⇒ if telugu follows, the linear form is falsified at the top and the
+disclosed Amendment-5.4 interpretation (lexicon exhaustion vs render count) becomes §4.2's
+finding. Misses are reported exactly like hits. Then: numbers.tex scaling macros + Fig 3 +
+extend verify_wacv_numbers.py; VLM numbers → §4.5 table + macros.
+
+### 15.4 Paper state (commit 90c65fc, pushed)
+`paper_wacv/` compiles (tectonic, 7 pp, 0 unresolved refs); 9/9 Bbpe numbers locked; remaining
+red TODOs = scaling / VLM / Khmer / Fig 1–4 / bootstrap CIs — nothing else.
+`verify_wacv_numbers.py` 69/69 PASS; run before every build; extend it with every macro added.
+Figures TODO: `make_wacv_figs.py` (Fig 2 bars from result JSONs, Fig 3 dose–response, Fig 4
+receipts timeline — the unique figure). Any Indic text rendering: ritu_scenetext env ONLY (raqm).
+
+### 15.5 Deadlines (WACV_STRATEGY.md §1/§4)
+Khmer drop-dead ~Aug 8 (PROSPECTIVE_PREDICTION_KHMER.md committed+PUSHED before training) ·
+arXiv ~Jul 27–31 once VLM lands · internal freeze Aug 14 · enroll Aug 21 · **submit Aug 28** ·
+decisions Oct 9 (no rebuttal).
+
+### 15.6 Version-control policy for this repo (unchanged, restated for a cold session)
+- Commit at rung boundaries: result+conf JSONs, paper sources, live-log sections. Push same day
+  (prospectivity receipts require pushed hashes).
+- `.monitor/` is gitignored BY POLICY (recovery scripts, locks, logs); automation is documented
+  here instead — §15.7 has verbatim copies of the two scripts added today.
+- Synth image dirs + checkpoints stay ignored; splits/vocab JSONs are tracked (3cdd232 policy).
+- **Do NOT commit Paper-A (IJDAR) files from this workflow.** Currently-dirty Paper-A files to
+  leave alone: PAPER_HANDOFF.md, PROF_REPORT.md, draw_method_figure.py, figures/fig1–fig9*,
+  make_figures.py, make_fig_replication.py, paper/ (incl. main.tex open in the IDE),
+  cover_letter, train_florence2.py + training_log_florence2_*.json, verify_paper_numbers.py,
+  conf_std_law_*, ensemble_control_*, audit_supplement.py, dataset_stats.json,
+  learned_fusion_*, make_fig7_qualitative.py, paper_figures/, bengali_lab_dataset*.
+- Before every commit that touches docs/paper text: grep the diff for AI/assistant wording.
+- Never rewrite pushed history (breaks the 047c30c receipt chain).
+
+### 15.7 Disaster-recovery copies of today's untracked automation (.monitor/ is gitignored)
+
+`.monitor/vlm_chain.sh`:
+```bash
+#!/usr/bin/env bash
+cd /c/ujjwalb/ritu1/lstm_model || exit 1
+LOG=.monitor/vlm_chain.log
+exec 9>.monitor/vlm_chain.lock
+flock -n 9 || { echo "[$(date '+%F %T')] another vlm_chain holds the lock — exiting." >> "$LOG"; exit 0; }
+[ -f result_vlm_qwen25_done ] && { echo "[$(date '+%F %T')] already done — retiring." >> "$LOG"; exit 0; }
+echo "[$(date '+%F %T')] armed: waiting for sweep 12/12 + .vlm_ready" >> "$LOG"
+while true; do
+  n=$(ls result_zs_scale*_*.json 2>/dev/null | wc -l)
+  if [ "$n" -ge 12 ] && ! pgrep -f 'run_scaling_sweep[.]sh' >/dev/null 2>&1 \
+     && [ -f .monitor/.vlm_ready ]; then break; fi
+  sleep 300
+done
+echo "[$(date '+%F %T')] sweep complete (${n}/12), model ready — running VLM baseline" >> "$LOG"
+bash run_vlm_baseline.sh >> vlm_baseline.log 2>&1 \
+  && { touch result_vlm_qwen25_done; echo "[$(date '+%F %T')] VLM baseline DONE" >> "$LOG"; } \
+  || echo "[$(date '+%F %T')] VLM baseline FAILED — rerun manually (resumable per tag)" >> "$LOG"
+exit 0
+```
+
+`.monitor/resume_qwen_download.sh`:
+```bash
+#!/usr/bin/env bash
+cd /c/ujjwalb/ritu1/lstm_model || exit 1
+export HF_HOME=/c/ujjwalb/.cache/huggingface
+VPY=/c/ujjwalb/ritu1/.tools/vlm_venv/bin/python
+$VPY - <<'PYEOF'
+from huggingface_hub import snapshot_download
+p = snapshot_download("Qwen/Qwen2.5-VL-7B-Instruct")  # resumes partial blobs
+import os, json
+idx = json.load(open(os.path.join(p, "model.safetensors.index.json")))
+shards = sorted(set(idx["weight_map"].values()))
+missing = [s for s in shards if not os.path.exists(os.path.join(p, s))]
+assert not missing, f"still missing: {missing}"
+print(f"all {len(shards)} shards present at {p}")
+PYEOF
+if [ $? -eq 0 ]; then
+  touch .monitor/.vlm_ready
+  echo "[$(date '+%F %T')] qwen download verified — .vlm_ready touched"
+else
+  echo "[$(date '+%F %T')] qwen download still incomplete — rerun this script"
+  exit 1
+fi
+```
