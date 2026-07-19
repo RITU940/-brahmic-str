@@ -32,7 +32,8 @@ script's \emph{real} test images. Transfer is substantial and universal: every s
 from a \wrrAtamil--\wrrAdevanagari\% baseline to \wrrBmin--\wrrBmax\% word recognition rate
 (WRR), with character accuracy up to \chaBbengali\% --- using zero real target images. An
 ablation that swaps the grapheme pivot for the stock BPE tokenizer, all else identical, degrades
-transfer on every script observed (up to $3.9\times$); % TODO(bbpe): 9/9 range at completion
+transfer on all nine scripts ($\bpeRatioMin\times$--$\bpeRatioMax\times$; exact sign test
+$p=\bpeSignP$);
 strikingly, on Telugu the BPE model matches the pivot model's \emph{character} accuracy
 (\chaPtelugu\% vs.\ \chaBtelugu\%) while halving \emph{word} accuracy --- the pivot is what
 converts character evidence into whole-word reads.
@@ -57,10 +58,12 @@ $\pm2\sigma$ band \predGurmukhiTwoSig, filed and pushed 3.7 hours before trainin
   disjoint glyph inventory --- can be read by transferring through a designed structural pivot
   space, evaluated LOSO across nine Brahmic scripts (\wrrBmin--\wrrBmax\% WRR from
   ${\le}\,\wrrAdevanagari\%$ baselines).
-  \item \textbf{The pivot is necessary, not incidental.} A preregistered stock-BPE ablation under
-  identical data, seed, and recipe degrades WRR on every script (up to $3.9\times$), isolating
+  \item \textbf{The pivot is the mechanism.} A preregistered stock-BPE ablation under identical
+  data, seed, and recipe degrades WRR on all nine scripts
+  ($\bpeRatioMin\times$--$\bpeRatioMax\times$; exact sign test $p=\bpeSignP$), isolating
   \emph{output-space structure} --- not synthetic fine-tuning per se --- as the transfer
-  mechanism. % TODO(bbpe): final wording at 9/9
+  mechanism; exploratorily, the size of the penalty tracks the script's fertility
+  (Sec.~\ref{sec:fertility-fails}).
   \item \textbf{Predictability, tested prospectively.} A two-factor model (synthetic budget +
   pivot coverage) with committed-before-run forecasts, scored hits and misses, a falsified
   preregistered primary reported in full, and a dose--response synthetic-scaling study

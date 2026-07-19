@@ -8,9 +8,10 @@ vision--language model in it under a leave-one-script-out protocol: the held-out
 only as rendered synthetic images, never as a real photograph. On real scene-text benchmarks the
 held-out scripts reach \wrrBmin--\wrrBmax\% word recognition (character accuracy up to
 \chaBbengali\%), against source-only baselines of \wrrAtamil--\wrrAdevanagari\%. Replacing the
-grapheme pivot with the stock BPE tokenizer degrades transfer on every script (up to
-$3.9\times$) at comparable character accuracy, showing that the pivot, not fine-tuning alone,
-converts character evidence into word reads. % TODO(bbpe): final 9/9 range when ablation completes The campaign was run under a frozen preregistration: our primary hypothesis --- that
+grapheme pivot with the stock BPE tokenizer degrades word recognition on all nine scripts
+($\bpeRatioMin\times$--$\bpeRatioMax\times$; exact sign test $p=\bpeSignP$), on three of them
+despite equal-or-better character accuracy --- the pivot, not fine-tuning alone, converts
+character evidence into word reads. The campaign was run under a frozen preregistration: our primary hypothesis --- that
 tokenizer fertility predicts which scripts transfer --- was \emph{falsified} (Spearman
 $\spearFert$) and is reported as such; the surviving two-factor account (synthetic-exposure budget
 and pivot-space coverage) was itself tested prospectively, with point predictions and error bands

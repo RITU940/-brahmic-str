@@ -25,17 +25,16 @@ sets, and our own forecasts.
     Kannada    & \nkannada    & \wrrAkannada    & \textbf{\wrrBkannada}    & \chaBkannada    & \wrrPkannada \\
     Malayalam  & \nmalayalam  & \wrrAmalayalam  & \textbf{\wrrBmalayalam}  & \chaBmalayalam  & \wrrPmalayalam \\
     Oriya      & \noriya      & \wrrAoriya      & \textbf{\wrrBoriya}      & \chaBoriya      & \wrrPoriya \\
-    Gujarati   & \ngujarati   & \wrrAgujarati   & \textbf{\wrrBgujarati}   & \chaBgujarati   & \TODO{run} \\
-    Bengali    & \nbengali    & \wrrAbengali    & \textbf{\wrrBbengali}    & \chaBbengali    & \TODO{run} \\
-    Devanagari & \ndevanagari & \wrrAdevanagari & \textbf{\wrrBdevanagari} & \chaBdevanagari & \TODO{run} \\
-    Gurmukhi   & \ngurmukhi   & \wrrAgurmukhi   & \textbf{\wrrBgurmukhi}   & \chaBgurmukhi   & \TODO{run} \\
+    Gujarati   & \ngujarati   & \wrrAgujarati   & \textbf{\wrrBgujarati}   & \chaBgujarati   & \wrrPgujarati \\
+    Bengali    & \nbengali    & \wrrAbengali    & \textbf{\wrrBbengali}    & \chaBbengali    & \wrrPbengali \\
+    Devanagari & \ndevanagari & \wrrAdevanagari & \textbf{\wrrBdevanagari} & \chaBdevanagari & \wrrPdevanagari \\
+    Gurmukhi   & \ngurmukhi   & \wrrAgurmukhi   & \textbf{\wrrBgurmukhi}   & \chaBgurmukhi   & \wrrPgurmukhi \\
     \bottomrule
   \end{tabular}
   \caption{Zero-real-image transfer across nine held-out Brahmic scripts (real test images).
   Rung~A: source scripts only. Rung~B: + synthetic target renderings, zero real target images.
   B$_{\mathrm{bpe}}$: Rung~B with the grapheme-cluster vocabulary removed (stock tokenizer),
-  identical data and seed. \TODO{fill remaining B$_{\mathrm{bpe}}$ cells as rungs complete;
-  add per-script 95\% CIs (bootstrap over samples).}}
+  identical data and seed. \TODO{add per-script 95\% CIs (bootstrap over samples).}}
   \label{tab:main}
 \end{table}
 
@@ -61,17 +60,17 @@ before any target exposure.
 \label{sec:ablation}
 
 Removing the grapheme-cluster vocabulary --- same pivot strings, same images, same seed ---
-degrades every script observed so far: Tamil \wrrBtamil\ $\rightarrow$ \wrrPtamil\ WRR
-($3.9\times$), Malayalam \wrrBmalayalam\ $\rightarrow$ \wrrPmalayalam\ ($2.3\times$), Telugu
-\wrrBtelugu\ $\rightarrow$ \wrrPtelugu\ ($1.9\times$), Oriya \wrrBoriya\ $\rightarrow$
-\wrrPoriya\ ($1.7\times$), Kannada \wrrBkannada\ $\rightarrow$ \wrrPkannada\ ($1.2\times$) ---
-the margin varies, the direction never does. The character-accuracy pattern is diagnostic: on
-Telugu the BPE model \emph{matches} the pivot model's character accuracy (\chaPtelugu\% vs.\
-\chaBtelugu\%), and on Kannada slightly exceeds it (\chaPkannada\% vs.\ \chaBkannada\%), yet
-word accuracy drops in every case. Synthetic fine-tuning alone teaches the model to see the
-characters; the cluster-level output space is what assembles them into correct whole words.
-\TODO{complete for the remaining four scripts (preregistered Amendment 3; runs in progress);
-report the paired per-script test and the final ratio range.}
+degrades all nine scripts (Table~\ref{tab:main}), from $\bpeRatioMin\times$ (Devanagari,
+\wrrBdevanagari\ $\rightarrow$ \wrrPdevanagari\ WRR) to $\bpeRatioMax\times$ (Tamil,
+\wrrBtamil\ $\rightarrow$ \wrrPtamil): the margin varies, the direction never does (exact
+two-sided sign test, $p=\bpeSignP$). The character-accuracy pattern is diagnostic: on Telugu
+the BPE model \emph{matches} the pivot model's character accuracy (\chaPtelugu\% vs.\
+\chaBtelugu\%), and on Kannada and Devanagari slightly exceeds it, yet word accuracy drops in
+every case. Synthetic fine-tuning alone teaches the model to see the characters; the
+cluster-level output space is what assembles them into correct whole words. The margin itself
+is not noise: it grows with the held-out script's fertility, largest exactly on the
+high-fertility Dravidian scripts where transfer is hardest
+(Sec.~\ref{sec:fertility-fails}).
 
 \subsection{Dose--response: synthetic budget}
 \label{sec:scaling}

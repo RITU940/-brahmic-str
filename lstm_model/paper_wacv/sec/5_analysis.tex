@@ -17,6 +17,21 @@ falsification, consistent with fertility skepticism in the LLM-tokenizer
 literature~\cite{beyondfertility} and with the data-centric view of STR
 transfer~\cite{crosslingstr}.
 
+\paragraph{What fertility does predict (exploratory).} A post-hoc analysis --- not
+preregistered, and labeled accordingly --- shows that while fertility fails to predict
+\emph{who transfers}, it predicts \emph{who needs the pivot}: across the nine scripts, the
+BPE-ablation penalty ratio $\mathrm{B}/\mathrm{B}_{\mathrm{bpe}}$ correlates with fertility at
+Spearman $\rho=\spearFertPenalty$ (exact permutation $p=\spearFertPenaltyP$). The
+lowest-fertility script (Devanagari) is precisely where BPE comes closest to parity
+($\bpeRatioMin\times$), and the highest-fertility scripts (Tamil, Malayalam) are where it
+collapses ($\bpeRatioMax\times$, $2.31\times$). This mirrors, in the zero-real-image regime,
+the supervised relationship between fertility and grapheme advantage that motivated the pivot
+(Sec.~\ref{sec:method}). Two cautions: the ratio shares a denominator with absolute transfer
+(high-fertility scripts also transfer worst, so small denominators inflate ratios --- on the
+absolute difference $\mathrm{B}-\mathrm{B}_{\mathrm{bpe}}$ the correlation drops to
+$\rho=\spearFertPenaltyDiff$), and with $n=9$ this is a candidate regularity for confirmatory
+testing on new scripts, not a law.
+
 \subsection{The two-factor account}
 \label{sec:twofactor}
 

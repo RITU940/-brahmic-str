@@ -44,20 +44,33 @@
 \newcommand{\nmalayalam}{547}\newcommand{\noriya}{1044}\newcommand{\ngujarati}{1015}
 \newcommand{\nbengali}{2873}\newcommand{\ndevanagari}{6042}\newcommand{\ngurmukhi}{2879}
 
-% ---- Rung Bbpe (stock-BPE ablation) WRR, % — 5/9 observed, 4 running ----
+% ---- Rung Bbpe (stock-BPE ablation) WRR, % — 9/9 complete 2026-07-19 ----
 \newcommand{\wrrPtamil}{2.34}
 \newcommand{\wrrPtelugu}{10.28}
 \newcommand{\wrrPkannada}{13.33}
 \newcommand{\wrrPmalayalam}{4.2}
 \newcommand{\wrrPoriya}{14.94}
+\newcommand{\wrrPgujarati}{13.69}
+\newcommand{\wrrPbengali}{19.07}
+\newcommand{\wrrPdevanagari}{27.99}
+\newcommand{\wrrPgurmukhi}{17.65}
 \newcommand{\chaPtamil}{30.45}
 \newcommand{\chaPtelugu}{55.1}
 \newcommand{\chaPkannada}{48.76}
 \newcommand{\chaPmalayalam}{31.16}
 \newcommand{\chaPoriya}{50.64}
-% TODO(bbpe): gujarati (training), bengali, devanagari, gurmukhi
-% NB observed pivot/BPE WRR ratios so far: 3.9, 1.9, 1.16, 2.3, 1.7 — direction 5/5 for
-% the pivot but magnitude varies; final abstract/intro wording must use the 9/9 range.
+\newcommand{\chaPgujarati}{37.18}
+\newcommand{\chaPbengali}{52.67}
+\newcommand{\chaPdevanagari}{58.72}
+\newcommand{\chaPgurmukhi}{43.42}
+% ---- ablation summary statistics (all nine scripts) ----
+\newcommand{\bpeRatioMin}{1.08}       % Devanagari: 30.09/27.99
+\newcommand{\bpeRatioMax}{3.91}       % Tamil: 9.16/2.34
+\newcommand{\bpeSignP}{0.0039}        % exact two-sided sign test, 9/9 same direction
+% exploratory (post hoc, NOT preregistered): fertility vs BPE-penalty ratio B/Bbpe
+\newcommand{\spearFertPenalty}{+0.73}     % Spearman(fertility, B/Bbpe), n=9
+\newcommand{\spearFertPenaltyP}{0.031}    % exact two-sided permutation p
+\newcommand{\spearFertPenaltyDiff}{+0.28} % same on absolute difference B-Bbpe (confound check)
 
 % ---- pivot-space token coverage (result-blind, computed 2026-06-25), % ----
 \newcommand{\covgujarati}{97.3}\newcommand{\covdevanagari}{94.3}\newcommand{\covoriya}{92.6}

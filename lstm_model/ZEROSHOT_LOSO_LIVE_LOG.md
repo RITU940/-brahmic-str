@@ -504,3 +504,44 @@ LOSO (4 Bbpe rungs left) ──done(27/27)──▶ chain: VLM baseline (if .vlm
    update Bbpe wording at 9/9 + scaling Fig. 3 at 12/12, score PROSPECTIVE_PREDICTION_SCALING;
    (c) `result_vlm_qwen25_*` → paper §4.5 table; (d) figures (`make_wacv_figs.py` to write) +
    `verify_wacv_numbers.py`; (e) Khmer session; (f) commit results at rung boundaries.
+
+---
+
+## 14. SESSION 2026-07-19 — LOSO 27/27 DONE; SWEEP RUNNING; PAPER NUMBERS LOCKED + VERIFIED
+
+1. **LOSO COMPLETE 27/27 at 03:16 IST** (orchestrator log tail + 27 result JSONs). Bbpe 9/9:
+   direction 9/9 for the grapheme pivot (exact two-sided sign test p=0.0039); B/Bbpe ratios
+   1.08× (devanagari) … 3.91× (tamil). The "2–4×" framing is retired everywhere; wording is now
+   "all nine scripts, 1.08–3.91×".
+2. **Exploratory finding (post hoc, labeled as such in the paper):** fertility predicts the
+   BPE *penalty* even though it failed to predict transfer level — Spearman(fertility, B/Bbpe)
+   = +0.73, exact permutation p=0.031; on the absolute difference it drops to +0.28 (denominator
+   confound disclosed). Added to §5.1 of the manuscript as a candidate regularity, not a law.
+3. **Scaling sweep auto-launched by scale_chain at 03:20** (guardian relaunch path worked).
+   2/12 at this session: mal-6480 = 11.7 WRR (prereg point 21.2 — faithful-step gain +2.0 vs
+   predicted +11.5, outside ±2·RMSE for the script), kan-6480 = 19.17 (point 26.9, gain +3.75,
+   outside ±1·RMSE). Two consecutive undershoots → saturation/lexicon-exhaustion signal per
+   Amendment 5.4's disclosed interpretation rule; VERDICT WAITS for the 3-script mean (telugu
+   6480 training since ~13:20). Score PROSPECTIVE_PREDICTION_SCALING.md only at 12/12.
+4. **Manuscript updated to 9/9:** all TODO(bbpe) resolved (abstract, intro ×2, Table 1 cells,
+   §4.2 rewritten, §5.1 exploratory paragraph). Contribution 2 retitled "The pivot is the
+   mechanism" (1.08× devanagari makes "necessary" an overclaim). New macros: \wrrP*/\chaP* ×4,
+   \bpeRatioMin/Max, \bpeSignP, \spearFertPenalty{,P,Diff}. Compiles: 7 pp, 0 unresolved refs.
+5. **verify_wacv_numbers.py WRITTEN AND PASSING: 69 macros re-derived from result JSONs,
+   0 mismatches** — including independent reproduction of spearFert −0.80, the two-factor fit
+   (−35.79 / 0.583 / 11.48, RMSE 4.18), covRaw +0.37 / covEqual +0.61, and the exact
+   permutation p for the exploratory correlation. Run before every submission build.
+6. **Housekeeping:** pruned epoch_* snapshots of all 29 completed rungs (sanctioned lever;
+   best_model + .train_done kept) → disk 77→114 GB free. Stale loso_guardian @reboot line
+   removed from crontab (27/27). The two .partial_* forensic dirs left untouched.
+7. **Qwen download was INCOMPLETE (shards 1–2/5 missing) — that's why .vlm_ready was never
+   touched and the chain skipped the VLM window.** Fixed: .monitor/resume_qwen_download.sh
+   resuming in background (touches .vlm_ready after verifying all shards against the index);
+   .monitor/vlm_chain.sh ARMED (+ @reboot line): waits for sweep 12/12 + orchestrator dead +
+   .vlm_ready, then runs run_vlm_baseline.sh in the freed GPU; retires on
+   result_vlm_qwen25_done.
+8. **Next session:** (a) at 12/12 — score the scaling prereg (hits AND misses), write §4.2
+   dose–response + Fig 3; (b) confirm result_vlm_qwen25_* landed → §4.5 table; (c) figures
+   (make_wacv_figs.py: Fig 2 bars from result JSONs, Fig 4 receipts timeline) + bootstrap CIs
+   for Table 1; (d) Khmer session (clone KhmerST, crops, PROSPECTIVE_PREDICTION_KHMER.md pushed
+   BEFORE training; drop-dead ~Aug 8); (e) freeze Aug 14 → enroll Aug 21 → submit Aug 28.
