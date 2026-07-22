@@ -239,3 +239,32 @@ say so rather than approximate and over-claim.
      extension, RMSE 4.18 bands) are filed in `PROSPECTIVE_PREDICTION_SCALING.md`, committed and
      pushed before the first sweep run trains; where the linear-in-log2 extrapolation falls below
      the script's Rung-A baseline it is clipped to that baseline, with the clip disclosed there.
+
+- **2026-07-22 — AMENDMENT 6 (architecture-generality replication with a CRNN backbone).**
+  Filed when all 27 Florence-2 LOSO rungs, the 12-point scaling sweep and the Qwen2.5-VL
+  baseline are observed, but **no CRNN has been trained on any zero-shot LOSO split by anyone**.
+  The phenomenon claim currently rests on a single backbone; this amendment adds a direct
+  replication with a different architecture so "is it Florence-2-specific?" is answered with
+  evidence in either direction.
+  1. **Design, fixed now:** `CRNN_V3` (ResNet + BiLSTM-512, CTC — the law-paper codebase,
+     unmodified) is trained on the **same** `splits_zeroshot_loso_rung{A,B}_{tag}.json` files,
+     the **same** shared abugida pivot output strings, for the three equal-synth (3240,
+     `is_2x = 0`) scripts spanning the observed Rung-B range: **tamil, telugu, oriya** (6 runs).
+     Equal-synth scripts are chosen so the 2×-synth covariate cannot enter this comparison.
+  2. **Vocabulary from TRAIN records only** (`prepare_crnn_zeroshot.py`), mirroring
+     `prepare_zeroshot_loso.py:build_vocab`; the held-out script's test text is never read at
+     preparation or training time. The fraction of test words the vocabulary makes emittable is
+     recorded per rung and reported.
+  3. **Frozen budget, identical for all six runs:** img 64×256, batch 32, Adam lr 1e-3,
+     weight decay 1e-4, max 60 epochs, early-stop patience 10, best checkpoint by val.
+  4. **Metric unchanged:** `metrics.evaluate_corpus` on the **unfiltered** test split, so N and
+     the WRR/CharAcc/CER definitions match the Florence-2 rungs exactly.
+  5. **Predictions** (Rung A < 2.0; Rung B − Rung A ≥ +2.0 on ≥2 of 3; CRNN/Florence Rung-B ratio
+     in [0.15, 0.60]; ordering tamil < telugu < oriya) are filed in
+     `PROSPECTIVE_PREDICTION_ARCHITECTURE.md`, committed and pushed before the first CRNN rung
+     trains.
+  6. **Disclosed interpretation rule, fixed in advance:** CRNN_V3 trains from scratch on ~10k
+     images with no large-scale pretraining, so an all-near-zero Rung-B outcome is ambiguous
+     between architecture-dependence of the phenomenon and a capacity/pretraining floor. That
+     ambiguity will be reported as such; it will not be resolved in the paper's favour, and the
+     existing single-architecture limitation stays in the manuscript.
