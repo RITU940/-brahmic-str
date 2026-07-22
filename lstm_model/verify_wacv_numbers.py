@@ -57,6 +57,47 @@ def spearman(x, y):
     return cov / (sx * sy)
 
 
+def solve(A, y):
+    """Least-squares solve of (A^T A) b = A^T y via Gaussian elimination (pure python)."""
+    n, p = len(A), len(A[0])
+    XtX = [[sum(A[k][i] * A[k][j] for k in range(n)) for j in range(p)] for i in range(p)]
+    Xty = [sum(A[k][i] * y[k] for k in range(n)) for i in range(p)]
+    M = [XtX[i][:] + [Xty[i]] for i in range(p)]
+    for col in range(p):
+        piv = max(range(col, p), key=lambda r: abs(M[r][col]))
+        M[col], M[piv] = M[piv], M[col]
+        for r in range(p):
+            if r != col:
+                f = M[r][col] / M[col][col]
+                M[r] = [a - f * b for a, b in zip(M[r], M[col])]
+    return [M[i][p] / M[i][i] for i in range(p)]
+
+
+def linreg_r2(xs, ys):
+    """Simple OLS y~x, return R^2 (pure python)."""
+    n = len(xs)
+    mx, my = sum(xs) / n, sum(ys) / n
+    sxx = sum((x - mx) ** 2 for x in xs)
+    sxy = sum((x - mx) * (y - my) for x, y in zip(xs, ys))
+    b = sxy / sxx
+    a = my - b * mx
+    ss_tot = sum((y - my) ** 2 for y in ys)
+    ss_res = sum((y - (a + b * x)) ** 2 for x, y in zip(xs, ys))
+    return 1 - ss_res / ss_tot
+
+
+def pearson(x, y):
+    n = len(x)
+    mx, my = sum(x) / n, sum(y) / n
+    num_ = sum((a - mx) * (b - my) for a, b in zip(x, y))
+    den = math.sqrt(sum((a - mx) ** 2 for a in x) * sum((b - my) ** 2 for b in y))
+    return num_ / den
+
+
+NUMWORD = {1: "one", 2: "two", 3: "three", 4: "four", 5: "five",
+           6: "six", 7: "seven", 8: "eight", 9: "nine"}
+
+
 def ols_two_factor(cov, is2x, wrr):
     # WRR = a + b*cov + c*is2x, least squares via normal equations
     n = len(wrr)
@@ -143,6 +184,40 @@ def main():
     add("tfTwoxBonus", beta[2])
     add("tfRMSE", rmse)
 
+    # ---- Qwen2.5-VL-7B extraction re-score (Amendment 4c, disclosed secondary) ----
+    vlm = {s: json.load(open(f"result_vlm_qwen25_extracted_{s}.json")) for s in SCRIPTS}
+    vw = {s: vlm[s]["WRR_extracted"] for s in SCRIPTS}
+    vn = {s: vlm[s]["N"] for s in SCRIPTS}
+    for s in SCRIPTS:
+        add(f"vlmWrr{s.capitalize()}", vw[s])
+    assert vw["tamil"] == max(vw[s] for s in SCRIPTS if s not in ("bengali", "devanagari"))
+    add("vlmMacro", sum(vw[s] for s in SCRIPTS) / 9)
+    add("vlmMicro", sum(vw[s] * vn[s] for s in SCRIPTS) / sum(vn[s] for s in SCRIPTS))
+    scripts_won = sum(1 for s in SCRIPTS if res[("B", s)]["WRR"] > vw[s])  # word macro, checked below
+
+    # ---- synthetic-exposure scaling sweep (Amendment 5); 3240 anchor = external Rung-B ----
+    SWEEP = ["malayalam", "kannada", "telugu"]
+    BUD = [810, 1620, 6480, 12960]
+    sobs = {(s, b): json.load(open(f"result_zs_scale{b}_{s}.json"))["WRR"]
+            for s in SWEEP for b in BUD}
+    r2s = {s: linreg_r2([math.log2(b) for b in BUD], [sobs[(s, b)] for b in BUD]) for s in SWEEP}
+    add("scaleRtwoMax", max(r2s.values()), 3)
+    add("scaleRtwoMin", min(r2s.values()), 3)
+    # common (script-invariant) slope: per-script intercepts + one shared log2-budget slope
+    rows = [(i, math.log2(b), sobs[(s, b)]) for i, s in enumerate(SWEEP) for b in BUD]
+    dmat = [[1.0 if r[0] == k else 0.0 for k in range(len(SWEEP))] + [r[1]] for r in rows]
+    common_slope = solve(dmat, [r[2] for r in rows])[-1]
+    add("scaleSlope", common_slope, 3)
+    add("scaleSlopeRatio", num(tex["scalePreregC"]) / common_slope, 1)
+    faithful = [sobs[(s, 6480)] - res[("B", s)]["WRR"] for s in SWEEP]
+    add("scaleFaithfulObs", sum(faithful) / len(faithful))
+    # out-of-sample: coverage vs WRR across the 6 scripts never used in the sweep fit
+    oos = [s for s in SCRIPTS if s not in SWEEP]
+    add("covOOSr", pearson([num(tex[f"cov{s}"]) for s in oos],
+                           [res[("B", s)]["WRR"] for s in oos]))
+    # declared/statistical macros NOT re-derived here (need scipy dists; verified via
+    # analyze_scaling_law.py): scaleSlopeCI, scaleFp, covOOSp, scalePreregC, scaleFaithfulPred.
+
     fails = 0
     for name, tex_val, derived, dec in checks:
         if tex_val is None:
@@ -157,7 +232,14 @@ def main():
         print(f"{'ok  ' if ok else 'FAIL'}  {name:22s} tex={tex_val:<10s} derived={d}")
         fails += 0 if ok else 1
 
-    print(f"\n{len(checks)} macros checked, {fails} mismatch(es).")
+    # word-valued macro: scripts where our Rung-B beats the VLM (VLM leads only Devanagari)
+    won_word = NUMWORD.get(scripts_won, str(scripts_won))
+    tv = tex.get("vlmScriptsWon")
+    ok = tv == won_word
+    print(f"{'ok  ' if ok else 'FAIL'}  {'vlmScriptsWon':22s} tex={tv!s:<10s} derived={won_word} (count {scripts_won}/9)")
+    fails += 0 if ok else 1
+
+    print(f"\n{len(checks) + 1} macros checked, {fails} mismatch(es).")
     sys.exit(1 if fails else 0)
 
 

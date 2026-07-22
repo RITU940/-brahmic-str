@@ -1,0 +1,2727 @@
+[
+ {
+  "name": "D_image_1525_1",
+  "gt": "తార్నాక",
+  "pred": "The text in the image reads \"6000 5\"."
+ },
+ {
+  "name": "E_image_1068_186",
+  "gt": "సిటి",
+  "pred": "The text in the image reads \"63\"."
+ },
+ {
+  "name": "E_image_264_0",
+  "gt": "ఆగుము",
+  "pred": "The text in the image is \"అనుమతి\". This is in Telugu script, which is used in the Indian state of Andhra Pradesh and some neighboring regions. The meaning of this word can vary depending on context, but it generally means \"permission\" or \"approval\" in"
+ },
+ {
+  "name": "E_image_422_2",
+  "gt": "దేవరపల్లి",
+  "pred": "The text in the image is \"स्वर से\"."
+ },
+ {
+  "name": "F_image_99_1",
+  "gt": "ఆలేరు",
+  "pred": "The text in the image is \"అవును\". This is Telugu, a language spoken primarily in the Indian state of Andhra Pradesh and Telangana. The word \"అవును\" (avunu) means \"yes\" in English."
+ },
+ {
+  "name": "I_image_541_0",
+  "gt": "అతిధులు",
+  "pred": "The text in the image reads \"ESOBO\"."
+ },
+ {
+  "name": "I_image_541_1",
+  "gt": "ముఖ్య",
+  "pred": "The text in the image is \"2023\"."
+ },
+ {
+  "name": "I_image_541_2",
+  "gt": "శ్వర్ణభార",
+  "pred": "The text in the image is \"ప్రారంభించారు\". This is Telugu and it translates to \"Started\" or \"Begun\" in English."
+ },
+ {
+  "name": "I_image_541_3",
+  "gt": "తోమ",
+  "pred": "The text in the image appears to be in Telugu, and it reads \"ప్రభుత్వ\". This translates to \"Government\" in English."
+ },
+ {
+  "name": "L_image_13_1",
+  "gt": "కావలి",
+  "pred": "The text in the image is \"రాష్ట్ర\". This is in Telugu script, which is used to write the Telugu language. The transliteration of this text into English would be \"Rāṣṭra,\" which means \"State\" or \"Nation\" in"
+ },
+ {
+  "name": "L_image_13_3",
+  "gt": "ఉదయగిరి",
+  "pred": "The text in the image is in Telugu and reads \"కొరంగిల\"."
+ },
+ {
+  "name": "L_image_13_5",
+  "gt": "మార్కాపుర౦",
+  "pred": "The text in the image is in Telugu and reads \"మురళ్లారి\". This translates to \"Murali\" in English, which is a common name in Telugu-speaking regions of India."
+ },
+ {
+  "name": "L_image_137_1",
+  "gt": "అమరావతి,",
+  "pred": "The text in the image is \"café\"."
+ },
+ {
+  "name": "L_image_137_11",
+  "gt": "గు౦టూరు",
+  "pred": "The text in the image reads \"modular\"."
+ },
+ {
+  "name": "L_image_137_12",
+  "gt": "2016 పరమ,",
+  "pred": "The text in the image reads \"2016\"."
+ },
+ {
+  "name": "L_image_137_14",
+  "gt": "2016 నుండి",
+  "pred": "The text in the image reads \"2016 సంవత్సరము\". This is Telugu and it translates to \"2016 Year\" in English."
+ },
+ {
+  "name": "L_image_137_18",
+  "gt": "పరంపర",
+  "pred": "The text in the image is \"అందాలు\". This is Telugu, and it translates to \"hands\" in English."
+ },
+ {
+  "name": "L_image_137_19",
+  "gt": "సుస్వాగత౦",
+  "pred": "The text in the image is \"విశ్వాసం\". This is Telugu for \"faith\" or \"belief.\""
+ },
+ {
+  "name": "L_image_137_2",
+  "gt": "జాతీయ",
+  "pred": "The text in the image is \"สินค้า\" which translates to \"product\" or \"goods\" in English."
+ },
+ {
+  "name": "L_image_137_20",
+  "gt": "స్వాగతం.",
+  "pred": "The text in the image is \"స్వాగతం\" which is Telugu for \"Welcome\"."
+ },
+ {
+  "name": "L_image_137_3",
+  "gt": "వారసత్వ",
+  "pred": "The text in the image is \"มีอะไรดีๆ\" which translates to \"What's good?\" or \"What's nice?\" in English."
+ },
+ {
+  "name": "L_image_137_4",
+  "gt": "ఉత్పవ్",
+  "pred": "The text in the image is \"安迪司\"."
+ },
+ {
+  "name": "L_image_139_12",
+  "gt": "తరుణి",
+  "pred": "The text in the image is \"西门子\"."
+ },
+ {
+  "name": "L_image_139_13",
+  "gt": "13 అంతస్తుల సకుటుంబ",
+  "pred": "The text in the image is in Telugu and reads \"3 అందుబాహు న్యాయవాదం\". This translates to \"3-handed justice\" in English."
+ },
+ {
+  "name": "L_image_139_14",
+  "gt": "వాహనము",
+  "pred": "The text in the image is \"విశ్వవిద్యాలయం\". This is Telugu for \"University\"."
+ },
+ {
+  "name": "L_image_139_15",
+  "gt": "సేవి౦చి",
+  "pred": "The text in the image appears to be in Telugu, and it reads \"ప్రారంభించండి\". This translates to \"Start\" or \"Begin\" in English."
+ },
+ {
+  "name": "L_image_139_17",
+  "gt": "హుజురాబాద్",
+  "pred": "The text in the image is in Telugu, and it reads \"వార్షికోత్సవం\". This translates to \"Annual Festival\" or \"Annual Celebration\" in English."
+ },
+ {
+  "name": "L_image_139_18",
+  "gt": "పోలీస్",
+  "pred": "The text in the image is \"ప్రభుత్వం\". This is Telugu for \"Government\" in English."
+ },
+ {
+  "name": "L_image_139_19",
+  "gt": "మద్య౦",
+  "pred": "The text in the image is \"ముందో\". This appears to be in Telugu, a language spoken primarily in the Indian state of Andhra Pradesh and Telangana. The word \"ముందో\" translates to \"before\" or \"earlier"
+ },
+ {
+  "name": "L_image_139_2",
+  "gt": "కికలజనరల్",
+  "pred": "The text in the image is \"1527200\"."
+ },
+ {
+  "name": "L_image_139_20",
+  "gt": "నడుపరాదు",
+  "pred": "The text in the image is in Telugu and reads: \"అన్ని ప్రాంతాలలో సమాజం\" which translates to \"In all regions, society\" in English."
+ },
+ {
+  "name": "L_image_139_21",
+  "gt": "వస్త్ర",
+  "pred": "The text in the image reads \"5/3\"."
+ },
+ {
+  "name": "L_image_139_23",
+  "gt": "సముదాయము",
+  "pred": "The text in the image is in Telugu and reads \"ప్రభుత్వం\". This translates to \"Government\" in English."
+ },
+ {
+  "name": "L_image_139_27",
+  "gt": "ప్లాట్లు",
+  "pred": "The text in the image appears to be in Telugu, and it reads \"ప్రభుత్వం\". This translates to \"Government\" in English."
+ },
+ {
+  "name": "L_image_139_28",
+  "gt": "మెగా",
+  "pred": "The text in the image is \"Jin\"."
+ },
+ {
+  "name": "L_image_139_29",
+  "gt": "ఆఫర్",
+  "pred": "The text in the image is \"404\"."
+ },
+ {
+  "name": "L_image_139_30",
+  "gt": "బహుమతులు",
+  "pred": "The text in the image reads \"Самолет.\""
+ },
+ {
+  "name": "L_image_139_40",
+  "gt": "మెడికల్",
+  "pred": "The text in the image is \"ముందుకు\". This is in Telugu, and it translates to \"back\" or \"before\" in English."
+ },
+ {
+  "name": "L_image_139_41",
+  "gt": "సత్యమేవ",
+  "pred": "The text in the image is in Telugu and reads \"ప్రభుత్వం\". This translates to \"Government\" in English."
+ },
+ {
+  "name": "L_image_139_42",
+  "gt": "జయతే",
+  "pred": "The text in the image is \"مكتبة مصر\". This translates to \"Library of Egypt\" in English."
+ },
+ {
+  "name": "L_image_139_43",
+  "gt": "అతివేగ౦",
+  "pred": "The text in the image is \"bano\"."
+ },
+ {
+  "name": "L_image_139_45",
+  "gt": "హాలికర౦",
+  "pred": "The text in the image is \"BASICO\"."
+ },
+ {
+  "name": "L_image_139_46",
+  "gt": "వేగంకన్న",
+  "pred": "The text in the image is \"欢歌\"."
+ },
+ {
+  "name": "L_image_139_47",
+  "gt": "ప్రాణ౦మిన్న",
+  "pred": "The text in the image is \"కుమ్మరి కోడీ\". This appears to be in Telugu, a language spoken primarily in the Indian state of Andhra Pradesh and Telangana. The words translate to \"Kumari Comedy\" in English"
+ },
+ {
+  "name": "L_image_139_48",
+  "gt": "మ౦దిర",
+  "pred": "The text in the image is \"మాలిక\". This is in Telugu script, which is used to write the Telugu language. The word \"మాలిక\" translates to \"Malik\" in English."
+ },
+ {
+  "name": "L_image_139_49",
+  "gt": "చిట్ ఫండ్స్",
+  "pred": "The text in the image is \"విశ్వాసం\". This is Telugu for \"faith\" or \"belief.\""
+ },
+ {
+  "name": "L_image_139_50",
+  "gt": "వరంగల్ రోడ్",
+  "pred": "The text in the image reads \"abond 015\"."
+ },
+ {
+  "name": "L_image_139_51",
+  "gt": "హుజురాబాద్",
+  "pred": "The text in the image is \"Jeweled\"."
+ },
+ {
+  "name": "L_image_139_54",
+  "gt": "ప్రదానము",
+  "pred": "The text in the image is \"العربية\". This is the Arabic word for \"Arabic\" in English."
+ },
+ {
+  "name": "L_image_139_8",
+  "gt": "లే-జెట్",
+  "pred": "The text in the image is \"ఎ-వారు\". This appears to be Telugu script, which is used in the Indian state of Andhra Pradesh and some neighboring regions. The meaning or context of this phrase would depend on the specific words and their arrangement, but without additional context, it"
+ },
+ {
+  "name": "L_image_139_9",
+  "gt": "కుడా",
+  "pred": "The text in the image is \"कैंप्टेक\"."
+ },
+ {
+  "name": "L_image_139_10",
+  "gt": "ప్యాషన్స్",
+  "pred": "The text in the image is \"ప్రారంభించండి\". This is Telugu and it translates to \"Start\" or \"Begin\" in English."
+ },
+ {
+  "name": "L_image_157_1",
+  "gt": "అన్నవరం",
+  "pred": "The text in the image reads \"欢迎光临\" which translates to \"Welcome\" in English."
+ },
+ {
+  "name": "L_image_162_2",
+  "gt": "అరకు",
+  "pred": "The text in the image reads \"WOSO\"."
+ },
+ {
+  "name": "L_image_162_3",
+  "gt": "అరకు",
+  "pred": "The text in the image is \"909\"."
+ },
+ {
+  "name": "L_image_176_11",
+  "gt": "రోడ్",
+  "pred": "The text in the image is \"విదేశం\". This is Telugu for \"विदेशं\" in Hindi, which means \"foreign country\" or \"abroad\" in English."
+ },
+ {
+  "name": "L_image_176_4",
+  "gt": "రోడ్",
+  "pred": "The text in the image reads \"160g\"."
+ },
+ {
+  "name": "L_image_176_5",
+  "gt": "భద్రాచల౦",
+  "pred": "The text in the image is in Sinhala and reads \"ජාත්‍යන්තර\"."
+ },
+ {
+  "name": "L_image_176_8",
+  "gt": "భద్రాచల౦",
+  "pred": "The text in the image is \"పులా\"."
+ },
+ {
+  "name": "L_image_178_7",
+  "gt": "విజయవాడ",
+  "pred": "The text in the image is in Telugu and reads \"విజయవాడ\"."
+ },
+ {
+  "name": "L_image_178_8",
+  "gt": "కాకినాడ",
+  "pred": "The text in the image is in Telugu and reads \"కాకండ\"."
+ },
+ {
+  "name": "L_image_178_9",
+  "gt": "విశాఖపట్న౦",
+  "pred": "The text in the image is in Telugu and reads \"విశ్వాసం\". This translates to \"Belief\" or \"Trust\" in English."
+ },
+ {
+  "name": "L_image_194_2",
+  "gt": "భరత్నగర్",
+  "pred": "The text in the image is in Telugu and reads \"అంతకుప్రయోగిస్తున్నారు\". This translates to \"Are you using it for its intended purpose?\" in English"
+ },
+ {
+  "name": "L_image_198_0",
+  "gt": "భువనగిరి",
+  "pred": "The text in the image is in Telugu and reads \"స్వాతంత్ర్యం\". This translates to \"Independence\" in English."
+ },
+ {
+  "name": "L_image_206_0",
+  "gt": "బిక్కవోలు",
+  "pred": "The text in the image is in Telugu and reads \"ప్రారంభం\". This translates to \"Beginning\" or \"Start\" in English."
+ },
+ {
+  "name": "L_image_210_2",
+  "gt": "బొబ్బిలి",
+  "pred": "The text in the image is \"23 23 23\"."
+ },
+ {
+  "name": "L_image_219_11",
+  "gt": "ప్రయాణికుల",
+  "pred": "The text in the image is in Telugu and reads \"ప్రాథమిక\". This translates to \"Primary\" in English."
+ },
+ {
+  "name": "L_image_219_13",
+  "gt": "హుజురాబాద్",
+  "pred": "The text in the image is \"הנה זה\" which translates to \"Here it is\" in English."
+ },
+ {
+  "name": "L_image_219_14",
+  "gt": "కరీ౦నగర్",
+  "pred": "The text in the image is \"ప్రభుత్వం\". This is Telugu for \"Government\" in English."
+ },
+ {
+  "name": "L_image_219_17",
+  "gt": "ఆర్రసె",
+  "pred": "The text in the image is \"প্রতিযোগিতা\" which translates to \"Competition\" in English."
+ },
+ {
+  "name": "L_image_219_18",
+  "gt": "ప్రా౦గణ౦",
+  "pred": "The text in the image is \"Solve.\""
+ },
+ {
+  "name": "L_image_219_19",
+  "gt": "స్వాగతం-సుస్వాగతం",
+  "pred": "The text in the image is \"सुगंध-माला\" which translates to \"Sugandha-Mala\" in English. This term is often used in Hindi and other Indian languages, particularly in the context of perfumes or fragrances."
+ },
+ {
+  "name": "L_image_219_2",
+  "gt": "స౦స్థ",
+  "pred": "The text in the image is \"508\"."
+ },
+ {
+  "name": "L_image_219_20",
+  "gt": "స౦స్థ",
+  "pred": "The text in the image appears to be \"3009\"."
+ },
+ {
+  "name": "L_image_219_21",
+  "gt": "రవాణా",
+  "pred": "The text in the image is \"संदेश\"."
+ },
+ {
+  "name": "L_image_219_22",
+  "gt": "రోడ్",
+  "pred": "The text in the image is \"63\"."
+ },
+ {
+  "name": "L_image_219_23",
+  "gt": "రాష్ర",
+  "pred": "The text in the image is \"5\"."
+ },
+ {
+  "name": "L_image_219_24",
+  "gt": "హుజురాబాద్",
+  "pred": "The text in the image is \"100%\"."
+ },
+ {
+  "name": "L_image_219_3",
+  "gt": "రవాణా",
+  "pred": "The text in the image is \"তামিল\"."
+ },
+ {
+  "name": "L_image_219_4",
+  "gt": "హుజారాబద్",
+  "pred": "The text in the image is in Telugu and reads \"ప్రభుత్వ స్కూల్స్ పోటీ\". This translates to \"Government Schools Competition\" in English."
+ },
+ {
+  "name": "L_image_219_5",
+  "gt": "ప్రా౦గణము",
+  "pred": "The text in the image is in Telugu and reads \"ప్రారంభము\". This translates to \"Beginning\" or \"Start\" in English."
+ },
+ {
+  "name": "L_image_219_6",
+  "gt": "ప్రయాణ",
+  "pred": "The text in the image is \"ప్రభుత్వ సం\"."
+ },
+ {
+  "name": "L_image_219_7",
+  "gt": "రాష్ట్ర రోడ్డు",
+  "pred": "The text in the image reads \"baj b'ge\"."
+ },
+ {
+  "name": "L_image_219_8",
+  "gt": "హస్నాబాద్",
+  "pred": "The text in the image reads \"CRABO\"."
+ },
+ {
+  "name": "L_image_219_9",
+  "gt": "తెల౦గాణ",
+  "pred": "The text in the image is \"300元\". This is Chinese and it translates to \"300 yuan\" in English, which is the currency used in China."
+ },
+ {
+  "name": "L_image_219_30",
+  "gt": "ఆగుము",
+  "pred": "The text in the image is \"مطعم\". This is Arabic and it translates to \"restaurant\" in English."
+ },
+ {
+  "name": "L_image_222_1",
+  "gt": "గూడ్స్",
+  "pred": "The text in the image reads \"n=2\"."
+ },
+ {
+  "name": "L_image_222_10",
+  "gt": "బన్",
+  "pred": "The text in the image reads \"20% OFF\"."
+ },
+ {
+  "name": "L_image_222_11",
+  "gt": "స౦స్థ",
+  "pred": "The text in the image reads \"30 or 2\"."
+ },
+ {
+  "name": "L_image_222_12",
+  "gt": "రవాణ",
+  "pred": "The text in the image appears to be in Telugu, and it reads \"ప్రారంభించాలి\". This translates to \"Start\" or \"Begin\" in English."
+ },
+ {
+  "name": "L_image_222_13",
+  "gt": "రోఢ",
+  "pred": "The text in the image reads \"BAG\"."
+ },
+ {
+  "name": "L_image_222_2",
+  "gt": "మండల",
+  "pred": "The text in the image reads \"SPECIAL\"."
+ },
+ {
+  "name": "L_image_222_3",
+  "gt": "ఫిషత్",
+  "pred": "The text in the image is \"中国\". This is the Chinese word for \"China\"."
+ },
+ {
+  "name": "L_image_222_4",
+  "gt": "ప్రకాశం",
+  "pred": "The text in the image is \"judo\"."
+ },
+ {
+  "name": "L_image_222_5",
+  "gt": "అఖిల్",
+  "pred": "The text in the image reads \"Stage 1\"."
+ },
+ {
+  "name": "L_image_222_7",
+  "gt": "ఔరాక్స",
+  "pred": "The text in the image is \"100%\"."
+ },
+ {
+  "name": "L_image_222_8",
+  "gt": "జిల్లా",
+  "pred": "The text in the image reads \"dog\"."
+ },
+ {
+  "name": "L_image_222_9",
+  "gt": "త్రిపురా౦తక౦",
+  "pred": "The text in the image reads \"Soyoroso\"."
+ },
+ {
+  "name": "L_image_222_14",
+  "gt": "ఆంధ్రప్రదేశ్ రాష్ట్ర",
+  "pred": "The text in the image is in Telugu and reads \"ప్రభుత్వ సౌకర్యం\". This translates to \"Government Facility\" in English."
+ },
+ {
+  "name": "L_image_237_2",
+  "gt": "ముద్దనూరు",
+  "pred": "The text in the image is in Telugu and reads \"ముద్దారా\"."
+ },
+ {
+  "name": "L_image_265_0",
+  "gt": "మెట్టు",
+  "pred": "The text in the image is \"ముఖ్యమైన\". This is Telugu for \"main\" or \"primary\"."
+ },
+ {
+  "name": "L_image_265_10",
+  "gt": "ఆ౦ధ్రప్రదేశ్",
+  "pred": "The text in the image is \"ప్రభుత్వం\". This is Telugu, and it translates to \"Government\" in English."
+ },
+ {
+  "name": "L_image_265_11",
+  "gt": "జిల్లా విద్యాశాఖాధికారి",
+  "pred": "The text in the image is in Malayalam, and it reads \"പ്രശസ്ത നമ്പറുകൾ\". This translates to \"Famous Numbers\" in English."
+ },
+ {
+  "name": "L_image_265_12",
+  "gt": "కారా",
+  "pred": "The text in the image reads \"5000\"."
+ },
+ {
+  "name": "L_image_265_4",
+  "gt": "విద్యయే",
+  "pred": "The text in the image is in Telugu and reads \"విద్యా\". This translates to \"Education\" or \"Knowledge\" in English."
+ },
+ {
+  "name": "L_image_265_5",
+  "gt": "ప్రగతికి",
+  "pred": "The text in the image is in Telugu and reads \"అన్ని\"."
+ },
+ {
+  "name": "L_image_265_9",
+  "gt": "ప్రభుత్వమూ",
+  "pred": "The text in the image is \"العربية\". This is the Arabic word for \"Arabic\" or \"Arab\" in English."
+ },
+ {
+  "name": "L_image_292_2",
+  "gt": "ద్వారపూడి",
+  "pred": "The text in the image is in Telugu and reads \"అన్ని రకాలు\". This translates to \"All kinds\" or \"Various types\" in English."
+ },
+ {
+  "name": "L_image_294_3",
+  "gt": "కాకనాడ",
+  "pred": "The text in the image is \"కోట్స్\" which is in Telugu script. It translates to \"Cots\" in English."
+ },
+ {
+  "name": "L_image_294_5",
+  "gt": "టౌన్",
+  "pred": "The text in the image is \"ప్రారంభం\". This is Telugu for \"beginning\" or \"start\"."
+ },
+ {
+  "name": "L_image_295_2",
+  "gt": "ఎలమంచిలి",
+  "pred": "The text in the image is \"விளையாடு\". This is in Tamil, and it translates to \"play\" or \"game\" in English."
+ },
+ {
+  "name": "L_image_295_3",
+  "gt": "ఎలమంచిలి",
+  "pred": "The text in the image is in Telugu and reads \"వల్మికి\"."
+ },
+ {
+  "name": "L_image_304_0",
+  "gt": "ప్లాట్ ఫారం",
+  "pred": "The text in the image is \"ప్రభుత్వం\". This is Telugu for \"Government\" in English."
+ },
+ {
+  "name": "L_image_304_2",
+  "gt": "పాలకొల్లు",
+  "pred": "The text in the image is in Kannada and reads \"ವೀಲಕಾಯ\" which translates to \"Veelakaya\" in English."
+ },
+ {
+  "name": "L_image_322_1",
+  "gt": "సవోద౦",
+  "pred": "The text in the image reads \"Serie Nacional.\""
+ },
+ {
+  "name": "L_image_322_4",
+  "gt": "గర్వాల్",
+  "pred": "The text in the image is \"100%\"."
+ },
+ {
+  "name": "L_image_335_11",
+  "gt": "ఘట్ కేసర్",
+  "pred": "The text in the image is \"مكتبة مصر\". This translates to \"Egyptian Library\" in English."
+ },
+ {
+  "name": "L_image_335_2",
+  "gt": "ఘట్కేసర్",
+  "pred": "The text in the image is in Telugu and reads \"ప్రభుత్వ సౌకర్యాలు\". This translates to \"Government Facilities\" in English."
+ },
+ {
+  "name": "L_image_335_4",
+  "gt": "ఘట్ కేసర్",
+  "pred": "The text in the image is in Telugu and reads \"ప్రభుత్వ కేంద్రం\" which translates to \"Government Center\" in English."
+ },
+ {
+  "name": "L_image_348_1",
+  "gt": "హరే",
+  "pred": "The text in the image reads \"2015\"."
+ },
+ {
+  "name": "L_image_348_10",
+  "gt": "వైద్యాలయము",
+  "pred": "The text in the image reads \"Venus Sports\"."
+ },
+ {
+  "name": "L_image_348_11",
+  "gt": "సుల్తాన్ బజార్",
+  "pred": "The text in the image is in Telugu, and it reads \"ముందు ప్రారంభించిన\". This translates to \"Started from the beginning\" in English."
+ },
+ {
+  "name": "L_image_348_13",
+  "gt": "కోరి, హైదరాబద్",
+  "pred": "The text in the image is in Telugu and reads \"శ్రీ రాములు\". This translates to \"Shri Ramulu\" in English, which is likely a name."
+ },
+ {
+  "name": "L_image_348_14",
+  "gt": "తెలంగాణ",
+  "pred": "The text in the image is \"3000\"."
+ },
+ {
+  "name": "L_image_348_26",
+  "gt": "అన్నపూర్ణ",
+  "pred": "The text in the image is \"ప్రభుత్వం\". This is Telugu for \"Government\" in English."
+ },
+ {
+  "name": "L_image_348_8",
+  "gt": "ప్రభుత్వ",
+  "pred": "The text in the image is \"ప్రభుత్వం\". This is Telugu for \"Government\" in English."
+ },
+ {
+  "name": "L_image_348_9",
+  "gt": "ప్రసూత",
+  "pred": "The text in the image reads \"العربية\". This is the Arabic word for \"Arabic\"."
+ },
+ {
+  "name": "L_image_35_14",
+  "gt": "డుగ్గ",
+  "pred": "The text in the image reads \"2022\"."
+ },
+ {
+  "name": "L_image_362_1",
+  "gt": "గామ",
+  "pred": "The text in the image appears to be \"mcd\"."
+ },
+ {
+  "name": "L_image_362_10",
+  "gt": "ప౦చాయతి",
+  "pred": "The text in the image is in Telugu and reads \"ప్రభుత్వం\". This translates to \"Government\" in English."
+ },
+ {
+  "name": "L_image_362_11",
+  "gt": "గ్రా॥",
+  "pred": "The text in the image is \"01\"."
+ },
+ {
+  "name": "L_image_362_13",
+  "gt": "అమ్మాపుర౦",
+  "pred": "The text in the image is \"అంగుళారా\". This appears to be in Telugu script, which is used in the Indian state of Andhra Pradesh and some neighboring regions. The meaning or context of this word would depend on its usage in a specific sentence or phrase"
+ },
+ {
+  "name": "L_image_362_14",
+  "gt": "జి",
+  "pred": "The text in the image reads \"23\"."
+ },
+ {
+  "name": "L_image_362_15",
+  "gt": "మహబూబాబాద్",
+  "pred": "The text in the image is in Telugu and reads: \"ప్రభుత్వం అధికారాలు.\" This translates to \"Government Authorities\" in English."
+ },
+ {
+  "name": "L_image_362_18",
+  "gt": "ఒక అడుగు",
+  "pred": "The text in the image is \"热咖啡\". This translates to \"hot coffee\" in English."
+ },
+ {
+  "name": "L_image_362_20",
+  "gt": "స్వచ్ఛతవైపు",
+  "pred": "The text in the image reads \"250\"."
+ },
+ {
+  "name": "L_image_362_21",
+  "gt": "గ్రామ",
+  "pred": "The text in the image reads \"Crusty\"."
+ },
+ {
+  "name": "L_image_362_22",
+  "gt": "ప౦చాయతి",
+  "pred": "The text in the image reads \"JOSPEH\"."
+ },
+ {
+  "name": "L_image_362_23",
+  "gt": "డొనక",
+  "pred": "The text in the image reads \"CP06\"."
+ },
+ {
+  "name": "L_image_362_24",
+  "gt": "కార్యాలయ౦",
+  "pred": "The text in the image reads \"gazzaudio\"."
+ },
+ {
+  "name": "L_image_362_25",
+  "gt": "వర్గము",
+  "pred": "The text in the image reads \"diplo\" and \"diplomacy\"."
+ },
+ {
+  "name": "L_image_362_26",
+  "gt": "రమేష్ గారు",
+  "pred": "The text in the image reads \"सामूहिक प्रकरण\" which translates to \"Group Discussion\" in English."
+ },
+ {
+  "name": "L_image_362_28",
+  "gt": "శ్రీమత",
+  "pred": "The text in the image is \"मैं\"."
+ },
+ {
+  "name": "L_image_362_29",
+  "gt": "గూడెల్ల అనవలు",
+  "pred": "The text in the image is \"มีความสุข\" which translates to \"Happy\" in English."
+ },
+ {
+  "name": "L_image_362_3",
+  "gt": "పొడిచెత్త",
+  "pred": "The text in the image is in Telugu and reads \"ప్రారంభిస్తున్నామో\"."
+ },
+ {
+  "name": "L_image_362_30",
+  "gt": "బ౦గారమ్మగారు",
+  "pred": "The text in the image reads \"ВОРОБЬЕВ ПРО\"."
+ },
+ {
+  "name": "L_image_362_31",
+  "gt": "గంధ౦",
+  "pred": "The text in the image is \"nogo\"."
+ },
+ {
+  "name": "L_image_362_32",
+  "gt": "శ్రీమతి",
+  "pred": "The text in the image is \"मेरा\"."
+ },
+ {
+  "name": "L_image_362_33",
+  "gt": "శ్రీ మామిండ్లపల్లి",
+  "pred": "The text in the image is in Arabic and reads \"في هذه المقالة\". This translates to \"In this article\" in English."
+ },
+ {
+  "name": "L_image_362_35",
+  "gt": "గ్రామం అమ్మాపదం",
+  "pred": "The text in the image is \"العربية\". This is the Arabic word for \"Arabic\"."
+ },
+ {
+  "name": "L_image_362_6",
+  "gt": "తొర్రూరు",
+  "pred": "The text in the image is \"హీరోగ్రాఫీ\". This is in Telugu, which is a language spoken primarily in the Indian state of Andhra Pradesh and Telangana. The word \"హీరోగ్ర"
+ },
+ {
+  "name": "L_image_362_7",
+  "gt": "మం॥",
+  "pred": "The text in the image reads \"100%\"."
+ },
+ {
+  "name": "L_image_362_8",
+  "gt": "కార్యాలయం",
+  "pred": "The text in the image reads \"SODA\"."
+ },
+ {
+  "name": "L_image_362_9",
+  "gt": "గ్రామ",
+  "pred": "The image contains a stylized, abstract design with a purple and white color scheme. There is no discernible text within the image itself. If you have any specific questions or need further assistance regarding this image, feel free to ask!"
+ },
+ {
+  "name": "L_image_381_3",
+  "gt": "జ౦క్షన్",
+  "pred": "The text in the image reads \"2053\"."
+ },
+ {
+  "name": "L_image_381_4",
+  "gt": "గూడూరు",
+  "pred": "The text in the image is \"ప్రాంతం\". This is in Telugu, and it translates to \"Region\" or \"Area\" in English."
+ },
+ {
+  "name": "L_image_386_1",
+  "gt": "జంక్షన్",
+  "pred": "The text in the image reads \"205.5\"."
+ },
+ {
+  "name": "L_image_386_3",
+  "gt": "గుంతకల్లు",
+  "pred": "The text in the image is \"ప్రభుత్వం\". This is Telugu for \"Government\" in English."
+ },
+ {
+  "name": "L_image_388_2",
+  "gt": "బయటకుచారి",
+  "pred": "The text in the image is \"విశ్వాసం రాయి\". This appears to be in Telugu, a language spoken primarily in the Indian state of Andhra Pradesh and Telangana. The phrase can be translated to English as \""
+ },
+ {
+  "name": "L_image_388_6",
+  "gt": "జ౦క్షన్",
+  "pred": "The text in the image is \"అందుకే\". This is Telugu, a language spoken primarily in the Indian state of Andhra Pradesh and Telangana. The phrase can be translated to English as \"because\" or \"due to.\""
+ },
+ {
+  "name": "L_image_388_7",
+  "gt": "గుంతకల్లు",
+  "pred": "The text in the image is in Thai and reads \"กงสุรย์\" which translates to \"Kongsuray\" in English."
+ },
+ {
+  "name": "L_image_396_0",
+  "gt": "గు౦టూరు",
+  "pred": "The text in the image is \"ముందుకు\". This is in Telugu, and it translates to \"back\" or \"before\" in English."
+ },
+ {
+  "name": "L_image_396_1",
+  "gt": "బస్",
+  "pred": "The text in the image is \"একটি\"."
+ },
+ {
+  "name": "L_image_396_2",
+  "gt": "ఎ.పి.యస్.ఆర్.టి.సి",
+  "pred": "The text in the image is in Telugu and reads:\n\nవి.వీ.మాస్టర్.ఎం.టి.ఎ\n\nThis translates to \"V.V. Master M.T.E\" in English, where \""
+ },
+ {
+  "name": "L_image_396_3",
+  "gt": "యన్.టి.ఆర్.",
+  "pred": "The text in the image is \"ముగ్గు.మీ.ఎర్ర\". This appears to be in Telugu script, which is used in the Indian state of Andhra Pradesh and Telangana. The characters can be transliterated into English as"
+ },
+ {
+  "name": "L_image_396_4",
+  "gt": "స్టేషన్",
+  "pred": "The text in the image is \"స్వాతంత్ర్యం\" which translates to \"Independence\" in English."
+ },
+ {
+  "name": "L_image_40_0",
+  "gt": "కోటిలి౦గాల",
+  "pred": "The text in the image is written in Malayalam, and it reads \"കേരളത്തിലെ\". This translates to \"in Kerala\" in English."
+ },
+ {
+  "name": "L_image_40_1",
+  "gt": "13వ",
+  "pred": "The text in the image reads \"135\"."
+ },
+ {
+  "name": "L_image_40_2",
+  "gt": "క్రీ॥శ॥",
+  "pred": "The text in the image is \"శ్రీ రామ\". This is written in Telugu script and translates to \"Shri Ram\" in English, which is a common name for Lord Rama in Hinduism."
+ },
+ {
+  "name": "L_image_40_4",
+  "gt": "విఘ్ణ",
+  "pred": "The text in the image is \"విశ్వ\". This is in Telugu script, which is used to write the Telugu language."
+ },
+ {
+  "name": "L_image_40_5",
+  "gt": "శతాబ్థము",
+  "pred": "The text in the image is in Telugu and reads \"సుభావం\". This translates to \"Good Morning\" in English."
+ },
+ {
+  "name": "L_image_402_10",
+  "gt": "బ౦జారా",
+  "pred": "The text in the image reads \"100%\"."
+ },
+ {
+  "name": "L_image_402_13",
+  "gt": "ఎఫ్ సి",
+  "pred": "The text in the image is \"విశ్వ\"."
+ },
+ {
+  "name": "L_image_402_14",
+  "gt": "హెచ్",
+  "pred": "The text in the image is in Telugu and reads \"ప్రారంభించండి\". In English, this translates to \"Start\" or \"Begin\"."
+ },
+ {
+  "name": "L_image_402_2",
+  "gt": "డి",
+  "pred": "The text in the image is \"c9\"."
+ },
+ {
+  "name": "L_image_402_3",
+  "gt": "బ్యాంక్",
+  "pred": "The text in the image is \"స్వాగతం\" which is Telugu for \"Welcome\"."
+ },
+ {
+  "name": "L_image_404_4",
+  "gt": "బ్యారక్స్",
+  "pred": "The text in the image is \"संस्कृतम्\" which translates to \"Sanskritam\" in English. This is the word for Sanskrit, an ancient Indo-Aryan language that is one of the oldest languages still in use today."
+ },
+ {
+  "name": "L_image_404_5",
+  "gt": "కెవలరీ",
+  "pred": "The text in the image is \"కోట్లి\"."
+ },
+ {
+  "name": "L_image_405_10",
+  "gt": "బ్యారక్స్",
+  "pred": "The text in the image is \"మురళీ\". This is in Telugu script, which is used to write the Telugu language, spoken primarily in the Indian state of Andhra Pradesh and Telangana. The name \"మురళీ\" (Murali"
+ },
+ {
+  "name": "L_image_405_9",
+  "gt": "కెవలరీ",
+  "pred": "The text in the image is \"కుమారి\". This is Telugu for \"daughter\" in English."
+ },
+ {
+  "name": "L_image_412_15",
+  "gt": "నగర్",
+  "pred": "The text in the image reads \"NOV 2019\"."
+ },
+ {
+  "name": "L_image_412_16",
+  "gt": "హయత్",
+  "pred": "The text in the image is \"ప్రారంభించండి\". This is Telugu and it translates to \"Start\" or \"Begin\" in English."
+ },
+ {
+  "name": "L_image_412_17",
+  "gt": "మహాల",
+  "pred": "The text in the image is \"ప్రభుత్వం\". This is Telugu for \"Government\" in English."
+ },
+ {
+  "name": "L_image_412_18",
+  "gt": "పవర్",
+  "pred": "The text in the image is \"335\"."
+ },
+ {
+  "name": "L_image_412_2",
+  "gt": "ఇ౦దన్రిస్",
+  "pred": "The text in the image is \"అందుకు\". This is Telugu, and it translates to \"because\" or \"for that reason\" in English."
+ },
+ {
+  "name": "L_image_439_1",
+  "gt": "బ్యారక్స్",
+  "pred": "The text in the image is in Telugu and reads \"ప్రభుత్వం\". This translates to \"Government\" in English."
+ },
+ {
+  "name": "L_image_439_4",
+  "gt": "కెవలరీ",
+  "pred": "The text in the image is \"స్వాతంత్ర్య\". This is Telugu for \"Independence\" in English."
+ },
+ {
+  "name": "L_image_440_4",
+  "gt": "కెవలరీ",
+  "pred": "The text in the image is \"రాష్ట్ర\". This is Telugu for \"State\" or \"Nation\"."
+ },
+ {
+  "name": "L_image_440_5",
+  "gt": "బ్యారక్స్",
+  "pred": "The text in the image is \"ప్రభుత్వ\". This is Telugu script, and it translates to \"Government\" in English."
+ },
+ {
+  "name": "L_image_441_2",
+  "gt": "బ్యారక్స్",
+  "pred": "The text in the image is \"వార్తలు\". This is Telugu for \"News\" or \"Articles\"."
+ },
+ {
+  "name": "L_image_441_3",
+  "gt": "కెవలరీ",
+  "pred": "The text in the image is \"రాష్ట్ర\". This is Telugu for \"State\" or \"Nation\"."
+ },
+ {
+  "name": "L_image_446_2",
+  "gt": "జనగా౦",
+  "pred": "The text in the image is in Telugu and reads \"అంగులి\"."
+ },
+ {
+  "name": "L_image_447_0",
+  "gt": "జిల్లా",
+  "pred": "The text in the image is \"ప్రారంభం\". This is Telugu for \"Beginning\" or \"Start\"."
+ },
+ {
+  "name": "L_image_447_1",
+  "gt": "కార్యాలయము",
+  "pred": "The text in the image is in Telugu and reads \"కోర్టు లేదుండము\"."
+ },
+ {
+  "name": "L_image_447_2",
+  "gt": "వారి",
+  "pred": "The text in the image is \"வாழ\" which is in Tamil script. It translates to \"live\" or \"life\" in English."
+ },
+ {
+  "name": "L_image_447_3",
+  "gt": "తెల౦గాణ",
+  "pred": "The text in the image is \"boonone\"."
+ },
+ {
+  "name": "L_image_447_4",
+  "gt": "ప్రభుత్వ౦",
+  "pred": "The text in the image is \"శ్రీమతి\". This appears to be in Telugu script, which is used in the Indian state of Andhra Pradesh and some other regions. The name \"శ్రీమతి\" translates to \""
+ },
+ {
+  "name": "L_image_447_5",
+  "gt": "కలెక్టర్",
+  "pred": "The text in the image is \"కార్య\"."
+ },
+ {
+  "name": "L_image_447_6",
+  "gt": "మరియు",
+  "pred": "The text in the image is \"మాధవ\". This is written in Telugu script, which is used to write the Telugu language. The name \"మాధవ\" (Mādhava) can be transliterated into English as \"Madhava.\""
+ },
+ {
+  "name": "L_image_447_7",
+  "gt": "జిల్లా",
+  "pred": "The text in the image is \"సెప్టెంబర్\" which is the month of September in Telugu script."
+ },
+ {
+  "name": "L_image_447_8",
+  "gt": "మెజిస్ట్రేట్",
+  "pred": "The text in the image is in Telugu and reads \"మనసులో\". This translates to \"in the mind\" or \"in the heart\" in English."
+ },
+ {
+  "name": "L_image_447_9",
+  "gt": "జనగామ",
+  "pred": "The text in the image is \"ప్రారంభిస్తున్నారు\". This is Telugu and it translates to \"Starting\" or \"Beginning\" in English."
+ },
+ {
+  "name": "L_image_450_18",
+  "gt": "కి. మీ.",
+  "pred": "The text in the image is \"కుమ\"."
+ },
+ {
+  "name": "L_image_450_19",
+  "gt": "జొన్నగిరి.",
+  "pred": "The text in the image is \"స్వాతంత్ర్యం\". This is Telugu for \"Independence\" in English."
+ },
+ {
+  "name": "L_image_450_2",
+  "gt": "పురాతత్వ",
+  "pred": "The text in the image is in Telugu and reads \"ప్రాంతం\"."
+ },
+ {
+  "name": "L_image_450_20",
+  "gt": "శిలాశాసనములు",
+  "pred": "The text in the image is in Telugu and reads \"శ్రీవారసన్నమాల\"."
+ },
+ {
+  "name": "L_image_450_21",
+  "gt": "అశోకుని",
+  "pred": "The text in the image is \"అస్తకం\". This is Telugu for \"Ashtakam,\" which refers to a type of devotional song or hymn in Hinduism, often sung during religious ceremonies and rituals."
+ },
+ {
+  "name": "L_image_450_23",
+  "gt": "మండలము",
+  "pred": "The text in the image is \"మొదటివారం\". This is Telugu for \"First Sunday\" or \"First Day of the Week.\""
+ },
+ {
+  "name": "L_image_450_24",
+  "gt": "అమరావతి",
+  "pred": "The text in the image is in Telugu and reads \"అవుడాడు\"."
+ },
+ {
+  "name": "L_image_450_25",
+  "gt": "సర్వేక్షణ",
+  "pred": "The text in the image is \"స్వాతంత్ర్యది\". This is Telugu for \"Independence Day\" in English."
+ },
+ {
+  "name": "L_image_450_3",
+  "gt": "భారతీయ",
+  "pred": "The text in the image is \"అంతర్జాతీయ\". This is Telugu for \"International\" in English."
+ },
+ {
+  "name": "L_image_450_5",
+  "gt": "భారత",
+  "pred": "The text in the image is \"స్వతంత్రం\". This is Telugu for \"Independence\" in English."
+ },
+ {
+  "name": "L_image_450_6",
+  "gt": "ప్రభుత్వము",
+  "pred": "The text in the image is \"ప్రభుత్వం\". This is Telugu for \"Government\" in English."
+ },
+ {
+  "name": "L_image_452_11",
+  "gt": "భవన్",
+  "pred": "The text in the image is \"విశ్వాసం\". This is Telugu for \"faith\" or \"belief\"."
+ },
+ {
+  "name": "L_image_452_2",
+  "gt": "జ్యోతి",
+  "pred": "The text in the image is \"ప్రభుత్వ\". This is Telugu for \"Government\" or \"Public\"."
+ },
+ {
+  "name": "L_image_452_3",
+  "gt": "భవన్",
+  "pred": "The text in the image is \"విశ్వాసం\". This is Telugu for \"faith\" or \"belief\"."
+ },
+ {
+  "name": "L_image_453_3",
+  "gt": "బ్యారక్స్",
+  "pred": "The text in the image is in Telugu and reads \"విశ్రాం\"."
+ },
+ {
+  "name": "L_image_453_4",
+  "gt": "కెవలరీ",
+  "pred": "The text in the image is \"కుమారి\". This is in Telugu script, which is used to write the Telugu language, spoken primarily in the Indian state of Andhra Pradesh and Telangana. The word \"కుమారి\""
+ },
+ {
+  "name": "L_image_454_3",
+  "gt": "కడియ౦",
+  "pred": "The text in the image is written in Telugu script and reads \"సిరి రెడ్డి\"."
+ },
+ {
+  "name": "L_image_456_1",
+  "gt": "ముక్తేశ్వర స్వామి",
+  "pred": "The text in the image is \"العربية\". This is the Arabic word for \"Arabic\"."
+ },
+ {
+  "name": "L_image_456_2",
+  "gt": "శ్రీ కాళేశ్వర",
+  "pred": "The text in the image is \"स्वास्थ्य\" which translates to \"Health\" in English."
+ },
+ {
+  "name": "L_image_456_4",
+  "gt": "దేవస్థానము",
+  "pred": "The text in the image reads \"100\"."
+ },
+ {
+  "name": "L_image_462_2",
+  "gt": "క౦టకాపల్లి",
+  "pred": "The text in the image is in Telugu and reads \"కోసం\". This translates to \"for\" or \"in order to\" in English."
+ },
+ {
+  "name": "L_image_477_3",
+  "gt": "కేసవరం",
+  "pred": "The text in the image is \"కేసిరా\". This appears to be in Telugu script, which is used in the Indian state of Andhra Pradesh and some neighboring regions. The meaning or context of this word would depend on its usage in a specific sentence or phrase. If you"
+ },
+ {
+  "name": "L_image_479_1",
+  "gt": "ఖమ్మం",
+  "pred": "The text in the image is \"అమ్మ\". This appears to be in Telugu script, which is used in the Indian state of Andhra Pradesh and Telangana, as well as in some parts of Tamil Nadu. The word \"అమ్మ\" ("
+ },
+ {
+  "name": "L_image_486_1",
+  "gt": "కోవెలకుంట్ల",
+  "pred": "The text in the image is in Telugu and reads \"రాష్ట్రంకు పోయి\". This translates to \"Going to the state\" or \"Moving to the state\" in English."
+ },
+ {
+  "name": "L_image_487_1",
+  "gt": "రు",
+  "pred": "The text in the image is \"60\"."
+ },
+ {
+  "name": "L_image_487_2",
+  "gt": "కొలకలూ",
+  "pred": "The text in the image appears to be in the Tamil script. The characters from left to right are \"சோழ\" (Sōḻa), which is a reference to the Chola dynasty, an ancient Tamil kingdom that ruled over parts of southern India and Sri Lanka."
+ },
+ {
+  "name": "L_image_488_0",
+  "gt": "ఆదిలాబాద్",
+  "pred": "The text in the image is \"ప్రాంతం\". This is Telugu for \"area\" or \"region\"."
+ },
+ {
+  "name": "L_image_488_1",
+  "gt": "ఆశయ",
+  "pred": "The text in the image appears to be \"e66m\"."
+ },
+ {
+  "name": "L_image_488_12",
+  "gt": "ఆరాధ్యదైవ౦",
+  "pred": "The text in the image reads \"2014, 2015\"."
+ },
+ {
+  "name": "L_image_488_13",
+  "gt": "ఆదివాసీల",
+  "pred": "The text in the image appears to be \"মানবতা\" which is Bengali for \"Humanity\"."
+ },
+ {
+  "name": "L_image_488_14",
+  "gt": "కు౦ర౦",
+  "pred": "The text in the image reads \"5000\"."
+ },
+ {
+  "name": "L_image_488_2",
+  "gt": "భీ౦",
+  "pred": "The text in the image is \"بى\"."
+ },
+ {
+  "name": "L_image_488_4",
+  "gt": "విగ్రహావిష్కరణ",
+  "pred": "The text in the image appears to be in Telugu, and it reads \"అర్ధాంగికత\". This translates to \"Ardhaamgikata\" in English, which means \"Semiconductor\" or \"Semiconducting\" in the context"
+ },
+ {
+  "name": "L_image_488_5",
+  "gt": "సాధన",
+  "pred": "The text in the image reads \"0 10000\"."
+ },
+ {
+  "name": "L_image_488_6",
+  "gt": "స౦ఘ౦",
+  "pred": "The text in the image reads \"180190.\""
+ },
+ {
+  "name": "L_image_488_7",
+  "gt": "భీ౦",
+  "pred": "The text in the image reads \"100\"."
+ },
+ {
+  "name": "L_image_488_8",
+  "gt": "కు౦ర౦",
+  "pred": "The text in the image reads \"Bodo\"."
+ },
+ {
+  "name": "L_image_488_9",
+  "gt": "మరణ౦",
+  "pred": "The text in the image reads \"100\"."
+ },
+ {
+  "name": "L_image_489_0",
+  "gt": "సీడ్స్",
+  "pred": "The text in the image reads \"E F\"."
+ },
+ {
+  "name": "L_image_489_4",
+  "gt": "లీడర్",
+  "pred": "The text in the image is \"9999\"."
+ },
+ {
+  "name": "L_image_489_6",
+  "gt": "కొ౦పల్లి",
+  "pred": "The text in the image is \"రాష్ట్ర\". This is Telugu for \"State\" or \"Nation\"."
+ },
+ {
+  "name": "L_image_489_7",
+  "gt": "బయోజీన్",
+  "pred": "The text in the image reads \"năm 195\"."
+ },
+ {
+  "name": "L_image_497_1",
+  "gt": "కొత్తవలస",
+  "pred": "The text in the image is in Telugu and reads \"ముఖ్యమంత్రి\". This translates to \"Chief Minister\" in English."
+ },
+ {
+  "name": "L_image_502_5",
+  "gt": "కర్నూలు",
+  "pred": "The text in the image reads \"కోపెన్\"."
+ },
+ {
+  "name": "L_image_502_6",
+  "gt": "సిటి",
+  "pred": "The text in the image is \"ప్రారంభించండి\" which is in Telugu and translates to \"Start\" or \"Begin\" in English."
+ },
+ {
+  "name": "L_image_505_6",
+  "gt": "లక్డి-క-ఫుల్",
+  "pred": "The text in the image reads \"الحروف\" which translates to \"the letters\" in English."
+ },
+ {
+  "name": "L_image_505_7",
+  "gt": "లక్డి-క-ఫుల్",
+  "pred": "The text in the image reads:\n\n\\[\n\\frac{1}{2} - \\pi = 0.5 - \\pi\n\\]"
+ },
+ {
+  "name": "L_image_510_0",
+  "gt": "లాలాగూడగేడ",
+  "pred": "The text in the image is \"అంగారకుడు\". This is Telugu for \"Rocket\" in English."
+ },
+ {
+  "name": "L_image_517_0",
+  "gt": "నాగబాబ",
+  "pred": "The text in the image appears to be in Telugu script. It reads \"నా కోసం\". In English, this translates to \"For my sake\" or \"For me.\""
+ },
+ {
+  "name": "L_image_517_10",
+  "gt": "ఓ౦",
+  "pred": "The text in the image is \"50\"."
+ },
+ {
+  "name": "L_image_517_12",
+  "gt": "శివాయ",
+  "pred": "The text in the image is \"శ్రీవాస్తవం\"."
+ },
+ {
+  "name": "L_image_517_13",
+  "gt": "శవాయ",
+  "pred": "The text in the image is \"2. இந்தியா\" which translates to \"2. India\" in English."
+ },
+ {
+  "name": "L_image_517_21",
+  "gt": "బాబ",
+  "pred": "The text in the image is \"ప్రభుత్వ\". This is Telugu script, and it translates to \"Government\" in English."
+ },
+ {
+  "name": "L_image_517_22",
+  "gt": "శివ",
+  "pred": "The text in the image is \"శ్రీ\". This appears to be in Telugu script, which is used in the Indian state of Andhra Pradesh and some neighboring regions. The characters can be transliterated into English as \"Shri\" or \"Shree,\" which is often used as a"
+ },
+ {
+  "name": "L_image_517_27",
+  "gt": "రాౙ౦దర్",
+  "pred": "The text in the image reads \"un dolor\"."
+ },
+ {
+  "name": "L_image_517_29",
+  "gt": "యాదమ్మ",
+  "pred": "The text in the image is \"ప్రభుత్వం\". This is Telugu for \"Government\" in English."
+ },
+ {
+  "name": "L_image_517_30",
+  "gt": "శ్రీమత",
+  "pred": "The text in the image reads \"कृपया\"."
+ },
+ {
+  "name": "L_image_517_7",
+  "gt": "విగ్రహావిష్కరణ",
+  "pred": "The text in the image is \"தமிழ்\". This is the Tamil script for the word \"Tamil\", which refers to the Tamil language and its speakers."
+ },
+ {
+  "name": "L_image_517_8",
+  "gt": "న",
+  "pred": "The text in the image is \"as\"."
+ },
+ {
+  "name": "L_image_517_9",
+  "gt": "ఓంసమ",
+  "pred": "The text in the image is in Telugu and reads \"ముఖ్యమంత్రి\". This translates to \"Chief Minister\" in English."
+ },
+ {
+  "name": "L_image_53_2",
+  "gt": "పిఠాపుర౦",
+  "pred": "The text in the image is in Telugu and reads \"ప్రారంభిస్తున్నామో\"."
+ },
+ {
+  "name": "L_image_532_2",
+  "gt": "మహబూబ్నగర్",
+  "pred": "The text in the image is in Telugu and reads \"ముఖ్యమంత్రిగారు\". This translates to \"Chief Minister\" in English."
+ },
+ {
+  "name": "L_image_533_0",
+  "gt": "స్టేషన్",
+  "pred": "The text in the image appears to be \"50% off\"."
+ },
+ {
+  "name": "L_image_533_10",
+  "gt": "ವಿವಾ",
+  "pred": "The text in the image is \"वी-चा\"."
+ },
+ {
+  "name": "L_image_533_2",
+  "gt": "గా౦దీ",
+  "pred": "The text in the image appears to be \"good\" written in a stylized, possibly cursive or handwritten font."
+ },
+ {
+  "name": "L_image_533_8",
+  "gt": "మహాత్మ",
+  "pred": "The text in the image is in Telugu and reads \"ముస్తాఫి\"."
+ },
+ {
+  "name": "L_image_550_0",
+  "gt": "గద్జాలజిల్లా",
+  "pred": "The text in the image is \"కొత్త సంవత్సరం.\" This is Telugu for \"New Year\" in English."
+ },
+ {
+  "name": "L_image_550_1",
+  "gt": "జోగుకా౦బ",
+  "pred": "The text in the image reads \"ePbepo3\"."
+ },
+ {
+  "name": "L_image_550_2",
+  "gt": "ఇటిక్యాల",
+  "pred": "The text in the image is \"প্রিয়া\" which is Bengali for \"Priya\"."
+ },
+ {
+  "name": "L_image_550_3",
+  "gt": "తహశీల్",
+  "pred": "The text in the image is \"కుమార్తె\". This is Telugu for \"daughter\"."
+ },
+ {
+  "name": "L_image_550_4",
+  "gt": "తెల౦గాణ",
+  "pred": "The text in the image is \"హైదరాబాద్\". This is the name of Hyderabad, which is a city in India."
+ },
+ {
+  "name": "L_image_550_5",
+  "gt": "ప్రభుత్వము",
+  "pred": "The text in the image reads \"لبنان سكّة\"."
+ },
+ {
+  "name": "L_image_550_6",
+  "gt": "తహశీల్దారు",
+  "pred": "The text in the image is \"ప్రభుత్వం\". This is Telugu for \"Government\" in English."
+ },
+ {
+  "name": "L_image_550_7",
+  "gt": "వారి కార్యాలయము",
+  "pred": "The text in the image is in Telugu and reads \"ముందు కార్యక్రమాలను\". This translates to \"Previous programs\" in English."
+ },
+ {
+  "name": "L_image_557_3",
+  "gt": "మర్రిపాలెం",
+  "pred": "The text in the image is \"ముహమ్మద్\"."
+ },
+ {
+  "name": "L_image_557_4",
+  "gt": "సాహా",
+  "pred": "The text in the image appears to be a stylized representation of the word \"dog\" or \"dogs,\" but it is not a standard written language and cannot be accurately translated without more context. It looks like a form of abstract art or a logo, possibly representing a dog. If you have any specific questions about this"
+ },
+ {
+  "name": "L_image_561_0",
+  "gt": "మేడపాడ",
+  "pred": "The text in the image is \"ముద్దెడు\". This appears to be in Telugu, a language spoken primarily in the Indian state of Andhra Pradesh and Telangana. The word \"ముద్దెడు\" ("
+ },
+ {
+  "name": "L_image_574_1",
+  "gt": "గుదివాడ",
+  "pred": "The text in the image is in Telugu and reads \"ప్రారంభించండి\". This translates to \"Start\" or \"Begin\" in English."
+ },
+ {
+  "name": "L_image_574_2",
+  "gt": "పురపాలకసంఘ",
+  "pred": "The text in the image is in Telugu and reads \"ప్రభుత్వాల్యం నివేదిక\". This translates to \"Government Notice\" in English."
+ },
+ {
+  "name": "L_image_574_3",
+  "gt": "కార్యాలయము",
+  "pred": "The text in the image is \"విశ్వాసం\". This is Telugu for \"faith\" or \"belief.\""
+ },
+ {
+  "name": "L_image_574_4",
+  "gt": "పట్టణ",
+  "pred": "The text in the image reads \"Sign\"."
+ },
+ {
+  "name": "L_image_593_0",
+  "gt": "లక్ష్మీ కూల్ డ్రింక్స్",
+  "pred": "The text in the image is in Arabic and reads: \"العربية\" which translates to \"Arabic\" in English."
+ },
+ {
+  "name": "L_image_593_1",
+  "gt": "నల్లజర్ల",
+  "pred": "The text in the image is \"党的领导\" which translates to \"leadership of the Party\" in English."
+ },
+ {
+  "name": "L_image_593_10",
+  "gt": "గౌ॥ శ్రీ మ",
+  "pred": "The text in the image is in Telugu and reads \"స్వాతంత్ర్య దినోత్సవం\". This translates to \"Independence Day\" in English."
+ },
+ {
+  "name": "L_image_593_2",
+  "gt": "రాజమహే౦",
+  "pred": "The text in the image appears to be in Telugu, and it reads \"రామకృష్ణమహావిద్యాలయం\" which translates to \"Ramakrishna Mission\" in English"
+ },
+ {
+  "name": "L_image_593_3",
+  "gt": "బ స్ న్జే",
+  "pred": "The text in the image is \"అయ్యా\". This is in Telugu script, which is used to write the Telugu language."
+ },
+ {
+  "name": "L_image_593_4",
+  "gt": "టి",
+  "pred": "The text in the image is \"3\"."
+ },
+ {
+  "name": "L_image_593_5",
+  "gt": "ఎస్",
+  "pred": "The text in the image is \"a5\"."
+ },
+ {
+  "name": "L_image_593_6",
+  "gt": "ఎపి",
+  "pred": "The text in the image reads \"αJ g αJ\"."
+ },
+ {
+  "name": "L_image_593_7",
+  "gt": "ఆర్",
+  "pred": "The text in the image reads \"es6\"."
+ },
+ {
+  "name": "L_image_593_8",
+  "gt": "పి",
+  "pred": "The text in the image is \"gJ\"."
+ },
+ {
+  "name": "L_image_593_9",
+  "gt": "షన్",
+  "pred": "The text in the image is \"气系\"."
+ },
+ {
+  "name": "L_image_593_14",
+  "gt": "మూత్రశాల",
+  "pred": "The text in the image is \"توفيق حمدي\"."
+ },
+ {
+  "name": "L_image_595_5",
+  "gt": "క్యాబిన్-బి",
+  "pred": "The text in the image is \"ముందుకు\". This is in Telugu, and it translates to \"before\" or \"earlier\" in English."
+ },
+ {
+  "name": "L_image_595_6",
+  "gt": "న౦బూరు",
+  "pred": "The text in the image is \"ప్రభుత్వం\". This is Telugu for \"Government\" or \"Authority\"."
+ },
+ {
+  "name": "L_image_595_7",
+  "gt": "స౦బూరు",
+  "pred": "The text in the image reads \"FOOD\"."
+ },
+ {
+  "name": "L_image_596_1",
+  "gt": "కొండారెడ్డిపల్లి",
+  "pred": "The text in the image is in Telugu and reads \"సాధనశీలం\". This translates to \"Sadhana Shilam\" in English, which can be interpreted as \"Disciplined\" or \"Disciplined Mind\" depending on the context."
+ },
+ {
+  "name": "L_image_598_2",
+  "gt": "అనకాపల్లి",
+  "pred": "图中的文字是“量”。"
+ },
+ {
+  "name": "L_image_598_3",
+  "gt": "అనకాపల్లి",
+  "pred": "The text in the image appears to be in Telugu, and it reads \"అన్ని చాలా\". This translates to \"All of them\" or \"All\" in English."
+ },
+ {
+  "name": "L_image_609_4",
+  "gt": "కాజీపేట్ జం.",
+  "pred": "The text in the image is in Telugu and reads \"స్వాతంత్ర్య దినోత్సవం\". This translates to \"Independence Day\" in English."
+ },
+ {
+  "name": "L_image_609_16",
+  "gt": "అ",
+  "pred": "The text in the image is not clear and appears to be a distorted or unclear symbol rather than readable text. If you have any specific question or need further assistance, please let me know!"
+ },
+ {
+  "name": "L_image_618_4",
+  "gt": "రోడ్డు",
+  "pred": "The text in the image is \"ప్రభుత్వ\". This is in Telugu script, which is used in the Indian state of Andhra Pradesh and some other regions. The word \"ప్రభుత్వ\" (pronounced"
+ },
+ {
+  "name": "L_image_618_5",
+  "gt": "నర్సీపట్నం",
+  "pred": "The text in the image is \"సర్వాంగం\". This is in Telugu, a language spoken primarily in the Indian state of Andhra Pradesh and Telangana. The word \"సర్వాంగం\" (Sar"
+ },
+ {
+  "name": "L_image_629_2",
+  "gt": "నెల్లూరు",
+  "pred": "The text in the image is \"सावधान\" which is Marathi for \"Caution\" or \"Be careful\"."
+ },
+ {
+  "name": "L_image_645_5",
+  "gt": "బొలార౦",
+  "pred": "The text in the image is \"ప్రారంభం\" which translates to \"Beginning\" or \"Start\" in English."
+ },
+ {
+  "name": "L_image_651_3",
+  "gt": "ఒ౦గోలు",
+  "pred": "The text in the image reads \"conex\"."
+ },
+ {
+  "name": "L_image_663_1",
+  "gt": "శ్రీ అన్నమనేని అప్పారావు గారు.",
+  "pred": "The text in the image is in Telugu and reads: \"ప్రారంభించడానికి ముందు ఎంపిక చేయ"
+ },
+ {
+  "name": "L_image_663_10",
+  "gt": "జిల్లా, వరంగల్",
+  "pred": "The text in the image is in Telugu and reads \"కోసం ముందుగా\". This translates to \"Before\" or \"In advance\" in English."
+ },
+ {
+  "name": "L_image_663_11",
+  "gt": "మ౦డల౦",
+  "pred": "The text in the image is \"మాట్లాడు.\" This is Telugu, and it translates to \"Maatlaadu\" in English."
+ },
+ {
+  "name": "L_image_663_13",
+  "gt": "గ్రామము",
+  "pred": "The text in the image is \"చెందు\". This is written in Telugu script, which is used in the Indian state of Andhra Pradesh and Telangana. The meaning of this word can vary depending on the context, but it often refers to \"belonging to\""
+ },
+ {
+  "name": "L_image_663_14",
+  "gt": "ప్రభుత్వము",
+  "pred": "The text in the image is in Telugu and reads \"ముఖ్యమంత్రి\". This translates to \"Chief Minister\" in English."
+ },
+ {
+  "name": "L_image_663_15",
+  "gt": "తెల౦గాణ",
+  "pred": "The text in the image is \"গুলোকে\" which is in Bengali and translates to \"to them\" or \"for them\" in English."
+ },
+ {
+  "name": "L_image_663_17",
+  "gt": "ల్యాబర్తి",
+  "pred": "The text in the image is \"అంది\". This is in Telugu script, which is used to write the Telugu language."
+ },
+ {
+  "name": "L_image_663_18",
+  "gt": "వరన్నపేట.",
+  "pred": "The text in the image is in Telugu and reads \"ప్రభుత్వం\". This translates to \"Government\" in English."
+ },
+ {
+  "name": "L_image_663_19",
+  "gt": "రూరల్",
+  "pred": "The text in the image is \"సోర్టీ\". This appears to be in Telugu script, which is used in the Indian state of Andhra Pradesh and some other regions. The word \"సోర్టీ\" (Sorthee"
+ },
+ {
+  "name": "L_image_663_2",
+  "gt": "వర్ధన్నపేట",
+  "pred": "The text in the image is \"ప్రభుత్వం\". This is Telugu for \"Government\" in English."
+ },
+ {
+  "name": "L_image_663_20",
+  "gt": "జాతీయ గ్రామీణ",
+  "pred": "The text in the image is \"ప్రభుత్వం\". This is Telugu for \"Government\"."
+ },
+ {
+  "name": "L_image_663_21",
+  "gt": "పల్లెవ్రకృతి",
+  "pred": "The text in the image is in Telugu and reads \"ప్రభుత్వం\". This translates to \"Government\" in English."
+ },
+ {
+  "name": "L_image_663_22",
+  "gt": "ప్రార౦భోత్సవము",
+  "pred": "The text in the image is in Telugu and reads \"ముందుకు ప్రయాణం\". This translates to \"Travel ahead\" or \"Go forward\" in English."
+ },
+ {
+  "name": "L_image_663_23",
+  "gt": "గౌ.శ్రీ పోటీపెల్లి శ్రీనివాస్ రెడ్డి గారు,",
+  "pred": "The text in the image is in Telugu and reads: \"మీ కార్యక్రమం సమావేశం విడిచి వచ్"
+ },
+ {
+  "name": "L_image_663_24",
+  "gt": "అరూరి",
+  "pred": "The text in the image is \"అమ్మాయి\". This is Telugu, and it translates to \"Mother\" in English."
+ },
+ {
+  "name": "L_image_663_25",
+  "gt": "రమేష్ గారు",
+  "pred": "The text in the image is in Telugu and reads \"అన్ని గుర్తులు\". This translates to \"All the details\" or \"All the information\" in English."
+ },
+ {
+  "name": "L_image_663_26",
+  "gt": "ముఖ్యఅతిధులు:",
+  "pred": "The text in the image is \"धन्यवाद\". This is Marathi for \"Thank you\" in English."
+ },
+ {
+  "name": "L_image_663_27",
+  "gt": "పంచాయతీ రాజ్",
+  "pred": "The text in the image is \"soccerball\"."
+ },
+ {
+  "name": "L_image_663_28",
+  "gt": "రాథోడ్",
+  "pred": "The text in the image appears to be in Telugu, and it reads \"ముందు\". This translates to \"before\" or \"earlier\" in English."
+ },
+ {
+  "name": "L_image_663_29",
+  "gt": "భాస్కరగామ",
+  "pred": "The text in the image is \"العربية (Arabic).\""
+ },
+ {
+  "name": "L_image_663_3",
+  "gt": "శాసనసభ్యులు",
+  "pred": "The text in the image is in Telugu, and it reads: \"అవసరం ఉంది\" which translates to \"It is necessary\" or \"There is a need\" in English."
+ },
+ {
+  "name": "L_image_663_30",
+  "gt": "గౌ శ్రీ బండ ప్రకాష్ గారు,",
+  "pred": "The text in the image reads: \"मेरा जीवन मे यह एक बड़ा अनुभव है।\" This is in Hindi and translates to \"This is a big experience in my life.\""
+ },
+ {
+  "name": "L_image_663_32",
+  "gt": "గౌ శ్రీ బస్వరాజు సారయ్య గారు,",
+  "pred": "The text in the image is in Telugu and reads: \"ప్రారంభిస్తే మనం కొద్ది విశ్వాసం"
+ },
+ {
+  "name": "L_image_663_33",
+  "gt": "గా శ్రీ మార్నేక రవీందర్ రావు గారు,",
+  "pred": "The text in the image is in Arabic and reads: \"ما هو مرض السكري؟\" which translates to \"What is diabetes?\" in English."
+ },
+ {
+  "name": "L_image_663_34",
+  "gt": "గా శ్రీ సమమారి దయాకర్ గారు,",
+  "pred": "The text in the image is in Malayalam, and it reads:\n\n\"പ്രശ്നങ്ങൾ മുമ്പ് സംബന്ധിച്ച പ്രശ്നങ്ങൾ\""
+ },
+ {
+  "name": "L_image_663_38",
+  "gt": "గా శ్రీ దాస్యం వినయ్",
+  "pred": "The text in the image reads: \"मे एक युवा हूँ\" which is in Hindi and translates to \"I am a young person\" in English."
+ },
+ {
+  "name": "L_image_663_39",
+  "gt": "గౌశ్రీసత్యవతి",
+  "pred": "The text in the image is \"ప్రాంతంలో\". This is Telugu, and it translates to \"area\" or \"region\" in English."
+ },
+ {
+  "name": "L_image_663_4",
+  "gt": "గా॥శ్రీ",
+  "pred": "The text in the image appears to be \"সাঁই\" which is Bengali for \"saini\" or \"sain\". It can have various meanings depending on the context, such as a surname, a place name, or a term with specific connotations in certain regions or languages. If you need"
+ },
+ {
+  "name": "L_image_663_5",
+  "gt": "వనం",
+  "pred": "The text in the image is \"విశ్వ\"."
+ },
+ {
+  "name": "L_image_663_6",
+  "gt": "ట్సహత్",
+  "pred": "The text in the image is \"ప్రారంభం\". This is Telugu for \"beginning\" or \"start\"."
+ },
+ {
+  "name": "L_image_663_7",
+  "gt": "ఉపాధి హామీ పథకము",
+  "pred": "The text in the image is in Telugu and reads: \"ప్రాంతం వేసవి ముఖ్యమైన\" which translates to \"Area Vesavi Main\" in English. However,"
+ },
+ {
+  "name": "L_image_663_8",
+  "gt": "విడత' వారితవారం",
+  "pred": "The text in the image is in Malayalam, and it reads \"പൊതുവായമാര.\""
+ },
+ {
+  "name": "L_image_663_9",
+  "gt": "6 వ",
+  "pred": "The text in the image is \"డీ\"."
+ },
+ {
+  "name": "L_image_666_10",
+  "gt": "త్రయమయుపుస్త",
+  "pred": "The text in the image is in Kannada, and it reads:\n\n\"కోమ్యూనిస్టు పార్టీ\""
+ },
+ {
+  "name": "L_image_666_12",
+  "gt": "యనపమణి",
+  "pred": "The text in the image appears to be in Thai script and reads \"ขอโทษค่ะ\" which translates to \"Sorry\" or \"Excuse me\" in English."
+ },
+ {
+  "name": "L_image_666_2",
+  "gt": "శరద్దు",
+  "pred": "The text in the image reads \"2018\"."
+ },
+ {
+  "name": "L_image_666_5",
+  "gt": "హరడం",
+  "pred": "The text in the image is in Telugu and reads \"ప్రారంభించండి\". This translates to \"Start\" or \"Begin\" in English."
+ },
+ {
+  "name": "L_image_666_6",
+  "gt": "బొః కుం",
+  "pred": "The text in the image reads \"8:500\"."
+ },
+ {
+  "name": "L_image_67_10",
+  "gt": "ప్రభుత్వమ",
+  "pred": "The text in the image is \"গুরুত্বপূর্ণ সময়\" which translates to \"Important Time\" in English."
+ },
+ {
+  "name": "L_image_67_13",
+  "gt": "ఒరంగట్ల",
+  "pred": "The text in the image reads \"book\"."
+ },
+ {
+  "name": "L_image_67_3",
+  "gt": "గజర్నిర్",
+  "pred": "The text in the image reads: \"n_{\\alpha\\in E}\""
+ },
+ {
+  "name": "L_image_67_6",
+  "gt": "గో. డా. సింగర్",
+  "pred": "The text in the image is \"இலங்கை\". This is the Tamil word for \"Sri Lanka\"."
+ },
+ {
+  "name": "L_image_67_7",
+  "gt": "వరంగల్",
+  "pred": "The text in the image is \"গোলাক\" which is written in Bengali script."
+ },
+ {
+  "name": "L_image_67_9",
+  "gt": "ఆ౦ధ్రప్రదేశ్",
+  "pred": "The text in the image is \"సాధుకుడు\". This is Telugu, and it translates to \"Sadhu\" in English, which means \"saint\" or \"holy man.\""
+ },
+ {
+  "name": "L_image_674_3",
+  "gt": "రోడ్",
+  "pred": "The text in the image is \"విశ్వం\". This is Telugu for \"World\" or \"Universe\"."
+ },
+ {
+  "name": "L_image_674_4",
+  "gt": "పా౦డుర౦గ",
+  "pred": "The text in the image is \"ప్రభుత్వం\". This is Telugu for \"Government\" in English."
+ },
+ {
+  "name": "L_image_674_5",
+  "gt": "స్వామి",
+  "pred": "The text in the image is \"స్వాతంత్ర్యం\" which translates to \"Independence\" in English."
+ },
+ {
+  "name": "L_image_677_6",
+  "gt": "ప్యారడైజ్",
+  "pred": "The text in the image is in Telugu and reads \"ప్రభుత్వ\". This translates to \"Government\" in English."
+ },
+ {
+  "name": "L_image_68_2",
+  "gt": "నూజివీడు",
+  "pred": "The text in the image is in Telugu and reads \"ముఖ్యమైన\". This translates to \"Main\" or \"Primary\" in English."
+ },
+ {
+  "name": "L_image_680_2",
+  "gt": "పశివేదల",
+  "pred": "The text in the image is in Telugu and reads \"ముందు\". This translates to \"before\" or \"earlier\" in English."
+ },
+ {
+  "name": "L_image_699_2",
+  "gt": "పిఠాపురం",
+  "pred": "The text in the image is in Telugu and reads \"ప్రభుత్వం\". This translates to \"Government\" in English."
+ },
+ {
+  "name": "L_image_719_2",
+  "gt": "పూతలపట్టు",
+  "pred": "The text in the image is in Telugu and reads \"ప్రభుత్వ స్కూల్ లో జన్మాంతరం\". This translates to \"Birth registration in government schools"
+ },
+ {
+  "name": "L_image_72_1",
+  "gt": "ధూళికట్ట",
+  "pred": "The text in the image is in Telugu and reads \"శ్రీ రాములు\"."
+ },
+ {
+  "name": "L_image_72_10",
+  "gt": "శతాబ్థము",
+  "pred": "The text in the image is in Telugu and reads \"సుమారు\". This translates to \"approximately\" or \"around\" in English."
+ },
+ {
+  "name": "L_image_72_11",
+  "gt": "2వ",
+  "pred": "The text in the image is \"25\"."
+ },
+ {
+  "name": "L_image_72_14",
+  "gt": "బౌద్ధ",
+  "pred": "The text in the image is \"ప్రారంభం\". This is Telugu for \"Beginning\" or \"Start\"."
+ },
+ {
+  "name": "L_image_72_2",
+  "gt": "బౌద్ధ స్థూప౧",
+  "pred": "The text in the image is in Telugu and reads \"ప్రభుత్వం\". This translates to \"Government\" in English."
+ },
+ {
+  "name": "L_image_72_5",
+  "gt": "స్థూపపలకము",
+  "pred": "The text in the image is in Telugu and reads \"నావాలక్షము\"."
+ },
+ {
+  "name": "L_image_72_6",
+  "gt": "క్రీ॥శ॥",
+  "pred": "The text in the image is \"అందుకే\". This is Telugu, a language spoken primarily in the Indian state of Andhra Pradesh and Telangana. The phrase translates to \"because\" or \"due to\" in English."
+ },
+ {
+  "name": "L_image_734_2",
+  "gt": "రాజమండ్రి",
+  "pred": "The text in the image is in Telugu and reads \"పోర్ట్\". This translates to \"Port\" in English."
+ },
+ {
+  "name": "L_image_752_2",
+  "gt": "రామరాజుపల్లి",
+  "pred": "The text in the image is in Telugu and reads \"సార్వత్రికం\". This translates to \"Universal\" in English."
+ },
+ {
+  "name": "L_image_768_0",
+  "gt": "కాల్చే లయము",
+  "pred": "The text in the image is \"50% off\"."
+ },
+ {
+  "name": "L_image_768_1",
+  "gt": "ఎగ్జిక్యూటివ్",
+  "pred": "The text in the image is \"গোল্ডেন রিজ\"."
+ },
+ {
+  "name": "L_image_768_3",
+  "gt": "జాయింట్",
+  "pred": "The text in the image is \"సమ్మేళ\". This appears to be in Telugu script, which is used in the Indian state of Andhra Pradesh and Telangana, as well as in some parts of Tamil Nadu. The meaning or context of this word would depend on"
+ },
+ {
+  "name": "L_image_768_6",
+  "gt": "తహశీల్దారు.",
+  "pred": "The text in the image is in Telugu and reads \"స్వాతంత్ర్యం\". This translates to \"Independence\" in English."
+ },
+ {
+  "name": "L_image_768_7",
+  "gt": "సజ్",
+  "pred": "The text in the image appears to be a stylized, possibly artistic representation of the word \"love.\" It is not legible as standard text and seems to be an abstract or decorative form rather than a clear, readable message."
+ },
+ {
+  "name": "L_image_768_9",
+  "gt": "మేజ సైట",
+  "pred": "The text in the image is \"西部数码\"."
+ },
+ {
+  "name": "L_image_770_10",
+  "gt": "ప్రయాణికుల",
+  "pred": "The text in the image is in Telugu and reads \"వీరాంగనా\"."
+ },
+ {
+  "name": "L_image_770_11",
+  "gt": "ప్రాంగణము",
+  "pred": "The text in the image is \"ప్రారంభించారు\". This is Telugu and it translates to \"Started\" or \"Begun\" in English."
+ },
+ {
+  "name": "L_image_770_12",
+  "gt": "రవాణా",
+  "pred": "The text in the image is \"ప్రభుత్వ\". This is Telugu script, and it translates to \"Government\" in English."
+ },
+ {
+  "name": "L_image_770_13",
+  "gt": "ఆ౦ధ్రప్రదేశ్",
+  "pred": "The text in the image is in Telugu and reads \"అందుకుండా\". This translates to \"Without\" or \"Not\" in English."
+ },
+ {
+  "name": "L_image_770_18",
+  "gt": "సిమ్",
+  "pred": "The text in the image is \"55\"."
+ },
+ {
+  "name": "L_image_770_3",
+  "gt": "డ్యుయల్",
+  "pred": "The text in the image reads \"A blogline\"."
+ },
+ {
+  "name": "L_image_770_4",
+  "gt": "ఎల్లప్పుడూ",
+  "pred": "The text in the image reads \"مقررات\"."
+ },
+ {
+  "name": "L_image_770_6",
+  "gt": "శ్రీలక్ష్మి",
+  "pred": "The text in the image is \"సోషల్\". This is the Telugu word for \"Social\" in English."
+ },
+ {
+  "name": "L_image_770_7",
+  "gt": "ఎలక్రికల్స్",
+  "pred": "The text in the image is in Telugu and reads \"విశ్రాంతమైన\"."
+ },
+ {
+  "name": "L_image_770_8",
+  "gt": "రాష్రరోడు",
+  "pred": "The text in the image is in Telugu and reads \"విశ్వాసం విశ్వాసం\". This translates to \"Belief\" or \"Trust\" in English."
+ },
+ {
+  "name": "L_image_770_9",
+  "gt": "సంస్థ",
+  "pred": "The text in the image is \"పోట్\" which is in Telugu script and translates to \"pot\" in English."
+ },
+ {
+  "name": "L_image_770_0",
+  "gt": "రేపల్లె",
+  "pred": "The text in the image is \"వెంకట్\"."
+ },
+ {
+  "name": "L_image_771_2",
+  "gt": "రేపల్లె",
+  "pred": "The text in the image is \"చెప్పి\"."
+ },
+ {
+  "name": "L_image_779_3",
+  "gt": "కిత్సాలయ",
+  "pred": "The text in the image is in Telugu and reads \"కుటుంబం\". This translates to \"Family\" in English."
+ },
+ {
+  "name": "L_image_779_9",
+  "gt": "ప్రకృతి",
+  "pred": "The text in the image is in Telugu and reads \"విక్రయం\". This translates to \"Sale\" or \"Market\" in English."
+ },
+ {
+  "name": "L_image_782_16",
+  "gt": "బ్యారక్స్",
+  "pred": "The text in the image is \"ప్రభుత్వ\". This is Telugu for \"Government\" or \"Governmental\"."
+ },
+ {
+  "name": "L_image_782_17",
+  "gt": "కెవలరీ",
+  "pred": "The text in the image is \"కుటుంబం\". This is Telugu for \"Family\" or \"Family\"."
+ },
+ {
+  "name": "L_image_782_18",
+  "gt": "కెవలరీ",
+  "pred": "The text in the image is \"ప్రభుత్వ\". This is Telugu for \"Government\" or \"Governmental\"."
+ },
+ {
+  "name": "L_image_782_2",
+  "gt": "బ్యారక్స్",
+  "pred": "The text in the image is \"प्राणिक\" which is in Devanagari script and translates to \"Animal\" in English."
+ },
+ {
+  "name": "L_image_785_11",
+  "gt": "అరవి౦ద్",
+  "pred": "The text in the image is in Telugu and reads \"అరెడ్\"."
+ },
+ {
+  "name": "L_image_785_12",
+  "gt": "ఆసుపత్రి",
+  "pred": "The text in the image is \"అన్ని\". This is Telugu for \"all\" or \"every\"."
+ },
+ {
+  "name": "L_image_785_8",
+  "gt": "క౦టి",
+  "pred": "The text in the image is \"కోట్\". This appears to be in Telugu script, which is used in the Indian state of Andhra Pradesh and some neighboring regions. The word \"కోట్\" (kōṭ) can mean \"castle\" or \"fort"
+ },
+ {
+  "name": "L_image_785_9",
+  "gt": "శ్రీ వెంకటేశ్వర",
+  "pred": "The text in the image is in Telugu and reads \"ప్రభుత్వం\". This translates to \"Government\" in English."
+ },
+ {
+  "name": "L_image_793_6",
+  "gt": "సమాధి",
+  "pred": "The text in the image is \"ప్రభుత్వ\". This is Telugu for \"Government\" or \"Governmental\"."
+ },
+ {
+  "name": "L_image_793_7",
+  "gt": "సయిదానిమ",
+  "pred": "The text in the image is \"วันพุธ\" which translates to \"Wednesday\" in English."
+ },
+ {
+  "name": "L_image_799_2",
+  "gt": "భవిష్య",
+  "pred": "The text in the image is \"ప్రాంతం\". This is Telugu for \"area\" or \"region\"."
+ },
+ {
+  "name": "L_image_799_3",
+  "gt": "ఋద్ధ",
+  "pred": "The text in the image is \"मूर्ति\" which is in Devanagari script and translates to \"murti\" in English. In Hinduism, a murti refers to an idol or statue of a deity."
+ },
+ {
+  "name": "L_image_800_0",
+  "gt": "దుర్గ",
+  "pred": "The text in the image appears to be \"ముఖ\" which is Telugu for \"face\"."
+ },
+ {
+  "name": "L_image_802_4",
+  "gt": "సంజీవయ్య",
+  "pred": "The text in the image is in Telugu and reads \"సుధారంపుల్\"."
+ },
+ {
+  "name": "L_image_802_5",
+  "gt": "పార్క్",
+  "pred": "The text in the image is in Telugu and reads \"ప్రారంభం\". This translates to \"Beginning\" or \"Start\" in English."
+ },
+ {
+  "name": "L_image_82_3",
+  "gt": "ముల్కనూరు",
+  "pred": "The text in the image is in Telugu and reads \"ముల్లపూర్వం\"."
+ },
+ {
+  "name": "L_image_82_4",
+  "gt": "క్రీ॥శ॥",
+  "pred": "The text in the image appears to be \"Sri Lanka\"."
+ },
+ {
+  "name": "L_image_82_5",
+  "gt": "జైన",
+  "pred": "The text in the image is \"శ్రీ\". This is written in Telugu script, which is used in the Indian state of Andhra Pradesh and some neighboring regions. The characters can be transliterated into English as \"Shri\" or \"Sri\", which is a common term used to"
+ },
+ {
+  "name": "L_image_82_6",
+  "gt": "తీర్థ౦కరుడు",
+  "pred": "The text in the image is in Telugu and reads \"శ్రీకాంతి\"."
+ },
+ {
+  "name": "L_image_82_8",
+  "gt": "శతాబ్థము",
+  "pred": "The text in the image is in Telugu and reads \"సుమారు\". This translates to \"approximately\" or \"around\" in English."
+ },
+ {
+  "name": "L_image_844_10",
+  "gt": "స్వామి",
+  "pred": "The text in the image is \"స్వాతంత్ర్యం\" which translates to \"Independence\" in English."
+ },
+ {
+  "name": "L_image_844_11",
+  "gt": "వరసిద్ధి",
+  "pred": "The text in the image is \"సర్వే\". This is Telugu for \"Survey\" or \"Surveyor\"."
+ },
+ {
+  "name": "L_image_844_12",
+  "gt": "స్వయ౦భు",
+  "pred": "The text in the image is \"ప్రభుత్వం\". This is Telugu for \"Government\" in English."
+ },
+ {
+  "name": "L_image_844_13",
+  "gt": "శ్ర",
+  "pred": "The text in the image is not clear or legible, and it appears to be a series of symbols rather than text. If you have any specific questions about the symbols or need assistance with something else, please let me know!"
+ },
+ {
+  "name": "L_image_844_14",
+  "gt": "వినాయక",
+  "pred": "The text in the image is \"విశ్వాసం\". This is in Telugu script, which is used to write the Telugu language. The transliteration into English would be \"Vishwasam,\" which means \"belief\" or \"faith\" in English."
+ },
+ {
+  "name": "L_image_844_2",
+  "gt": "వారి",
+  "pred": "The text in the image is \"వారం\". This appears to be in Telugu, a language spoken primarily in the Indian state of Andhra Pradesh and Telangana. The word \"వారం\" (vāram) means \"week\" in English."
+ },
+ {
+  "name": "L_image_844_3",
+  "gt": "కాహకం",
+  "pred": "The text in the image is \"కోసం పారిష్కారం.\" This is Telugu, and it translates to \"Solution\" or \"Answer\" in English."
+ },
+ {
+  "name": "L_image_844_4",
+  "gt": "వరదరాజ",
+  "pred": "The text in the image is \"ప్రదర్శన\". This is Telugu for \"Exhibition\" or \"Showcase\"."
+ },
+ {
+  "name": "L_image_844_5",
+  "gt": "దేవస్థానము",
+  "pred": "The text in the image is in Telugu and reads \"ప్రభుత్వం\". This translates to \"Government\" in English."
+ },
+ {
+  "name": "L_image_844_7",
+  "gt": "స్వామి",
+  "pred": "The text in the image is \"స్వాతంత్ర్యం\" which translates to \"Independence\" in English."
+ },
+ {
+  "name": "L_image_844_8",
+  "gt": "శ్రీ",
+  "pred": "The text in the image reads \"CC &\"."
+ },
+ {
+  "name": "L_image_844_9",
+  "gt": "దేవస్థానము",
+  "pred": "The text in the image is \"ప్రభుత్వం\". This is Telugu for \"Government\"."
+ },
+ {
+  "name": "L_image_860_3",
+  "gt": "జనగామ",
+  "pred": "The text in the image is \"సుగర్మ\". This appears to be in Telugu script, which is used for writing the Telugu language."
+ },
+ {
+  "name": "L_image_860_4",
+  "gt": "ఉప",
+  "pred": "The text in the image is \"ప్రారంభం\". This is Telugu for \"beginning\" or \"start\"."
+ },
+ {
+  "name": "L_image_860_5",
+  "gt": "కారాగారము",
+  "pred": "The text in the image is \"కోటగర్రా\"."
+ },
+ {
+  "name": "L_image_860_9",
+  "gt": "వనగిరి",
+  "pred": "The text in the image is \"การ์ด\" which translates to \"card\" in English."
+ },
+ {
+  "name": "L_image_860_10",
+  "gt": "హాయ గవర్నర్",
+  "pred": "The text in the image is \"स्वास्थ्य और सुधार\" which translates to \"Health and Reform\" in English."
+ },
+ {
+  "name": "L_image_860_11",
+  "gt": "సెంటర్",
+  "pred": "The text in the image reads \"2005\"."
+ },
+ {
+  "name": "L_image_866_12",
+  "gt": "తిరుపతి",
+  "pred": "The text in the image is in Telugu and reads \"శ్రీ రాములు\". This translates to \"Shri Ramulu\" in English, where \"Shri\" is a respectful title similar to \"Sir\" or \"Mr.\" in English,"
+ },
+ {
+  "name": "L_image_866_13",
+  "gt": "విందరాజసామిధర్మ సత్రము",
+  "pred": "The text in the image is in Telugu and reads: \"మనుగులు ప్రాణివంశాలకు ప్రభుత్వం న�"
+ },
+ {
+  "name": "L_image_870_0",
+  "gt": "తాడినతి",
+  "pred": "The text in the image is \"అక్షరం\". This is Telugu for \"Alphabet\" or \"Letter\"."
+ },
+ {
+  "name": "L_image_870_1",
+  "gt": "కార్యాలయము",
+  "pred": "The text in the image is in Telugu and reads \"కార్యలయం\" which translates to \"Office\" or \"Headquarters\" in English."
+ },
+ {
+  "name": "L_image_870_2",
+  "gt": "వురపాలకసంఘ",
+  "pred": "The text in the image is in Telugu and reads \"ప్రభలకుండ\"."
+ },
+ {
+  "name": "L_image_874_2",
+  "gt": "తరిగొప్పుల",
+  "pred": "The text in the image appears to be in Telugu, and it reads \"అందుబాటులో\". This translates to \"in the middle\" or \"amongst\" in English."
+ },
+ {
+  "name": "L_image_877_1",
+  "gt": "టేకుమట్ల",
+  "pred": "The text in the image is \"ప్రకాశం\" which is Telugu for \"Prakasam\"."
+ },
+ {
+  "name": "L_image_883_4",
+  "gt": "దుర్గ",
+  "pred": "The image appears to be a close-up of a textured surface with two distinct symbols or characters. The symbols look like stylized letters or runes, but without additional context, it's difficult to determine their exact meaning or language. If you have more information about where these symbols were found or what they might represent, that could"
+ },
+ {
+  "name": "L_image_897_1",
+  "gt": "యువనాటకోత్సవ౦",
+  "pred": "The text in the image is \"मेरा नाम राजेश है\" which translates to \"My name is Rajesh\" in English."
+ },
+ {
+  "name": "L_image_897_10",
+  "gt": "తెల౦గాణ",
+  "pred": "The text in the image is \"ভাঙ্গা\" which is written in Bengali script."
+ },
+ {
+  "name": "L_image_897_11",
+  "gt": "భాషా",
+  "pred": "The text in the image is \"श्रेष्ठ\"."
+ },
+ {
+  "name": "L_image_897_15",
+  "gt": "సినివారం",
+  "pred": "The text in the image appears to be in Gujarati script. It reads \"નિરોભાવ\" which translates to \"Fearless\" in English."
+ },
+ {
+  "name": "L_image_897_33",
+  "gt": "పురస్కార గ్రహీతలు",
+  "pred": "The text in the image reads \"مطعم مروان\"."
+ },
+ {
+  "name": "L_image_897_8",
+  "gt": "సా౦స్కృతిక",
+  "pred": "The text in the image is in Telugu and reads \"నెండోగ్రాఫిక్\"."
+ },
+ {
+  "name": "L_image_897_9",
+  "gt": "ప్రభుత్వ౦",
+  "pred": "The text in the image is in Telugu and reads \"ప్రభుత్వం\". This translates to \"Government\" in English."
+ },
+ {
+  "name": "L_image_915_2",
+  "gt": "తాడి",
+  "pred": "The text in the image is \"ভালো\". This is Bengali and it translates to \"good\" or \"well\" in English."
+ },
+ {
+  "name": "L_image_929_1",
+  "gt": "కార్యాలయమ",
+  "pred": "The text in the image appears to be in Telugu, and it reads \"సాధు యాదవ్వులు\" which translates to \"Sadhu Yadavulu\" in English. This could refer to a person's name or a group of"
+ },
+ {
+  "name": "L_image_929_2",
+  "gt": "పురపాలక",
+  "pred": "The text in the image is in Telugu and reads \"ప్రభల\"."
+ },
+ {
+  "name": "L_image_929_3",
+  "gt": "స౦ఘ",
+  "pred": "The text in the image is \"ప్రభుత్వం\". This is Telugu for \"Government\" or \"Authority\"."
+ },
+ {
+  "name": "L_image_929_4",
+  "gt": "తెలంగాణ",
+  "pred": "The text in the image reads \"Cinco de Mayo\"."
+ },
+ {
+  "name": "L_image_929_6",
+  "gt": "ప్రభుత్వము",
+  "pred": "The text in the image reads:\n\n\"2017-2018\""
+ },
+ {
+  "name": "L_image_929_7",
+  "gt": "జి॥",
+  "pred": "The text in the image is \"శ్రీ\"."
+ },
+ {
+  "name": "L_image_929_8",
+  "gt": "మహబూబాబాద్",
+  "pred": "The text in the image is in Telugu and reads \"ముంబాయి\". This translates to \"Mumbai\" in English, which is the name of a city in India."
+ },
+ {
+  "name": "L_image_945_2",
+  "gt": "తున",
+  "pred": "The text in the image is \"ముందు\". This is Telugu for \"before\" or \"earlier\"."
+ },
+ {
+  "name": "L_image_953_20",
+  "gt": "మెట్రో",
+  "pred": "The text in the image reads \"ang\"."
+ },
+ {
+  "name": "L_image_953_21",
+  "gt": "హెచ్చరిక",
+  "pred": "The text in the image is \"ముఖ్యంగా\". This is in Telugu, and it translates to \"mainly\" or \"primarily\" in English."
+ },
+ {
+  "name": "L_image_953_24",
+  "gt": "క్రి౦ద",
+  "pred": "The text in the image is \"be\"."
+ },
+ {
+  "name": "L_image_953_25",
+  "gt": "మ౦డి",
+  "pred": "The text in the image is \"10000\"."
+ },
+ {
+  "name": "L_image_953_27",
+  "gt": "నిషేధి౦చడమైనది",
+  "pred": "The text in the image reads \"alpaca & lana\"."
+ },
+ {
+  "name": "L_image_953_29",
+  "gt": "వాహనముల",
+  "pred": "The text in the image reads \"andreadelusa\"."
+ },
+ {
+  "name": "L_image_953_9",
+  "gt": "ఉప్పల్",
+  "pred": "The text in the image is \"ముందు\". This is Telugu for \"before\" or \"earlier\"."
+ },
+ {
+  "name": "L_image_965_0",
+  "gt": "బ్రాహ్మణి",
+  "pred": "The text in the image is in Telugu and reads \"అమ్మాయి\". This translates to \"Mother\" in English."
+ },
+ {
+  "name": "L_image_966_0",
+  "gt": "సూర్య.",
+  "pred": "The text in the image appears to be in Telugu, and it reads \"ముందు ప్రారంభించారు.\" This translates to \"They started from the beginning\" in English."
+ },
+ {
+  "name": "L_image_967_0",
+  "gt": "బె౦డెశ్వర",
+  "pred": "The text in the image appears to be in Telugu, and it reads \"చోళ్లారు\". This translates to \"Chola\" in English, which is a reference to the Chola dynasty, an ancient Indian imperial dynasty that ruled over parts of southern India and Sri"
+ },
+ {
+  "name": "L_image_970_1",
+  "gt": "జిల్లా: యాదాద్రి భువనగిరి",
+  "pred": "The text in the image is in Telugu and reads: \"ప్రభుత్వ వైద్యాశ్రమం\" which translates to \"Government Hospital\" in English."
+ },
+ {
+  "name": "L_image_970_2",
+  "gt": "ముశిపట్ల",
+  "pred": "The text in the image is in Telugu and reads \"మనసులో\". This translates to \"Mind\" or \"Mental\" in English."
+ },
+ {
+  "name": "L_image_970_3",
+  "gt": "తెలంగాణ ప్రభుత్వము",
+  "pred": "The text in the image is in Telugu and reads \"ప్రారంభించడం\". This translates to \"Starting\" or \"Beginning\" in English."
+ },
+ {
+  "name": "L_image_970_4",
+  "gt": "వైకు౦ఠధామ౦",
+  "pred": "The text in the image is in Telugu and reads \"ప్రభుత్వం\". This translates to \"Government\" in English."
+ },
+ {
+  "name": "L_image_970_5",
+  "gt": "మం. మోత్కూర్",
+  "pred": "The text in the image is \"మొ. నరసింహా\". This appears to be a name written in Telugu script, which is used in the Indian state of Andhra Pradesh and Telangana. The transliteration into English would be \"Mo."
+ },
+ {
+  "name": "L_image_972_1",
+  "gt": "వలివేరు",
+  "pred": "The text in the image is \"สุวิทย์\"."
+ },
+ {
+  "name": "L_image_977_1",
+  "gt": "మం..",
+  "pred": "The text in the image reads \"20.\""
+ },
+ {
+  "name": "L_image_977_2",
+  "gt": "ప్రా౦గణము",
+  "pred": "The text in the image is in Telugu and reads \"స్వాతంత్ర్యం\". This translates to \"Independence\" in English."
+ },
+ {
+  "name": "L_image_977_3",
+  "gt": "గ్రా",
+  "pred": "The text in the image is \"π\"."
+ },
+ {
+  "name": "L_image_977_4",
+  "gt": "ప్రయాణ",
+  "pred": "The text in the image appears to be in Telugu, and it reads \"అందులో\". This translates to \"in\" or \"inside\" in English."
+ },
+ {
+  "name": "L_image_977_5",
+  "gt": "పరాశజిపల్ల",
+  "pred": "The text in the image is in Telugu and reads \"శ్రీరామేశ్వరి\"."
+ },
+ {
+  "name": "L_image_977_6",
+  "gt": "జి . మెదక్",
+  "pred": "The text in the image is \"การ์ด.\""
+ },
+ {
+  "name": "L_image_977_7",
+  "gt": "జి . మెదక్",
+  "pred": "The text in the image is \"การ์ด.\""
+ },
+ {
+  "name": "L_image_977_0",
+  "gt": "శంకరంపేట.",
+  "pred": "The text in the image is in Telugu and reads \"సర్వత్రం\". This translates to \"Everywhere\" or \"All over\" in English."
+ },
+ {
+  "name": "L_image_984_13",
+  "gt": "లె౦కరీ",
+  "pred": "The text in the image reads \"2023\"."
+ },
+ {
+  "name": "L_image_984_14",
+  "gt": "గ్రామ",
+  "pred": "The text in the image is \"ప్రారంభం\" which translates to \"Beginning\" or \"Start\" in English."
+ },
+ {
+  "name": "L_image_984_15",
+  "gt": "ప౦చాయతి",
+  "pred": "The text in the image is \"ప్రభుత్వ\". This is Telugu for \"Government\" or \"Governmental\"."
+ },
+ {
+  "name": "L_image_984_16",
+  "gt": "గ్రా",
+  "pred": "The text in the image reads \"me\"."
+ },
+ {
+  "name": "L_image_984_17",
+  "gt": "వె౦కటాపూర్",
+  "pred": "The text in the image is in Telugu and reads \"సోర్తుడు\"."
+ },
+ {
+  "name": "L_image_984_27",
+  "gt": "రాక౦దర్",
+  "pred": "The text in the image reads \"u=0.05\"."
+ },
+ {
+  "name": "L_image_988_1",
+  "gt": "విజయనగరం",
+  "pred": "The text in the image is in Telugu and reads \"విశ్వాసం కోసం\". This translates to \"For the sake of trust\" or \"In the name of trust\" in English."
+ },
+ {
+  "name": "L_image_988_2",
+  "gt": "బహుజాధ",
+  "pred": "The text in the image is \"విశ్వాసం\". This is Telugu for \"faith\" or \"belief\"."
+ },
+ {
+  "name": "L_image_988_3",
+  "gt": "పశుసంవర్ధక",
+  "pred": "The text in the image is \"అందుబాటులో\". This is Telugu and it translates to \"in the middle\" or \"amongst\" in English."
+ },
+ {
+  "name": "L_image_988_7",
+  "gt": "పనువైద్కశాల",
+  "pred": "The text in the image is in Telugu and reads \"ప్రభుత్వ కాలు\". This translates to \"Government Calendar\" in English."
+ },
+ {
+  "name": "L_image_996_10",
+  "gt": "జం.",
+  "pred": "The text in the image is \"80.\""
+ },
+ {
+  "name": "L_image_996_8",
+  "gt": "విశాఖపట్నం",
+  "pred": "The text in the image reads \"Demipede\"."
+ },
+ {
+  "name": "L_image_996_9",
+  "gt": "నిటూఖపట్న౦",
+  "pred": "The text in the image is \"స్వాతంత్ర్యం\" which translates to \"Independence\" in English."
+ },
+ {
+  "name": "L_image_996_5",
+  "gt": "విశాఖపట్నం",
+  "pred": "The text in the image reads \"Campolo\"."
+ },
+ {
+  "name": "M_image_16370_3",
+  "gt": "ఉస్మానియా",
+  "pred": "The text in the image is in Telugu and reads \"ప్రాథమిక శాస్త్రం\" which translates to \"Primary Science\" in English."
+ },
+ {
+  "name": "M_image_16370_4",
+  "gt": "జామై",
+  "pred": "The text in the image is \"ప్రభుత్వ\". This is Telugu for \"Government\" or \"Governmental\"."
+ },
+ {
+  "name": "M_image_16382_0",
+  "gt": "ఖైరతాబాద్",
+  "pred": "The text in the image is in Telugu and reads \"ప్రత్యక్షం\". This translates to \"directly\" or \"immediately\" in English."
+ },
+ {
+  "name": "M_image_16397_2",
+  "gt": "లాలాగూడ",
+  "pred": "The text in the image is in Telugu, and it reads \"అమ్మాయి\". This translates to \"Mother\" in English."
+ },
+ {
+  "name": "M_image_16397_3",
+  "gt": "గేట్",
+  "pred": "The text in the image is in Telugu and reads \"స్వతంత్రం\" (Svatantram). This word means \"independence\" or \"self-reliance\" in English."
+ },
+ {
+  "name": "M_image_16432_2",
+  "gt": "మౌలా అలి",
+  "pred": "The text in the image is in Telugu, and it reads \"ప్రారంభం\". This translates to \"Beginning\" or \"Start\" in English."
+ },
+ {
+  "name": "M_image_16470_1",
+  "gt": "సీతాఫల్మండి",
+  "pred": "The text in the image is in Telugu and reads \"శ్రీ వేంకటేశ్వరస్వామి\". This translates to \"Shri Venkateswara Swamy\" in English"
+ },
+ {
+  "name": "M_image_16500_5",
+  "gt": "ప్లార్క్",
+  "pred": "The text in the image is in Telugu and reads \"వెండి\"."
+ },
+ {
+  "name": "M_image_16500_6",
+  "gt": "సంజీవయ్య",
+  "pred": "The text in the image is in Telugu and reads \"సందేశం\". This translates to \"Message\" or \"Letter\" in English."
+ },
+ {
+  "name": "M_image_16566_5",
+  "gt": "విద్యానగర్",
+  "pred": "The text in the image is in Telugu and reads \"మనువులు\". This translates to \"Humans\" in English."
+ },
+ {
+  "name": "M_image_16567_6",
+  "gt": "రోడ్",
+  "pred": "The text in the image is \"ఎందుకు\". This is Telugu and it translates to \"Why\" in English."
+ },
+ {
+  "name": "M_image_16567_7",
+  "gt": "నెక్లెస్",
+  "pred": "The text in the image is \"స్వాతంత్ర్యం\" which translates to \"Independence\" in English."
+ },
+ {
+  "name": "M_image_17101_10",
+  "gt": "ఎం.జి.",
+  "pred": "The text in the image is \"ao.s\"."
+ },
+ {
+  "name": "M_image_17101_6",
+  "gt": "స్టేషన్",
+  "pred": "The text in the image is in Telugu and reads \"శ్రీవారి\"."
+ },
+ {
+  "name": "M_image_17101_9",
+  "gt": "బస్",
+  "pred": "The text in the image is \"మీ\". This is in Telugu script, which is used to write the Telugu language. The characters \"మీ\" transliterate to \"mee\" in English."
+ },
+ {
+  "name": "M_image_17417_13",
+  "gt": "పార్కింగ్",
+  "pred": "The text in the image is in Telugu and reads \"ప్రభుత్వం\"."
+ },
+ {
+  "name": "M_image_17417_58",
+  "gt": "టాక్సీ / బస్సు",
+  "pred": "The text in the image is in Telugu and reads \"ప్రారంభం / ప్రారంభం\". This translates to \"Beginning\" or \"Start\" in English."
+ },
+ {
+  "name": "M_image_17417_64",
+  "gt": "ఏరో",
+  "pred": "The text in the image is \"26\"."
+ },
+ {
+  "name": "M_image_17417_65",
+  "gt": "ప్లాజా",
+  "pred": "The text in the image is \"स्वागत\" (Svāgata) in Devanagari script, which translates to \"Welcome\" in English."
+ },
+ {
+  "name": "M_image_17417_71",
+  "gt": "శౌచాలయము",
+  "pred": "The text in the image is in Telugu and reads \"శ్రీ రామాయణం\". This translates to \"Sri Ramayana\" in English, which refers to the Hindu epic poem \"Ramayana.\""
+ },
+ {
+  "name": "M_image_19906_11",
+  "gt": "నూరురూపాయీలు",
+  "pred": "The text in the image is in Kannada, and it reads:\n\n\"ಶ್ರೀ ರಾಮಚಂದ್ರ ಮಹಾರಾಜ\"\n\nThis translates to \"Shri Ramachandra Maharaja\" in English. Shri is a respectful"
+ },
+ {
+  "name": "M_image_19906_16",
+  "gt": "నూరురూపాయీలు",
+  "pred": "The text in the image is in Telugu script and reads \"మనుష్య సాధన\". This translates to \"Human Effort\" or \"Human Endeavor\" in English."
+ },
+ {
+  "name": "M_image_20620_13",
+  "gt": "హైదరాబాద్",
+  "pred": "The text in the image reads \"HACKED\"."
+ },
+ {
+  "name": "M_image_20620_14",
+  "gt": "తీసుపత్రి",
+  "pred": "The text in the image reads \"99\"."
+ },
+ {
+  "name": "M_image_20620_15",
+  "gt": "నాంపల్లి",
+  "pred": "The text in the image reads \"Gloves\"."
+ },
+ {
+  "name": "M_image_20705_6",
+  "gt": "ప్రకృతి",
+  "pred": "The text in the image is \"ఎం.సీ.\" which is in Telugu script. It translates to \"M.S.C.\" in English, which typically stands for Master of Science (M.Sc.) or Master of Computer Applications (MCA)."
+ },
+ {
+  "name": "M_image_20705_7",
+  "gt": "చికిత్సాలయ",
+  "pred": "The text in the image is in Telugu and reads \"ప్రియాలు మను\"."
+ },
+ {
+  "name": "M_image_20746_1",
+  "gt": "శుభవార",
+  "pred": "The text in the image is in Telugu and reads \"ప్రభుత్వ\". This translates to \"Government\" in English."
+ },
+ {
+  "name": "M_image_20746_14",
+  "gt": "ఒపి",
+  "pred": "The text in the image is \"ప్రారంభం\". This is Telugu for \"beginning\" or \"start\"."
+ },
+ {
+  "name": "M_image_20746_15",
+  "gt": "వ్యాదుల",
+  "pred": "The text in the image is \"విశ్వాల\"."
+ },
+ {
+  "name": "M_image_20746_16",
+  "gt": "సుఖ",
+  "pred": "The text in the image is \"মাঝে\" which is Bengali and translates to \"in the middle\" or \"amongst\" in English."
+ },
+ {
+  "name": "M_image_20746_20",
+  "gt": "క్లినిక్",
+  "pred": "The text in the image reads \"359 29 53\"."
+ },
+ {
+  "name": "M_image_20746_21",
+  "gt": "సురక్ష",
+  "pred": "The text in the image is in Telugu and reads \"ముఖ్యమంత్రి\". This translates to \"Chief Minister\" in English."
+ },
+ {
+  "name": "M_image_20746_32",
+  "gt": "లైంగిక",
+  "pred": "The text in the image is \"ప్రభుత్వం\". This is in Telugu script and translates to \"Government\" in English."
+ },
+ {
+  "name": "M_image_20746_33",
+  "gt": "మరియు",
+  "pred": "The text in the image is \"మల్లాపూరు\". This appears to be in Telugu script, which is used in the Indian state of Andhra Pradesh and some neighboring regions. The word \"మల్లాపూర"
+ },
+ {
+  "name": "M_image_20746_35",
+  "gt": "పునరుత్పత్తి",
+  "pred": "The text in the image is in Telugu and reads \"ప్రభుత్వం\". This translates to \"Government\" in English."
+ },
+ {
+  "name": "M_image_20746_36",
+  "gt": "ఆరోగ్య",
+  "pred": "The text in the image is in Khmer script and reads \"អ៊ូហ្គេ\" which translates to \"Oil\" in English."
+ },
+ {
+  "name": "M_image_20746_37",
+  "gt": "సేవల",
+  "pred": "The text in the image is \"స్వల్\"."
+ },
+ {
+  "name": "M_image_20746_38",
+  "gt": "కేంద్రం",
+  "pred": "The text in the image is \"కోప్పు\". This is Telugu for \"cup\" or \"mug\"."
+ },
+ {
+  "name": "M_image_20746_39",
+  "gt": "నే",
+  "pred": "The text in the image reads \"52\"."
+ },
+ {
+  "name": "M_image_20746_40",
+  "gt": "నేను",
+  "pred": "The text in the image is \"స్వాతంత్ర్య\". This is Telugu for \"Independence\" in English."
+ },
+ {
+  "name": "M_image_21852_15",
+  "gt": "అత్యవసర",
+  "pred": "The text in the image is \"అభ్రను\". This is written in Telugu script, which is used in the Indian state of Andhra Pradesh and some neighboring regions. The meaning or context of this word would depend on its usage in a specific sentence or phrase."
+ },
+ {
+  "name": "M_image_21852_16",
+  "gt": "సందర్భంలో",
+  "pred": "The text in the image is in Telugu and reads \"సోదరులు\" which translates to \"Siblings\" or \"Brothers and Sisters\" in English."
+ },
+ {
+  "name": "M_image_21852_17",
+  "gt": "శరణార్థుల",
+  "pred": "The text in the image is in Telugu and reads \"సర్గముల\"."
+ },
+ {
+  "name": "M_image_21852_18",
+  "gt": "ప్రాంతం",
+  "pred": "The text in the image is \"ప్రారంభం\". This is Telugu for \"Beginning\" or \"Start\"."
+ },
+ {
+  "name": "M_image_21853_6",
+  "gt": "ఫారం",
+  "pred": "The text in the image is \"ప్రారంభం\" which translates to \"Beginning\" or \"Start\" in English."
+ },
+ {
+  "name": "M_image_21853_7",
+  "gt": "ప్లాట్",
+  "pred": "The text in the image is \"మెడు\"."
+ },
+ {
+  "name": "M_image_21865_2",
+  "gt": "అత్యవసర",
+  "pred": "The text in the image is in Telugu and reads \"అభ్యాసం\". This translates to \"Practice\" in English."
+ },
+ {
+  "name": "M_image_21911_10",
+  "gt": "ఫారం",
+  "pred": "The text in the image is \"ప్రారంభం\". This is Telugu for \"beginning\" or \"start\"."
+ },
+ {
+  "name": "M_image_21911_2",
+  "gt": "ఎన్ యండి సి",
+  "pred": "The text in the image is in Telugu and reads \"వెంకట రామచంద్ర\"."
+ },
+ {
+  "name": "M_image_21911_4",
+  "gt": "లక్ష్మీ-కాపూల్",
+  "pred": "The text in the image is in Telugu and reads \"అన్ని-కో-ప్రాంతాలు\". This translates to \"All regions\" or \"All areas\" in English."
+ },
+ {
+  "name": "M_image_21911_9",
+  "gt": "ప్లాట్",
+  "pred": "The text in the image is \"3\"."
+ },
+ {
+  "name": "M_image_21930_6",
+  "gt": "పంజాగుట్ట",
+  "pred": "The text in the image is in Kannada and reads \"ಬೆಂಗಳೂರು\" which translates to \"Bangalore\" in English."
+ },
+ {
+  "name": "M_image_21966_1",
+  "gt": "విక్టోరియా",
+  "pred": "The text in the image is in Telugu and reads \"అందుబాటులో\". This translates to \"in the middle\" or \"amongst\" in English."
+ },
+ {
+  "name": "M_image_21966_8",
+  "gt": "మెమోరియల్",
+  "pred": "The text in the image is in Kannada, and it reads \"ಮುಂದೆ\" which translates to \"Next\" or \"Afterwards\" in English."
+ }
+]

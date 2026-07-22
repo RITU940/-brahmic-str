@@ -1,19 +1,17 @@
 \section{Method}
 \label{sec:method}
 
-% Fig 1: pivot-space method diagram (adapt fig0_method / prof-abstract pivot figure)
-\begin{figure*}[t]
+\begin{figure}[t]
   \centering
-  \fbox{\parbox{0.9\textwidth}{\centering\vspace{2.2cm}\TODO{Fig.~1: pivot-space diagram ---
-  nine scripts, offset maps into shared space, grapheme-cluster vocabulary, LOSO rungs
-  A/B/B$_{\mathrm{bpe}}$}\vspace{2.2cm}}}
-  \caption{The shared grapheme pivot space and the leave-one-script-out protocol. Each Brahmic
-  script maps bijectively into a common output space by Unicode-offset correspondence; grapheme
-  clusters in that space form the recognizer's output vocabulary. The held-out script enters
-  training only as verified synthetic renderings (Rung~B) or not at all (Rung~A); evaluation is
-  always on its \emph{real} scene images.}
+  \includegraphics[width=\linewidth]{figs/fig1_pivot.pdf}
+  \caption{The shared grapheme pivot space. Each Brahmic script maps bijectively into a common
+  output space by ISCII-derived Unicode-offset correspondence (the same letter sits at the same
+  offset within each block); grapheme clusters in that space form the recognizer's output
+  vocabulary. A held-out script's graphemes therefore land on pivot codes already seen from the
+  source scripts. The held-out script enters training only as verified synthetic renderings
+  (Rung~B) or not at all (Rung~A); evaluation is always on its \emph{real} scene images.}
   \label{fig:method}
-\end{figure*}
+\end{figure}
 
 \subsection{A shared grapheme pivot space for Brahmic scripts}
 \label{sec:pivot}

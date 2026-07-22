@@ -1,0 +1,1 @@
+{"model": "Qwen/Qwen2.5-VL-7B-Instruct", "script": "malayalam", "N": 547, "WRR": 0.0, "WRR_lenient": 0.0, "CharAcc": -918.91, "CER": 1018.91, "prompt": "Read the text in the image.", "decoding": "greedy"}

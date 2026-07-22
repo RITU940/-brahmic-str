@@ -1,0 +1,12 @@
+{
+ "model": "Qwen/Qwen2.5-VL-7B-Instruct",
+ "script": "kannada",
+ "N": 720,
+ "WRR_prereg_exact": 0.0,
+ "WRR_prereg_lenient": 0.28,
+ "WRR_extracted": 0.28,
+ "CER_extracted": 130.99,
+ "CharAcc_extracted": -30.99,
+ "pct_quoted_span": 97.9,
+ "extraction": "first double-quoted span; else lead-in strip + first clause"
+}

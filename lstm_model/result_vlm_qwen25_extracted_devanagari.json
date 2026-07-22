@@ -1,0 +1,12 @@
+{
+ "model": "Qwen/Qwen2.5-VL-7B-Instruct",
+ "script": "devanagari",
+ "N": 6042,
+ "WRR_prereg_exact": 0.0,
+ "WRR_prereg_lenient": 38.23,
+ "WRR_extracted": 35.05,
+ "CER_extracted": 56.23,
+ "CharAcc_extracted": 43.77,
+ "pct_quoted_span": 99.0,
+ "extraction": "first double-quoted span; else lead-in strip + first clause"
+}

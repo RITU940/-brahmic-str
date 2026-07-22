@@ -42,23 +42,27 @@ results (\wrrBbengali, \wrrBdevanagari\ WRR) --- Bengali from the second-\emph{l
 pivot-space token coverage correlates at $\rho=\spearCovEqual$ (raw, all nine: \spearCovRaw). The
 joint fit
 $\mathrm{WRR} = \tfIntercept + \tfCovCoef\cdot\mathrm{cov} + \tfTwoxBonus\cdot\mathbb{1}[2\times]$
-attains RMSE \tfRMSE\ WRR across all nine scripts, with both $2\times$ residuals near zero. A
-frozen-encoder visual-similarity control --- rendered glyphs embedded by the recognizer's own
-vision encoder --- predicts nothing ($\rho=\spearVissim$), separating the structural coverage
-effect from the visual-similarity account of~\cite{crosslingstr}.
-\TODO{report bootstrap CIs for both coefficients; cross-check \spearVissim\ at 9 points.}
+attains RMSE \tfRMSE\ WRR across all nine scripts, with both $2\times$ residuals near zero. With
+only nine points the coefficients are loosely determined, and we say so: a script-level bootstrap
+(5000 resamples) puts the $2\times$ bonus at \ciTfTwox\ but the coverage slope at \ciTfCov\ ---
+\emph{spanning zero}. We therefore read coverage as an in-sample ordering, not an established
+cross-script driver, the same reading its out-of-sample failure forces
+(Sec.~\ref{sec:scaling}, $r=\covOOSr$ across the six unswept scripts). A frozen-encoder
+visual-similarity control --- rendered glyphs embedded by the recognizer's own vision encoder ---
+predicts nothing ($\rho=\spearVissim$), separating any structural coverage effect from the
+visual-similarity account of~\cite{crosslingstr}.
 
 \subsection{Prospective scorecard}
 \label{sec:scorecard}
 
-% Fig 4: the receipts figure — filed-vs-realized with bands, commit timeline
 \begin{figure}[t]
   \centering
-  \fbox{\parbox{0.95\linewidth}{\centering\vspace{1.6cm}\TODO{Fig.~4: prediction receipts ---
-  for each filed forecast, the committed point + $\pm1\sigma/\pm2\sigma$ bands vs.\ realized WRR,
-  with commit-and-push timestamps relative to training start}\vspace{1.6cm}}}
-  \caption{Every quantitative forecast filed during the campaign, scored against the rule fixed
-  at filing time. Hits and misses are both shown.}
+  \includegraphics{figs/fig4_receipts.pdf}
+  \caption{Prospective scorecard: preregistered prediction vs.\ realized WRR for every
+  quantitative forecast filed before its run, scored against the rule fixed at filing time (shaded
+  $\pm1$ RMSE of the instrument). The two LOSO point calls land on the diagonal; the scaling rungs
+  fall off it in the two directions the text describes --- under-predicted at low budget (concave
+  transfer), over-predicted at high budget (the magnitude miss). Hits and misses are both shown.}
   \label{fig:receipts}
 \end{figure}
 

@@ -1,0 +1,1 @@
+{"model": "Qwen/Qwen2.5-VL-7B-Instruct", "script": "gurmukhi", "N": 2879, "WRR": 0.0, "WRR_lenient": 0.52, "CharAcc": -1489.96, "CER": 1589.96, "prompt": "Read the text in the image.", "decoding": "greedy"}

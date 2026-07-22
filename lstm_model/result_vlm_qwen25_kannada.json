@@ -1,0 +1,1 @@
+{"model": "Qwen/Qwen2.5-VL-7B-Instruct", "script": "kannada", "N": 720, "WRR": 0.0, "WRR_lenient": 0.28, "CharAcc": -992.56, "CER": 1092.56, "prompt": "Read the text in the image.", "decoding": "greedy"}

@@ -1,0 +1,1 @@
+{"model": "Qwen/Qwen2.5-VL-7B-Instruct", "script": "oriya", "N": 1044, "WRR": 0.0, "WRR_lenient": 0.38, "CharAcc": -1143.16, "CER": 1243.16, "prompt": "Read the text in the image.", "decoding": "greedy"}

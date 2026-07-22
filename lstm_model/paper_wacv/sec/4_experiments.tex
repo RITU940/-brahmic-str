@@ -13,28 +13,27 @@ sets, and our own forecasts.
 
 \begin{table}[t]
   \centering\small
-  \setlength{\tabcolsep}{4.2pt}
-  \begin{tabular}{lrrrrr}
+  \setlength{\tabcolsep}{2.7pt}
+  \begin{tabular}{lrrrcrr}
     \toprule
-     & & \multicolumn{2}{c}{WRR (\%)} & \multicolumn{2}{c}{Rung B} \\
-    \cmidrule(lr){3-4}\cmidrule(lr){5-6}
-    Script & $N$ & A & B & CharAcc & B$_{\mathrm{bpe}}$ \\
+    Script & $N$ & A & B & \footnotesize B 95\% CI & CharAcc & B$_{\mathrm{bpe}}$ \\
     \midrule
-    Tamil      & \ntamil      & \wrrAtamil      & \textbf{\wrrBtamil}      & \chaBtamil      & \wrrPtamil \\
-    Telugu     & \ntelugu     & \wrrAtelugu     & \textbf{\wrrBtelugu}     & \chaBtelugu     & \wrrPtelugu \\
-    Kannada    & \nkannada    & \wrrAkannada    & \textbf{\wrrBkannada}    & \chaBkannada    & \wrrPkannada \\
-    Malayalam  & \nmalayalam  & \wrrAmalayalam  & \textbf{\wrrBmalayalam}  & \chaBmalayalam  & \wrrPmalayalam \\
-    Oriya      & \noriya      & \wrrAoriya      & \textbf{\wrrBoriya}      & \chaBoriya      & \wrrPoriya \\
-    Gujarati   & \ngujarati   & \wrrAgujarati   & \textbf{\wrrBgujarati}   & \chaBgujarati   & \wrrPgujarati \\
-    Bengali    & \nbengali    & \wrrAbengali    & \textbf{\wrrBbengali}    & \chaBbengali    & \wrrPbengali \\
-    Devanagari & \ndevanagari & \wrrAdevanagari & \textbf{\wrrBdevanagari} & \chaBdevanagari & \wrrPdevanagari \\
-    Gurmukhi   & \ngurmukhi   & \wrrAgurmukhi   & \textbf{\wrrBgurmukhi}   & \chaBgurmukhi   & \wrrPgurmukhi \\
+    Tamil      & \ntamil      & \wrrAtamil      & \textbf{\wrrBtamil}      & {\footnotesize\ciBtamil}      & \chaBtamil      & \wrrPtamil \\
+    Telugu     & \ntelugu     & \wrrAtelugu     & \textbf{\wrrBtelugu}     & {\footnotesize\ciBtelugu}     & \chaBtelugu     & \wrrPtelugu \\
+    Kannada    & \nkannada    & \wrrAkannada    & \textbf{\wrrBkannada}    & {\footnotesize\ciBkannada}    & \chaBkannada    & \wrrPkannada \\
+    Malayalam  & \nmalayalam  & \wrrAmalayalam  & \textbf{\wrrBmalayalam}  & {\footnotesize\ciBmalayalam}  & \chaBmalayalam  & \wrrPmalayalam \\
+    Oriya      & \noriya      & \wrrAoriya      & \textbf{\wrrBoriya}      & {\footnotesize\ciBoriya}      & \chaBoriya      & \wrrPoriya \\
+    Gujarati   & \ngujarati   & \wrrAgujarati   & \textbf{\wrrBgujarati}   & {\footnotesize\ciBgujarati}   & \chaBgujarati   & \wrrPgujarati \\
+    Bengali    & \nbengali    & \wrrAbengali    & \textbf{\wrrBbengali}    & {\footnotesize\ciBbengali}    & \chaBbengali    & \wrrPbengali \\
+    Devanagari & \ndevanagari & \wrrAdevanagari & \textbf{\wrrBdevanagari} & {\footnotesize\ciBdevanagari} & \chaBdevanagari & \wrrPdevanagari \\
+    Gurmukhi   & \ngurmukhi   & \wrrAgurmukhi   & \textbf{\wrrBgurmukhi}   & {\footnotesize\ciBgurmukhi}   & \chaBgurmukhi   & \wrrPgurmukhi \\
     \bottomrule
   \end{tabular}
   \caption{Zero-real-image transfer across nine held-out Brahmic scripts (real test images).
-  Rung~A: source scripts only. Rung~B: + synthetic target renderings, zero real target images.
-  B$_{\mathrm{bpe}}$: Rung~B with the grapheme-cluster vocabulary removed (stock tokenizer),
-  identical data and seed. \TODO{add per-script 95\% CIs (bootstrap over samples).}}
+  Rung~A: source scripts only. Rung~B: + synthetic target renderings, zero real target images
+  (95\% CI = percentile bootstrap over test samples, 5000 resamples). B$_{\mathrm{bpe}}$: Rung~B
+  with the grapheme-cluster vocabulary removed (stock tokenizer), identical data and seed. On
+  \bpeCIdisjoint/9 scripts the Rung-B CI lies strictly above the B$_{\mathrm{bpe}}$ point.}
   \label{tab:main}
 \end{table}
 
@@ -50,9 +49,11 @@ before any target exposure.
 % Fig 2: grouped bars A/B/Bbpe per script
 \begin{figure}[t]
   \centering
-  \fbox{\parbox{0.95\linewidth}{\centering\vspace{1.6cm}\TODO{Fig.~2: nine-script grouped bars
-  (A / B / B$_{\mathrm{bpe}}$), CharAcc markers overlaid}\vspace{1.6cm}}}
-  \caption{Transfer by script. \TODO{generate from result JSONs (make\_wacv\_figs.py).}}
+  \includegraphics[width=\linewidth]{figs/fig2_bars.pdf}
+  \caption{Transfer by script (ascending by Rung~B). Source-only baselines (grey) sit near the
+  floor; the grapheme pivot (blue) beats the stock-BPE tokenizer (orange) on every one of the nine
+  scripts under identical data and seed. Generated from the result JSONs by
+  \texttt{make\_wacv\_figs.py}.}
   \label{fig:bars}
 \end{figure}
 
@@ -63,7 +64,11 @@ Removing the grapheme-cluster vocabulary --- same pivot strings, same images, sa
 degrades all nine scripts (Table~\ref{tab:main}), from $\bpeRatioMin\times$ (Devanagari,
 \wrrBdevanagari\ $\rightarrow$ \wrrPdevanagari\ WRR) to $\bpeRatioMax\times$ (Tamil,
 \wrrBtamil\ $\rightarrow$ \wrrPtamil): the margin varies, the direction never does (exact
-two-sided sign test, $p=\bpeSignP$). The character-accuracy pattern is diagnostic: on Telugu
+two-sided sign test, $p=\bpeSignP$). The bootstrap makes the per-script margin concrete: on
+\bpeCIdisjoint\ of nine the Rung-B 95\% CI clears the B$_{\mathrm{bpe}}$ interval outright
+(Table~\ref{tab:main}); the three exceptions --- Devanagari, Kannada, Gujarati --- are exactly the
+near-parity scripts ($\bpeRatioMin$--$1.16\times$), consistent with the direction holding but the
+magnitude shrinking as fertility falls. The character-accuracy pattern is diagnostic: on Telugu
 the BPE model \emph{matches} the pivot model's character accuracy (\chaPtelugu\% vs.\
 \chaBtelugu\%), and on Kannada and Devanagari slightly exceeds it, yet word accuracy drops in
 every case. Synthetic fine-tuning alone teaches the model to see the characters; the
@@ -75,11 +80,41 @@ high-fertility Dravidian scripts where transfer is hardest
 \subsection{Dose--response: synthetic budget}
 \label{sec:scaling}
 
-\TODO{Preregistered Amendment 4a: malayalam/kannada/telugu $\times$
-\{810, 1620, 3240, 6480, 12960\} synthetic images, identical recipe; per-script
-$\mathrm{WRR}=\alpha+\beta\log_2(\mathrm{synth})$ and joint two-factor fit; test of the frozen
-$c\approx+\tfTwoxBonus$ WRR-per-doubling prediction. Fig.~3 = dose--response curves. Runs queued
-after the ablation completes.}
+We hold the recipe fixed and vary only the number of synthetic target images, for the three
+scripts whose held-out budget we can grow --- Malayalam, Kannada, Telugu --- across
+$\{810, 1620, 6480, 12960\}$ renderings; the external Rung-B point (3240) anchors each curve.
+Word recognition is cleanly log-linear in synthetic exposure ($R^2$ from \scaleRtwoMin\ to
+\scaleRtwoMax\ per script), and the slope is \emph{script-invariant}: a single shared
+$\scaleSlope$ WRR per doubling fits all three, with no evidence of differing slopes ($F$-test
+$p=\scaleFp$; Fig.~\ref{fig:scaling}). This is the preregistered \emph{form}, and it holds.
+
+The preregistered \emph{magnitude} does not. The frozen instrument projected
+$+\tfTwoxBonus$ WRR per doubling --- transported from the in-script $2\times$-synthetic experiment
+that fit the two-factor model (Sec.~\ref{sec:analysis}) --- which the swept slope excludes by a
+factor of $\scaleSlopeRatio$: the faithful doubling step ($3240\!\rightarrow\!6480$) gained
+$\scaleFaithfulObs$ WRR on average against a predicted $\scaleFaithfulPred$, a miss outside the
+$\pm2$\,RMSE band and reported as filed (open squares, Fig.~\ref{fig:scaling}). Two further
+preregistered edges resolve the same way. The low-budget prediction of near-collapse toward the
+Rung-A floor is \emph{falsified} --- Kannada and Telugu already reach double digits at 810 images,
+so transfer is concave, not linear, in log-budget --- while the top step
+($6480\!\rightarrow\!12960$), which adds renderings at near-fixed lexicon, gains little on Kannada
+(onset of lexicon saturation) but keeps pace on Malayalam and Telugu. Synthetic scaling is thus
+real and orderly, but far shallower than an in-script extrapolation predicts; we report the
+confirmed form and the missed coefficient together. We do \emph{not} promote pivot-space coverage
+to a cross-script driver: it orders the three swept scripts in-sample, but across the six scripts
+never used in the fit it is uncorrelated with transfer ($r=\covOOSr$), so the coverage axis (three
+distinct values) is underdetermined and we disclose it rather than build on it.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics{figs/fig3_scaling.pdf}
+  \caption{Synthetic-budget dose--response for three held-out scripts. Filled circles: observed WRR
+  on real test images; solid lines: per-script log-linear fits (shared slope
+  $\scaleSlope$/doubling). Open diamonds: the external Rung-B anchor (3240 images). Open squares:
+  the preregistered point predictions --- their gap above the observed points is the
+  $\scaleSlopeRatio\times$ magnitude miss, reported as filed.}
+  \label{fig:scaling}
+\end{figure}
 
 \subsection{Out-of-benchmark: Khmer}
 \label{sec:khmer}
@@ -93,7 +128,45 @@ engineering misses the freeze date.}
 \subsection{Frontier-VLM reference}
 \label{sec:vlm}
 
-\TODO{Preregistered Amendment 4c: Qwen2.5-VL-7B~\cite{qwen25vl} prompted zero-shot on the same
-nine real test sets, same normalization and metric. Declared caveat: unknown training data makes
-this an upper-bound reference for off-the-shelf capability, not a like-for-like comparison.
-Context: frontier models read fewer than thirty of 100+ scripts~\cite{glotocr}.}
+We prompt Qwen2.5-VL-7B~\cite{qwen25vl} zero-shot on the same nine real test sets (fixed prompt,
+greedy decoding), preregistered under Amendment~4c. Under the declared primary metric --- exact
+word match on the raw generation, our shared normalization --- it scores $0.0\%$ on all nine: the
+chat model wraps every answer in prose (``The text in the image is~\dots''). We therefore report a
+\emph{disclosed, most-favourable} re-score (Table~\ref{tab:vlm}): we extract the first quoted span
+from each generation and apply the identical metric. Even so, the VLM reads only the two
+highest-resource scripts with any competence --- Bengali \vlmWrrBengali\% and Devanagari
+\vlmWrrDevanagari\% --- and is at or near zero on six of the remaining seven (at most
+\vlmWrrTamil\%, on Tamil), frequently transcribing a wholly different script (Gurmukhi returned in
+Devanagari, Malayalam in Bengali). Our compact pivot model, at a fraction of the parameters, wins
+on \vlmScriptsWon\ of nine, the VLM leading only on Devanagari, the single most-resourced Indic
+script. The comparison is not like-for-like --- the VLM's training data is unknown and it is an
+upper-bound reference for off-the-shelf capability, not a system built for this task --- but it
+establishes that scale alone does not read these scripts; frontier models cover fewer than thirty
+of 100+ writing systems~\cite{glotocr}.
+
+\begin{table}[t]
+  \centering\small
+  \setlength{\tabcolsep}{6pt}
+  \begin{tabular}{lrr}
+    \toprule
+    Script & Ours (Rung~B) & Qwen2.5-VL-7B \\
+    \midrule
+    Tamil      & \textbf{\wrrBtamil}      & \vlmWrrTamil      \\
+    Telugu     & \textbf{\wrrBtelugu}     & \vlmWrrTelugu     \\
+    Kannada    & \textbf{\wrrBkannada}    & \vlmWrrKannada    \\
+    Malayalam  & \textbf{\wrrBmalayalam}  & \vlmWrrMalayalam  \\
+    Oriya      & \textbf{\wrrBoriya}      & \vlmWrrOriya      \\
+    Gujarati   & \textbf{\wrrBgujarati}   & \vlmWrrGujarati   \\
+    Bengali    & \textbf{\wrrBbengali}    & \vlmWrrBengali    \\
+    Devanagari & \wrrBdevanagari          & \textbf{\vlmWrrDevanagari} \\
+    Gurmukhi   & \textbf{\wrrBgurmukhi}   & \vlmWrrGurmukhi   \\
+    \midrule
+    macro avg  & --                       & \vlmMacro         \\
+    \bottomrule
+  \end{tabular}
+  \caption{Zero-shot WRR (\%) vs.\ a frontier VLM on the same real test images. Qwen2.5-VL scored
+  under a disclosed, most-favourable extraction (its preregistered exact-match primary is $0.0$ on
+  all nine). Our compact model wins on \vlmScriptsWon\ of nine; the VLM leads only on Devanagari,
+  the most-resourced Indic script.}
+  \label{tab:vlm}
+\end{table}

@@ -44,30 +44,41 @@ log, and its predictions were filed \emph{prospectively} --- committed and pushe
 they predict. This cuts both ways, and we report both edges. Our preregistered primary hypothesis
 --- that tokenizer \emph{fertility}, the property that governs the supervised grapheme-vs-BPE
 trade-off (Sec.~\ref{sec:method}), also predicts which scripts transfer --- was \emph{falsified}
-(Spearman $\spearFert$ across nine scripts). The account that survived is a two-factor one:
-synthetic-exposure \emph{budget} dominates, and within a fixed budget, pivot-space \emph{coverage}
-orders transfer. Its out-of-sample record is auditable: a point forecast of $\predKannada$ WRR for
+(Spearman $\spearFert$ across nine scripts). What survived is a scaling account: synthetic-exposure
+\emph{budget} dominates, and its effect is a \emph{script-invariant, log-linear} dose--response
+($\scaleSlope$ WRR per doubling, common-slope $F$-test $p=\scaleFp$; the pre-committed slope
+\emph{magnitude} missed by $\scaleSlopeRatio\times$ and is scored as such). We do \emph{not} claim
+typology as the driver: pivot-space coverage orders the swept scripts in-sample but does not
+generalize out-of-sample ($r=\covOOSr$ across the six held-out scripts), which we disclose rather
+than lean on. The forecasting record is auditable: a point forecast of $\predKannada$ WRR for
 Kannada (realized \realKannada); a final-script forecast for Gurmukhi of \predGurmukhi\ WRR with
 $\pm2\sigma$ band \predGurmukhiTwoSig, filed and pushed 3.7 hours before training began (realized
 \realGurmukhi: outer band hit, point under-called --- reported as the miss it is).
 
 \medskip\noindent Our contributions:
 \begin{enumerate}
-  \item \textbf{Zero-real-image cross-script transfer.} The first demonstration, to our
-  knowledge, that real scene text of an entirely unseen script --- disjoint Unicode block,
-  disjoint glyph inventory --- can be read by transferring through a designed structural pivot
-  space, evaluated LOSO across nine Brahmic scripts (\wrrBmin--\wrrBmax\% WRR from
-  ${\le}\,\wrrAdevanagari\%$ baselines).
+  \item \textbf{Zero-real-image cross-script transfer --- and scale is not the shortcut.} The
+  first demonstration, to our knowledge, that real scene text of an entirely unseen script ---
+  disjoint Unicode block, disjoint glyph inventory --- can be read by transferring through a
+  designed structural pivot space, evaluated LOSO across nine Brahmic scripts
+  (\wrrBmin--\wrrBmax\% WRR from ${\le}\,\wrrAdevanagari\%$ baselines). A prompted 7B frontier VLM,
+  scored with every generosity, reads only the two highest-resource scripts and loses to our
+  compact model on \vlmScriptsWon\ of nine --- the problem is not solved by scale.
   \item \textbf{The pivot is the mechanism.} A preregistered stock-BPE ablation under identical
   data, seed, and recipe degrades WRR on all nine scripts
   ($\bpeRatioMin\times$--$\bpeRatioMax\times$; exact sign test $p=\bpeSignP$), isolating
   \emph{output-space structure} --- not synthetic fine-tuning per se --- as the transfer
   mechanism; exploratorily, the size of the penalty tracks the script's fertility
   (Sec.~\ref{sec:fertility-fails}).
-  \item \textbf{Predictability, tested prospectively.} A two-factor model (synthetic budget +
-  pivot coverage) with committed-before-run forecasts, scored hits and misses, a falsified
-  preregistered primary reported in full, and a dose--response synthetic-scaling study
-  (Sec.~\ref{sec:experiments}). % TODO(scaling): finalize once sweep lands
+  \item \textbf{Predictability, tested prospectively --- audited both ways.} A frozen,
+  version-controlled preregistration with committed-before-run forecasts. The preregistered primary
+  (fertility predicts transfer) was \emph{falsified} (Spearman $\spearFert$) and reported in full.
+  A prospectively filed synthetic-scaling study establishes a \emph{script-invariant, log-linear}
+  dose--response (slope $\scaleSlope$ WRR/doubling, common-slope $F$-test $p=\scaleFp$); the
+  pre-committed slope magnitude missed by $\scaleSlopeRatio\times$ and is scored as a miss. We
+  decline the typology-as-driver claim: pivot coverage orders scripts in-sample but does not
+  generalize out-of-sample ($r=\covOOSr$), disclosed rather than buried
+  (Sec.~\ref{sec:experiments}).
   \item \textbf{Artifacts.} The pivot construction, rendering and verification pipeline,
   evaluation protocol, and the preregistration/prediction chain itself, released as a reusable
   template for prospective empirical ML.

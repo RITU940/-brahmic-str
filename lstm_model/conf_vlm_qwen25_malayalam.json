@@ -1,0 +1,2737 @@
+[
+ {
+  "name": "E_image_395_6",
+  "gt": "ഫാഷൻ",
+  "pred": "The text in the image is \"একাদশ বছর\". This is Bengali and it translates to \"Eleventh year\" in English."
+ },
+ {
+  "name": "E_image_395_9",
+  "gt": "അമ്പാടി",
+  "pred": "The text in the image is \"അമ്മ\". This is written in Malayalam, which is a language spoken primarily in the state of Kerala, India. The word \"അമ്മ\" means \"mother\" in Malayalam."
+ },
+ {
+  "name": "F_image_11_1",
+  "gt": "നായർ‍",
+  "pred": "The text in the image reads \"mod\"."
+ },
+ {
+  "name": "F_image_11_11",
+  "gt": "രവീന്രന്‍",
+  "pred": "The text in the image reads \"an(d)al\"."
+ },
+ {
+  "name": "F_image_11_17",
+  "gt": "ചി.ഒ.പുറനാട്ടുകര,തൃശൂർ-680 551",
+  "pred": "The text in the image reads: \"Alla praveshayet 400 511\" which translates to \"All will enter 400 511\" in English. This could be a reference to an event, a code, or a specific number related to a particular context"
+ },
+ {
+  "name": "F_image_11_19",
+  "gt": "അടാട്ട്.",
+  "pred": "The text in the image reads \"cosco.\""
+ },
+ {
+  "name": "F_image_11_20",
+  "gt": "ബാങ്ക്",
+  "pred": "The text in the image is \"ലുംകര\"."
+ },
+ {
+  "name": "F_image_11_21",
+  "gt": "ഫാർമേഴ്‌സ്",
+  "pred": "The text in the image is in Malayalam, and it reads \"മോണോഗ്രാഫ്\". This translates to \"Monograph\" in English."
+ },
+ {
+  "name": "F_image_11_22",
+  "gt": "അടാട്ട്",
+  "pred": "The text in the image reads \"SCSE\"."
+ },
+ {
+  "name": "F_image_11_23",
+  "gt": "ഗ്രീസിയെന്നാണ്",
+  "pred": "The text in the image is \"m.n.m.n.m.n\"."
+ },
+ {
+  "name": "F_image_11_24",
+  "gt": "ഒൻപതുമുറി",
+  "pred": "The text in the image is in Malayalam, and it reads \"അക്കുലോട്ടി\"."
+ },
+ {
+  "name": "F_image_11_25",
+  "gt": "പടവു്",
+  "pred": "The text in the image is \"প্রু\" which appears to be in Bengali script. The characters are not fully visible, but they seem to form part of a word or phrase. If you need more context or translation, please provide additional information."
+ },
+ {
+  "name": "F_image_11_26",
+  "gt": "കൃഷി",
+  "pred": "The text in the image is in Odia script and reads \"ঈদী\" (Eedi)."
+ },
+ {
+  "name": "F_image_11_27",
+  "gt": "വിജ്ഞാനകേന്ദ്രം",
+  "pred": "The text in the image is in Malayalam, and it reads \"പിഴച്ച കേട്ട\". This translates to \"Picked up\" or \"Got\" in English."
+ },
+ {
+  "name": "F_image_11_28",
+  "gt": "അടാട്ട്‌",
+  "pred": "The text in the image is \"GOSOS\"."
+ },
+ {
+  "name": "F_image_11_29",
+  "gt": "ഫാർമേഴ്‌സ്",
+  "pred": "The text in the image is \"மோதிரம்\" which is in Tamil script. In English, it translates to \"Mothiram.\""
+ },
+ {
+  "name": "F_image_11_3",
+  "gt": "ഭരണസമിതി",
+  "pred": "The text in the image is \"संस्कृतम्\" which is written in Devanagari script. This word means \"Sanskrit\" in English, referring to the ancient Indian language."
+ },
+ {
+  "name": "F_image_11_30",
+  "gt": "സർ‍വ്വീസ്",
+  "pred": "The text in the image is \"வடகிழ\" which appears to be in Tamil script. The meaning or context of this word would depend on its usage, but it does not have a standard English translation as it is a proper noun or a specific term within the Tamil language. If you need more information about"
+ },
+ {
+  "name": "F_image_11_33",
+  "gt": "കൃഷി",
+  "pred": "The text in the image is \"கோட்டை\". This is Tamil script, and it translates to \"Kottai\" in English."
+ },
+ {
+  "name": "F_image_11_35",
+  "gt": "വിജ്‌ഞാന",
+  "pred": "The text in the image is \"விளையாடு\". This is in Tamil, and it translates to \"play\" or \"game\" in English."
+ },
+ {
+  "name": "F_image_11_36",
+  "gt": "കേന്ദ്രം",
+  "pred": "The text in the image is \"εδ(θ₀)\"."
+ },
+ {
+  "name": "F_image_11_37",
+  "gt": "ഉദ്ഘാടനം",
+  "pred": "The text in the image reads \"go\" and \"sos\"."
+ },
+ {
+  "name": "F_image_11_39",
+  "gt": "ശ്രീ.കെ.എ.സുകുമാരൻ",
+  "pred": "The text in the image is in Malayalam, and it reads: \"അതി വലിയ തുടക്കമുള്ള\" which translates to \"A very big beginning\" in English."
+ },
+ {
+  "name": "F_image_11_4",
+  "gt": "കോൾപടവ്",
+  "pred": "The text in the image is \"कोलंबिया\" which is the name of Columbia in Hindi."
+ },
+ {
+  "name": "F_image_11_40",
+  "gt": "ഭരണസമിതി",
+  "pred": "The text in the image is \"semonal\"."
+ },
+ {
+  "name": "F_image_11_48",
+  "gt": "ശ്രീ.വി.എസ്.തങ്കാൻകുട്ടി",
+  "pred": "The text in the image reads \"globalxenomadag.\""
+ },
+ {
+  "name": "F_image_11_5",
+  "gt": "പി.ഒപുറനാട്ടുകര,തൃശൂർ-680 531",
+  "pred": "The text in the image reads: \"العربية للاتصالات المتكاملة 010-400-551\""
+ },
+ {
+  "name": "F_image_11_52",
+  "gt": "ശ്രീ.ടി.എ.സ്.രാജൻ",
+  "pred": "The text in the image reads: \"old, new, and\"."
+ },
+ {
+  "name": "F_image_11_55",
+  "gt": "അടാട്ട്‌",
+  "pred": "The text in the image reads \"09:53\"."
+ },
+ {
+  "name": "F_image_11_57",
+  "gt": "ഫാർമേഴ്‌സ്",
+  "pred": "The text in the image is \"வெண்ணெய்\" which translates to \"Coconut Oil\" in English."
+ },
+ {
+  "name": "F_image_11_58",
+  "gt": "സർ‍വ്വീസ്",
+  "pred": "The text in the image is \"வங்களை\". This appears to be Tamil script, which is used primarily in the Indian state of Tamil Nadu and in the country of Sri Lanka. The meaning or context of this word would depend on its usage within a sentence or a larger text. If you"
+ },
+ {
+  "name": "F_image_11_59",
+  "gt": "ഒമ്പതുമുറി",
+  "pred": "The text in the image is \"logowanie\"."
+ },
+ {
+  "name": "F_image_11_67",
+  "gt": "ശ്രീ.സി.കെൽറ്റീസ്",
+  "pred": "The text in the image is \"maloa.ajp\"."
+ },
+ {
+  "name": "F_image_11_7",
+  "gt": "കോ-ഓപ്പറേറ്റീവ്",
+  "pred": "The text in the image is \"এক-তারকা গুলি\" which translates to \"One-star stars\" in English."
+ },
+ {
+  "name": "F_image_11_9",
+  "gt": "മാനേജിങ്ങ്",
+  "pred": "The text in the image is \"2021年1月\". This translates to \"January 2021\" in English."
+ },
+ {
+  "name": "F_image_114_0",
+  "gt": "അങ്ങാടിപ്പുറം",
+  "pred": "The text in the image is in Malayalam, and it reads \"അജന്ത പീപ്പിൾ\"."
+ },
+ {
+  "name": "F_image_115_0",
+  "gt": "എമർജൻസി",
+  "pred": "The text in the image is \"มีดหมอ\" which translates to \"Doctor's Knife\" in English."
+ },
+ {
+  "name": "F_image_115_1",
+  "gt": "ജില്ലയിലെ",
+  "pred": "The text in the image is \"রাজ্যপালের দ\" which appears to be in Bengali script. The full word or phrase would likely be \"রাজ্যপালের দিন\" which translates to \"Rajyapaler Din\""
+ },
+ {
+  "name": "F_image_115_12",
+  "gt": "ഹ്യദ്രോഗ",
+  "pred": "The text in the image reads \"u ncefful\"."
+ },
+ {
+  "name": "F_image_115_15",
+  "gt": "ഓപ്സാസ്റ്റി",
+  "pred": "The text in the image is \"Kooperativ\"."
+ },
+ {
+  "name": "F_image_115_17",
+  "gt": "വിദഗ്ദ്ധരു",
+  "pred": "The text in the image appears to be \"allgemein\" which is German for \"general\"."
+ },
+ {
+  "name": "F_image_115_18",
+  "gt": "24 മണിക്കൂറും",
+  "pred": "The text in the image reads \"24 gmbh\"."
+ },
+ {
+  "name": "F_image_115_19",
+  "gt": "ബൈപ്പാസ്",
+  "pred": "The text in the image is \"தமிழ்நாடு\" which translates to \"Tamil Nadu\" in English. Tamil Nadu is a state in South India."
+ },
+ {
+  "name": "F_image_122_0",
+  "gt": "വാടകയ്ക്ക് ലഭിക്കും",
+  "pred": "The text in the image reads \"Kiss's edge\"."
+ },
+ {
+  "name": "F_image_122_2",
+  "gt": "കസേര",
+  "pred": "The text in the image is \"Bene\"."
+ },
+ {
+  "name": "F_image_122_4",
+  "gt": "പാത്രങ്ങൾ",
+  "pred": "The text in the image reads \"preacher\"."
+ },
+ {
+  "name": "F_image_122_5",
+  "gt": "കല്ല്യാണം",
+  "pred": "The text in the image is \"Obrigado\". This is Portuguese for \"Thank you\"."
+ },
+ {
+  "name": "F_image_123_2",
+  "gt": "അന്തിനാട്",
+  "pred": "The text in the image is \"മലയാളം\". This is the Malayalam script, which is used to write the Malayalam language, primarily spoken in the state of Kerala and some neighboring regions in India."
+ },
+ {
+  "name": "F_image_134_0",
+  "gt": "ദങ്കൊമ്പ്",
+  "pred": "The text in the image is \"গোলাপিডাক্টিল\" which appears to be in Bengali script. This word does not have a direct English translation as it is a proper noun, likely referring to a specific term or concept in Bengali. If you need more context"
+ },
+ {
+  "name": "F_image_134_1",
+  "gt": "സെക്കൻ്ററി",
+  "pred": "The text in the image is \"ஆக்கடோ\"."
+ },
+ {
+  "name": "F_image_134_2",
+  "gt": "ഗവ: വൊക്കേഷണൽ,",
+  "pred": "The text in the image is in Malayalam, and it reads: \"പ്രശസ്ത വിദ്യാകേന്ദ്രങ്ങളുടെ\" which translates to \"Prominent Educational Centers\" in English."
+ },
+ {
+  "name": "F_image_134_3",
+  "gt": "തിരുനാൾ",
+  "pred": "The text in the image is \"তিলেমন\"."
+ },
+ {
+  "name": "F_image_134_4",
+  "gt": "അവിട്ടം",
+  "pred": "The text in the image is \"ভাওড়া\" which is Bengali for \"Bhawdha\"."
+ },
+ {
+  "name": "F_image_134_5",
+  "gt": "ഹയർ",
+  "pred": "The text in the image is \"മലയാളം\". This is the Malayalam script, which is used to write the Malayalam language, primarily spoken in the state of Kerala and some neighboring regions in India."
+ },
+ {
+  "name": "F_image_134_6",
+  "gt": "സ്‌കൂൾ",
+  "pred": "The text in the image is \"m3-00\"."
+ },
+ {
+  "name": "F_image_149_1",
+  "gt": "കടപ്പറമ്പ്",
+  "pred": "The text in the image reads \"स्वास्थ्य\" which is Hindi for \"health\"."
+ },
+ {
+  "name": "F_image_149_10",
+  "gt": "പവന്",
+  "pred": "The text in the image is \"പ്രോട്ടോ\" which appears to be in Malayalam script."
+ },
+ {
+  "name": "F_image_149_11",
+  "gt": "പട്ടുസാരിക",
+  "pred": "The text in the image is \"प्रसाद गोविंद\"."
+ },
+ {
+  "name": "F_image_149_3",
+  "gt": "സ്വർണ്ണാഭരണങ്ങളും",
+  "pred": "The text in the image is in Malayalam, and it reads: \"പ്രധാനമന്ത്രി സുരഭി കോട്ടോട്ട്\""
+ },
+ {
+  "name": "F_image_149_4",
+  "gt": "രൂപയീ",
+  "pred": "The text in the image is \"গুলো\" which is Bengali and translates to \"the ones\" or \"the things\" in English."
+ },
+ {
+  "name": "F_image_149_8",
+  "gt": "ബുക്ക്",
+  "pred": "The text in the image is \"வாழ்க\". This is in Tamil, and it translates to \"Live\" or \"Stay alive\" in English."
+ },
+ {
+  "name": "F_image_15_1",
+  "gt": "കൊതമുക്ക്",
+  "pred": "The text in the image reads: \"The quick brown fox jumps over the lazy dog.\""
+ },
+ {
+  "name": "F_image_15_10",
+  "gt": "ലിമിററഡ്",
+  "pred": "The text in the image reads \"relaxation\"."
+ },
+ {
+  "name": "F_image_15_4",
+  "gt": "ദിആര്യ",
+  "pred": "The text in the image reads \"diageo\"."
+ },
+ {
+  "name": "F_image_15_6",
+  "gt": "ക്ലിനിക്‌ട",
+  "pred": "The text in the image is in Malayalam, and it reads \"പെരുമ്പാവൂർ &\". This translates to \"Perumpaavoor &\" in English. The \"&\" symbol typically indicates an additional or related item, but without more context, it's"
+ },
+ {
+  "name": "F_image_15_7",
+  "gt": "ഫാർമസി",
+  "pred": "The text in the image is in Malayalam, and it reads \"മോഹമദി\" which translates to \"Mohamed\" in English."
+ },
+ {
+  "name": "F_image_15_9",
+  "gt": "വൈദ്യഫാർമസി",
+  "pred": "The text in the image is in Malayalam, and it reads \"പൊല്ലൂർ മാതമാനി\"."
+ },
+ {
+  "name": "F_image_162_1",
+  "gt": "സിന്ധു",
+  "pred": "The text in the image reads \"mulmwa\"."
+ },
+ {
+  "name": "F_image_164_2",
+  "gt": "സർവ്വകലാശാല",
+  "pred": "The text in the image is in Malayalam, and it reads \"മനോജ്ഞലാല\"."
+ },
+ {
+  "name": "F_image_164_3",
+  "gt": "കേന്ദ്ര",
+  "pred": "The text in the image is \"கல்வி\" which is Tamil for \"Education\"."
+ },
+ {
+  "name": "F_image_164_5",
+  "gt": "കേരള",
+  "pred": "The text in the image is \"കൊള്ള\". This is in Malayalam, a language spoken primarily in Kerala, India. The word \"കൊള്ള\" (kollu) means \"to take\" or \"to collect\" in Malayalam."
+ },
+ {
+  "name": "F_image_165_1",
+  "gt": "ചാലക്കുടി",
+  "pred": "The text in the image reads \"ADAMS\"."
+ },
+ {
+  "name": "F_image_172_2",
+  "gt": "ചങ്ങനാശ്ശേരി",
+  "pred": "The text in the image is in Malayalam, and it reads \"പാലക്കാട്\". This translates to \"Palakkad\" in English, which is a district in Kerala, India."
+ },
+ {
+  "name": "F_image_175_0",
+  "gt": "മാടവലി",
+  "pred": "The text in the image is \"البند 8 (الف)\". This appears to be part of a legal or formal document, possibly in Arabic, where \"البند\" means \"the article\" and \"الف\" means \"of\". The number 8 likely indicates the specific article being referred to."
+ },
+ {
+  "name": "F_image_175_10",
+  "gt": "രപ്പടവ്",
+  "pred": "The text in the image is \"การ์ด\" which translates to \"card\" in English."
+ },
+ {
+  "name": "F_image_175_12",
+  "gt": "ചപ്പാരപ്പടവ്",
+  "pred": "The text in the image is \"પસ્ટરની\". This appears to be in Gujarati script, which is used in the Indian state of Gujarat and in some neighboring regions. The word \"પસ્ટરની\" can be transliterated"
+ },
+ {
+  "name": "F_image_175_13",
+  "gt": "ഗ്രാമപഞ്ചായത്ത്",
+  "pred": "The text in the image is in Malayalam, and it reads \"അവിടെ പോലും തന്നെ.\" This translates to \"Even here\" or \"Just like there\" in English."
+ },
+ {
+  "name": "F_image_175_14",
+  "gt": "ചപ്പാരപ്പടവ്",
+  "pred": "The text in the image is \"வணக்கம்\" which is Tamil for \"Namaskaram\" or \"Hello\" in English."
+ },
+ {
+  "name": "F_image_175_15",
+  "gt": "കാര്യാലയം",
+  "pred": "The text in the image is \"കാലിയാ.\" This appears to be in Malayalam, a language spoken primarily in Kerala, India. The word \"കാലി\" means \"black\" and \"യാ\" is a suffix that can indicate possession or a specific"
+ },
+ {
+  "name": "F_image_175_2",
+  "gt": "വി.ദ.",
+  "pred": "The text in the image is \"10%\"."
+ },
+ {
+  "name": "F_image_175_3",
+  "gt": "പപ്പാ",
+  "pred": "The text in the image reads \"CL\"."
+ },
+ {
+  "name": "F_image_175_4",
+  "gt": "ഗ്രാമപ",
+  "pred": "The text in the image is \"গোল্ড\" which is Bengali for \"Gold\"."
+ },
+ {
+  "name": "F_image_18_0",
+  "gt": "കാണാനാ",
+  "pred": "The text in the image is \"കോട്ടയം\". This is written in Malayalam, which is a language spoken primarily in the state of Kerala, India. The word \"കോട്ടയം\" translates to \"Kottayam\" in English, which is"
+ },
+ {
+  "name": "F_image_18_1",
+  "gt": "നിങ്ങൾ",
+  "pred": "The text in the image is \"മലയാളം\". This is the Malayalam script, which is used to write the Malayalam language, spoken primarily in the state of Kerala, India."
+ },
+ {
+  "name": "F_image_18_2",
+  "gt": "സർവ്വേക",
+  "pred": "The text in the image reads \"modena\"."
+ },
+ {
+  "name": "F_image_18_3",
+  "gt": "ചാവക്കാട് നഗരസഭ",
+  "pred": "The text in the image is in Malayalam, and it reads \"പ്രധാനകവര്‍ത്തിയമ്മ\"."
+ },
+ {
+  "name": "F_image_18_6",
+  "gt": "സ്വച്ഛ്",
+  "pred": "The text in the image is \"মুক্তি\" which is Bengali for \"freedom.\""
+ },
+ {
+  "name": "F_image_18_7",
+  "gt": "ലോകത്ത്",
+  "pred": "The text in the image is written in Malayalam, and it reads \"പാലക്കാട്\" which translates to \"Palakkad\" in English. Palakkad is a district in the state of Kerala, India."
+ },
+ {
+  "name": "F_image_186_0",
+  "gt": "ജീവ",
+  "pred": "The text in the image appears to be in the Odia script, which is used primarily in the Indian state of Odisha and in some neighboring regions. The specific text reads \"ପ୍ରେଜେ\" (pronounced as \"preja\"). This word can have"
+ },
+ {
+  "name": "F_image_186_1",
+  "gt": "ചെങ്ങന്നൂർ",
+  "pred": "The text in the image is in Malayalam, and it reads \"വിദ്യാലയങ്ങൾ\". This translates to \"schools\" in English."
+ },
+ {
+  "name": "F_image_186_4",
+  "gt": "ഷണ്മുഖായ",
+  "pred": "The text in the image is \"പ്രശസ്തവുമായ\". This is in Malayalam, and it translates to \"well-known\" or \"famous\" in English."
+ },
+ {
+  "name": "F_image_186_5",
+  "gt": "ശ്രീ",
+  "pred": "The text in the image is \"డోటీ\"."
+ },
+ {
+  "name": "F_image_186_6",
+  "gt": "ഓം",
+  "pred": "The text in the image is \"இந்த\". This is in Tamil script and it translates to \"this\" in English."
+ },
+ {
+  "name": "F_image_186_7",
+  "gt": "നമഃ",
+  "pred": "The text in the image is \"qa:\"."
+ },
+ {
+  "name": "F_image_186_8",
+  "gt": "ദവസ്വം",
+  "pred": "The text in the image is \"வணக்கம்\" which is Tamil for \"Namaskaram\" or \"Hello\" in English."
+ },
+ {
+  "name": "F_image_186_9",
+  "gt": "സ്റ്റാൾ",
+  "pred": "The text in the image appears to be in Thai and reads \"ที่นี่ค่ะ\" which translates to \"Here it is\" or \"This is here\" in English."
+ },
+ {
+  "name": "F_image_2_17",
+  "gt": "മനോരമ",
+  "pred": "The text in the image is \"20cm\"."
+ },
+ {
+  "name": "F_image_2_18",
+  "gt": "മലയാളി",
+  "pred": "The text in the image is \"2010\"."
+ },
+ {
+  "name": "F_image_22_0",
+  "gt": "ഹോൾസെയി ട്രെയിൽ",
+  "pred": "The text in the image is in Malayalam, and it reads \"കോവിഡ് നാളുകൾ\" which translates to \"COVID days\" in English."
+ },
+ {
+  "name": "F_image_22_1",
+  "gt": "പുഞ്ചി",
+  "pred": "The text in the image is \"গুলো\" which is in Bengali and translates to \"the ones\" or \"the things\" in English."
+ },
+ {
+  "name": "F_image_22_12",
+  "gt": "ചിരി",
+  "pred": "The text in the image is \"मिनी\"."
+ },
+ {
+  "name": "F_image_22_13",
+  "gt": "ലക്കിന്നെന്ഗ",
+  "pred": "The text in the image is \"মালোলাদার\" which appears to be in Bengali script."
+ },
+ {
+  "name": "F_image_22_14",
+  "gt": "സൻ്റർ",
+  "pred": "The text in the image reads \"dabag\"."
+ },
+ {
+  "name": "F_image_22_15",
+  "gt": "നിത്ഭഇിൽ നിന്ന",
+  "pred": "The text in the image is \"MARY WILSON\"."
+ },
+ {
+  "name": "F_image_22_16",
+  "gt": "ഉടക്കം",
+  "pred": "The text in the image is \"Sāmā\"."
+ },
+ {
+  "name": "F_image_22_17",
+  "gt": "ത്തിൻെ്റ",
+  "pred": "The text in the image reads \"Bing\"."
+ },
+ {
+  "name": "F_image_22_18",
+  "gt": "ലോകത്ത്",
+  "pred": "The text in the image is in Malayalam, and it reads \"ജലക്കുടി\"."
+ },
+ {
+  "name": "F_image_22_19",
+  "gt": "ദൾ",
+  "pred": "The text in the image reads \"1900\"."
+ },
+ {
+  "name": "F_image_22_2",
+  "gt": "ക്കാട് നഗരസഭ",
+  "pred": "The text in the image is \"कृत्रिम नाम\" which translates to \"Artificial Name\" in English."
+ },
+ {
+  "name": "F_image_22_20",
+  "gt": "സ്വച്ഛ്",
+  "pred": "The text in the image is \"মুসলিম\" which translates to \"Muslim\" in English."
+ },
+ {
+  "name": "F_image_22_3",
+  "gt": "ൽവ്വേക്ഷൺ 2019",
+  "pred": "The text in the image is in Malayalam and reads \"മേയ്‌ക്കാലം 2019\". This translates to \"May Month 2019\" in English."
+ },
+ {
+  "name": "F_image_22_4",
+  "gt": "മാക്ക",
+  "pred": "The text in the image is \"ПОЧТОВЫЙ\"."
+ },
+ {
+  "name": "F_image_22_5",
+  "gt": "ൽവ്വേക്ഷൺ 2019",
+  "pred": "The text in the image reads \"2019年春节快乐\". This translates to \"Happy Chinese New Year 2019\" in English."
+ },
+ {
+  "name": "F_image_22_6",
+  "gt": "കാണാനാഗ്രഹികത",
+  "pred": "The text in the image is in Malayalam, and it reads:\n\n\"അവിടെ തന്നെ പിടിച്ച\"\n\nThis translates to \"Even there, caught\" in English."
+ },
+ {
+  "name": "F_image_22_9",
+  "gt": "റിട്ടെയിൽ",
+  "pred": "The text in the image reads \"Drogarias.\""
+ },
+ {
+  "name": "F_image_224_11",
+  "gt": "പരിപാടി",
+  "pred": "The text in the image reads \"小而美\"."
+ },
+ {
+  "name": "F_image_224_13",
+  "gt": "നിർമ്മാർജ്‌ജന",
+  "pred": "The text in the image is \"விளக்கும்\". This is in Tamil, and it translates to \"explaining\" or \"explains\" in English."
+ },
+ {
+  "name": "F_image_224_14",
+  "gt": "ദേശീയ",
+  "pred": "The text in the image reads \"69000\"."
+ },
+ {
+  "name": "F_image_224_15",
+  "gt": "പോളിയോ",
+  "pred": "The text in the image is \"പെരളിയോ\" which is in Malayalam script. It translates to \"Peraliyo\" in English, but without more context, it's hard to determine its exact meaning or usage. If you have any specific questions about this word or need further"
+ },
+ {
+  "name": "F_image_224_16",
+  "gt": "യജ്‌ഞ",
+  "pred": "The text in the image is \"பொது\". This is in Tamil script, which is used to write the Tamil language. The word \"பொது\" (pōtu) in Tamil means \"general\" or \"common\" in English."
+ },
+ {
+  "name": "F_image_224_18",
+  "gt": "ഫിബ്രവരി",
+  "pred": "The text in the image is \"العربية\". This is the Arabic word for \"Arabic\"."
+ },
+ {
+  "name": "F_image_224_2",
+  "gt": "ഡോൻ",
+  "pred": "The text in the image is \"মেয়ে\" which is Bengali for \"girl\"."
+ },
+ {
+  "name": "F_image_224_20",
+  "gt": "നിഗദളംടെ",
+  "pred": "The text in the image reads \"THIRD 2005\"."
+ },
+ {
+  "name": "F_image_224_22",
+  "gt": "വയസ്സിൻ",
+  "pred": "The text in the image reads \"google\"."
+ },
+ {
+  "name": "F_image_224_23",
+  "gt": "ജ്വല്ലേഴ്‌സ്",
+  "pred": "The text in the image reads \"belegood\"."
+ },
+ {
+  "name": "F_image_224_24",
+  "gt": "പ്രായമുള്ള",
+  "pred": "The text in the image is \"2102123\"."
+ },
+ {
+  "name": "F_image_224_26",
+  "gt": "അധിത",
+  "pred": "The text in the image is \"bulo\"."
+ },
+ {
+  "name": "F_image_224_27",
+  "gt": "കൂടി",
+  "pred": "The text in the image is \"10/21\"."
+ },
+ {
+  "name": "F_image_224_28",
+  "gt": "നൽകംത",
+  "pred": "The text in the image is \"மீன்கள்\" which translates to \"fish\" in English."
+ },
+ {
+  "name": "F_image_224_3",
+  "gt": "ഓരോ",
+  "pred": "The text in the image reads \"GOSIA\"."
+ },
+ {
+  "name": "F_image_224_32",
+  "gt": "കണ്ണുർ",
+  "pred": "The text in the image reads \"2010\"."
+ },
+ {
+  "name": "F_image_224_34",
+  "gt": "മഹാറാണി",
+  "pred": "The text in the image is \"imagecopy\"."
+ },
+ {
+  "name": "F_image_224_38",
+  "gt": "ആൻ്റ്",
+  "pred": "The text in the image is \"600\"."
+ },
+ {
+  "name": "F_image_224_4",
+  "gt": "ദിവസങ്ങളിൽ",
+  "pred": "The text in the image reads \"diagrama\"."
+ },
+ {
+  "name": "F_image_224_40",
+  "gt": "തുളളിമരുന്ന്",
+  "pred": "The text in the image is \"아이디어마인드\"."
+ },
+ {
+  "name": "F_image_224_41",
+  "gt": "പോളിയോ",
+  "pred": "The text in the image is \"গুলিয়ে দেওয়া\" which is in Bengali and translates to \"to leave behind\" or \"to discard\" in English."
+ },
+ {
+  "name": "F_image_224_5",
+  "gt": "മേൽപ്പറഞ്ഞ",
+  "pred": "The text in the image reads \"GANDHAGA\"."
+ },
+ {
+  "name": "F_image_224_6",
+  "gt": "എല്ലാ",
+  "pred": "The text in the image reads \"n∈[0,1)\". This is an interval notation that represents all real numbers n such that n is greater than or equal to 0 and less than 1."
+ },
+ {
+  "name": "F_image_224_7",
+  "gt": "താവഴ",
+  "pred": "The text in the image reads \"0:109\"."
+ },
+ {
+  "name": "F_image_224_8",
+  "gt": "ഞായാ",
+  "pred": "The text in the image reads \"DODA\"."
+ },
+ {
+  "name": "F_image_224_9",
+  "gt": "ഏപ്രിൽ",
+  "pred": "The text in the image reads \"nfigo\"."
+ },
+ {
+  "name": "F_image_230_1",
+  "gt": "ഏലംകുളം",
+  "pred": "The text in the image is \"महाराष्ट्र\". This is the name of the state of Maharashtra in India, written in Devanagari script."
+ },
+ {
+  "name": "F_image_230_10",
+  "gt": "സ്മാരക",
+  "pred": "The text in the image is \"முனைகள்\". This is Tamil script, and it translates to \"mouths\" or \"lips\" in English."
+ },
+ {
+  "name": "F_image_230_11",
+  "gt": "സിവിൽ",
+  "pred": "The text in the image is \"μουσική\" which translates to \"music\" in English."
+ },
+ {
+  "name": "F_image_230_2",
+  "gt": "ൽ സ്റ്റേഷൻ",
+  "pred": "The text in the image reads \"मानवता\"."
+ },
+ {
+  "name": "F_image_230_4",
+  "gt": "സ്റ്റേഷൻ",
+  "pred": "The text in the image is \"গোলাপিগঞ্জ\". This is Bengali and it translates to \"Golapganj\" in English, which is a city in Bangladesh."
+ },
+ {
+  "name": "F_image_230_5",
+  "gt": "മിനി",
+  "pred": "The text in the image is \"aim\"."
+ },
+ {
+  "name": "F_image_230_6",
+  "gt": "എസ്്.",
+  "pred": "The text in the image reads \"GOMY\"."
+ },
+ {
+  "name": "F_image_230_7",
+  "gt": "ഇ.എം",
+  "pred": "The text in the image reads \"20%\"."
+ },
+ {
+  "name": "F_image_238_10",
+  "gt": "കൃഷണാ",
+  "pred": "The text in the image is \"ഇളയുടെ\"."
+ },
+ {
+  "name": "F_image_238_11",
+  "gt": "ധർമ്മശാസ്‌താ",
+  "pred": "The text in the image is \"പേരിയാറ്റുള്ള\". This appears to be in Malayalam, a language spoken primarily in Kerala, India. The meaning of this phrase can vary depending on context, but it could translate to something like \"having a name"
+ },
+ {
+  "name": "F_image_238_12",
+  "gt": "ശ്രീ",
+  "pred": "The text in the image is \"[5a]\"."
+ },
+ {
+  "name": "F_image_238_13",
+  "gt": "മാപ്പ്",
+  "pred": "The text in the image is \"العربية\". This is the Arabic word for \"Arabic\"."
+ },
+ {
+  "name": "F_image_238_4",
+  "gt": "ക്ഷേത്രം‌",
+  "pred": "The text in the image reads \"salamido\"."
+ },
+ {
+  "name": "F_image_238_9",
+  "gt": "സ്റ്റോഴ്സ്",
+  "pred": "The text in the image is \"പുസ്തകങ്ങൾ\". This is Malayalam for \"books\" in English."
+ },
+ {
+  "name": "F_image_238_0",
+  "gt": "റെഡിമെയ്‌ഡ്‌സ്",
+  "pred": "The text in the image is in Thai and reads \"ขออภัยในความไม่สะดวก\" which translates to \"Sorry for any inconvenience.\""
+ },
+ {
+  "name": "F_image_239_0",
+  "gt": "മഹോത്സവം",
+  "pred": "The text in the image reads \"АСОЗИАЦИЯ\"."
+ },
+ {
+  "name": "F_image_239_1",
+  "gt": "മണ്ഡലം",
+  "pred": "The text in the image reads \"Ramuelo.\""
+ },
+ {
+  "name": "F_image_239_2",
+  "gt": "ദേവസ്വം",
+  "pred": "The text in the image is \"GIGAMO\"."
+ },
+ {
+  "name": "F_image_239_3",
+  "gt": "ഏറ്റുമാനൂർ",
+  "pred": "The text in the image is \"apprendre\"."
+ },
+ {
+  "name": "F_image_239_4",
+  "gt": "ചിറപ്പ്",
+  "pred": "The text in the image is \"விளைய\"."
+ },
+ {
+  "name": "F_image_239_5",
+  "gt": "ബോർഡ്",
+  "pred": "The text in the image is \"smoov\"."
+ },
+ {
+  "name": "F_image_239_6",
+  "gt": "തിരുവിതാംകൂർ",
+  "pred": "The text in the image reads \"mitogallomadag\"."
+ },
+ {
+  "name": "F_image_285_0",
+  "gt": "മഹാത്മാഗാന്ധി",
+  "pred": "The text in the image is in Malayalam, and it reads \"അമ്മയുടെ പേരിൽ.\" This translates to \"In the name of mother\" in English."
+ },
+ {
+  "name": "F_image_285_1",
+  "gt": "സഹായിക്കാത്തത്",
+  "pred": "The text in the image is in Malayalam, and it reads:\n\n\"മോസ്യൂക്കോട്ട\""
+ },
+ {
+  "name": "F_image_285_2",
+  "gt": "തിരിച്ചറിയാൻ",
+  "pred": "The text in the image is in Malayalam, and it reads:\n\n\"പൊതുവെ പ്രകാരം\"\n\nThis translates to \"Generally\" or \"In general\" in English."
+ },
+ {
+  "name": "F_image_285_3",
+  "gt": "തിന്ദയും",
+  "pred": "The text in the image is written in Malayalam, and it reads \"അമ്മ\". This translates to \"Mother\" in English."
+ },
+ {
+  "name": "F_image_285_4",
+  "gt": "നന്മയും",
+  "pred": "The text in the image reads \"МВФОЗО\"."
+ },
+ {
+  "name": "F_image_285_5",
+  "gt": "വിദ്യാഭ്യാസമല്ല",
+  "pred": "The text in the image is \"ОБРАЗЦЕВАНИЯ\"."
+ },
+ {
+  "name": "F_image_285_6",
+  "gt": "മറെറന്തോ",
+  "pred": "The text in the image is written in Malayalam, a language spoken primarily in the state of Kerala, India. The text reads \"പൊതുജനങ്ങൾ\" which translates to \"Public\" in English."
+ },
+ {
+  "name": "F_image_285_7",
+  "gt": "ആ‌ണ്",
+  "pred": "The text in the image reads \"(Bragin)\"."
+ },
+ {
+  "name": "F_image_289_0",
+  "gt": "മഹാത്മാഗാന്ധി",
+  "pred": "The text in the image is in Malayalam, and it reads \"മലയാളവിദ്യാ\". This translates to \"Malayalam Education\" in English."
+ },
+ {
+  "name": "F_image_289_1",
+  "gt": "യഥാർത്ഥ",
+  "pred": "The text in the image appears to be in a stylized or decorative font, but it is not clear what specific language or script it is from. If you can provide more context or information about the origin of this text, I might be able to help identify it better."
+ },
+ {
+  "name": "F_image_289_2",
+  "gt": "കാണിക്കാനുള്ള",
+  "pred": "The text in the image is in Malayalam, and it reads \"കൊടിക്കുന്നത്\". This translates to \"it is a good thing\" or \"it is a good deed\" in English."
+ },
+ {
+  "name": "F_image_289_3",
+  "gt": "തോന്നിയതെന്തും",
+  "pred": "The text in the image is in Malayalam, and it reads:\n\n\"പൊതുവെ ഇലക്ട്രാനിക്\""
+ },
+ {
+  "name": "F_image_289_4",
+  "gt": "സ്വാതന്ത്ര്യം",
+  "pred": "The text in the image is \"μεταφορά\"."
+ },
+ {
+  "name": "F_image_289_5",
+  "gt": "സ്വാതന്ത്ര്യമല്ല",
+  "pred": "The text in the image is \"मुझे यह नहीं पता\" which translates to \"I don't know this\" in English."
+ },
+ {
+  "name": "F_image_298_0",
+  "gt": "മഹാത്മാഗാന്ധി",
+  "pred": "The text in the image is in Malayalam, and it reads \"പാലക്കാട്\". This translates to \"Palakkad\" in English, which is a district in Kerala, India."
+ },
+ {
+  "name": "F_image_298_1",
+  "gt": "പാത",
+  "pred": "The text in the image reads \"2100.\""
+ },
+ {
+  "name": "F_image_298_2",
+  "gt": "തന്നെയാണ്‌",
+  "pred": "The text in the image is written in Malayalam, a language spoken primarily in the state of Kerala, India. The text reads:\n\n\"മോത്തായി\"\n\nThis translates to \"Mottaai\" in English, which is a name or a title."
+ },
+ {
+  "name": "F_image_298_3",
+  "gt": "സമാധാനം",
+  "pred": "The text in the image reads \"Омега-3\"."
+ },
+ {
+  "name": "F_image_298_4",
+  "gt": "പാതയില്ല",
+  "pred": "The text in the image is in Malayalam, and it reads \"പാലക്കാട്\" which translates to \"Palakkad\" in English. Palakkad is a district in the Indian state of Kerala."
+ },
+ {
+  "name": "F_image_298_5",
+  "gt": "സമാധാനത്തിലേക്ക്",
+  "pred": "The text in the image is in Malayalam, and it reads:\n\n\"പാലമ്പെട്ടിയുടെ\"\n\nThis translates to \"Palampettu\" in English, which is a place name in Kerala, India."
+ },
+ {
+  "name": "F_image_321_0",
+  "gt": "മാനതതൂർ",
+  "pred": "The text in the image reads \"ФОТОГРАФИЯ\". This is Russian for \"photography\"."
+ },
+ {
+  "name": "F_image_321_4",
+  "gt": "പാലാ വിദ്യാമ്യാസ ജില്ല.",
+  "pred": "The text in the image is in Malayalam, and it reads: \"പാട്ടു വിളവെടുക്കൽ രീതി.\" This translates to \"Method of planting seeds\" in English."
+ },
+ {
+  "name": "F_image_321_5",
+  "gt": "ഹൈസ്‌കൂൾ",
+  "pred": "The text in the image is in Malayalam and reads \"ദേശാഭിമുഖ\"."
+ },
+ {
+  "name": "F_image_321_6",
+  "gt": "സെൻ്റ്",
+  "pred": "The text in the image is \"வாழ்க\". This is in Tamil, and it translates to \"Live\" or \"Stay alive\" in English."
+ },
+ {
+  "name": "F_image_321_7",
+  "gt": "ജോസഫ്‌സ്‌",
+  "pred": "The text in the image is \"গোল্ডম্যানস্কিপ\" which is written in Bengali script. This phrase translates to \"Goldman Sachs\" in English, as it is the name of the multinational investment bank and financial services corporation."
+ },
+ {
+  "name": "F_image_321_8",
+  "gt": "മാനത്തൂർ",
+  "pred": "The text in the image is \"മാനസുഗ്രഹം\" which is written in Malayalam script."
+ },
+ {
+  "name": "F_image_321_9",
+  "gt": "പിഴക്.പി.ഒ",
+  "pred": "The text in the image is in Telugu and reads \"నిజమైన నేతలు\". This translates to \"Independent Leaders\" in English."
+ },
+ {
+  "name": "F_image_329_11",
+  "gt": "കത്തട",
+  "pred": "The text in the image is \"கோரா\"."
+ },
+ {
+  "name": "F_image_329_12",
+  "gt": "ബ്‌ദുള്ള",
+  "pred": "The text in the image is \"ก้าวแรกของฉัน\". This is Thai and it translates to \"My first step\" in English."
+ },
+ {
+  "name": "F_image_354_10",
+  "gt": "അഭിനന്ദനങ്ങൾ",
+  "pred": "The text in the image is \"മലയാളം\". This is the Malayalam script for the word \"Malayalam\", which refers to the Malayalam language and its script."
+ },
+ {
+  "name": "F_image_354_14",
+  "gt": "ജില്ലാ",
+  "pred": "The text in the image is \"গোলাপ\" which is Bengali for \"rose\"."
+ },
+ {
+  "name": "F_image_354_18",
+  "gt": "ചാരിറബിൾ",
+  "pred": "The text in the image is \"வாழ்க்கை\" which is Tamil for \"life\"."
+ },
+ {
+  "name": "F_image_354_19",
+  "gt": "ദാത്യക",
+  "pred": "The text in the image is \"1500円\". This is Japanese and it translates to \"1500 yen\" in English, which is the currency of Japan."
+ },
+ {
+  "name": "F_image_354_20",
+  "gt": "മെഡലുകൾ",
+  "pred": "The text in the image is \"கல்வியாத்திரை\". This is Tamil for \"Education Day\"."
+ },
+ {
+  "name": "F_image_354_25",
+  "gt": "ദേശീയ",
+  "pred": "The text in the image is \"അവിടെ\". This is Malayalam, a language spoken primarily in Kerala, India. The word \"അവിടെ\" translates to \"there\" or \"at that place\" in English."
+ },
+ {
+  "name": "F_image_354_26",
+  "gt": "10-ാമത്",
+  "pred": "The text in the image is \"10 - מומלץ\" which translates to \"10 - Recommended\" in Hebrew."
+ },
+ {
+  "name": "F_image_354_27",
+  "gt": "ഡൽഹിയിൽവെച്ച് നടന്ന",
+  "pred": "The text in the image reads \"wonderland.msm\"."
+ },
+ {
+  "name": "F_image_354_28",
+  "gt": "അക്കാദമി",
+  "pred": "The text in the image is \"1970-08-02\"."
+ },
+ {
+  "name": "F_image_354_29",
+  "gt": "കളരി",
+  "pred": "The text in the image is \"కుమ్మరి\"."
+ },
+ {
+  "name": "F_image_354_3",
+  "gt": "ക്വുബിക്‌സ്",
+  "pred": "The text in the image reads \"ayman\"."
+ },
+ {
+  "name": "F_image_354_30",
+  "gt": "പഴശ്ശിരാജ",
+  "pred": "The text in the image is \"संगीतकारिता\" which translates to \"Music Composition\" in English."
+ },
+ {
+  "name": "F_image_354_31",
+  "gt": "കാക്കയങ്ങാട്‌",
+  "pred": "The text in the image reads \"SALVATORES\"."
+ },
+ {
+  "name": "F_image_354_33",
+  "gt": "(മാർകിസ്ന്)",
+  "pred": "The text in the image is \"പുരോഹിതം\". This is Malayalam, and it translates to \"Priest\" or \"Purohit\" in English."
+ },
+ {
+  "name": "F_image_354_37",
+  "gt": "ഓഫിസ്",
+  "pred": "The text in the image is \"வெளியீடு\" which is Tamil for \"Output\"."
+ },
+ {
+  "name": "F_image_354_39",
+  "gt": "കാക്കയങ്ങാട്",
+  "pred": "The text in the image is:\n\n\"13/12/2024-2025\""
+ },
+ {
+  "name": "F_image_354_40",
+  "gt": "കളരിപ്പയറ്റ്",
+  "pred": "The text in the image is \"കൊള്ളിമതി\". This is Malayalam, a language spoken primarily in Kerala, India. The word \"കൊള്ളിമതി\" translates to \"police station\" in English."
+ },
+ {
+  "name": "F_image_354_41",
+  "gt": "ചാമ്പ്യൻഷിപ്പിൽ",
+  "pred": "The text in the image is in Malayalam, and it reads: \"കേരള സംസ്ഥാന മന്ത്രിസഭ\" which translates to \"Kerala State Cabinet\" in English."
+ },
+ {
+  "name": "F_image_354_42",
+  "gt": "ഉജ്ജ്വല",
+  "pred": "The text in the image is \"오랜만인\"."
+ },
+ {
+  "name": "F_image_354_43",
+  "gt": "വിജയം",
+  "pred": "The text in the image is \"মিজার্যা\" which appears to be in Bengali script. The meaning or context of this word would depend on the specific language and dialect it belongs to, but without additional context, it's difficult to provide a precise translation or explanation. If you have more"
+ },
+ {
+  "name": "F_image_354_44",
+  "gt": "ജനകീയ",
+  "pred": "The text in the image is \"ஆலை\". This appears to be Tamil script, which is used primarily in the Indian state of Tamil Nadu and in the country of Sri Lanka. The word \"ஆலை\" (aalai) in Tamil means \"library\" in English."
+ },
+ {
+  "name": "F_image_354_46",
+  "gt": "സം‌വാദം",
+  "pred": "The text in the image reads \"MujinDo\"."
+ },
+ {
+  "name": "F_image_354_48",
+  "gt": "കണ്ണൂർ‌",
+  "pred": "The text in the image is \"ఎంపీ\" which is in Telugu script. It translates to \"M.P.\" in English, where \"M\" stands for Member and \"P\" stands for Parliament. This is commonly used to denote a Member of Parliament in India."
+ },
+ {
+  "name": "F_image_354_52",
+  "gt": "കാ‍ലം",
+  "pred": "The text in the image is \"கோலம்\". This is Tamil for \"Kolam,\" which refers to a type of decorative pattern or design, often made with rice flour or colored powder, commonly used in South Indian culture during festivals and special occasions."
+ },
+ {
+  "name": "F_image_354_53",
+  "gt": "പറഞ്ഞത്‌",
+  "pred": "The text in the image is \"DolceGusto\"."
+ },
+ {
+  "name": "F_image_354_54",
+  "gt": "അക്ഷര",
+  "pred": "The text in the image appears to be in Telugu, and it reads \"అందుకుంటే\". This translates to \"to get\" or \"to obtain\" in English."
+ },
+ {
+  "name": "F_image_354_55",
+  "gt": "പാദംഏതായാലും",
+  "pred": "The text in the image is \"പോലെ നിരോധിക്കുന്ന\". This appears to be in Malayalam, a language spoken primarily in Kerala, India. The phrase translates to \"police\" in English."
+ },
+ {
+  "name": "F_image_354_56",
+  "gt": "അപ്‌ടദി",
+  "pred": "The text in the image reads \"KFC\" and \"KFC\" again, which is the logo of Kentucky Fried Chicken (KFC), a well-known fast-food restaurant chain."
+ },
+ {
+  "name": "F_image_354_57",
+  "gt": "പാദുകം",
+  "pred": "The text in the image is \"नमस्ते\" which is Hindi for \"Namaste\"."
+ },
+ {
+  "name": "F_image_354_58",
+  "gt": "തന്നെ‍",
+  "pred": "The text in the image is \"jasm\"."
+ },
+ {
+  "name": "F_image_354_59",
+  "gt": "ഓട്ടോ",
+  "pred": "The text in the image is \"BUSY\"."
+ },
+ {
+  "name": "F_image_354_61",
+  "gt": "അഷ്‌ടമി",
+  "pred": "The text in the image is \"ก้าวขึ้นเต็ม\" which translates to \"Step up fully\" or \"Step up completely\" in English."
+ },
+ {
+  "name": "F_image_354_62",
+  "gt": "കേ.കേ.",
+  "pred": "The text in the image reads \"616, 616\"."
+ },
+ {
+  "name": "F_image_354_63",
+  "gt": "ടെക്‌സ്",
+  "pred": "The text in the image reads \"MISS YOU\"."
+ },
+ {
+  "name": "F_image_354_67",
+  "gt": "ഗ്രാഫിക്‌സ്",
+  "pred": "The text in the image is \"பாவக்கட்டி\". This is a Tamil word, which translates to \"Pavakkadu\" in English. Pavakkadu is a village located in the Kanyakumari district of Tamil Nadu, India."
+ },
+ {
+  "name": "F_image_354_69",
+  "gt": "കാക്കയങ്ങാട് RBD NO 142020-I",
+  "pred": "The text in the image reads \"Kerala State Road Transport Corporation\" and \"HSN NO: 142054\"."
+ },
+ {
+  "name": "F_image_354_71",
+  "gt": "കാൻവാസ്",
+  "pred": "The text in the image is \"கன்னியாம்\". This is Tamil script, and it translates to \"Kanniyam\" in English."
+ },
+ {
+  "name": "F_image_360_1",
+  "gt": "നമഃ",
+  "pred": "The text in the image reads \"m2:\"."
+ },
+ {
+  "name": "F_image_360_5",
+  "gt": "വിഷ്‌ണുദേവ",
+  "pred": "The text in the image is \"விளையாடுவோம்\". This is Tamil and it translates to \"Let's play\" in English."
+ },
+ {
+  "name": "F_image_360_6",
+  "gt": "ശിവദേവ",
+  "pred": "The text in the image is \"জীবনের\" which is Bengali and translates to \"of life\" or \"in life\" in English."
+ },
+ {
+  "name": "F_image_360_7",
+  "gt": "ബ്രഹ്മദേവ",
+  "pred": "The text in the image is in Malayalam, and it reads \"അമ്മ\". This translates to \"Mother\" in English."
+ },
+ {
+  "name": "F_image_360_8",
+  "gt": "ശ്രീം",
+  "pred": "The text in the image is \"สวัสดี\" which is Thai for \"Hello\"."
+ },
+ {
+  "name": "F_image_360_9",
+  "gt": "ഓം",
+  "pred": "The text in the image reads \"030\"."
+ },
+ {
+  "name": "F_image_361_0",
+  "gt": "നഗർ",
+  "pred": "The text in the image is \"mod\"."
+ },
+ {
+  "name": "F_image_361_1",
+  "gt": "ഗോറിയോസ്",
+  "pred": "The text in the image is in Malayalam, and it reads \"ഇന്ത്യയുടെ\". This translates to \"India's\" in English."
+ },
+ {
+  "name": "F_image_361_14",
+  "gt": "ശനി",
+  "pred": "The text in the image reads \"com\"."
+ },
+ {
+  "name": "F_image_361_3",
+  "gt": "സന്ധ്യാനമസ്‌കാരം",
+  "pred": "The text in the image is \"പാലക്കാട്\". This is the Malayalam name for Palakkad, which is a district in Kerala, India."
+ },
+ {
+  "name": "F_image_361_4",
+  "gt": "നദസ്‌കാരം",
+  "pred": "The text in the image is \"mançaro\"."
+ },
+ {
+  "name": "F_image_361_7",
+  "gt": "അപ്രഭാമം",
+  "pred": "The text in the image reads \"7AM-11:30PM\"."
+ },
+ {
+  "name": "F_image_361_8",
+  "gt": "ഞാതർ",
+  "pred": "The text in the image is \"मानवी\"."
+ },
+ {
+  "name": "F_image_38_0",
+  "gt": "അറിയിപ്പ്",
+  "pred": "The text in the image is \"menkind\"."
+ },
+ {
+  "name": "F_image_38_10",
+  "gt": "നഗരസഭ",
+  "pred": "The text in the image is \"museum\"."
+ },
+ {
+  "name": "F_image_38_11",
+  "gt": "പൊന്നാനി",
+  "pred": "The text in the image is \"Locomotivo\"."
+ },
+ {
+  "name": "F_image_38_13",
+  "gt": "സർക്കാർ",
+  "pred": "The text in the image is \"গোলাপগঞ্জ\". This appears to be a Bengali word, which translates to \"Golapganj\" in English. Golapganj is a city located in Bangladesh."
+ },
+ {
+  "name": "F_image_38_2",
+  "gt": "തടവും",
+  "pred": "The text in the image reads: \"φ∈S∩M₀\"."
+ },
+ {
+  "name": "F_image_38_31",
+  "gt": "സെക്യ",
+  "pred": "The text in the image is \"മലയാളം\". This is the Malayalam script, which is used to write the Malayalam language, primarily spoken in the state of Kerala and some neighboring regions in India."
+ },
+ {
+  "name": "F_image_38_35",
+  "gt": "കുറ്റമാണ്",
+  "pred": "The text in the image reads \"magnanimous.\""
+ },
+ {
+  "name": "F_image_38_7",
+  "gt": "താലൂക്ക്",
+  "pred": "The text in the image is in Malayalam, and it reads \"മേലക്കോട്ട\" (Mēlakkott)."
+ },
+ {
+  "name": "F_image_38_8",
+  "gt": "സ്മാരക",
+  "pred": "The text in the image is in Malayalam, and it reads \"മുഖത്തി\". This translates to \"face\" in English."
+ },
+ {
+  "name": "F_image_38_6",
+  "gt": "പൊന്നാനി",
+  "pred": "The text in the image reads \"Lumacare\"."
+ },
+ {
+  "name": "F_image_38_12",
+  "gt": "ഇ.കെ. ഇമ്പിച്ചിബാവ",
+  "pred": "The text in the image is in Malayalam and reads \"എ.കെ. വാതിലോപ്പ്\". This translates to \"E.K. Valiopppu\" in English, which appears to be a name or a title, possibly of a person"
+ },
+ {
+  "name": "F_image_38_14",
+  "gt": "ആശുപത്രി",
+  "pred": "The text in the image is in Malayalam, and it reads \"അമ്പലത്തിന്\". This translates to \"For the temple\" or \"To the temple\" in English."
+ },
+ {
+  "name": "F_image_38_33",
+  "gt": "വിലയുടെ",
+  "pred": "The text in the image reads \"allergies\"."
+ },
+ {
+  "name": "F_image_391_3",
+  "gt": "സിറ്റി",
+  "pred": "The text in the image is \"তালী\" which is in Bengali script."
+ },
+ {
+  "name": "F_image_391_7",
+  "gt": "ഒപ്റ്റിക്‌സ്",
+  "pred": "The text in the image is \"విశ్వాసం\". This is Telugu for \"faith\" or \"belief.\""
+ },
+ {
+  "name": "F_image_394_1",
+  "gt": "ക്ഷേത്രം‌",
+  "pred": "The text in the image is \"कोलकाता\". This is the name of Kolkata, which is a major city in West Bengal, India."
+ },
+ {
+  "name": "F_image_394_2",
+  "gt": "ഭഗവതി",
+  "pred": "The text in the image is \"கோவிட்\"."
+ },
+ {
+  "name": "F_image_394_3",
+  "gt": "കുവേരി",
+  "pred": "The text in the image is \"കുടോല\"."
+ },
+ {
+  "name": "F_image_394_4",
+  "gt": "ശ്രീ",
+  "pred": "The text in the image is \"แก้ว\"."
+ },
+ {
+  "name": "F_image_394_5",
+  "gt": "മുച്ചിലോട്ട്",
+  "pred": "The text in the image is \"ஆசிலையர்\". This appears to be in Tamil script, which is used primarily in the Indian state of Tamil Nadu and in the country of Sri Lanka. The word \"ஆசிலையர்\" (Aasilaiyar) translates"
+ },
+ {
+  "name": "F_image_394_6",
+  "gt": "പെരുങ്കളിയാട്ട",
+  "pred": "The text in the image is \"বাংলা ভাষা দিবস\" which translates to \"Bengali Language Day\" in English."
+ },
+ {
+  "name": "F_image_397_1",
+  "gt": "കണ്ണൂർ",
+  "pred": "The text in the image reads \"2019\"."
+ },
+ {
+  "name": "F_image_400_1",
+  "gt": "കണ്ണൂർ",
+  "pred": "The text in the image is \"கோலை\" which is in Tamil script. The transliteration into English would be \"Kolai\"."
+ },
+ {
+  "name": "F_image_422_2",
+  "gt": "കാസർക്കോട്",
+  "pred": "The text in the image is \"कृपया अनुसरण करें\" which is in Hindi and translates to \"Please follow\" in English."
+ },
+ {
+  "name": "F_image_436_0",
+  "gt": "ളെല്ലാവരും",
+  "pred": "The text in the image appears to be \"beino.\""
+ },
+ {
+  "name": "F_image_436_1",
+  "gt": "തത്ത്വൻെറ",
+  "pred": "The text in the image reads \"100% NATURAL\"."
+ },
+ {
+  "name": "F_image_436_10",
+  "gt": "ഓഫീസ്.",
+  "pred": "The text in the image is \"வேலை\". This is Tamil for \"work\" or \"job\"."
+ },
+ {
+  "name": "F_image_436_11",
+  "gt": "ചങ്ങനാശേരി",
+  "pred": "The text in the image is \"പാലത്തോട്ട\"."
+ },
+ {
+  "name": "F_image_436_2",
+  "gt": "ശകതി",
+  "pred": "The text in the image appears to be in Malayalam, and it reads \"മുക്തി.\" This translates to \"freedom\" or \"liberation\" in English."
+ },
+ {
+  "name": "F_image_436_3",
+  "gt": "‌ൈ",
+  "pred": "The text in the image is \"676\"."
+ },
+ {
+  "name": "F_image_436_4",
+  "gt": "ദാര",
+  "pred": "The text in the image is \"COS\"."
+ },
+ {
+  "name": "F_image_436_6",
+  "gt": "ജനതാചാർട്ടി",
+  "pred": "The text in the image is \"അവിയലുകൾ\". This is Malayalam, a language spoken primarily in Kerala, India. The phrase translates to \"availability\" in English."
+ },
+ {
+  "name": "F_image_436_7",
+  "gt": "ഭാരതീയ",
+  "pred": "The text in the image is \"മുന്നിൽ\"."
+ },
+ {
+  "name": "F_image_436_8",
+  "gt": "ഭവൻ",
+  "pred": "The text in the image reads \"Golgo\"."
+ },
+ {
+  "name": "F_image_436_9",
+  "gt": "കെനിമാരാർ",
+  "pred": "The text in the image is in Malayalam, and it reads: \"കൊടു. മി. പ്രവർത്തനങ്ങൾ\" which translates to \"Kodu. Mi. Pravartanangal\" in English. This"
+ },
+ {
+  "name": "F_image_467_5",
+  "gt": "നെ",
+  "pred": "The text in the image is \"am\"."
+ },
+ {
+  "name": "F_image_467_8",
+  "gt": "വിജയിപ്പിക്കുക",
+  "pred": "The text in the image is in Bengali and reads: \"মোটামুটি স্বাস্থ্য\" which translates to \"Approximately Healthy\" or \"More or Less Healthy\" in English."
+ },
+ {
+  "name": "F_image_475_1",
+  "gt": "മേഖലകളിൽ",
+  "pred": "The text in the image is in Malayalam, and it reads \"കൊട്ടാര കുളികൾ\". This translates to \"Kottarakkara Kulingal\" in English."
+ },
+ {
+  "name": "F_image_475_10",
+  "gt": "സ്വകാര്യ",
+  "pred": "The text in the image is \"പുതിയ\" which is Malayalam for \"new\"."
+ },
+ {
+  "name": "F_image_475_2",
+  "gt": "സംവര",
+  "pred": "The text in the image reads \"MORIO\"."
+ },
+ {
+  "name": "F_image_475_3",
+  "gt": "ണംവ്യാപിപ്പിക്കുക",
+  "pred": "The text in the image is in Malayalam, and it reads: \"അവിയലുകളുടെ കേന്ദ്ര\" which translates to \"Center of Aviyal\" in English."
+ },
+ {
+  "name": "F_image_475_4",
+  "gt": "ചെറുക്കുക",
+  "pred": "The text in the image is in Malayalam and reads \"പുതിയ\"."
+ },
+ {
+  "name": "F_image_475_5",
+  "gt": "അഭിമറിക്കാനുള്ള",
+  "pred": "The text in the image is in Malayalam, and it reads: \"അവിയലുകളെ\" which translates to \"Aviyalukal\" in English."
+ },
+ {
+  "name": "F_image_475_7",
+  "gt": "ഭരണവഗ്ഗ",
+  "pred": "The text in the image appears to be in Hebrew and reads \"בְּרֵאשִׁית\" which translates to \"In the beginning\" in English. This is the first word of the Hebrew Bible, the Torah."
+ },
+ {
+  "name": "F_image_475_9",
+  "gt": "നീക്കത്തെ",
+  "pred": "The text in the image is \"கிளையாளர்\" which is written in Tamil script. The English translation of this Tamil word is \"gardener.\""
+ },
+ {
+  "name": "F_image_482_2",
+  "gt": "കൊയിലാൻ",
+  "pred": "The text in the image is \"பொறியியல்\" which translates to \"Engineering\" in English."
+ },
+ {
+  "name": "F_image_487_15",
+  "gt": "കോഫി",
+  "pred": "The text in the image reads \"good\"."
+ },
+ {
+  "name": "F_image_487_17",
+  "gt": "പായപാൽ.കോഫ്",
+  "pred": "The text in the image is in Malayalam, and it reads \"പേരി, പ്രത്യേകം.\" This translates to \"Name, Special\" in English."
+ },
+ {
+  "name": "F_image_487_6",
+  "gt": "ലഘുഭക്ഷണശാല",
+  "pred": "The text in the image is in Malayalam, and it reads \"അന്ത്യോക്ഷणം\"."
+ },
+ {
+  "name": "F_image_493_1",
+  "gt": "കാസർഗോഡ്",
+  "pred": "The text in the image is in Malayalam, and it reads: \"കൊച്ചി\" which translates to \"Kochi\" in English."
+ },
+ {
+  "name": "F_image_493_2",
+  "gt": "എൻ്റെ",
+  "pred": "The text in the image is \"മുളക്\"."
+ },
+ {
+  "name": "F_image_5_0",
+  "gt": "മരഞ്ചരി",
+  "pred": "The text in the image is \"ஆக்காதி\". This appears to be Tamil script, which is used primarily in the Indian state of Tamil Nadu and the Union Territory of Puducherry, as well as by Tamil communities in other parts of India and abroad. The word \"ஆக்�"
+ },
+ {
+  "name": "F_image_5_1",
+  "gt": "നഗരസഭ",
+  "pred": "The text in the image is \"అందుకుంటే\". This is Telugu, and it translates to \"if you want\" or \"if you need\" in English."
+ },
+ {
+  "name": "F_image_5_2",
+  "gt": "ആലിമുസ്ലിയാർ",
+  "pred": "The text in the image is \"അമ്പലപ്പുഴയിലെ\"."
+ },
+ {
+  "name": "F_image_5_3",
+  "gt": "സ്‌മാരകം",
+  "pred": "The text in the image is \"മുണ്ടോ\". This appears to be in Malayalam, a language spoken primarily in Kerala, India. The word \"മുണ്ടോ\" (mundo) can mean \"together\" or \"jointly\" in Malay"
+ },
+ {
+  "name": "F_image_505_1",
+  "gt": "കുത്തുന്നു",
+  "pred": "The text in the image is \"குறைந்து\". This appears to be in Tamil, and it translates to \"decrease\" or \"less\" in English."
+ },
+ {
+  "name": "F_image_505_2",
+  "gt": "വേദനയില്ലാതെ",
+  "pred": "The text in the image is \"പോയന്തിയുടെ\"."
+ },
+ {
+  "name": "F_image_505_4",
+  "gt": "വനിത",
+  "pred": "The text in the image is \"പുതിയ\" which is written in Malayalam script."
+ },
+ {
+  "name": "F_image_505_5",
+  "gt": "ബ്യൂട്ടിപാർലർ",
+  "pred": "The text in the image is in Malayalam, and it reads \"പുതുക്കിയായിരുന്നു\". This translates to \"It was changed\" in English."
+ },
+ {
+  "name": "F_image_505_8",
+  "gt": "ക്ക് സമീപം",
+  "pred": "The text in the image is in Tamil and reads \"கோட்ட சுவாமிபூ\"."
+ },
+ {
+  "name": "F_image_505_9",
+  "gt": "കാത്",
+  "pred": "The text in the image is \"കുള\". This is in Malayalam, which is a language spoken primarily in the state of Kerala, India. The word \"കുള\" means \"pond\" or \"lake\" in Malayalam."
+ },
+ {
+  "name": "F_image_522_0",
+  "gt": "കോംപ്ലക്സ്",
+  "pred": "The text in the image reads \"Святослав\"."
+ },
+ {
+  "name": "F_image_522_1",
+  "gt": "ബസ്ടെർമിനൽ",
+  "pred": "The text in the image is in Thai and reads: \"ขอแสดงความยินดี\" which translates to \"Congratulations\" in English."
+ },
+ {
+  "name": "F_image_522_2",
+  "gt": "നഗരസഭ",
+  "pred": "The text in the image is \"മുന്നോട്\". This is written in Malayalam, a language spoken primarily in Kerala, India. The meaning of this word can vary depending on context, but it generally means \"in front\" or \"forward.\""
+ },
+ {
+  "name": "F_image_522_3",
+  "gt": "കുന്നംകുളം",
+  "pred": "The text in the image is \"குழாக்கோ\"."
+ },
+ {
+  "name": "F_image_522_4",
+  "gt": "ഇ.കെ.നായനാർ",
+  "pred": "The text in the image is in Malayalam and reads \"പെരുമ്പാവൂർ\"."
+ },
+ {
+  "name": "F_image_522_5",
+  "gt": "കംഷോപ്പിംഗ്",
+  "pred": "The text in the image reads: \"e_0 (G_0) = 26000 / 7\""
+ },
+ {
+  "name": "F_image_532_1",
+  "gt": "ശ്രി",
+  "pred": "The text in the image is \"百万\"."
+ },
+ {
+  "name": "F_image_543_0",
+  "gt": "വർഷം",
+  "pred": "The text in the image is \"সুন্দরবন\". This is the Bengali name for Sundarbans, which refers to a large mangrove forest located on the coast of the Bay of Bengal, shared by India and Bangladesh."
+ },
+ {
+  "name": "F_image_543_2",
+  "gt": "ദൈവ",
+  "pred": "The text in the image is \"6060\"."
+ },
+ {
+  "name": "F_image_543_3",
+  "gt": "പരിപാലനയുടെ",
+  "pred": "The text in the image is \"ต้นไม้ในสวนของฉัน\" which translates to \"Trees in my garden\" in English."
+ },
+ {
+  "name": "F_image_546_11",
+  "gt": "ട്രാവൻകൂർ",
+  "pred": "The text in the image is \"விளையாட்டுகள்\". This is Tamil for \"games\" or \"play\"."
+ },
+ {
+  "name": "F_image_546_12",
+  "gt": "ഓഫ്",
+  "pred": "The text in the image is \"合肥\"."
+ },
+ {
+  "name": "F_image_546_13",
+  "gt": "ബാങ്ക്‌",
+  "pred": "The text in the image is \"耐克\" (Nike)."
+ },
+ {
+  "name": "F_image_546_14",
+  "gt": "സ്റ്റേറ്റ്",
+  "pred": "The text in the image reads \"emoj 2019\"."
+ },
+ {
+  "name": "F_image_549_17",
+  "gt": "ശബരിമല",
+  "pred": "The text in the image is \"కోలాలీ\". This appears to be in Telugu script, which is used in the Indian state of Andhra Pradesh and some neighboring regions. The word \"కోలాలీ\" (Kolalle) can be translated to"
+ },
+ {
+  "name": "F_image_549_18",
+  "gt": "ഇടത്താവളം",
+  "pred": "The text in the image is \"গুলিয়াবাগ\" which is Bengali for \"Guliyabag\"."
+ },
+ {
+  "name": "F_image_549_19",
+  "gt": "ചെങ്ങന്നൂർ‌",
+  "pred": "The text in the image is \"പേരായ്മുക\"."
+ },
+ {
+  "name": "F_image_549_21",
+  "gt": "നിരണിയുന്നു",
+  "pred": "The text in the image reads \"กิจกรรมปี 2012\". This appears to be in Thai and translates to \"Activity of the year 2012\" in English."
+ },
+ {
+  "name": "F_image_549_25",
+  "gt": "രാമായണ",
+  "pred": "The text in the image is \"মানবতার\" which translates to \"Humanity's\" in English."
+ },
+ {
+  "name": "F_image_549_26",
+  "gt": "മാസാചരണം",
+  "pred": "The text in the image is in Malayalam, and it reads: \"കോട്ടയം പുരാവസ്തു വകുപ്പ്\" which translates to \"Kottayam Archaeology Department\" in English."
+ },
+ {
+  "name": "F_image_549_38",
+  "gt": "പൂജാ",
+  "pred": "The text in the image is \"പുണ്യ\". This is in Malayalam, a language spoken primarily in Kerala, India. The word \"പുണ്യ\" (puṇya) means \"holy\" or \"sacred\" in Malayalam."
+ },
+ {
+  "name": "F_image_549_39",
+  "gt": "കേറ്റ",
+  "pred": "The text in the image is \"கோ\"."
+ },
+ {
+  "name": "F_image_549_4",
+  "gt": "ഓംനമ",
+  "pred": "The text in the image is \"80.00\"."
+ },
+ {
+  "name": "F_image_549_40",
+  "gt": "ചോതി",
+  "pred": "The text in the image is \"வல்லாமை\" which is in Tamil script. It translates to \"Knowledge\" or \"Wisdom\" in English."
+ },
+ {
+  "name": "F_image_549_6",
+  "gt": "ശക്തി",
+  "pred": "The text in the image is \"cafehill\"."
+ },
+ {
+  "name": "F_image_549_3",
+  "gt": "ശിവായ",
+  "pred": "The text in the image is \"പെരിയാർ\"."
+ },
+ {
+  "name": "F_image_549_9",
+  "gt": "ദേവസ്വം",
+  "pred": "The text in the image is \"enrumijo\"."
+ },
+ {
+  "name": "F_image_551_1",
+  "gt": "പ്രസൻ്റഷ",
+  "pred": "The text in the image is \"মিলেনিয়াম\" which is Bengali for \"Millennium\"."
+ },
+ {
+  "name": "F_image_551_11",
+  "gt": "ഐറ്റംസ്",
+  "pred": "The text in the image is \"வெளியோடு\". This is in Tamil, and it translates to \"outside\" or \"abroad\" in English."
+ },
+ {
+  "name": "F_image_551_2",
+  "gt": "തൃശൂർ, ഇരിങ്ങാലക്കുട",
+  "pred": "The text in the image is \"রাজ্য অনুমোদন\" which translates to \"State Approval\" in English."
+ },
+ {
+  "name": "F_image_551_22",
+  "gt": "ഫാൻസി",
+  "pred": "The text in the image is \"மொழியால்\". This is Tamil script, and it translates to \"in language\" or \"with language\" in English."
+ },
+ {
+  "name": "F_image_551_23",
+  "gt": "പ്രസൻ്റേഷൻ",
+  "pred": "The text in the image is:\n\n\\[ (a + b)^{2n} \\]"
+ },
+ {
+  "name": "F_image_551_24",
+  "gt": "യൂഹോപകരണങ്ങൾ",
+  "pred": "The text in the image is in Malayalam, and it reads \"പുരാതന കേരളത്തിലെ.\" This translates to \"Ancient Kerala\" in English."
+ },
+ {
+  "name": "F_image_551_25",
+  "gt": "വെസ്സൽസ്",
+  "pred": "The text in the image is in Malayalam, and it reads \"പ്രയോഗങ്ങൾ\". This translates to \"Applications\" or \"Uses\" in English."
+ },
+ {
+  "name": "F_image_551_26",
+  "gt": "സ്റ്റേഷനറി",
+  "pred": "The text in the image reads \"en el mol\"."
+ },
+ {
+  "name": "F_image_551_28",
+  "gt": "കൊടകര",
+  "pred": "The text in the image reads \"64569\"."
+ },
+ {
+  "name": "F_image_551_3",
+  "gt": "മാള",
+  "pred": "The text in the image is \"डॉक्टर\"."
+ },
+ {
+  "name": "F_image_551_4",
+  "gt": "തൃശൂർ",
+  "pred": "The text in the image is \"গুলো\" which is Bengali and translates to \"the ones\" or \"the things\" in English."
+ },
+ {
+  "name": "F_image_551_5",
+  "gt": "ഇരിങ്ങാലക്കുട",
+  "pred": "The text in the image is \"മലയാളം\" which means \"Malayalam\" in English. Malayalam is a Dravidian language primarily spoken in the state of Kerala, India."
+ },
+ {
+  "name": "F_image_551_6",
+  "gt": "കൊച്ചുകടവ്",
+  "pred": "The text in the image is \"కొందుకుడు\". This appears to be in Telugu, a language spoken primarily in the Indian state of Andhra Pradesh and Telangana. The word \"కొందుకుడు"
+ },
+ {
+  "name": "F_image_551_7",
+  "gt": "പാമ്പ്മേയ്‌ക്കാട്",
+  "pred": "The text in the image is \"मानवीकरण\" which is Hindi for \"Humanization\"."
+ },
+ {
+  "name": "F_image_554_0",
+  "gt": "മലപ്പുറം",
+  "pred": "The text in the image reads \"कलांगूर\"."
+ },
+ {
+  "name": "F_image_554_1",
+  "gt": "വിക്കിപീഡിയ",
+  "pred": "The text in the image is in Malayalam, and it reads \"പിക്കോട്ടിയില\"."
+ },
+ {
+  "name": "F_image_554_11",
+  "gt": "ശിബിരം",
+  "pred": "The text in the image is \"লিলিও\"."
+ },
+ {
+  "name": "F_image_554_13",
+  "gt": "ജനുവരി",
+  "pred": "The text in the image is \"ஆன்றுவாலி\". This appears to be Tamil script, which is used primarily in the Indian state of Tamil Nadu and the Union Territory of Puducherry, as well as by Tamil communities in other parts of India and abroad. The meaning or context"
+ },
+ {
+  "name": "F_image_554_2",
+  "gt": "ശനി",
+  "pred": "The text in the image is \"வெறி\" which is in Tamil script. It translates to \"veeri\" in English, which means \"bravery\" or \"courage.\""
+ },
+ {
+  "name": "F_image_554_3",
+  "gt": "മഅ്ദിൻ",
+  "pred": "The text in the image is \"การจัดการด้วยตนเอง\" which translates to \"Self-management\" in English."
+ },
+ {
+  "name": "F_image_554_4",
+  "gt": "കാമ്പസ്",
+  "pred": "The text in the image is \"கோலம்\". This appears to be Tamil script, which is used primarily in the Indian state of Tamil Nadu and in the Union Territory of Puducherry, as well as by Tamil communities in other parts of India and abroad. The word \"கோல"
+ },
+ {
+  "name": "F_image_554_5",
+  "gt": "സ്വലാത്ത്",
+  "pred": "The text in the image is \"mujercamino\"."
+ },
+ {
+  "name": "F_image_554_6",
+  "gt": "നഗർ",
+  "pred": "The text in the image reads \"mod,\" which appears to be part of a word or phrase, possibly related to a mathematical concept such as \"modular\" or \"modulation.\" Without additional context, it's difficult to determine the exact meaning or usage."
+ },
+ {
+  "name": "F_image_554_7",
+  "gt": "പഠന",
+  "pred": "The text in the image reads \"wJOM\"."
+ },
+ {
+  "name": "F_image_556_10",
+  "gt": "വിക്കിപീഡിയ",
+  "pred": "The text in the image is \"العربية\". This is the Arabic word for \"Arabic\"."
+ },
+ {
+  "name": "F_image_556_11",
+  "gt": "മലയാളം",
+  "pred": "The text in the image reads \"2023\"."
+ },
+ {
+  "name": "F_image_556_8",
+  "gt": "പിറന്നാളാഘോഷം",
+  "pred": "The text in the image is \"20230809100000\"."
+ },
+ {
+  "name": "F_image_567_1",
+  "gt": "ഇസ്ലാംഭദ്രസ്സ",
+  "pred": "The text in the image is \"মানুষের মন\" which translates to \"Man's mind\" in English."
+ },
+ {
+  "name": "F_image_567_2",
+  "gt": "ദനീറുൽ",
+  "pred": "The text in the image is \"গুলিয়ে\". This is Bengali and it translates to \"throw away\" or \"discard\" in English."
+ },
+ {
+  "name": "F_image_570_1",
+  "gt": "സ്‌കൂൾ",
+  "pred": "The text in the image is \"മുകളിൽ\" which is written in Malayalam script."
+ },
+ {
+  "name": "F_image_570_10",
+  "gt": "ചിമ്പ്യൻമാർക്ക്",
+  "pred": "The text in the image is in Malayalam, and it reads \"പ്രധാനമന്ത്രി\". This translates to \"Prime Minister\" in English."
+ },
+ {
+  "name": "F_image_570_11",
+  "gt": "യു.പി.",
+  "pred": "The text in the image is \"মুসলিম\"."
+ },
+ {
+  "name": "F_image_570_12",
+  "gt": "ഗത്തിലെ",
+  "pred": "The text in the image is \"മലയാളം\". This is the Malayalam script, which is used to write the Malayalam language, primarily spoken in the state of Kerala and some neighboring regions in India."
+ },
+ {
+  "name": "F_image_570_14",
+  "gt": "ശാസ്‌ത്ര",
+  "pred": "The text in the image is \"গোলাম\" which is Bengali for \"Golam\"."
+ },
+ {
+  "name": "F_image_570_15",
+  "gt": "ജില്ലാ",
+  "pred": "The text in the image appears to be \"cana\"."
+ },
+ {
+  "name": "F_image_570_16",
+  "gt": "പുറം",
+  "pred": "The text in the image is \"01806\"."
+ },
+ {
+  "name": "F_image_570_17",
+  "gt": "യൂപി.",
+  "pred": "The text in the image reads \"الدورة\"."
+ },
+ {
+  "name": "F_image_570_18",
+  "gt": "സ്‌കൂൾ",
+  "pred": "The text in the image is in Malayalam, and it reads \"അരക്കുളങ്ങ\"."
+ },
+ {
+  "name": "F_image_570_19",
+  "gt": "കേളകം",
+  "pred": "The text in the image is \"కొందికామ\"."
+ },
+ {
+  "name": "F_image_570_20",
+  "gt": "വർകരരിൽ",
+  "pred": "The text in the image is \"গুলো হলো\" which is in Bengali and translates to \"These are\" in English."
+ },
+ {
+  "name": "F_image_570_21",
+  "gt": "ചരിത്ര",
+  "pred": "The text in the image is \"মালিক\" which is Bengali for \"owner\" or \"master.\""
+ },
+ {
+  "name": "F_image_570_23",
+  "gt": "നേട്ടം....",
+  "pred": "The text in the image reads \"ensam...\"."
+ },
+ {
+  "name": "F_image_570_25",
+  "gt": "ശാസ്‌ത്രമേള",
+  "pred": "The text in the image is \"வணக்கம்\" which is Tamil for \"Namaste\" or \"Hello\"."
+ },
+ {
+  "name": "F_image_570_27",
+  "gt": "വിഭാഗം",
+  "pred": "The text in the image is \"nileusa\"."
+ },
+ {
+  "name": "F_image_570_29",
+  "gt": "ഫമ്പ്",
+  "pred": "The text in the image reads \".com\"."
+ },
+ {
+  "name": "F_image_570_36",
+  "gt": "മഞ്ഞളാംപുറം",
+  "pred": "The text in the image is \"একাদশ জাতীয় সম্মেলন\" which translates to \"Eleventh National Convention\" in English."
+ },
+ {
+  "name": "F_image_570_43",
+  "gt": "മഞ്ഞളാംപുറം",
+  "pred": "The text in the image is \"একাদশ জাতীয় সম্মেলন\" which translates to \"Eleventh National Convention\" in English."
+ },
+ {
+  "name": "F_image_570_6",
+  "gt": "വിഭാഗം",
+  "pred": "The text in the image is \"nancy\"."
+ },
+ {
+  "name": "F_image_570_9",
+  "gt": "അഭിനന്ദനങ്ങൾ",
+  "pred": "The text in the image reads \"Свадебные\" which translates to \"Wedding\" in English."
+ },
+ {
+  "name": "F_image_570_13",
+  "gt": "മേളയിൽ",
+  "pred": "The text in the image is \"একুশে পান্ডুলিপি\". This is Bengali and it translates to \"14 February\" in English, which is a significant date in Bangladesh as it marks the day of the liberation war victory over Pakistan in 1"
+ },
+ {
+  "name": "F_image_584_2",
+  "gt": "മേലാറനൂർ",
+  "pred": "The text in the image is \"BAE LUCKY\"."
+ },
+ {
+  "name": "F_image_585_12",
+  "gt": "ക്രമം",
+  "pred": "The text in the image reads \"(6)20\"."
+ },
+ {
+  "name": "F_image_585_13",
+  "gt": "ചികിത്സാ",
+  "pred": "The text in the image is \"മിക്കവയും\". This is Malayalam, a language spoken primarily in Kerala, India. The meaning of this phrase can vary depending on context, but it generally translates to something like \"most\" or \"many\" in English."
+ },
+ {
+  "name": "F_image_585_14",
+  "gt": "പ്രതിരോധ",
+  "pred": "The text in the image reads: \"α1mερος(1)\""
+ },
+ {
+  "name": "F_image_585_17",
+  "gt": "ച്ചകളിലും",
+  "pred": "The text in the image appears to be in Korean. It reads \"차량운전\" which translates to \"driving vehicle\" or \"driving car\" in English."
+ },
+ {
+  "name": "F_image_585_21",
+  "gt": "രോഗനാധ്യത",
+  "pred": "The text in the image is \"सावधान\" which is in Hindi and means \"Be careful\" or \"Take care\" in English."
+ },
+ {
+  "name": "F_image_585_23",
+  "gt": "ഡോട്ൻ",
+  "pred": "The text in the image reads \"sabot\"."
+ },
+ {
+  "name": "F_image_585_28",
+  "gt": "രണ്ടാഴ്ചയിൽ",
+  "pred": "The text in the image is in Malayalam, and it reads: \"പെരുമ്പാവൂർ\" which translates to \"Perumpaavoor\" in English."
+ },
+ {
+  "name": "F_image_585_30",
+  "gt": "ക്ഷയരോഗം",
+  "pred": "The text in the image reads \"AMIGO\"."
+ },
+ {
+  "name": "F_image_585_31",
+  "gt": "പകർച്ചവ്യാധിയാണ്.",
+  "pred": "The text in the image is \"പാലമ്പുഴക്കൽ\"."
+ },
+ {
+  "name": "F_image_585_34",
+  "gt": "ഗ്രാമപഞ്ചായത്ത്‌",
+  "pred": "The text in the image is in Malayalam, and it reads \"പൊതുവായി\". This translates to \"commonly\" or \"generally\" in English."
+ },
+ {
+  "name": "F_image_585_35",
+  "gt": "തലനാട്",
+  "pred": "The text in the image is \"മലയാളം\". This is the Malayalam script, which is used to write the Malayalam language, primarily spoken in the state of Kerala and some neighboring regions in India."
+ },
+ {
+  "name": "F_image_585_37",
+  "gt": "കേന്ദ്രം",
+  "pred": "The text in the image is \"கோ(மோ)\"."
+ },
+ {
+  "name": "F_image_585_38",
+  "gt": "ക്ഷേമ",
+  "pred": "The text in the image reads \"60210\"."
+ },
+ {
+  "name": "F_image_585_39",
+  "gt": "കുടുംബ",
+  "pred": "The text in the image is \"కోసంల\". This appears to be in Telugu script, which is used in the Indian state of Andhra Pradesh and Telangana, as well as in some other regions. The meaning or context of this word would depend on the specific language and dialect"
+ },
+ {
+  "name": "F_image_585_40",
+  "gt": "അടുക്കം",
+  "pred": "The text in the image is \"അധികം\". This is Malayalam, and it translates to \"more\" or \"additional\" in English."
+ },
+ {
+  "name": "F_image_585_41",
+  "gt": "ക്ഷയ",
+  "pred": "The text in the image is \"അയില്ല\". This is written in Malayalam, which is a language spoken primarily in the state of Kerala, India. The meaning of this word can vary depending on the context, but it often translates to \"there is not\" or \"there isn't\""
+ },
+ {
+  "name": "F_image_585_42",
+  "gt": "ഏതവയവത്തെയും",
+  "pred": "The text in the image reads \"समुद्रांगण\" which is in Devanagari script and translates to \"Samudraangana\" in English."
+ },
+ {
+  "name": "F_image_585_43",
+  "gt": "ത്തെയാണ്",
+  "pred": "The text in the image is \"বাংলা বই\" which translates to \"Bangla Book\" in English."
+ },
+ {
+  "name": "F_image_585_44",
+  "gt": "ബാധിയ്ക്കുന്നത്",
+  "pred": "The text in the image is \"ஆம்பைக்கால்\"."
+ },
+ {
+  "name": "F_image_585_45",
+  "gt": "ശ്വാസോച്ഛാസം",
+  "pred": "The text in the image is \"ভারতের স্বাধীনতা দিবস\" which translates to \"Republic Day of India\" in English."
+ },
+ {
+  "name": "F_image_585_46",
+  "gt": "ചെയ്കൗ",
+  "pred": "The text in the image is \"এই সময়ে\" which translates to \"at this time\" or \"during this period\" in English."
+ },
+ {
+  "name": "F_image_585_48",
+  "gt": "ആർക്കം",
+  "pred": "The text in the image reads \"GOALS\"."
+ },
+ {
+  "name": "F_image_585_49",
+  "gt": "ക്ഷയരോഗം",
+  "pred": "The text in the image reads \"Superhero\"."
+ },
+ {
+  "name": "F_image_585_52",
+  "gt": "വരെ",
+  "pred": "The text in the image is \"060\"."
+ },
+ {
+  "name": "F_image_585_55",
+  "gt": "കുടുംബക്ഷേമകേന്ദ്രംഅട",
+  "pred": "The text in the image is in Malayalam, and it reads:\n\n\"പാലക്കാട് ജില്ലയിലെ പ്രധാന നഗരങ്ങളുടെ �"
+ },
+ {
+  "name": "F_image_585_59",
+  "gt": "മുതൽ",
+  "pred": "The text in the image is \"yavvo\"."
+ },
+ {
+  "name": "F_image_585_16",
+  "gt": "2 മണി",
+  "pred": "The text in the image reads \"2 0001\"."
+ },
+ {
+  "name": "F_image_589_4",
+  "gt": "പതിനാറ",
+  "pred": "The text in the image reads \"ucompl\"."
+ },
+ {
+  "name": "F_image_589_5",
+  "gt": "മലയാളം",
+  "pred": "The text in the image appears to be a mathematical expression or a sequence of symbols. It reads:\n\n\\[\n\\alpha \\in \\omega \\circ \\beta.\n\\]\n\nThis could represent a relationship between elements \\(\\alpha\\) and \\(\\beta\\) within a set \\(\\omega\\), possibly indicating an operation or"
+ },
+ {
+  "name": "F_image_589_7",
+  "gt": "നട്ടയം",
+  "pred": "The text in the image reads \"10% off\"."
+ },
+ {
+  "name": "F_image_589_9",
+  "gt": "ജ",
+  "pred": "The text in the image is \"62\"."
+ },
+ {
+  "name": "F_image_592_0",
+  "gt": "കണ്ണൂർ",
+  "pred": "The text in the image is \"कैसे यहाँ से\". This is in Hindi and translates to \"How can I\" in English."
+ },
+ {
+  "name": "F_image_600_5",
+  "gt": "യു.പി ഹൈസ്കൂൾ",
+  "pred": "The text in the image is in Malayalam, and it reads \"മലയാളം വിക്കിപീഡിയ\". This translates to \"Malayalam Wikipedia\" in English."
+ },
+ {
+  "name": "F_image_601_0",
+  "gt": "ക്ഷേത്രം‌",
+  "pred": "The text in the image is \"casa\"."
+ },
+ {
+  "name": "F_image_601_1",
+  "gt": "തമ്പുരാട്ടിക്കല്ല്",
+  "pred": "The text in the image is \"মানবতার জীবন\" which translates to \"Human Life\" in English."
+ },
+ {
+  "name": "F_image_601_2",
+  "gt": "ശ്രീ ധർമ്മശാസ്‌താ",
+  "pred": "The text in the image is in Malayalam, and it reads: \"പേരി മന്ത്രി സഹായകർ\"."
+ },
+ {
+  "name": "F_image_623_0",
+  "gt": "വഴി",
+  "pred": "The text in the image is \"لبن\"."
+ },
+ {
+  "name": "F_image_623_1",
+  "gt": "സ്ത്രികൾക്കുള്ള",
+  "pred": "The text in the image is in Malayalam, and it reads \"പിന്തുംകുറഞ്ഞത്.\" This translates to \"Pinthum Kuraññath\" in English, which means \"Very cheap\" or \"Extremely cheap.\""
+ },
+ {
+  "name": "F_image_660_1",
+  "gt": "പട്ടിക്കാട്",
+  "pred": "The text in the image is \"പ്രകൃതി\". This is Malayalam for \"nature\" or \"environment\" in English."
+ },
+ {
+  "name": "F_image_661_3",
+  "gt": "പടിക്കാട്",
+  "pred": "The text in the image is in Malayalam, and it reads \"പ്രിക്കോട്ട്\"."
+ },
+ {
+  "name": "F_image_667_0",
+  "gt": "ക്ഷേത്രം",
+  "pred": "The text in the image is in Malayalam and reads \"കൊളും\" which translates to \"cold\" in English."
+ },
+ {
+  "name": "F_image_667_1",
+  "gt": "ശ്രീ",
+  "pred": "The text in the image reads \" LUAI\"."
+ },
+ {
+  "name": "F_image_667_5",
+  "gt": "പെരളശ്ശേരി",
+  "pred": "The text in the image is written in Malayalam and reads \"പൊല്ലെ\"."
+ },
+ {
+  "name": "F_image_668_11",
+  "gt": "ഗാർമെൻ്റ്",
+  "pred": "The text in the image is \"സംഗീതം\" which translates to \"Music\" in English."
+ },
+ {
+  "name": "F_image_668_12",
+  "gt": "റോ‍ഡ്",
+  "pred": "The text in the image reads \"cocnut\"."
+ },
+ {
+  "name": "F_image_668_3",
+  "gt": "റിസ്റ്റിച്ച്",
+  "pred": "The text in the image is \"aşağıda\"."
+ },
+ {
+  "name": "F_image_668_4",
+  "gt": "ചെയ്തുകൊടുക്കുന്നതാണ്‌",
+  "pred": "The text in the image is in Malayalam, and it reads: \"പാലക്കാട്‌ ജില്ലയിലെ പ്രധാന നഗരങ്ങൾ.\" This translates to \""
+ },
+ {
+  "name": "F_image_668_5",
+  "gt": "മെയിൽ",
+  "pred": "The text in the image is \"canadain\"."
+ },
+ {
+  "name": "F_image_668_8",
+  "gt": "ഗോപാൽ",
+  "pred": "The text in the image is \"മോസ്കോ\"."
+ },
+ {
+  "name": "F_image_668_9",
+  "gt": "ടൈലേഴ്‌സ്",
+  "pred": "The text in the image is in Malayalam, and it reads \"കൊച്ചി\"."
+ },
+ {
+  "name": "F_image_676_0",
+  "gt": "പാണ്ട്യാല",
+  "pred": "The text in the image is \"لكلمة\" which translates to \"for every word\" or \"to every word\" in English."
+ },
+ {
+  "name": "F_image_683_0",
+  "gt": "ജെട്ടി",
+  "pred": "The text in the image is in Malayalam, and it reads \"പാലക്കാട്\" which translates to \"Palakkad\" in English. Palakkad is a district in Kerala, India."
+ },
+ {
+  "name": "F_image_683_1",
+  "gt": "പുഞ്ചിരി",
+  "pred": "The text in the image is \"പുസ്തകശാല\" which translates to \"Library\" in English."
+ },
+ {
+  "name": "F_image_683_2",
+  "gt": "ഗ്രാമപഞ്ചായത്ത്‌",
+  "pred": "The text in the image is in Malayalam, and it reads \"പ്രവർത്തകരായി\" which translates to \"As workers\" or \"As activists\" in English."
+ },
+ {
+  "name": "F_image_683_3",
+  "gt": "കൈനകരി",
+  "pred": "The text in the image is \"ലക്കാട്\"."
+ },
+ {
+  "name": "F_image_683_4",
+  "gt": "സ്വാഗതം",
+  "pred": "The text in the image is \"mucum\"."
+ },
+ {
+  "name": "F_image_685_0",
+  "gt": "കാവ്",
+  "pred": "The text in the image is \"കൊള്ള\"."
+ },
+ {
+  "name": "F_image_685_1",
+  "gt": "പുതുശേശരി",
+  "pred": "The text in the image is \"a boyceval\"."
+ },
+ {
+  "name": "F_image_686_13",
+  "gt": "കൊയിലാണ്ടി",
+  "pred": "The text in the image is in Malayalam, and it reads \"കുട്ടിയിലയാട്ടം\" which translates to \"Kuttiyilaattam\" in English. This is a traditional Malayalam folk dance that involves children performing a dance"
+ },
+ {
+  "name": "F_image_69_3",
+  "gt": "വി",
+  "pred": "The text in the image is \"10\"."
+ },
+ {
+  "name": "F_image_69_4",
+  "gt": "മല",
+  "pred": "The text in the image is \"90\"."
+ },
+ {
+  "name": "F_image_694_1",
+  "gt": "വെള്ളൂരിൽ",
+  "pred": "The text in the image is in Malayalam and reads \"പൊതുവെ\"."
+ },
+ {
+  "name": "F_image_694_15",
+  "gt": "സലഹിമസ്ജിദ്",
+  "pred": "The text in the image is \"mengelangkiri\"."
+ },
+ {
+  "name": "F_image_694_5",
+  "gt": "മുജാഫീദ്",
+  "pred": "The text in the image is \"গুলোকে\" which is in Bengali and translates to \"to them\" or \"for them\" in English."
+ },
+ {
+  "name": "F_image_694_6",
+  "gt": "മണ്ഡലം",
+  "pred": "The text in the image reads \"26melo\"."
+ },
+ {
+  "name": "F_image_694_7",
+  "gt": "പയ്യന്നൂർ",
+  "pred": "The text in the image is \"Pompeo\"."
+ },
+ {
+  "name": "F_image_694_8",
+  "gt": "സമ്മേളനം",
+  "pred": "The text in the image reads \"mje222md\"."
+ },
+ {
+  "name": "F_image_694_9",
+  "gt": "ഡിസ:13",
+  "pred": "The text in the image reads \"13\"."
+ },
+ {
+  "name": "F_image_714_1",
+  "gt": "മരണത്തിതരാജും",
+  "pred": "The text in the image reads: \"m > 0 and m ≠ 1, m ≥ 2.\""
+ },
+ {
+  "name": "F_image_714_10",
+  "gt": "സെന്ജോദ്ജ്ജ്",
+  "pred": "The text in the image reads \"欢迎光临\" which translates to \"Welcome\" in English."
+ },
+ {
+  "name": "F_image_714_2",
+  "gt": "ദേഗാലയത്തിൽ",
+  "pred": "The text in the image is \"欢迎来到我的世界\" which translates to \"Welcome to my world\" in English."
+ },
+ {
+  "name": "F_image_714_9",
+  "gt": "തലയോലപ്പറയ",
+  "pred": "The text in the image reads \"ОГРЕБЛЯЮ\"."
+ },
+ {
+  "name": "F_image_717_1",
+  "gt": "സിക്ക",
+  "pred": "The text in the image is \"mole\"."
+ },
+ {
+  "name": "F_image_717_10",
+  "gt": "കേന്ദ്രം",
+  "pred": "The text in the image is \"కొండా\". This appears to be in Telugu, a language spoken primarily in the Indian state of Andhra Pradesh and Telangana. The word \"కొండా\" can mean \"corner\" or \"side\" in English"
+ },
+ {
+  "name": "F_image_717_11",
+  "gt": "കണ്ണൂർ",
+  "pred": "The text in the image is \"കൊള്ളുന്ന\". This is Malayalam, a language spoken primarily in Kerala, India. The word \"കൊള്ളുന്ന\" means \"holding\" or \"grabbing\" in English."
+ },
+ {
+  "name": "F_image_717_12",
+  "gt": "അഡ്‌മിനിസ്ട്രേഷൻ",
+  "pred": "The text in the image is in Thai and reads \"เฉพาะกรณีที่มีการเปลี่ยนแปลง\" which translates to \"Only in cases where there is a change\" in English."
+ },
+ {
+  "name": "F_image_717_13",
+  "gt": "മേഖലാ കേന്ദ്രം കണ്ണൂർ",
+  "pred": "The text in the image reads \"COLOMBO & GALLE\"."
+ },
+ {
+  "name": "F_image_717_16",
+  "gt": "ഓഫ്",
+  "pred": "The text in the image is \"స్వామి\". This is Telugu script, and it translates to \"Swami\" in English, which is a title often used for a spiritual leader or guru in Hinduism."
+ },
+ {
+  "name": "F_image_717_17",
+  "gt": "കറക്ഷണൽ",
+  "pred": "The text in the image is \"கோக்கவனம்\" which is in Tamil script. It translates to \"Kokkavalam\" in English, which is a place name in India."
+ },
+ {
+  "name": "F_image_717_18",
+  "gt": "മേഖലാ",
+  "pred": "The text in the image is \"গোলাপ\". This is Bengali and it translates to \"Golap\" in English, which means \"rose\" or \"pink\" in some contexts."
+ },
+ {
+  "name": "F_image_717_19",
+  "gt": "കേന്ദ്രം",
+  "pred": "The text in the image is \"CeMo.\""
+ },
+ {
+  "name": "F_image_717_20",
+  "gt": "കണ്ണൂർ",
+  "pred": "The text in the image is \"கொடாம்\". This appears to be in Tamil script, which is used primarily in the Indian state of Tamil Nadu and by Tamil communities in other parts of India and abroad. The meaning or context of this word would depend on its usage in a sentence or within"
+ },
+ {
+  "name": "F_image_717_21",
+  "gt": "ഇൻസ്റ്റിറ്റ്യൂട്ട്",
+  "pred": "The text in the image is in Malayalam, and it reads \"അതിപീഠം\"."
+ },
+ {
+  "name": "F_image_717_22",
+  "gt": "സ്റ്റേറ്റ്",
+  "pred": "The text in the image reads \"emoji\"."
+ },
+ {
+  "name": "F_image_717_25",
+  "gt": "സിക്ക",
+  "pred": "The text in the image is \"ముఖం\" which is in Telugu script and translates to \"Face\" in English."
+ },
+ {
+  "name": "F_image_717_26",
+  "gt": "കണ്ണൂർ",
+  "pred": "The text in the image is \"കെ.മാനോ\". This appears to be in Malayalam script, which is used for writing the Malayalam language. The name \"കെ.മാനോ\" can be transliterated into English as \"K. Mano\"."
+ },
+ {
+  "name": "F_image_717_27",
+  "gt": "മേഖലാകേന്ദ്രം",
+  "pred": "The text in the image is in Malayalam, and it reads \"കോവിഡ-19\". This translates to \"COVID-19\" in English."
+ },
+ {
+  "name": "F_image_717_3",
+  "gt": "ഇൻസ്റ്റിറ്റ്യൂട്ട്",
+  "pred": "The text in the image is \"ஆறுமில்லை\" which translates to \"Six thousand\" in English."
+ },
+ {
+  "name": "F_image_717_4",
+  "gt": "സ്റ്റേറ്റ്",
+  "pred": "The text in the image reads \"smug\"."
+ },
+ {
+  "name": "F_image_717_5",
+  "gt": "ഓഫ്‌കറക്ഷണൽ",
+  "pred": "The text in the image is in Malayalam, and it reads \"കൊട്ടാരങ്ങളുടെ\"."
+ },
+ {
+  "name": "F_image_717_6",
+  "gt": "അഡ്മിനിസ്ട്രേഷൻ",
+  "pred": "The text in the image is in Thai and reads: \"ขออนุญาตให้เข้าร่วม\" which translates to \"Please allow me to join\" in English."
+ },
+ {
+  "name": "F_image_717_8",
+  "gt": "സിക്ക",
+  "pred": "The text in the image is \"പിക്ക\"."
+ },
+ {
+  "name": "F_image_717_9",
+  "gt": "മേഖലാ",
+  "pred": "The text in the image is \"একটি বাংলা\" which translates to \"A Bangla\" in English."
+ },
+ {
+  "name": "F_image_722_7",
+  "gt": "തിരൂരങ്ങാടി",
+  "pred": "The text in the image is \"விளையாட்டு\" which translates to \"Play\" in English."
+ },
+ {
+  "name": "F_image_722_8",
+  "gt": "യതീംഖാന",
+  "pred": "The text in the image is \"മലയാളം\". This is the Malayalam script, which is used to write the Malayalam language, primarily spoken in the state of Kerala and some neighboring regions in India."
+ },
+ {
+  "name": "F_image_732_10",
+  "gt": "മാട്രിമോണിയൽസ്",
+  "pred": "The text in the image is in Thai and reads \"ข้าวเปลือกไม่ใช่แค่ข้าว\" which translates to \"Rice without the husk is not just rice\" in English."
+ },
+ {
+  "name": "F_image_732_11",
+  "gt": "എ",
+  "pred": "The text in the image is \"aa\"."
+ },
+ {
+  "name": "F_image_732_13",
+  "gt": "ഔഷധശാല",
+  "pred": "The text in the image is \"গুণ্যতা\" which is Bengali and translates to \"quality\" or \"merit\" in English."
+ },
+ {
+  "name": "F_image_732_15",
+  "gt": "വട്ടിയംവീട്ടിൽ",
+  "pred": "The text in the image is \"ভূমিকামনা\" which is Bengali for \"Dream\"."
+ },
+ {
+  "name": "F_image_732_16",
+  "gt": "ഔഷധാലയം",
+  "pred": "The text in the image is \"การพัฒนา\" which translates to \"Development\" in English."
+ },
+ {
+  "name": "F_image_732_19",
+  "gt": "തൃഗ്ശൂർ",
+  "pred": "The text in the image reads \"1902\"."
+ },
+ {
+  "name": "F_image_732_20",
+  "gt": "തൈക്കാട്ട്",
+  "pred": "The text in the image reads \"6000 6500\"."
+ },
+ {
+  "name": "F_image_732_23",
+  "gt": "അൿവൈദസ്",
+  "pred": "The text in the image reads \"mads cohen\"."
+ },
+ {
+  "name": "F_image_732_26",
+  "gt": "താനൂർ‍",
+  "pred": "The text in the image reads \"0.000001\"."
+ },
+ {
+  "name": "F_image_732_27",
+  "gt": "എൻ‌",
+  "pred": "The text in the image is \"അമ്മ\"."
+ },
+ {
+  "name": "F_image_732_28",
+  "gt": "എസ്‌",
+  "pred": "The text in the image is \"മലയാളം\". This is the Malayalam script, which is used to write the Malayalam language, spoken primarily in the state of Kerala, India."
+ },
+ {
+  "name": "F_image_732_30",
+  "gt": "തൈക്കാട്ട്‌",
+  "pred": "The text in the image reads \"DAMNED\"."
+ },
+ {
+  "name": "F_image_732_31",
+  "gt": "തൃശ്ശൂർ",
+  "pred": "The text in the image is \"amazing\"."
+ },
+ {
+  "name": "F_image_732_9",
+  "gt": "സൗഭാഗ്യ",
+  "pred": "The text in the image reads \"ROOCEAN\"."
+ },
+ {
+  "name": "F_image_744_17",
+  "gt": "സെൻ‌ട്രൽ",
+  "pred": "The text in the image reads \"amazing.\""
+ },
+ {
+  "name": "F_image_744_18",
+  "gt": "തിരുവനന്തപുരം",
+  "pred": "The text in the image reads: \"m1020mm20\""
+ },
+ {
+  "name": "F_image_744_19",
+  "gt": "കോംപ്ലക്‌സ്",
+  "pred": "The text in the image reads \"هذا هو المثال المثالي\". This is Arabic and translates to \"This is the perfect example\" in English."
+ },
+ {
+  "name": "F_image_744_20",
+  "gt": "ടെർമിനൽ",
+  "pred": "The text in the image reads \"codaimos\"."
+ },
+ {
+  "name": "F_image_744_21",
+  "gt": "യസ്",
+  "pred": "The text in the image is \"cosθ\"."
+ },
+ {
+  "name": "F_image_744_22",
+  "gt": "കെ.എസ്.ആർ.ടി.സി.",
+  "pred": "The text in the image reads:\n\n\"6.02 x 10^23 mol^-1\""
+ },
+ {
+  "name": "F_image_761_18",
+  "gt": "നഗരസഭ",
+  "pred": "The text in the image is \"MOAME\"."
+ },
+ {
+  "name": "F_image_761_19",
+  "gt": "സിൽവർ",
+  "pred": "The text in the image is \"விளையாட்டு\" which translates to \"game\" in English."
+ },
+ {
+  "name": "F_image_761_20",
+  "gt": "ജൂബിലി",
+  "pred": "The text in the image is \"smiled\"."
+ },
+ {
+  "name": "F_image_761_21",
+  "gt": "ബസ്‌സ്റ്റാൻ്",
+  "pred": "The text in the image is \"রাজশাহী বিশ্ববিদ্যালয়\" which translates to \"Rajshahi University\" in English."
+ },
+ {
+  "name": "F_image_761_22",
+  "gt": "ഷോപ്പിംഗ്",
+  "pred": "The text in the image is \"ఎస్విటీ\". This appears to be in Telugu script, which is used in the Indian state of Andhra Pradesh and Telangana. The abbreviation \"ESVIT\" likely stands for \"E-Sanchar Vidyut"
+ },
+ {
+  "name": "F_image_761_26",
+  "gt": "വെേക്കറി",
+  "pred": "The text in the image is \"സമൂഹി\". This appears to be in Malayalam, a language spoken primarily in Kerala, India. The word \"സമൂഹി\" can be translated as \"Society\" or \"Community\" in English."
+ },
+ {
+  "name": "F_image_761_3",
+  "gt": "കോംപ്ലെക്ൻ-2003",
+  "pred": "The text in the image reads \"e-geolab-2003\"."
+ },
+ {
+  "name": "F_image_761_33",
+  "gt": "വെേക്കറി",
+  "pred": "The text in the image is \"സമൂഹി\". This appears to be in Malayalam, a language spoken primarily in Kerala, India. The word \"സമൂഹി\" can be translated as \"Society\" or \"Community\" in English."
+ },
+ {
+  "name": "F_image_761_4",
+  "gt": "യൂഹലക്റ്റിൽ",
+  "pred": "The text in the image reads \"SALSA\"."
+ },
+ {
+  "name": "F_image_761_7",
+  "gt": "കമ്പനി&",
+  "pred": "The text in the image reads \"amimi\"."
+ },
+ {
+  "name": "F_image_761_8",
+  "gt": "ട്രേഡിംഗ്",
+  "pred": "The text in the image is \"धरनीदेव\"."
+ },
+ {
+  "name": "F_image_761_9",
+  "gt": "ഏഷ്യൻ",
+  "pred": "The text in the image is \"ஆனால்\". This is a Tamil word which translates to \"but\" or \"however\" in English."
+ },
+ {
+  "name": "F_image_761_6",
+  "gt": "അഗ്രോസൂപ്പർമാർക്കറ്റ്",
+  "pred": "The text in the image is \"তারেরামুন্দ্রমুক্তলো\" which appears to be in Bengali script. This phrase does not have a direct English translation as it seems to be a proper noun or a specific term, possibly related"
+ },
+ {
+  "name": "F_image_767_10",
+  "gt": "ത്യക്കണ്ണാട്",
+  "pred": "The text in the image is in Malayalam, and it reads \"മില്ലെക്സ്\" which translates to \"Mallika\" in English."
+ },
+ {
+  "name": "F_image_767_11",
+  "gt": "ത്രയംബകേശ്വര",
+  "pred": "The text in the image is written in Malayalam, and it reads \"കൊയ്യാട്ടുകെട്ടു\"."
+ },
+ {
+  "name": "F_image_767_12",
+  "gt": "ക്ഷേത്രം",
+  "pred": "The text in the image is \"കേരളം\". This is the Malayalam word for \"Kerala\", which is a state in India."
+ },
+ {
+  "name": "F_image_767_13",
+  "gt": "കോരൻ",
+  "pred": "The text in the image reads \"c=299\"."
+ },
+ {
+  "name": "F_image_767_8",
+  "gt": "സമർപ്പണം",
+  "pred": "The text in the image is \"வாழ்க்கை\". This is Tamil for \"life\" or \"living\"."
+ },
+ {
+  "name": "F_image_767_9",
+  "gt": "ശ്രീ",
+  "pred": "The text in the image is \"డే\"."
+ },
+ {
+  "name": "F_image_77_2",
+  "gt": "ബദൽ",
+  "pred": "The text in the image is \"গুল্ম\" which is Bengali for \"grass\"."
+ },
+ {
+  "name": "F_image_77_3",
+  "gt": "സ്കൂൾ",
+  "pred": "The text in the image reads \"முக்கோடி\"."
+ },
+ {
+  "name": "F_image_77_5",
+  "gt": "മലപ്പുറം",
+  "pred": "The text in the image is \"টিএলপি\" which appears to be in Bengali script. It translates to \"TLP\" in English, which could stand for various things depending on the context. If you have more context or if this is part of a larger phrase, please provide additional information so"
+ },
+ {
+  "name": "F_image_775_0",
+  "gt": "തുടരുവാൻ",
+  "pred": "The text in the image is \"അമ്മ\"."
+ },
+ {
+  "name": "F_image_775_1",
+  "gt": "മാറ്റങ്ങൾ‌",
+  "pred": "The text in the image is \"മുട്ടക്കള\". This is in Malayalam, a language spoken primarily in Kerala, India. The word \"മുട്ട\" (mutta) means \"egg\" and \"ക്കള\" (kkal) is a"
+ },
+ {
+  "name": "F_image_775_2",
+  "gt": "അഴിമതിക്കെതിരെ",
+  "pred": "The text in the image is in Malayalam, and it reads \"അതിരേക്കാലം\"."
+ },
+ {
+  "name": "F_image_775_4",
+  "gt": "തിരൂർ",
+  "pred": "The text in the image is in Malayalam, and it reads \"അംഗങ്ങൾ\"."
+ },
+ {
+  "name": "F_image_786_2",
+  "gt": "തൊടിയപ്പുലം",
+  "pred": "The text in the image is in Malayalam, and it reads: \"പൊതുവേ\" which translates to \"generally\" or \"usually\" in English."
+ },
+ {
+  "name": "F_image_788_11",
+  "gt": "മന്ദിരം",
+  "pred": "The text in the image is \"2016\"."
+ },
+ {
+  "name": "F_image_788_13",
+  "gt": "കിഴുമുറി",
+  "pred": "The text in the image is \"கிளைகள்\". This appears to be Tamil script, which is used primarily in the Indian state of Tamil Nadu and the Union Territory of Puducherry, as well as by Tamil communities in other parts of India and abroad. The word \"கிள"
+ },
+ {
+  "name": "F_image_788_14",
+  "gt": "ഊരകം",
+  "pred": "The text in the image is \"வாக்கு\"."
+ },
+ {
+  "name": "F_image_788_15",
+  "gt": "വായനശാല",
+  "pred": "The text in the image is \"പാലക്കാട്\". This is the name of a city in Kerala, India."
+ },
+ {
+  "name": "F_image_788_16",
+  "gt": "സ്മാരകമന്ദിരം",
+  "pred": "The text in the image is written in Malayalam, and it reads \"അങ്ങാടിമുള്ള\"."
+ },
+ {
+  "name": "F_image_788_17",
+  "gt": "വി.സി.സ്മാരകഹാൾ",
+  "pred": "The text in the image is \"मानवता की दुनिया\" which translates to \"World of Humanity\" in English."
+ },
+ {
+  "name": "F_image_788_3",
+  "gt": "വി.സി.ബാലകൃഷ്ണപ്പണിക്കർ.",
+  "pred": "The text in the image is in Malayalam, and it reads: \"പി. വാലുക്കോട്ടം\" which translates to \"P. Vallukkottam\" in English."
+ },
+ {
+  "name": "F_image_788_4",
+  "gt": "സ്‌മാരക",
+  "pred": "The text in the image is \"মুক্তিযোদ্ধা\" which translates to \"Muktiyodda\" in English. This term is commonly used in Bangla (Bengali) and refers to freedom fighters or revolutionaries, particularly those who fought for independence during"
+ },
+ {
+  "name": "F_image_788_5",
+  "gt": "ഗ്രന്ഥാലയം",
+  "pred": "The text in the image is \"സൂര്യകല്യാണം\"."
+ },
+ {
+  "name": "F_image_788_2",
+  "gt": "വി.സി.",
+  "pred": "The text in the image reads \"12.00.\""
+ },
+ {
+  "name": "F_image_797_1",
+  "gt": "വാടാനാംകുറുശ്ശി",
+  "pred": "The text in the image is in Malayalam and reads:\n\n\"മുകളിലെ സാധാരണ പ്രവർത്തനങ്ങൾ\""
+ },
+ {
+  "name": "F_image_802_0",
+  "gt": "നഗരസഭ",
+  "pred": "The text in the image reads \"MOMO\"."
+ },
+ {
+  "name": "F_image_802_1",
+  "gt": "വൈക്കം",
+  "pred": "The text in the image reads \"000000\"."
+ },
+ {
+  "name": "F_image_802_2",
+  "gt": "സ്മാരകം",
+  "pred": "The text in the image is \"പുതുക്കി\"."
+ },
+ {
+  "name": "F_image_802_3",
+  "gt": "വൈക്കം",
+  "pred": "The text in the image is \"ഓരോക്കോ\"."
+ },
+ {
+  "name": "F_image_802_4",
+  "gt": "സത്യാഗ്രഹ",
+  "pred": "The text in the image is in Malayalam, and it reads \"അതിവേഗം\". This translates to \"very fast\" or \"at high speed\" in English."
+ },
+ {
+  "name": "F_image_806_2",
+  "gt": "വല്ലപ്പുഴ",
+  "pred": "The text in the image is \"নেপাল\" which translates to \"Nepal\" in English."
+ },
+ {
+  "name": "F_image_88_0",
+  "gt": "ജന്മദിനാഘോഷം",
+  "pred": "The text in the image is \"സമ്പുഷ്ടികൾ\". This appears to be in Malayalam, a language spoken primarily in Kerala, India. The word \"സമ്പുഷ്ടികൾ\" translates to \"satisfaction\" or \"s"
+ },
+ {
+  "name": "F_image_88_10",
+  "gt": "ശ്മീദേവി",
+  "pred": "The text in the image is \"কোটিবাড়ি\". This is a Bengali word that translates to \"Kotibari\" in English, which can mean \"Cottage\" or \"Small House\" depending on the context."
+ },
+ {
+  "name": "F_image_88_11",
+  "gt": "വിലാസംകരയോഗം",
+  "pred": "The text in the image is in Malayalam, and it reads \"വിലക്ക്‌. കുടുംബം.\" This translates to \"Discount. Family\" in English."
+ },
+ {
+  "name": "F_image_88_5",
+  "gt": "മേട്ഠുരിറെൻ്റ",
+  "pred": "The text in the image reads \"cas2019\"."
+ },
+ {
+  "name": "F_image_88_6",
+  "gt": "ൻെ",
+  "pred": "The text in the image is \"PACO\"."
+ },
+ {
+  "name": "F_image_88_7",
+  "gt": "അടുക്കം",
+  "pred": "The text in the image is in Sinhala, which reads \"පාස්කෙල් පොලිසිය\". This translates to \"Paskele Police\" in English."
+ },
+ {
+  "name": "F_image_88_9",
+  "gt": "ഗമ്പർ",
+  "pred": "The text in the image is \"मानव\"."
+ }
+]

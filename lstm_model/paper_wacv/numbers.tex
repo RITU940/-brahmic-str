@@ -105,6 +105,64 @@
 \newcommand{\parseqSynth}{{\sim}47}
 \newcommand{\parseqFinetuned}{{\sim}73}
 \newcommand{\florenceRawZS}{0.0}
-% TODO(vlm): Qwen2.5-VL-7B zero-shot per-script numbers (Amendment 4c)
-% TODO(scaling): per-budget WRR for malayalam/kannada/telugu x {810,1620,3240,6480,12960} (4a)
+% ---- Qwen2.5-VL-7B zero-shot baseline (Amendment 4c), 9/9 complete 2026-07-21 ----
+% Preregistered PRIMARY = exact-match WRR on raw generations = 0.0 all nine (chat model
+% wraps answers in prose; raw CER >1000% is a prose-length artifact, NOT reported as CER).
+% Reported numbers below = DISCLOSED post-hoc extraction re-score (first double-quoted span,
+% same normalization/metric), the VLM's most-favourable scoring. Source: rescore_vlm_extracted.py
+% -> result_vlm_qwen25_extracted_*.json. Our Rung-B beats it on 8/9 (VLM leads only Devanagari).
+\newcommand{\vlmWrrTamil}{6.24}       % also the highest among the 7 non-Bengali/Devanagari scripts
+\newcommand{\vlmWrrTelugu}{0.18}
+\newcommand{\vlmWrrKannada}{0.28}
+\newcommand{\vlmWrrMalayalam}{0.0}
+\newcommand{\vlmWrrOriya}{0.38}
+\newcommand{\vlmWrrGujarati}{0.3}
+\newcommand{\vlmWrrBengali}{24.82}
+\newcommand{\vlmWrrDevanagari}{35.05}
+\newcommand{\vlmWrrGurmukhi}{0.52}
+\newcommand{\vlmScriptsWon}{eight}    % scripts where our Rung-B beats the VLM (VLM leads only Devanagari)
+\newcommand{\vlmMacro}{7.53}          % macro-avg extracted WRR over nine scripts
+\newcommand{\vlmMicro}{17.85}         % micro-avg (N-weighted) extracted WRR
+
+% ---- synthetic-exposure scaling sweep (Amendment 5), 12/12 complete 2026-07-21 ----
+% Full scoring receipt: SCALING_SWEEP_SCORING.md; instrument analyze_scaling_law.py
+% (raw output scaling_sweep_scoring_raw.txt). Per-budget WRR in result_zs_scale*_*.json.
+\newcommand{\scaleSlope}{+2.235}         % common (script-invariant) slope, WRR per doubling
+\newcommand{\scaleSlopeCI}{[+1.89, +2.58]}
+\newcommand{\scaleFp}{0.45}              % separate-vs-common-slope F-test; no evidence slopes differ
+\newcommand{\scaleRtwoMax}{0.999}        % best per-script log-linear fit (telugu)
+\newcommand{\scaleRtwoMin}{0.905}        % worst per-script fit (kannada)
+\newcommand{\scalePreregC}{11.48}        % preregistered slope magnitude (transported from in-script 2x)
+\newcommand{\scaleSlopeRatio}{5.1}       % 11.48 / 2.24 -> magnitude miss factor
+\newcommand{\scaleFaithfulPred}{+11.5}   % predicted faithful-step (3240->6480) gain
+\newcommand{\scaleFaithfulObs}{+2.35}    % observed mean faithful-step gain (MISS, outside +-2 RMSE)
+% out-of-sample: the coverage-offset model does NOT generalize to the 6 unswept scripts
+\newcommand{\covOOSr}{+0.03}             % Pearson(declared 1-dp coverage, WRR), 6 held-out scripts
+\newcommand{\covOOSp}{0.94}
+
+% ---- per-script 95% bootstrap CIs (bootstrap_cis.py, seed 20260721, 5000 resamples) ----
+% Percentile bootstrap over test samples; source of truth = bootstrap_cis.py (verify_wacv_numbers
+% is pure-python and cannot reproduce numpy's RNG). ciB* = Rung B, ciP* = Rung B_bpe.
+\newcommand{\ciBtamil}{[6.6,\,11.7]}
+\newcommand{\ciBtelugu}{[16.5,\,23.1]}
+\newcommand{\ciBkannada}{[12.8,\,18.1]}
+\newcommand{\ciBmalayalam}{[7.3,\,12.2]}
+\newcommand{\ciBoriya}{[22.7,\,28.1]}
+\newcommand{\ciBgujarati}{[13.6,\,18.2]}
+\newcommand{\ciBbengali}{[25.5,\,28.7]}
+\newcommand{\ciBdevanagari}{[28.9,\,31.3]}
+\newcommand{\ciBgurmukhi}{[20.7,\,23.7]}
+\newcommand{\ciPtamil}{[1.2,\,3.7]}
+\newcommand{\ciPtelugu}{[7.7,\,12.8]}
+\newcommand{\ciPkannada}{[11.0,\,15.8]}
+\newcommand{\ciPmalayalam}{[2.6,\,6.0]}
+\newcommand{\ciPoriya}{[12.8,\,17.1]}
+\newcommand{\ciPgujarati}{[11.6,\,15.9]}
+\newcommand{\ciPbengali}{[17.6,\,20.5]}
+\newcommand{\ciPdevanagari}{[26.9,\,29.1]}
+\newcommand{\ciPgurmukhi}{[16.2,\,19.1]}
+\newcommand{\bpeCIdisjoint}{6}  % scripts whose Rung-B 95% CI lies strictly above the BPE CI
+% two-factor coefficient 95% CIs, script-level bootstrap (bootstrap_cis lineage, seed 20260721)
+\newcommand{\ciTfCov}{[-0.48,\,3.49]}   % coverage slope b -- SPANS ZERO (9 points)
+\newcommand{\ciTfTwox}{[0.0,\,16.9]}    % 2x-synthetic bonus c
 % TODO(khmer): prediction + realized (4b)

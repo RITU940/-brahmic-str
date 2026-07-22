@@ -1,0 +1,5222 @@
+[
+ {
+  "name": "D_image_150_0",
+  "gt": "ନୂଆଦିଲ୍ଲୀ",
+  "pred": "The text in the image reads \"गल गल\" which is in Hindi and translates to \"Gal Gal\" in English."
+ },
+ {
+  "name": "D_image_150_1",
+  "gt": "ଭୁବନେଶ୍ୱର",
+  "pred": "The text in the image is in Odia script and reads \"ঈশ্বরগুণ\" (Iśvaraguna). This phrase translates to \"qualities of God\" or \"attributes of God\" in English."
+ },
+ {
+  "name": "I_image_10_15",
+  "gt": "ଭୁବନେଶ୍ୱର",
+  "pred": "The text in the image is \"安全分野\"."
+ },
+ {
+  "name": "I_image_10_19",
+  "gt": "ନୂଆଦିଲ୍ଲୀ",
+  "pred": "The text in the image is \"公测公告\". This translates to \"Public Test Announcement\" in English."
+ },
+ {
+  "name": "I_image_103_13",
+  "gt": "ଓଁ",
+  "pred": "The text in the image appears to be a stylized, abstract representation of the letter \"E\". It is not a clear or legible text but rather an artistic or decorative design."
+ },
+ {
+  "name": "I_image_103_14",
+  "gt": "ଶିବାୟ",
+  "pred": "The text in the image is \"北京\". This is Chinese and it translates to \"Beijing\" in English, which is the capital city of China."
+ },
+ {
+  "name": "I_image_103_15",
+  "gt": "ଜ୍ୟୋତିର୍ବିନ୍ଦୁ",
+  "pred": "The text in the image is \"సోమనాథం\". This is in Telugu script, which is used in the Indian state of Andhra Pradesh and some other regions. The transliteration into English would be \"Somnatham\"."
+ },
+ {
+  "name": "I_image_103_16",
+  "gt": "ସ୍ପେଶାଲ",
+  "pred": "The text in the image is \"গুলিয়া\" which is written in Bengali script."
+ },
+ {
+  "name": "I_image_103_17",
+  "gt": "ପୋ",
+  "pred": "The text in the image is \"গলা\" which is written in Bengali script. It translates to \"throat\" in English."
+ },
+ {
+  "name": "I_image_103_18",
+  "gt": "କି.ଗ୍ରା-",
+  "pred": "The text in the image is \"ఎల్-ఎల్\". This appears to be in Telugu script, which is used in the Indian state of Andhra Pradesh and Telangana, as well as in some other regions. The characters \"ల్\" (l) are repeated"
+ },
+ {
+  "name": "I_image_103_2",
+  "gt": "ଶିବବାବା",
+  "pred": "The text in the image is \"লোকে\" which is in Bengali script. It translates to \"people\" or \"human\" in English."
+ },
+ {
+  "name": "I_image_103_3",
+  "gt": "ପରମ୍ଭା",
+  "pred": "The text in the image is \"জের\"."
+ },
+ {
+  "name": "I_image_103_31",
+  "gt": "ଟ. ୧୨୦",
+  "pred": "The text in the image reads \"5.90\"."
+ },
+ {
+  "name": "I_image_103_32",
+  "gt": "ଡ଼",
+  "pred": "The text in the image is \"G\"."
+ },
+ {
+  "name": "I_image_103_33",
+  "gt": "ଛେ",
+  "pred": "The text in the image is \"68\"."
+ },
+ {
+  "name": "I_image_103_4",
+  "gt": "ନମ8",
+  "pred": "The text in the image is \"গোল্ড\"."
+ },
+ {
+  "name": "I_image_103_9",
+  "gt": "ନା",
+  "pred": "The text in the image is \"17\"."
+ },
+ {
+  "name": "I_image_11_14",
+  "gt": "କୋରାପୁଟ",
+  "pred": "The text in the image is in Odia script and reads \"কৌণ্ডন\" (Kaudan)."
+ },
+ {
+  "name": "I_image_11_34",
+  "gt": "ଓଡ଼ିଶାର",
+  "pred": "The text in the image is \"ওটিস্যু\" which appears to be in Bengali script."
+ },
+ {
+  "name": "I_image_11_36",
+  "gt": "୨ୟ",
+  "pred": "The text in the image is \"9 9\"."
+ },
+ {
+  "name": "I_image_11_37",
+  "gt": "ଉତ୍ସବ",
+  "pred": "The text in the image is \"জয়\" which is Bengali for \"Victory\"."
+ },
+ {
+  "name": "I_image_11_40",
+  "gt": "ସାହିତ୍ୟ",
+  "pred": "The text in the image is \"গাছিলো\"."
+ },
+ {
+  "name": "I_image_11_58",
+  "gt": "ସ୍ବାଭିମାନର",
+  "pred": "The text in the image is in Bengali and reads \"দ্বাজিদের\"."
+ },
+ {
+  "name": "I_image_117_4",
+  "gt": "କୋର୍ଟ",
+  "pred": "The text in the image is \"গোল্ড\" which is Bengali for \"Gold\"."
+ },
+ {
+  "name": "I_image_117_8",
+  "gt": "ସିଭିଲ୍",
+  "pred": "The text in the image is in Odia script and reads \"ওড়িয়া\". This is the transliteration of the Odia language name, which means \"Odia\" in English."
+ },
+ {
+  "name": "I_image_117_9",
+  "gt": "ପଟ୍ଟାମୁଣ୍ଡାଇ",
+  "pred": "The text in the image is in Odia script and reads \"দেশীয়\" which translates to \"National\" or \"Domestic\" in English."
+ },
+ {
+  "name": "I_image_123_11",
+  "gt": "ମହାୟତା",
+  "pred": "The text in the image is \"¿Quién es?\". This is a Spanish question that translates to \"Who is it?\" in English."
+ },
+ {
+  "name": "I_image_123_13",
+  "gt": "କୋଡ",
+  "pred": "The text in the image is \"6010\"."
+ },
+ {
+  "name": "I_image_123_14",
+  "gt": "ଦଶରଥପୁର",
+  "pred": "The text in the image is \"বাংলা\" which means \"Bengali\" in English."
+ },
+ {
+  "name": "I_image_123_15",
+  "gt": "ସହାୟତା",
+  "pred": "The text in the image is \"ରୋଧି\" which is written in Odia script."
+ },
+ {
+  "name": "I_image_123_16",
+  "gt": "ପାଇଁ",
+  "pred": "The text in the image is \"এই দিনে\" which translates to \"On this day\" in English."
+ },
+ {
+  "name": "I_image_123_17",
+  "gt": "ଦାରିଦ୍ର",
+  "pred": "The text in the image is \"ଓଡ଼ିଆ\". This is the script used for the Odia language, which is spoken primarily in the Indian state of Odisha."
+ },
+ {
+  "name": "I_image_123_18",
+  "gt": "ବନ୍ଧନ",
+  "pred": "The text in the image reads \"গোল্ড\" which is Bengali for \"Gold\"."
+ },
+ {
+  "name": "I_image_123_2",
+  "gt": "ଦୂରୀକରଣ",
+  "pred": "The text in the image is \"বাংলা\" which means \"Bengali\" in English."
+ },
+ {
+  "name": "I_image_123_3",
+  "gt": "କ୍ଷୁଦ୍ରରଣ",
+  "pred": "The text in the image appears to be in the Odia script, which is used primarily in the Indian state of Odisha and in some neighboring regions. The specific characters shown are \"ମୁଁ\" (muji), which translates to \"I\" or \"me\" in English."
+ },
+ {
+  "name": "I_image_123_4",
+  "gt": "ପ୍ରତିଷ୍ଠାନ",
+  "pred": "The text in the image is \"ଓଡ଼ିଆ\". This is the Odia script, which is used to write the Odia language, one of the major languages spoken in India."
+ },
+ {
+  "name": "I_image_123_5",
+  "gt": "ଶାଖା,",
+  "pred": "The text in the image is \"গানা\" which is Bengali for \"song\"."
+ },
+ {
+  "name": "I_image_123_6",
+  "gt": "ନଂ-୧୯୪୬",
+  "pred": "The text in the image is \"9-8889\"."
+ },
+ {
+  "name": "I_image_127_0",
+  "gt": "ଆପଣଙ୍କପାଇଁ",
+  "pred": "The text in the image is \"খেলছোট্টা\". This appears to be in Bengali script, which is used primarily in Bangladesh and West Bengal, India. The meaning of this phrase can vary depending on context, but it generally relates to children or young people playing."
+ },
+ {
+  "name": "I_image_127_11",
+  "gt": "ଦୁଲାଳ",
+  "pred": "The text in the image is \"金贝贝\"."
+ },
+ {
+  "name": "I_image_127_13",
+  "gt": "ବିଧାୟକ",
+  "pred": "The text in the image is \"রিয়াতে\" which is Bengali and translates to \"in reality\" or \"actually\" in English."
+ },
+ {
+  "name": "I_image_127_14",
+  "gt": "ସନାତନ",
+  "pred": "The text in the image is \"এদোনে\"."
+ },
+ {
+  "name": "I_image_127_15",
+  "gt": "ଏତିକି",
+  "pred": "The text in the image is \"বাংলা\" which means \"Bengali\" in English."
+ },
+ {
+  "name": "I_image_127_16",
+  "gt": "ନିଳଟରେ",
+  "pred": "The text in the image is \"กีฬา\" which translates to \"sports\" in English."
+ },
+ {
+  "name": "I_image_127_17",
+  "gt": "ଜନନୀ",
+  "pred": "The text in the image is \"0001\"."
+ },
+ {
+  "name": "I_image_127_18",
+  "gt": "ମା'",
+  "pred": "The text in the image is \"গো\" which is Bengali for \"go\"."
+ },
+ {
+  "name": "I_image_127_19",
+  "gt": "ପ୍ରଗତିର",
+  "pred": "The text in the image is \"গুলি\" which is Bengali for \"the ones\" or \"the things\"."
+ },
+ {
+  "name": "I_image_127_20",
+  "gt": "ସମୃଦ୍ଧି",
+  "pred": "The text in the image is \"ଓଡ଼ିଆ\". This is the name of the Odia language, which is also known as Oriya."
+ },
+ {
+  "name": "I_image_127_21",
+  "gt": "ସୁଖ,",
+  "pred": "The text in the image is \"ট্রেন\" which is Bengali for \"train\"."
+ },
+ {
+  "name": "I_image_127_22",
+  "gt": "ବର୍ଷଟି",
+  "pred": "The text in the image is \"জ্যোতি\" which is Bengali and translates to \"Jyoti\" in English."
+ },
+ {
+  "name": "I_image_127_24",
+  "gt": "ଶୁଭେଚ୍ଛା",
+  "pred": "The text in the image is \"กูเกิล\". This is the Thai word for \"Google\"."
+ },
+ {
+  "name": "I_image_127_25",
+  "gt": "ଅଭିନନ୍ଦନ",
+  "pred": "The text in the image is \"খুবই দুর্গা\"."
+ },
+ {
+  "name": "I_image_127_26",
+  "gt": "ଉପଳକ୍ଷେ",
+  "pred": "The text in the image is \"ওয়াক্স\" which is in Bengali script. It translates to \"wax\" in English."
+ },
+ {
+  "name": "I_image_127_27",
+  "gt": "ମକର",
+  "pred": "The text in the image is \"টিকেড\" which is in Bengali script. It translates to \"Ticketed\" in English."
+ },
+ {
+  "name": "I_image_127_28",
+  "gt": "୨୦୧୮",
+  "pred": "The text in the image reads \"90er\"."
+ },
+ {
+  "name": "I_image_127_29",
+  "gt": "ନବବର୍ଷ",
+  "pred": "The text in the image is \"ଦୋଧା\". This appears to be in the Odia script, which is used for writing the Odia language, spoken primarily in the Indian state of Odisha."
+ },
+ {
+  "name": "I_image_127_30",
+  "gt": "ଏବଂ ପବିତ୍ର",
+  "pred": "The text in the image is \"ବିଶ୍ଵ\" which is written in Odia script. The transliteration of this text into English is \"Biswa,\" which means \"World\" or \"Global\" in English."
+ },
+ {
+  "name": "I_image_127_31",
+  "gt": "ସଂକ୍ରାନ୍ତି",
+  "pred": "The text in the image is \"বঙ্গলী\"."
+ },
+ {
+  "name": "I_image_127_32",
+  "gt": "ହାର୍ଦିକ",
+  "pred": "The text in the image is \"धन्यवाद\" which is Marathi for \"Thank you\"."
+ },
+ {
+  "name": "I_image_127_33",
+  "gt": "ଓ",
+  "pred": "The text in the image is \"e\"."
+ },
+ {
+  "name": "I_image_127_35",
+  "gt": "ନୂତନ",
+  "pred": "The text in the image is \"৩৩৩\". This appears to be a Bengali numeral, which represents the number 333."
+ },
+ {
+  "name": "I_image_127_36",
+  "gt": "ହେଡ",
+  "pred": "The text in the image is \"652\"."
+ },
+ {
+  "name": "I_image_127_37",
+  "gt": "ଶାନ୍ତି,",
+  "pred": "The text in the image is \"এই\"."
+ },
+ {
+  "name": "I_image_127_38",
+  "gt": "ଓ",
+  "pred": "The text in the image is \"B\"."
+ },
+ {
+  "name": "I_image_127_39",
+  "gt": "ବର୍ଷ",
+  "pred": "The text in the image is \"ବ୍ୟ\"."
+ },
+ {
+  "name": "I_image_127_40",
+  "gt": "ଜଗତ",
+  "pred": "The text in the image appears to be in Bengali script. The characters read from left to right are \"কর্মী\" which translates to \"worker\" or \"employee\" in English."
+ },
+ {
+  "name": "I_image_127_41",
+  "gt": "ଦଶଭୁଜାଙ୍କ",
+  "pred": "The text in the image is \"ଓଡ଼ିଆ\". This is the Odia script, which is used to write the Odia language, one of the major languages spoken in India."
+ },
+ {
+  "name": "I_image_127_42",
+  "gt": "ମୋର",
+  "pred": "The text in the image is \"এটাই\"."
+ },
+ {
+  "name": "I_image_127_43",
+  "gt": "ପ୍ରାର୍ଥନା",
+  "pred": "The text in the image is \"દ્વારકા\" which is in Gujarati script. It translates to \"Dwarka\" in English, which is a city in the Indian state of Gujarat."
+ },
+ {
+  "name": "I_image_127_44",
+  "gt": "ମହାକୁଡ",
+  "pred": "The text in the image is \"স্বাদু\" which is written in Bengali script. The transliteration of this text into English would be \"swadu,\" which means \"sweet\" or \"tasty\" in English."
+ },
+ {
+  "name": "I_image_127_46",
+  "gt": "ଚମ୍ପୁଆ",
+  "pred": "The text in the image is \"সপ্তাহ\" which is Bengali for \"week\"."
+ },
+ {
+  "name": "I_image_127_47",
+  "gt": "ଗାତେ",
+  "pred": "The text in the image is \"616\"."
+ },
+ {
+  "name": "I_image_127_48",
+  "gt": "ଏକାନ୍",
+  "pred": "The text in the image is \"একাডেমি\" which is Bengali for \"Academy\"."
+ },
+ {
+  "name": "I_image_127_49",
+  "gt": "ବେଳାରେ",
+  "pred": "The text in the image reads \"GAMING\"."
+ },
+ {
+  "name": "I_image_127_5",
+  "gt": "୮୭୫୮୫୦୫୭୭",
+  "pred": "The text in the image reads \"广8厂 80899\"."
+ },
+ {
+  "name": "I_image_127_50",
+  "gt": "ସ୍ଥାନ",
+  "pred": "The text in the image is \"গুলি\" which is Bengali for \"the ones\" or \"the things\"."
+ },
+ {
+  "name": "I_image_127_51",
+  "gt": "କଟୁରିଆ)",
+  "pred": "The text in the image is \"ଓଡ଼ିଆ\". This is the name of the Odia language, which is also known as Oriya."
+ },
+ {
+  "name": "I_image_127_52",
+  "gt": "ମୋ.",
+  "pred": "The text in the image is \"69i\"."
+ },
+ {
+  "name": "I_image_127_53",
+  "gt": "୯88୬୧୪୦୦୭",
+  "pred": "The text in the image is \"8892000\"."
+ },
+ {
+  "name": "I_image_127_58",
+  "gt": "ମୋର",
+  "pred": "The text in the image reads \"SRIQ\"."
+ },
+ {
+  "name": "I_image_127_59",
+  "gt": "ଅଭିନନ୍ଦନ",
+  "pred": "The text in the image is not visible, as it appears to be an image of a pair of socks with a pattern on them. There is no text present in the image."
+ },
+ {
+  "name": "I_image_127_6",
+  "gt": "ବୁଚୁଟଲା,",
+  "pred": "The text in the image is \"ଉଳାନ\"."
+ },
+ {
+  "name": "I_image_127_7",
+  "gt": "ଧନଚିତ୍ରୀ",
+  "pred": "The text in the image is \"ଓଡ଼ିଆ\". This is the Odia script, which is used to write the Odia language, one of the major languages spoken in India."
+ },
+ {
+  "name": "I_image_127_8",
+  "gt": "ମାର୍ଚ୍ଚ ୧୦",
+  "pred": "The text in the image reads \"90 90\"."
+ },
+ {
+  "name": "I_image_127_9",
+  "gt": "ବିଦାୟୀ",
+  "pred": "The text in the image is \"ଓଡ଼ିଆ\". This is the Odia script, which is used to write the Odia language, spoken primarily in the Indian state of Odisha."
+ },
+ {
+  "name": "I_image_128_0",
+  "gt": "ଅସମାପି",
+  "pred": "The text in the image appears to be in Thai and reads \"ขวด\" (khwad). This word translates to \"bottle\" or \"jar\" in English."
+ },
+ {
+  "name": "I_image_128_1",
+  "gt": "ଅସମାର୍ପିକା",
+  "pred": "The text in the image is in Odia script and reads \"ঈদেটি\" (Iedeti). This appears to be a transliteration of the word \"ঈদ\" (Ied) which means \"Eid\" in English, and \"টেটি\" (Teti) which could"
+ },
+ {
+  "name": "I_image_128_10",
+  "gt": "ଅସମାର୍ପିକ",
+  "pred": "The text in the image is \"ขัตติย์\" which is written in Thai script."
+ },
+ {
+  "name": "I_image_128_11",
+  "gt": "ଦାଶ",
+  "pred": "The text in the image reads \"1913\"."
+ },
+ {
+  "name": "I_image_128_12",
+  "gt": "ଅସମାପିକା",
+  "pred": "The text in the image is \"ขวดเล็ก\" which translates to \"small bottle\" in English."
+ },
+ {
+  "name": "I_image_128_13",
+  "gt": "ଅସମାପିକା",
+  "pred": "The text in the image appears to be \"বাংলা\" which is the word for \"Bengali\" in English. It is written in Bengali script, which is used in Bangladesh and parts of India."
+ },
+ {
+  "name": "I_image_128_14",
+  "gt": "ଅସମାର୍ପିକା",
+  "pred": "The text in the image appears to be \"สุขภาพ\" which translates to \"health\" in English."
+ },
+ {
+  "name": "I_image_128_15",
+  "gt": "ଅସମାର୍ପିକା",
+  "pred": "The text in the image is \"ขอดื่ม\" which translates to \"I want to drink\" in English."
+ },
+ {
+  "name": "I_image_128_16",
+  "gt": "କା",
+  "pred": "The text in the image is \"G1\"."
+ },
+ {
+  "name": "I_image_128_17",
+  "gt": "ଅସମ",
+  "pred": "The text in the image reads \"2023\"."
+ },
+ {
+  "name": "I_image_128_18",
+  "gt": "ଅସମାର୍ପିକା",
+  "pred": "The text in the image appears to be in Thai and reads \"ยอดเงิน\" which translates to \"amount of money\" or \"total amount\" in English."
+ },
+ {
+  "name": "I_image_128_19",
+  "gt": "କୁମାର",
+  "pred": "The text in the image is in Odia script and reads \"কৃষ্ণচন্দ্র\"."
+ },
+ {
+  "name": "I_image_128_2",
+  "gt": "ସମାପିକା",
+  "pred": "The text in the image reads \"1391081\"."
+ },
+ {
+  "name": "I_image_128_20",
+  "gt": "କୁମାର ଦାଶ",
+  "pred": "The text in the image is in Odia script and reads \"দুটো চাও।\" This translates to \"I want both.\""
+ },
+ {
+  "name": "I_image_128_21",
+  "gt": "ସମାପିକା",
+  "pred": "The text in the image is \"ขยดถิ่น\" which translates to \"local\" or \"native\" in English."
+ },
+ {
+  "name": "I_image_128_22",
+  "gt": "ଅସମା",
+  "pred": "The text in the image is \"খন্দ\" which is written in Bengali script."
+ },
+ {
+  "name": "I_image_128_23",
+  "gt": "ଅସମାପିକା",
+  "pred": "The text in the image is in Thai and reads \"ขยะเปียก\". This translates to \"wet waste\" in English."
+ },
+ {
+  "name": "I_image_128_25",
+  "gt": "ଅସମାପିକା",
+  "pred": "The text in the image reads \"2022\"."
+ },
+ {
+  "name": "I_image_128_26",
+  "gt": "ଅସମାର୍ପି",
+  "pred": "The text in the image reads \"gbes\"."
+ },
+ {
+  "name": "I_image_128_27",
+  "gt": "ଅସମ ସମାର୍ପିକା",
+  "pred": "The text in the image is in Odia script and reads \"যশোর মেডিকেল\" which translates to \"Jashore Medical\" in English."
+ },
+ {
+  "name": "I_image_128_28",
+  "gt": "ଅସମାପିକା",
+  "pred": "The text in the image is in Odia script and reads \"খটটেটি\" (khotoeti). This appears to be a word or phrase in Odia, which is a language spoken primarily in the Indian state of Odisha."
+ },
+ {
+  "name": "I_image_128_29",
+  "gt": "ଶରତ",
+  "pred": "The text in the image reads \"গোলাপ\" which is Bengali for \"rose\"."
+ },
+ {
+  "name": "I_image_128_3",
+  "gt": "ଅସମାପିକା",
+  "pred": "The text in the image reads \"sabías\"."
+ },
+ {
+  "name": "I_image_128_30",
+  "gt": "ଦାଶ",
+  "pred": "The text in the image is \"দৈন\" which is Bengali and can be translated to \"daily\" or \"everyday\" in English."
+ },
+ {
+  "name": "I_image_128_31",
+  "gt": "ଶରତ",
+  "pred": "The text in the image is \"তারা\" which is in Bengali script. It translates to \"they\" or \"theirs\" in English."
+ },
+ {
+  "name": "I_image_128_32",
+  "gt": "ଅସମାର୍ପିକା",
+  "pred": "The text in the image reads \"labores\"."
+ },
+ {
+  "name": "I_image_128_4",
+  "gt": "ଅସମାର୍ପିକା",
+  "pred": "The text in the image reads \"georgia\"."
+ },
+ {
+  "name": "I_image_128_5",
+  "gt": "ଅସମାପିକା",
+  "pred": "The text in the image is \"ขยดเดิม\" which appears to be in Thai script."
+ },
+ {
+  "name": "I_image_128_6",
+  "gt": "ଦାଶଙ୍କ",
+  "pred": "The text in the image is \"টেলিভিশন\". This is Bengali and it translates to \"television\" in English."
+ },
+ {
+  "name": "I_image_128_7",
+  "gt": "କୁମାର",
+  "pred": "The text in the image is \"কটাই\"."
+ },
+ {
+  "name": "I_image_128_8",
+  "gt": "ଶରତ",
+  "pred": "The text in the image appears to be in the Odia script, and it reads \"ରେଡ\" (reḍa)."
+ },
+ {
+  "name": "I_image_128_9",
+  "gt": "ସ୍ଥାର",
+  "pred": "The text in the image reads \"F16\"."
+ },
+ {
+  "name": "I_image_129_1",
+  "gt": "ସରକାର",
+  "pred": "The text in the image is \"একটি শিরোনাম\" which translates to \"A title\" or \"A name\" in English."
+ },
+ {
+  "name": "I_image_129_2",
+  "gt": "ପ୍ରାକୃତିକ",
+  "pred": "The text in the image is \"গুলি\"."
+ },
+ {
+  "name": "I_image_129_3",
+  "gt": "ଭରତ",
+  "pred": "The text in the image is \"বিক্রি\" which is Bengali and it translates to \"Sale\" or \"For Sale\" in English."
+ },
+ {
+  "name": "I_image_129_4",
+  "gt": "ପ୍ରଧାନମନ୍ତ୍ରୀ",
+  "pred": "The text in the image is \"প্রাকৃতিক\" which is Bengali and translates to \"natural\" in English."
+ },
+ {
+  "name": "I_image_134_15",
+  "gt": "ପ୍ରାଧୁକରଣ",
+  "pred": "The text in the image is \"대한민국\". This is Korean for \"Republic of Korea\", which refers to South Korea."
+ },
+ {
+  "name": "I_image_134_20",
+  "gt": "ରାଜପଥ",
+  "pred": "The text in the image is \"1999\"."
+ },
+ {
+  "name": "I_image_134_3",
+  "gt": "ସବୁଜ",
+  "pred": "The text in the image is \"999\"."
+ },
+ {
+  "name": "I_image_134_7",
+  "gt": "ପରିଚଳନ",
+  "pred": "The text in the image is \"ভারত\" which translates to \"India\" in English."
+ },
+ {
+  "name": "I_image_134_8",
+  "gt": "ମନ୍ତ୍ରଣାଳୟ",
+  "pred": "The text in the image is \"καλός\". This is a Greek word that means \"good\" or \"beautiful\" in English."
+ },
+ {
+  "name": "I_image_138_4",
+  "gt": "ଗ୍ରା ରାଜ",
+  "pred": "The text in the image is \"তার মৃত্যু\". This is Bengali and it translates to \"His death\" in English."
+ },
+ {
+  "name": "I_image_138_6",
+  "gt": "ନ",
+  "pred": "The text in the image is \"1\"."
+ },
+ {
+  "name": "I_image_14_15",
+  "gt": "ଭାରତୀୟ",
+  "pred": "The text in the image is \"giggle\"."
+ },
+ {
+  "name": "I_image_14_9",
+  "gt": "ଅଖିଲ",
+  "pred": "The text in the image reads \"aide\"."
+ },
+ {
+  "name": "I_image_140_0",
+  "gt": "ସରକାର",
+  "pred": "The text in the image is \"গোকৃষ্ণ\" which is Bengali for \"Gokarna.\""
+ },
+ {
+  "name": "I_image_140_1",
+  "gt": "ବିଭାଗ",
+  "pred": "The text in the image is \"দিল্লি\" which is written in Bengali script. It translates to \"Delhi\" in English, referring to the capital city of India."
+ },
+ {
+  "name": "I_image_140_10",
+  "gt": "ମହାନ୍ତି",
+  "pred": "The text in the image is \"গোল্ডি\" which is written in Bengali script."
+ },
+ {
+  "name": "I_image_140_11",
+  "gt": "ଶ୍ରୀଯୁକ୍ତ",
+  "pred": "The text in the image is \"গুণ্ডুটা\". This appears to be in Bengali script, which is used primarily in Bangladesh and West Bengal, India. The meaning of this word can vary depending on context, but it often refers to something like \"the gun\" or \"the"
+ },
+ {
+  "name": "I_image_140_12",
+  "gt": "ଗ୍ରା:ପ",
+  "pred": "The text in the image is \"এঁ:এ\" which appears to be in Bengali script. The characters \"এঁ\" and \"এ\" are used in Bengali to represent the sound of the letter \"e\" with a breve (a small line above the letter) and without it, respectively"
+ },
+ {
+  "name": "I_image_140_13",
+  "gt": "ଭୁବନେଶ୍ବର",
+  "pred": "The text in the image appears to be in Bengali. The characters read from left to right are \"অন্তর্ভুক্ত\" which translates to \"included\" or \"contained\" in English."
+ },
+ {
+  "name": "I_image_140_14",
+  "gt": "ବିଧାୟକ",
+  "pred": "The text in the image is written in Odia script and reads \"দীর্ঘকাল\" (dīrghakāla). This phrase translates to \"for a long time\" or \"for a long duration\" in English."
+ },
+ {
+  "name": "I_image_140_15",
+  "gt": "ମାନ୍ୟବର",
+  "pred": "The text in the image is \"গাছের\" which translates to \"tree\" in English."
+ },
+ {
+  "name": "I_image_140_16",
+  "gt": "ଭାଗୀରଥି",
+  "pred": "The text in the image is in Odia script and reads \"গুলোয়া\" (guloiya)."
+ },
+ {
+  "name": "I_image_140_17",
+  "gt": "ଏକାମ୍ର",
+  "pred": "The text in the image appears to be in Bengali script. The characters read from right to left and translate to \"বাক্য\" which means \"sentence\" or \"speech\" in English."
+ },
+ {
+  "name": "I_image_140_18",
+  "gt": "ବିଧାୟକ",
+  "pred": "The text in the image is in Odia script and reads \"দিয়াধূক\" which translates to \"Diya Dhook\" in English."
+ },
+ {
+  "name": "I_image_140_19",
+  "gt": "ପଣ୍ଡା",
+  "pred": "The text in the image is \"ยู่\" which is a Thai character. It can be translated as \"to stay\" or \"to reside.\""
+ },
+ {
+  "name": "I_image_140_2",
+  "gt": "କେଶରୀ",
+  "pred": "The text in the image is \"কেন্দ্রীয়\" which translates to \"Central\" or \"Center\" in English."
+ },
+ {
+  "name": "I_image_140_20",
+  "gt": "ଶ୍ରୀଯୁକ୍ତ",
+  "pred": "The text in the image is written in Odia script and reads \"গ্রীষ্মে\" (pronounced as \"Grihme\"). This word translates to \"summer\" in English."
+ },
+ {
+  "name": "I_image_140_21",
+  "gt": "ସାଂସଦ",
+  "pred": "The text in the image is \"গঠন\" which is Bengali for \"formation\" or \"construction\"."
+ },
+ {
+  "name": "I_image_140_22",
+  "gt": "ପାଟ୍ଟଶାଣୀ",
+  "pred": "The text in the image is in Odia script and reads \"গাছালি\"."
+ },
+ {
+  "name": "I_image_140_23",
+  "gt": "ଶ୍ରୀମତୀ",
+  "pred": "The text in the image is \"গ্রীণটা\"."
+ },
+ {
+  "name": "I_image_140_24",
+  "gt": "ଶ୍ରୀଯୁକ୍ତ",
+  "pred": "The text in the image is \"গুঁধুলু\" which is written in Bengali script."
+ },
+ {
+  "name": "I_image_140_25",
+  "gt": "ଓ ସମନ୍ବୟ",
+  "pred": "The text in the image appears to be in Bengali. It reads \"ও যদিও\" which translates to \"or even though\" in English. The second part of the text seems to be a mathematical expression, possibly related to a physics or engineering context, but it is not fully clear without more context"
+ },
+ {
+  "name": "I_image_140_26",
+  "gt": "ସଂସ୍କୃତି",
+  "pred": "The text in the image is in Odia script and reads \"প্রবাদ\" which translates to \"proverb\" or \"saying\" in English."
+ },
+ {
+  "name": "I_image_140_27",
+  "gt": "ମନ୍ତ୍ରୀ",
+  "pred": "The text in the image is \"গুলি\" which is Bengali for \"the ones\" or \"the things.\""
+ },
+ {
+  "name": "I_image_140_28",
+  "gt": "ମହାନ୍ତି",
+  "pred": "The text in the image is \"দুর্গাপূজা\" which is written in Bengali script. It translates to \"Durga Puja\" in English, which is a major Hindu festival celebrated in India and Bangladesh."
+ },
+ {
+  "name": "I_image_140_29",
+  "gt": "ଶ୍ରୀଯୁକ୍ତ",
+  "pred": "The text in the image is written in Bengali and reads \"গৌরুণ\" (Gouruṇ)."
+ },
+ {
+  "name": "I_image_140_3",
+  "gt": "ସଂଗ୍ରାମ",
+  "pred": "The text in the image is \"প্রতীক\"."
+ },
+ {
+  "name": "I_image_140_30",
+  "gt": "ଅତିଥୁ",
+  "pred": "The text in the image is in Gujarati and reads \"અનુભવ\" which translates to \"experience\" in English."
+ },
+ {
+  "name": "I_image_140_31",
+  "gt": "ଲୋକାର୍ପିତ",
+  "pred": "The text in the image is in Odia script and reads \"ବିକାର\" which translates to \"Vikar\" in English."
+ },
+ {
+  "name": "I_image_140_32",
+  "gt": "ପଟ୍ଟନାୟୁକ",
+  "pred": "The text in the image is in Odia script and reads \"ঈশ্বরী\" (Iśvarī)."
+ },
+ {
+  "name": "I_image_140_33",
+  "gt": "ଓଡିଶା",
+  "pred": "The text in the image is \"ଓଡ଼ିଆ\". This is the Odia script, which is used to write the Odia language, one of the major languages spoken in India."
+ },
+ {
+  "name": "I_image_140_34",
+  "gt": "ସରପର୍ଥ",
+  "pred": "The text in the image is \"গোল্ড\" which is Bengali for \"gold\"."
+ },
+ {
+  "name": "I_image_140_35",
+  "gt": "ମାନ୍ୟବର",
+  "pred": "The text in the image is \"পাকিস্তান\". This is the name of Pakistan written in Bengali script."
+ },
+ {
+  "name": "I_image_140_36",
+  "gt": "ହସ୍ତଶିଳ୍ପ",
+  "pred": "The text in the image is written in Odia script and reads \"দ্বীপের দ্বীপ\" (Dvīper dvīp). This translates to \"Island of Islands\" in English."
+ },
+ {
+  "name": "I_image_140_37",
+  "gt": "୨୦୧୩",
+  "pred": "The text in the image reads \"9099\"."
+ },
+ {
+  "name": "I_image_140_38",
+  "gt": "୦୪",
+  "pred": "The text in the image is \"08\"."
+ },
+ {
+  "name": "I_image_140_39",
+  "gt": "୧୦",
+  "pred": "The text in the image reads \"eo\"."
+ },
+ {
+  "name": "I_image_140_4",
+  "gt": "ଶ୍ରୀଯୁକ୍ତ",
+  "pred": "The text in the image is in Odia script and reads \"গ্রামুক্তি\" which translates to \"Gramooti\" in English. This term can have various meanings depending on the context, but it often refers to a public announcement or declaration in rural areas."
+ },
+ {
+  "name": "I_image_140_40",
+  "gt": "ତା.",
+  "pred": "The text in the image is \"19\"."
+ },
+ {
+  "name": "I_image_140_41",
+  "gt": "ଧଉଳି",
+  "pred": "The text in the image is \"তাত্ত্বিক\" which is Bengali and translates to \"scientific\" or \"theoretical\" in English."
+ },
+ {
+  "name": "I_image_140_42",
+  "gt": "ରଣା",
+  "pred": "The text in the image is \"৩১।\" which is in Bengali script. The number represented is 31."
+ },
+ {
+  "name": "I_image_140_43",
+  "gt": "(ମଧ୍ଯ)",
+  "pred": "The text in the image is \"গুপ্ত\" which is Bengali for \"Gupta.\""
+ },
+ {
+  "name": "I_image_140_45",
+  "gt": "ମହ",
+  "pred": "The text in the image is \"গুল্ম\"."
+ },
+ {
+  "name": "I_image_140_46",
+  "gt": "ଶ୍ରୀଯୁକ୍ତ",
+  "pred": "The text in the image is written in Bengali and reads \"গ্রীষ্মে\" (pronounced as \"Grihme\"). This word means \"summer\" in English."
+ },
+ {
+  "name": "I_image_140_47",
+  "gt": "ଧଉଳି",
+  "pred": "The text in the image is in Telugu and reads \"ప్రారంభి\"."
+ },
+ {
+  "name": "I_image_140_48",
+  "gt": "ବଜାର",
+  "pred": "The text in the image is \"দ্বারা\" which is written in Bengali script. It translates to \"by\" or \"through\" in English."
+ },
+ {
+  "name": "I_image_140_49",
+  "gt": "ମୁଖ୍ୟମନ୍ତ୍ରୀ",
+  "pred": "The text in the image is in Odia script and reads \"প্রতিষ্ঠা\" which translates to \"establishment\" or \"foundation\" in English."
+ },
+ {
+  "name": "I_image_140_5",
+  "gt": "ପଞ୍ଚାୟତ",
+  "pred": "The text in the image is in Odia script and reads \"গ্রন্থাগার\" (pronounced as \"granthāgāra\"). This translates to \"library\" in English."
+ },
+ {
+  "name": "I_image_140_50",
+  "gt": "ନବୀନ",
+  "pred": "The text in the image is \"গণনা\" which is Bengali for \"calculation\" or \"counting.\""
+ },
+ {
+  "name": "I_image_140_51",
+  "gt": "କରକମଳରେ",
+  "pred": "The text in the image is in Odia script and reads \"দুপাক্ষিয়া\" which translates to \"Dupakshya\" in English."
+ },
+ {
+  "name": "I_image_140_52",
+  "gt": "ଉପସ୍ଥିତ",
+  "pred": "The text in the image is in Odia script and reads \"ঔষধ\" (Oushadha). In English, this translates to \"medicine\" or \"pharmacy.\""
+ },
+ {
+  "name": "I_image_140_53",
+  "gt": "ବୃନ୍ଦ",
+  "pred": "The text in the image is \"ব্যাপার\" which is Bengali for \"matter\" or \"business\"."
+ },
+ {
+  "name": "I_image_140_54",
+  "gt": "ମହେଶ୍ବର",
+  "pred": "The text in the image is in Odia script and reads \"দীপ্তি\" (Dipti)."
+ },
+ {
+  "name": "I_image_140_55",
+  "gt": "ମାନ୍ୟବର",
+  "pred": "The text in the image is \"পাকেন্দ্র\" which appears to be in Bengali script."
+ },
+ {
+  "name": "I_image_140_56",
+  "gt": "ଶ୍ରୀ",
+  "pred": "The text in the image is \"গুলি\"."
+ },
+ {
+  "name": "I_image_140_57",
+  "gt": "ପର୍ଯ୍ୟଟନ",
+  "pred": "The text in the image appears to be in Telugu script. The characters read from left to right are \"ప్రభుత్వ\". This translates to \"Government\" in English."
+ },
+ {
+  "name": "I_image_140_58",
+  "gt": "ଯୋଜନା",
+  "pred": "The text in the image is \"গ্রামীণ\" which translates to \"rural\" or \"village\" in English."
+ },
+ {
+  "name": "I_image_140_59",
+  "gt": "ଏରଂ ଆଇନ୍",
+  "pred": "The text in the image is in Gujarati and reads \"એક આંદોલન\" which translates to \"A Movement\" in English."
+ },
+ {
+  "name": "I_image_140_6",
+  "gt": "ଅଧକ୍ଷ",
+  "pred": "The text in the image is \"થબ્બી\". This appears to be in the Gujarati script, which is used for writing the Gujarati language. The word \"થબ્બી\" (thabbi) in Gujarati means \"thick"
+ },
+ {
+  "name": "I_image_140_60",
+  "gt": "ପ୍ରସନ୍ନ",
+  "pred": "The text in the image is in Bengali and reads \"প্রণয়ন\" which translates to \"Transformation\" in English."
+ },
+ {
+  "name": "I_image_140_61",
+  "gt": "ମାନ୍ୟବର",
+  "pred": "The text in the image is \"গানের\" which is Bengali and translates to \"song\" in English."
+ },
+ {
+  "name": "I_image_140_62",
+  "gt": "ଭୁବନେଶ୍ବର",
+  "pred": "The text in the image appears to be in Bengali. The characters read from left to right are \"৫৬ক্ষণ\" which translates to \"56 minutes\" in English."
+ },
+ {
+  "name": "I_image_140_63",
+  "gt": "ଅଶୋକ",
+  "pred": "The text in the image is in Gujarati and reads \"ખેડકી\"."
+ },
+ {
+  "name": "I_image_140_64",
+  "gt": "ଚ଼ନ୍ଦ୍ର",
+  "pred": "The text in the image appears to be in the Odia script, which is used for writing the Odia language. The characters read from left to right are \"ମୁଁ\" (mu)."
+ },
+ {
+  "name": "I_image_140_65",
+  "gt": "ମାନ୍ୟବର",
+  "pred": "The text in the image is \"গাদেরগঞ্জ\". This appears to be a Bengali word, which translates to \"Gaderganj\" in English. Gaderganj is a town located in Bangladesh."
+ },
+ {
+  "name": "I_image_140_66",
+  "gt": "ଭୁବନେଶ୍ବର",
+  "pred": "The text in the image is in Odia script and reads \"ঔষধের\" which translates to \"medicine\" or \"pharmacy\" in English."
+ },
+ {
+  "name": "I_image_140_67",
+  "gt": "ନଂ-୨୯",
+  "pred": "The text in the image reads \"90° - 95°\"."
+ },
+ {
+  "name": "I_image_140_68",
+  "gt": "ଶ୍ରୀଯୁକ୍ତ",
+  "pred": "The text in the image is in Odia script and reads \"গৌরুণ্য\" (Gouruṇya)."
+ },
+ {
+  "name": "I_image_140_69",
+  "gt": "ବଡ଼ଜେନା",
+  "pred": "The text in the image is \"গোল্ডেন\" which translates to \"Golden\" in English."
+ },
+ {
+  "name": "I_image_140_7",
+  "gt": "କୁମାରୁ",
+  "pred": "The text in the image is \"দুপাত্র\" which is written in Bengali script. The transliteration of this text into English would be \"dupatra.\""
+ },
+ {
+  "name": "I_image_140_70",
+  "gt": "ଉତ୍ତର",
+  "pred": "The text in the image appears to be in the Odia script, which is used primarily in the Indian state of Odisha and in some neighboring regions. The characters read from left to right are \"ବାହୁ\" (bāhu), which translates to \"arm\" or \"lim"
+ },
+ {
+  "name": "I_image_140_71",
+  "gt": "ବିଜୟକୁମାର",
+  "pred": "The text in the image is in Odia script and reads \"দিগ্বীপাজ\"."
+ },
+ {
+  "name": "I_image_140_72",
+  "gt": "ମାନ୍ୟବର",
+  "pred": "The text in the image is \"গোল্ড\" which translates to \"Gold\" in English."
+ },
+ {
+  "name": "I_image_140_73",
+  "gt": "ଭୁବନେଶ୍ବର",
+  "pred": "The text in the image is in Odia script and reads \"জ্যেষ্ঠা\"."
+ },
+ {
+  "name": "I_image_140_74",
+  "gt": "ସଂଜଲ",
+  "pred": "The text in the image is \"প্রজাতন্ত্র\". This is Bengali for \"Republic\"."
+ },
+ {
+  "name": "I_image_140_75",
+  "gt": "ବଳିୟାରସିଂହ",
+  "pred": "The text in the image is in Odia script and reads \"ঈশ্বরীপ্রভা\"."
+ },
+ {
+  "name": "I_image_140_76",
+  "gt": "ଭୁବନେଶ୍ବର",
+  "pred": "The text in the image appears to be in Odia script. The characters read from left to right are \"ঈদেরগুলি\" which translates to \"Ider Golui\" in English. This phrase is likely a title or a name, possibly referring to a book, movie, or other"
+ },
+ {
+  "name": "I_image_140_77",
+  "gt": "ସମିତି",
+  "pred": "The text in the image is \"ถ้า\"."
+ },
+ {
+  "name": "I_image_140_78",
+  "gt": "ସଦସ୍ଯ",
+  "pred": "The text in the image is \"গগন\" which is Bengali for \"sky\"."
+ },
+ {
+  "name": "I_image_140_79",
+  "gt": "ପାଇକରାୟୁ",
+  "pred": "The text in the image is in Odia script and reads \"পাক্ষিক প্রকাশনা,\" which translates to \"Monthly Publication\" in English."
+ },
+ {
+  "name": "I_image_140_8",
+  "gt": "ଶ୍ରୀଯୁକ୍ତ",
+  "pred": "The text in the image is \"গ্রীষ্মে\" which translates to \"summer\" in English."
+ },
+ {
+  "name": "I_image_140_80",
+  "gt": "ପରିଷଦ",
+  "pred": "The text in the image is \"গীতা\" which is Bengali for \"Gita\"."
+ },
+ {
+  "name": "I_image_140_81",
+  "gt": "ଜୋନ",
+  "pred": "The text in the image is \"গোল\"."
+ },
+ {
+  "name": "I_image_140_82",
+  "gt": "ଖୋର୍ଦ୍ଧା",
+  "pred": "The text in the image is \"গোল্ড\" which is Bengali for \"gold\"."
+ },
+ {
+  "name": "I_image_140_83",
+  "gt": "ରବ",
+  "pred": "The text in the image is \"ব্র\" which is in Bengali script. It can be transliterated as \"br\" in Roman script."
+ },
+ {
+  "name": "I_image_140_84",
+  "gt": "ଗ୍ରାମପର୍ଥୀୟତ",
+  "pred": "The text in the image is in Bengali and reads \"গোল্ডেন টার্ন\" which translates to \"Golden Turn\" in English."
+ },
+ {
+  "name": "I_image_140_85",
+  "gt": "ରଶ୍ମିତା",
+  "pred": "The text in the image is \"ত্রিতীয়া\" which is Bengali for \"Third.\""
+ },
+ {
+  "name": "I_image_140_86",
+  "gt": "ଭୋଇ",
+  "pred": "The text in the image is \"গুলি\" which is written in Bengali script. It translates to \"the ones\" or \"the things\" in English."
+ },
+ {
+  "name": "I_image_140_87",
+  "gt": "ସମିତି",
+  "pred": "The text in the image is \"গুলি\" which is Bengali for \"the ones\" or \"the things\"."
+ },
+ {
+  "name": "I_image_140_88",
+  "gt": "ସଭ୍ୟା",
+  "pred": "The text in the image is \"গুণা\" which is Bengali for \"gun\" or \"gun\" in English."
+ },
+ {
+  "name": "I_image_140_89",
+  "gt": "ଜିଲ୍ଲ",
+  "pred": "The text in the image appears to be \"টি এল\" which is likely a part of a larger word or phrase. Without additional context, it's difficult to determine the exact meaning or language. If you have more information about the source or context of this text, please provide it so I can assist you"
+ },
+ {
+  "name": "I_image_140_9",
+  "gt": "ବିଧାୟକ",
+  "pred": "The text in the image is written in Odia script and reads \"দীর্ঘাযুক্ত\" (dīrghāyukta). This phrase translates to \"long-term\" or \"permanent\" in English."
+ },
+ {
+  "name": "I_image_140_90",
+  "gt": "ଧଉଳି",
+  "pred": "The text in the image is \"মাঝে\" which is Bengali and translates to \"in the middle\" or \"amongst\" in English."
+ },
+ {
+  "name": "I_image_140_91",
+  "gt": "ପର୍ଯ୍ୟଟନ",
+  "pred": "The text in the image is \"গুরুত্বপূর্ণ\" which translates to \"significant\" or \"important\" in English."
+ },
+ {
+  "name": "I_image_140_92",
+  "gt": "ଓଡିଶା",
+  "pred": "The text in the image is \"ওটিএল\" which appears to be in Bengali script. The characters translate to \"O T E L\" in Romanized form, which could be an abbreviation or a name."
+ },
+ {
+  "name": "I_image_141_6",
+  "gt": "ଢେଙ୍କାନାଳ",
+  "pred": "The text in the image is in Odia script and reads \"ବାଣିଜ୍ୟ\" which translates to \"Business\" in English."
+ },
+ {
+  "name": "I_image_148_0",
+  "gt": "ସମିତି",
+  "pred": "The text in the image is \"গুরু\" which is Bengali for \"guru\"."
+ },
+ {
+  "name": "I_image_148_1",
+  "gt": "ଦୁର୍ଗା",
+  "pred": "The text in the image is \"ছুলা\" which is written in Bengali script."
+ },
+ {
+  "name": "I_image_148_2",
+  "gt": "ନୟାପଲ୍ଲୀ",
+  "pred": "The text in the image is in Odia script and reads \"ଦ୍ୟାଯା\" which transliterates to \"Dyaya\" in English."
+ },
+ {
+  "name": "I_image_148_3",
+  "gt": "ପୂଜା",
+  "pred": "The text in the image is \"ଓଡ଼ିଆ\". This is the Odia script, which is used to write the Odia language, one of the major languages spoken in India."
+ },
+ {
+  "name": "I_image_150_11",
+  "gt": "ଓଁ ଶିରିଡ଼ି",
+  "pred": "The text in the image is \"এই দিনে\" which translates to \"On this day\" in English."
+ },
+ {
+  "name": "I_image_150_15",
+  "gt": "ସାଇ",
+  "pred": "The text in the image reads \"15\"."
+ },
+ {
+  "name": "I_image_150_5",
+  "gt": "ଭୋଜନାଳୟ",
+  "pred": "The text in the image is in Odia script and reads \"গোলাপিগঞ্জ\". This translates to \"Golapganj\" in English, which is a city in Bangladesh."
+ },
+ {
+  "name": "I_image_160_3",
+  "gt": "ଗୋଳବାଇ",
+  "pred": "The text in the image is in Odia script and reads \"লাক্ষণী\" (Lakshani)."
+ },
+ {
+  "name": "I_image_167_10",
+  "gt": "ବିଧାତା",
+  "pred": "The text in the image is \"ওয়াল\" which is in Bengali script. It translates to \"wall\" in English."
+ },
+ {
+  "name": "I_image_167_2",
+  "gt": "ଣିଣୁ",
+  "pred": "The text in the image is \"विश्व\". This is the Hindi word for \"world\" or \"universe\"."
+ },
+ {
+  "name": "I_image_167_6",
+  "gt": "ଟୀକାକରଣ",
+  "pred": "The text in the image is \"বাংলা বই\" which translates to \"Bangla Book\" in English."
+ },
+ {
+  "name": "I_image_170_0",
+  "gt": "ଗଣ୍ଡ",
+  "pred": "The text in the image is \"ကျောင်း\" which is written in Burmese script. It translates to \"school\" in English."
+ },
+ {
+  "name": "I_image_170_1",
+  "gt": "ଘର",
+  "pred": "The text in the image is \"মো\" which is in Bengali script. It can be transliterated as \"Mo\" in Roman script."
+ },
+ {
+  "name": "I_image_176_0",
+  "gt": "ଶ୍ରୀକ୍ଷେତ୍ର",
+  "pred": "The text in the image is \"গোল্ড\"."
+ },
+ {
+  "name": "I_image_176_10",
+  "gt": "ଶ୍ରେଣ୍ଡ",
+  "pred": "The text in the image is \"গুরু\" which is Bengali for \"Guru\"."
+ },
+ {
+  "name": "I_image_176_11",
+  "gt": "ବଢ଼ି",
+  "pred": "The text in the image is \"20\"."
+ },
+ {
+  "name": "I_image_176_21",
+  "gt": "ବଜାର",
+  "pred": "The text in the image is \"বাংলা\" which is the word for \"Bengali\" in English."
+ },
+ {
+  "name": "I_image_176_22",
+  "gt": "ସେଣ୍ଟର",
+  "pred": "The text in the image is \"গোল্ড\" which is Bengali for \"Gold\"."
+ },
+ {
+  "name": "I_image_176_23",
+  "gt": "ଶାକାହାରୀ",
+  "pred": "The text in the image is \"তাকীয়া\" which is Bengali for \"Takiya\"."
+ },
+ {
+  "name": "I_image_176_25",
+  "gt": "ଆକ୍ସିସ୍",
+  "pred": "The text in the image is \"গ্রামীণ\" which is Bengali for \"rural\" or \"village.\""
+ },
+ {
+  "name": "I_image_176_5",
+  "gt": "ଶ୍ରେଣ୍ଡ",
+  "pred": "The text in the image is \"6日目\". This translates to \"Day 6\" in English."
+ },
+ {
+  "name": "I_image_176_6",
+  "gt": "ଭୋଜନାଳୟ",
+  "pred": "The text in the image is \"ওয়েবসাইট\". This is Bengali and it translates to \"Website\" in English."
+ },
+ {
+  "name": "I_image_176_8",
+  "gt": "ବ୍ୟାଙ୍କ୍",
+  "pred": "The text in the image is \"१९४७\". This appears to be the year 1947 written in Devanagari script, which is used for several languages including Hindi and Marathi."
+ },
+ {
+  "name": "I_image_176_9",
+  "gt": "ଶୁଦ୍ଧ",
+  "pred": "The text in the image is \"তা\" which is Bengali for \"ta\"."
+ },
+ {
+  "name": "I_image_176_42",
+  "gt": "ଭକ୍ତ ନି",
+  "pred": "The text in the image appears to be \"के रे\" which is in Devanagari script, commonly used for writing Hindi and other languages in India."
+ },
+ {
+  "name": "I_image_180_0",
+  "gt": "ନାଳ",
+  "pred": "The text in the image reads \"MILK\"."
+ },
+ {
+  "name": "I_image_180_10",
+  "gt": "ଭୁବନେଶ୍ବର",
+  "pred": "The text in the image is in Odia script, and it reads \"ପ୍ରୋଫେସାର\" which translates to \"Professor\" in English."
+ },
+ {
+  "name": "I_image_180_11",
+  "gt": "ର",
+  "pred": "The text in the image appears to be \"qiq\"."
+ },
+ {
+  "name": "I_image_180_12",
+  "gt": "ସୋସିଆଲ",
+  "pred": "The text in the image is \"বিদ্যাকৌশল\" which translates to \"Educational Technology\" in English."
+ },
+ {
+  "name": "I_image_180_13",
+  "gt": "ଇନଷ୍ଟିଚ୍ୟୁ",
+  "pred": "The text in the image is \"একটি সুন্দর ঘোড়া\" which translates to \"A beautiful horse\" in English."
+ },
+ {
+  "name": "I_image_180_14",
+  "gt": "ଜ୍ଞାନକୋଷ",
+  "pred": "The text in the image is \"প্রাকৃতিক\". This is Bengali and it translates to \"natural\" in English."
+ },
+ {
+  "name": "I_image_180_15",
+  "gt": "ଉଇକିପିଡ଼ିଆ",
+  "pred": "The text in the image is in Odia script and reads \"ଓଡ଼ିଆ\". This is the name of the Odia language, which is also known as Oriya."
+ },
+ {
+  "name": "I_image_180_16",
+  "gt": "କିପିଡ଼ିଆ",
+  "pred": "The text in the image is \"இலையா\" which is in Tamil script. It can be transliterated into English as \"Ilaiya\"."
+ },
+ {
+  "name": "I_image_180_17",
+  "gt": "ଓଡ଼ିଆ",
+  "pred": "The text in the image is \"ଓଡ଼ିଆ\". This is the Odia script, which is used to write the Odia language, one of the major languages spoken in India."
+ },
+ {
+  "name": "I_image_180_18",
+  "gt": "ଏକ",
+  "pred": "The text in the image is a musical note symbol, which typically represents a sound or pitch in music notation. It does not contain any text but rather an icon that is often used to represent music or audio in various contexts."
+ },
+ {
+  "name": "I_image_180_19",
+  "gt": "ଆନ୍ଦୋଳନ",
+  "pred": "The text in the image is \"આંદોલન\". This is in the Gujarati script and translates to \"Movement\" or \"Revolution\" in English."
+ },
+ {
+  "name": "I_image_180_2",
+  "gt": "କଳିଙ୍ଗ",
+  "pred": "The text in the image is \"भारत\". This is the Hindi word for \"India\"."
+ },
+ {
+  "name": "I_image_180_3",
+  "gt": "ଆରୀ",
+  "pred": "The text in the image is \"અલી\" which is written in Gujarati script. It translates to \"Ali\" in English, which is a common name."
+ },
+ {
+  "name": "I_image_180_4",
+  "gt": "ଭାରତୀଯ",
+  "pred": "The text in the image is \"ଦେଶ\". This is the Odia word for \"country\" or \"nation\"."
+ },
+ {
+  "name": "I_image_180_5",
+  "gt": "ସଂସ୍ଥାନ",
+  "pred": "The text in the image is \"তার দিকে\" which translates to \"towards him/her\" or \"to his/her side\" in English."
+ },
+ {
+  "name": "I_image_180_6",
+  "gt": "ଦଶବର୍ଷର",
+  "pred": "The text in the image is in Odia script and reads \"ঈশ্বর\" which translates to \"God\" or \"Lord\" in English."
+ },
+ {
+  "name": "I_image_180_7",
+  "gt": "ଇଣ୍ଟରନେଟରେ",
+  "pred": "The text in the image is in Odia script and reads \"କ୍ଷୁଦ୍ରମନେଜାର\"."
+ },
+ {
+  "name": "I_image_180_8",
+  "gt": "ଗଢ଼ିବାର",
+  "pred": "The text in the image is in Odia script and reads \"ଉଳିଗୀ\"."
+ },
+ {
+  "name": "I_image_180_9",
+  "gt": "ଜାନୁଆରୀ ୨୦୧୪",
+  "pred": "The text in the image is \"টেলিভাইজ ৯০৪\". This appears to be in Bengali, and it translates to \"Television 904\" in English. The number 904 could refer to a television channel or a specific program."
+ },
+ {
+  "name": "I_image_180_23",
+  "gt": "୨୮",
+  "pred": "The text in the image is \"9Γ\"."
+ },
+ {
+  "name": "I_image_181_1",
+  "gt": "ଉଇକିପାଠାଗାରର",
+  "pred": "The text in the image is \"ডেভিড ওয়েস্টার্ন\". This appears to be a name, possibly in Bengali script."
+ },
+ {
+  "name": "I_image_181_2",
+  "gt": "ଓଡ଼ିଆ",
+  "pred": "The text in the image is \"ওড়িଆ\". This is the Odia script, which is used to write the Odia language, also known as Oriya."
+ },
+ {
+  "name": "I_image_181_3",
+  "gt": "୨ୟ",
+  "pred": "The text in the image is \"9Ω\"."
+ },
+ {
+  "name": "I_image_181_5",
+  "gt": "ଜନ୍ମ",
+  "pred": "The text in the image is \"गो\" which is in Devanagari script and translates to \"go\" in English, meaning \"cow\" or \"go\" as in the verb \"to go.\""
+ },
+ {
+  "name": "I_image_181_6",
+  "gt": "ସିରିପୁର,",
+  "pred": "The text in the image is \"এলিটুল,\" which appears to be in Bengali script. The meaning or context of this text would depend on the specific words and their usage, but it does not form a complete word or phrase that I can confidently translate without more information. If you have any"
+ },
+ {
+  "name": "I_image_181_7",
+  "gt": "ଜାନୁଆ",
+  "pred": "The text in the image reads \"কেন্দ্রীয়\" which is Bengali for \"central\" or \"centralized.\""
+ },
+ {
+  "name": "I_image_181_8",
+  "gt": "ରାଲ",
+  "pred": "The text in the image is \"田间\"."
+ },
+ {
+  "name": "I_image_181_9",
+  "gt": "ଇନଷ୍ଟତ୍ଯ",
+  "pred": "The text in the image is \"গোল্ডেন ফুট\" which translates to \"Golden Foot\" in English."
+ },
+ {
+  "name": "I_image_181_10",
+  "gt": "ଉଇ ଡ଼ିଆ",
+  "pred": "The text in the image is \"বাংলা ভাষা\" which translates to \"Bengali Language\" in English."
+ },
+ {
+  "name": "I_image_188_101",
+  "gt": "ମପାଯାଏ",
+  "pred": "The text in the image reads \"ORION\"."
+ },
+ {
+  "name": "I_image_188_103",
+  "gt": "ସମୟ",
+  "pred": "The text in the image is \"একটি\"."
+ },
+ {
+  "name": "I_image_188_104",
+  "gt": "ଭାରତୀୟ",
+  "pred": "The text in the image reads \"piazza\"."
+ },
+ {
+  "name": "I_image_188_105",
+  "gt": "ସମୟ",
+  "pred": "The text in the image reads \"one\"."
+ },
+ {
+  "name": "I_image_188_110",
+  "gt": "ସମଜୁଲ୍ଯତା",
+  "pred": "The text in the image reads \"9999999\"."
+ },
+ {
+  "name": "I_image_188_113",
+  "gt": "୧୪",
+  "pred": "The text in the image is \"tex\"."
+ },
+ {
+  "name": "I_image_188_114",
+  "gt": "ପମୟର",
+  "pred": "The text in the image is \"анда\"."
+ },
+ {
+  "name": "I_image_188_117",
+  "gt": "ପାଠ୍ଯାଙ୍କ",
+  "pred": "The text in the image is \"GIOVIG\"."
+ },
+ {
+  "name": "I_image_188_118",
+  "gt": "୪୪",
+  "pred": "The text in the image is \"R\"."
+ },
+ {
+  "name": "I_image_188_62",
+  "gt": "ସମତୁଲ୍ୟତା",
+  "pred": "The text in the image reads \"1999\"."
+ },
+ {
+  "name": "I_image_188_68",
+  "gt": "ସମତୁଲ୍ୟତା",
+  "pred": "The text in the image is \"Carravel\"."
+ },
+ {
+  "name": "I_image_188_71",
+  "gt": "ସମୟ",
+  "pred": "The text in the image is \"iano\"."
+ },
+ {
+  "name": "I_image_188_76",
+  "gt": "(୮୨.୫",
+  "pred": "The text in the image reads: \\(\\Gamma_{9,8}\\)."
+ },
+ {
+  "name": "I_image_188_78",
+  "gt": "ମାଚଚ",
+  "pred": "The text in the image is \"प्रेम\"."
+ },
+ {
+  "name": "I_image_188_79",
+  "gt": "ମପାଯାଏ",
+  "pred": "The text in the image is \"HIDOR\"."
+ },
+ {
+  "name": "I_image_188_84",
+  "gt": "ଭୂ-ସମତନ",
+  "pred": "The text in the image reads \"q-ounce\"."
+ },
+ {
+  "name": "I_image_188_87",
+  "gt": "୮୫୫୨'",
+  "pred": "The text in the image reads \"1899\"."
+ },
+ {
+  "name": "I_image_188_90",
+  "gt": "ତଳାୟ",
+  "pred": "The text in the image is \"गोमांडा\" which is written in Devanagari script, commonly used for several languages including Hindi and Marathi."
+ },
+ {
+  "name": "I_image_189_2",
+  "gt": "ଓତ଼ଣା",
+  "pred": "The text in the image reads \"2019\"."
+ },
+ {
+  "name": "I_image_189_5",
+  "gt": "ରାଜ୍ୟ",
+  "pred": "The text in the image reads \"SIGN\"."
+ },
+ {
+  "name": "I_image_189_7",
+  "gt": "ନେଶ୍ବର",
+  "pred": "The text in the image is \"প্রিয়া\" which is written in Bengali script. It translates to \"Priya\" in English, which is a common female name in Bengali."
+ },
+ {
+  "name": "I_image_190_0",
+  "gt": "ଦିତ୍ଯ",
+  "pred": "The text in the image reads \"GOU\"."
+ },
+ {
+  "name": "I_image_190_2",
+  "gt": "ପଡ଼ିଆ",
+  "pred": "The text in the image is \"لاسال\"."
+ },
+ {
+  "name": "I_image_190_3",
+  "gt": "ପ୍ରଦର୍ଶନୀ",
+  "pred": "The text in the image is \"এলস্কা\" which is written in Bengali script."
+ },
+ {
+  "name": "I_image_190_4",
+  "gt": "୧୯",
+  "pred": "The text in the image reads \"29\"."
+ },
+ {
+  "name": "I_image_191_0",
+  "gt": "ସହ",
+  "pred": "The text in the image is \"এছাড়া\" which translates to \"in addition\" or \"besides\" in English."
+ },
+ {
+  "name": "I_image_191_1",
+  "gt": "୦୧୯",
+  "pred": "The text in the image reads \"OPEN\"."
+ },
+ {
+  "name": "I_image_191_2",
+  "gt": "ଭୁବନେଶର",
+  "pred": "The text in the image is in Odia script and reads \"অদ্যান্ত\" (Adyanta)."
+ },
+ {
+  "name": "I_image_191_3",
+  "gt": "ପ୍ଯନ୍ତ",
+  "pred": "The text in the image is \"14\"."
+ },
+ {
+  "name": "I_image_196_2",
+  "gt": "ଜଗନ୍ନାଥପୁରୁ",
+  "pred": "The text in the image is in Odia script and reads \"ନେଥିବୁଜ୍\" which translates to \"Nethibuj\" in English."
+ },
+ {
+  "name": "I_image_200_10",
+  "gt": "ମନ୍ଦିର",
+  "pred": "The text in the image is \"গোল্ড\"."
+ },
+ {
+  "name": "I_image_200_19",
+  "gt": "ପୁରୀ-୧",
+  "pred": "The text in the image is \"৩১-২\". This appears to be a number written in Bengali script, which is used in Bangladesh and West Bengal, India. The numbers translate to 31-2 in English."
+ },
+ {
+  "name": "I_image_200_27",
+  "gt": "ଜଗନ୍ନାଥ",
+  "pred": "The text in the image is in Odia script and reads \"ବିଜ୍ୟନୀ\"."
+ },
+ {
+  "name": "I_image_200_28",
+  "gt": "ଅଗ୍ନିଶମ",
+  "pred": "The text in the image is \"খবরোদ\" which appears to be in Bengali script."
+ },
+ {
+  "name": "I_image_200_29",
+  "gt": "କେନ୍ଦ୍ର",
+  "pred": "The text in the image reads \"60%\"."
+ },
+ {
+  "name": "I_image_200_8",
+  "gt": "ପୁରୀ",
+  "pred": "The text in the image is \"তুমি\" which is Bengali and translates to \"you\" in English."
+ },
+ {
+  "name": "I_image_200_9",
+  "gt": "ସେବା",
+  "pred": "The text in the image is \"69.81\"."
+ },
+ {
+  "name": "I_image_202_16",
+  "gt": "ଶ୍ରୀରମ ରଜା ହେବା",
+  "pred": "The text in the image is \"রাজ্য পদোন্নতি\" which translates to \"State Development\" in English."
+ },
+ {
+  "name": "I_image_202_8",
+  "gt": "ସଭାକକ୍ଷ",
+  "pred": "The text in the image is \"তামিল\"."
+ },
+ {
+  "name": "I_image_202_18",
+  "gt": "ପେଟି",
+  "pred": "The text in the image is \"এসি\" which is Bengali for \"ESI\"."
+ },
+ {
+  "name": "I_image_203_4",
+  "gt": "ସୂଚନା",
+  "pred": "The text in the image is \"geol\"."
+ },
+ {
+  "name": "I_image_210_16",
+  "gt": "ଜନପ୍ରିୟ",
+  "pred": "The text in the image is \"ବଡ଼ି\" which is written in Odia script. The transliteration of this text into English would be \"Badi\"."
+ },
+ {
+  "name": "I_image_210_24",
+  "gt": "ହୋଟେଲ",
+  "pred": "The text in the image reads \"69166m\"."
+ },
+ {
+  "name": "I_image_210_25",
+  "gt": "ନିଉ",
+  "pred": "The text in the image is \"இ\". This is the Tamil letter \"i\" (pronounced as \"ee\")."
+ },
+ {
+  "name": "I_image_210_28",
+  "gt": "ନିଉ",
+  "pred": "The text in the image is \"అం\"."
+ },
+ {
+  "name": "I_image_210_32",
+  "gt": "ଜନପ୍ରିୟ",
+  "pred": "The text in the image appears to be \"డేటి\" which is in Telugu script. It translates to \"Date\" in English."
+ },
+ {
+  "name": "I_image_210_4",
+  "gt": "ପ୍ରତିଷ୍ଠାନ",
+  "pred": "The text in the image is \"ত্রিবাণ\" which appears to be in Bengali script."
+ },
+ {
+  "name": "I_image_210_41",
+  "gt": "ହୋଟେଲ",
+  "pred": "The text in the image is \"গোলাপ\" which is Bengali for \"rose\"."
+ },
+ {
+  "name": "I_image_210_5",
+  "gt": "ଖାଇବାର",
+  "pred": "The text in the image is \"ଓଡ଼ିଆ\". This is the Odia script, which is used to write the Odia language, one of the major languages spoken in India."
+ },
+ {
+  "name": "I_image_210_50",
+  "gt": "ନିରାମିଷ",
+  "pred": "The text in the image is \"ଡିଗିଟ\" which appears to be in Odia script."
+ },
+ {
+  "name": "I_image_210_51",
+  "gt": "ଆମିଷ",
+  "pred": "The text in the image is \"খাদিজা\" which is Bengali for \"Khadija.\""
+ },
+ {
+  "name": "I_image_210_52",
+  "gt": "ବିଷ୍ଣୁପ୍ତ",
+  "pred": "The text in the image is \"இல்லை\" which is in Tamil script. It translates to \"No\" or \"Not\" in English."
+ },
+ {
+  "name": "I_image_210_6",
+  "gt": "ଓ",
+  "pred": "The text in the image is \"b\"."
+ },
+ {
+  "name": "I_image_210_71",
+  "gt": "ଜନପ୍ରିୟ",
+  "pred": "The text in the image is \"GOGO\"."
+ },
+ {
+  "name": "I_image_218_107",
+  "gt": "ରାୟଗଡ଼ା",
+  "pred": "The text in the image is \"સ્વાભાવિક\" which is in Gujarati script. The English translation of this word is \"natural.\""
+ },
+ {
+  "name": "I_image_218_110",
+  "gt": "ସୁରକ୍ଷା",
+  "pred": "The text in the image is \"Q&A\"."
+ },
+ {
+  "name": "I_image_218_135",
+  "gt": "ରାୟଗଡ଼ା",
+  "pred": "The text in the image is \"গোলাপ\" which translates to \"Golapa\" in English. This appears to be a name or a word in Bengali."
+ },
+ {
+  "name": "I_image_218_99",
+  "gt": "କିଶୋରର୍ଯ୍ୟାୟବୋର୍ଡ",
+  "pred": "The text in the image is \"একটি সম্পূর্ণ সংখ্যা\" which translates to \"A complete number\" in English."
+ },
+ {
+  "name": "I_image_219_0",
+  "gt": "ମଂତ଼",
+  "pred": "The text in the image is \"রো\"."
+ },
+ {
+  "name": "I_image_219_1",
+  "gt": "ମାଟା",
+  "pred": "The text in the image is \"RIET\"."
+ },
+ {
+  "name": "I_image_219_2",
+  "gt": "ରେଣ୍ଡୋ",
+  "pred": "The text in the image is \"దేశ\". This is Telugu for \"country\" or \"nation\"."
+ },
+ {
+  "name": "I_image_231_2",
+  "gt": "ଗେ୍ଡ଼",
+  "pred": "The text in the image is \"60%\"."
+ },
+ {
+  "name": "I_image_231_3",
+  "gt": "କାଇପଦର",
+  "pred": "The text in the image is \"গোল্ডেন\" which is Bengali for \"Golden\"."
+ },
+ {
+  "name": "I_image_234_2",
+  "gt": "ବ୍ରାସ",
+  "pred": "The text in the image is \"20\"."
+ },
+ {
+  "name": "I_image_234_6",
+  "gt": "ଭରତ",
+  "pred": "The text in the image is \"333\"."
+ },
+ {
+  "name": "I_image_241_0",
+  "gt": "ସୁନ୍ଦରଗଡ",
+  "pred": "The text in the image is \"গুলো\" which is in Bengali and translates to \"the ones\" or \"the things\" in English."
+ },
+ {
+  "name": "I_image_241_1",
+  "gt": "ସୁନ୍ଦରଗଡ",
+  "pred": "The text in the image is \"গোলাপ\" which is Bengali for \"rose\"."
+ },
+ {
+  "name": "I_image_241_10",
+  "gt": "ଫାଟକ",
+  "pred": "The text in the image is \"সেকে\"."
+ },
+ {
+  "name": "I_image_241_11",
+  "gt": "ତନଖୁ",
+  "pred": "The text in the image is \"বেদ্যু\". This appears to be in Bengali script, which is used primarily in Bangladesh and West Bengal, India. The word \"বেদ্যু\" (bedyu) does not have a direct English translation but can be roughly translated as"
+ },
+ {
+  "name": "I_image_241_12",
+  "gt": "ବନ",
+  "pred": "The text in the image is \"QQ\"."
+ },
+ {
+  "name": "I_image_241_7",
+  "gt": "କରମତିହି",
+  "pred": "The text in the image is \"কোটেজ\" which is Bengali for \"Cottage\"."
+ },
+ {
+  "name": "I_image_241_8",
+  "gt": "ବନାଞ୍ଚଳ",
+  "pred": "The text in the image is \"গোলাপ\" which is Bengali for \"rose\"."
+ },
+ {
+  "name": "I_image_241_9",
+  "gt": "ବନଖଣ୍ଡ",
+  "pred": "The text in the image is \"বেগমের\" which is Bengali and translates to \"Begum's\" in English."
+ },
+ {
+  "name": "I_image_242_13",
+  "gt": "ଶତାବ୍ଦୀ",
+  "pred": "The text in the image is \"তারিখ\" which is Bengali for \"date\"."
+ },
+ {
+  "name": "I_image_242_14",
+  "gt": "ଆନୁମାନିକ",
+  "pred": "The text in the image is \"খাক্তাকির\" which appears to be in Bengali script."
+ },
+ {
+  "name": "I_image_242_15",
+  "gt": "ସମୟ",
+  "pred": "The text in the image is \"QF19\"."
+ },
+ {
+  "name": "I_image_242_16",
+  "gt": "ପ୍ରାପ୍ତିସ୍ଥାନ",
+  "pred": "The text in the image is \"গুরুত্বপূর্ণ\" which translates to \"significant\" or \"important\" in English."
+ },
+ {
+  "name": "I_image_242_17",
+  "gt": "କାର୍ତ୍ତିକେୟ",
+  "pred": "The text in the image is in Odia script and reads \"কার্তিক\" (Kartik). This is the name of a month in the Bengali calendar, which corresponds to October or November in the Gregorian calendar."
+ },
+ {
+  "name": "I_image_242_2",
+  "gt": "ବୀର",
+  "pred": "The text in the image is \"গোল্ড\". This is Bengali and it translates to \"Gold\" in English."
+ },
+ {
+  "name": "I_image_242_3",
+  "gt": "ରାମଚନ୍ଦ୍ରପୁର",
+  "pred": "The text in the image is \"বাংলা ভাষা\". This translates to \"Bengali language\" in English."
+ },
+ {
+  "name": "I_image_242_4",
+  "gt": "୧୩ଶ",
+  "pred": "The text in the image is \"৫ পাতা\" which translates to \"5 pages\" in English."
+ },
+ {
+  "name": "I_image_243_0",
+  "gt": "୧୯୮୧",
+  "pred": "The text in the image reads \"ecre\"."
+ },
+ {
+  "name": "I_image_243_1",
+  "gt": "ମୃତ୍ୟୁ",
+  "pred": "The text in the image appears to be in the Odia script, and it reads \"পুরুষ\" (purusha). In English, this word means \"man\" or \"male.\""
+ },
+ {
+  "name": "I_image_243_12",
+  "gt": "ଐତିହାସିକ",
+  "pred": "The text in the image is written in Odia script and reads \"ঔষধে\" (Oushadhe). In English, this translates to \"medicine\" or \"pharmacy.\""
+ },
+ {
+  "name": "I_image_243_13",
+  "gt": "ମହାପାତ୍ର",
+  "pred": "The text in the image is in Odia script and reads \"দুর্গাপূজা\" (Durgāpūjā). This is the name of a major Hindu festival celebrated in India, particularly in the eastern part of the country, which honors the goddess Durga."
+ },
+ {
+  "name": "I_image_243_2",
+  "gt": "ଅକ୍ଟୋବର",
+  "pred": "The text in the image is in Odia script and reads \"ଆଜେଦାର\"."
+ },
+ {
+  "name": "I_image_243_3",
+  "gt": "୧୯୧୧",
+  "pred": "The text in the image reads \"egee\"."
+ },
+ {
+  "name": "I_image_243_4",
+  "gt": "ଏପ୍ରିଲ୍",
+  "pred": "The text in the image appears to be in Thai script and reads \"การ์ด.\" This translates to \"card\" in English."
+ },
+ {
+  "name": "I_image_243_5",
+  "gt": "୨୦",
+  "pred": "The text in the image is \"90\"."
+ },
+ {
+  "name": "I_image_243_6",
+  "gt": "୨୧",
+  "pred": "The text in the image is \"ge\"."
+ },
+ {
+  "name": "I_image_243_7",
+  "gt": "ଜନ୍ମ",
+  "pred": "The text in the image appears to be in Telugu script. The characters read from left to right are \"విశ్వ\". This translates to \"Vishv\" in English, which is likely a name or a word in Telugu."
+ },
+ {
+  "name": "I_image_243_8",
+  "gt": "କେଦାରନାଥ",
+  "pred": "The text in the image is written in Odia script and reads \"କ୍ଷୁଦ୍ରଯ\"."
+ },
+ {
+  "name": "I_image_244_13",
+  "gt": "ଉପସ୍ଥିତି",
+  "pred": "The text in the image is in Odia script and reads \"ଓଡ଼ିଆ\". This is the name of the Odia language, which is spoken primarily in the Indian state of Odisha."
+ },
+ {
+  "name": "I_image_244_14",
+  "gt": "ପର୍ଯ୍ୟଟନ",
+  "pred": "The text in the image is \"ஆஸ்திர\" which appears to be in Tamil script. The meaning or context of this word would depend on its usage, but it does not have a direct English translation as it is a proper noun or a specific term in Tamil. If you need more information about this"
+ },
+ {
+  "name": "I_image_244_15",
+  "gt": "ମାନ୍ୟବର",
+  "pred": "The text in the image is \"రాష్ట్ర\". This is Telugu for \"State\" or \"Province\"."
+ },
+ {
+  "name": "I_image_244_16",
+  "gt": "ଚନ୍ଦ୍ର",
+  "pred": "The text in the image is \"24\"."
+ },
+ {
+  "name": "I_image_244_17",
+  "gt": "ଅଶୋକ",
+  "pred": "The text in the image is \"খেলাই\" which is written in Bengali script. The transliteration of this text into English would be \"khelaai.\""
+ },
+ {
+  "name": "I_image_244_18",
+  "gt": "୨୫.୦୯.୨୦୧୭",
+  "pred": "The text in the image reads \"98.0C.90e9\"."
+ },
+ {
+  "name": "I_image_244_19",
+  "gt": "ତା ୨୦.୦୪.୧୯୮୧)",
+  "pred": "The text in the image reads \"90.06.24\"."
+ },
+ {
+  "name": "I_image_244_20",
+  "gt": "ଟା ୨୧.୧୦.୧୯୧୧,",
+  "pred": "The text in the image reads: \"19e.e0.e0ee.\""
+ },
+ {
+  "name": "I_image_244_21",
+  "gt": "ଭୁବନେଶ୍ବର",
+  "pred": "The text in the image is \"999999999\"."
+ },
+ {
+  "name": "I_image_244_22",
+  "gt": "କେଦାରଗୌରୀ",
+  "pred": "The text in the image is \"ก้าวเดิน\" which translates to \"step\" or \"walk\" in English."
+ },
+ {
+  "name": "I_image_244_24",
+  "gt": "ପ୍ରତିଷ୍ଠାନ",
+  "pred": "The text in the image is \"అందమైన\". This is Telugu for \"beautiful\" or \"handsome\"."
+ },
+ {
+  "name": "I_image_244_25",
+  "gt": "ସ୍ଥାନ-ଢେବାରନାଥ",
+  "pred": "The text in the image is in Odia script and reads \"ପ୍ରେ-6 କେଂତୋଡ଼ିଆ\"."
+ },
+ {
+  "name": "I_image_244_26",
+  "gt": "ଅନାବରଣ",
+  "pred": "The text in the image is \"খাদ্যের\" which is written in Bengali script. It translates to \"food\" in English."
+ },
+ {
+  "name": "I_image_244_27",
+  "gt": "ପୂର୍ଣାବୟବ",
+  "pred": "The text in the image is in Odia script and reads \"ଦୁନ୍ତିବାହି\" which translates to \"Duntibahi\" in English."
+ },
+ {
+  "name": "I_image_244_28",
+  "gt": "ଗୀତଗୋବିନ୍ଦ",
+  "pred": "The text in the image is \"একটি বিশ্বাস.\" This is Bengali and it translates to \"a belief\" or \"a faith\" in English."
+ },
+ {
+  "name": "I_image_244_30",
+  "gt": "ବ୍ୟକ୍ତିତ୍ବ",
+  "pred": "The text in the image is \"ওয়েবিজু\" which appears to be in Bengali script."
+ },
+ {
+  "name": "I_image_244_31",
+  "gt": "କ୍ଷେତ୍ରରେ",
+  "pred": "The text in the image is \"গোল্ড\". This appears to be the word \"gold\" written in Bengali script."
+ },
+ {
+  "name": "I_image_244_32",
+  "gt": "ସାହିତ୍ୟ ଓ",
+  "pred": "The text in the image is \"বাড়ি\" which means \"house\" or \"home\" in Bengali."
+ },
+ {
+  "name": "I_image_244_33",
+  "gt": "ଓଡିଶା",
+  "pred": "The text in the image is \"ଓଡ଼ିଆ\". This is the Odia script, which is used to write the Odia language, one of the major languages spoken in India."
+ },
+ {
+  "name": "I_image_244_35",
+  "gt": "ଗବେଷକ",
+  "pred": "The text in the image is \"গোল্ড\"."
+ },
+ {
+  "name": "I_image_244_36",
+  "gt": "ଅନନ୍ୟ",
+  "pred": "The text in the image is \"सर्व\"."
+ },
+ {
+  "name": "I_image_244_37",
+  "gt": "ଶ୍ରୀଯୁକ୍ତ",
+  "pred": "The text in the image is \"গুলো\" which is written in Bengali script. It translates to \"the ones\" or \"the things\" in English."
+ },
+ {
+  "name": "I_image_244_38",
+  "gt": "ପ୍ରଖ୍ୟାତ",
+  "pred": "The text in the image is \"গুণার\" which is in Bengali script. The transliteration into English would be \"Gunaar.\""
+ },
+ {
+  "name": "I_image_244_39",
+  "gt": "ପ୍ରନୂତତ୍ତ୍ବବିତ୍ର",
+  "pred": "The text in the image is in Odia script and reads \"ঔড়াড়ি\"."
+ },
+ {
+  "name": "I_image_244_40",
+  "gt": "ଐତିହାସିକ",
+  "pred": "The text in the image is \"ଓଡ଼ିଆ\". This is the Odia script, which is used to write the Odia language, also known as Oriya."
+ },
+ {
+  "name": "I_image_244_41",
+  "gt": "କୃତବିଦ୍ଯ",
+  "pred": "The text in the image is \"ବାଣିଜ୍ୟ\". This is in the Odia script, which is used to write the Odia language, a language spoken primarily in the Indian state of Odisha. The word \"ବାଣ�"
+ },
+ {
+  "name": "I_image_244_42",
+  "gt": "କେଦାରନାଥ",
+  "pred": "The text in the image is \"বাংলা\". This is the word for \"Bengali\" in English, which refers to the language spoken in Bangladesh and parts of India."
+ },
+ {
+  "name": "I_image_244_43",
+  "gt": "ମହାପାତ୍ର",
+  "pred": "The text in the image is \"রাজার\" which is in Bengali script. It translates to \"King's\" in English."
+ },
+ {
+  "name": "I_image_244_44",
+  "gt": "ଇତିହାସ,",
+  "pred": "The text in the image is \"ଓଡ଼ିଆ.\" This is the name of the Odia language, which is spoken primarily in the Indian state of Odisha and neighboring regions. The script used is the Odia script, which is a Brahmic script."
+ },
+ {
+  "name": "I_image_244_46",
+  "gt": "ସଂସ୍କୃତି",
+  "pred": "The text in the image is \"গুলি\" which is Bengali for \"the ones\" or \"the things.\""
+ },
+ {
+  "name": "I_image_244_47",
+  "gt": "ଜଣେ",
+  "pred": "The text in the image is \"গোল\" which is Bengali for \"gol\" or \"ball\" in English."
+ },
+ {
+  "name": "I_image_244_48",
+  "gt": "ପରିଚିତ",
+  "pred": "The text in the image reads \"Hello\"."
+ },
+ {
+  "name": "I_image_244_49",
+  "gt": "ସେ",
+  "pred": "The text in the image is \"62\"."
+ },
+ {
+  "name": "I_image_244_50",
+  "gt": "ଜୟଦେବ ଓ",
+  "pred": "The text in the image is \"00000000\"."
+ },
+ {
+  "name": "I_image_244_51",
+  "gt": "ସର୍ଗତ",
+  "pred": "The text in the image appears to be in Thai script and reads \"ฉัน\" which translates to \"I\" or \"me\" in English."
+ },
+ {
+  "name": "I_image_244_52",
+  "gt": "କେଦାରନାଥ",
+  "pred": "The text in the image is in Odia script and reads \"କ୍ଷୁଦ୍ରବ୍ୟ\" which translates to \"small\" or \"little\" in English."
+ },
+ {
+  "name": "I_image_244_53",
+  "gt": "ମହାପାତ୍ରଙ୍କ",
+  "pred": "The text in the image is \"দুর্গাপূজা\" which is written in Bengali script. It translates to \"Durga Puja\" in English, which is a major Hindu festival celebrated in India and Bangladesh."
+ },
+ {
+  "name": "I_image_244_54",
+  "gt": "ପ୍ରତିମୂର୍ତ୍ତି",
+  "pred": "The text in the image appears to be in Thai script and reads \"ดูแล\" which translates to \"take care of\" or \"care for\" in English."
+ },
+ {
+  "name": "I_image_244_55",
+  "gt": "ଉତ୍ସବ",
+  "pred": "The text in the image is \"ওতো\" which appears to be in the Odia script, a language primarily spoken in the Indian state of Odisha."
+ },
+ {
+  "name": "I_image_244_57",
+  "gt": "ଗବେଷଣା",
+  "pred": "The text in the image is \"619961\"."
+ },
+ {
+  "name": "I_image_244_58",
+  "gt": "ପରିସର,",
+  "pred": "The text in the image is \"গোল্ড\"."
+ },
+ {
+  "name": "I_image_244_59",
+  "gt": "ମାର୍ଗ,",
+  "pred": "The text in the image reads \"rid.\""
+ },
+ {
+  "name": "I_image_244_60",
+  "gt": "(ଆବିର୍ଭାବ",
+  "pred": "The text in the image is \"খেলোয়াড়\". This is Bengali and it translates to \"player\" or \"athlete\" in English."
+ },
+ {
+  "name": "I_image_244_61",
+  "gt": "ଡିନୋଭାବ",
+  "pred": "The text in the image is \"ବିଜ୍ୟତା\". This is in the Odia script, which is used to write the Odia language, a language spoken primarily in the Indian state of Odisha. The word \"ବିଜ�"
+ },
+ {
+  "name": "I_image_244_62",
+  "gt": "ତାରିଖ",
+  "pred": "The text in the image is \"লেস\" which is Bengali for \"les\"."
+ },
+ {
+  "name": "I_image_244_63",
+  "gt": "ଉଦ୍‌ଘାଟକ",
+  "pred": "The text in the image is in Malayalam, and it reads \"അവില്ലെ\"."
+ },
+ {
+  "name": "I_image_244_64",
+  "gt": "ପଣ୍ଡା",
+  "pred": "The text in the image is \"aa\"."
+ },
+ {
+  "name": "I_image_244_65",
+  "gt": "ମନ୍ତ୍ରୀ",
+  "pred": "The text in the image is \"রাজা\" which is Bengali for \"King\"."
+ },
+ {
+  "name": "I_image_244_66",
+  "gt": "ଓ ସଂସ୍କୃତି",
+  "pred": "The text in the image is \"গোপীনাথ\". This appears to be in Bengali script, which is used primarily in Bangladesh and West Bengal, India. The name \"গোপীনাথ\" (Gopinath) is a common Bengali name."
+ },
+ {
+  "name": "I_image_244_88",
+  "gt": "ଓଡ଼ିଶା",
+  "pred": "The text in the image reads \"Gel\"."
+ },
+ {
+  "name": "I_image_251_11",
+  "gt": "ରୋଡ୍",
+  "pred": "The text in the image is \"গোল্ড\". This is Bengali for \"gold\" in English."
+ },
+ {
+  "name": "I_image_251_12",
+  "gt": "ଖୋର୍ଦ୍ଧା",
+  "pred": "The text in the image is \"গোল্ড\"."
+ },
+ {
+  "name": "I_image_257_0",
+  "gt": "ଘର",
+  "pred": "The text in the image is \"प्र\"."
+ },
+ {
+  "name": "I_image_257_1",
+  "gt": "କୁଟିଆ",
+  "pred": "The text in the image is \"কর্মানুষ্ঠান\" which translates to \"ceremony\" or \"ritual\" in English."
+ },
+ {
+  "name": "I_image_257_2",
+  "gt": "କନ୍ଧ",
+  "pred": "The text in the image is \"के ग\" which appears to be in Hindi script. The characters 'के' and 'ग' are two separate letters in the Hindi alphabet."
+ },
+ {
+  "name": "I_image_258_15",
+  "gt": "ଶତାବ୍ଦୀ",
+  "pred": "The text in the image is \"গোলাপ\" which is Bengali for \"rose\"."
+ },
+ {
+  "name": "I_image_258_16",
+  "gt": "୧୧ଶ",
+  "pred": "The text in the image reads \"e e6\"."
+ },
+ {
+  "name": "I_image_258_17",
+  "gt": "ଭୁବନେଶ୍ବର",
+  "pred": "The text in the image is \"মুক্তিযোদ্ধা\" which translates to \"Muktiyaodda\" in English. This term refers to a freedom fighter or a person who fought for independence, particularly in the context of the Bangladesh Liberation War."
+ },
+ {
+  "name": "I_image_258_18",
+  "gt": "ପ୍ରାପ୍ତିସ୍ଥାନ",
+  "pred": "The text in the image is \"গুটিগুটি\"."
+ },
+ {
+  "name": "I_image_258_2",
+  "gt": "ଜଳଦାନ",
+  "pred": "The text in the image is \"জিন্দাগী\" which is written in Bengali script. It translates to \"Life\" in English."
+ },
+ {
+  "name": "I_image_258_3",
+  "gt": "ରମଣୀର",
+  "pred": "The text in the image is \"ঢলাড়\". This appears to be in Bengali script, which is used primarily in Bangladesh and West Bengal, India. The meaning of this word can vary depending on context, but it often refers to a type of dance or a specific style of movement."
+ },
+ {
+  "name": "I_image_258_4",
+  "gt": "ସମୟ",
+  "pred": "The text in the image is \"জন্য\" which is Bengali and translates to \"for\" or \"on behalf of\" in English."
+ },
+ {
+  "name": "I_image_258_5",
+  "gt": "ଆନୁମାନିକ",
+  "pred": "The text in the image is \"খাকুনকুনি\"."
+ },
+ {
+  "name": "I_image_265_10",
+  "gt": "ସମିତି",
+  "pred": "The text in the image is \"এলীক\" which appears to be in Bengali script. The meaning or context of this word would depend on the specific language and dialect it belongs to, but without additional context, it's difficult to provide a precise translation or explanation. If you have more information about where"
+ },
+ {
+  "name": "I_image_265_11",
+  "gt": "କଟକ",
+  "pred": "The text in the image is \"4\"."
+ },
+ {
+  "name": "I_image_265_13",
+  "gt": "ରୌଡ଼",
+  "pred": "The text in the image is \"গোল্ড\". This is Bengali and it translates to \"Gold\" in English."
+ },
+ {
+  "name": "I_image_265_19",
+  "gt": "ତମାଖୁ ସେବଳ",
+  "pred": "The text in the image reads \"9716666\"."
+ },
+ {
+  "name": "I_image_265_2",
+  "gt": "ଭୁବନେଶ୍ବର",
+  "pred": "The text in the image is \"ప్రారంభించండి\". This is Telugu and it translates to \"Start\" or \"Begin\" in English."
+ },
+ {
+  "name": "I_image_265_20",
+  "gt": "କାରଣ",
+  "pred": "The text in the image is \"1965\"."
+ },
+ {
+  "name": "I_image_265_22",
+  "gt": "ଷ୍ଟୋର/",
+  "pred": "The text in the image is \"গুলি\"."
+ },
+ {
+  "name": "I_image_265_24",
+  "gt": "ଚମାଖୁ",
+  "pred": "The text in the image is \"1515\"."
+ },
+ {
+  "name": "I_image_265_27",
+  "gt": "ପ୍ରଧାନ",
+  "pred": "The text in the image is \"યુવાદે\" which is in Gujarati script. It translates to \"Youth\" in English."
+ },
+ {
+  "name": "I_image_265_28",
+  "gt": "କ୍ୟାନ୍ସରର",
+  "pred": "The text in the image is \"1999年诺贝尔物理学奖\". This translates to \"1999 Nobel Prize in Physics\" in English."
+ },
+ {
+  "name": "I_image_265_29",
+  "gt": "ସେବନ",
+  "pred": "The text in the image is \"168808\"."
+ },
+ {
+  "name": "I_image_265_30",
+  "gt": "କ୍ୟାନ୍ସରର",
+  "pred": "The text in the image reads \"199999\"."
+ },
+ {
+  "name": "I_image_265_31",
+  "gt": "୧୯୮୮",
+  "pred": "The text in the image reads \"error\"."
+ },
+ {
+  "name": "I_image_265_32",
+  "gt": "୧୮୩୦-୧୦୧",
+  "pred": "The text in the image reads \"ermo coe\"."
+ },
+ {
+  "name": "I_image_265_4",
+  "gt": "ଲକ୍ଷ୍ମୀସାଗର",
+  "pred": "The text in the image is \"বাংলা\". This is the word for \"Bengali\" in English, which refers to the language spoken in Bangladesh and parts of India."
+ },
+ {
+  "name": "I_image_265_5",
+  "gt": "ଫଘ",
+  "pred": "The text in the image is \"Q²\"."
+ },
+ {
+  "name": "I_image_265_9",
+  "gt": "ଦୁର୍ଗାପୂଜା",
+  "pred": "The text in the image is \"দুর্গাপুজো\" which is Bengali and translates to \"Durga Puja\" in English. Durga Puja is a major Hindu festival celebrated primarily in India, particularly in the eastern states of West Bengal, Odisha, and"
+ },
+ {
+  "name": "I_image_265_25",
+  "gt": "କାରଣ",
+  "pred": "The text in the image is \"1919\"."
+ },
+ {
+  "name": "I_image_268_108",
+  "gt": "ଜିଲ୍ଲା",
+  "pred": "The text in the image reads \"80%\"."
+ },
+ {
+  "name": "I_image_268_109",
+  "gt": "କଟାକ୍",
+  "pred": "The text in the image is \"eee\"."
+ },
+ {
+  "name": "I_image_268_110",
+  "gt": "କାର୍ଯ୍ୟାଳୟ",
+  "pred": "The text in the image is \"ตั้งแต่\" which translates to \"since\" or \"from\" in English."
+ },
+ {
+  "name": "I_image_268_112",
+  "gt": "ବ୍ୟବସାୟ",
+  "pred": "The text in the image reads \"Регион\"."
+ },
+ {
+  "name": "I_image_268_113",
+  "gt": "ଆଞ୍ଚଳିକ",
+  "pred": "The text in the image is \"Cisco\"."
+ },
+ {
+  "name": "I_image_268_117",
+  "gt": "ଷ୍ଟେଟ୍",
+  "pred": "The text in the image is \"6661\"."
+ },
+ {
+  "name": "I_image_268_148",
+  "gt": "ଅଞ୍ଚଳ-୨",
+  "pred": "The text in the image reads \"280-9.\""
+ },
+ {
+  "name": "I_image_268_149",
+  "gt": "ବ୍ୟବସାୟ",
+  "pred": "The text in the image is \"1836\"."
+ },
+ {
+  "name": "I_image_268_150",
+  "gt": "ଆଞ୍ଚଳିକ",
+  "pred": "The text in the image is \"ข้าวต้ม\". This is Thai for \"boiled rice\" or \"steamed rice\"."
+ },
+ {
+  "name": "I_image_268_151",
+  "gt": "ବ୍ୟାଙ୍କ",
+  "pred": "The text in the image is \"৩৫০৪\"."
+ },
+ {
+  "name": "I_image_268_155",
+  "gt": "ଶାରଳା",
+  "pred": "The text in the image is \"বাংলা\" which means \"Bengali\" in English."
+ },
+ {
+  "name": "I_image_268_172",
+  "gt": "ଭାରତୀୟ",
+  "pred": "The text in the image is \"ডেটায়\". This appears to be in Bengali script, which is used primarily in Bangladesh and West Bengal, India. The meaning of this word can vary depending on context, but it often refers to \"data\" or \"information\" in English."
+ },
+ {
+  "name": "I_image_268_173",
+  "gt": "ଷ୍ଟେଟ୍",
+  "pred": "The text in the image is \"686\"."
+ },
+ {
+  "name": "I_image_268_174",
+  "gt": "କାର୍ଯ୍ୟାଳୟ",
+  "pred": "The text in the image is \"ต้องการ\". This is Thai and it translates to \"want\" or \"need\" in English."
+ },
+ {
+  "name": "I_image_268_175",
+  "gt": "କଟକ",
+  "pred": "The text in the image is \"egg\"."
+ },
+ {
+  "name": "I_image_268_33",
+  "gt": "ଭାରତୀୟ",
+  "pred": "The text in the image is \"গোলাপ\" which is Bengali for \"rose\"."
+ },
+ {
+  "name": "I_image_268_34",
+  "gt": "ବ୍ୟାଙ୍କ",
+  "pred": "The text in the image is \"415\"."
+ },
+ {
+  "name": "I_image_268_41",
+  "gt": "ଜଗତ୍ସିଂହପୁର",
+  "pred": "The text in the image is \"संस्कृतम्\" which is written in Devanagari script and translates to \"Sanskritam\" in English. Sanskrit is an ancient Indo-Aryan language that was the primary language of India during the Vedic period and has been influential"
+ },
+ {
+  "name": "I_image_268_59",
+  "gt": "ମୋକ୍ଷ",
+  "pred": "The text in the image is \"6718\"."
+ },
+ {
+  "name": "I_image_268_61",
+  "gt": "ଧୁପଚାଠି",
+  "pred": "The text in the image is \"খোকি\" which appears to be in Bengali script."
+ },
+ {
+  "name": "I_image_268_78",
+  "gt": "ମେଡିକାଲ",
+  "pred": "The text in the image is \"कैप्चर\"."
+ },
+ {
+  "name": "I_image_268_92",
+  "gt": "ସ୍ପର୍ଶ",
+  "pred": "The text in the image is \"গুরু\" which is Bengali for \"Guru\"."
+ },
+ {
+  "name": "I_image_269_0",
+  "gt": "ବାସୁଦେବପୁର",
+  "pred": "The text in the image is \"বিশ্বসনীয়\" which translates to \"Universal\" in English."
+ },
+ {
+  "name": "I_image_269_1",
+  "gt": "କରଗୋଳା",
+  "pred": "The text in the image is \"মেরামত\". This is Bengali and it translates to \"Repair\" in English."
+ },
+ {
+  "name": "I_image_269_10",
+  "gt": "ବ୍ରଏଲର",
+  "pred": "The text in the image is \"বাংলা\" which is Bengali for \"Bengali\"."
+ },
+ {
+  "name": "I_image_269_11",
+  "gt": "ଫାର୍ମ",
+  "pred": "The text in the image is \"গুরু\" which is Bengali for \"Guru.\""
+ },
+ {
+  "name": "I_image_269_12",
+  "gt": "କଟା",
+  "pred": "The text in the image reads \"গুলি\" which is Bengali for \"the ones\" or \"the things\"."
+ },
+ {
+  "name": "I_image_269_2",
+  "gt": "ମାଂସ",
+  "pred": "The text in the image is \"par\"."
+ },
+ {
+  "name": "I_image_269_3",
+  "gt": "ମିଳେ ।",
+  "pred": "The text in the image reads \"960\"."
+ },
+ {
+  "name": "I_image_269_5",
+  "gt": "ସୁଲଭ",
+  "pred": "The text in the image reads \"QUAD\"."
+ },
+ {
+  "name": "I_image_269_6",
+  "gt": "ଏଠାରେ",
+  "pred": "The text in the image reads \"2016\"."
+ },
+ {
+  "name": "I_image_269_7",
+  "gt": "ମାେ",
+  "pred": "The text in the image reads \"6911\"."
+ },
+ {
+  "name": "I_image_269_8",
+  "gt": "ମୂଲ୍ୟରେ",
+  "pred": "The text in the image reads \"90460\"."
+ },
+ {
+  "name": "I_image_269_9",
+  "gt": "ବାପୁ",
+  "pred": "The text in the image is \"জুলাই\". This is Bengali for \"July\"."
+ },
+ {
+  "name": "I_image_278_17",
+  "gt": "जन्म",
+  "pred": "The text in the image is \"जन्म\". This is Hindi for \"birth\" or \"birthday\"."
+ },
+ {
+  "name": "I_image_278_22",
+  "gt": "୨୦୧୦",
+  "pred": "The text in the image is \"9080\"."
+ },
+ {
+  "name": "I_image_278_24",
+  "gt": "୦୮",
+  "pred": "The text in the image is \"or\"."
+ },
+ {
+  "name": "I_image_278_25",
+  "gt": "ତା ୧୨",
+  "pred": "The text in the image reads \"61 99\"."
+ },
+ {
+  "name": "I_image_278_26",
+  "gt": "ମଖ୍ୟମନ୍ତ୍ରୀ,",
+  "pred": "The text in the image is \"ডেন্ডারী,\" which is written in Bengali script. The English translation of this word is \"Dairy.\""
+ },
+ {
+  "name": "I_image_278_27",
+  "gt": "ମାନ୍ୟବର",
+  "pred": "The text in the image is \"এক্সেল\". This is the Bangla (Bengali) word for \"Excel\", which is a spreadsheet application developed by Microsoft."
+ },
+ {
+  "name": "I_image_278_28",
+  "gt": "ପଟ୍ଟନାୟକ",
+  "pred": "The text in the image is \"একটি এক\". This is Bengali and it translates to \"one\" in English."
+ },
+ {
+  "name": "I_image_278_29",
+  "gt": "ଭୂମିପୁତ୍ର",
+  "pred": "The text in the image is \"তিনি তাঁর\" which translates to \"He/She/It is his/her\" in English."
+ },
+ {
+  "name": "I_image_278_30",
+  "gt": "ବିଜୁ",
+  "pred": "The text in the image is \"লিখু\" which is Bengali for \"write\"."
+ },
+ {
+  "name": "I_image_278_31",
+  "gt": "ପଟ୍ଟନାୟକଙ୍କ",
+  "pred": "The text in the image is \"একটি কাহিনী\" which translates to \"A Story\" in English."
+ },
+ {
+  "name": "I_image_278_32",
+  "gt": "ପ୍ରତିମୂର୍ତ୍ତି",
+  "pred": "The text in the image is \"গুটিয়া\" which is the Bengali word for \"Gautiya\"."
+ },
+ {
+  "name": "I_image_278_35",
+  "gt": "୦୫.୦୩.୧୯୧୨",
+  "pred": "The text in the image reads \"08.04.2019\"."
+ },
+ {
+  "name": "I_image_278_37",
+  "gt": "୧୭.୦୪.୧୯୯୭",
+  "pred": "The text in the image reads: \"99.0% 99.9%\""
+ },
+ {
+  "name": "I_image_278_38",
+  "gt": "ଶ୍ରୀଯୁକ୍ତ",
+  "pred": "The text in the image is \"তাইচু\" which appears to be in Bengali script. The characters can be transliterated into Roman script as \"Tāichu.\""
+ },
+ {
+  "name": "I_image_278_39",
+  "gt": "ନବୀନ",
+  "pred": "The text in the image is \"αβικ\"."
+ },
+ {
+  "name": "I_image_278_40",
+  "gt": "ଓଡ଼ିଶାଙ୍କ",
+  "pred": "The text in the image is \"ଓଡ଼ିଆ\". This is the Odia script, which is used to write the Odia language, one of the major languages spoken in India."
+ },
+ {
+  "name": "I_image_278_41",
+  "gt": "ଦ୍ବାରା",
+  "pred": "The text in the image is \"ডুটা\"."
+ },
+ {
+  "name": "I_image_278_42",
+  "gt": "ଉନ୍ମୋଚିତ",
+  "pred": "The text in the image is \"তেলুগু\". This is the name of the Telugu language, which is spoken primarily in the Indian state of Andhra Pradesh and Telangana, as well as in some parts of Karnataka, Tamil Nadu, and Maharashtra."
+ },
+ {
+  "name": "I_image_278_54",
+  "gt": "ବିଜୁ",
+  "pred": "The text in the image is \"100\"."
+ },
+ {
+  "name": "I_image_278_55",
+  "gt": "ପଟ୍ଟନାୟକ",
+  "pred": "The text in the image is \"ବାକ୍ୟ\" which is written in Odia script. The English translation of this word is \"sentence.\""
+ },
+ {
+  "name": "I_image_278_57",
+  "gt": "ଏରୋନଟିକ୍ସ",
+  "pred": "The text in the image is \"গল্পটি\" which translates to \"The story\" in English."
+ },
+ {
+  "name": "I_image_278_58",
+  "gt": "ସଂଗ୍ରହାଳୟ",
+  "pred": "The text in the image is \"সুন্দরবন\" which is Bengali for \"Sundarbans\"."
+ },
+ {
+  "name": "I_image_278_62",
+  "gt": "ହିନ୍ଦୁସ୍ତାନ",
+  "pred": "The text in the image is \"???\" which appears to be a question mark repeated three times."
+ },
+ {
+  "name": "I_image_278_63",
+  "gt": "ଏରୋନେଟିକ୍ସ",
+  "pred": "The text in the image reads \"कैसे है आप?\" which translates to \"How are you?\" in English."
+ },
+ {
+  "name": "I_image_278_67",
+  "gt": "କୋରାପୁଟ",
+  "pred": "The text in the image reads \"feelings\"."
+ },
+ {
+  "name": "I_image_279_1",
+  "gt": "୨୦୧୪",
+  "pred": "The text in the image reads \"9028\"."
+ },
+ {
+  "name": "I_image_279_2",
+  "gt": "ମା’ବିନିକେୟୀ",
+  "pred": "The text in the image is in Odia script and reads \"দাদা দিক্ষু।\" This translates to \"Dada Dikshu\" in English, where \"Dada\" is a term of endearment for an elder brother or uncle, and \"Dik"
+ },
+ {
+  "name": "I_image_279_3",
+  "gt": "ଶକ୍ତି ପୀଠ",
+  "pred": "The text in the image is in Odia script and reads \"ଛାଡ଼ 10\". This translates to \"Remove 10\" in English."
+ },
+ {
+  "name": "I_image_286_2",
+  "gt": "ଇଣ୍ଡିଆ",
+  "pred": "The text in the image is \"ବୀଣା\" which is written in Odia script. The transliteration of this text into English would be \"Bīṇā\"."
+ },
+ {
+  "name": "I_image_286_3",
+  "gt": "ଅଫ୍",
+  "pred": "The text in the image is \"খুব\" which is Bengali and translates to \"very\" or \"much\" in English."
+ },
+ {
+  "name": "I_image_286_4",
+  "gt": "ବ୍ୟାଙ୍କ",
+  "pred": "The text in the image is \"৭৪১৩০\"."
+ },
+ {
+  "name": "I_image_286_5",
+  "gt": "ୟୁନାଇଟେଡ୍",
+  "pred": "The text in the image is in Odia script and reads \"ଭୁଟ୍ଟାରେଡୀ\"."
+ },
+ {
+  "name": "I_image_287_5",
+  "gt": "ଣ୍ରଜଗନ୍ନାଥସାନିଟାଚି",
+  "pred": "The text in the image is \"একটি বিদ্যুৎ\" which translates to \"A power\" or \"An electricity\" in English. However, it seems like there might be a typo or a missing word as the sentence is incomplete. If you meant to write something else,"
+ },
+ {
+  "name": "I_image_293_18",
+  "gt": "ଣିଗ୍ରାହୀ,",
+  "pred": "The text in the image is in Odia script and reads \"ঈতিষা.\""
+ },
+ {
+  "name": "I_image_293_19",
+  "gt": "ରଥ,",
+  "pred": "The text in the image is \"ওয়া.\""
+ },
+ {
+  "name": "I_image_293_20",
+  "gt": "ଚନ୍ଦ୍ର",
+  "pred": "The text in the image is \"QQ\"."
+ },
+ {
+  "name": "I_image_293_21",
+  "gt": "ପ.",
+  "pred": "The text in the image is \"a.\"."
+ },
+ {
+  "name": "I_image_293_22",
+  "gt": "ଯୋଗାଯୋଗ-",
+  "pred": "The text in the image is \"গোলাপিগঞ্জ\". This is a Bengali word that translates to \"Golapganj\" in English, which is a city in Bangladesh."
+ },
+ {
+  "name": "I_image_293_5",
+  "gt": "ହସ୍ତରେ",
+  "pred": "The text in the image is \"৭৯৯৭\" which is written in Bengali script. The numbers it represents are 7997."
+ },
+ {
+  "name": "I_image_293_6",
+  "gt": "ମୁକ୍ତ",
+  "pred": "The text in the image appears to be in Odia script. The characters read from left to right are \"পুণ্য\" (Punya)."
+ },
+ {
+  "name": "I_image_293_7",
+  "gt": "ପ.",
+  "pred": "The text in the image is \"a.\"."
+ },
+ {
+  "name": "I_image_293_8",
+  "gt": "ଣ୍ର 1",
+  "pred": "The text in the image is \"51\"."
+ },
+ {
+  "name": "I_image_293_9",
+  "gt": "ଷଡ଼ଙ୍ଗୀ,",
+  "pred": "The text in the image is \"গোপী,\" which is written in Bengali script. It translates to \"Gopi\" in English, which is a name or a term that can have various meanings depending on the context."
+ },
+ {
+  "name": "I_image_295_0",
+  "gt": "ଗୁଣ୍ଟିଆ",
+  "pred": "The text in the image is \"ప్రియా\" which is in Telugu script. It translates to \"Priya\" in English, which is a common female name in many languages including Telugu."
+ },
+ {
+  "name": "I_image_295_1",
+  "gt": "ମହାପାତ୍ର",
+  "pred": "The text in the image is \"তথ্যসূত্র\" which translates to \"Reference\" or \"Source\" in English."
+ },
+ {
+  "name": "I_image_295_10",
+  "gt": "ସ୍ମୃତି",
+  "pred": "The text in the image reads \"10%\"."
+ },
+ {
+  "name": "I_image_295_11",
+  "gt": "ଫଳକ",
+  "pred": "The text in the image is \"© 2016\"."
+ },
+ {
+  "name": "I_image_295_12",
+  "gt": "ଅଭ୍ୟର୍ଥନା",
+  "pred": "The text in the image is \"অভ্যর্থনা\" which translates to \"Congratulations\" in English."
+ },
+ {
+  "name": "I_image_295_15",
+  "gt": "ପକ୍ଷରୁ",
+  "pred": "The text in the image reads \"∞\". This symbol represents infinity, which is a concept used in mathematics and physics to describe something that is unbounded or endless."
+ },
+ {
+  "name": "I_image_295_16",
+  "gt": "ପ୍ରତିମା",
+  "pred": "The text in the image is \"RGB\"."
+ },
+ {
+  "name": "I_image_295_17",
+  "gt": "ପ୍ରତିଷ୍ଠା",
+  "pred": "The text in the image appears to be \"গোল্ড\" which is Bengali for \"gold\"."
+ },
+ {
+  "name": "I_image_295_18",
+  "gt": "୦୪",
+  "pred": "The text in the image is \"BOX\"."
+ },
+ {
+  "name": "I_image_295_19",
+  "gt": "ପବିତ୍ର",
+  "pred": "The text in the image is \"এইটি\" which is in Bengali and translates to \"This is\" in English."
+ },
+ {
+  "name": "I_image_295_2",
+  "gt": "ତୃତୀୟା",
+  "pred": "The text in the image is \"গোল্ড\" which is Bengali for \"gold\"."
+ },
+ {
+  "name": "I_image_295_20",
+  "gt": "କୁମାର",
+  "pred": "The text in the image reads \"916.5\"."
+ },
+ {
+  "name": "I_image_295_21",
+  "gt": "ହାଲଦାର",
+  "pred": "The text in the image is \"ডুটি টাকা\" which translates to \"two rupees\" in English."
+ },
+ {
+  "name": "I_image_295_22",
+  "gt": "ମୁଖ୍ୟ",
+  "pred": "The text in the image reads: \"α64\"."
+ },
+ {
+  "name": "I_image_295_23",
+  "gt": "ଦୟାବିହାର",
+  "pred": "The text in the image is \"ড্যুটি টাইম\" which translates to \"Duty Time\" in English."
+ },
+ {
+  "name": "I_image_295_24",
+  "gt": "ଶ୍ରୀଯୁକ୍ତ",
+  "pred": "The text in the image is \"南京\". This is Chinese and it translates to \"Nanjing\" in English, which is the name of a city in China."
+ },
+ {
+  "name": "I_image_295_25",
+  "gt": "ସୁବାସ",
+  "pred": "The text in the image reads \"810B\"."
+ },
+ {
+  "name": "I_image_295_26",
+  "gt": "ଗଜେନ୍ଦ୍ର",
+  "pred": "The text in the image is \"গোলাপী\" which translates to \"Golap\" or \"Rose\" in English."
+ },
+ {
+  "name": "I_image_295_27",
+  "gt": "ମହାବିଦ୍ୟାଳୟ",
+  "pred": "The text in the image is \"প্রাণিবৃত্তিকুল\". This appears to be in Bengali script, which is used primarily in Bangladesh and West Bengal, India. The meaning of this word can vary depending on context, but it generally relates to something related"
+ },
+ {
+  "name": "I_image_295_28",
+  "gt": "ସମିତି",
+  "pred": "The text in the image is \"gaga\"."
+ },
+ {
+  "name": "I_image_295_29",
+  "gt": "ସଭାପତି",
+  "pred": "The text in the image is \"বাংলা\" which means \"Bengali\" in English."
+ },
+ {
+  "name": "I_image_295_3",
+  "gt": "ଅଷଯୂ",
+  "pred": "The text in the image is \"খাদ্য\" which is Bengali for \"food\"."
+ },
+ {
+  "name": "I_image_295_30",
+  "gt": "ଡାବାବାଜୀ",
+  "pred": "图中的文字是“একটি”"
+ },
+ {
+  "name": "I_image_295_31",
+  "gt": "ସଂଯୋଜନା",
+  "pred": "The text in the image is \"এই বইটি\" which translates to \"This book\" in English."
+ },
+ {
+  "name": "I_image_295_32",
+  "gt": "ଶ୍ରୀଯୁକ୍ତ",
+  "pred": "The text in the image is \"glag\"."
+ },
+ {
+  "name": "I_image_295_33",
+  "gt": "ଦୁର୍ଗା ଚରଣ",
+  "pred": "The text in the image is \"দুই দিনে\" which translates to \"in two days\" in English."
+ },
+ {
+  "name": "I_image_295_34",
+  "gt": "ଅଧ୍ଯକ୍ଷ",
+  "pred": "The text in the image is \"2021\"."
+ },
+ {
+  "name": "I_image_295_35",
+  "gt": "ଚ଼ନ୍ଦ୍ର",
+  "pred": "The text in the image is \"δε\"."
+ },
+ {
+  "name": "I_image_295_36",
+  "gt": "ବକ୍ତା.",
+  "pred": "The text in the image is \"谷歌\"."
+ },
+ {
+  "name": "I_image_295_37",
+  "gt": "ସମାଜସେବୀ",
+  "pred": "The text in the image is \"grande\"."
+ },
+ {
+  "name": "I_image_295_38",
+  "gt": "ଶ୍ରୀଯୁକ୍ତ",
+  "pred": "The text in the image is \"ভার্ডিক্স\"."
+ },
+ {
+  "name": "I_image_295_39",
+  "gt": "ଉଦଘାଟିକ",
+  "pred": "The text in the image is \"তেলেগু\". This is the name of the Telugu language, which is spoken primarily in the Indian state of Andhra Pradesh and Telangana, as well as in some parts of Karnataka, Tamil Nadu, and Maharashtra."
+ },
+ {
+  "name": "I_image_295_4",
+  "gt": "୨୦୦୬",
+  "pred": "The text in the image reads \"6006\"."
+ },
+ {
+  "name": "I_image_295_6",
+  "gt": "ଅଧୁବାସୀଙ୍କ",
+  "pred": "The text in the image is \"অনুভবের জটিলতা\" which translates to \"Complexity of Experience\" in English."
+ },
+ {
+  "name": "I_image_295_7",
+  "gt": "ପଲ୍ଲୀ",
+  "pred": "The text in the image reads \"am1\"."
+ },
+ {
+  "name": "I_image_297_0",
+  "gt": "ଓଡ଼ିଶା ସରକାରଙ୍କ",
+  "pred": "The text in the image reads \"ବିଶ୍ୟ ସମ୍ପାଦକ\" which translates to \"Subject Editor\" in English."
+ },
+ {
+  "name": "I_image_302_18",
+  "gt": "ବ୍ୟାଙ୍କ",
+  "pred": "The text in the image is \"ওপার\" which appears to be in Bengali script. The meaning or context of this word would depend on the specific language and dialect it belongs to, but without additional context, it's difficult to provide a precise translation or explanation. If you have more information about where this"
+ },
+ {
+  "name": "I_image_302_19",
+  "gt": "ଅ",
+  "pred": "The text in the image is \"মূ\" which is Bengali script. It can be transliterated as \"mu\" in Roman script."
+ },
+ {
+  "name": "I_image_302_20",
+  "gt": "ଇଣ୍ଡିଆ",
+  "pred": "The text in the image is \"ବିଧା\". This appears to be in the Odia script, which is used for writing the Odia language, a language spoken primarily in the Indian state of Odisha. The characters can be transliterated into the Roman alphabet as \"Bida\"."
+ },
+ {
+  "name": "I_image_302_24",
+  "gt": "ଫ୍",
+  "pred": "The text in the image is \"EP\"."
+ },
+ {
+  "name": "I_image_31_10",
+  "gt": "ଶ୍ରୀଦନାର୍ଦନ",
+  "pred": "The text in the image is \"এইচএম\" which appears to be in Bengali script. It translates to \"HM\" in English, which typically stands for \"His Majesty\" or \"Her Majesty,\" often used as a title for monarchs."
+ },
+ {
+  "name": "I_image_31_11",
+  "gt": "ମଗଂଗ୍‌ଯ",
+  "pred": "The text in the image appears to be in Bengali. It reads \"গর্তুগ\" which can be transliterated as \"gar-tu-ga.\" This is not a common word and might be a misspelling or a specific term that is not widely recognized. If you have more context"
+ },
+ {
+  "name": "I_image_31_12",
+  "gt": "ଣ୍ରୀଗ",
+  "pred": "The text in the image is \"1866\"."
+ },
+ {
+  "name": "I_image_31_13",
+  "gt": "ଦେତ୍ତଳ",
+  "pred": "The text in the image is \"63039\"."
+ },
+ {
+  "name": "I_image_31_15",
+  "gt": "ଶ୍ରଦେଘରବା",
+  "pred": "The text in the image appears to be a sequence of numbers and letters: \"6063910\"."
+ },
+ {
+  "name": "I_image_31_19",
+  "gt": "ମବଳ",
+  "pred": "The text in the image is \"336\"."
+ },
+ {
+  "name": "I_image_31_2",
+  "gt": "ଇଦେଲେ",
+  "pred": "The text in the image appears to be in Bengali. Translating it, it says \"সুন্দরবন\" which means \"Sundarbans\" in English. The Sundarbans is a large mangrove forest system that stretches across parts of Bangladesh and India."
+ },
+ {
+  "name": "I_image_31_21",
+  "gt": "ରଣ",
+  "pred": "The text in the image appears to be \"২০১\". This is likely a Bengali numeral, which translates to \"201\" in English."
+ },
+ {
+  "name": "I_image_31_23",
+  "gt": "ରଣେସ",
+  "pred": "The text in the image is \"26975\"."
+ },
+ {
+  "name": "I_image_31_25",
+  "gt": "ଭଦ୍ରମୀସ୍ତ୍ରୀରି",
+  "pred": "The text in the image appears to be a sequence of numbers and letters: \"2291718\"."
+ },
+ {
+  "name": "I_image_31_26",
+  "gt": "ରଣ",
+  "pred": "The text in the image appears to be a stylized representation of the number \"1078\". The characters are not standard letters but rather artistic or decorative forms that resemble numbers."
+ },
+ {
+  "name": "I_image_31_28",
+  "gt": "ବଳଦେଚ",
+  "pred": "The text in the image appears to be in Bengali script. Translating it from Bengali to English, the text reads:\n\n\"সে দিন আমার জীবনের একটি অপরিসংখ্যা�"
+ },
+ {
+  "name": "I_image_31_29",
+  "gt": "ଲେ ସ୍ବରବା",
+  "pred": "The text in the image appears to be a combination of letters and numbers, but it is not clear what it represents. It could be a code, a password, or some form of encryption. If you have more context or if this is part of a larger image, please provide additional information so I can assist you better"
+ },
+ {
+  "name": "I_image_31_3",
+  "gt": "ଚୟାରକିଗ୍‌",
+  "pred": "The text in the image is \"13岁生日\". This translates to \"13th birthday\" in English."
+ },
+ {
+  "name": "I_image_31_4",
+  "gt": "କଗ୍ଯିଧାନୀରେ",
+  "pred": "The text in the image appears to be in Gujarati script. The characters read from right to left and translate to \"कृपया देखें\" which means \"Please see\" or \"Please look\" in English."
+ },
+ {
+  "name": "I_image_31_5",
+  "gt": "ରଣେଣରଣ",
+  "pred": "The text in the image is \"২৬ এপ্রিল\". This is Bengali and it translates to \"26 April\" in English."
+ },
+ {
+  "name": "I_image_31_6",
+  "gt": "ଅଧ",
+  "pred": "The text in the image reads \"R12\"."
+ },
+ {
+  "name": "I_image_31_7",
+  "gt": "ଶ୍ରୀ",
+  "pred": "The text in the image is \"13\"."
+ },
+ {
+  "name": "I_image_31_8",
+  "gt": "ଯ୍ଭେ",
+  "pred": "The text in the image reads \"69\"."
+ },
+ {
+  "name": "I_image_311_16",
+  "gt": "କ୍ଲିନିକ",
+  "pred": "The text in the image reads \"666\"."
+ },
+ {
+  "name": "I_image_311_17",
+  "gt": "ହୋମିଓ",
+  "pred": "The text in the image reads \"52103\"."
+ },
+ {
+  "name": "I_image_311_19",
+  "gt": "ଦଶରଥପୁର",
+  "pred": "The text in the image is \"এলয়ুদ\" which is written in Bengali script."
+ },
+ {
+  "name": "I_image_311_2",
+  "gt": "ଶାଖା",
+  "pred": "The text in the image is \"গাছা\" which is Bengali for \"tree\"."
+ },
+ {
+  "name": "I_image_311_20",
+  "gt": "ଇଣ୍ଡିଆନ",
+  "pred": "The text in the image is \"মিথাপ\" which is written in Bengali script."
+ },
+ {
+  "name": "I_image_311_3",
+  "gt": "ବ୍ୟାଙ୍କ",
+  "pred": "The text in the image is \"গোপাল\" which is Bengali for \"Gopal\"."
+ },
+ {
+  "name": "I_image_311_7",
+  "gt": "ଓଭରସୀଜ",
+  "pred": "The text in the image is \"ওঁরূপালী\"."
+ },
+ {
+  "name": "I_image_312_5",
+  "gt": "ନିରାକାରପୁର",
+  "pred": "The text in the image is \"କୁଟୁଳ\" which is in the Odia script. It translates to \"Kutul\" in English, which is a name or a word in the Odia language."
+ },
+ {
+  "name": "I_image_314_0",
+  "gt": "ଭଜ ହମେ",
+  "pred": "The text in the image is \"৫০ টি\" which is Bengali and translates to \"50\" in English."
+ },
+ {
+  "name": "I_image_314_10",
+  "gt": "ମଧୁସୂଦନ",
+  "pred": "The text in the image reads \"D3 G28 G5\"."
+ },
+ {
+  "name": "I_image_314_11",
+  "gt": "ନିବାସ",
+  "pred": "The text in the image is \"B16\"."
+ },
+ {
+  "name": "I_image_314_4",
+  "gt": "ଗାମା",
+  "pred": "The text in the image reads \"61027\"."
+ },
+ {
+  "name": "I_image_314_9",
+  "gt": "ଣି",
+  "pred": "The text in the image is \"हिंदी\". This is the word for \"Hindi\" in Hindi, which is an Indian language."
+ },
+ {
+  "name": "I_image_316_14",
+  "gt": "୧୩ଶ",
+  "pred": "The text in the image is \"২ দাগী\" which is in Bengali script. It translates to \"2 Dagii\" in English, where \"Dagii\" is likely a specific term or name."
+ },
+ {
+  "name": "I_image_316_15",
+  "gt": "୧୨ଶ-",
+  "pred": "The text in the image is \"961\"."
+ },
+ {
+  "name": "I_image_316_16",
+  "gt": "ଆନୁମାନିକ",
+  "pred": "The text in the image is \"અક્ષરકીય\". This is Gujarati and it translates to \"Alphabetic\" or \"Alphabetical\" in English."
+ },
+ {
+  "name": "I_image_316_17",
+  "gt": "ସମୟ",
+  "pred": "The text in the image is \"芭比\"."
+ },
+ {
+  "name": "I_image_316_18",
+  "gt": "ଅଜ୍ଞାତ",
+  "pred": "The text in the image is \"2016\"."
+ },
+ {
+  "name": "I_image_316_2",
+  "gt": "ପ୍ରାପ୍ତସ୍ମାନ",
+  "pred": "The text in the image is \"গুটি গুটি\". This appears to be in Bengali, and it translates to \"piece by piece\" or \"little by little\" in English."
+ },
+ {
+  "name": "I_image_316_3",
+  "gt": "ନଟରାଜ",
+  "pred": "The text in the image is \"করোনা\" which is written in Bengali script. It translates to \"Corona\" in English, likely referring to the COVID-19 pandemic."
+ },
+ {
+  "name": "I_image_316_4",
+  "gt": "ଶତାବ୍ଦୀ",
+  "pred": "The text in the image is \"10101\"."
+ },
+ {
+  "name": "I_image_318_13",
+  "gt": "ରେଷ୍ମଗଣ୍ଟ",
+  "pred": "The text in the image is in Odia script and reads \"ঈশ্বরী\"."
+ },
+ {
+  "name": "I_image_318_14",
+  "gt": "ଆଣ୍ଠୁ",
+  "pred": "The text in the image is \"થાની\" which is written in Gujarati script."
+ },
+ {
+  "name": "I_image_318_17",
+  "gt": "ପ୍ରସାଦମ୍",
+  "pred": "The text in the image reads \"Rabia\"."
+ },
+ {
+  "name": "I_image_318_18",
+  "gt": "ଗୋବିନ୍ଦ",
+  "pred": "The text in the image is \"गलियाँ\" which is written in Devanagari script. This script is used for several languages including Hindi and Marathi. The word \"गलियाँ\" translates to \"alleys\" or \"lanes\" in English."
+ },
+ {
+  "name": "I_image_318_20",
+  "gt": "ହୋଟେଲ୍‌",
+  "pred": "The text in the image is \"欢迎光临\". This is Chinese and translates to \"Welcome\" in English."
+ },
+ {
+  "name": "I_image_318_21",
+  "gt": "ହୋଟେଲ୍‌",
+  "pred": "The text in the image is \"69166\"."
+ },
+ {
+  "name": "I_image_318_24",
+  "gt": "ହରିଓମ୍",
+  "pred": "The text in the image is \"ଉଇବ୍\"."
+ },
+ {
+  "name": "I_image_318_25",
+  "gt": "ହୋଟେଲ୍‌",
+  "pred": "The text in the image is \"69169\"."
+ },
+ {
+  "name": "I_image_318_28",
+  "gt": "ଶ୍ରୀ କ୍ରିଷ୍ଣା",
+  "pred": "The text in the image is \"গীণা\" which is written in Bengali script. It translates to \"Gina\" in English."
+ },
+ {
+  "name": "I_image_318_3",
+  "gt": "ଟାଇଲ",
+  "pred": "The text in the image is \"ଓଡ଼ିଆ\". This is the Odia script, which is used to write the Odia language, one of the major languages spoken in India."
+ },
+ {
+  "name": "I_image_318_32",
+  "gt": "ଆଣ୍ତ",
+  "pred": "The text in the image is \"খা গু\" which appears to be in Bengali script. The characters \"খা\" and \"গু\" can be translated as \"ka\" and \"gu\" respectively, but without more context, it's difficult to provide a full translation or meaning of"
+ },
+ {
+  "name": "I_image_318_36",
+  "gt": "ବିଜୁ",
+  "pred": "The text in the image appears to be in Chinese characters, and it reads \"您好\" (Hǎo nǐ), which translates to \"Hello\" or \"How are you?\" in English."
+ },
+ {
+  "name": "I_image_318_37",
+  "gt": "୦୯.୧୨.୨୦",
+  "pred": "The text in the image reads \"09.29.90\"."
+ },
+ {
+  "name": "I_image_318_4",
+  "gt": "ମାର୍ବଲ",
+  "pred": "The text in the image is \"गिर्द\" which is in Hindi and it translates to \"side\" or \"nearby\" in English."
+ },
+ {
+  "name": "I_image_318_9",
+  "gt": "ଟେନ୍‌ଷ୍ଟାଇଲ",
+  "pred": "The text in the image is \"99 বছর\". This translates to \"99 years\" in English."
+ },
+ {
+  "name": "I_image_32_1",
+  "gt": "ଗୀତ",
+  "pred": "The text in the image reads \"10\"."
+ },
+ {
+  "name": "I_image_32_2",
+  "gt": "ଯୋଗିନୀ",
+  "pred": "The text in the image reads \"vision\"."
+ },
+ {
+  "name": "I_image_323_10",
+  "gt": "ଲକ୍ଷ୍ମୀ ଅଳଙ୍କାର",
+  "pred": "The text in the image is in Telugu, and it reads \"ముందు ప్రారంభించారు.\" This translates to \"Started earlier\" in English."
+ },
+ {
+  "name": "I_image_323_2",
+  "gt": "ଅଳଙ୍କାର",
+  "pred": "The text in the image reads \"98.3\"."
+ },
+ {
+  "name": "I_image_323_21",
+  "gt": "ଖୁସିଣ",
+  "pred": "The text in the image reads \"926\"."
+ },
+ {
+  "name": "I_image_323_22",
+  "gt": "ଅଳଙ୍କାର",
+  "pred": "The text in the image is \"ஆகிறே\". This appears to be in Tamil script, which is used primarily in the Indian state of Tamil Nadu and by Tamil communities in other parts of India and abroad. The meaning or context of this word would depend on its usage in a sentence or within a specific"
+ },
+ {
+  "name": "I_image_323_24",
+  "gt": "ଲକ୍ଷ୍ମୀ",
+  "pred": "The text in the image is \"মোগল\" which is Bengali for \"Mogul\"."
+ },
+ {
+  "name": "I_image_323_25",
+  "gt": "ଡାକ",
+  "pred": "The text in the image is \"এই\"."
+ },
+ {
+  "name": "I_image_323_26",
+  "gt": "ବଙ୍ଗଳା",
+  "pred": "The text in the image is \"奇幻岛\"."
+ },
+ {
+  "name": "I_image_323_27",
+  "gt": "ଛକ",
+  "pred": "The text in the image reads \"25G\"."
+ },
+ {
+  "name": "I_image_323_3",
+  "gt": "ଲକ୍ଷ୍ମୀ",
+  "pred": "The text in the image is \"মেঘ\"."
+ },
+ {
+  "name": "I_image_323_33",
+  "gt": "ଲକ୍ଷ୍ମୀ ଅଳଙ୍କାର",
+  "pred": "The text in the image is \"বিশ্বের জীবন\" which translates to \"Life of the World\" in English."
+ },
+ {
+  "name": "I_image_323_39",
+  "gt": "ଲକ୍ଷ୍ମୀ",
+  "pred": "The text in the image is \"मेरा दिल\" which translates to \"My Heart\" in English."
+ },
+ {
+  "name": "I_image_323_40",
+  "gt": "ଅଳଙ୍କାର",
+  "pred": "The text in the image reads \"ATLANTIC\"."
+ },
+ {
+  "name": "I_image_323_43",
+  "gt": "ଅଳଙ୍କାର",
+  "pred": "The text in the image is \"খেলাধুলা\" which is Bengali for \"playtime\" or \"playground.\""
+ },
+ {
+  "name": "I_image_323_44",
+  "gt": "ଲକ୍ଷ୍ମୀ",
+  "pred": "The text in the image is \"m!l\"."
+ },
+ {
+  "name": "I_image_323_46",
+  "gt": "ଅଳଙ୍କାର",
+  "pred": "The text in the image is \"से दे\" which is in Hindi. It translates to \"From give\" or \"Take from\" in English."
+ },
+ {
+  "name": "I_image_323_50",
+  "gt": "ଲକ୍ଷ୍ମୀ",
+  "pred": "The text in the image is \"童鞋\". This is Chinese and it translates to \"children's shoes\" or \"kids' shoes\" in English."
+ },
+ {
+  "name": "I_image_323_52",
+  "gt": "ପ୍ରାଇଡ୍",
+  "pred": "The text in the image is \"glue\"."
+ },
+ {
+  "name": "I_image_323_55",
+  "gt": "ସୀମାକେଗ",
+  "pred": "The text in the image is \"গ্রামীণ\" which is Bengali for \"rural\" or \"village.\""
+ },
+ {
+  "name": "I_image_323_56",
+  "gt": "ଅଳଙ୍କାର",
+  "pred": "The text in the image is \"amal\"."
+ },
+ {
+  "name": "I_image_323_7",
+  "gt": "ଲକ୍ଷ୍ମୀ",
+  "pred": "The text in the image is \"গোল্ড\" which is Bengali for \"Gold\"."
+ },
+ {
+  "name": "I_image_323_64",
+  "gt": "ଅଳ",
+  "pred": "The text in the image is \"印度\" which translates to \"India\" in English."
+ },
+ {
+  "name": "I_image_327_10",
+  "gt": "ଦେଇ",
+  "pred": "The text in the image is \"600\"."
+ },
+ {
+  "name": "I_image_327_12",
+  "gt": "ମନ୍ତ୍ରଣାଳୟ",
+  "pred": "The text in the image is \"গোলাপ\" which is Bengali for \"rose\"."
+ },
+ {
+  "name": "I_image_327_2",
+  "gt": "ଅଏଲ୍‌",
+  "pred": "The text in the image is \"খানি\" which is written in Bengali script."
+ },
+ {
+  "name": "I_image_327_23",
+  "gt": "ଗ୍ୟାସ୍",
+  "pred": "The text in the image is \"তারা\" which is Bengali for \"they\" or \"them\"."
+ },
+ {
+  "name": "I_image_327_26",
+  "gt": "ଲିମିଟେଡ଼",
+  "pred": "The text in the image is \"คิดถึงเธอ\" which translates to \"Think of you\" in English."
+ },
+ {
+  "name": "I_image_327_29",
+  "gt": "ଟ୍ରଷ୍ଟ",
+  "pred": "The text in the image is \"68\"."
+ },
+ {
+  "name": "I_image_327_3",
+  "gt": "ଇଣ୍ଡିଆନ୍",
+  "pred": "The text in the image is \"গুল্মখানি\". This appears to be in Bengali, and it translates to \"Grassland\" or \"Pasture\" in English."
+ },
+ {
+  "name": "I_image_327_30",
+  "gt": "ପୋର୍ଟ",
+  "pred": "The text in the image is \"बादे\"."
+ },
+ {
+  "name": "I_image_327_33",
+  "gt": "ବୁଝାମଣା",
+  "pred": "The text in the image is \"ডুটাকটা\"."
+ },
+ {
+  "name": "I_image_327_34",
+  "gt": "ପ୍ରାକୃତିକ",
+  "pred": "The text in the image reads \"glooo\"."
+ },
+ {
+  "name": "I_image_327_35",
+  "gt": "ସାକ୍ଷର",
+  "pred": "The text in the image is \"একটি\"."
+ },
+ {
+  "name": "I_image_327_36",
+  "gt": "କର୍ପୋରେସନ",
+  "pred": "The text in the image is \"ক্রোড়ের\" which is Bengali and translates to \"Crore\" in English. Crore is a unit of measurement used in India, Bangladesh, Nepal, and Pakistan, equivalent to 10 million (10,000,"
+ },
+ {
+  "name": "I_image_327_37",
+  "gt": "ନୁମାଲିଗଡ଼",
+  "pred": "The text in the image is \"ଉଳିକିଲ\"."
+ },
+ {
+  "name": "I_image_327_38",
+  "gt": "ରିଫାଇନାରୀ",
+  "pred": "The text in the image is \"ପ୍ରକାଶ\". This is in the Odia script, which is used to write the Odia language, a language spoken primarily in the Indian state of Odisha."
+ },
+ {
+  "name": "I_image_327_39",
+  "gt": "ରିଫାଇନାରୀକୁ",
+  "pred": "The text in the image is in Odia script and reads \"ଦ୍ୟାକ୍ଷ୍ରାଣ୍ଡୋ\"."
+ },
+ {
+  "name": "I_image_327_4",
+  "gt": "ପାରାଦୀପ",
+  "pred": "The text in the image is \"তারেক\"."
+ },
+ {
+  "name": "I_image_327_40",
+  "gt": "ବନ୍ଦର",
+  "pred": "The text in the image is \"তারা\" which is Bengali for \"they\" or \"them\"."
+ },
+ {
+  "name": "I_image_327_44",
+  "gt": "ପେଟ୍ରୋଲିୟମ",
+  "pred": "The text in the image is \"กรุงเทพมหานคร\". This is the Thai name for Bangkok, which translates to \"City of Angels\" or \"Great City of Angels.\""
+ },
+ {
+  "name": "I_image_327_46",
+  "gt": "ଏବଂ",
+  "pred": "The text in the image is \"19\"."
+ },
+ {
+  "name": "I_image_327_48",
+  "gt": "ସରକାର",
+  "pred": "The text in the image is \"QQQ\"."
+ },
+ {
+  "name": "I_image_327_5",
+  "gt": "ପତ୍ର",
+  "pred": "The text in the image is \"তুমি\" which is Bengali and translates to \"you\" in English."
+ },
+ {
+  "name": "I_image_327_50",
+  "gt": "ଆମଦନୀ",
+  "pred": "The text in the image is \"খাওয়ার\" which is Bengali and translates to \"eating\" or \"to eat\" in English."
+ },
+ {
+  "name": "I_image_327_51",
+  "gt": "ଅଶୋଧିତ",
+  "pred": "The text in the image is \"খন্দাপুর\"."
+ },
+ {
+  "name": "I_image_327_52",
+  "gt": "ମାଲିଗଡ଼",
+  "pred": "The text in the image is \"গোলাটা\". This appears to be in Bengali, and it translates to \"the ball\" in English."
+ },
+ {
+  "name": "I_image_327_53",
+  "gt": "ଲିମିଟେଡ଼",
+  "pred": "The text in the image is \"ក្រុងស៊ីម៉ូ\" which translates to \"Siem Reap\" in English. Siem Reap is a city in Cambodia, known for its rich cultural heritage and historical significance, particularly due to the Angkor archaeological complex"
+ },
+ {
+  "name": "I_image_327_54",
+  "gt": "ପା",
+  "pred": "The text in the image is \"by\"."
+ },
+ {
+  "name": "I_image_327_55",
+  "gt": "ଦୀପ",
+  "pred": "The text in the image is \"এই\"."
+ },
+ {
+  "name": "I_image_330_7",
+  "gt": "ସମବାୟ",
+  "pred": "The text in the image is \"এদেশ\". This appears to be in Bengali script, which is used primarily in Bangladesh and West Bengal, India. The word \"এদেশ\" translates to \"country\" or \"nation\" in English."
+ },
+ {
+  "name": "I_image_330_8",
+  "gt": "ବ୍ୟାଙ୍କ୍",
+  "pred": "The text in the image is \"পানি\" which is Bengali for \"water\"."
+ },
+ {
+  "name": "I_image_330_9",
+  "gt": "ଳାର୍ଯ୍ୟାଳୟ",
+  "pred": "The text in the image is \"মেরা দেশ\" which translates to \"My Country\" in English."
+ },
+ {
+  "name": "I_image_335_13",
+  "gt": "ଭାରତୀୟ",
+  "pred": "The text in the image is \"গীতার্থ\" which is Bengali and translates to \"meaning of the Gita\" in English."
+ },
+ {
+  "name": "I_image_335_2",
+  "gt": "ଶବ୍ଦଦାନଳି",
+  "pred": "The text in the image is \"স্বাস্থ্য\" which translates to \"health\" in English."
+ },
+ {
+  "name": "I_image_339_1",
+  "gt": "ସ୍ଥିତି",
+  "pred": "The text in the image is \"প্রো\" which is Bengali for \"Pro\"."
+ },
+ {
+  "name": "I_image_339_2",
+  "gt": "ଆହ୍ବାନ",
+  "pred": "The text in the image is \"মিলন\" which is Bengali for \"meeting\" or \"gathering.\""
+ },
+ {
+  "name": "I_image_339_3",
+  "gt": "କଣ",
+  "pred": "The text in the image is \"টি\" which is a Bengali character."
+ },
+ {
+  "name": "I_image_339_4",
+  "gt": "ଏବେର",
+  "pred": "The text in the image reads \"1600\"."
+ },
+ {
+  "name": "I_image_339_5",
+  "gt": "କରିବା?",
+  "pred": "The text in the image is in Odia and reads \"କେଉଁ?\" which translates to \"Who?\" in English."
+ },
+ {
+  "name": "I_image_339_6",
+  "gt": "ଆଗକୁ",
+  "pred": "The text in the image is \"খাটছু\". This appears to be in Bengali script, which is used in Bangladesh and parts of India. The meaning or context of this word would depend on the specific dialect and usage within the language."
+ },
+ {
+  "name": "I_image_345_1",
+  "gt": "ଏକ",
+  "pred": "The text in the image is \"40\"."
+ },
+ {
+  "name": "I_image_345_10",
+  "gt": "ଗଢ଼ିକାର",
+  "pred": "The text in the image is \"এই পোস্ট\" which translates to \"This post\" in English."
+ },
+ {
+  "name": "I_image_345_11",
+  "gt": "ଆନ୍ଦୋଳନ",
+  "pred": "The text in the image is \"বাংলা\" which means \"Bengali\" in English."
+ },
+ {
+  "name": "I_image_345_12",
+  "gt": "ଢେଙ୍କାନାଳ",
+  "pred": "The text in the image reads \"Google\"."
+ },
+ {
+  "name": "I_image_345_13",
+  "gt": "୨୦୧୪",
+  "pred": "The text in the image reads \"90e8\"."
+ },
+ {
+  "name": "I_image_345_14",
+  "gt": "ଇନଷ୍ଟିଚ୍ୟୁଟ",
+  "pred": "The text in the image is \"একটি প্রোগ্রাম\" which translates to \"A program\" in English."
+ },
+ {
+  "name": "I_image_345_15",
+  "gt": "ସୋସିଆଲ",
+  "pred": "The text in the image reads \"621818\"."
+ },
+ {
+  "name": "I_image_345_16",
+  "gt": "ଭୁବନେଶ୍ୱ",
+  "pred": "The text in the image is not present, as it appears to be an image of a white background with four small, dark shapes that resemble eyes and a mouth, but no text is visible. If you have any specific question or need further assistance, please let me know!"
+ },
+ {
+  "name": "I_image_345_17",
+  "gt": "ଜାନୁଆରୀ",
+  "pred": "The text in the image is \"বাংলা\" which is the name of the Bangla language in English."
+ },
+ {
+  "name": "I_image_345_18",
+  "gt": "ଭାରତୀୟ",
+  "pred": "The text in the image is \"গোলাপ\" which is Bengali for \"rose\"."
+ },
+ {
+  "name": "I_image_345_19",
+  "gt": "ସଂସ୍ଥାନ,",
+  "pred": "The text in the image is \"h^2B\"."
+ },
+ {
+  "name": "I_image_345_2",
+  "gt": "ଏକ",
+  "pred": "The text in the image is not clear enough to read, but it appears to be some kind of icon or symbol. If you have any specific questions about what this icon might represent or if you need help with something related to it, please let me know!"
+ },
+ {
+  "name": "I_image_345_20",
+  "gt": "ଉଇକିପିଡ଼ିଆ",
+  "pred": "The text in the image is in Odia script and reads \"ঔষধিলা\"."
+ },
+ {
+  "name": "I_image_345_21",
+  "gt": "ଖୋଲା",
+  "pred": "The text in the image is \"66110\"."
+ },
+ {
+  "name": "I_image_345_22",
+  "gt": "ଜନସଂଗାଁର",
+  "pred": "The text in the image is \"৩০০৫০৬০৭০৮০৯০\" which appears to be a sequence of numbers written in Bengali script. The numbers represent the digits 3, 0, 5, 0"
+ },
+ {
+  "name": "I_image_345_23",
+  "gt": "୨୦୧୪",
+  "pred": "The text in the image reads \"90e8\"."
+ },
+ {
+  "name": "I_image_345_24",
+  "gt": "୨୯",
+  "pred": "The text in the image is \"90\"."
+ },
+ {
+  "name": "I_image_345_25",
+  "gt": "ସାଇନ୍ସେସ,",
+  "pred": "The text in the image is \"বাংলা\" which means \"Bengali\" in English."
+ },
+ {
+  "name": "I_image_345_26",
+  "gt": "ଅଫ",
+  "pred": "The text in the image is \"20\"."
+ },
+ {
+  "name": "I_image_345_27",
+  "gt": "କଳିଙ୍ଗ",
+  "pred": "The text in the image is \"云朵\" which translates to \"clouds\" in English."
+ },
+ {
+  "name": "I_image_345_28",
+  "gt": "୨୮ ଜାନୁଆରୀ",
+  "pred": "The text in the image is \"99% of people who try it love it.\""
+ },
+ {
+  "name": "I_image_345_3",
+  "gt": "ଜ୍ଞାନକୋଷ",
+  "pred": "The text in the image is \"2016年\". This translates to \"2016\" in English, indicating the year 2016."
+ },
+ {
+  "name": "I_image_345_4",
+  "gt": "ଇଣ୍ଟରନେଟରେ",
+  "pred": "The text in the image is in Odia script and reads \"ମୋଟାକ୍ରମ\" which translates to \"Motakram\" in English."
+ },
+ {
+  "name": "I_image_345_5",
+  "gt": "ଓଡ଼ିଆ",
+  "pred": "The text in the image is \"ଅଳ୍ଡା\" which is written in Odia script. The transliteration of this text into English would be \"Aloda.\""
+ },
+ {
+  "name": "I_image_345_6",
+  "gt": "ଦଶବର୍ଷର",
+  "pred": "The text in the image is \"তারকা\" which is Bengali for \"Tarak\" or \"Taraka\"."
+ },
+ {
+  "name": "I_image_345_7",
+  "gt": "ଉଇକିପିଡ଼ିଆ",
+  "pred": "The text in the image reads \"aaaaa\"."
+ },
+ {
+  "name": "I_image_345_8",
+  "gt": "୧୦",
+  "pred": "The text in the image is \"EO\"."
+ },
+ {
+  "name": "I_image_345_9",
+  "gt": "ଉଇକିପିଡ଼ିଆ",
+  "pred": "The text in the image is \"অনুষ্ঠান\" which translates to \"ceremony\" or \"event\" in English."
+ },
+ {
+  "name": "I_image_350_6",
+  "gt": "ଖୋ",
+  "pred": "The text in the image reads \"66410\"."
+ },
+ {
+  "name": "I_image_350_7",
+  "gt": "ଏକ",
+  "pred": "The text in the image is \"G\"."
+ },
+ {
+  "name": "I_image_350_8",
+  "gt": "ଉଇକିପି",
+  "pred": "The text in the image appears to be in Odia script, which is used primarily in the Indian state of Odisha and in some neighboring regions. The specific text reads \"ବିଜ୍ୟପୁର\" (Bijapur). This is the name"
+ },
+ {
+  "name": "I_image_352_10",
+  "gt": "ଓଡ଼ିଆ",
+  "pred": "The text in the image is \"ଓଡ଼ିଆ\". This is the Odia script, which is used to write the Odia language, one of the major languages spoken in India."
+ },
+ {
+  "name": "I_image_352_11",
+  "gt": "ଉଇକିପାଠାଗାରର",
+  "pred": "The text in the image is in Odia script and reads \"ମୋଟାଦେଖ\"."
+ },
+ {
+  "name": "I_image_352_13",
+  "gt": "ଜନ୍ମତିଥ୍‌",
+  "pred": "The text in the image is \"ডালিয়া\" which is written in Bengali script. The transliteration of this text into English would be \"Daliya.\""
+ },
+ {
+  "name": "I_image_352_14",
+  "gt": "୨୯",
+  "pred": "The text in the image is \"90\"."
+ },
+ {
+  "name": "I_image_352_15",
+  "gt": "୫",
+  "pred": "The text in the image is \"8\"."
+ },
+ {
+  "name": "I_image_352_16",
+  "gt": "ଭୁବନେଶ୍ବର",
+  "pred": "The text in the image is \"মুক্তিযুদ্ধ\". This is Bengali and it translates to \"Mukti Yuddha\" in English, which refers to the Bangladesh Liberation War."
+ },
+ {
+  "name": "I_image_352_17",
+  "gt": "ଆଗ୍ରିକଲଚରାଲ",
+  "pred": "The text in the image is in Odia script and reads \"ଆଟିକାଟା\"."
+ },
+ {
+  "name": "I_image_352_18",
+  "gt": "ସିରିପୁର,",
+  "pred": "The text in the image is \"ଓଡ଼ିଆ\". This is the name of the Odia language, which is also known as Oriya."
+ },
+ {
+  "name": "I_image_352_19",
+  "gt": "ଉଇକିପାଠାଗାର",
+  "pred": "The text in the image is \"ଓଡ଼ିଆ\" which is the Odia script for the word \"Odia\"."
+ },
+ {
+  "name": "I_image_352_2",
+  "gt": "ଜାନୁଆରୀ",
+  "pred": "The text in the image is \"ଓଡ଼ିଆ\". This is the name of the Odia language, which is also known as Oriya."
+ },
+ {
+  "name": "I_image_352_20",
+  "gt": "ଯୋଗଦିଅନ୍ତୁ:",
+  "pred": "The text in the image is \"6.লেখাটি\" which appears to be in Bengali script. The number 6 is followed by the word \"লেখা\" (lekhā) which means \"writing\" or \"text\" in English, and then \"টি\" ("
+ },
+ {
+  "name": "I_image_352_22",
+  "gt": "ଭୁବନେଶ୍ବର",
+  "pred": "The text in the image is in Odia script and reads \"ବୁଧକାଲୀ\"."
+ },
+ {
+  "name": "I_image_352_23",
+  "gt": "ଏକ୍ସଟେନସନ,",
+  "pred": "The text in the image is in Odia script and reads \"একটি কোডিং প্রক্রিয়া\" which translates to \"A coding process\" in English."
+ },
+ {
+  "name": "I_image_352_24",
+  "gt": "ମ୍ୟାନେଜମେଣ୍ଟ",
+  "pred": "The text in the image is in Odia script and reads \"পানীয় দ্রব্য\" which translates to \"liquid substance\" or \"drink\" in English."
+ },
+ {
+  "name": "I_image_352_25",
+  "gt": "ଇନଷ୍ଟଚ୍ୟୁଟ",
+  "pred": "The text in the image is in Odia script and reads \"ମୋଟାବାର\" which translates to \"Mota Bar\" in English."
+ },
+ {
+  "name": "I_image_352_26",
+  "gt": "ଘଟିକା",
+  "pred": "The text in the image is \"ଓଡ଼ିଆ\". This is the Odia script, which is used to write the Odia language, one of the major languages spoken in India."
+ },
+ {
+  "name": "I_image_352_27",
+  "gt": "ସନ୍ଧ୍ୟା",
+  "pred": "The text in the image is \"বাংলা\" which means \"Bengali\" in English."
+ },
+ {
+  "name": "I_image_352_28",
+  "gt": "୨୦୧୭",
+  "pred": "The text in the image reads \"9009\"."
+ },
+ {
+  "name": "I_image_352_3",
+  "gt": "ଦ୍ବିତୀୟ",
+  "pred": "The text in the image is \"টুর্নামেন্ট\"."
+ },
+ {
+  "name": "I_image_352_4",
+  "gt": "ଜନ୍ମତିଥ୍‌",
+  "pred": "The text in the image is \"ଜ୍ଞାନ\" which is written in Odia script. The transliteration of this text into English is \"Jñāna,\" which means \"knowledge\" or \"wisdom.\""
+ },
+ {
+  "name": "I_image_352_5",
+  "gt": "ଉଇକିପାଠାଗାରର",
+  "pred": "The text in the image is in Odia script and reads \"ଉଳିତାଲି\"."
+ },
+ {
+  "name": "I_image_352_6",
+  "gt": "ଓଡ଼ିଆ",
+  "pred": "The text in the image is \"ଓଡ଼ିଆ\". This is the Odia script, which is used to write the Odia language, spoken primarily in the Indian state of Odisha."
+ },
+ {
+  "name": "I_image_352_7",
+  "gt": "ଅନ",
+  "pred": "The text in the image is \"খুব\" which is in Bengali script. It translates to \"very\" or \"much\" in English."
+ },
+ {
+  "name": "I_image_352_8",
+  "gt": "ଅଫ",
+  "pred": "The text in the image is \"શુભ\". This is in the Gujarati script, which is used to write the Gujarati language. The word \"શુભ\" (shubh) means \"good\" or \"happy\" in English."
+ },
+ {
+  "name": "I_image_352_9",
+  "gt": "୨ୟ",
+  "pred": "The text in the image reads \"9a\"."
+ },
+ {
+  "name": "I_image_353_1",
+  "gt": "ଯୋଗଦିଅନ୍ତୁ:",
+  "pred": "The text in the image is \"গোলাপিয়াঁ\" which is Bengali for \"Golapia\" in English."
+ },
+ {
+  "name": "I_image_353_10",
+  "gt": "ଉଇକିପାଠାଗାରର",
+  "pred": "The text in the image is in Odia script and reads \"ମନ୍ତର\" which translates to \"Mantra\" in English."
+ },
+ {
+  "name": "I_image_353_11",
+  "gt": "ଓଡ଼ିଆ",
+  "pred": "The text in the image is \"ওঠা\"."
+ },
+ {
+  "name": "I_image_353_13",
+  "gt": "ଜନ୍ମତିଥ୍‌",
+  "pred": "The text in the image is \"কল্পিত\" which is Bengali for \"imagined\" or \"fictional.\""
+ },
+ {
+  "name": "I_image_353_14",
+  "gt": "୨୦୧୭",
+  "pred": "The text in the image is \"9082\"."
+ },
+ {
+  "name": "I_image_353_15",
+  "gt": "ଘଟିକା",
+  "pred": "The text in the image is \"ଉଳିକ\"."
+ },
+ {
+  "name": "I_image_353_16",
+  "gt": "ଭୁବନେଶ୍ବର",
+  "pred": "The text in the image is in Odia script and reads \"ଦୁଇକ୍ଷା\"."
+ },
+ {
+  "name": "I_image_353_17",
+  "gt": "ମ୍ୟାନେଜମେଣ୍ଟ",
+  "pred": "The text in the image is \"পাওয়ারেল\" which is Bengali for \"Power Rail\"."
+ },
+ {
+  "name": "I_image_353_18",
+  "gt": "ଏକ୍ସଟେନସନ",
+  "pred": "The text in the image is \"এক্সেলেন্ট\" which translates to \"excellent\" in English."
+ },
+ {
+  "name": "I_image_353_19",
+  "gt": "ଭୁବନେଶ୍ବର",
+  "pred": "The text in the image is \"মুক্তিযোদ্ধা\" which translates to \"Muktiyodda\" in English. This term refers to a freedom fighter or a person who fought for independence, particularly in the context of the Bangladesh Liberation War."
+ },
+ {
+  "name": "I_image_353_2",
+  "gt": "ଦ୍ବିତୀୟ",
+  "pred": "The text in the image is \"လောင်းတို့\". This appears to be Burmese script, which is used in Myanmar (Burma). The meaning of this phrase can vary depending on the context, but it generally translates to something like \"children"
+ },
+ {
+  "name": "I_image_353_21",
+  "gt": "ଉଇକିପାଠାଗାର",
+  "pred": "The text in the image is \"ମୋଟାବାର\" which is in Odia script. Translated to English, it means \"Motabara.\""
+ },
+ {
+  "name": "I_image_353_22",
+  "gt": "ସିରିପୁର,",
+  "pred": "The text in the image is \"இலையு.\""
+ },
+ {
+  "name": "I_image_353_23",
+  "gt": "ଆଗ୍ରିକଲଚରାଲ",
+  "pred": "The text in the image is \"ଆଡିକେଡି\". This appears to be in the Odia script, which is used for writing the Odia language, spoken primarily in the Indian state of Odisha."
+ },
+ {
+  "name": "I_image_353_24",
+  "gt": "ଇନଷ୍ଟିଚ୍ୟୁଟ",
+  "pred": "The text in the image is \"ডেস্টিনেশন বাংলা\". This appears to be in Bengali script, which translates to \"Destination Bangla\" in English."
+ },
+ {
+  "name": "I_image_353_25",
+  "gt": "୨ୟ",
+  "pred": "The text in the image is \"9a\"."
+ },
+ {
+  "name": "I_image_353_26",
+  "gt": "୫",
+  "pred": "The text in the image is \"8\"."
+ },
+ {
+  "name": "I_image_353_27",
+  "gt": "ଜାନୁଆରୀ",
+  "pred": "The text in the image is \"কুটালা\"."
+ },
+ {
+  "name": "I_image_353_3",
+  "gt": "ଉଇକିପାଠାଗାରର",
+  "pred": "The text in the image is \"ମୁଖ୍ୟାଧ୍ୟାନ୍ୟ\" which is in Odia script. Translated to English, it means \"Chief Minister.\""
+ },
+ {
+  "name": "I_image_353_4",
+  "gt": "ଜନ୍ମତିଥ୍‌",
+  "pred": "The text in the image is in Odia script and reads \"ଛିଲେ\" which translates to \"were\" or \"existed\" in English."
+ },
+ {
+  "name": "I_image_353_5",
+  "gt": "ଅନ",
+  "pred": "The text in the image is \"ખેડુ\". This appears to be in the Gujarati script, which is used for writing the Gujarati language."
+ },
+ {
+  "name": "I_image_353_6",
+  "gt": "ଅଫ",
+  "pred": "The text in the image is \"খেল\" which is Bengali and means \"play\" or \"game\" in English."
+ },
+ {
+  "name": "I_image_353_7",
+  "gt": "ସନ୍ଧ୍ୟା",
+  "pred": "The text in the image is \"একটা\" which is Bengali and translates to \"a\" or \"one\" in English."
+ },
+ {
+  "name": "I_image_353_8",
+  "gt": "୨୯",
+  "pred": "The text in the image is \"90\"."
+ },
+ {
+  "name": "I_image_353_9",
+  "gt": "ଓଡ଼ିଆ",
+  "pred": "The text in the image is \"ওডিয়া\". This is the word for \"Odia\" in the Odia language, which is also known as Oriya."
+ },
+ {
+  "name": "I_image_4_11",
+  "gt": "ଦୋକାନ",
+  "pred": "The text in the image is \"বাকী\" which translates to \"remaining\" or \"leftover\" in English."
+ },
+ {
+  "name": "I_image_4_13",
+  "gt": "ଛେନାପୋତ",
+  "pred": "The text in the image is \"গোলাপী\" which is Bengali for \"pink\"."
+ },
+ {
+  "name": "I_image_4_2",
+  "gt": "ମିଳେ",
+  "pred": "The text in the image is \"রেক\" which appears to be in Bengali script."
+ },
+ {
+  "name": "I_image_4_3",
+  "gt": "ସାଗର.",
+  "pred": "The text in the image is \"বাংলা\" which means \"Bengali\" in English."
+ },
+ {
+  "name": "I_image_40_1",
+  "gt": "ଭୂଷଣ୍ତପୁର",
+  "pred": "The text in the image is in Odia script and reads \"ବିଶ୍ଵପୁର୍ଣ୍ଣି\" which translates to \"Vishwabharani\" in English."
+ },
+ {
+  "name": "I_image_425_0",
+  "gt": "ଭୂୟାଁ",
+  "pred": "The text in the image is \"ওয়াই\"."
+ },
+ {
+  "name": "I_image_425_2",
+  "gt": "ପରଳା",
+  "pred": "The text in the image appears to be in Odia script, which is used in the Indian state of Odisha and some neighboring regions. The specific characters shown are \"ଓଡ଼ିଆ\". This is the Odia word for \"Odia\" or \"Odiya,\" referring to the Odia"
+ },
+ {
+  "name": "I_image_425_3",
+  "gt": "ଘର",
+  "pred": "The text in the image is \"এই\"."
+ },
+ {
+  "name": "I_image_451_2",
+  "gt": "ଇଣ୍ଡିକ୍ୟାଶ୍",
+  "pred": "The text in the image is in Odia script and reads \"ମୁଖ୍ୟନେତୀ\" which translates to \"Chief Minister\" in English."
+ },
+ {
+  "name": "I_image_451_5",
+  "gt": "ସବୁ",
+  "pred": "The text in the image is \"ଏଡୁ\". This appears to be in the Odia script, which is used for writing the Odia language, spoken primarily in the Indian state of Odisha."
+ },
+ {
+  "name": "I_image_451_6",
+  "gt": "ବ୍ୟାଙ୍କ’ର",
+  "pred": "The text in the image is \"ওয়েল\" which is written in Bengali script."
+ },
+ {
+  "name": "I_image_451_7",
+  "gt": "କାର୍ଡ",
+  "pred": "The text in the image is \"কর্ম\" which translates to \"work\" in English."
+ },
+ {
+  "name": "I_image_451_8",
+  "gt": "ସ୍ବୀକୃତ #",
+  "pred": "The text in the image is \"ধুলো\" which is written in Bengali script. The English translation of this word is \"dust\"."
+ },
+ {
+  "name": "I_image_467_0",
+  "gt": "ଚିକିତ୍ସାଳୟ",
+  "pred": "The text in the image is \"संगीत\" which translates to \"Music\" in English."
+ },
+ {
+  "name": "I_image_467_1",
+  "gt": "ମହାବିଦ୍ୟାଳୟ",
+  "pred": "The text in the image is \"প্রতিবিম্বিত\" which is Bengali and translates to \"represented\" or \"depicted\" in English."
+ },
+ {
+  "name": "I_image_467_3",
+  "gt": "ଲକ୍ଷ୍ମଣ",
+  "pred": "The text in the image is \"କୁମ୍ବାଣୀ\" which is written in the Odia script."
+ },
+ {
+  "name": "I_image_467_4",
+  "gt": "ଭେଷଜ",
+  "pred": "The text in the image is \"6999\"."
+ },
+ {
+  "name": "I_image_467_5",
+  "gt": "ଓ",
+  "pred": "The text in the image is \"3\"."
+ },
+ {
+  "name": "I_image_467_6",
+  "gt": "ନାୟକ",
+  "pred": "The text in the image is \"বাংলা\" which means \"Bengali\" in English."
+ },
+ {
+  "name": "I_image_467_7",
+  "gt": "ଶହାଦ୍",
+  "pred": "The text in the image is \"গুঁড়ো\". This is a Bengali word that means \"potato\" in English."
+ },
+ {
+  "name": "I_image_470_4",
+  "gt": "ସୋଲରୀ",
+  "pred": "The text in the image is \"গোলাপী\" which is written in Bengali script. The transliteration of this text into English would be \"Golapī,\" which means \"red\" or \"rose\" in English, depending on the context."
+ },
+ {
+  "name": "I_image_474_0",
+  "gt": "କୋରାପୁଟ",
+  "pred": "The text in the image is \"6010196\"."
+ },
+ {
+  "name": "I_image_474_1",
+  "gt": "ମହାବିଦ୍ୟାଳୟ",
+  "pred": "The text in the image is \"রাজ্যের জীবন\" which translates to \"Life of the State\" in English."
+ },
+ {
+  "name": "I_image_474_10",
+  "gt": "ଶହୀଦ",
+  "pred": "The text in the image is \"sq10\"."
+ },
+ {
+  "name": "I_image_474_11",
+  "gt": "ମହାବିଦ୍ୟାଳୟ",
+  "pred": "The text in the image is \"সর্বোচ্চ নির্বাচন\" which translates to \"Highest Election\" in English."
+ },
+ {
+  "name": "I_image_474_12",
+  "gt": "ନାୟକ",
+  "pred": "The text in the image is \"pide\"."
+ },
+ {
+  "name": "I_image_474_13",
+  "gt": "କୋରାପୁଟ",
+  "pred": "The text in the image is \"601916\"."
+ },
+ {
+  "name": "I_image_474_19",
+  "gt": "କୋଭିଡ୍-୧୯",
+  "pred": "The text in the image is \"100% ed\"."
+ },
+ {
+  "name": "I_image_474_20",
+  "gt": "(ଡ଼ିସିଏଚ୍)",
+  "pred": "The text in the image is \"গোল্ড\" which is Bengali for \"gold\"."
+ },
+ {
+  "name": "I_image_474_24",
+  "gt": "ଚିକିତ୍ସଳୟ,",
+  "pred": "The text in the image reads \"60g/m²\"."
+ },
+ {
+  "name": "I_image_474_25",
+  "gt": "ଚିକିତ୍ସାଳୟ",
+  "pred": "The text in the image is \"ওয়াক্স\" which is in the Odia script. In English, it translates to \"wax.\""
+ },
+ {
+  "name": "I_image_474_26",
+  "gt": "ଉତ୍ସର୍ଗୀକୃତ",
+  "pred": "The text in the image is \"গোলাপী\" which is Bengali for \"pink\"."
+ },
+ {
+  "name": "I_image_474_5",
+  "gt": "ଚିକିତ୍ସାଳୟ",
+  "pred": "The text in the image is in Odia script and reads \"ଦେଶକୁମାର\" which translates to \"Deshakumar\" in English."
+ },
+ {
+  "name": "I_image_474_6",
+  "gt": "ଭେଷଜ",
+  "pred": "The text in the image is \"60日目\". This translates to \"Day 60\" in English."
+ },
+ {
+  "name": "I_image_474_7",
+  "gt": "ଏବଂ",
+  "pred": "The text in the image is \"Δθ°\". This typically represents a change in angle, often used in physics and engineering to denote an angular displacement or rotation."
+ },
+ {
+  "name": "I_image_474_8",
+  "gt": "ନାୟକ",
+  "pred": "The text in the image reads \"6102\"."
+ },
+ {
+  "name": "I_image_474_9",
+  "gt": "ଲକ୍ଷ୍ମଣ",
+  "pred": "The text in the image is \"কিছু\" which is Bengali and translates to \"some\" or \"a little\" in English."
+ },
+ {
+  "name": "I_image_476_2",
+  "gt": "ବିଦ୍ୟାଳୟ",
+  "pred": "The text in the image is in Gujarati and reads \"લીફાકુડુ\" which translates to \"Leafakudu\" in English."
+ },
+ {
+  "name": "I_image_476_3",
+  "gt": "ସ‌ହିଦନଗର (କ)",
+  "pred": "The text in the image is in Odia script and reads \"প্রতিষ্ঠান (৩)\" which translates to \"Institution (3)\" in English."
+ },
+ {
+  "name": "I_image_476_4",
+  "gt": "ପ୍ରାଥମିକ",
+  "pred": "The text in the image is \"গুখরা\"."
+ },
+ {
+  "name": "I_image_492_1",
+  "gt": "ସମ୍ବଲପୁର",
+  "pred": "The text in the image is \"वायुमंडल\"."
+ },
+ {
+  "name": "I_image_493_0",
+  "gt": "ସଭିଏଁ",
+  "pred": "The text in the image appears to be in a stylized or decorative font, but it is not clear what specific language or meaning it conveys without more context. If you have any additional information about the source or purpose of this text, please provide it, and I can assist you further."
+ },
+ {
+  "name": "I_image_493_1",
+  "gt": "ନିମନ୍ତେ",
+  "pred": "The text in the image is \"দিতেছি\" which is in Bengali and translates to \"I am giving\" or \"I give\" in English."
+ },
+ {
+  "name": "I_image_493_2",
+  "gt": "ଭୁବନେଶ୍ବର",
+  "pred": "The text in the image is in Odia script and reads:\n\n\"মানুষের জীবনে স্বাস্থ্য একটি অত্যন্ত গুরুত্বপ�"
+ },
+ {
+  "name": "I_image_493_3",
+  "gt": "ଉଇକିମାନିଆ",
+  "pred": "The text in the image is in Odia script and reads \"ঔষধ\" (Oushadha). In English, this translates to \"Medicine\" or \"Pharmacy.\""
+ },
+ {
+  "name": "I_image_493_4",
+  "gt": "ଅ",
+  "pred": "The text in the image is \"15\"."
+ },
+ {
+  "name": "I_image_493_5",
+  "gt": "ଏକାଠି",
+  "pred": "The text in the image is \"একটি\"."
+ },
+ {
+  "name": "I_image_493_7",
+  "gt": "ଖୋଲା",
+  "pred": "The text in the image is \"গুলি\" which is written in Bengali script. It translates to \"the ones\" or \"the things\" in English."
+ },
+ {
+  "name": "I_image_493_12",
+  "gt": "୨୦୨",
+  "pred": "The text in the image is \"909\"."
+ },
+ {
+  "name": "I_image_494_1",
+  "gt": "ସଭିଏଁ",
+  "pred": "The text in the image appears to be \"ট্রিগ\" which is Bengali for \"trigger.\""
+ },
+ {
+  "name": "I_image_494_13",
+  "gt": "ଜ୍ଞାନ",
+  "pred": "The text in the image is \"15分\". This translates to \"15 minutes\" in English."
+ },
+ {
+  "name": "I_image_494_14",
+  "gt": "ଖୋଲା",
+  "pred": "The text in the image is \"এমএ।মে\" which appears to be in Bengali script. The characters can be transliterated into English as \"M.E.\" which typically stands for Master of Engineering, a postgraduate degree in engineering."
+ },
+ {
+  "name": "I_image_494_15",
+  "gt": "ଭୁବନେଶ୍ବର",
+  "pred": "The text in the image is \"বাংলা বই\" which translates to \"Bangla Book\" in English."
+ },
+ {
+  "name": "I_image_494_16",
+  "gt": "ଉଇକିମାନିଆ",
+  "pred": "The text in the image is in Odia script and reads \"ঔষধ\" which translates to \"medicine\" in English."
+ },
+ {
+  "name": "I_image_494_2",
+  "gt": "୨୦୨୨",
+  "pred": "The text in the image is \"9099\"."
+ },
+ {
+  "name": "I_image_494_3",
+  "gt": "ସଭିଏଁ",
+  "pred": "The text in the image is \"বর্ণ\" which is Bengali for \"color\" or \"letter\"."
+ },
+ {
+  "name": "I_image_494_4",
+  "gt": "ଏକାଠି",
+  "pred": "The text in the image is \"विश्वीय\"."
+ },
+ {
+  "name": "I_image_494_6",
+  "gt": "ଭୁବନେଶ୍ବର",
+  "pred": "The text in the image is in Odia script and reads \"জাতীয়\" which translates to \"National\" in English."
+ },
+ {
+  "name": "I_image_494_7",
+  "gt": "ଖୋଲା",
+  "pred": "The text in the image is \"গুলি\" which is Bengali and translates to \"the ones\" or \"the things\" in English."
+ },
+ {
+  "name": "I_image_494_8",
+  "gt": "ଉଇକିମାନିଆ",
+  "pred": "The text in the image is in Odia script and reads \"ঔষধিষা\"."
+ },
+ {
+  "name": "I_image_494_9",
+  "gt": "ଏକାଠି",
+  "pred": "The text in the image is \"D15\"."
+ },
+ {
+  "name": "I_image_494_17",
+  "gt": "ଅ",
+  "pred": "The text in the image is \"12\"."
+ },
+ {
+  "name": "I_image_494_20",
+  "gt": "ଅ",
+  "pred": "The text in the image is \"খ\"."
+ },
+ {
+  "name": "I_image_495_0",
+  "gt": "ସନ୍ଧ୍ୟା ୫ଘଠାରୁ ୮ଘ.",
+  "pred": "The text in the image is \"১০ জুলাই, ২০২১\". This is in Bengali and translates to \"July 10, 2021\" in English."
+ },
+ {
+  "name": "I_image_495_1",
+  "gt": "ସମୟ",
+  "pred": "The text in the image is \"রঞ্জিত\"."
+ },
+ {
+  "name": "I_image_495_11",
+  "gt": "ସାତଭଡଣୀ",
+  "pred": "The text in the image is \"একাডেমিক\" which translates to \"Academic\" in English."
+ },
+ {
+  "name": "I_image_495_12",
+  "gt": "ମଦିର",
+  "pred": "The text in the image reads \"FOTO\"."
+ },
+ {
+  "name": "I_image_495_2",
+  "gt": "ଧଯ୍ଭୋ ଯ୍ଭୋ",
+  "pred": "The text in the image is \"চায়ে দিয়ে\" which translates to \"with tea\" in English."
+ },
+ {
+  "name": "I_image_495_4",
+  "gt": "ଖୋଲ ରହିବା",
+  "pred": "The text in the image is in Odia script and reads \"গুল্মটি\" which translates to \"The grass\" in English."
+ },
+ {
+  "name": "I_image_495_5",
+  "gt": "ସକାଳ ୭ ଘ.ଠାରୁ ୧୨ଘ",
+  "pred": "The text in the image is in Odia script and reads:\n\n\"ব্যক্তি- ৫ প্র: নামের প্র\"\n\nThis translates to \"Individual - 5 Name of the person\" in English."
+ },
+ {
+  "name": "I_image_495_6",
+  "gt": "ମଦିର",
+  "pred": "The text in the image is \"রবি\"."
+ },
+ {
+  "name": "I_image_495_7",
+  "gt": "ନ 8",
+  "pred": "The text in the image is \"84\"."
+ },
+ {
+  "name": "I_image_502_1",
+  "gt": "ଣ୍ରାଜଗନ୍ନାଥଆବାସ",
+  "pred": "The text in the image is \"এলদ্বৈত\" which is Bengali for \"Dualism\"."
+ },
+ {
+  "name": "I_image_502_2",
+  "gt": "ଠାକୁର",
+  "pred": "The text in the image reads \"SIVP\"."
+ },
+ {
+  "name": "I_image_502_3",
+  "gt": "ମଠ",
+  "pred": "The text in the image reads \"cis\"."
+ },
+ {
+  "name": "I_image_502_4",
+  "gt": "ସମାଧୂ",
+  "pred": "The text in the image reads \"apil\"."
+ },
+ {
+  "name": "I_image_502_5",
+  "gt": "ଣ୍ରାଣ୍ରା ହରିଦାସ",
+  "pred": "The text in the image reads \"Sieg & Ehre\"."
+ },
+ {
+  "name": "I_image_505_2",
+  "gt": "ଲଇବ୍ରେରୀ",
+  "pred": "The text in the image is \"বাংলা\". This is the word for \"Bengali\" in English, written in the Bengali script."
+ },
+ {
+  "name": "I_image_505_3",
+  "gt": "ଉର୍ଦୁ",
+  "pred": "The text in the image reads \"গুলি\" which is Bengali for \"the ones\" or \"the things.\""
+ },
+ {
+  "name": "I_image_519_0",
+  "gt": "ଚିକିତ୍ସାଳୟ",
+  "pred": "The text in the image reads \"BBB\"."
+ },
+ {
+  "name": "I_image_519_1",
+  "gt": "ଉପଖଣ୍ଡ",
+  "pred": "The text in the image reads \"3333\"."
+ },
+ {
+  "name": "I_image_519_12",
+  "gt": "ମହଲା",
+  "pred": "The text in the image is \"সুন্দর\" which is Bengali for \"beautiful\"."
+ },
+ {
+  "name": "I_image_519_13",
+  "gt": "କାଯାକ୍ଷାନଗର",
+  "pred": "The text in the image is \"কোরাণের গল্প\" which translates to \"Stories from the Quran\" in English."
+ },
+ {
+  "name": "I_image_519_14",
+  "gt": "ଉପଖଣ୍ଡ",
+  "pred": "The text in the image is in Odia script and reads \"ঔষধ\" (Oushadha). In English, this translates to \"medicine\" or \"pharmacy.\""
+ },
+ {
+  "name": "I_image_519_15",
+  "gt": "ଚିକିତ୍ସାଳୟ",
+  "pred": "The text in the image appears to be in Chinese characters. The characters read from left to right are \"北京烤鸭\" (Běijīng kǎoyā), which translates to \"Beijing Roast Duck.\" This is a famous dish in Chinese cuisine, originating from Beijing, China."
+ },
+ {
+  "name": "I_image_519_16",
+  "gt": "ଢେଙ୍କାନାଳ",
+  "pred": "The text in the image reads \"60% off\"."
+ },
+ {
+  "name": "I_image_519_18",
+  "gt": "ନାୟକ",
+  "pred": "The text in the image is \"বিভাগ\". This is Bengali and it translates to \"Department\" or \"Division\" in English."
+ },
+ {
+  "name": "I_image_519_19",
+  "gt": "ପ୍ରସୂତୀ",
+  "pred": "The text in the image is \"0981\"."
+ },
+ {
+  "name": "I_image_519_2",
+  "gt": "ଗୁରୁବାର",
+  "pred": "The text in the image is \"তুমি তোমার\" which is in Bengali and translates to \"You are\" in English."
+ },
+ {
+  "name": "I_image_519_20",
+  "gt": "ବିଶେଷଜ୍ଞା)",
+  "pred": "The text in the image is \"รับสมัคร\". This is Thai and it translates to \"accepting applications\" or \"recruiting\" in English."
+ },
+ {
+  "name": "I_image_519_21",
+  "gt": "ପୋଗ",
+  "pred": "The text in the image reads \"SOLAR\"."
+ },
+ {
+  "name": "I_image_519_22",
+  "gt": "୯୪୩୭୨୨୮",
+  "pred": "The text in the image reads \"189999\"."
+ },
+ {
+  "name": "I_image_519_23",
+  "gt": "(ଉପର",
+  "pred": "The text in the image is \"1990\"."
+ },
+ {
+  "name": "I_image_519_24",
+  "gt": "୭୮ଃ",
+  "pred": "The text in the image reads \"978\"."
+ },
+ {
+  "name": "I_image_519_25",
+  "gt": "୭୩୮",
+  "pred": "The text in the image is \"99%\"."
+ },
+ {
+  "name": "I_image_519_26",
+  "gt": "ମା",
+  "pred": "The text in the image is \"RI\"."
+ },
+ {
+  "name": "I_image_519_27",
+  "gt": "କାମାକ୍ଷାନଗର",
+  "pred": "The text in the image reads \"টিজেন্স\" which appears to be in Bengali script."
+ },
+ {
+  "name": "I_image_519_28",
+  "gt": "କାମାକ୍ଷାନଗର",
+  "pred": "The text in the image reads \"BBBIBIBI\"."
+ },
+ {
+  "name": "I_image_519_29",
+  "gt": "ସାମ୍ନା",
+  "pred": "The text in the image is \"girl\"."
+ },
+ {
+  "name": "I_image_519_3",
+  "gt": "ପ୍ରତ୍ୟେକ",
+  "pred": "The text in the image is \"গোলাক\" which is Bengali for \"Golaak\"."
+ },
+ {
+  "name": "I_image_519_30",
+  "gt": "ମେଡିକାଲ",
+  "pred": "The text in the image is \"欢迎光临\". This is Chinese and translates to \"Welcome\" in English."
+ },
+ {
+  "name": "I_image_519_31",
+  "gt": "ଓ କ୍ଲିନିକ୍",
+  "pred": "The text in the image is \"এ অ র ক\". This appears to be in Bengali script, which is used primarily in Bangladesh and West Bengal, India. The characters can be transliterated into Latin script as \"E Ar K\"."
+ },
+ {
+  "name": "I_image_519_32",
+  "gt": "ଡାଇଗ୍ନୋଷ୍ଟକ",
+  "pred": "The text in the image is in Odia script and reads \"বাঙালি বাংলা\". This translates to \"Bengali\" in English, referring to the Bengali language spoken primarily in the Indian state of West Bengal and Bangladesh."
+ },
+ {
+  "name": "I_image_519_33",
+  "gt": "୧୧୮୩୯୯୪",
+  "pred": "The text in the image reads \"per precio\"."
+ },
+ {
+  "name": "I_image_519_34",
+  "gt": "ପୋଗା",
+  "pred": "The text in the image is \"60101\"."
+ },
+ {
+  "name": "I_image_519_4",
+  "gt": "ସମୟ",
+  "pred": "The text in the image reads \"QR\"."
+ },
+ {
+  "name": "I_image_519_5",
+  "gt": "ପରାମର୍ଶ",
+  "pred": "The text in the image reads \"BIRING\"."
+ },
+ {
+  "name": "I_image_519_6",
+  "gt": "ଚିବାର",
+  "pred": "The text in the image is \"66010\"."
+ },
+ {
+  "name": "I_image_519_7",
+  "gt": "ସ୍ତ୍ରୀ ଓ",
+  "pred": "The text in the image is \"১০\"."
+ },
+ {
+  "name": "I_image_519_8",
+  "gt": "ଡ଼ା.କଳ୍ପନା",
+  "pred": "The text in the image is \"২১. মাস্টার\" which translates to \"21. Master\" in English."
+ },
+ {
+  "name": "I_image_52_0",
+  "gt": "ସାହି",
+  "pred": "The text in the image is \"প্রাণি\" which is written in Bengali script. It translates to \"animal\" in English."
+ },
+ {
+  "name": "I_image_52_1",
+  "gt": "ଠାକୁରାଣୀ",
+  "pred": "The text in the image is in Odia script and reads \"ঈক্ষুয়াল\" (Ekshual)."
+ },
+ {
+  "name": "I_image_52_2",
+  "gt": "ମା",
+  "pred": "The text in the image is \"br\"."
+ },
+ {
+  "name": "I_image_52_3",
+  "gt": "ବନଦୁର୍ଗା",
+  "pred": "The text in the image is \"ধন্যবাদ\" which is Bengali and means \"Thank you\" in English."
+ },
+ {
+  "name": "I_image_52_4",
+  "gt": "ବାସେଳୀ",
+  "pred": "The text in the image is \"পায়েল\" which is written in Bengali script."
+ },
+ {
+  "name": "I_image_520_0",
+  "gt": "ଷ୍ଟୋର",
+  "pred": "The text in the image is \"691\"."
+ },
+ {
+  "name": "I_image_520_1",
+  "gt": "ମହଲା)",
+  "pred": "The text in the image reads \"OPAL\"."
+ },
+ {
+  "name": "I_image_520_10",
+  "gt": "ପୋରା",
+  "pred": "The text in the image is \"6018\"."
+ },
+ {
+  "name": "I_image_520_11",
+  "gt": "୭୩୮୧୧୮୩୯୯୪",
+  "pred": "The text in the image reads \"spect\"."
+ },
+ {
+  "name": "I_image_520_12",
+  "gt": "କାମାକ୍ଷାନଗର",
+  "pred": "The text in the image is \"এই কাজটির সময়.\" This translates to \"The time for this work\" in English."
+ },
+ {
+  "name": "I_image_520_13",
+  "gt": "ଓ କ୍ଳିନିକ",
+  "pred": "The text in the image reads \"3 4 5 6\"."
+ },
+ {
+  "name": "I_image_520_14",
+  "gt": "(ଉପର",
+  "pred": "The text in the image is \"QQQ\"."
+ },
+ {
+  "name": "I_image_520_16",
+  "gt": "ମା",
+  "pred": "The text in the image is \"R\"."
+ },
+ {
+  "name": "I_image_520_17",
+  "gt": "ଯୋଗ-",
+  "pred": "The text in the image reads \"GOIG\"."
+ },
+ {
+  "name": "I_image_520_18",
+  "gt": "ବିଶେଷଜ୍ଞା)",
+  "pred": "The text in the image reads \"190000\"."
+ },
+ {
+  "name": "I_image_520_19",
+  "gt": "ଗୁରୁବାର",
+  "pred": "The text in the image is in Odia script and reads \"ঈশ্বর\"."
+ },
+ {
+  "name": "I_image_520_2",
+  "gt": "ଚି଼କିତ୍ସାଳୟ",
+  "pred": "The text in the image appears to be a sequence of characters that do not form a standard word or phrase in any known language. It looks like a random string of letters and numbers. If you have a specific question about this text or need help with something related to it, please let me know!"
+ },
+ {
+  "name": "I_image_520_20",
+  "gt": "ପରାମର୍ଶ",
+  "pred": "The text in the image is \"2019\"."
+ },
+ {
+  "name": "I_image_520_21",
+  "gt": "ଡ଼ା.କଳ୍ପ",
+  "pred": "The text in the image appears to be in Bengali script. It reads \"কে, যে নি\" which translates to \"who, that is\" in English."
+ },
+ {
+  "name": "I_image_520_22",
+  "gt": "ଚିକିତ୍ସାଳୟ",
+  "pred": "The text in the image is \"প্রকৃতির বিজ্ঞান\" which translates to \"Science of Nature\" in English."
+ },
+ {
+  "name": "I_image_520_3",
+  "gt": "ଉପଖଣ୍ଡ",
+  "pred": "The text in the image is \"জন্মদিন\" which translates to \"Birthday\" in English."
+ },
+ {
+  "name": "I_image_520_4",
+  "gt": "କାମାକ୍ଷା",
+  "pred": "The text in the image is \"IBIRIO\"."
+ },
+ {
+  "name": "I_image_520_5",
+  "gt": "ନଗର",
+  "pred": "The text in the image is \"৩৩৩\". This appears to be a Bengali numeral, which translates to \"333\" in English."
+ },
+ {
+  "name": "I_image_520_6",
+  "gt": "ଜ୍ଞାନଗର",
+  "pred": "The text in the image is \"আদর্শ\" which is Bengali and translates to \"standard\" or \"ideal\" in English."
+ },
+ {
+  "name": "I_image_520_7",
+  "gt": "ନାୟକ",
+  "pred": "The text in the image is \"欢迎光临\". This is Chinese and translates to \"Welcome\" or \"Welcome to\" in English."
+ },
+ {
+  "name": "I_image_520_8",
+  "gt": "ସମୟ",
+  "pred": "The text in the image is \"999\"."
+ },
+ {
+  "name": "I_image_520_9",
+  "gt": "ବିଭାଗ",
+  "pred": "The text in the image reads \"6010\"."
+ },
+ {
+  "name": "I_image_520_23",
+  "gt": "ନାଳ",
+  "pred": "The text in the image is \"916\"."
+ },
+ {
+  "name": "I_image_520_27",
+  "gt": "ଡାଇରେ",
+  "pred": "The text in the image is \"QQ邮箱\". This translates to \"QQ Mail\" or \"QQ Email\" in English, which refers to an email service provided by Tencent."
+ },
+ {
+  "name": "I_image_520_28",
+  "gt": "କ",
+  "pred": "The text in the image is \"a\"."
+ },
+ {
+  "name": "I_image_520_29",
+  "gt": "ମେ",
+  "pred": "The text in the image is \"69\"."
+ },
+ {
+  "name": "I_image_521_11",
+  "gt": "ଶୌଗୁଳୟ",
+  "pred": "The text in the image is in Odia script and reads \"নীলকণ্ঠ\"."
+ },
+ {
+  "name": "I_image_521_12",
+  "gt": "ଭୁବନେଶ୍ବର",
+  "pred": "The text in the image is \"ভারতের জনসংখ্যা\" which translates to \"Population of India\" in English."
+ },
+ {
+  "name": "I_image_521_13",
+  "gt": "ମହାନଗର",
+  "pred": "The text in the image is \"সুন্দর\" which is Bengali for \"beautiful\"."
+ },
+ {
+  "name": "I_image_521_14",
+  "gt": "ନିଗମ",
+  "pred": "The text in the image is \"विजय\"."
+ },
+ {
+  "name": "I_image_521_2",
+  "gt": "ସ୍ନାନାଗାର",
+  "pred": "The text in the image is \"q1913\"."
+ },
+ {
+  "name": "I_image_548_1",
+  "gt": "ପୁରୀ",
+  "pred": "The text in the image is \"ఎల్\" which is in Telugu script. It translates to \"El\" in English."
+ },
+ {
+  "name": "I_image_548_20",
+  "gt": "ନିରାମିଷ",
+  "pred": "The text in the image is \"ଓଡ଼ିଆ\". This is the name of the Odia language, which is also known as Oriya."
+ },
+ {
+  "name": "I_image_548_22",
+  "gt": "ଶୁଭମ",
+  "pred": "The text in the image is \"100%\"."
+ },
+ {
+  "name": "I_image_548_23",
+  "gt": "ଭୋଜନାଳୟ",
+  "pred": "The text in the image reads \"SOMETHING\"."
+ },
+ {
+  "name": "I_image_548_26",
+  "gt": "ପୋଲିସ୍",
+  "pred": "The text in the image is \"এটিভি\" which is Bengali for \"ETV\"."
+ },
+ {
+  "name": "I_image_548_29",
+  "gt": "ଭୋଜନାଳୟ",
+  "pred": "The text in the image is \"60102018\"."
+ },
+ {
+  "name": "I_image_548_30",
+  "gt": "ମା'କାଳୀକା",
+  "pred": "The text in the image is \"রাজকীয়\" which is Bengali and translates to \"Royal\" in English."
+ },
+ {
+  "name": "I_image_55_13",
+  "gt": "ପ୍ରଦର୍ଶନ",
+  "pred": "The text in the image is \"গোল্ড\" which is Bengali for \"Gold\"."
+ },
+ {
+  "name": "I_image_55_16",
+  "gt": "ରାଜ୍ୟ କଳା ଓ ହସ୍ତଶିଳ୍ପ",
+  "pred": "The text in the image is \"कौरवां की जाति\" which translates to \"Kauravas' clan\" in English. The Kauravas were one of the two groups of princes in the Indian epic Mahabharata, the other being the Pandav"
+ },
+ {
+  "name": "I_image_55_17",
+  "gt": "ଗଣ୍ଡମୁଣ୍ଡା,",
+  "pred": "The text in the image is \"গুলি\" which is Bengali and translates to \"the ones\" or \"the things\" in English."
+ },
+ {
+  "name": "I_image_55_24",
+  "gt": "ହସ୍ତ ଓ କୁଟୀରଶିଳ୍ପ",
+  "pred": "The text in the image is \"রাজ্যগুলি\" which is Bengali and translates to \"States\" in English."
+ },
+ {
+  "name": "I_image_55_25",
+  "gt": "ଓଡିଶା,",
+  "pred": "The text in the image is \"অট্টা,\" which appears to be in Bengali script. The meaning or context of this word would depend on the specific dialect and region where it is used, as Bengali can vary significantly across different areas. If you have more context about where this text is from,"
+ },
+ {
+  "name": "I_image_55_32",
+  "gt": "ଭୁବନେଶ୍ବର",
+  "pred": "The text in the image is \"তুলনায়\" which is Bengali and translates to \"compared\" or \"by comparison\" in English."
+ },
+ {
+  "name": "I_image_55_33",
+  "gt": "ନିର୍ଦ୍ଦେଶାଳୟ,",
+  "pred": "The text in the image is \"కొద్దిగా.\" This is Telugu, and it translates to \"a little\" or \"a bit\" in English."
+ },
+ {
+  "name": "I_image_55_34",
+  "gt": "ସହାୟତା-",
+  "pred": "The text in the image is \"1987년\". This is Korean for \"1987 year\"."
+ },
+ {
+  "name": "I_image_55_4",
+  "gt": "ଭୁବନେଶ୍ବର",
+  "pred": "The text in the image is \"তুলনামূলক\" which translates to \"Comparative\" in English."
+ },
+ {
+  "name": "I_image_55_5",
+  "gt": "ବିକାଶ ଅନୁଷ୍ଠାନ,",
+  "pred": "The text in the image is \"তোমার জন্মদিনে\" which translates to \"Happy Birthday\" in English."
+ },
+ {
+  "name": "I_image_55_8",
+  "gt": "ଟେରାକୋଟା",
+  "pred": "The text in the image is \"গোলাপিগঞ্জ\"."
+ },
+ {
+  "name": "I_image_55_9",
+  "gt": "ମୃଭିଜା ହସ୍ତଶିଳ୍ପ",
+  "pred": "The text in the image is in Odia script and reads \"ତୁଲିକା\" which translates to \"List\" or \"Table\" in English."
+ },
+ {
+  "name": "I_image_558_10",
+  "gt": "ଉତ୍କଳ",
+  "pred": "The text in the image is \"இந்திய\". This is the Tamil script for \"India\"."
+ },
+ {
+  "name": "I_image_558_11",
+  "gt": "ଗ୍ରାମୀଗ",
+  "pred": "The text in the image is \"তালে\" which is written in Bengali script."
+ },
+ {
+  "name": "I_image_558_13",
+  "gt": "ବ୍ୟାଙ୍କ",
+  "pred": "The text in the image is \"পাকা\" which is written in Bengali script. The English translation of this word is \"cooked.\""
+ },
+ {
+  "name": "I_image_558_14",
+  "gt": "ଣାଖା",
+  "pred": "The text in the image is \"গান\" which is Bengali for \"song\"."
+ },
+ {
+  "name": "I_image_558_17",
+  "gt": "ଭାରତୀୟ",
+  "pred": "The text in the image is \"090918\"."
+ },
+ {
+  "name": "I_image_558_18",
+  "gt": "ବ୍ୟାଙ୍କ",
+  "pred": "The text in the image reads \"紫砂壶\" which translates to \"Zisha teapot\" in English. Zisha is a type of clay used for making teapots, known for its unique texture and ability to improve the flavor of tea over time."
+ },
+ {
+  "name": "I_image_558_19",
+  "gt": "ପ୍ରାୟୋଜିତ",
+  "pred": "The text in the image is \"ప్రభుత్వం\". This is Telugu for \"Government\"."
+ },
+ {
+  "name": "I_image_558_2",
+  "gt": "ବରଗାଁ",
+  "pred": "The text in the image is \"ଓଡ଼ିଆ\". This is the Odia script, which is used to write the Odia language, spoken primarily in the Indian state of Odisha."
+ },
+ {
+  "name": "I_image_558_20",
+  "gt": "ଶାଖା",
+  "pred": "The text in the image is \"বাংলা\" which is the word for \"Bengali\" in English."
+ },
+ {
+  "name": "I_image_558_3",
+  "gt": "ଦ୍ୱାରା",
+  "pred": "The text in the image reads \"GHOST\"."
+ },
+ {
+  "name": "I_image_558_4",
+  "gt": "ଷ୍ଟେଟ୍",
+  "pred": "The text in the image is \"686\"."
+ },
+ {
+  "name": "I_image_558_6",
+  "gt": "ବ୍ୟାଙ୍କ",
+  "pred": "The text in the image is \"তারে\" which is in Bengali script. It translates to \"Tare\" in English."
+ },
+ {
+  "name": "I_image_558_7",
+  "gt": "ଗ୍ରାମୀଣ",
+  "pred": "The text in the image is \"916\"."
+ },
+ {
+  "name": "I_image_558_8",
+  "gt": "ଉତ୍କଳ",
+  "pred": "The text in the image is \"ବିଶ୍ୟ\". This is written in the Odia script, which is used to write the Odia language, a language spoken primarily in the Indian state of Odisha."
+ },
+ {
+  "name": "I_image_558_9",
+  "gt": "ବରଗାଁ",
+  "pred": "The text in the image is \"ଉଳ୍ଳିଣ୍ଡିଆ\"."
+ },
+ {
+  "name": "I_image_563_17",
+  "gt": "ବ୍ୟାଙ୍କ",
+  "pred": "The text in the image is \"পাকি\" which is Bengali for \"Paki\"."
+ },
+ {
+  "name": "I_image_563_57",
+  "gt": "ନେବା",
+  "pred": "The text in the image reads \"697\"."
+ },
+ {
+  "name": "I_image_563_58",
+  "gt": "ପରିସର",
+  "pred": "The text in the image is \"একটি সংখ্যা\" which translates to \"a number\" in English."
+ },
+ {
+  "name": "I_image_563_59",
+  "gt": "ଇତ୍ୟାଦି",
+  "pred": "The text in the image is \"6096\"."
+ },
+ {
+  "name": "I_image_563_60",
+  "gt": "ଛାତ",
+  "pred": "The text in the image is \"11 110\"."
+ },
+ {
+  "name": "I_image_563_61",
+  "gt": "ଏବଂ",
+  "pred": "The text in the image is \"你\"."
+ },
+ {
+  "name": "I_image_563_62",
+  "gt": "ଷ୍ଟେଟ୍",
+  "pred": "The text in the image is \"666\"."
+ },
+ {
+  "name": "I_image_563_63",
+  "gt": "ଦ୍ରବ୍ୟ",
+  "pred": "The text in the image reads \"084\"."
+ },
+ {
+  "name": "I_image_563_64",
+  "gt": "ରନ୍ଧା ଖାଦ୍ୟ",
+  "pred": "The text in the image reads:\n\n```\nS1, S2, S3, ..., Sn\n```"
+ },
+ {
+  "name": "I_image_563_65",
+  "gt": "ଫୋନ୍,",
+  "pred": "The text in the image is \"6019\"."
+ },
+ {
+  "name": "I_image_563_66",
+  "gt": "କ୍ୟାମେରା,",
+  "pred": "The text in the image reads \"TARSIE\"."
+ },
+ {
+  "name": "I_image_563_67",
+  "gt": "ଜୋତା,",
+  "pred": "The text in the image reads \"SEIGL\"."
+ },
+ {
+  "name": "I_image_563_68",
+  "gt": "ପ୍ରବେଶ",
+  "pred": "The text in the image is \"ଓଡ଼ିଆ\". This is the Odia script, which is used to write the Odia language, one of the major languages spoken in India."
+ },
+ {
+  "name": "I_image_563_69",
+  "gt": "ହିଁ",
+  "pred": "The text in the image reads \"RC\"."
+ },
+ {
+  "name": "I_image_563_70",
+  "gt": "ହିନ୍ଦୁମାନେ",
+  "pred": "The text in the image is \"ଉଇବ୍ସାଇଟ\". This appears to be in the Odia script, which is used primarily in the Indian state of Odisha and in some neighboring regions. The word \"ଉଇବ୍ସ"
+ },
+ {
+  "name": "I_image_563_71",
+  "gt": "କେବଳ",
+  "pred": "The text in the image is \"6999\"."
+ },
+ {
+  "name": "I_image_563_72",
+  "gt": "ଶ୍ରୀଜଗନ୍ନାଥ",
+  "pred": "The text in the image is in Odia script and reads \"প্রকাশিত\"."
+ },
+ {
+  "name": "I_image_563_73",
+  "gt": "ଭାରତାୟ",
+  "pred": "The text in the image is \"বিশ্বাস\". This is Bengali and it translates to \"Belief\" or \"Trust\" in English."
+ },
+ {
+  "name": "I_image_563_74",
+  "gt": "ମନ୍ଦିର",
+  "pred": "The text in the image is \"ନିଜୀ\". This appears to be in the Odia script, which is used for writing the Odia language, spoken primarily in the Indian state of Odisha. The word \"ନିଜୀ\" (nijī"
+ },
+ {
+  "name": "I_image_563_75",
+  "gt": "ଭିତରେ",
+  "pred": "The text in the image is \"ପ୍ରେସ\". This is the Odia (Oriya) word for \"press\"."
+ },
+ {
+  "name": "I_image_563_76",
+  "gt": "କରିପାରିବେ",
+  "pred": "The text in the image is in Odia script and reads \"କେଉଳିବାହୁ\"."
+ },
+ {
+  "name": "I_image_563_77",
+  "gt": "ଛତା,ବେଲ୍ଟ,",
+  "pred": "The text in the image reads \"801.669\"."
+ },
+ {
+  "name": "I_image_563_78",
+  "gt": "ମୋବାଇଲ୍",
+  "pred": "The text in the image is \"691018\"."
+ },
+ {
+  "name": "I_image_563_79",
+  "gt": "ମାଦକ",
+  "pred": "The text in the image reads \"gloo\"."
+ },
+ {
+  "name": "I_image_563_80",
+  "gt": "ମାରଣାସ୍ତ୍ର",
+  "pred": "The text in the image is \"রাজা\" which is Bengali for \"King\"."
+ },
+ {
+  "name": "I_image_563_81",
+  "gt": "ଚମଚା",
+  "pred": "The text in the image is \"9910\"."
+ },
+ {
+  "name": "I_image_563_82",
+  "gt": "ଦ୍ରବ୍ୟ",
+  "pred": "The text in the image is \"1991\"."
+ },
+ {
+  "name": "I_image_563_83",
+  "gt": "ଶ୍ରୀମନ୍ଦିର",
+  "pred": "The text in the image is \"กูริเอ็ง\" which appears to be in Thai script. It translates to \"Gourin\" in English, but it's important to note that this could be a transliteration of a name or a word from another language. If you have more context about where"
+ },
+ {
+  "name": "I_image_563_85",
+  "gt": "ମଧ୍ୟକୁ",
+  "pred": "The text in the image is \"90%\"."
+ },
+ {
+  "name": "I_image_563_86",
+  "gt": "ନିଷେଧା",
+  "pred": "The text in the image is \"วิธีการ\" which translates to \"method\" or \"way\" in English."
+ },
+ {
+  "name": "I_image_563_120",
+  "gt": "ସିଂହଦ୍ବାର ଭକ୍ତନିବାସ",
+  "pred": "The text in the image is \"রাজ্য পরিষদ\" which translates to \"State Parliament\" in English."
+ },
+ {
+  "name": "I_image_563_125",
+  "gt": "ଲଜ୍",
+  "pred": "The text in the image is \"北京\". This is the Chinese name for Beijing, which is the capital city of China."
+ },
+ {
+  "name": "I_image_563_126",
+  "gt": "କରିନେଲେ",
+  "pred": "The text in the image reads \"100% natural\"."
+ },
+ {
+  "name": "I_image_566_12",
+  "gt": "ମିଣ",
+  "pred": "The text in the image is \"回包\"."
+ },
+ {
+  "name": "I_image_566_18",
+  "gt": "ଏକାଠି",
+  "pred": "The text in the image is \"একটি\"."
+ },
+ {
+  "name": "I_image_566_19",
+  "gt": "ସଭିଏଁ",
+  "pred": "The text in the image is \"এটিজ\" which appears to be in Bengali script. The characters can be transliterated into Roman script as \"Etij.\""
+ },
+ {
+  "name": "I_image_566_2",
+  "gt": "ଗପୁ",
+  "pred": "The text in the image appears to be a mathematical expression or a sequence of characters that might represent a variable or a function. However, without additional context, it's difficult to determine its exact meaning. If you have more information about the context in which this text appears, please provide it so I can assist you better."
+ },
+ {
+  "name": "I_image_566_20",
+  "gt": "ନିମନ୍ତେ",
+  "pred": "The text in the image is \"ติดต่อ\". This is Thai and it translates to \"contact\" or \"contact us\" in English."
+ },
+ {
+  "name": "I_image_566_21",
+  "gt": "୨୦୨୨",
+  "pred": "The text in the image is \"9099\"."
+ },
+ {
+  "name": "I_image_566_27",
+  "gt": "ଣେଖର",
+  "pred": "The text in the image reads \"6618402\"."
+ },
+ {
+  "name": "I_image_566_28",
+  "gt": "ଦାମ୍ର",
+  "pred": "The text in the image reads \"β/β\"."
+ },
+ {
+  "name": "I_image_566_35",
+  "gt": "ଗାଯ୍ଭତ୍ରୀ",
+  "pred": "The text in the image is \"归根结底\"."
+ },
+ {
+  "name": "I_image_566_37",
+  "gt": "ଅ",
+  "pred": "The text in the image is \"12\"."
+ },
+ {
+  "name": "I_image_566_43",
+  "gt": "ଉଇକିମାନିଆ",
+  "pred": "The text in the image is in Odia script and reads \"ঔକ୍ତରିଥ।\""
+ },
+ {
+  "name": "I_image_566_44",
+  "gt": "ଭୁବନେଶ୍ବର",
+  "pred": "The text in the image is in Odia script and reads \"বাবা মুখোপাধ্যায়\" which translates to \"Father Mukhopadhyay\" in English."
+ },
+ {
+  "name": "I_image_566_46",
+  "gt": "ଖୋଲା",
+  "pred": "The text in the image is \"গুলি\" which is written in Bengali script. It translates to \"the ones\" or \"the things\" in English."
+ },
+ {
+  "name": "I_image_566_47",
+  "gt": "ଜ୍ଞାନ",
+  "pred": "The text in the image is \"মেদ\" which is Bengali for \"med\" or \"medicine\" in English."
+ },
+ {
+  "name": "I_image_566_62",
+  "gt": "ଖାନ୍",
+  "pred": "The text in the image reads \"δ41Q\"."
+ },
+ {
+  "name": "I_image_566_71",
+  "gt": "ସାଦୁ",
+  "pred": "The text in the image reads \"爱丽丝\" which is Chinese for \"Alice\"."
+ },
+ {
+  "name": "I_image_68_0",
+  "gt": "ବନଖଣ୍",
+  "pred": "The text in the image is \"0261\"."
+ },
+ {
+  "name": "I_image_68_1",
+  "gt": "ବନ୍ଯପ୍ରାଶୀ",
+  "pred": "The text in the image is \"ওয়ালা\"."
+ },
+ {
+  "name": "I_image_68_10",
+  "gt": "ଭାଳୁ",
+  "pred": "The text in the image is \"qim\"."
+ },
+ {
+  "name": "I_image_68_11",
+  "gt": "ଚଳପ୍ରଚଳ",
+  "pred": "The text in the image is \"মেরু\"."
+ },
+ {
+  "name": "I_image_68_12",
+  "gt": "ବାଲେଶ୍ବର",
+  "pred": "The text in the image is \"gismag\"."
+ },
+ {
+  "name": "I_image_68_13",
+  "gt": "ସତର୍କତାର",
+  "pred": "The text in the image is \"মোল্ডে\"."
+ },
+ {
+  "name": "I_image_68_14",
+  "gt": "ସହ",
+  "pred": "The text in the image is \"জু\" which is Bengali for \"ju\"."
+ },
+ {
+  "name": "I_image_68_15",
+  "gt": "ଜଙ୍ଗଲ",
+  "pred": "The text in the image is \"M&M\"."
+ },
+ {
+  "name": "I_image_68_16",
+  "gt": "ଏବଂ",
+  "pred": "The text in the image is \"VQo\"."
+ },
+ {
+  "name": "I_image_68_17",
+  "gt": "ଦବା",
+  "pred": "The text in the image is \"৫০\" which is the Bengali numeral for 50."
+ },
+ {
+  "name": "I_image_68_18",
+  "gt": "ଆମ",
+  "pred": "The text in the image is \"અર\". This appears to be in the Gujarati script, which is used for the Gujarati language spoken primarily in the Indian state of Gujarat."
+ },
+ {
+  "name": "I_image_68_19",
+  "gt": "ବଛାଞ୍ଚଳ,",
+  "pred": "The text in the image is \"ওয়েলি\"."
+ },
+ {
+  "name": "I_image_68_2",
+  "gt": "ଯିବା",
+  "pred": "The text in the image is \"இலை\". This is a Tamil word that means \"leaf\" in English."
+ },
+ {
+  "name": "I_image_68_20",
+  "gt": "ବନ୍ଯପ୍ରାଣା",
+  "pred": "The text in the image is \"এছাড়াও\" which translates to \"also\" or \"in addition\" in English."
+ },
+ {
+  "name": "I_image_68_21",
+  "gt": "ନୀଳଗିରି,",
+  "pred": "The text in the image is \"ดีลิลิ\"."
+ },
+ {
+  "name": "I_image_68_22",
+  "gt": "କର୍ତ୍ତବ୍ଯ",
+  "pred": "The text in the image is \"এলএল৪\" which appears to be in Bengali script. The characters can be transliterated as \"Elal 4\"."
+ },
+ {
+  "name": "I_image_68_23",
+  "gt": "ସମସ୍ତଙ୍କର",
+  "pred": "The text in the image is \"এখানে\"."
+ },
+ {
+  "name": "I_image_68_24",
+  "gt": "ପଶୁପକ୍ଷୀଙ୍କୁ",
+  "pred": "The text in the image is \"এই একটা\". This is Bengali and it translates to \"This one\" in English."
+ },
+ {
+  "name": "I_image_68_25",
+  "gt": "ଆସିବା",
+  "pred": "The text in the image is \"খাওয়াল\" which is Bengali and translates to \"eat\" or \"food\" in English."
+ },
+ {
+  "name": "I_image_68_3",
+  "gt": "ଅଞ୍ଚଳ",
+  "pred": "The text in the image is \"খেল\"."
+ },
+ {
+  "name": "I_image_68_4",
+  "gt": "ବିଭାଗ",
+  "pred": "The text in the image is \"ওয়েল\"."
+ },
+ {
+  "name": "I_image_68_5",
+  "gt": "ଓ",
+  "pred": "The text in the image is \"G\"."
+ },
+ {
+  "name": "I_image_68_6",
+  "gt": "ଜଙ୍ଗଲ",
+  "pred": "The text in the image is \"গৃহ\" which is Bengali for \"home\"."
+ },
+ {
+  "name": "I_image_68_7",
+  "gt": "ଓଡ଼ିଶା",
+  "pred": "The text in the image is \"ଓଡ଼ିଆ\". This is the Odia script, which is used to write the Odia language, one of the major languages spoken in India."
+ },
+ {
+  "name": "I_image_68_8",
+  "gt": "ସରକାର",
+  "pred": "The text in the image is in Odia script and reads \"ওଡ଼ିଆ\"."
+ },
+ {
+  "name": "I_image_68_9",
+  "gt": "ପରିବେଶ",
+  "pred": "The text in the image is \"ଛିଲେ\" which is in the Odia script. It translates to \"were\" or \"had been\" in English."
+ },
+ {
+  "name": "I_image_68_26",
+  "gt": "କର",
+  "pred": "The text in the image is \"গু\" which is Bengali for \"gu\"."
+ },
+ {
+  "name": "I_image_72_0",
+  "gt": "ଗୃନ୍ଦବାଲି",
+  "pred": "The text in the image is \"লুপ্তকি\" which appears to be in Bengali script."
+ },
+ {
+  "name": "I_image_72_1",
+  "gt": "ମା ତାରିଣୀ",
+  "pred": "The text in the image is \"জাতীয়\" which translates to \"National\" in English."
+ },
+ {
+  "name": "I_image_72_2",
+  "gt": "ପାଳିକା",
+  "pred": "The text in the image is \"वाली\"."
+ },
+ {
+  "name": "I_image_72_3",
+  "gt": "ଜୟ",
+  "pred": "The text in the image is \"వీర\"."
+ },
+ {
+  "name": "I_image_72_4",
+  "gt": "ପୌର",
+  "pred": "The text in the image is \"এটীও\" which is Bengali for \"ETIO\"."
+ },
+ {
+  "name": "I_image_72_5",
+  "gt": "ଭଦ୍ରକ",
+  "pred": "The text in the image reads \"qqq\"."
+ },
+ {
+  "name": "I_image_72_6",
+  "gt": "ନୂଆ",
+  "pred": "The text in the image is \"দুধ\" which is Bengali for \"milk\"."
+ },
+ {
+  "name": "I_image_72_7",
+  "gt": "ବସ୍‌ଷ୍ଟାଣ୍ଡ",
+  "pred": "The text in the image is in Odia script and reads \"বাংলা\" which translates to \"Bengali\" in English."
+ },
+ {
+  "name": "I_image_72_8",
+  "gt": "ଭଦ୍ରକ",
+  "pred": "The text in the image is \"ενεργεια\"."
+ },
+ {
+  "name": "I_image_77_2",
+  "gt": "କିଡ",
+  "pred": "The text in the image is \"লি এ\" which appears to be in Bengali script."
+ },
+ {
+  "name": "I_image_77_6",
+  "gt": "ଜେଣ୍ଟସ୍",
+  "pred": "The text in the image is \"গুল্ম\" which is written in Bengali script. It translates to \"grass\" in English."
+ },
+ {
+  "name": "I_image_77_7",
+  "gt": "ଆଣ୍ତ",
+  "pred": "The text in the image is \"થી જે\". This appears to be in Gujarati script, which is used in the Indian state of Gujarat and in some neighboring regions. The words translate to \"from which\" or \"since\" in English."
+ },
+ {
+  "name": "I_image_77_9",
+  "gt": "ସେଲୁନ୍",
+  "pred": "The text in the image reads \"69%\"."
+ },
+ {
+  "name": "I_image_83_14",
+  "gt": "ନୂଆ",
+  "pred": "The text in the image is \"ত্রুটি,\" which is Bengali and translates to \"error\" or \"mistake\" in English."
+ },
+ {
+  "name": "I_image_83_5",
+  "gt": "ଭୁବନେଶ୍ବର",
+  "pred": "The text in the image is in Odia script and reads \"ଉଳାଦିଗୁଡ଼ି\"."
+ },
+ {
+  "name": "I_image_83_6",
+  "gt": "ଦିଲ୍ଲୀ",
+  "pred": "The text in the image is in Odia script and reads \"ବିମୁ\" which transliterates to \"vimu\" in English."
+ },
+ {
+  "name": "I_image_84_3",
+  "gt": "ରାଜଧାନୀ",
+  "pred": "The text in the image is \"বাংলা\" which means \"Bengali\" in English."
+ },
+ {
+  "name": "I_image_84_7",
+  "gt": "ଏକ୍ସପ୍ରେସ୍",
+  "pred": "The text in the image is \"ββ9βγΔ\"."
+ },
+ {
+  "name": "I_image_94_0",
+  "gt": "ପୂଜାପିଠ",
+  "pred": "The text in the image appears to be in Thai and reads \"ถูดยิ้ม\". This translates to \"smile\" or \"smiling\" in English."
+ },
+ {
+  "name": "I_image_94_1",
+  "gt": "ପାଚକୋ",
+  "pred": "The text in the image is \"1.3333\"."
+ },
+ {
+  "name": "I_image_94_2",
+  "gt": "ରିମଡିଆଁ",
+  "pred": "The text in the image is in Odia script and reads \"ঈগলিথ\" (Eigalith)."
+ },
+ {
+  "name": "I_image_94_3",
+  "gt": "ବଣ୍ଡାଘର)",
+  "pred": "The text in the image is in Odia script and reads \"ঈগলী\" (Eigali)."
+ },
+ {
+  "name": "I_image_98_3",
+  "gt": "ଛ ତ୍ର ପୁ ର",
+  "pred": "The text in the image is \"Q2 Q3 Q4\"."
+ },
+ {
+  "name": "I_image_98_4",
+  "gt": "କୋର୍ଟ",
+  "pred": "The text in the image is \"6913\"."
+ }
+]

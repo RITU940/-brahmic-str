@@ -1,0 +1,12 @@
+{
+ "model": "Qwen/Qwen2.5-VL-7B-Instruct",
+ "script": "gujarati",
+ "N": 1015,
+ "WRR_prereg_exact": 0.0,
+ "WRR_prereg_lenient": 0.39,
+ "WRR_extracted": 0.3,
+ "CER_extracted": 126.86,
+ "CharAcc_extracted": -26.86,
+ "pct_quoted_span": 98.1,
+ "extraction": "first double-quoted span; else lead-in strip + first clause"
+}

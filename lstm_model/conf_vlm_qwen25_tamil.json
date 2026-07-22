@@ -1,0 +1,2567 @@
+[
+ {
+  "name": "D_image_635_13",
+  "gt": "ஐஐடி",
+  "pred": "The text in the image is \"力\"."
+ },
+ {
+  "name": "D_image_635_14",
+  "gt": "வித்யாலயா",
+  "pred": "The text in the image is \"வித்யாலயம்\" which translates to \"School\" in English."
+ },
+ {
+  "name": "D_image_635_15",
+  "gt": "கேந்திரிய",
+  "pred": "The text in the image is \"கொந்தியிய\". This appears to be in Tamil script, which is used for writing the Tamil language. The meaning or context of this word would depend on its usage in a sentence or within a specific cultural or linguistic context. If you need more"
+ },
+ {
+  "name": "F_image_115_25",
+  "gt": "கோழிக்கோடு",
+  "pred": "The text in the image is \"கோழிக்கெளி\" which is Tamil for \"Cowpea\"."
+ },
+ {
+  "name": "F_image_616_0",
+  "gt": "தலைவா்",
+  "pred": "The text in the image is \"இரும்புத் தொழில்நுட்பம்\" which translates to \"Iron Technology\" in English."
+ },
+ {
+  "name": "F_image_616_1",
+  "gt": "நிலையம்",
+  "pred": "The text in the image is \"Kooyam\"."
+ },
+ {
+  "name": "F_image_616_10",
+  "gt": "தலைவா்",
+  "pred": "The text in the image is \"தொழில்மனை\". This is Tamil script, and it translates to \"factory\" or \"workplace\" in English."
+ },
+ {
+  "name": "F_image_616_11",
+  "gt": "பெருந்",
+  "pred": "The text in the image is \"இலங்கை\" which is Tamil for \"Sri Lanka\"."
+ },
+ {
+  "name": "F_image_616_15",
+  "gt": "அன்பு",
+  "pred": "The text in the image is \"అంతిమం\". This is Telugu for \"final\" or \"last\"."
+ },
+ {
+  "name": "F_image_616_4",
+  "gt": "நாசரேத்",
+  "pred": "The text in the image is \"மாதாப்பூர்\". This appears to be in Tamil script, which is used primarily in the Indian state of Tamil Nadu and in the Union Territory of Puducherry. The name \"மாதாப்ப�"
+ },
+ {
+  "name": "F_image_616_5",
+  "gt": "மீதான",
+  "pred": "The text in the image is \"பொன்னி\" which is in Tamil script. It translates to \"Ponnai\" in English."
+ },
+ {
+  "name": "F_image_616_8",
+  "gt": "பேருந்து",
+  "pred": "The text in the image is \"路西布迪\"."
+ },
+ {
+  "name": "F_image_616_9",
+  "gt": "காமராஜா்",
+  "pred": "The text in the image is \"कल्याणी शहर\". This is Marathi, and it translates to \"Kalyan City\" in English. Kalyan is a city located in the Thane district of Maharashtra, India."
+ },
+ {
+  "name": "F_image_760_10",
+  "gt": "பாங்க்",
+  "pred": "The text in the image is \"प्रारंभिक\". This is in Devanagari script, which is used to write several languages including Hindi and Marathi. The word \"प्रारंभिक\" translates to \"initial\" or \"beginning\" in English."
+ },
+ {
+  "name": "F_image_760_2",
+  "gt": "லிட்.",
+  "pred": "The text in the image is \"এটি একটি সংক্ষিপ্ত বাংলা শব্দ\" which translates to \"This is a short Bengali word\" in English."
+ },
+ {
+  "name": "F_image_760_8",
+  "gt": "சிட்டி",
+  "pred": "The text in the image reads \"Pilote\"."
+ },
+ {
+  "name": "F_image_760_9",
+  "gt": "யூனியன்",
+  "pred": "The text in the image is \"น้องใหม่\" which translates to \"newbie\" or \"newcomer\" in English."
+ },
+ {
+  "name": "K_image_1030_1",
+  "gt": "கோபுர",
+  "pred": "The text in the image reads \"135110\"."
+ },
+ {
+  "name": "K_image_1030_2",
+  "gt": "தாிசனம்",
+  "pred": "The text in the image reads \"களோம்\". This appears to be Tamil script, which is used primarily in the Indian state of Tamil Nadu and in the country of Sri Lanka. The word \"களோம்\" (kalam) in Tamil means \"word\" or \"speech.\""
+ },
+ {
+  "name": "K_image_1030_3",
+  "gt": "கோடி",
+  "pred": "The text in the image reads \"Baking\"."
+ },
+ {
+  "name": "K_image_1030_4",
+  "gt": "புண்ணியம்",
+  "pred": "The text in the image is \"पानीपत\"."
+ },
+ {
+  "name": "K_image_104_0",
+  "gt": "மாவட்டம்",
+  "pred": "The text in the image reads \"IDITQILLID\"."
+ },
+ {
+  "name": "K_image_104_1",
+  "gt": "வீரகேரளம்",
+  "pred": "The text in the image is \"விருக்கோரம்\" which is in Tamil script. It translates to \"Virkorum\" in English."
+ },
+ {
+  "name": "K_image_104_2",
+  "gt": "மதுரை",
+  "pred": "The text in the image is \"மதுரை\" which is written in Tamil script. It translates to \"Madurai\" in English, referring to a city in the Indian state of Tamil Nadu."
+ },
+ {
+  "name": "K_image_104_3",
+  "gt": "வீரன்",
+  "pred": "The text in the image is \"লিঙ্গ\". This appears to be in Bengali script, which is used primarily in Bangladesh and West Bengal, India. The word \"লিঙ্গ\" (ling) can have multiple meanings depending on the context, but it often refers to \"lingam\""
+ },
+ {
+  "name": "K_image_104_4",
+  "gt": "கோயம்புத்தூா்",
+  "pred": "The text in the image is \"கோயம்புத்தூர்\" which is in Tamil script. It translates to \"Coimbatore\" in English, which is a city in the Indian state of Tamil Nadu."
+ },
+ {
+  "name": "K_image_1060_3",
+  "gt": "பணிக்சந்த்",
+  "pred": "The text in the image is in Tamil and reads \"பெரிக்சந்தி\"."
+ },
+ {
+  "name": "K_image_1060_4",
+  "gt": "கோ்வ",
+  "pred": "The text in the image appears to be \"வோல்\". This is likely a Tamil word, which can be translated as \"vol\" or \"voice\" depending on the context."
+ },
+ {
+  "name": "K_image_1060_5",
+  "gt": "உயா்வான",
+  "pred": "The text in the image reads \"2016\"."
+ },
+ {
+  "name": "K_image_1060_6",
+  "gt": "வா்களின்",
+  "pred": "The text in the image is \"মানুষের কিছু\" which translates to \"A little of man\" in English."
+ },
+ {
+  "name": "K_image_1060_7",
+  "gt": "குட்கா",
+  "pred": "The text in the image is \"கேகா\"."
+ },
+ {
+  "name": "K_image_1062_4",
+  "gt": "பெத்தநாயக்கன்பாளையம்",
+  "pred": "The text in the image is in Tamil and reads:\n\n\"வத்தநாயக்கன்பாளையம்\"\n\nThis translates to \"Vattanayagkannapalayam\" in English."
+ },
+ {
+  "name": "K_image_1086_2",
+  "gt": "டாபநாசம்",
+  "pred": "The text in the image is \"ЦППБПЕФ\"."
+ },
+ {
+  "name": "K_image_109_2",
+  "gt": "குவார்ட்ஸ்",
+  "pred": "The text in the image reads \"UNIFRAN\"."
+ },
+ {
+  "name": "K_image_109_4",
+  "gt": "மணிகள்",
+  "pred": "The text in the image reads \"Lunch\"."
+ },
+ {
+  "name": "K_image_109_5",
+  "gt": "முடிக்கப்படாத",
+  "pred": "The text in the image reads \"Quelques idées pour\"."
+ },
+ {
+  "name": "K_image_109_7",
+  "gt": "மணிகள்",
+  "pred": "The text in the image reads \"A.D. 1947\"."
+ },
+ {
+  "name": "K_image_109_8",
+  "gt": "குவார்ட்ஸ்",
+  "pred": "The text in the image reads \"usfnio\"."
+ },
+ {
+  "name": "K_image_109_9",
+  "gt": "மட்பாண்டங்கள்",
+  "pred": "The text in the image is in Tamil and reads \"மேலாண்டோங்கள்\"."
+ },
+ {
+  "name": "K_image_1091_2",
+  "gt": "பீளமேடு",
+  "pred": "The text in the image is \"பொட்டு\"."
+ },
+ {
+  "name": "K_image_1114_1",
+  "gt": "பொள்ளாச்சி",
+  "pred": "The text in the image is in Gujarati and reads: \"પાણી ના સંસેચી\" which translates to \"Water Scarcity\" in English."
+ },
+ {
+  "name": "K_image_1114_2",
+  "gt": "சந்திப்பு",
+  "pred": "The text in the image is \"சந்திப்பு\". This is Tamil for \"junction\" or \"intersection\"."
+ },
+ {
+  "name": "K_image_1121_2",
+  "gt": "புதுச்சோி",
+  "pred": "The text in the image is in Tamil and reads \"நூத்துச்சி\"."
+ },
+ {
+  "name": "K_image_1126_10",
+  "gt": "மாளிகை",
+  "pred": "The text in the image is \"மாணிக்கம்\"."
+ },
+ {
+  "name": "K_image_1126_11",
+  "gt": "நகை",
+  "pred": "The text in the image is \"அமைக்க\"."
+ },
+ {
+  "name": "K_image_1126_12",
+  "gt": "தங்க",
+  "pred": "The text in the image is \"தனுக்கு\". This is Tamil script, and it translates to \"to you\" or \"for you\" in English."
+ },
+ {
+  "name": "K_image_1126_13",
+  "gt": "ராம",
+  "pred": "The text in the image is \"JMD\"."
+ },
+ {
+  "name": "K_image_1126_14",
+  "gt": "பஎண்டி",
+  "pred": "The text in the image is \"มีความสุข\" which translates to \"Happy\" in English."
+ },
+ {
+  "name": "K_image_1126_15",
+  "gt": "போக்குவரத்து",
+  "pred": "The text in the image is \"போதுவாதது\". This is in Tamil, and it translates to \"I will go\" or \"I am going\" in English."
+ },
+ {
+  "name": "K_image_1126_2",
+  "gt": "காவல்",
+  "pred": "The text in the image is \"காவல்\". This is Tamil script, and it translates to \"Protection\" or \"Security\" in English."
+ },
+ {
+  "name": "K_image_1126_3",
+  "gt": "நிலையம்",
+  "pred": "The text in the image is \"இலையம்\". This appears to be in Tamil script, which is used primarily in the Indian state of Tamil Nadu and the Union Territory of Puducherry, as well as by Tamil communities in other parts of India and abroad. The meaning or context of this"
+ },
+ {
+  "name": "K_image_1126_4",
+  "gt": "நிலையம்",
+  "pred": "The text in the image is \"இலவம்\". This appears to be in Tamil script, which is used primarily in the Indian state of Tamil Nadu and by Tamil communities in other parts of India and abroad. The meaning of this word can vary depending on context, but it often translates to \"love\" or"
+ },
+ {
+  "name": "K_image_1126_5",
+  "gt": "வாளிகை",
+  "pred": "The text in the image is \"ஆரியல்\"."
+ },
+ {
+  "name": "K_image_1126_6",
+  "gt": "வீதி",
+  "pred": "The text in the image is \"வெறி\". This appears to be Tamil script, and it translates to \"veeri\" in English, which means \"bravery\" or \"courage.\""
+ },
+ {
+  "name": "K_image_1126_9",
+  "gt": "கசோ்ன்",
+  "pred": "The text in the image is \"கோசல்\". This appears to be Tamil script, which is used primarily in the Indian state of Tamil Nadu and in the Union Territory of Puducherry, as well as by Tamil communities in other parts of India and abroad. The word \"கோச"
+ },
+ {
+  "name": "K_image_1197_3",
+  "gt": "லாவண்யா",
+  "pred": "The text in the image is \"வெள்ளியம்\" which translates to \"silver\" in English."
+ },
+ {
+  "name": "K_image_1247_0",
+  "gt": "நலம்",
+  "pred": "The text in the image is \"நலம்\". This appears to be Tamil script, which is used primarily in the Indian state of Tamil Nadu and in the Union Territory of Puducherry, as well as by Tamil communities in other parts of India and abroad. The word \"நலம்"
+ },
+ {
+  "name": "K_image_1247_1",
+  "gt": "மாநகராட் சி",
+  "pred": "The text in the image is \"மானக்களை\". This is in Tamil, and it translates to \"Manakkalai\" in English."
+ },
+ {
+  "name": "K_image_1247_2",
+  "gt": "சேலம்",
+  "pred": "The text in the image is \"செல்வம்\" which is Tamil for \"Good luck\" or \"Congratulations.\""
+ },
+ {
+  "name": "K_image_1247_3",
+  "gt": "நகா்",
+  "pred": "The text in the image is \"இது\"."
+ },
+ {
+  "name": "K_image_1247_4",
+  "gt": "நரடு",
+  "pred": "The text in the image reads \"15 П\"."
+ },
+ {
+  "name": "K_image_1256_0",
+  "gt": "சமயபுரம்",
+  "pred": "The text in the image is \"சம்பந்தர்\" which is Tamil for \"Sambandar\"."
+ },
+ {
+  "name": "K_image_1256_1",
+  "gt": "திருக்கோயில்",
+  "pred": "The text in the image is \"தருக்கோபன்\"."
+ },
+ {
+  "name": "K_image_1256_2",
+  "gt": "மாாியம்மன்",
+  "pred": "The text in the image is in Thai and reads \"มีการพัฒนาอย่างต่อเนื่อง\" which translates to \"There is continuous development\" in English."
+ },
+ {
+  "name": "K_image_1256_3",
+  "gt": "அருள்மீகு",
+  "pred": "The text in the image is \"ஆர்வா மது\". This appears to be in Tamil script, which is used primarily in the Indian state of Tamil Nadu and in the Union Territory of Puducherry, as well as by Tamil communities in other parts of India and abroad. The meaning"
+ },
+ {
+  "name": "K_image_1257_1",
+  "gt": "சமயபுரம்",
+  "pred": "The text in the image is \"சம்பந்தம்\" which is in Tamil script. The English translation of this text is \"Sambantham\"."
+ },
+ {
+  "name": "K_image_1257_2",
+  "gt": "மாாியம்மன்",
+  "pred": "The text in the image is in Tamil and reads \"மொழியின் மூலம்\". This translates to \"Through language\" in English."
+ },
+ {
+  "name": "K_image_1257_3",
+  "gt": "அருள் மீகு",
+  "pred": "The text in the image is \"இரும்மு\"."
+ },
+ {
+  "name": "K_image_1257_4",
+  "gt": "திருக்கோயில்",
+  "pred": "The text in the image is in Tamil and reads \"திருக்கோளநாதர்\". This translates to \"Thirukkola Natar\" in English, which is likely a reference to a person or place named Thirukkola Natar."
+ },
+ {
+  "name": "K_image_1269_0",
+  "gt": "காப்போம்",
+  "pred": "The text in the image is in Tamil and reads \"காப்போம்\". This translates to \"Kappoam\" in English, which appears to be a brand name or a product name."
+ },
+ {
+  "name": "K_image_1269_1",
+  "gt": "சிற்பங்களின்",
+  "pred": "The text in the image is in Tamil and reads \"சிறப்புகளின்.\" This translates to \"Features\" or \"Special features\" in English."
+ },
+ {
+  "name": "K_image_1269_2",
+  "gt": "ன்",
+  "pred": "The text in the image is \"063\"."
+ },
+ {
+  "name": "K_image_1271_2",
+  "gt": "சங்கர",
+  "pred": "The text in the image is \"சங்கர\" which is written in Tamil script."
+ },
+ {
+  "name": "K_image_1271_3",
+  "gt": "நாராயணன்",
+  "pred": "The text in the image is in Tamil and reads \"நாராயணன்\". This translates to \"Narayanan\" in English, which is a common name in Tamil Nadu, India."
+ },
+ {
+  "name": "K_image_128_2",
+  "gt": "சிவகளை",
+  "pred": "The text in the image is in Tamil and reads \"மிளகுளை\" (milakulai)."
+ },
+ {
+  "name": "K_image_128_3",
+  "gt": "வான்வெளி",
+  "pred": "The text in the image is in Tamil and reads \"வாஸ்லவலி\"."
+ },
+ {
+  "name": "K_image_128_4",
+  "gt": "நிழற்படம்",
+  "pred": "The text in the image is in Tamil and reads \"முக்கோணம்\" (mukkōṇam). In English, this translates to \"Triangle.\""
+ },
+ {
+  "name": "K_image_1287_2",
+  "gt": "இந்திய",
+  "pred": "The text in the image is \"இந்திய\" which is in Tamil script and translates to \"India\" in English."
+ },
+ {
+  "name": "K_image_1287_3",
+  "gt": "மகளிா்",
+  "pred": "The text in the image is \"மகளிர்\" which is in Tamil script. It translates to \"Makalir\" in English."
+ },
+ {
+  "name": "K_image_1287_4",
+  "gt": "கூட்டுறவு",
+  "pred": "The text in the image is in Tamil and reads \"கால்களை\"."
+ },
+ {
+  "name": "K_image_1287_5",
+  "gt": "இணைப்பு",
+  "pred": "The text in the image is \"കൊല്ലപ്പാ\". This appears to be in Malayalam, a language spoken primarily in Kerala, India."
+ },
+ {
+  "name": "K_image_1289_0",
+  "gt": "சேமக்கலம்",
+  "pred": "The text in the image is in Tamil and reads \"செம்கல்ம.\" This appears to be a name or a phrase, but without additional context, it's difficult to provide a precise translation or meaning. If you have more information about the context in which this text appears, I might be"
+ },
+ {
+  "name": "K_image_13_0",
+  "gt": "கஞ்சிரா",
+  "pred": "The text in the image is in Tamil and reads \"தங்கமிருந்து\". This translates to \"From the tank\" or \"From the well\" in English."
+ },
+ {
+  "name": "K_image_13_1",
+  "gt": "ங்",
+  "pred": "The text in the image appears to be \"গুলি\" which is Bengali for \"the ones\" or \"the things.\""
+ },
+ {
+  "name": "K_image_1300_3",
+  "gt": "சிவகங்கை",
+  "pred": "The text in the image is in Tamil and reads \"சிவகங்கை\"."
+ },
+ {
+  "name": "K_image_1306_3",
+  "gt": "எக்ஸ்பிர்யன்ஸ்",
+  "pred": "The text in the image is in Tamil and reads \"தக்கபிடியாளர்\". This translates to \"Witness\" in English."
+ },
+ {
+  "name": "K_image_1306_4",
+  "gt": "ரெஸ்டாரென்ட்",
+  "pred": "The text in the image is in Thai and reads \"ครั้งที่ 7\". This translates to \"Round/Time 7\" in English."
+ },
+ {
+  "name": "K_image_1314_5",
+  "gt": "ஸ்ரீரங்கம்",
+  "pred": "The text in the image is \"பெரிராங்கம்\" which is written in Tamil script."
+ },
+ {
+  "name": "K_image_1320_3",
+  "gt": "ஸ்ரீவில்லிபுத்தூா்",
+  "pred": "The text in the image is in Tamil and reads \"நீலம்பிருத்தார்\"."
+ },
+ {
+  "name": "K_image_137_2",
+  "gt": "பொருட்கள்",
+  "pred": "The text in the image is \"பொருட்கள்\" which translates to \"Objects\" in English."
+ },
+ {
+  "name": "K_image_137_4",
+  "gt": "பொருட்கள்",
+  "pred": "The text in the image is \"பொருட்கள்\" which translates to \"Objects\" in English."
+ },
+ {
+  "name": "K_image_137_0",
+  "gt": "உலோகக்",
+  "pred": "The text in the image is \"25000\"."
+ },
+ {
+  "name": "K_image_137_1",
+  "gt": "கலைப்",
+  "pred": "The text in the image is \"காலை\". This is Tamil for \"morning\" or \"dawn\"."
+ },
+ {
+  "name": "K_image_1376_2",
+  "gt": "திருவொற்றியூா்",
+  "pred": "The text in the image is in Tamil and reads \"திருவாங்கியூர்\". This translates to \"Thiruvangkiryoor\" in English, which is a place name in Tamil Nadu, India."
+ },
+ {
+  "name": "K_image_1379_18",
+  "gt": "தாம்பரம்",
+  "pred": "The text in the image is \"இந்தியா\" which translates to \"India\" in English."
+ },
+ {
+  "name": "K_image_1379_20",
+  "gt": "நடைமேடைகளுக்கு",
+  "pred": "The text in the image is \"പെരുമ്പാവൂർ\"."
+ },
+ {
+  "name": "K_image_1379_21",
+  "gt": "செல்லும்",
+  "pred": "The text in the image is \"ప్రాంతము\". This is Telugu, and it translates to \"area\" or \"region\" in English."
+ },
+ {
+  "name": "K_image_1379_22",
+  "gt": "வழி",
+  "pred": "The text in the image is \"வழி\" which is Tamil for \"path\" or \"way\"."
+ },
+ {
+  "name": "K_image_1379_24",
+  "gt": "கணினி",
+  "pred": "The text in the image is \"கலைநிலை\" which translates to \"Art Level\" in English."
+ },
+ {
+  "name": "K_image_1379_25",
+  "gt": "முன்பதிவு",
+  "pred": "The text in the image is \"முன்படி\" which is in Tamil script. It translates to \"before\" or \"in advance\" in English."
+ },
+ {
+  "name": "K_image_1379_26",
+  "gt": "அலுவலகம்",
+  "pred": "The text in the image is \"ஆலயவெளிம்\". This appears to be in Tamil script, which is used primarily in the Indian state of Tamil Nadu and by Tamil communities in other parts of India and around the world. The meaning or context of this word would depend on its usage in"
+ },
+ {
+  "name": "K_image_1379_33",
+  "gt": "படிக்கட்டு",
+  "pred": "The text in the image is \"பட்டகத்தில்\". This is in Tamil, and it translates to \"in the library\" in English."
+ },
+ {
+  "name": "K_image_1379_34",
+  "gt": "நகரும்",
+  "pred": "The text in the image is \"நகரம்\". This is Tamil for \"City\" or \"Town\"."
+ },
+ {
+  "name": "K_image_1379_37",
+  "gt": "கட்டணகழிப்பிடம்",
+  "pred": "The text in the image is in Tamil and reads \"கட்டண கதிர்நிலை\"."
+ },
+ {
+  "name": "K_image_1388_0",
+  "gt": "மதுரை",
+  "pred": "The text in the image is \"தமிழ்\". This is the Tamil script for the word \"Tamil\", which means \"Tamil\" in English."
+ },
+ {
+  "name": "K_image_1388_1",
+  "gt": "சங்கம்",
+  "pred": "The text in the image is \"சாமுல்\". This appears to be in Tamil script, which is used primarily in the Indian state of Tamil Nadu and by Tamil communities in other parts of India, as well as in Sri Lanka and Malaysia. The word \"சாமுல்\""
+ },
+ {
+  "name": "K_image_1388_2",
+  "gt": "தமிழ்ச்",
+  "pred": "The text in the image is \"தமிழ்\" which is the Tamil script for the word \"Tamil\"."
+ },
+ {
+  "name": "K_image_1388_3",
+  "gt": "உலகத்",
+  "pred": "The text in the image is \"உலகத்\". This is Tamil script, and it translates to \"World\" or \"Global\" in English."
+ },
+ {
+  "name": "K_image_1392_0",
+  "gt": "மதுரை",
+  "pred": "The text in the image is in Tamil and reads \"மத்திய மாவட்டம்\" which translates to \"Central District\" in English."
+ },
+ {
+  "name": "K_image_1392_1",
+  "gt": "இல்லம்",
+  "pred": "The text in the image is \"இலவம்\". This is a Tamil word that translates to \"beautiful\" or \"pretty\" in English."
+ },
+ {
+  "name": "K_image_1392_2",
+  "gt": "ஆசிரியர்",
+  "pred": "The text in the image is \"இசிரியா\" which is the Tamil name for Israel."
+ },
+ {
+  "name": "K_image_1392_3",
+  "gt": "அவனியாபுரம்",
+  "pred": "The text in the image is in Tamil and reads \"இல்லியாபுரம்\" which translates to \"Illiyapuram\" in English."
+ },
+ {
+  "name": "K_image_1397_0",
+  "gt": "தட்டுக்கழி",
+  "pred": "The text in the image is in Tamil and reads \"தெரிக்கும்\". This translates to \"understood\" or \"will be understood\" in English."
+ },
+ {
+  "name": "K_image_14_0",
+  "gt": "ணு",
+  "pred": "The text in the image reads \"1000\"."
+ },
+ {
+  "name": "K_image_14_1",
+  "gt": "கடம்",
+  "pred": "The text in the image is \"मात्र\" which is in Hindi and it translates to \"only\" or \"just\" in English."
+ },
+ {
+  "name": "K_image_14_2",
+  "gt": "தண்",
+  "pred": "The text in the image is \"தொண்டா\". This appears to be in Tamil script, which is used primarily in the Indian state of Tamil Nadu and in the country of Sri Lanka. The word \"தொண்டா\" (tōṇṭā) can have"
+ },
+ {
+  "name": "K_image_1471_0",
+  "gt": "உறுப்பினா்",
+  "pred": "The text in the image reads \"modern\"."
+ },
+ {
+  "name": "K_image_1471_1",
+  "gt": "மதுரை",
+  "pred": "The text in the image is \"나의 꿈은\" which translates to \"My dream is\" in English."
+ },
+ {
+  "name": "K_image_1471_2",
+  "gt": "மாநகராட்சி",
+  "pred": "The text in the image is \"मानवता के लिए\" which translates to \"For humanity\" in English."
+ },
+ {
+  "name": "K_image_1471_3",
+  "gt": "மதுரை",
+  "pred": "The text in the image reads \"15-05-2023\"."
+ },
+ {
+  "name": "K_image_1471_4",
+  "gt": "கிழக்கு",
+  "pred": "The text in the image is \"Degas\"."
+ },
+ {
+  "name": "K_image_1471_5",
+  "gt": "தொகுதி",
+  "pred": "The text in the image is \"பொன்னை\". This is in Tamil script, and it translates to \"Ponnai\" in English."
+ },
+ {
+  "name": "K_image_1471_6",
+  "gt": "சட்ட",
+  "pred": "The text in the image reads \"QL\"."
+ },
+ {
+  "name": "K_image_1471_7",
+  "gt": "மன்ற",
+  "pred": "The text in the image reads \"lo cir\"."
+ },
+ {
+  "name": "K_image_1485_3",
+  "gt": "சந்திப்பு",
+  "pred": "The text in the image is \"சந்திப்பு\" which is in Tamil script. It translates to \"Station\" in English."
+ },
+ {
+  "name": "K_image_1485_4",
+  "gt": "திருச்சிராப்பள்ளி",
+  "pred": "The text in the image is in Tamil and reads \"தரும்பு ராபர்டி\"."
+ },
+ {
+  "name": "K_image_1487_1",
+  "gt": "தொல்லியல்",
+  "pred": "The text in the image reads \"Ogródów\"."
+ },
+ {
+  "name": "K_image_1487_10",
+  "gt": "காதல்",
+  "pred": "The text in the image is \"காதல்\". This is Tamil script, and it translates to \"murder\" in English."
+ },
+ {
+  "name": "K_image_1487_11",
+  "gt": "என்ற",
+  "pred": "The text in the image is \"என்\"."
+ },
+ {
+  "name": "K_image_1487_12",
+  "gt": "இயக்குநா்,",
+  "pred": "The text in the image is \"இயக்குர்\". This appears to be in Tamil script, which is used primarily in the Indian state of Tamil Nadu and the Union Territory of Puducherry, as well as by Tamil communities in other parts of India and abroad. The meaning or context of"
+ },
+ {
+  "name": "K_image_1487_13",
+  "gt": "ஆணும்",
+  "pred": "The text in the image is \"ஆம்பூர்\" which is in Tamil script and translates to \"Ambur\" in English."
+ },
+ {
+  "name": "K_image_1487_14",
+  "gt": "கண்டறியப்பட்ட",
+  "pred": "The text in the image is in Tamil and reads \"கள் பிறந்த நாள்\" which translates to \"Birthday\" in English."
+ },
+ {
+  "name": "K_image_1487_15",
+  "gt": "ஒப்படைக்கப்படும்.",
+  "pred": "The text in the image is in Tamil and reads \"வேப்பக்கொக்கும்.\""
+ },
+ {
+  "name": "K_image_1487_16",
+  "gt": "உதவி",
+  "pred": "The text in the image is \"-2\\sqrt{3}i\"."
+ },
+ {
+  "name": "K_image_1487_17",
+  "gt": "துறையிடம்",
+  "pred": "The text in the image is in Tamil and reads \"தொகுதியில்\". This translates to \"in the constituency\" in English."
+ },
+ {
+  "name": "K_image_1487_18",
+  "gt": "காவல்",
+  "pred": "The text in the image is \"காவல்\". This is Tamil script, and it translates to \"Protection\" or \"Security\" in English."
+ },
+ {
+  "name": "K_image_1487_19",
+  "gt": "ஈடுபடுவது",
+  "pred": "The text in the image is \"சூப்பர்\" which is Tamil for \"Super\"."
+ },
+ {
+  "name": "K_image_1487_20",
+  "gt": "நடவடிக்கைகளில்",
+  "pred": "The text in the image is in Tamil and reads: \"நடவுக்களகத்தில்\" which translates to \"In the theater\" in English."
+ },
+ {
+  "name": "K_image_1487_22",
+  "gt": "பெயரில்",
+  "pred": "The text in the image is \"殚精竭虑\"."
+ },
+ {
+  "name": "K_image_1487_23",
+  "gt": "ஒப்படைக்கப்படும்.",
+  "pred": "The text in the image is in Tamil and reads \"வேப்பக்கொக்கும்.\""
+ },
+ {
+  "name": "K_image_1487_3",
+  "gt": "அரண்மனை",
+  "pred": "The text in the image is \"ஆரங்கம்\"."
+ },
+ {
+  "name": "K_image_1487_4",
+  "gt": "துறை",
+  "pred": "The text in the image is \"திரும\" which appears to be in Tamil script. The exact meaning or context of this word would depend on its usage and the specific dialect or region where it is spoken. If you need more information about the meaning, please provide additional context or clarify your query."
+ },
+ {
+  "name": "K_image_1487_5",
+  "gt": "தொல்லியல்",
+  "pred": "The text in the image is \"தொல்லியல்\". This is Tamil for \"Archaeology\"."
+ },
+ {
+  "name": "K_image_1487_6",
+  "gt": "அரசு",
+  "pred": "The text in the image is \"অ্যারক\"."
+ },
+ {
+  "name": "K_image_1487_7",
+  "gt": "தமிழ்நாடு",
+  "pred": "The text in the image is \"தமிழ்நாடு\", which is Tamil for \"Tamil Nadu\"."
+ },
+ {
+  "name": "K_image_1487_8",
+  "gt": "தி௫மலை",
+  "pred": "The text in the image is \"இரும்பை\" which is in Tamil script. It translates to \"iron\" in English."
+ },
+ {
+  "name": "K_image_1487_9",
+  "gt": "நாயக்கா்",
+  "pred": "The text in the image is \"நாயக்கர்\". This is Tamil script, and it translates to \"Nayakkar\" in English. The term \"Nayakkar\" refers to a social group or caste in South India, particularly in Tamil Nadu."
+ },
+ {
+  "name": "K_image_1487_21",
+  "gt": "எபண்ணும்",
+  "pred": "The text in the image is in Tamil and reads \"பாண்டும்\"."
+ },
+ {
+  "name": "K_image_1514_0",
+  "gt": "தி௫",
+  "pred": "The text in the image is \"திரை\". This is Tamil for \"theater\" or \"cinema\"."
+ },
+ {
+  "name": "K_image_1514_1",
+  "gt": "வொற்றியூா்",
+  "pred": "The text in the image is in Tamil and reads \"வெப்பந்தியல்\" which translates to \"Physics\" in English."
+ },
+ {
+  "name": "K_image_1514_2",
+  "gt": "மெட்ரோ",
+  "pred": "The text in the image is \"மலையாளம்\". This is the Malayalam language, which is spoken primarily in the state of Kerala, India. The script used here is the Malayalam script."
+ },
+ {
+  "name": "K_image_1519_2",
+  "gt": "வெளி",
+  "pred": "The text in the image is \"வெலி\" which is in Tamil script. It translates to \"Veli\" in English."
+ },
+ {
+  "name": "K_image_1519_3",
+  "gt": "மந்தை",
+  "pred": "The text in the image is \"மார்கோத்\" which is in Tamil script. It translates to \"Marko\" in English."
+ },
+ {
+  "name": "K_image_1522_2",
+  "gt": "படியுங்கள்",
+  "pred": "The text in the image is in Tamil and reads \"பொதுமக்கள்\". This translates to \"Public\" or \"General Public\" in English."
+ },
+ {
+  "name": "K_image_1522_3",
+  "gt": "தின",
+  "pred": "The text in the image is \"कैंसर\". This is the Hindi word for \"cancer\"."
+ },
+ {
+  "name": "K_image_1522_4",
+  "gt": "மலா்",
+  "pred": "The text in the image reads \"LOGOUT\"."
+ },
+ {
+  "name": "K_image_1522_5",
+  "gt": "ஹலோ",
+  "pred": "The text in the image reads \"omGyan info site\"."
+ },
+ {
+  "name": "K_image_1540_10",
+  "gt": "கட்டுரைகள்",
+  "pred": "The text in the image reads: \"第1⑬節の内容は\" which translates to \"The content of Section 1⑬ is\" in English."
+ },
+ {
+  "name": "K_image_1540_109",
+  "gt": "திருசசியில",
+  "pred": "The text in the image reads \"dime diana\"."
+ },
+ {
+  "name": "K_image_1540_11",
+  "gt": "வாிசை",
+  "pred": "The text in the image reads \"2021年1月\". This translates to \"January 2021\" in English."
+ },
+ {
+  "name": "K_image_1540_110",
+  "gt": "பெப்ரவாி",
+  "pred": "The text in the image reads \"Guangao\"."
+ },
+ {
+  "name": "K_image_1540_115",
+  "gt": "கட்டற்ற",
+  "pred": "The text in the image reads \"ALL THE\"."
+ },
+ {
+  "name": "K_image_1540_117",
+  "gt": "விக்கிப்பீடியாவிற்கு",
+  "pred": "The text in the image is in Tamil and reads \"விக்கிப்பீடியா வரிசை\". This translates to \"Wikipedia Order\" in English."
+ },
+ {
+  "name": "K_image_1540_123",
+  "gt": "ஓடுமபாகமதி",
+  "pred": "The text in the image reads: \"I am a student.\""
+ },
+ {
+  "name": "K_image_1540_125",
+  "gt": "பண்பாடு",
+  "pred": "The text in the image reads \"100%\"."
+ },
+ {
+  "name": "K_image_1540_127",
+  "gt": "வரலாறு",
+  "pred": "The text in the image reads \"100% Natural.\""
+ },
+ {
+  "name": "K_image_1540_129",
+  "gt": "வடக்குக",
+  "pred": "The text in the image reads \"2016年春节\". This translates to \"2016 Lunar New Year\" or \"2016 Spring Festival\" in English."
+ },
+ {
+  "name": "K_image_1540_18",
+  "gt": "முதற்பக்கக் கட",
+  "pred": "The text in the image reads: \"10 55 10 10 10 10 10 10 10 10\"."
+ },
+ {
+  "name": "K_image_1540_19",
+  "gt": "டுரைகள்",
+  "pred": "The text in the image is \"Groupon\"."
+ },
+ {
+  "name": "K_image_1540_22",
+  "gt": "ஓடுமபாகமதி",
+  "pred": "The text in the image reads: \"I am a student.\""
+ },
+ {
+  "name": "K_image_1540_24",
+  "gt": "பண்பாடு",
+  "pred": "The text in the image reads \"100%\"."
+ },
+ {
+  "name": "K_image_1540_26",
+  "gt": "வரலாறு",
+  "pred": "The text in the image reads \"100% Natural.\""
+ },
+ {
+  "name": "K_image_1540_28",
+  "gt": "வடக்குக",
+  "pred": "The text in the image reads \"2016年春节\". This translates to \"2016 Lunar New Year\" or \"2016 Spring Festival\" in English."
+ },
+ {
+  "name": "K_image_1540_29",
+  "gt": "கிழக்குப் பகுதியில்",
+  "pred": "The text in the image reads: \"www.OrientalBistro.com\"."
+ },
+ {
+  "name": "K_image_1540_39",
+  "gt": "மிகப்பெரிய",
+  "pred": "The text in the image reads \"Daiichi Sankyo\"."
+ },
+ {
+  "name": "K_image_1540_40",
+  "gt": "கோவில",
+  "pred": "The text in the image reads \"Cantina\"."
+ },
+ {
+  "name": "K_image_1540_41",
+  "gt": "பசுபதிதாத",
+  "pred": "The text in the image reads \"Craft of Origin\"."
+ },
+ {
+  "name": "K_image_1540_42",
+  "gt": "ஆளில்வு",
+  "pred": "The text in the image reads \"galler\"."
+ },
+ {
+  "name": "K_image_1540_47",
+  "gt": "கட்டுரைகள்",
+  "pred": "The text in the image reads \"SL (Benji)\"."
+ },
+ {
+  "name": "K_image_1540_51",
+  "gt": "(படய)",
+  "pred": "The text in the image reads: \"(uL, uR)\"."
+ },
+ {
+  "name": "K_image_1540_58",
+  "gt": "விக்கிபீடியாவில்",
+  "pred": "The text in the image is \"कैसे आप अपने पास की समस्याओं को हल कर सकते हैं?\" which translates to \"How can you solve your own problems?\" in English."
+ },
+ {
+  "name": "K_image_1540_59",
+  "gt": "கூட்டம்",
+  "pred": "The text in the image reads \"Dad, I'm.\""
+ },
+ {
+  "name": "K_image_1540_62",
+  "gt": "விக்கிப்பீடியா",
+  "pred": "The text in the image is \"วิธีการใช้บริการ\". This translates to \"How to use the service\" in English."
+ },
+ {
+  "name": "K_image_1540_64",
+  "gt": "புதுச்சேரியில்",
+  "pred": "The text in the image reads \"figura 20 da lista\"."
+ },
+ {
+  "name": "K_image_1540_65",
+  "gt": "விக்கிப்பீடி",
+  "pred": "The text in the image is \"গোলাম আব্দুল হাসান\". This appears to be a name, likely in Bengali script."
+ },
+ {
+  "name": "K_image_1540_76",
+  "gt": "பக்கம்",
+  "pred": "The text in the image is \"上海卷烟厂\". This translates to \"Shanghai Tobacco Factory\" in English."
+ },
+ {
+  "name": "K_image_1540_78",
+  "gt": "விக்கிப்பீடியா",
+  "pred": "The text in the image is in Tamil and reads \"விக்கிப்பைட் உரை.\" This translates to \"Wikipedia Article\" in English."
+ },
+ {
+  "name": "K_image_1540_8",
+  "gt": "நீங்களும்",
+  "pred": "The text in the image is \"BIOGRAPHY\"."
+ },
+ {
+  "name": "K_image_1540_82",
+  "gt": "விக்கிப்பீடியா",
+  "pred": "The text in the image is \"कैसे रहेंगे आप अच्छे से?\" which translates to \"How will you be well?\" in English."
+ },
+ {
+  "name": "K_image_1540_83",
+  "gt": "இப்பக்கத்தின",
+  "pred": "The text in the image reads: \"1978年改革开放以来\" which translates to \"Since the reform and opening up in 1978.\""
+ },
+ {
+  "name": "K_image_1540_85",
+  "gt": "முதற் பக்கம்",
+  "pred": "The text in the image reads \"100% LIQUID\"."
+ },
+ {
+  "name": "K_image_1540_86",
+  "gt": "வாசிக்கவும்",
+  "pred": "The text in the image reads \"SUNRISE SUN\"."
+ },
+ {
+  "name": "K_image_1540_9",
+  "gt": "தமிழக",
+  "pred": "The text in the image reads \"Alta Colina\"."
+ },
+ {
+  "name": "K_image_1540_95",
+  "gt": "பக்கம்",
+  "pred": "图片中的文字是“日落西山”。"
+ },
+ {
+  "name": "K_image_1540_98",
+  "gt": "செய்திகளில்",
+  "pred": "The text in the image is \"৩০ প্রকাশিত\". This appears to be in Bengali and translates to \"30 published\" or \"30th publication\" in English."
+ },
+ {
+  "name": "K_image_1540_21",
+  "gt": "உலகிலுள்ள",
+  "pred": "The text in the image reads \"elegyeter\"."
+ },
+ {
+  "name": "K_image_1540_38",
+  "gt": "கோயிலகளுள",
+  "pred": "The text in the image reads \"JamJocaster\"."
+ },
+ {
+  "name": "K_image_1540_56",
+  "gt": "வருக",
+  "pred": "The text in the image is \"வேலூர்\" which is the Tamil name for Vellore, a city in Tamil Nadu, India."
+ },
+ {
+  "name": "K_image_1540_70",
+  "gt": "இலங்கைக",
+  "pred": "The text in the image is \"การส่งเสริมสุขภาพ\". This translates to \"Health Promotion\" in English."
+ },
+ {
+  "name": "K_image_1540_89",
+  "gt": "கடற்பகுதியில்",
+  "pred": "The text in the image reads \"100% natural oils.\""
+ },
+ {
+  "name": "K_image_1540_112",
+  "gt": "பட்டறை",
+  "pred": "The text in the image reads \"中国工商银行\" which translates to \"Industrial and Commercial Bank of China\" in English. This is one of the largest banks in China."
+ },
+ {
+  "name": "K_image_1547_2",
+  "gt": "திாிசூலம்",
+  "pred": "The text in the image is in Tamil and reads \"தீசுலம்\" (Thesulam)."
+ },
+ {
+  "name": "K_image_1550_1",
+  "gt": "ண்டலம்",
+  "pred": "The text in the image reads \"COOL GOOD\"."
+ },
+ {
+  "name": "K_image_1572_0",
+  "gt": "வயிாவா்",
+  "pred": "The text in the image reads \"audit exit\"."
+ },
+ {
+  "name": "K_image_1575_2",
+  "gt": "வண்டலூா்",
+  "pred": "The text in the image is \"กู ดูด L กูริน\". This appears to be a mix of Thai and Japanese characters, with \"กู\" being Thai for \"I\" or \"me\", \"ดูด\" which means \"to suck\" or \"to drink\" in Thai"
+ },
+ {
+  "name": "K_image_1594_10",
+  "gt": "கோவில்களில்",
+  "pred": "The text in the image is \"Gareebiyan Ki\"."
+ },
+ {
+  "name": "K_image_1594_11",
+  "gt": "சித்தரிக்கப்பட்டுள்ளது",
+  "pred": "The text in the image is in Tamil and reads: \"விடுதலைப் போராட்டம்\" which translates to \"Election Campaign\" in English."
+ },
+ {
+  "name": "K_image_1594_123",
+  "gt": "உருவம்",
+  "pred": "The text in the image is \"من\" which means \"from\" or \"of\" in Arabic."
+ },
+ {
+  "name": "K_image_1594_124",
+  "gt": "யாழின்",
+  "pred": "The text in the image reads \"warm heart\"."
+ },
+ {
+  "name": "K_image_1594_125",
+  "gt": "மற்றும்",
+  "pred": "The text in the image is \"வெளியீடு\" which is Tamil for \"Output\"."
+ },
+ {
+  "name": "K_image_1594_126",
+  "gt": "தாராசுரம்",
+  "pred": "The text in the image is \"தொழில்களம்\" which is in Tamil script. It translates to \"Factory\" or \"Industrial Estate\" in English."
+ },
+ {
+  "name": "K_image_1594_127",
+  "gt": "காஞ்சி,",
+  "pred": "The text in the image is \"காந்தி\". This is Tamil script, and it transliterates to \"Kānti\" in the Roman alphabet."
+ },
+ {
+  "name": "K_image_1594_128",
+  "gt": "குறிப்புகள்",
+  "pred": "The text in the image is \"மொழிபெயர்ந்த\"."
+ },
+ {
+  "name": "K_image_1594_129",
+  "gt": "பற்றிய",
+  "pred": "The text in the image is \"upinim\"."
+ },
+ {
+  "name": "K_image_1594_130",
+  "gt": "வகை",
+  "pred": "The text in the image is \"α1的α2\"."
+ },
+ {
+  "name": "K_image_1594_131",
+  "gt": "பல்வேறு",
+  "pred": "The text in the image is \"പെരുമ്പൂർ\". This is in Malayalam, a language spoken primarily in Kerala, India. The word \"പെരുമ്പൂർ\" (Perumpūr) translates to \"Perumpur\""
+ },
+ {
+  "name": "K_image_1594_132",
+  "gt": "படைப்புகளில்",
+  "pred": "The text in the image is \"பட்டை_பாலக்கிளி\". This appears to be in Tamil, a language spoken primarily in the southern Indian state of Tamil Nadu and parts of neighboring states. The words \"பட்டை\" (patta)"
+ },
+ {
+  "name": "K_image_1594_134",
+  "gt": "தமிழ்ப்",
+  "pred": "The text in the image is \"தமிழ்\". This is the Tamil script for the word \"Tamil\", which refers to the Tamil language and its speakers."
+ },
+ {
+  "name": "K_image_1594_135",
+  "gt": "பண்டையத்",
+  "pred": "The text in the image is \"பெண்ணையாழ்வார்\". This appears to be a Tamil name, which translates to \"Ponnaiyazhwar\" in English. Ponnaiyazhwar was a prominent figure in the Bhakt"
+ },
+ {
+  "name": "K_image_1594_136",
+  "gt": "செடி)",
+  "pred": "The text in the image reads \"Glory\"."
+ },
+ {
+  "name": "K_image_1594_137",
+  "gt": "மரல்",
+  "pred": "The text in the image reads \"Loreo\"."
+ },
+ {
+  "name": "K_image_1594_138",
+  "gt": "நரம்பு",
+  "pred": "The text in the image is \"1501\"."
+ },
+ {
+  "name": "K_image_1594_139",
+  "gt": "கருங்காலி",
+  "pred": "The text in the image is \"கால்வாய்\". This is Tamil for \"canal\" or \"waterway\"."
+ },
+ {
+  "name": "K_image_1594_140",
+  "gt": "தணக்கு",
+  "pred": "The text in the image is \"தொடா-கு\"."
+ },
+ {
+  "name": "K_image_1594_141",
+  "gt": "மூலப்பொருள்",
+  "pred": "The text in the image is \"ஆறுவளவு\" which is in Tamil script. It translates to \"Six\" in English."
+ },
+ {
+  "name": "K_image_1594_142",
+  "gt": "தமிழகம்",
+  "pred": "The text in the image is \"தமிழ்கள்\". This is Tamil for \"Tamil people\" or \"Tamil people\" in English."
+ },
+ {
+  "name": "K_image_1594_143",
+  "gt": "இடம்",
+  "pred": "The text in the image is \"العربية\". This is the Arabic word for \"Arabic\"."
+ },
+ {
+  "name": "K_image_1594_145",
+  "gt": "இசை",
+  "pred": "The text in the image is \"বিশেষ\"."
+ },
+ {
+  "name": "K_image_1594_146",
+  "gt": "தமிழ்",
+  "pred": "The text in the image is \"கோலிம்\"."
+ },
+ {
+  "name": "K_image_1594_147",
+  "gt": "யாழ்",
+  "pred": "The text in the image reads \"umnp\"."
+ },
+ {
+  "name": "K_image_1594_148",
+  "gt": "வகை",
+  "pred": "The text in the image is \"διαδρομή\"."
+ },
+ {
+  "name": "K_image_1594_149",
+  "gt": "நரம்பிசைக்கருவி",
+  "pred": "The text in the image is in Tamil and reads: \"நெல்லிக்கட்டுரை\" which translates to \"Nellikkadurai\" in English."
+ },
+ {
+  "name": "K_image_1594_150",
+  "gt": "இசையின்",
+  "pred": "The text in the image is \"இலாச்சில்\". This appears to be in Tamil script, which is used primarily in the Indian state of Tamil Nadu and in the country of Sri Lanka. The word \"இலாச்சில்\" (Ilachil)"
+ },
+ {
+  "name": "K_image_1594_151",
+  "gt": "வகை",
+  "pred": "The text in the image is \"பொதுக்\". This is Tamil for \"general\" or \"public\"."
+ },
+ {
+  "name": "K_image_1594_152",
+  "gt": "தொல்",
+  "pred": "The text in the image is \"மேற்பு\"."
+ },
+ {
+  "name": "K_image_1594_153",
+  "gt": "தோன்றிய",
+  "pred": "The text in the image is \"தேவநாராயண\"."
+ },
+ {
+  "name": "K_image_1594_154",
+  "gt": "காலம்",
+  "pred": "The text in the image is \"காவல்\". This is Tamil script, and it translates to \"Protection\" or \"Security\" in English."
+ },
+ {
+  "name": "K_image_1594_156",
+  "gt": "கமரர்",
+  "pred": "The text in the image is \"கோயில்\". This is Tamil for \"temple\"."
+ },
+ {
+  "name": "K_image_1594_158",
+  "gt": "ஆண்டுகள்",
+  "pred": "The text in the image reads \"SuperCrew.\""
+ },
+ {
+  "name": "K_image_1594_159",
+  "gt": "பழமையானது",
+  "pred": "The text in the image reads \"Ogbonnaya\"."
+ },
+ {
+  "name": "K_image_1594_160",
+  "gt": "மரம்,",
+  "pred": "The text in the image reads \"LOFT\"."
+ },
+ {
+  "name": "K_image_1594_161",
+  "gt": "கொன்றை",
+  "pred": "The text in the image reads \"Glenross.com\"."
+ },
+ {
+  "name": "K_image_1594_162",
+  "gt": "தமிழ்",
+  "pred": "The text in the image is \"Giblip\"."
+ },
+ {
+  "name": "K_image_1594_163",
+  "gt": "பாம்புச்",
+  "pred": "The text in the image reads \"LITTLE\"."
+ },
+ {
+  "name": "K_image_1594_164",
+  "gt": "இதர",
+  "pred": "The text in the image is \"1951\"."
+ },
+ {
+  "name": "K_image_1594_165",
+  "gt": "தகவல்கள்",
+  "pred": "The text in the image reads \"தொல்வெளிப்\"."
+ },
+ {
+  "name": "K_image_1594_3",
+  "gt": "சங்க",
+  "pred": "The text in the image is \"சாதகம்\" which is Tamil for \"Sadhakam\" or \"Sadhakam\" in English. It can be translated as \"Pilgrim\" or \"Devotee.\""
+ },
+ {
+  "name": "K_image_1594_35",
+  "gt": "சேர்க்கை",
+  "pred": "The text in the image is \"சொங்கொக்\". This appears to be a Tamil word, which can be translated as \"song\" or \"voice\" depending on the context."
+ },
+ {
+  "name": "K_image_1594_4",
+  "gt": "இலக்கியங்கள்",
+  "pred": "The text in the image is in Tamil and reads \"இலக்கியப் பொருள்\". This translates to \"Literature\" or \"Literary Matter\" in English."
+ },
+ {
+  "name": "K_image_1594_43",
+  "gt": "காலம்:1969",
+  "pred": "The text in the image reads \"வாழ்கை: 1969\". This appears to be in Tamil, and it translates to \"Life: 1969\" in English. The colon (:) suggests that \"1969\" is meant to represent a year,"
+ },
+ {
+  "name": "K_image_1594_44",
+  "gt": "இசையின்",
+  "pred": "The text in the image is \"இலக்கியம்\" which is Tamil for \"Literature\"."
+ },
+ {
+  "name": "K_image_1594_45",
+  "gt": "வகை",
+  "pred": "The text in the image is \"விளக்க\" which is in Tamil script. The meaning of this word can vary depending on the context, but it generally means \"explanation\" or \"interpretation.\""
+ },
+ {
+  "name": "K_image_1594_46",
+  "gt": "யாழ்களின்",
+  "pred": "The text in the image is \"1. பொருளாதாரம்\". This is in Tamil and it translates to \"1. Economy\" in English."
+ },
+ {
+  "name": "K_image_1594_47",
+  "gt": "தொல்",
+  "pred": "The text in the image is \"தொலை\"."
+ },
+ {
+  "name": "K_image_1594_48",
+  "gt": "இசை",
+  "pred": "The text in the image is \"இலக்க\"."
+ },
+ {
+  "name": "K_image_1594_49",
+  "gt": "தோன்றிய",
+  "pred": "The text in the image is \"தொன்னிய\". This appears to be Tamil script, which is used primarily in the Indian state of Tamil Nadu and in the country of Sri Lanka. The meaning or context of this word would depend on its usage within a sentence or a specific cultural or linguistic context"
+ },
+ {
+  "name": "K_image_1594_5",
+  "gt": "உட்பட",
+  "pred": "The text in the image is \"sin\"."
+ },
+ {
+  "name": "K_image_1594_50",
+  "gt": "காலம்",
+  "pred": "The text in the image is \"காலம்\". This is Tamil for \"time\" or \"season.\""
+ },
+ {
+  "name": "K_image_1594_51",
+  "gt": "சுமாா்",
+  "pred": "The text in the image is \"ஆலம்பி\"."
+ },
+ {
+  "name": "K_image_1594_52",
+  "gt": "இடம்",
+  "pred": "The text in the image is \"2016\"."
+ },
+ {
+  "name": "K_image_1594_53",
+  "gt": "தமிழகம்",
+  "pred": "The text in the image is \"தமிழ்கள்\". This is Tamil for \"Tamil people\" or \"Tamil people\" in English."
+ },
+ {
+  "name": "K_image_1594_54",
+  "gt": "தணக்கு",
+  "pred": "The text in the image is \"தொன்றுக்கு\". This is Tamil script, and it translates to \"to the end\" or \"until the end\" in English."
+ },
+ {
+  "name": "K_image_1594_55",
+  "gt": "கருங்காலி",
+  "pred": "The text in the image is \"கற்றுக்காலி\". This appears to be Tamil script, which is used primarily in the Indian state of Tamil Nadu and in the country of Sri Lanka. The meaning or context of this word would depend on its usage within a sentence or a specific"
+ },
+ {
+  "name": "K_image_1594_56",
+  "gt": "குமிழ்",
+  "pred": "The text in the image is \"ஆமில்\"."
+ },
+ {
+  "name": "K_image_1594_57",
+  "gt": "யாழே",
+  "pred": "The text in the image reads \"μm∈G_1\"."
+ },
+ {
+  "name": "K_image_1594_58",
+  "gt": "செடி",
+  "pred": "The text in the image is \"৩০৯\". This appears to be a number written in Bengali script, which is used in Bangladesh and parts of India. The number \"309\" is the transliteration of this text into Roman numerals."
+ },
+ {
+  "name": "K_image_1594_59",
+  "gt": "தகவல்கள்",
+  "pred": "The text in the image is \"தகவல்கள்\". This is Tamil and it translates to \"data\" in English."
+ },
+ {
+  "name": "K_image_1594_6",
+  "gt": "பல",
+  "pred": "The text in the image is \"1,000\"."
+ },
+ {
+  "name": "K_image_1594_60",
+  "gt": "செய்யப்பட்ட",
+  "pred": "The text in the image is \"ভারতের\" which translates to \"of India\" or \"in India\" in English."
+ },
+ {
+  "name": "K_image_1594_61",
+  "gt": "வில்வடிவ",
+  "pred": "The text in the image is \"விளையாடு\". This is in Tamil, and it translates to \"play\" in English."
+ },
+ {
+  "name": "K_image_1594_62",
+  "gt": "பிற",
+  "pred": "The text in the image is \"மீன்\" which is Tamil for \"fish\"."
+ },
+ {
+  "name": "K_image_1594_63",
+  "gt": "முன்னோடி.",
+  "pred": "The text in the image is \"வெளிச்சம்\" which is Tamil for \"outside\" or \"outdoor.\""
+ },
+ {
+  "name": "K_image_1594_64",
+  "gt": "எண்.",
+  "pred": "The text in the image reads \"16T600T.\""
+ },
+ {
+  "name": "K_image_1594_68",
+  "gt": "இந்த",
+  "pred": "The text in the image is \"Bio\"."
+ },
+ {
+  "name": "K_image_1594_7",
+  "gt": "யாழ்கள்",
+  "pred": "The text in the image reads \"luckybeast\"."
+ },
+ {
+  "name": "K_image_1594_75",
+  "gt": "வேடுவா்களால்",
+  "pred": "The text in the image is \"வொல்வோக்கான்\". This appears to be a Tamil word, which can be translated as \"Volvo\" in English."
+ },
+ {
+  "name": "K_image_1594_76",
+  "gt": "இதர",
+  "pred": "The text in the image is \"இது\". This is the Tamil word for \"this\" or \"it\"."
+ },
+ {
+  "name": "K_image_1594_77",
+  "gt": "(பாம்புச்",
+  "pred": "The text in the image is \"umolé\"."
+ },
+ {
+  "name": "K_image_1594_79",
+  "gt": "மரல்",
+  "pred": "The text in the image reads \"loire\"."
+ },
+ {
+  "name": "K_image_1594_8",
+  "gt": "உள்ளன",
+  "pred": "The text in the image is \"मेरा नाम है राहुल\". This is in Hindi and translates to \"My name is Rahul\" in English."
+ },
+ {
+  "name": "K_image_1594_80",
+  "gt": "நரம்பு",
+  "pred": "The text in the image is \"150101\"."
+ },
+ {
+  "name": "K_image_1594_81",
+  "gt": "மரம்-கொன்றை",
+  "pred": "The text in the image is in Malayalam, and it reads: \"കോട്ട-ജനസംഖ്യ\" which translates to \"Caste - Population\" in English."
+ },
+ {
+  "name": "K_image_1594_82",
+  "gt": "மூலப்பொருள்",
+  "pred": "The text in the image is \"பொன்னும்பூர்\". This appears to be a Tamil word, which translates to \"Ponnumpur\" in English."
+ },
+ {
+  "name": "K_image_1594_83",
+  "gt": "பழமையானது",
+  "pred": "The text in the image reads \"LILYDOOLISTED\"."
+ },
+ {
+  "name": "K_image_1594_84",
+  "gt": "ஆண்டுகள்",
+  "pred": "The text in the image is \"முன்னொக்கள்\" which is in Tamil script. The English translation of this phrase is \"Introduction\" or \"Preliminary\"."
+ },
+ {
+  "name": "K_image_1594_86",
+  "gt": "தமிழ்",
+  "pred": "The text in the image is \"தமிழ்\" which is the Tamil script for the word \"Tamil\"."
+ },
+ {
+  "name": "K_image_1594_87",
+  "gt": "க௫வி",
+  "pred": "The text in the image is \"குரை\". This is Tamil script, and it translates to \"curry\" in English."
+ },
+ {
+  "name": "K_image_1594_88",
+  "gt": "நரம்பிசைக்",
+  "pred": "The text in the image is \"இந்தியா\" which translates to \"India\" in English."
+ },
+ {
+  "name": "K_image_1594_9",
+  "gt": "திருமயம்",
+  "pred": "The text in the image is \"Arquim\"."
+ },
+ {
+  "name": "K_image_1594_90",
+  "gt": "வகை",
+  "pred": "The text in the image is \"விளக்க\" which is in Tamil script. The meaning of this word in English is \"explanation\" or \"interpretation.\""
+ },
+ {
+  "name": "K_image_1594_91",
+  "gt": "பெறப்பட்ட",
+  "pred": "The text in the image reads \"Quimini\"."
+ },
+ {
+  "name": "K_image_1605_0",
+  "gt": "சத்தியமங்கலம்",
+  "pred": "The text in the image is \"சத்தியமனக்கலம்\" which is in Tamil script. It translates to \"Sathyamangalam\" in English."
+ },
+ {
+  "name": "K_image_1612_1",
+  "gt": "மதுரூர",
+  "pred": "The text in the image is in Tamil and reads \"மதுரை\" (Māṭura)."
+ },
+ {
+  "name": "K_image_1612_2",
+  "gt": "வீக்கீ மேனீயர",
+  "pred": "The text in the image is written in Tamil and reads \"புக்கிலோத்துரி\" (Pukki Lothuri)."
+ },
+ {
+  "name": "K_image_191_0",
+  "gt": "நாற்றாண்டு",
+  "pred": "The text in the image is in Tamil and reads \"நீங்கள் என்\". This translates to \"You are mine\" in English."
+ },
+ {
+  "name": "K_image_191_1",
+  "gt": "ஆம்",
+  "pred": "The text in the image is \"2010\"."
+ },
+ {
+  "name": "K_image_191_2",
+  "gt": "கி.பி.17-",
+  "pred": "The text in the image reads \"की.पी.17\"."
+ },
+ {
+  "name": "K_image_191_3",
+  "gt": "வீரன்",
+  "pred": "The text in the image is \"பிளை\" which is in Tamil script. It translates to \"Play\" in English."
+ },
+ {
+  "name": "K_image_191_4",
+  "gt": "வெள்ளலூா்",
+  "pred": "The text in the image is in Telugu and reads \"విశ్వాసం\". This translates to \"Belief\" or \"Trust\" in English."
+ },
+ {
+  "name": "K_image_191_5",
+  "gt": "கோவை",
+  "pred": "The text in the image is \"கோலை\" which is in Tamil script. It translates to \"ball\" in English."
+ },
+ {
+  "name": "K_image_191_6",
+  "gt": "மாவட்டம்",
+  "pred": "The text in the image is \"MATHEMATICS\"."
+ },
+ {
+  "name": "K_image_194_0",
+  "gt": "நூற்றரண்டு",
+  "pred": "The text in the image is written in Tamil script and reads \"நட்டார்\". This translates to \"Nadhar\" in English, which is a name."
+ },
+ {
+  "name": "K_image_194_1",
+  "gt": "கி.பி.14",
+  "pred": "The text in the image reads \"த.ப.14\"."
+ },
+ {
+  "name": "K_image_194_2",
+  "gt": "போதிகை",
+  "pred": "The text in the image is in Tamil and reads \"பாதிலைக்\"."
+ },
+ {
+  "name": "K_image_194_3",
+  "gt": "கருவலூா்",
+  "pred": "The text in the image is in Tamil and reads \"குறவோ\"."
+ },
+ {
+  "name": "K_image_194_4",
+  "gt": "ஆம்",
+  "pred": "The text in the image is \"தென்\"."
+ },
+ {
+  "name": "K_image_204_0",
+  "gt": "நூற்றாண்டு",
+  "pred": "The text in the image appears to be in Tamil script. The characters read from left to right as \"வள்ளுவித்தியார்\" (Valluvithiyaar). This is a name, likely of a person or an entity."
+ },
+ {
+  "name": "K_image_204_1",
+  "gt": "கரையூா்",
+  "pred": "The text in the image is in Tamil and reads \"கறுப்பு\". This translates to \"black\" in English."
+ },
+ {
+  "name": "K_image_204_2",
+  "gt": "சண்டீசா்",
+  "pred": "The text in the image is written in Tamil and reads \"செந்தலை\"."
+ },
+ {
+  "name": "K_image_204_3",
+  "gt": "கி.பி.9",
+  "pred": "The text in the image is \"க.ப.9\"."
+ },
+ {
+  "name": "K_image_204_4",
+  "gt": "ஆம்",
+  "pred": "The text in the image is \"ஆல்\" which is written in Tamil script."
+ },
+ {
+  "name": "K_image_210_0",
+  "gt": "நூற்றாண்டு",
+  "pred": "The text in the image is in Tamil and reads \"இல்லம் மாற்றுத்\"."
+ },
+ {
+  "name": "K_image_210_1",
+  "gt": "நடுகல்",
+  "pred": "The text in the image is in Tamil and reads \"நெகல்\" (Nekal)."
+ },
+ {
+  "name": "K_image_210_2",
+  "gt": "நரசிபுரம்",
+  "pred": "The text in the image is \"ராசிப்பூரம்\" which is written in Tamil script. It translates to \"Rasipuram\" in English."
+ },
+ {
+  "name": "K_image_210_3",
+  "gt": "கி.பி.13",
+  "pred": "The text in the image reads \"ச.0.13\"."
+ },
+ {
+  "name": "K_image_210_4",
+  "gt": "ஆம்",
+  "pred": "The text in the image is \"தொ\"."
+ },
+ {
+  "name": "K_image_215_0",
+  "gt": "நூற்றாண்டு",
+  "pred": "The text in the image appears to be in Tamil script. The characters read from left to right as \"கோட்டாச்சரம்\" (Kottasaram). This is a place name, likely referring to a town or village in Tamil Nadu, India."
+ },
+ {
+  "name": "K_image_215_1",
+  "gt": "முருகன்",
+  "pred": "The text in the image is \"மரத்து\". This appears to be in Tamil script, which is used primarily in the Indian state of Tamil Nadu and by Tamil communities in other parts of India and abroad. The word \"மரத்து\" (marattu) can have multiple meanings"
+ },
+ {
+  "name": "K_image_215_2",
+  "gt": "கொழுமம்",
+  "pred": "The text in the image is in Tamil and reads \"கோழிமர்\" (Kozhimar)."
+ },
+ {
+  "name": "K_image_215_3",
+  "gt": "கி.பி.17",
+  "pred": "The text in the image reads \"6.17\"."
+ },
+ {
+  "name": "K_image_215_4",
+  "gt": "ஆம்",
+  "pred": "The text in the image is \"இலை\". This is a Tamil word that means \"leaf\" in English."
+ },
+ {
+  "name": "K_image_227_0",
+  "gt": "காலம்",
+  "pred": "The text in the image is in Tamil and reads \"விளையாடும்\" which translates to \"playing\" or \"participating\" in English."
+ },
+ {
+  "name": "K_image_227_1",
+  "gt": "௬டுமண்",
+  "pred": "The text in the image reads \"8月6日600T\". This translates to \"August 6th, 600T\" in English."
+ },
+ {
+  "name": "K_image_227_2",
+  "gt": "குழாய்",
+  "pred": "The text in the image is \"தமிழ்\" which is the Tamil script for the word \"Tamil.\""
+ },
+ {
+  "name": "K_image_227_3",
+  "gt": "உலகடம்",
+  "pred": "The text in the image is \"2-6081M\"."
+ },
+ {
+  "name": "K_image_227_4",
+  "gt": "சோழா்",
+  "pred": "The text in the image is \"செயற்க\" which appears to be in Tamil script. The meaning or context of this word depends on the specific language and dialect it belongs to, but it does not form a complete word in standard Tamil. It might be part of a larger phrase or a miss"
+ },
+ {
+  "name": "K_image_228_0",
+  "gt": "போளுவாம்பட்டி",
+  "pred": "The text in the image is \"গুলোর মধ্যে\" which translates to \"among them\" in English."
+ },
+ {
+  "name": "K_image_228_1",
+  "gt": "பொம்மைகள்",
+  "pred": "The text in the image is in Tamil and reads \"பாம்லேக்ஸ்\"."
+ },
+ {
+  "name": "K_image_228_2",
+  "gt": "சுடுமண்",
+  "pred": "The text in the image is \"कोमल\" which is written in Devanagari script. This script is used to write several languages of India, including Hindi and Marathi. The meaning or context of this word depends on the language it is written in. If you provide more context or specify the language"
+ },
+ {
+  "name": "K_image_257_0",
+  "gt": "காலம்",
+  "pred": "The text in the image is \"காலம்\" which is in Tamil script. It translates to \"time\" or \"season\" in English."
+ },
+ {
+  "name": "K_image_257_1",
+  "gt": "சங்க",
+  "pred": "The text in the image is \"சந்திக்\"."
+ },
+ {
+  "name": "K_image_257_2",
+  "gt": "பேரூா்",
+  "pred": "The text in the image is \"গোল্ড\" which is Bengali for \"Gold\"."
+ },
+ {
+  "name": "K_image_257_3",
+  "gt": "பெருங்கற்கால",
+  "pred": "The text in the image is in Tamil and reads \"புனக்கால்\" which translates to \"Punakkaal\" in English. This could be a name, a title, or a phrase in Tamil."
+ },
+ {
+  "name": "K_image_257_4",
+  "gt": "மட்பாண்டங்கள்",
+  "pred": "The text in the image is \"மேல்பாண்ட வங்கள்,\" which translates to \"Melpandu Banks\" in English."
+ },
+ {
+  "name": "K_image_280_3",
+  "gt": "சின்னசேலம்",
+  "pred": "The text in the image is \"சென்னை செல்லும்\" which translates to \"Going to Chennai\" in English."
+ },
+ {
+  "name": "K_image_287_0",
+  "gt": "கிடைக்கும்,",
+  "pred": "The text in the image is \"கிளைக்கும்\"."
+ },
+ {
+  "name": "K_image_287_1",
+  "gt": "டாலர்கள்",
+  "pred": "The text in the image is \"பொருங்கள்\". This is Tamil script, which translates to \"People\" in English."
+ },
+ {
+  "name": "K_image_287_2",
+  "gt": "ஸ்ரீ",
+  "pred": "The text in the image is \"dine\"."
+ },
+ {
+  "name": "K_image_287_3",
+  "gt": "யோக",
+  "pred": "The text in the image is \"പ്രോക\"."
+ },
+ {
+  "name": "K_image_287_4",
+  "gt": "ஹயக்ரீவர்",
+  "pred": "The text in the image appears to be in Tamil script and reads \"விளையாட்டு\". This translates to \"game\" or \"play\" in English."
+ },
+ {
+  "name": "K_image_293_0",
+  "gt": "சேலம்.",
+  "pred": "The text in the image reads \"СЕГОДНЯ\"."
+ },
+ {
+  "name": "K_image_293_1",
+  "gt": "ஒதங்கிணைந்த",
+  "pred": "The text in the image is in Tamil and reads \"விளையாடுதல்\" which translates to \"Playing\" or \"Game\" in English."
+ },
+ {
+  "name": "K_image_293_2",
+  "gt": "நீதிமன்ற",
+  "pred": "The text in the image is in Tamil and reads \"நீதி மன்னம்\" which translates to \"Justice\" in English."
+ },
+ {
+  "name": "K_image_293_3",
+  "gt": "வளாகம்.",
+  "pred": "The text in the image is in Tamil and reads \"வளங்கம்\"."
+ },
+ {
+  "name": "K_image_30_0",
+  "gt": "புல்லாங்குழல்",
+  "pred": "The text in the image is in Tamil and reads \"பெல்லார்துமில்\"."
+ },
+ {
+  "name": "K_image_347_1",
+  "gt": "சிவசிவ",
+  "pred": "The text in the image reads \"சிவ சிவ\" which is in Tamil script. The characters \"சிவ\" mean \"Shiva,\" which is a name for the Hindu god Shiva."
+ },
+ {
+  "name": "K_image_347_18",
+  "gt": "அங்காளபரமேஸ்வாி",
+  "pred": "The text in the image is in Thai and reads \"อนุสาวรีย์ชัยสมรภูมิ\" which translates to \"Chai Chet Sam Phum Monument\" in English. This refers to the Chai Chet Sam Phum Monument, a war memorial located in Thailand."
+ },
+ {
+  "name": "K_image_347_2",
+  "gt": "ஸ்ரீ",
+  "pred": "The text in the image is \"WIN\"."
+ },
+ {
+  "name": "K_image_347_4",
+  "gt": "அங்காளபடுமேஸ்கரி",
+  "pred": "The text in the image is in Tamil and reads \"இந்தியாவில் பெரும்பாலான மக்கள்\". This translates to \"Most people in India\" in English."
+ },
+ {
+  "name": "K_image_347_5",
+  "gt": "ஸ்ரீ",
+  "pred": "The text in the image is \"5/6\"."
+ },
+ {
+  "name": "K_image_347_7",
+  "gt": "துணை",
+  "pred": "The text in the image reads \"GUNWORLD\"."
+ },
+ {
+  "name": "K_image_353_4",
+  "gt": "தங்கமணி",
+  "pred": "The text in the image is in Tamil and reads \"திருக்கோயில்\". This translates to \"Temple\" in English."
+ },
+ {
+  "name": "K_image_4_2",
+  "gt": "சின்னசேலம்",
+  "pred": "The text in the image is in Tamil and reads \"சி நா ச லம்\". Translated to English, it means \"I am calm.\""
+ },
+ {
+  "name": "K_image_41_1",
+  "gt": "தமிழ்",
+  "pred": "The text in the image is \"தமிழ்\" which is the Tamil script for the word \"Tamil\"."
+ },
+ {
+  "name": "K_image_41_10",
+  "gt": "தமிழ்",
+  "pred": "The text in the image is \"தமிழ்\". This is the Tamil script for the word \"Tamil\", which refers to the Tamil language and its speakers."
+ },
+ {
+  "name": "K_image_41_11",
+  "gt": "பொியாா்",
+  "pred": "The text in the image reads \"GILMOUR\"."
+ },
+ {
+  "name": "K_image_41_12",
+  "gt": "பல்கலைக்கழகம்",
+  "pred": "The text in the image is \"தமிழ் மொழி\". This is Tamil, which is written in Tamil script."
+ },
+ {
+  "name": "K_image_41_13",
+  "gt": "சேலம்",
+  "pred": "The text in the image reads \"G=901b\"."
+ },
+ {
+  "name": "K_image_41_6",
+  "gt": "சேலம்",
+  "pred": "The text in the image is \"செம்\". This appears to be in Tamil script, which is used primarily in the Indian state of Tamil Nadu and by Tamil communities in other parts of India and abroad. The meaning or context of this word would depend on its usage in a sentence or within a specific cultural"
+ },
+ {
+  "name": "K_image_41_7",
+  "gt": "பல்கலைக்கழகம்",
+  "pred": "The text in the image is in Tamil and reads \"பொதுக்களங்களம்\". This translates to \"Public Library\" in English."
+ },
+ {
+  "name": "K_image_41_8",
+  "gt": "பொியாா்",
+  "pred": "The text in the image is \"คณิตศาสตร์\" which translates to \"Mathematics\" in English."
+ },
+ {
+  "name": "K_image_41_9",
+  "gt": "வாழ்க",
+  "pred": "The text in the image is \"வாழ்க\". This is Tamil script, and it translates to \"live\" or \"stay alive\" in English."
+ },
+ {
+  "name": "K_image_423_1",
+  "gt": "பா்க்கிட் சாலை",
+  "pred": "The text in the image is in Tamil and reads \"பார்க்கி சாலை\" (Pārkkī Čaalai). This translates to \"Parki Road\" in English."
+ },
+ {
+  "name": "K_image_427_0",
+  "gt": "திருச்சி",
+  "pred": "The text in the image is \"5671\"."
+ },
+ {
+  "name": "K_image_427_1",
+  "gt": "பேருந்து",
+  "pred": "The text in the image reads \"中国银行\" which translates to \"China Bank\" in English."
+ },
+ {
+  "name": "K_image_427_10",
+  "gt": "பேடுந்து",
+  "pred": "The text in the image is \"Guang\"."
+ },
+ {
+  "name": "K_image_427_11",
+  "gt": "நிலையம்",
+  "pred": "The text in the image is \"গুলোটা\"."
+ },
+ {
+  "name": "K_image_427_12",
+  "gt": "அரசுப்",
+  "pred": "The text in the image is \"美知\"."
+ },
+ {
+  "name": "K_image_427_13",
+  "gt": "தமிழ்நாடு",
+  "pred": "The text in the image is \"Juegos\"."
+ },
+ {
+  "name": "K_image_427_14",
+  "gt": "டோல்கேட்",
+  "pred": "The text in the image reads \"Glutamic\"."
+ },
+ {
+  "name": "K_image_427_16",
+  "gt": "நிலையம்",
+  "pred": "The text in the image reads \"Всем привет,\" which is Russian for \"Hello everyone.\""
+ },
+ {
+  "name": "K_image_427_17",
+  "gt": "திருச்சி",
+  "pred": "The text in the image is \"தமிழ்\". This is the Tamil script, which is used to write the Tamil language."
+ },
+ {
+  "name": "K_image_427_18",
+  "gt": "பேருந்து",
+  "pred": "The text in the image is \"பொருள்\". This is Tamil for \"product\" or \"goods\"."
+ },
+ {
+  "name": "K_image_427_19",
+  "gt": "தமிழ்நாடு",
+  "pred": "The text in the image is \"தமிழ்நாடு\", which is Tamil for \"Tamil Nadu\"."
+ },
+ {
+  "name": "K_image_427_3",
+  "gt": "அரசுப்",
+  "pred": "The text in the image is \"ஆரக்கு\". This appears to be Tamil script, which is used primarily in the Indian state of Tamil Nadu and in the Union Territory of Puducherry, as well as by Tamil communities in other parts of India and abroad. The meaning or context of this word"
+ },
+ {
+  "name": "K_image_427_4",
+  "gt": "வழி",
+  "pred": "The text in the image is \"aiyu\"."
+ },
+ {
+  "name": "K_image_427_5",
+  "gt": "தில்லை",
+  "pred": "The text in the image is \"శ్రీవామ\". This appears to be in Telugu script, which is used in the Indian state of Andhra Pradesh and some neighboring regions. The meaning or context of this word would depend on its usage in a specific sentence or document."
+ },
+ {
+  "name": "K_image_427_6",
+  "gt": "நகா்,",
+  "pred": "The text in the image is \"100%\"."
+ },
+ {
+  "name": "K_image_427_7",
+  "gt": "மத்திய",
+  "pred": "The text in the image is \"江苏卫视\". This translates to \"Jiangsu Satellite Television\" in English, which is a television network in China."
+ },
+ {
+  "name": "K_image_427_8",
+  "gt": "பே௫ந்து",
+  "pred": "The text in the image is \"பொதுமகள்\". This is Tamil for \"Public Works\" or \"Public Works Department\"."
+ },
+ {
+  "name": "K_image_427_9",
+  "gt": "மத்திய",
+  "pred": "The text in the image is \"प्रकाश\". This is in Devanagari script, which is used to write several languages including Hindi and Marathi. The word \"प्रकाश\" means \"light\" or \"shine\" in Hindi."
+ },
+ {
+  "name": "K_image_482_3",
+  "gt": "அம்பத்தூா்",
+  "pred": "The text in the image is in Tamil and reads \"ஆம்பத்துரை\" (Aambathurai)."
+ },
+ {
+  "name": "K_image_489_2",
+  "gt": "திமிலுள்ள",
+  "pred": "The text in the image is in Tamil and reads \"திப்பியுல்லா\"."
+ },
+ {
+  "name": "K_image_489_3",
+  "gt": "காளையின்",
+  "pred": "The text in the image is in Tamil and reads \"காலனின்\"."
+ },
+ {
+  "name": "K_image_489_4",
+  "gt": "எலும்புகள்",
+  "pred": "The text in the image is in Tamil and reads \"எலும்புகள்\". In English, this translates to \"bones\"."
+ },
+ {
+  "name": "K_image_564_0",
+  "gt": "பெட்டி",
+  "pred": "The text in the image is \"धन्यवाद\". This is Marathi for \"Thank you\" in English."
+ },
+ {
+  "name": "K_image_564_1",
+  "gt": "புகாா்",
+  "pred": "The text in the image is \"पुत्रां\"."
+ },
+ {
+  "name": "K_image_606_1",
+  "gt": "சென்னை",
+  "pred": "The text in the image is \"कैंसर की जांच\". This translates to \"Cancer Check\" in English."
+ },
+ {
+  "name": "K_image_606_2",
+  "gt": "லேங்கூா்",
+  "pred": "The text in the image is \"গোরেঘাট\" which is written in Bengali script. The English transliteration of this text would be \"Goraghat.\""
+ },
+ {
+  "name": "K_image_606_3",
+  "gt": "(செம்னோபித்திக்கஸ்",
+  "pred": "The text in the image is \"PariGammikka\"."
+ },
+ {
+  "name": "K_image_613_3",
+  "gt": "திண்ணி",
+  "pred": "The text in the image is in Tamil and reads \"தினமொழி\". This translates to \"Daily Language\" or \"Daily Words\" in English."
+ },
+ {
+  "name": "K_image_613_4",
+  "gt": "எறும்புத்",
+  "pred": "The text in the image is \"எறும்பு\". This is in Tamil script, which translates to \"elephant\" in English."
+ },
+ {
+  "name": "K_image_616_1",
+  "gt": "வெள்ளாடுகள்",
+  "pred": "The text in the image is \"வள்ளாகேள்\". This appears to be Tamil script, which is used primarily in the Indian state of Tamil Nadu and the Union Territory of Puducherry, as well as by Tamil communities in other parts of India and abroad. The meaning or"
+ },
+ {
+  "name": "K_image_616_11",
+  "gt": "நீலகிாிக்",
+  "pred": "The text in the image is \"தலைமிகு\". This appears to be in Tamil script, which is used primarily in the Indian state of Tamil Nadu and by Tamil communities in other parts of India and abroad. The meaning or context of this word would depend on its usage in a specific sentence or"
+ },
+ {
+  "name": "K_image_616_18",
+  "gt": "காட்டு",
+  "pred": "The text in the image is \"©TCL®\"."
+ },
+ {
+  "name": "K_image_616_19",
+  "gt": "நீலகிரிக்",
+  "pred": "The text in the image reads \"bookshelf\"."
+ },
+ {
+  "name": "K_image_616_2",
+  "gt": "காட்டு",
+  "pred": "The text in the image is \"காப்ட\" which appears to be in Tamil script."
+ },
+ {
+  "name": "K_image_616_6",
+  "gt": "நீலகிரில்",
+  "pred": "The text in the image reads \"Bartender\"."
+ },
+ {
+  "name": "K_image_616_7",
+  "gt": "காட்டு",
+  "pred": "The text in the image reads \"Всё наоборот\". This is Russian and translates to \"Everything is opposite\" or \"Everything is reversed\" in English."
+ },
+ {
+  "name": "K_image_616_8",
+  "gt": "வெள்ளாடு",
+  "pred": "The text in the image reads \"Qasimamri\"."
+ },
+ {
+  "name": "K_image_616_17",
+  "gt": "பெண்",
+  "pred": "The text in the image reads \"Quake\"."
+ },
+ {
+  "name": "K_image_624_3",
+  "gt": "சிறுத்தை பூனை",
+  "pred": "The text in the image is \"कैंसर\". This is the Hindi word for \"cancer\"."
+ },
+ {
+  "name": "K_image_624_8",
+  "gt": "புள்ளிப்பூனை",
+  "pred": "The text in the image is in Malayalam, and it reads \"പുസ്തകങ്ങളെ.\" This translates to \"Books\" in English."
+ },
+ {
+  "name": "K_image_624_9",
+  "gt": "இ௫ம்புத்து௫௫நிற",
+  "pred": "The text in the image is in Tamil and reads \"இரும்புத்துறை\"."
+ },
+ {
+  "name": "K_image_639_0",
+  "gt": "சிவம்",
+  "pred": "The text in the image is \"स्विमिंग\". This is written in Devanagari script, which is used for several languages including Hindi and Marathi. The word \"स्विमिंग\" translates to \"swimming\" in English."
+ },
+ {
+  "name": "K_image_639_1",
+  "gt": "அன்பே",
+  "pred": "The text in the image is \"CHOTCHI\"."
+ },
+ {
+  "name": "K_image_646_1",
+  "gt": "அருள்மிகு",
+  "pred": "The text in the image reads \"Budweiser.\""
+ },
+ {
+  "name": "K_image_646_2",
+  "gt": "ஸ்ரீஷண்முகநாதா்",
+  "pred": "The text in the image reads \"அதிவேக துறைமுகம்\" which translates to \"High-Speed Terminal\" in English."
+ },
+ {
+  "name": "K_image_646_3",
+  "gt": "வளைவு",
+  "pred": "The text in the image reads \"MADISON\"."
+ },
+ {
+  "name": "K_image_646_4",
+  "gt": "வளைவு",
+  "pred": "The text in the image reads \"MADISON\"."
+ },
+ {
+  "name": "K_image_681_1",
+  "gt": "ஜெம்",
+  "pred": "The text in the image is \"ஜம்\" which appears to be in Tamil script. The character \"ஜ\" (Ja) and \"ம\" (Ma) together form the word \"ஜம்\" (Jam)."
+ },
+ {
+  "name": "K_image_681_0",
+  "gt": "மருத்துவமனை",
+  "pred": "The text in the image is in Tamil and reads \"நெத்துவமலை\"."
+ },
+ {
+  "name": "K_image_688_5",
+  "gt": "நிலையம்",
+  "pred": "The text in the image is \"நிறோவும்\"."
+ },
+ {
+  "name": "K_image_688_6",
+  "gt": "மாநகராட்சி",
+  "pred": "The text in the image is \"மானக்களை\". This appears to be Tamil script, which is used primarily in the Indian state of Tamil Nadu and the Union Territory of Puducherry, as well as by Tamil communities in other parts of India and abroad. The meaning or context"
+ },
+ {
+  "name": "K_image_688_7",
+  "gt": "கோவை",
+  "pred": "The text in the image is \"கோலோவ்\". This appears to be in Tamil script, which is used primarily in the Indian state of Tamil Nadu and by Tamil communities in other parts of India and around the world. The word \"கோலோவ்\" (Kol"
+ },
+ {
+  "name": "K_image_688_8",
+  "gt": "பேருந்து",
+  "pred": "The text in the image is \"பெருந்தல்\" which is in Tamil script. The meaning of this word can vary depending on the context, but it generally refers to something related to \"peru\" (which could mean \"big\" or \"large\") and \"ntal"
+ },
+ {
+  "name": "K_image_698_5",
+  "gt": "நீக்கி",
+  "pred": "The text in the image is \"தொகை\" which is in Tamil script. It translates to \"amount\" or \"total\" in English."
+ },
+ {
+  "name": "K_image_698_6",
+  "gt": "சிடுக்கு",
+  "pred": "The text in the image is \"மீதை\". This is in Tamil script, which translates to \"afternoon\" or \"evening\" in English."
+ },
+ {
+  "name": "K_image_705_1",
+  "gt": "செம்புப்பாண்டம்",
+  "pred": "The text in the image is in Tamil and reads \"சம்பவாளம்\" which translates to \"Sambavaalam\" in English. This could be a name, a place, or a brand."
+ },
+ {
+  "name": "K_image_721_2",
+  "gt": "புல்வெளியில்",
+  "pred": "The text in the image is in Tamil and reads \"புத்தாண்டு\". This translates to \"New Year\" in English."
+ },
+ {
+  "name": "K_image_721_3",
+  "gt": "நடக்காதீா்",
+  "pred": "The text in the image is \"நக்கத்தர்\". This appears to be in Tamil script, which is used primarily in the Indian state of Tamil Nadu and in the country of Sri Lanka. The meaning or context of this word would depend on its usage in a sentence or within a specific"
+ },
+ {
+  "name": "K_image_753_0",
+  "gt": "லிமிடெட்",
+  "pred": "The text in the image reads \"WALL\"."
+ },
+ {
+  "name": "K_image_753_1",
+  "gt": "லுங்கி",
+  "pred": "The text in the image is \"อุณหภูมิ\" which translates to \"temperature\" in English."
+ },
+ {
+  "name": "K_image_753_2",
+  "gt": "சங்கு",
+  "pred": "The text in the image is \"தமிழ்\" which is the Tamil script for the word \"Tamil\"."
+ },
+ {
+  "name": "K_image_753_5",
+  "gt": "பனியன்",
+  "pred": "The text in the image is \"पंजीकरण\" which is Hindi for \"registration\"."
+ },
+ {
+  "name": "K_image_753_6",
+  "gt": "கைலிகள்",
+  "pred": "The text in the image is \"கல்விகள்\". This is Tamil for \"Education\" or \"Educational\"."
+ },
+ {
+  "name": "K_image_753_7",
+  "gt": "சங்கு",
+  "pred": "The text in the image is \"天猫\" (Tmall)."
+ },
+ {
+  "name": "K_image_753_8",
+  "gt": "கிடைக்கும்",
+  "pred": "The text in the image is \"கீதாக்கும்\". This appears to be in Tamil, and it translates to \"singing\" or \"to sing\" in English."
+ },
+ {
+  "name": "K_image_753_9",
+  "gt": "கிடைக்கும்",
+  "pred": "The text in the image is \"கீதாக்கும்\". This appears to be in Tamil, and it translates to \"singing\" or \"to sing\" in English."
+ },
+ {
+  "name": "K_image_753_3",
+  "gt": "ஜட்டிகள்",
+  "pred": "The text in the image is \"ইন্টারকন্ডা\"."
+ },
+ {
+  "name": "K_image_788_3",
+  "gt": "காஞ்சிபுரம்",
+  "pred": "The text in the image is in Tamil and reads \"கார்சிப்ராம்\" (Kārchipram). This appears to be a name or title, possibly of a person, place, or organization."
+ },
+ {
+  "name": "K_image_79_2",
+  "gt": "மோதிரக்கல்",
+  "pred": "The text in the image is \"மொத்திரக்கல்\" which is written in Tamil script."
+ },
+ {
+  "name": "K_image_79_3",
+  "gt": "சூதுபவள",
+  "pred": "The text in the image is \"சதுப்புவா\"."
+ },
+ {
+  "name": "K_image_810_1",
+  "gt": "நெடுஞ்சாலைத்துறை",
+  "pred": "The text in the image is in Tamil and reads \"தொழில்நுட்ப துறை\" which translates to \"Industrial Department\" in English."
+ },
+ {
+  "name": "K_image_810_2",
+  "gt": "கிளியநல்லூா்",
+  "pred": "The text in the image is in Tamil and reads \"கிளியுந்துபார்\"."
+ },
+ {
+  "name": "K_image_823_2",
+  "gt": "சூப்பா்",
+  "pred": "The text in the image is \"குப்பார்\". This is in Tamil script, which translates to \"Kuppār\" in English."
+ },
+ {
+  "name": "K_image_823_3",
+  "gt": "சைனா",
+  "pred": "The text in the image is \"மதுக்கை\"."
+ },
+ {
+  "name": "K_image_823_4",
+  "gt": "மொபைல்",
+  "pred": "The text in the image reads \"ALDITAPAL\"."
+ },
+ {
+  "name": "K_image_823_6",
+  "gt": "சக்தி",
+  "pred": "The text in the image is \"சகதி\" which is written in Tamil script. The meaning of this word can vary depending on the context, but it often refers to \"schedule\" or \"timetable\" in English."
+ },
+ {
+  "name": "K_image_834_0",
+  "gt": "காரமடை",
+  "pred": "The text in the image is \"కుమ్మరి\". This is Telugu, and it translates to \"Kumari\" in English."
+ },
+ {
+  "name": "K_image_834_1",
+  "gt": "ஆயில்",
+  "pred": "The text in the image is \"务旺\"."
+ },
+ {
+  "name": "K_image_834_10",
+  "gt": "குருந்தமலை",
+  "pred": "The text in the image is \"தொழில்மனை\" which translates to \"Factory\" or \"Workplace\" in English."
+ },
+ {
+  "name": "K_image_834_11",
+  "gt": "ஏற்றக்கூடாது",
+  "pred": "The text in the image is in Tamil and reads \"விளையாட்டுகள்\" which translates to \"Games\" in English."
+ },
+ {
+  "name": "K_image_834_12",
+  "gt": "சூடம்",
+  "pred": "The text in the image is \"قليل\"."
+ },
+ {
+  "name": "K_image_834_13",
+  "gt": "முன்",
+  "pred": "The text in the image is \"गौरी\" which is written in Devanagari script and transliterated as \"Gauri\"."
+ },
+ {
+  "name": "K_image_834_14",
+  "gt": "சன்னதிகளின்",
+  "pred": "The text in the image is \"কলাম্বিয়া\" which is the name of Columbia in Bengali."
+ },
+ {
+  "name": "K_image_834_15",
+  "gt": "கண்டிப்பாக",
+  "pred": "The text in the image is \"కొత్తపుప్క\". This appears to be in Telugu, a language spoken primarily in the Indian state of Andhra Pradesh and Telangana. The word \"కొత్తపు�"
+ },
+ {
+  "name": "K_image_834_16",
+  "gt": "குழந்தை",
+  "pred": "The text in the image is \"தமிழ்\". This is the Tamil word for \"Tamil\", which refers to the Tamil language and its speakers."
+ },
+ {
+  "name": "K_image_834_2",
+  "gt": "அ௫ள்மிகு",
+  "pred": "The text in the image is \"அரசி மீது\" which is in Tamil script. It translates to \"On the Government\" or \"Government\" in English."
+ },
+ {
+  "name": "K_image_834_3",
+  "gt": "வேலாயத",
+  "pred": "The text in the image is \"வலயத்து\". This is in Tamil script, which is used primarily in the Indian state of Tamil Nadu and by Tamil communities in other parts of India and abroad. The meaning or context of this word would depend on its usage in a sentence or within a specific cultural"
+ },
+ {
+  "name": "K_image_834_4",
+  "gt": "சுவரமி",
+  "pred": "The text in the image is \"சாவாகி\" which is in Tamil script. The transliteration into English would be \"Savagi.\""
+ },
+ {
+  "name": "K_image_834_5",
+  "gt": "தி௫க்கோவில்",
+  "pred": "The text in the image is in Tamil and reads \"திருக்கோவில்\" which translates to \"Temple\" in English."
+ },
+ {
+  "name": "K_image_834_6",
+  "gt": "உபயம்,",
+  "pred": "The text in the image is \"LUBB\"."
+ },
+ {
+  "name": "K_image_834_8",
+  "gt": "மில்",
+  "pred": "The text in the image is \"建议\"."
+ },
+ {
+  "name": "K_image_834_9",
+  "gt": "ஸ்ரீ",
+  "pred": "The text in the image is \"15%\"."
+ },
+ {
+  "name": "K_image_856_1",
+  "gt": "மருத்து",
+  "pred": "The text in the image reads \"Dobrý\"."
+ },
+ {
+  "name": "K_image_856_2",
+  "gt": "அரசு",
+  "pred": "The text in the image reads \"Sino\"."
+ },
+ {
+  "name": "K_image_856_3",
+  "gt": "நினைவு",
+  "pred": "The text in the image is \"गिनती\" which is Hindi for \"counting\" or \"calculation\"."
+ },
+ {
+  "name": "K_image_856_4",
+  "gt": "காந்தி",
+  "pred": "The text in the image is \"करार के\" which translates to \"Deal's\" or \"Agreement's\" in English."
+ },
+ {
+  "name": "K_image_856_5",
+  "gt": "மகாத்மா",
+  "pred": "The text in the image is \"மகாத்மா\" which translates to \"Mahatma\" in English. Mahatma Gandhi was a prominent Indian political and social activist who played a key role in India's struggle for independence from British rule."
+ },
+ {
+  "name": "K_image_856_7",
+  "gt": "விஸ்வநாதம்",
+  "pred": "The text in the image reads \"SINGOQUINTA\"."
+ },
+ {
+  "name": "K_image_856_8",
+  "gt": "அரசு",
+  "pred": "The text in the image reads \"100%\"."
+ },
+ {
+  "name": "K_image_856_9",
+  "gt": "மருத்து",
+  "pred": "The text in the image reads \"100%\"."
+ },
+ {
+  "name": "K_image_872_0",
+  "gt": "மாளிகை",
+  "pred": "The text in the image reads \"whale\"."
+ },
+ {
+  "name": "K_image_872_1",
+  "gt": "அண்ண",
+  "pred": "The text in the image is \"धन दु:\". This appears to be in Devanagari script, which is used for several languages including Hindi and Marathi. The characters can be transliterated into Latin script as \"Dhan du:\". Without additional context, it's difficult to provide a precise translation"
+ },
+ {
+  "name": "K_image_872_2",
+  "gt": "மதுரை",
+  "pred": "The text in the image is \"Peshawar\"."
+ },
+ {
+  "name": "K_image_872_3",
+  "gt": "மாநகராட்சி",
+  "pred": "The text in the image is \"நெக்காடு\". This appears to be Tamil script, which is used primarily in the Indian state of Tamil Nadu and in the country of Sri Lanka. The word \"நெக்காடு\" (Nekkad"
+ },
+ {
+  "name": "K_image_872_4",
+  "gt": "அறிஞா்",
+  "pred": "The text in the image reads \"SINDIGIT\"."
+ },
+ {
+  "name": "K_image_872_5",
+  "gt": "அண்ணா",
+  "pred": "The text in the image is \"అందుబాటు\". This is Telugu, a language spoken primarily in the Indian state of Andhra Pradesh and Telangana. The word \"అందుబాటు\" (And"
+ },
+ {
+  "name": "K_image_872_6",
+  "gt": "மாளிகை",
+  "pred": "The text in the image is \"மாணிக்க\" which is in Tamil script. It translates to \"Moonstone\" in English."
+ },
+ {
+  "name": "K_image_872_7",
+  "gt": "மதுரை",
+  "pred": "The text in the image is \"प्रेम की दुनिया\" which translates to \"World of Love\" in English."
+ },
+ {
+  "name": "K_image_872_8",
+  "gt": "மாநகராட்சி",
+  "pred": "The text in the image reads \"BIBLIOTECAS\"."
+ },
+ {
+  "name": "K_image_872_9",
+  "gt": "அறிஞர்",
+  "pred": "The text in the image is \"أيام\"."
+ },
+ {
+  "name": "K_image_879_0",
+  "gt": "வடக்குக்",
+  "pred": "The text in the image is \"வெட்டுக்\"."
+ },
+ {
+  "name": "K_image_879_1",
+  "gt": "கோபுரம்",
+  "pred": "The text in the image is \"கோபுரம்\". This is Tamil for \"temple tower\" or \"tower\"."
+ },
+ {
+  "name": "K_image_892_3",
+  "gt": "மகால்",
+  "pred": "The text in the image is \"தேலோ\". This appears to be in Tamil script, which is used primarily in the Indian state of Tamil Nadu and by Tamil communities in other parts of India and abroad. The word \"தேலோ\" (Thelo) can mean \"yes\""
+ },
+ {
+  "name": "K_image_892_4",
+  "gt": "நாயக்கா்",
+  "pred": "The text in the image is in Tamil and reads \"நீஷ்கள்\"."
+ },
+ {
+  "name": "K_image_892_5",
+  "gt": "திருமலை",
+  "pred": "The text in the image is in Tamil and reads \"தெம்பே\"."
+ },
+ {
+  "name": "K_image_901_2",
+  "gt": "கிழக்குக்கோபுரம்",
+  "pred": "The text in the image is in Malayalam, and it reads \"ഇരുക്കോപ്പുമ\"."
+ },
+ {
+  "name": "K_image_901_3",
+  "gt": "ம்",
+  "pred": "The text in the image reads \"ID\"."
+ },
+ {
+  "name": "K_image_911_11",
+  "gt": "மெடிக்கல்ஸ்",
+  "pred": "The text in the image is \"மறுக்கல்லோ\"."
+ },
+ {
+  "name": "K_image_911_13",
+  "gt": "காா்த்திக்",
+  "pred": "The text in the image is \"கார்த்திக்\" which is Tamil for \"Karthik\"."
+ },
+ {
+  "name": "K_image_911_18",
+  "gt": "மெ",
+  "pred": "The text in the image is \"OLD\"."
+ },
+ {
+  "name": "K_image_911_22",
+  "gt": "காா்த்திக்",
+  "pred": "The text in the image is \"வெள்ளிக்\"."
+ },
+ {
+  "name": "K_image_916_1",
+  "gt": "உடன்",
+  "pred": "The text in the image reads \"e_i\"."
+ },
+ {
+  "name": "K_image_918_0",
+  "gt": "பல்கலைக்கழகம்",
+  "pred": "The text in the image is in Tamil and reads:\n\nபெற்ற தலைத் தமிழ் மா\n\nThis can be translated to English as:\n\n\"Received Tamil Ma\"\n\nIt seems like there might be a typo or incomplete word at the end, as"
+ },
+ {
+  "name": "K_image_918_1",
+  "gt": "தமிழ்ப்",
+  "pred": "The text in the image is \"ஆகிரம்ப\"."
+ },
+ {
+  "name": "K_image_934_1",
+  "gt": "சீயாள",
+  "pred": "The text in the image is in Tamil and reads \"சிம்லா\" (Simla)."
+ },
+ {
+  "name": "K_image_934_2",
+  "gt": "ஸ்ரீ",
+  "pred": "The text in the image appears to be in Arabic script. The characters read from right to left and seem to form the word \"الله\" (Allah), which is a common Arabic word meaning \"God.\""
+ },
+ {
+  "name": "K_image_934_7",
+  "gt": "அம்மன்",
+  "pred": "The text in the image is \"அம்மன்\" which is written in Tamil script. It translates to \"Mother\" in English."
+ },
+ {
+  "name": "K_image_934_8",
+  "gt": "ஆலயம்",
+  "pred": "The text in the image is \"ஆலயம்\" which is written in Tamil script. It translates to \"Temple\" in English."
+ },
+ {
+  "name": "K_image_951_2",
+  "gt": "சிலம்புகள்",
+  "pred": "The text in the image is in Tamil and reads \"சிலம்புகள்\". This translates to \"Silamppukal\" in English, which refers to \"Silam\" or \"Silam\" in Tamil, meaning \"Silam\" or \"Silam\" in English."
+ },
+ {
+  "name": "K_image_951_3",
+  "gt": "உலோக",
+  "pred": "The text in the image is \"২ লাখ\". This is Bengali and it translates to \"2 lakhs\" in English, which means 200,000."
+ },
+ {
+  "name": "K_image_954_0",
+  "gt": "அத்துலட்சுமி",
+  "pred": "The text in the image reads \"SCHOKOLADE\"."
+ },
+ {
+  "name": "K_image_954_1",
+  "gt": "உதவியை மாணிடம்",
+  "pred": "The text in the image reads \"Legionella Control Ltd.\""
+ },
+ {
+  "name": "K_image_954_10",
+  "gt": "பேருந்து",
+  "pred": "The text in the image is \"பொது\". This is in Tamil script, and it translates to \"general\" or \"common\" in English."
+ },
+ {
+  "name": "K_image_954_13",
+  "gt": "வழி",
+  "pred": "The text in the image reads \"say\"."
+ },
+ {
+  "name": "K_image_954_15",
+  "gt": "தழைக்கரூ.",
+  "pred": "The text in the image reads \"Squids\"."
+ },
+ {
+  "name": "K_image_954_16",
+  "gt": "மகப்பேறு நீதி",
+  "pred": "The text in the image reads \"Wishing Cafe\"."
+ },
+ {
+  "name": "K_image_954_17",
+  "gt": "பொன்னியின்",
+  "pred": "The text in the image reads:\n\n\"100% Natural Ingredients\""
+ },
+ {
+  "name": "K_image_954_18",
+  "gt": "செல்வியே!",
+  "pred": "The text in the image reads \"Drakshay\"."
+ },
+ {
+  "name": "K_image_954_19",
+  "gt": "இறங்கும்",
+  "pred": "The text in the image reads \"SCHOOL\"."
+ },
+ {
+  "name": "K_image_954_20",
+  "gt": "கண்ணக்கிலை",
+  "pred": "The text in the image is \"கோவிட்-19\". This refers to the COVID-19 virus, which is also known as SARS-CoV-2."
+ },
+ {
+  "name": "K_image_954_4",
+  "gt": "கெல்லீஸ்",
+  "pred": "The text in the image is \"একাডেমিক\". This is Bengali and it translates to \"Academic\" in English."
+ },
+ {
+  "name": "K_image_954_6",
+  "gt": "எழும்பூா்",
+  "pred": "The text in the image is \"এমপিএল\" which is Bengali for \"MPL\"."
+ },
+ {
+  "name": "K_image_954_7",
+  "gt": "மாநகா்",
+  "pred": "The text in the image is \"மானகள்\". This is Tamil script, and it translates to \"Manakal\" in English."
+ },
+ {
+  "name": "K_image_954_8",
+  "gt": "போக்குவரத்துக்கழகம்",
+  "pred": "The text in the image is in Tamil and reads: \"பொங்குமாற்றக் கடல்\" which translates to \"Pongum Arattak Kadhal\" in English. This phrase could be a name, title, or a specific term related"
+ },
+ {
+  "name": "K_image_954_9",
+  "gt": "சென்னை",
+  "pred": "The text in the image is \"செம்மொழி\". This is Tamil for \"language\" or \"dialect\"."
+ },
+ {
+  "name": "K_image_954_14",
+  "gt": "உயா்த்திய",
+  "pred": "The text in the image reads \"2023\"."
+ },
+ {
+  "name": "K_image_968_2",
+  "gt": "நெடுஞ்சாலைத்துறை",
+  "pred": "The text in the image is in Tamil and reads: \"உங்கள் வேலைவாய்ப்புகளை தான் முடிக்கும்\" which translates to \"I will"
+ },
+ {
+  "name": "K_image_968_3",
+  "gt": "முள்ளக்காடு",
+  "pred": "The text in the image is \"மனாக்கள்\" which is in Tamil script. The English translation of this phrase is \"Mannaakkaal,\" which can be translated as \"Dreams\" or \"Wishes.\""
+ },
+ {
+  "name": "K_image_979_1",
+  "gt": "நெடுஞ்சாலைத்துறை",
+  "pred": "The text in the image is in Tamil and reads \"வெளிச்சாலைத் துறை\" which translates to \"Road Transport Department\" in English."
+ },
+ {
+  "name": "K_image_979_2",
+  "gt": "முருங்கப்பேட்டை",
+  "pred": "The text in the image is in Tamil and reads \"மொழிக்கப்பட்ட\"."
+ }
+]

@@ -1,0 +1,12 @@
+{
+ "model": "Qwen/Qwen2.5-VL-7B-Instruct",
+ "script": "gurmukhi",
+ "N": 2879,
+ "WRR_prereg_exact": 0.0,
+ "WRR_prereg_lenient": 0.52,
+ "WRR_extracted": 0.52,
+ "CER_extracted": 149.61,
+ "CharAcc_extracted": -49.61,
+ "pct_quoted_span": 96.3,
+ "extraction": "first double-quoted span; else lead-in strip + first clause"
+}

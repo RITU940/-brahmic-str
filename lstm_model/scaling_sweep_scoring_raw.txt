@@ -1,0 +1,66 @@
+==========================================================================
+OBSERVED (sweep-internal; 3240 anchor shown in brackets, not fitted)
+==========================================================================
+malayalam   cov=79.18  810:  4.39 1620:  7.31 6480: 11.70 12960: 14.08   [3240:9.69]
+kannada     cov=90.80  810: 11.67 1620: 16.11 6480: 19.17 12960: 19.86   [3240:15.42]
+telugu      cov=92.30  810: 13.76 1620: 16.33 6480: 21.10 12960: 23.30   [3240:19.82]
+
+==========================================================================
+1. PER-SCRIPT FITS:  WRR = intercept + slope * log2(budget)
+==========================================================================
+malayalam   n=4  slope=+2.377 WRR/doubling  95%CI[+1.997,+2.757]  R2=0.9973
+kannada     n=4  slope=+1.944 WRR/doubling  95%CI[+0.033,+3.855]  R2=0.9055
+telugu      n=4  slope=+2.385 WRR/doubling  95%CI[+2.207,+2.563]  R2=0.9994
+
+==========================================================================
+2. IS THE SLOPE SCRIPT-INVARIANT?  (separate slopes vs one common slope)
+==========================================================================
+separate slopes: ['+2.377', '+1.944', '+2.385']
+common slope c = +2.235 WRR/doubling  95%CI[+1.889,+2.581]
+F(2,6) = 0.924, p = 0.4468  -> NO evidence slopes differ (script-invariant)
+vs preregistered c = 11.48: t = -61.59, EXCLUDED by 95% CI (ratio 5.14x)
+
+==========================================================================
+3. SEPARABLE MODEL:  WRR = a + b*tok_cov + c*log2(budget)
+==========================================================================
+  intercept a =  -70.359  95%CI[-79.999,-60.719]
+  coverage b  =   +0.677  95%CI[+0.578,+0.776]
+  log2budget c =   +2.235  95%CI[+1.869,+2.601]
+  R2 = 0.9796   RMSE = 0.767 WRR   n = 12
+  residuals:
+    malayalam   -0.45  +0.23  +0.15  +0.29
+    kannada     -1.04  +1.16  -0.25  -1.79
+    telugu      +0.03  +0.37  +0.67  +0.63
+
+  held-out check — predict the external 3240 anchor (never fitted):
+    malayalam   predicted  9.32   anchor  9.69   resid +0.37
+    kannada     predicted 17.18   anchor 15.42   resid -1.76
+    telugu      predicted 18.20   anchor 19.82   resid +1.62
+
+==========================================================================
+4. PREREG RULE 3 — top step 6480->12960 (near-fixed lexicon) vs faithful step
+==========================================================================
+  malayalam   top step +2.38   faithful step +2.01   -> comparable: image QUANTITY drives transfer
+  kannada     top step +0.69   faithful step +3.75   -> smaller: saturation/lexicon exhaustion
+  telugu      top step +2.20   faithful step +1.28   -> comparable: image QUANTITY drives transfer
+
+==========================================================================
+5. OUT-OF-SAMPLE CHECK — 6 scripts never used in the fit
+==========================================================================
+script          cov  budget    pred     obs   resid
+bengali       87.34    6480   17.07   27.08  +10.01
+devanagari    94.35    6480   21.82   30.09   +8.27
+gujarati      97.25    3240   21.55   15.86   -5.69
+gurmukhi      90.68    3240   17.10   22.16   +5.06
+oriya         92.64    3240   18.43   25.38   +6.95
+tamil         88.78    3240   15.81    9.16   -6.65
+
+  out-of-sample RMSE = 7.29 WRR   (in-sample RMSE = 0.77)
+  mean |resid| = 7.10, range [-6.65, +10.01]
+  coverage vs WRR across the 6 held-out scripts alone: r = +0.042, p = 0.937
+
+  READ THIS BEFORE BUILDING THE PAPER ON THE OFFSET TERM:
+  the coverage axis in the fit has only THREE distinct values, so the two coverage
+  parameters (a, b) are nearly saturated by construction and the in-sample R2 is
+  optimistic. The budget slope is estimated from within-script replication and is
+  NOT affected by this; the offset model is.

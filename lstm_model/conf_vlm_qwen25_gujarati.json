@@ -1,0 +1,5077 @@
+[
+ {
+  "name": "C_image_1072_0",
+  "gt": "પહોંચાડવાનો",
+  "pred": "The text in the image is in Gujarati and reads \"પહોયારવાનો\"."
+ },
+ {
+  "name": "C_image_1072_1",
+  "gt": "શુભારંભ",
+  "pred": "The text in the image is \"शुभारंभ\" which is written in Devanagari script. This is a Hindi word that translates to \"Shubharambh\" in English, meaning \"Beginning\" or \"Start.\""
+ },
+ {
+  "name": "C_image_1072_2",
+  "gt": "પાણી",
+  "pred": "The text in the image is \"नाना\" which is written in Devanagari script, commonly used for several languages including Hindi and Marathi."
+ },
+ {
+  "name": "C_image_1072_3",
+  "gt": "નર્મદાના",
+  "pred": "The text in the image is \"नर्मदाना\" which is written in Devanagari script. This is the name of Narmada River, one of the major rivers in India."
+ },
+ {
+  "name": "C_image_1081_0",
+  "gt": "માટેની",
+  "pred": "The text in the image is \"માટેની\". This is in Gujarati script, which is used in the Indian state of Gujarat and some neighboring regions. The meaning or context of this word would depend on its usage in a sentence or a specific context. If you have more"
+ },
+ {
+  "name": "C_image_1081_1",
+  "gt": "૬",
+  "pred": "The text in the image is \"S\"."
+ },
+ {
+  "name": "C_image_1081_2",
+  "gt": "જના",
+  "pred": "The text in the image reads \"cell\"."
+ },
+ {
+  "name": "C_image_1081_3",
+  "gt": "નો",
+  "pred": "The text in the image is \"लो\"."
+ },
+ {
+  "name": "C_image_1081_4",
+  "gt": "સમારોહ",
+  "pred": "The text in the image is in Gujarati and reads \"समाजी\"."
+ },
+ {
+  "name": "C_image_1081_5",
+  "gt": "ભરવા",
+  "pred": "The text in the image is \"মেরুদণ্ড\". This appears to be in Bengali script, which translates to \"Meru Danda\" in English. Meru Danda is a term used in Bengali literature and culture, often referring to a type of traditional wooden stick or staff"
+ },
+ {
+  "name": "C_image_1081_6",
+  "gt": "૮",
+  "pred": "The text in the image is \"3\"."
+ },
+ {
+  "name": "C_image_1083_0",
+  "gt": "સાના",
+  "pred": "The text in the image is \"আনা\". This appears to be in Bengali script, which is used primarily in Bangladesh and India. The word \"আনা\" (Aana) can have multiple meanings depending on the context, but it often refers to \"to bring\" or \"to take\" in"
+ },
+ {
+  "name": "C_image_1083_1",
+  "gt": "ન",
+  "pred": "The text in the image appears to be \"어\". This is a Korean character, which can have multiple meanings depending on its context. It can mean \"oh\" as an exclamation, or it can be part of a word like \"어머니\" (mother) or \"어디\" (where). Without"
+ },
+ {
+  "name": "C_image_113_2",
+  "gt": "વડોદરા",
+  "pred": "The text in the image reads \"4S1E2\"."
+ },
+ {
+  "name": "C_image_11306_0",
+  "gt": "વાદન",
+  "pred": "The text in the image reads \"Oleg\"."
+ },
+ {
+  "name": "C_image_11306_1",
+  "gt": "આપાવામા",
+  "pred": "The text in the image is \"प्रतियोगी\". This is in Hindi and it translates to \"competitor\" or \"opponent\" in English."
+ },
+ {
+  "name": "C_image_11306_10",
+  "gt": "વડોદરા",
+  "pred": "The text in the image is \"प्रेम\" which is written in Devanagari script and translates to \"Love\" in English."
+ },
+ {
+  "name": "C_image_11306_11",
+  "gt": "મધ્યસ્થ",
+  "pred": "The text in the image is in Gujarati and reads \"માર્ગસ્થય\" (Mārgasthaya). This is a transliteration of the word \"Margasthaya\" which can be translated to English as \"Margasthaya\" or"
+ },
+ {
+  "name": "C_image_11306_12",
+  "gt": "કરી",
+  "pred": "The text in the image is \"कोई\" which is in Hindi and means \"who\" or \"anyone\" in English."
+ },
+ {
+  "name": "C_image_11306_13",
+  "gt": "મોપેડ",
+  "pred": "The text in the image is \"मापद\" which is in Marathi script. In English, it translates to \"Measure\" or \"Measurement.\""
+ },
+ {
+  "name": "C_image_11306_2",
+  "gt": "મોટરસાયકલ",
+  "pred": "The text in the image reads \"12511722214\"."
+ },
+ {
+  "name": "C_image_11306_3",
+  "gt": "વ્હિલર્સ",
+  "pred": "The text in the image reads \"Seselzi\"."
+ },
+ {
+  "name": "C_image_11306_4",
+  "gt": "આવરો",
+  "pred": "The text in the image is \"한마디만\"."
+ },
+ {
+  "name": "C_image_11306_5",
+  "gt": "પાર્કિંગ",
+  "pred": "The text in the image reads \"Vicel\"."
+ },
+ {
+  "name": "C_image_11306_6",
+  "gt": "ટુ",
+  "pred": "The text in the image is \"20\"."
+ },
+ {
+  "name": "C_image_11306_7",
+  "gt": "તથા",
+  "pred": "The text in the image is \"तन्त्र\"."
+ },
+ {
+  "name": "C_image_11306_8",
+  "gt": "રીતોર",
+  "pred": "The text in the image is \"स्वागत\" which is Hindi for \"welcome\"."
+ },
+ {
+  "name": "C_image_11306_9",
+  "gt": "જેલ",
+  "pred": "The text in the image is \"জেল\" which is Bengali and translates to \"Jheel\" or \"Lake\" in English."
+ },
+ {
+  "name": "C_image_11326_0",
+  "gt": "પાળિયો",
+  "pred": "The text in the image is \"प्रिया\" which is written in Devanagari script and transliterated as \"Priya\" in English."
+ },
+ {
+  "name": "C_image_11727_0",
+  "gt": "નારાયણ",
+  "pred": "The text in the image reads \"SIEBEN\"."
+ },
+ {
+  "name": "C_image_11727_1",
+  "gt": "સૂર્ય",
+  "pred": "The text in the image is \"संदीप\"."
+ },
+ {
+  "name": "C_image_11727_5",
+  "gt": "જય",
+  "pred": "The text in the image reads \"1201\"."
+ },
+ {
+  "name": "C_image_11727_6",
+  "gt": "કૃષ્ણ",
+  "pred": "The text in the image reads \"10%\"."
+ },
+ {
+  "name": "C_image_11727_7",
+  "gt": "શ્રી",
+  "pred": "The text in the image appears to be \"भी\" which is in Devanagari script, used for writing several languages including Hindi and Marathi. The meaning of this word can vary depending on the context but it often translates to \"also,\" \"too,\" or \"as well.\""
+ },
+ {
+  "name": "C_image_11727_13",
+  "gt": "સુચના",
+  "pred": "The text in the image is \"विश्वास\" which is Hindi for \"trust\" or \"faith\"."
+ },
+ {
+  "name": "C_image_11727_14",
+  "gt": "મંદિરનું",
+  "pred": "The text in the image is \"10% off\"."
+ },
+ {
+  "name": "C_image_11727_15",
+  "gt": "કે",
+  "pred": "The text in the image is \"10\"."
+ },
+ {
+  "name": "C_image_11727_16",
+  "gt": "મુર્તિનું",
+  "pred": "The text in the image is \"सुर्योदय\"."
+ },
+ {
+  "name": "C_image_11727_17",
+  "gt": "કેમેરા",
+  "pred": "The text in the image is \"请扫\"."
+ },
+ {
+  "name": "C_image_11727_18",
+  "gt": "કે",
+  "pred": "The text in the image is \"10\"."
+ },
+ {
+  "name": "C_image_11727_19",
+  "gt": "મોબાઈલ",
+  "pred": "The text in the image reads \"KIGA100\"."
+ },
+ {
+  "name": "C_image_11727_20",
+  "gt": "થી",
+  "pred": "The text in the image is \"100\"."
+ },
+ {
+  "name": "C_image_11727_21",
+  "gt": "શૂટીંગ",
+  "pred": "The text in the image is \"जटीम\"."
+ },
+ {
+  "name": "C_image_11727_22",
+  "gt": "કરવું",
+  "pred": "The text in the image is \"521\"."
+ },
+ {
+  "name": "C_image_11727_23",
+  "gt": "નહી",
+  "pred": "The text in the image is \"পেরি\" which is Bengali for \"peri\" or \"elf.\""
+ },
+ {
+  "name": "C_image_12_0",
+  "gt": "વાગત",
+  "pred": "The text in the image reads \"pic\"."
+ },
+ {
+  "name": "C_image_12_1",
+  "gt": "દી",
+  "pred": "The text in the image is \"दि\"."
+ },
+ {
+  "name": "C_image_12_2",
+  "gt": "દ્ર",
+  "pred": "The image appears to be a stylized, abstract representation of a letter \"X\" with a glowing effect. There is no text to read; it is an artistic or digital design."
+ },
+ {
+  "name": "C_image_122_3",
+  "gt": "સન્તરોડ",
+  "pred": "The text in the image is \"सन्तरांड\" which is in Devanagari script, commonly used for writing Hindi and other languages of India."
+ },
+ {
+  "name": "C_image_124_2",
+  "gt": "સુરત",
+  "pred": "The text in the image is \"संगत\" which is written in Devanagari script and translates to \"Sangat\" in English."
+ },
+ {
+  "name": "C_image_12936_0",
+  "gt": "બંગલા-વનવિભાગ",
+  "pred": "The text in the image is in Gujarati and reads \"મુંગાદા - પણવલાગ.\" This translates to \"Mungada - Panvalag\" in English. The first word, \"મુંગા"
+ },
+ {
+  "name": "C_image_12936_1",
+  "gt": "સુસ્વાગતમ્...",
+  "pred": "The text in the image is \"নিজের দল...\" which translates to \"My team...\" in English."
+ },
+ {
+  "name": "C_image_12936_2",
+  "gt": "હાથબ",
+  "pred": "The text in the image appears to be \"dahle\"."
+ },
+ {
+  "name": "C_image_12936_3",
+  "gt": "ભાવનગર.",
+  "pred": "The text in the image reads \"sleopile.\""
+ },
+ {
+  "name": "C_image_13365_0",
+  "gt": "વડાસમ્રા",
+  "pred": "The text in the image is \"অর্জনমূল\" which appears to be in Bengali script. The meaning of this phrase can vary depending on the context, but it generally relates to something related to purchase or acquisition."
+ },
+ {
+  "name": "C_image_13365_1",
+  "gt": "ના",
+  "pred": "The text in the image reads \"51\"."
+ },
+ {
+  "name": "C_image_13769_1",
+  "gt": "જામનગર",
+  "pred": "The text in the image is \"AHA! It's IR.\""
+ },
+ {
+  "name": "C_image_1412_0",
+  "gt": "પ્રસ્થાન",
+  "pred": "The text in the image is in Gujarati and reads \"પ્રદેશનો.\""
+ },
+ {
+  "name": "C_image_1412_1",
+  "gt": "સુખી",
+  "pred": "The text in the image reads \"BANANA\"."
+ },
+ {
+  "name": "C_image_1412_2",
+  "gt": "નમો",
+  "pred": "The text in the image is \"何不为\" which translates to \"Why not\" or \"What's wrong with\" in English."
+ },
+ {
+  "name": "C_image_1412_3",
+  "gt": "નર્મદા",
+  "pred": "The text in the image reads \"MILK\"."
+ },
+ {
+  "name": "C_image_1412_4",
+  "gt": "સર્વદા",
+  "pred": "The text in the image reads \"AFFY\"."
+ },
+ {
+  "name": "C_image_1412_5",
+  "gt": "સને",
+  "pred": "The text in the image is \"सोने\" which translates to \"gold\" in English."
+ },
+ {
+  "name": "C_image_14983_0",
+  "gt": "લરકાતેરઝા",
+  "pred": "The text in the image is in Gujarati and reads \"દારકાંતે સ્વાગત\" which translates to \"Welcome Darakan\" in English."
+ },
+ {
+  "name": "C_image_14983_1",
+  "gt": "સ્ટુડીઓ",
+  "pred": "The text in the image is \"राजस्थान\" which translates to \"Rajasthan\" in English."
+ },
+ {
+  "name": "C_image_14983_11",
+  "gt": "સોડા",
+  "pred": "The text in the image reads \"ENSI\"."
+ },
+ {
+  "name": "C_image_14983_12",
+  "gt": "લેમીનેશ",
+  "pred": "The text in the image is \"कैसे लिखें\" which translates to \"How to write\" in English."
+ },
+ {
+  "name": "C_image_14983_13",
+  "gt": "ઝેરોક્ષ",
+  "pred": "The text in the image is \"क्रोस\" which is in Hindi and it translates to \"Cross\" in English."
+ },
+ {
+  "name": "C_image_14983_14",
+  "gt": "સેનટરીવેર્સ",
+  "pred": "The text in the image is in Gujarati and reads \"सेलेट्रोवेंस\"."
+ },
+ {
+  "name": "C_image_14983_15",
+  "gt": "સૉઇસ",
+  "pred": "The text in the image is \"राज्यसभा\" which translates to \"Rajya Sabha\" in English. The Rajya Sabha is one of the two houses of the Parliament of India, the other being the Lok Sabha."
+ },
+ {
+  "name": "C_image_14983_16",
+  "gt": "મીરા",
+  "pred": "The text in the image is \"आरा\"."
+ },
+ {
+  "name": "C_image_14983_2",
+  "gt": "તથા",
+  "pred": "The text in the image is \"वधु।\" which is in Devanagari script and translates to \"wife\" in English."
+ },
+ {
+  "name": "C_image_14983_5",
+  "gt": "જવેલર્સ",
+  "pred": "The text in the image is \"gracias\"."
+ },
+ {
+  "name": "C_image_14983_6",
+  "gt": "શારદા",
+  "pred": "The text in the image reads \"RUIZEN\"."
+ },
+ {
+  "name": "C_image_14983_8",
+  "gt": "મંઝિલ",
+  "pred": "The text in the image reads \"aijose\"."
+ },
+ {
+  "name": "C_image_14983_9",
+  "gt": "લોઢીયા",
+  "pred": "The text in the image reads \"ติดต่อ\". This is Thai and it translates to \"contact\" or \"contact us\" in English."
+ },
+ {
+  "name": "C_image_14983_17",
+  "gt": "કલ",
+  "pred": "The text in the image is \"SG\"."
+ },
+ {
+  "name": "C_image_15031_11",
+  "gt": "જવેલર્સ",
+  "pred": "The text in the image is \"जयपुर\"."
+ },
+ {
+  "name": "C_image_15031_14",
+  "gt": "વારા",
+  "pred": "The text in the image reads \"1316\"."
+ },
+ {
+  "name": "C_image_15031_15",
+  "gt": "બ્રધર્સ",
+  "pred": "The text in the image reads \"CIGAR\"."
+ },
+ {
+  "name": "C_image_15031_2",
+  "gt": "શ્રીજી",
+  "pred": "The text in the image is \"श्री\" which is transliterated as \"Shri\" in English. This is a common prefix used in India to denote respect and is often used before names or titles, such as \"Shri Ram\" (Mr. Ram) or \"Shri Mahesh\" (Mr"
+ },
+ {
+  "name": "C_image_15031_5",
+  "gt": "જવેલર્સ",
+  "pred": "The text in the image is \"जयहर्ष\"."
+ },
+ {
+  "name": "C_image_15031_9",
+  "gt": "શ્રીજી",
+  "pred": "The text in the image is \"100\"."
+ },
+ {
+  "name": "C_image_15031_33",
+  "gt": "શ્રીજી",
+  "pred": "The text in the image reads \"2020\"."
+ },
+ {
+  "name": "C_image_15031_34",
+  "gt": "સુરક્ષા",
+  "pred": "图中的文字是“电话”。"
+ },
+ {
+  "name": "C_image_15031_35",
+  "gt": "સેતુ",
+  "pred": "The text in the image is \"微信\"."
+ },
+ {
+  "name": "C_image_15031_36",
+  "gt": "પોરબદર",
+  "pred": "The text in the image reads: \"u(t) = u_0 + t^2\"."
+ },
+ {
+  "name": "C_image_15031_37",
+  "gt": "શક્ય",
+  "pred": "The text in the image is \"854\"."
+ },
+ {
+  "name": "C_image_15031_38",
+  "gt": "હોય",
+  "pred": "The text in the image is \"स्वागत\" which is Hindi for \"welcome\"."
+ },
+ {
+  "name": "C_image_15031_39",
+  "gt": "તો",
+  "pred": "The text in the image is \"edit\"."
+ },
+ {
+  "name": "C_image_15031_40",
+  "gt": "અને",
+  "pred": "The text in the image is \"2016\"."
+ },
+ {
+  "name": "C_image_15031_41",
+  "gt": "ટાળો",
+  "pred": "The text in the image is \"iciah\"."
+ },
+ {
+  "name": "C_image_15031_42",
+  "gt": "કરવાનું",
+  "pred": "The text in the image is \"100%\"."
+ },
+ {
+  "name": "C_image_15104_27",
+  "gt": "તેમના",
+  "pred": "The text in the image appears to be \"मेल\" which is Hindi for \"mela\" or \"fair\" in English."
+ },
+ {
+  "name": "C_image_15104_41",
+  "gt": "સંતાન",
+  "pred": "The text in the image is \"संताल\" which is written in Devanagari script. This script is used for several languages including Hindi, Marathi, and Sanskrit. The word \"संताल\" does not have a direct English translation but can be transliterated as \"S"
+ },
+ {
+  "name": "C_image_15104_42",
+  "gt": "કરમચંદ",
+  "pred": "The text in the image is \"करमपंडे\". This appears to be in Marathi, a language spoken primarily in the state of Maharashtra, India. The word \"करमपंडे\" can be transliterated into English as \"Karampande.\""
+ },
+ {
+  "name": "C_image_15104_43",
+  "gt": "જન્મ",
+  "pred": "The text in the image appears to be in Devanagari script, which is used for several languages including Hindi and Marathi. The characters read from left to right are \"धन\". In Hindi, this can be translated as \"Dhan,\" which means \"wealth\" or \"fortune.\""
+ },
+ {
+  "name": "C_image_15104_45",
+  "gt": "આ",
+  "pred": "The text in the image is \"241\"."
+ },
+ {
+  "name": "C_image_15104_46",
+  "gt": "સાથિયાવળા",
+  "pred": "The text in the image is \"सामियावाना\". This appears to be in Devanagari script, which is used for several languages including Hindi and Marathi. The exact meaning or context of this word would depend on the language it is written in. If you need further assistance"
+ },
+ {
+  "name": "C_image_15104_47",
+  "gt": "સં.",
+  "pred": "The text in the image is \"x_i\"."
+ },
+ {
+  "name": "C_image_15104_48",
+  "gt": "૧૯રપ",
+  "pred": "The text in the image is \"1624\"."
+ },
+ {
+  "name": "C_image_15104_49",
+  "gt": "ભાદરવા",
+  "pred": "The text in the image is \"मेरा\". This is Hindi for \"Mera,\" which means \"my\" or \"mine\" in English."
+ },
+ {
+  "name": "C_image_15104_50",
+  "gt": "બારશ",
+  "pred": "The text in the image reads \"GURU\"."
+ },
+ {
+  "name": "C_image_15104_51",
+  "gt": "તારીખ",
+  "pred": "The text in the image is \"तारीख\" which is Hindi for \"date\"."
+ },
+ {
+  "name": "C_image_15104_52",
+  "gt": "બીજી",
+  "pred": "The text in the image is \"গোলা\" which is Bengali for \"ball\"."
+ },
+ {
+  "name": "C_image_15104_53",
+  "gt": "ઓકટોબર",
+  "pred": "The text in the image is in Gujarati and reads \"સોફ્ટવેર\" which translates to \"Software\" in English."
+ },
+ {
+  "name": "C_image_15104_54",
+  "gt": "૧૮૬૯",
+  "pred": "The text in the image reads \"KCG\"."
+ },
+ {
+  "name": "C_image_15104_56",
+  "gt": "ના",
+  "pred": "The text in the image reads \"cell\"."
+ },
+ {
+  "name": "C_image_15104_57",
+  "gt": "દિને",
+  "pred": "The text in the image is \"en\"."
+ },
+ {
+  "name": "C_image_15104_63",
+  "gt": "જન્મ-સ્થળ",
+  "pred": "The text in the image is \"영어-국어의\"."
+ },
+ {
+  "name": "C_image_15104_64",
+  "gt": "મહાત્મા",
+  "pred": "The text in the image is \"महामा\" which is written in Devanagari script, commonly used for several languages including Hindi and Marathi."
+ },
+ {
+  "name": "C_image_15104_65",
+  "gt": "ગાંધીજીનું",
+  "pred": "The text in the image is \"গায়িকা\" which is Bengali for \"Singer\"."
+ },
+ {
+  "name": "C_image_15104_70",
+  "gt": "વદ",
+  "pred": "The text in the image is \"CLE\"."
+ },
+ {
+  "name": "C_image_15104_71",
+  "gt": "ના",
+  "pred": "The text in the image is \"all\"."
+ },
+ {
+  "name": "C_image_15104_72",
+  "gt": "સ્થળે",
+  "pred": "The text in the image appears to be in Gujarati script. The characters read from right to left and seem to spell out \"સુધીનો\" which translates to \"Sudhino\" in English."
+ },
+ {
+  "name": "C_image_15104_73",
+  "gt": "ઓરકામાં",
+  "pred": "The text in the image is \"सुरस्वामी\"."
+ },
+ {
+  "name": "C_image_15104_74",
+  "gt": "પૂતળીમાની",
+  "pred": "The text in the image is \"પાણીની\". This appears to be in the Gujarati script, which is used for the Gujarati language spoken primarily in the Indian state of Gujarat. The word \"પાણીની\" translates to \""
+ },
+ {
+  "name": "C_image_15104_75",
+  "gt": "કૂએ",
+  "pred": "The text in the image is \"ફેબ\". This appears to be the Hindi word for \"February\" (फ़ेब्रुअरी) written in Devanagari script, which is used for writing several languages including Hindi and Marathi."
+ },
+ {
+  "name": "C_image_15104_76",
+  "gt": "થયો.",
+  "pred": "The text in the image is \"थयो.\""
+ },
+ {
+  "name": "C_image_15104_78",
+  "gt": "ગાંધીનો",
+  "pred": "The text in the image is \"गांधीनी\"."
+ },
+ {
+  "name": "C_image_15104_79",
+  "gt": "મોહનદાસ",
+  "pred": "The text in the image is \"मोहनदास\"."
+ },
+ {
+  "name": "C_image_15104_80",
+  "gt": "ચોથા",
+  "pred": "The text in the image reads \"ville\"."
+ },
+ {
+  "name": "C_image_15111_10",
+  "gt": "સખત",
+  "pred": "The text in the image reads \"DUR\"."
+ },
+ {
+  "name": "C_image_15111_11",
+  "gt": "મનાઈ",
+  "pred": "The text in the image is \"মনের\" which is Bengali and translates to \"mind\" or \"memory\" in English."
+ },
+ {
+  "name": "C_image_15111_13",
+  "gt": "છે",
+  "pred": "The text in the image is \"8\"."
+ },
+ {
+  "name": "C_image_15111_19",
+  "gt": "શ્રીમતી",
+  "pred": "The text in the image is \"श्रीमती\" which is transliterated as \"Shrimati\" in English. This term is often used in Indian culture to refer to a married woman, similar to the English term \"Mrs.\""
+ },
+ {
+  "name": "C_image_15111_2",
+  "gt": "કરતુરબાનું",
+  "pred": "The text in the image is in Gujarati and reads \"કસ્તુરબાનુ\"."
+ },
+ {
+  "name": "C_image_15111_20",
+  "gt": "ઘર",
+  "pred": "The text in the image is \"의료\" which translates to \"medical\" or \"healthcare\" in English."
+ },
+ {
+  "name": "C_image_15111_7",
+  "gt": "ફોટો",
+  "pred": "The text in the image is \"कोटी\"."
+ },
+ {
+  "name": "C_image_15111_8",
+  "gt": "પાઠવા",
+  "pred": "The text in the image is \"visão\"."
+ },
+ {
+  "name": "C_image_15112_3",
+  "gt": "કસ્તુરબાનું",
+  "pred": "The text in the image is in Gujarati and reads \"કસ્તુર્બાનું\"."
+ },
+ {
+  "name": "C_image_15112_4",
+  "gt": "શ્રીમતી",
+  "pred": "The text in the image is \"श्रीमती\" which translates to \"Mrs.\" or \"Madam\" in English."
+ },
+ {
+  "name": "C_image_15112_5",
+  "gt": "ઘર",
+  "pred": "The text in the image is \"धर\"."
+ },
+ {
+  "name": "C_image_15139_0",
+  "gt": "સિકંદરાબાદ",
+  "pred": "The text in the image reads \"ESTERLICHE\"."
+ },
+ {
+  "name": "C_image_15139_5",
+  "gt": "પોરબંદર",
+  "pred": "The text in the image appears to be \"Hercules.\""
+ },
+ {
+  "name": "C_image_15397_0",
+  "gt": "પાંડપ",
+  "pred": "The text in the image reads \"uisu\"."
+ },
+ {
+  "name": "C_image_15397_1",
+  "gt": "પાંચ",
+  "pred": "The text in the image reads \"2112\"."
+ },
+ {
+  "name": "C_image_154_5",
+  "gt": "ઉધના",
+  "pred": "The text in the image reads \"Bye!\""
+ },
+ {
+  "name": "C_image_154_6",
+  "gt": "જં.",
+  "pred": "The image appears to be a stylized, abstract design with a pattern that resembles a hexagonal grid. There is no discernible text within the image itself. If you have any specific questions or need further assistance regarding this image, feel free to ask!"
+ },
+ {
+  "name": "C_image_15686_1",
+  "gt": "ગલ્સે",
+  "pred": "The text in the image reads \"30%\"."
+ },
+ {
+  "name": "C_image_15686_2",
+  "gt": "રાજશાખા",
+  "pred": "The text in the image reads \"PARKING\"."
+ },
+ {
+  "name": "C_image_15686_3",
+  "gt": "હાઈસ્કૂલ",
+  "pred": "The text in the image reads \"B00945\"."
+ },
+ {
+  "name": "C_image_15686_4",
+  "gt": "પબ્લિક",
+  "pred": "The image appears to be a close-up of a textured surface, possibly a piece of fabric or a similar material. There is no text visible in the image. If you have any specific questions about the texture or the material, I'd be happy to help with that!"
+ },
+ {
+  "name": "C_image_15686_5",
+  "gt": "સ્કૂલ",
+  "pred": "The text in the image is \"10\"."
+ },
+ {
+  "name": "C_image_15686_0",
+  "gt": "સિગ્મા",
+  "pred": "The text in the image reads \"PHOTO\"."
+ },
+ {
+  "name": "C_image_15695_4",
+  "gt": "ગીતામાતા",
+  "pred": "The text in the image reads \"official\"."
+ },
+ {
+  "name": "C_image_1590_0",
+  "gt": "નર્મદા",
+  "pred": "The text in the image is \"এমএল১\" which appears to be a Bengali script. It can be transliterated into English as \"Ml1\". This could represent an abbreviation, a code, or a label of some kind, but without additional context, it's difficult to determine its exact"
+ },
+ {
+  "name": "C_image_1590_1",
+  "gt": "સરોવર",
+  "pred": "The text in the image is \"करोड़पत्र\"."
+ },
+ {
+  "name": "C_image_1590_2",
+  "gt": "સરદાર",
+  "pred": "The text in the image is \"सरदार\" which is written in Devanagari script. In English, it translates to \"Sardar.\""
+ },
+ {
+  "name": "C_image_1590_3",
+  "gt": "નિગમ",
+  "pred": "The text in the image is \"15014\"."
+ },
+ {
+  "name": "C_image_1590_4",
+  "gt": "લિમીટેડ",
+  "pred": "The text in the image reads \"Peaches.\""
+ },
+ {
+  "name": "C_image_163_0",
+  "gt": "ઉત્તરસંડા",
+  "pred": "The text in the image is in Hindi and reads \"उत्तरांचल,\" which translates to \"Uttaranchal\" in English. This was the name of a state in India that existed from 1970 to 2000, before it was divided into Utt"
+ },
+ {
+  "name": "C_image_168_1",
+  "gt": "વ",
+  "pred": "The text in the image is \"C\"."
+ },
+ {
+  "name": "C_image_168_2",
+  "gt": "ડ",
+  "pred": "The text in the image is \"S\"."
+ },
+ {
+  "name": "C_image_170_2",
+  "gt": "વલસાડ",
+  "pred": "The text in the image is \"पंजाब सेना\" (Punjabi: ਪੰਜਾਬ ਸੈਨਾ). This translates to \"Punjab Army\" in English."
+ },
+ {
+  "name": "C_image_1701_0",
+  "gt": "વર્ગ",
+  "pred": "The text in the image is \"49\"."
+ },
+ {
+  "name": "C_image_1701_1",
+  "gt": "દાનપેટી",
+  "pred": "The text in the image reads \"BIG PAPA\"."
+ },
+ {
+  "name": "C_image_1701_2",
+  "gt": "પુ३ષ",
+  "pred": "The text in the image is \"N37\"."
+ },
+ {
+  "name": "C_image_1701_3",
+  "gt": "શ્રી",
+  "pred": "The text in the image is \"02\"."
+ },
+ {
+  "name": "C_image_1701_4",
+  "gt": "હાટકેશ્વર",
+  "pred": "The text in the image is \"我愿意陪你到天涯海角\". This translates to \"I am willing to accompany you to the ends of the earth\" in English."
+ },
+ {
+  "name": "C_image_1701_5",
+  "gt": "ગણાદેવના",
+  "pred": "The text in the image reads: \"The square root of 16 is 4.\""
+ },
+ {
+  "name": "C_image_1701_6",
+  "gt": "પેટલાદ",
+  "pred": "The text in the image reads \"10246\"."
+ },
+ {
+  "name": "C_image_1701_7",
+  "gt": "ની",
+  "pred": "The text in the image is \"10\"."
+ },
+ {
+  "name": "C_image_1701_8",
+  "gt": "સ્વ.",
+  "pred": "The text in the image is \"1\"."
+ },
+ {
+  "name": "C_image_1701_9",
+  "gt": "છે.",
+  "pred": "The text in the image is \"18\"."
+ },
+ {
+  "name": "C_image_1701_10",
+  "gt": "ફરેલ",
+  "pred": "The text in the image is \"1/2\"."
+ },
+ {
+  "name": "C_image_1701_11",
+  "gt": "સ્મરણાર્થે",
+  "pred": "The text in the image reads \"CHOCOLATE\"."
+ },
+ {
+  "name": "C_image_1701_12",
+  "gt": "કરૂણારીક",
+  "pred": "The text in the image is \"40% OFF\"."
+ },
+ {
+  "name": "C_image_171_2",
+  "gt": "વાપી",
+  "pred": "The text in the image is \"वापी\" which is in Hindi and transliterates to \"Vapi\" in English."
+ },
+ {
+  "name": "C_image_172_4",
+  "gt": "વાપી",
+  "pred": "The text in the image reads \"diy\"."
+ },
+ {
+  "name": "C_image_17921_0",
+  "gt": "પાર્કસ",
+  "pred": "The text in the image is \"पार्किंग\". This is Hindi for \"Parking\"."
+ },
+ {
+  "name": "C_image_17921_1",
+  "gt": "ૌધૌ",
+  "pred": "The text in the image is \"Hey\"."
+ },
+ {
+  "name": "C_image_17921_2",
+  "gt": "ન",
+  "pred": "The text in the image is \"어\"."
+ },
+ {
+  "name": "C_image_17921_3",
+  "gt": "ક",
+  "pred": "The text in the image is \"5\"."
+ },
+ {
+  "name": "C_image_17949_0",
+  "gt": "હોટલ",
+  "pred": "The text in the image reads \"Rice\"."
+ },
+ {
+  "name": "C_image_17949_2",
+  "gt": "રજવાડી",
+  "pred": "The text in the image is \"રાજકોટ\". This is the name of Rajkot, which is a city in the Indian state of Gujarat."
+ },
+ {
+  "name": "C_image_1804_0",
+  "gt": "જય",
+  "pred": "The text in the image is \"जय\"."
+ },
+ {
+  "name": "C_image_1804_1",
+  "gt": "ભાદરઆઈ",
+  "pred": "The text in the image is \"મારસાઈધ\". This appears to be in Gujarati script, which is used in the Indian state of Gujarat and in some neighboring regions. The word \"મારસાઈધ\" can be transliterated into English"
+ },
+ {
+  "name": "C_image_1804_2",
+  "gt": "માં",
+  "pred": "The text in the image is \"मि\"."
+ },
+ {
+  "name": "C_image_18159_0",
+  "gt": "૧",
+  "pred": "The text in the image is \"q\"."
+ },
+ {
+  "name": "C_image_18159_1",
+  "gt": "ફોટા",
+  "pred": "The text in the image is \"कृपया\"."
+ },
+ {
+  "name": "C_image_18159_2",
+  "gt": "શુભમ્",
+  "pred": "The text in the image is \"पुष्पम\" which is written in Devanagari script. This is the transliteration of the word \"Pushpam\" in English, which means \"flower\" in Malayalam."
+ },
+ {
+  "name": "C_image_18159_3",
+  "gt": "સ્ટુડીયો",
+  "pred": "The text in the image is \"स्वतंत्रता\". This is Hindi for \"independence\" or \"freedom\"."
+ },
+ {
+  "name": "C_image_18159_4",
+  "gt": "ડીઝીટલ",
+  "pred": "The text in the image is \"Dolce\"."
+ },
+ {
+  "name": "C_image_18159_5",
+  "gt": "અરજન્ટ",
+  "pred": "The text in the image is \"ஆரஞ்சு\" which is in Tamil script. It translates to \"orange\" in English."
+ },
+ {
+  "name": "C_image_18159_6",
+  "gt": "ફક્ત",
+  "pred": "The text in the image is \"स्वतंत्र\" which translates to \"independent\" or \"self-reliant\" in English."
+ },
+ {
+  "name": "C_image_18159_7",
+  "gt": "મીનીટમાં",
+  "pred": "The text in the image is \"भारतीय\". This is the Hindi word for \"Indian\"."
+ },
+ {
+  "name": "C_image_18201_0",
+  "gt": "પ્રેરક",
+  "pred": "The text in the image reads \"مُسْتَنْدًا\" which is Arabic and translates to \"based on\" or \"relying on\" in English."
+ },
+ {
+  "name": "C_image_18201_2",
+  "gt": "ડાપ્રધાનશ્રીના",
+  "pred": "The text in the image appears to be in Bengali. It reads \"স্বাধীনতার জয়ে।\" which translates to \"Victory of Independence.\""
+ },
+ {
+  "name": "C_image_18201_3",
+  "gt": "વરદ્",
+  "pred": "The text in the image reads \"더군다나\"."
+ },
+ {
+  "name": "C_image_18201_4",
+  "gt": "મોદી",
+  "pred": "The text in the image is \"সীলি\" which is written in Bengali script. The transliteration of this text into English would be \"Sili.\""
+ },
+ {
+  "name": "C_image_18201_5",
+  "gt": "નરેન્દ્ર",
+  "pred": "The text in the image is \"नारेंद्र\"."
+ },
+ {
+  "name": "C_image_18201_6",
+  "gt": "હસ્તે",
+  "pred": "The text in the image reads \"कैप्टन\"."
+ },
+ {
+  "name": "C_image_18201_7",
+  "gt": "વિ",
+  "pred": "The text in the image is \"वि\"."
+ },
+ {
+  "name": "C_image_18201_8",
+  "gt": "ઉપસ્થિતિ",
+  "pred": "The text in the image is \"भारतीय\". This is the Hindi word for \"Indian\"."
+ },
+ {
+  "name": "C_image_18201_9",
+  "gt": "ગુજરા",
+  "pred": "The text in the image reads \"EATLIC\"."
+ },
+ {
+  "name": "C_image_18201_10",
+  "gt": "નુ",
+  "pred": "The text in the image is \"10\"."
+ },
+ {
+  "name": "C_image_18201_11",
+  "gt": "ન્માન",
+  "pred": "The text in the image reads \"21101\"."
+ },
+ {
+  "name": "C_image_18201_12",
+  "gt": "ય",
+  "pred": "The text in the image is \"의\"."
+ },
+ {
+  "name": "C_image_18312_0",
+  "gt": "પંચલાઈ,",
+  "pred": "The text in the image is in Punjabi and reads \"ਪੰ ਖ਼ਲਾਈ\"."
+ },
+ {
+  "name": "C_image_18312_1",
+  "gt": "શાળા",
+  "pred": "The text in the image appears to be \"21101\"."
+ },
+ {
+  "name": "C_image_18312_3",
+  "gt": "તા.પારડી,",
+  "pred": "The text in the image reads \"तापार्टी\"."
+ },
+ {
+  "name": "C_image_18312_4",
+  "gt": "કેન્દ્ર",
+  "pred": "The text in the image reads \"508\"."
+ },
+ {
+  "name": "C_image_18312_5",
+  "gt": "જિ.વલસાડ.",
+  "pred": "The text in the image is \"नि.पल्साड.\""
+ },
+ {
+  "name": "C_image_1837_0",
+  "gt": "ખાદી",
+  "pred": "The text in the image is \"નાદી\". This appears to be in Gujarati script, which is used in the Indian state of Gujarat and in some neighboring regions. The word \"નાદી\" can be translated as \"Nadi\" in English, which"
+ },
+ {
+  "name": "C_image_1837_1",
+  "gt": "રવિ",
+  "pred": "The text in the image is \"रवि\" which is written in Devanagari script and transliterated as \"Ravi\" in Roman script."
+ },
+ {
+  "name": "C_image_1837_2",
+  "gt": "ગ્રામોધોગ",
+  "pred": "The text in the image is in Gujarati and reads \"અમોદીઓ\"."
+ },
+ {
+  "name": "C_image_1837_3",
+  "gt": "ખ",
+  "pred": "The text in the image is \"U\"."
+ },
+ {
+  "name": "C_image_1837_4",
+  "gt": "ભવન",
+  "pred": "The text in the image reads \"май\" which is Russian for \"May\"."
+ },
+ {
+  "name": "C_image_1969_0",
+  "gt": "રીલાયંસ",
+  "pred": "The text in the image is \"Buenas\"."
+ },
+ {
+  "name": "C_image_1969_2",
+  "gt": "ગૅસ",
+  "pred": "The text in the image is \"The 30th\"."
+ },
+ {
+  "name": "C_image_1969_10",
+  "gt": "કનૈયા",
+  "pred": "The text in the image reads \"Soy 21\"."
+ },
+ {
+  "name": "C_image_1976_0",
+  "gt": "અનમોલ",
+  "pred": "The text in the image reads \"JH\"."
+ },
+ {
+  "name": "C_image_1976_1",
+  "gt": "જીલ્લા",
+  "pred": "The text in the image is \"green\"."
+ },
+ {
+  "name": "C_image_1976_10",
+  "gt": "ગુડસ",
+  "pred": "The text in the image reads \"JUS\"."
+ },
+ {
+  "name": "C_image_1976_11",
+  "gt": "અન",
+  "pred": "The text in the image is \"अन\" which is in Devanagari script, used for writing several languages including Hindi and Marathi."
+ },
+ {
+  "name": "C_image_1976_12",
+  "gt": "સોમનાથ",
+  "pred": "The text in the image is \"सोमवार\" which is Marathi for \"Monday\"."
+ },
+ {
+  "name": "C_image_1976_13",
+  "gt": "મો",
+  "pred": "The text in the image is \"bill\"."
+ },
+ {
+  "name": "C_image_1976_14",
+  "gt": "લ",
+  "pred": "The text in the image is \"α\"."
+ },
+ {
+  "name": "C_image_1976_2",
+  "gt": "પાન",
+  "pred": "The text in the image reads \"101 of\"."
+ },
+ {
+  "name": "C_image_1976_20",
+  "gt": "માં",
+  "pred": "The text in the image is \"31\"."
+ },
+ {
+  "name": "C_image_1976_22",
+  "gt": "જીલ્લા",
+  "pred": "The text in the image is \"CCCI\"."
+ },
+ {
+  "name": "C_image_1976_23",
+  "gt": "ક્સ",
+  "pred": "The text in the image is \"SH\"."
+ },
+ {
+  "name": "C_image_1976_25",
+  "gt": "છે,",
+  "pred": "The text in the image is \"εδ\"."
+ },
+ {
+  "name": "C_image_1976_26",
+  "gt": "લોન",
+  "pred": "The text in the image is \"flat\"."
+ },
+ {
+  "name": "C_image_1976_28",
+  "gt": "ગીર",
+  "pred": "The text in the image is \"off\"."
+ },
+ {
+  "name": "C_image_1976_29",
+  "gt": "પોલીસ",
+  "pred": "The text in the image is \"पूर्ण\"."
+ },
+ {
+  "name": "C_image_1976_3",
+  "gt": "ખોડલ",
+  "pred": "The text in the image reads \"UNISCA\"."
+ },
+ {
+  "name": "C_image_1976_30",
+  "gt": "સોમનાથ",
+  "pred": "The text in the image is \"सामनाय\"."
+ },
+ {
+  "name": "C_image_1976_31",
+  "gt": "ગાર",
+  "pred": "The text in the image is \"에리\"."
+ },
+ {
+  "name": "C_image_1976_32",
+  "gt": "હોમ",
+  "pred": "The text in the image is \"กิน\"."
+ },
+ {
+  "name": "C_image_1976_33",
+  "gt": "વિંગ્સ",
+  "pred": "The text in the image is \"वेस\" which is in Devanagari script and translates to \"ves\" in English."
+ },
+ {
+  "name": "C_image_1976_34",
+  "gt": "કારણ",
+  "pred": "The text in the image is \"कार्यक्रम\". This is Hindi for \"program\" or \"event\"."
+ },
+ {
+  "name": "C_image_1976_35",
+  "gt": "કોલ્ડ્રી",
+  "pred": "The text in the image reads \"$3.50\"."
+ },
+ {
+  "name": "C_image_1976_4",
+  "gt": "જય",
+  "pred": "The text in the image is \"प्रो\"."
+ },
+ {
+  "name": "C_image_1976_8",
+  "gt": "અનમોલ",
+  "pred": "The text in the image reads \"FANTASY\"."
+ },
+ {
+  "name": "C_image_1976_9",
+  "gt": "કેરીયર",
+  "pred": "The text in the image reads \"are\"."
+ },
+ {
+  "name": "C_image_1976_24",
+  "gt": "કે",
+  "pred": "The text in the image is \"8\"."
+ },
+ {
+  "name": "C_image_1976_37",
+  "gt": "મશીનરી",
+  "pred": "The text in the image is \"महीने\" which translates to \"months\" in English."
+ },
+ {
+  "name": "C_image_1976_38",
+  "gt": "લોન",
+  "pred": "The text in the image is \"aid\"."
+ },
+ {
+  "name": "C_image_1976_40",
+  "gt": "સોમ",
+  "pred": "The text in the image is \"पोंग\"."
+ },
+ {
+  "name": "C_image_1976_41",
+  "gt": "પો",
+  "pred": "The text in the image is \"uk\"."
+ },
+ {
+  "name": "C_image_1976_46",
+  "gt": "ફક્ત",
+  "pred": "The text in the image is \"150\"."
+ },
+ {
+  "name": "C_image_1976_47",
+  "gt": "૩",
+  "pred": "The text in the image is \"5\"."
+ },
+ {
+  "name": "C_image_1976_48",
+  "gt": "વર્ષમાં",
+  "pred": "The text in the image is \"E2010\"."
+ },
+ {
+  "name": "C_image_1976_49",
+  "gt": "ટેસ્ટ",
+  "pred": "The text in the image is \"2023\"."
+ },
+ {
+  "name": "C_image_1976_50",
+  "gt": "ટ્યૂબ",
+  "pred": "The text in the image is \"তথ্য\" which is Bengali and it translates to \"information\" or \"data\" in English."
+ },
+ {
+  "name": "C_image_1976_51",
+  "gt": "બેબી",
+  "pred": "The text in the image is \"मेरी\" which is Hindi for \"Mere\" meaning \"my\" in English."
+ },
+ {
+  "name": "C_image_1976_52",
+  "gt": "ટ્રીટમેન્ટ",
+  "pred": "The text in the image reads \"День\"."
+ },
+ {
+  "name": "C_image_1976_53",
+  "gt": "દ્વારા",
+  "pred": "The text in the image is \"ARI\"."
+ },
+ {
+  "name": "C_image_1976_55",
+  "gt": "થી",
+  "pred": "The text in the image is \"21\"."
+ },
+ {
+  "name": "C_image_1976_56",
+  "gt": "વધુ",
+  "pred": "The text in the image reads \"qg\"."
+ },
+ {
+  "name": "C_image_1976_57",
+  "gt": "બાળકોના",
+  "pred": "The text in the image is \"6(19)16\"."
+ },
+ {
+  "name": "C_image_1976_58",
+  "gt": "જન્મ",
+  "pred": "The text in the image is \"장어치\"."
+ },
+ {
+  "name": "C_image_1976_59",
+  "gt": "વંધ્યત્વ",
+  "pred": "The text in the image is \"clear\"."
+ },
+ {
+  "name": "C_image_1976_60",
+  "gt": "નિવારણનાં",
+  "pred": "The text in the image is \"विवाह\". This is Hindi for \"marriage\" or \"wedding\"."
+ },
+ {
+  "name": "C_image_1976_61",
+  "gt": "સચોટ",
+  "pred": "The text in the image is \"स्थोल\"."
+ },
+ {
+  "name": "C_image_1976_62",
+  "gt": "માર્ગદર્શન",
+  "pred": "The text in the image is \"मंदिर\" which is in Hindi and it translates to \"Temple\" in English."
+ },
+ {
+  "name": "C_image_1976_63",
+  "gt": "માટે",
+  "pred": "The text in the image is \"2m\"."
+ },
+ {
+  "name": "C_image_1976_64",
+  "gt": "સંપર્ક",
+  "pred": "The text in the image is in Devanagari script, which is used for several languages including Hindi and Marathi. The text reads \"संप्रेक्षण\" (samprakshana) in Hindi, which translates to \"overview\" or \"summary\" in English."
+ },
+ {
+  "name": "C_image_1976_65",
+  "gt": "કરો:",
+  "pred": "The text in the image is \"को\" which is in Hindi and it translates to \"ko\" in English, meaning \"to\" or \"for\" in some contexts."
+ },
+ {
+  "name": "C_image_1976_68",
+  "gt": "અમદાવાદ,",
+  "pred": "The text in the image is \"анеличие\"."
+ },
+ {
+  "name": "C_image_1976_69",
+  "gt": "થલતેજ,",
+  "pred": "The text in the image is \"वास्तविक\" which translates to \"real\" or \"actual\" in English."
+ },
+ {
+  "name": "C_image_1976_70",
+  "gt": "સામે,",
+  "pred": "The text in the image is \"सामे,\" which appears to be in Hindi script. The meaning or context of this word would depend on its usage within a sentence or a larger text. If you have more information about where this text comes from, I might be able to provide a more accurate translation or explanation"
+ },
+ {
+  "name": "C_image_1976_71",
+  "gt": "સિનેમાની",
+  "pred": "The text in the image is \"सिलेबाली\"."
+ },
+ {
+  "name": "C_image_1976_72",
+  "gt": "ડ્રાઇવ-ઇન",
+  "pred": "The text in the image is \"SIUQ·UA\"."
+ },
+ {
+  "name": "C_image_1976_73",
+  "gt": "સોસાયટી,",
+  "pred": "The text in the image is \"संस्कृति\"."
+ },
+ {
+  "name": "C_image_1976_74",
+  "gt": "સુમંગલમ",
+  "pred": "The text in the image is \"1975年10月\". This translates to \"October 1975\" in English."
+ },
+ {
+  "name": "C_image_1976_78",
+  "gt": "સર્વિસીસ",
+  "pred": "The text in the image is \"स्विस्टाइल\"."
+ },
+ {
+  "name": "C_image_1976_79",
+  "gt": "લિમિટેડ",
+  "pred": "The text in the image reads \"Rafids\"."
+ },
+ {
+  "name": "C_image_1976_80",
+  "gt": "અમદાવાદની",
+  "pred": "The text in the image reads \"GEMEINSAM\"."
+ },
+ {
+  "name": "C_image_1976_81",
+  "gt": "પ્રખ્યાત",
+  "pred": "The text in the image is \"VIRIDIO\"."
+ },
+ {
+  "name": "C_image_1976_83",
+  "gt": "(ટેસ્ટ",
+  "pred": "The text in the image is \"22\"."
+ },
+ {
+  "name": "C_image_1976_84",
+  "gt": "ટયૂબ",
+  "pred": "The text in the image is \"ट्रयो\" which appears to be in Devanagari script, commonly used for writing Hindi and other languages in India."
+ },
+ {
+  "name": "C_image_1976_85",
+  "gt": "બેબી)",
+  "pred": "The text in the image is \"मेनी\"."
+ },
+ {
+  "name": "C_image_1976_86",
+  "gt": "હોસ્પિટલ",
+  "pred": "The text in the image is \"pleased\"."
+ },
+ {
+  "name": "C_image_1976_87",
+  "gt": "વિંગ્સ",
+  "pred": "The text in the image is \"Q33\"."
+ },
+ {
+  "name": "C_image_1976_88",
+  "gt": "સ્પેશિયાલિટી",
+  "pred": "The text in the image is \"প্রতিযোগিতা\" which translates to \"Competition\" in English."
+ },
+ {
+  "name": "C_image_1976_89",
+  "gt": "સુપર",
+  "pred": "The text in the image is \"212\"."
+ },
+ {
+  "name": "C_image_1976_90",
+  "gt": "તો",
+  "pred": "The text in the image is \"d)\"."
+ },
+ {
+  "name": "C_image_1981_0",
+  "gt": "ધાર્મી",
+  "pred": "The text in the image reads \"Jeffs\"."
+ },
+ {
+  "name": "C_image_1981_1",
+  "gt": "નોવેલ્ટી",
+  "pred": "The text in the image reads \"LSPF10\"."
+ },
+ {
+  "name": "C_image_1981_2",
+  "gt": "શંકર",
+  "pred": "The text in the image reads \"152\"."
+ },
+ {
+  "name": "C_image_1981_4",
+  "gt": "વિ",
+  "pred": "The text in the image is \"10\"."
+ },
+ {
+  "name": "C_image_1981_5",
+  "gt": "મુકેશકુમાર",
+  "pred": "The text in the image reads \"BONJOUR\"."
+ },
+ {
+  "name": "C_image_1981_6",
+  "gt": "ભગવાનજીભાઈ",
+  "pred": "The text in the image is in Gujarati and reads \"સુરતનો ગુજરાતી\". This translates to \"Surat Gujarati\" in English, where \"Surat\" refers to the city of Surat in Gujarat, India, and"
+ },
+ {
+  "name": "C_image_1981_10",
+  "gt": "સ્ટોર્સ",
+  "pred": "The text in the image is \"123\"."
+ },
+ {
+  "name": "C_image_1981_11",
+  "gt": "લુણાઈ",
+  "pred": "The text in the image is \"सुधार\" which is in Hindi and it translates to \"Reform\" or \"Amendment\" in English."
+ },
+ {
+  "name": "C_image_1981_12",
+  "gt": "શ્રી",
+  "pred": "The text in the image is \"201\"."
+ },
+ {
+  "name": "C_image_1984_1",
+  "gt": "વસ્તુ",
+  "pred": "The text in the image is \"पंडव\" which is written in Devanagari script. In English, it translates to \"Pandav\" or \"Pandava,\" which refers to one of the five brothers in Hindu mythology, particularly in the Mahabharata."
+ },
+ {
+  "name": "C_image_1984_2",
+  "gt": "દ્વારકા",
+  "pred": "The text in the image is \"SISI\"."
+ },
+ {
+  "name": "C_image_1984_3",
+  "gt": "ચા",
+  "pred": "The text in the image is \"या\" which is in Devanagari script and it translates to \"ya\" in English, meaning \"yes\" or \"that\" in Hindi."
+ },
+ {
+  "name": "C_image_1984_4",
+  "gt": "ભંડાર",
+  "pred": "The text in the image reads \"CISIZ.\""
+ },
+ {
+  "name": "C_image_1984_5",
+  "gt": "ગોલ્ડન",
+  "pred": "The text in the image reads \"JICSOL\"."
+ },
+ {
+  "name": "C_image_1984_6",
+  "gt": "રવિ",
+  "pred": "The text in the image is \"रवि\"."
+ },
+ {
+  "name": "C_image_1984_7",
+  "gt": "સ્તુ",
+  "pred": "The text in the image is \"ed\"."
+ },
+ {
+  "name": "C_image_1984_8",
+  "gt": "ભંડાર",
+  "pred": "The text in the image is \"กิจกรรม\" which translates to \"activity\" in English."
+ },
+ {
+  "name": "C_image_1984_9",
+  "gt": "શ્રીકૃષ્ણ",
+  "pred": "The text in the image reads \"blessed\"."
+ },
+ {
+  "name": "C_image_1984_12",
+  "gt": "હમેશા,",
+  "pred": "The text in the image is \"color\"."
+ },
+ {
+  "name": "C_image_1984_13",
+  "gt": "સોના",
+  "pred": "The text in the image is \"etiquet\"."
+ },
+ {
+  "name": "C_image_1984_14",
+  "gt": "જેવી",
+  "pred": "The text in the image is \"欢迎\". This is Chinese and translates to \"Welcome\" in English."
+ },
+ {
+  "name": "C_image_1984_17",
+  "gt": "જ",
+  "pred": "The text in the image is \"多\"."
+ },
+ {
+  "name": "C_image_1984_18",
+  "gt": "આચે",
+  "pred": "The text in the image is \"2017\"."
+ },
+ {
+  "name": "C_image_1984_19",
+  "gt": "છે",
+  "pred": "The text in the image is \"10\"."
+ },
+ {
+  "name": "C_image_2044_2",
+  "gt": "હાથી",
+  "pred": "The text in the image is \"劲吻\"."
+ },
+ {
+  "name": "C_image_205_0",
+  "gt": "પાર્લર",
+  "pred": "The text in the image reads \"1985\"."
+ },
+ {
+  "name": "C_image_205_1",
+  "gt": "થખો",
+  "pred": "The text in the image reads \"GOLD\"."
+ },
+ {
+  "name": "C_image_205_10",
+  "gt": "વાહન",
+  "pred": "The text in the image is \"বাইক\" which is Bengali for \"bike\"."
+ },
+ {
+  "name": "C_image_205_11",
+  "gt": "નિગમ",
+  "pred": "The text in the image is \"Gola\"."
+ },
+ {
+  "name": "C_image_205_12",
+  "gt": "વ્યવહાર",
+  "pred": "The text in the image reads \"c2 + d2 = 12\"."
+ },
+ {
+  "name": "C_image_205_13",
+  "gt": "ખ્યુરી",
+  "pred": "The text in the image is \"R2\"."
+ },
+ {
+  "name": "C_image_205_14",
+  "gt": "માર્ગ",
+  "pred": "The text in the image is \"आर्य\"."
+ },
+ {
+  "name": "C_image_205_15",
+  "gt": "ગુજરાત",
+  "pred": "The text in the image is \"मुश्तात\" which is written in Devanagari script. In English, it translates to \"Mustat\" or \"Mustat\" depending on the context."
+ },
+ {
+  "name": "C_image_205_16",
+  "gt": "બસ",
+  "pred": "The text in the image is \"up\"."
+ },
+ {
+  "name": "C_image_205_17",
+  "gt": "કેન્ટીન",
+  "pred": "The text in the image reads \"5e2101\"."
+ },
+ {
+  "name": "C_image_205_18",
+  "gt": "હાઉચ",
+  "pred": "The text in the image reads \"Gherry\"."
+ },
+ {
+  "name": "C_image_205_19",
+  "gt": "૧૫",
+  "pred": "The text in the image is \"94\"."
+ },
+ {
+  "name": "C_image_205_2",
+  "gt": "અમૂલ",
+  "pred": "The text in the image is \"রামপুর\" which is Bengali and translates to \"Ramapur\" in English."
+ },
+ {
+  "name": "C_image_205_20",
+  "gt": "ફોર્મ",
+  "pred": "The text in the image is \"कोम\"."
+ },
+ {
+  "name": "C_image_205_3",
+  "gt": "પ્લેટ",
+  "pred": "The text in the image is \"लेट\" which is in Hindi and means \"late\" in English."
+ },
+ {
+  "name": "C_image_205_4",
+  "gt": "નંબર",
+  "pred": "The text in the image is \"नंदर\"."
+ },
+ {
+  "name": "C_image_205_5",
+  "gt": "નાસ્તા",
+  "pred": "The text in the image is \"पार्टी\" which is written in Devanagari script and translates to \"party\" in English."
+ },
+ {
+  "name": "C_image_205_6",
+  "gt": "એસ.ટી.",
+  "pred": "The text in the image is \"योस.टी.\" which appears to be in Devanagari script, commonly used for writing Hindi and other languages in India. The abbreviation \"योस.टी.\" could stand for various things depending on the context, but without additional information, it's not"
+ },
+ {
+  "name": "C_image_205_7",
+  "gt": "કપડવંજ",
+  "pred": "The text in the image reads \"54500\"."
+ },
+ {
+  "name": "C_image_205_8",
+  "gt": "સ્ટેશન",
+  "pred": "The text in the image is not clear or legible. It appears to be a blurred or pixelated image, making it impossible to read any text that might be present. If you have a clearer version of the image, please provide it, and I will be happy to assist you further."
+ },
+ {
+  "name": "C_image_205_9",
+  "gt": "રાજય",
+  "pred": "The text in the image is \"श्री\" which is written in Devanagari script, commonly used for several languages including Hindi and Marathi."
+ },
+ {
+  "name": "C_image_205_21",
+  "gt": "નડીઆદ",
+  "pred": "The text in the image reads \"cisleale\"."
+ },
+ {
+  "name": "C_image_205_22",
+  "gt": "વિભાગ",
+  "pred": "The text in the image is \"2023\"."
+ },
+ {
+  "name": "C_image_205_25",
+  "gt": "નિરમાલી",
+  "pred": "The text in the image is \"भिन्नावे\"."
+ },
+ {
+  "name": "C_image_205_26",
+  "gt": "ઝેર",
+  "pred": "The text in the image is \"2\"."
+ },
+ {
+  "name": "C_image_205_27",
+  "gt": "ચોઈલા",
+  "pred": "The text in the image is \"alacr\"."
+ },
+ {
+  "name": "C_image_205_28",
+  "gt": "બાયડ",
+  "pred": "The text in the image reads \"GIRLS\"."
+ },
+ {
+  "name": "C_image_205_30",
+  "gt": "માંડવા",
+  "pred": "The text in the image is \"HISQI\"."
+ },
+ {
+  "name": "C_image_205_31",
+  "gt": "તરફ",
+  "pred": "The text in the image is \"αβγ\"."
+ },
+ {
+  "name": "C_image_2110_0",
+  "gt": "વરદાન,",
+  "pred": "The text in the image is \"দেশটির,\" which is Bengali and translates to \"of the country\" or \"of the nation\" in English."
+ },
+ {
+  "name": "C_image_2110_1",
+  "gt": "માતૃત્વનું",
+  "pred": "The text in the image is in Gujarati and reads \"માતુરવાલ\"."
+ },
+ {
+  "name": "C_image_2110_2",
+  "gt": "માતૃવંદના",
+  "pred": "The text in the image is \"முதல்\" which is Tamil for \"First\" or \"Firstly\"."
+ },
+ {
+  "name": "C_image_2140_0",
+  "gt": "છાદરડા",
+  "pred": "The text in the image is \"13251\"."
+ },
+ {
+  "name": "C_image_2140_1",
+  "gt": "હિંમતનગર",
+  "pred": "The text in the image is \"हिमतनगर.\" This appears to be in Devanagari script, which is used for several languages including Hindi and Marathi. The word \"हिमतनगर\" translates to \"Himatanagar\" in English."
+ },
+ {
+  "name": "C_image_2140_10",
+  "gt": "ૐના",
+  "pred": "The text in the image is \"ना\" which is in Devanagari script and it translates to \"no\" or \"not\" in English."
+ },
+ {
+  "name": "C_image_2140_11",
+  "gt": "તથા",
+  "pred": "The text in the image is \"तथा\"."
+ },
+ {
+  "name": "C_image_2140_12",
+  "gt": "૫ટેલ",
+  "pred": "The text in the image is \"पेटल\"."
+ },
+ {
+  "name": "C_image_2140_13",
+  "gt": "લકવો",
+  "pred": "The text in the image is \"একটি\" which is Bengali and translates to \"a\" or \"one\" in English."
+ },
+ {
+  "name": "C_image_2140_14",
+  "gt": "સૌ",
+  "pred": "The text in the image is \"सौ\"."
+ },
+ {
+  "name": "C_image_2140_15",
+  "gt": "મગજના",
+  "pred": "The text in the image is \"মেগামেল\"."
+ },
+ {
+  "name": "C_image_2140_16",
+  "gt": "નિષ્ણાંત",
+  "pred": "The text in the image is \"निष्कात\"."
+ },
+ {
+  "name": "C_image_2140_17",
+  "gt": "અને",
+  "pred": "The text in the image is \"અને\" which is in Gujarati script. It translates to \"and\" in English."
+ },
+ {
+  "name": "C_image_2140_18",
+  "gt": "હોસ્પિટલ",
+  "pred": "The text in the image is \"होस्पिटल\". This is Hindi for \"Hospital\"."
+ },
+ {
+  "name": "C_image_2140_19",
+  "gt": "ભાવિન",
+  "pred": "The text in the image is \"পেরিন\" which appears to be in Bengali script."
+ },
+ {
+  "name": "C_image_2140_2",
+  "gt": "સ્પેશ્યાલિસ્ટ",
+  "pred": "The text in the image is \"स्वयंतर\" which is in Devanagari script and translates to \"self-dependent\" or \"independent\" in English."
+ },
+ {
+  "name": "C_image_2140_20",
+  "gt": "મોતીપુરા,",
+  "pred": "The text in the image is \"भोतिपुरा,\" which appears to be in Devanagari script, commonly used for writing Hindi and other languages of India. The name seems to be \"Bhotipura\" in English."
+ },
+ {
+  "name": "C_image_2140_21",
+  "gt": "એનીમલ",
+  "pred": "The text in the image is \"અનીમલ\" which is written in Gujarati script. The English translation of this word is \"Animal.\""
+ },
+ {
+  "name": "C_image_2140_22",
+  "gt": "ર્ડા.",
+  "pred": "The text in the image is \"sf\"."
+ },
+ {
+  "name": "C_image_2140_23",
+  "gt": "કરોડરજજુની",
+  "pred": "The text in the image is in Gujarati and reads \"ક્રોડરજુણી\"."
+ },
+ {
+  "name": "C_image_2140_24",
+  "gt": "મગજ",
+  "pred": "The text in the image is in Gujarati and reads \"મગજ\"."
+ },
+ {
+  "name": "C_image_2140_25",
+  "gt": "રોગોના",
+  "pred": "The text in the image is \"रोंगोना\"."
+ },
+ {
+  "name": "C_image_2140_26",
+  "gt": "પ્રથમ",
+  "pred": "The text in the image is \"पथम\" which is in Devanagari script and translates to \"Patham\" in English. This could be a name, a title, or part of a larger phrase. If you need more context or translation, please provide additional information."
+ },
+ {
+  "name": "C_image_2140_27",
+  "gt": "દુખાવો",
+  "pred": "The text in the image is \"धन्यवाद\". This is Marathi for \"Thank you\" in English."
+ },
+ {
+  "name": "C_image_2140_28",
+  "gt": "માથાનો",
+  "pred": "The text in the image is \"माथानो\". This appears to be in Marathi, a language spoken primarily in the state of Maharashtra, India. The word \"माथानो\" can be translated to English as \"headache\" or \"pain in the head.\""
+ },
+ {
+  "name": "C_image_2140_3",
+  "gt": "ખેંચ",
+  "pred": "The text in the image is \"पंचायत\" which translates to \"Panchayat\" in English."
+ },
+ {
+  "name": "C_image_2140_4",
+  "gt": "ન્યુરો",
+  "pred": "The text in the image is \"प्युरो\" which appears to be in Devanagari script, commonly used for writing Hindi and other languages of India."
+ },
+ {
+  "name": "C_image_2140_6",
+  "gt": "આકોદરા",
+  "pred": "The text in the image is \"आकोदरा\" which is written in Devanagari script. This is likely a name or a title, but without additional context, it's difficult to provide more information about its meaning or origin."
+ },
+ {
+  "name": "C_image_2140_7",
+  "gt": "હોસ્ટેલ",
+  "pred": "The text in the image is \"होस्टल\" which is written in Devanagari script and translates to \"Hostel\" in English."
+ },
+ {
+  "name": "C_image_2140_9",
+  "gt": "હેલ્થ",
+  "pred": "The text in the image is \"हेय\" which is Hindi for \"Hey\"."
+ },
+ {
+  "name": "C_image_2140_29",
+  "gt": "સાબરકાંઠા",
+  "pred": "The text in the image is in Gujarati and reads \"સાબરકાંડો\"."
+ },
+ {
+  "name": "C_image_2140_30",
+  "gt": "અને",
+  "pred": "The text in the image is \"ખાનો\" which is in Gujarati script. It translates to \"khanoo\" in English, which can mean \"house\" or \"home\" depending on the context."
+ },
+ {
+  "name": "C_image_2140_31",
+  "gt": "અરવલ્લી",
+  "pred": "The text in the image is \"अरवली\" which is written in Devanagari script, commonly used for several languages including Hindi and Marathi. The word \"अरवली\" translates to \"Aravali\" in English, which refers to the Aravali Hills, a mountain"
+ },
+ {
+  "name": "C_image_2140_32",
+  "gt": "ના",
+  "pred": "The text in the image is \"21\"."
+ },
+ {
+  "name": "C_image_2140_33",
+  "gt": "ડૉક્ટર",
+  "pred": "The text in the image is \"s1se2\"."
+ },
+ {
+  "name": "C_image_2140_34",
+  "gt": "(ન્યુરો",
+  "pred": "The text in the image is \"मुरी\" which is written in Devanagari script. In English, it translates to \"Muri\"."
+ },
+ {
+  "name": "C_image_2140_35",
+  "gt": "ફીઝીશીયન)",
+  "pred": "The text in the image is \"கிறிஸ்தியன்\" which is Tamil for \"Christian\"."
+ },
+ {
+  "name": "C_image_2140_36",
+  "gt": "હિંમતનગરમાં.",
+  "pred": "The text in the image is \"हिमतनगरम\"."
+ },
+ {
+  "name": "C_image_2140_40",
+  "gt": "(રાજપુરવાળા)",
+  "pred": "The text in the image is \"((x+y)z))\"."
+ },
+ {
+  "name": "C_image_2140_43",
+  "gt": "(ન્યુરોલોજી)",
+  "pred": "The text in the image reads: \"(x+y)(x-y)\"."
+ },
+ {
+  "name": "C_image_2140_44",
+  "gt": "શિવમ્",
+  "pred": "The text in the image is \"विषय\"."
+ },
+ {
+  "name": "C_image_2140_45",
+  "gt": "ઓરબીટ",
+  "pred": "The text in the image is \"कोरोना\" which is Hindi for \"Corona\"."
+ },
+ {
+  "name": "C_image_2140_46",
+  "gt": "કોમ્પલેશ,",
+  "pred": "The text in the image is in Gujarati and reads \"દોશાંકેશ્વર.\""
+ },
+ {
+  "name": "C_image_2140_47",
+  "gt": "હોન્ડા",
+  "pred": "The text in the image reads \"61=54\"."
+ },
+ {
+  "name": "C_image_2140_48",
+  "gt": "શો-રૂમ",
+  "pred": "The text in the image is \"प्ले-स्पून\"."
+ },
+ {
+  "name": "C_image_2140_49",
+  "gt": "ની",
+  "pred": "The text in the image is a musical note, specifically a minim (or crotchet), which represents a quarter note in Western music notation."
+ },
+ {
+  "name": "C_image_2140_50",
+  "gt": "પાસે,",
+  "pred": "The text in the image is \"vra1,\" which appears to be a placeholder or a code, possibly used in programming or as an identifier for a variable or function. Without additional context, it's difficult to provide a more specific interpretation."
+ },
+ {
+  "name": "C_image_2140_51",
+  "gt": "ને.હા.",
+  "pred": "The text in the image is \"2.41\"."
+ },
+ {
+  "name": "C_image_2140_52",
+  "gt": "નં-૮,",
+  "pred": "The text in the image reads: \"a^2 - c^2\"."
+ },
+ {
+  "name": "C_image_2140_80",
+  "gt": "૧૦",
+  "pred": "The text in the image is \"20\"."
+ },
+ {
+  "name": "C_image_2140_81",
+  "gt": "૪૩",
+  "pred": "The text in the image is \"83\"."
+ },
+ {
+  "name": "C_image_2140_82",
+  "gt": "૫",
+  "pred": "The text in the image is \"G\"."
+ },
+ {
+  "name": "C_image_2140_83",
+  "gt": "કોદ",
+  "pred": "The text in the image reads \"SIE\"."
+ },
+ {
+  "name": "C_image_2140_84",
+  "gt": "અ",
+  "pred": "The text in the image is \"गृह\" which is written in Devanagari script. In English, it translates to \"Home\" or \"House\"."
+ },
+ {
+  "name": "C_image_2141_3",
+  "gt": "જેઠાલાલ",
+  "pred": "The text in the image is written in Gujarati script and reads \"સ્વાભાવિક\" (Svābhāvik). This translates to \"natural\" or \"inherent\" in English."
+ },
+ {
+  "name": "C_image_2141_4",
+  "gt": "માર્ગ",
+  "pred": "The text in the image is in Gujarati and reads \"માં\". This translates to \"in\" or \"with\" in English."
+ },
+ {
+  "name": "C_image_2141_5",
+  "gt": "ડૉ.",
+  "pred": "The text in the image reads \"31.\""
+ },
+ {
+  "name": "C_image_2141_6",
+  "gt": "જોશી",
+  "pred": "The text in the image is in Gujarati and reads \"જેટી\" (Jeti)."
+ },
+ {
+  "name": "C_image_2141_7",
+  "gt": "સાહિત્યકાર",
+  "pred": "The text in the image is in Gujarati and reads \"साहित्यकार,\" which translates to \"Writer\" or \"Literary Person\" in English."
+ },
+ {
+  "name": "C_image_2141_9",
+  "gt": "રમણલાલ",
+  "pred": "The text in the image is written in Gujarati script and reads \"રમણેલાં\"."
+ },
+ {
+  "name": "C_image_2165_0",
+  "gt": "ગ્રંથ",
+  "pred": "The text in the image is \"ग्रंथ\" which is written in Devanagari script and translates to \"Granth\" in English."
+ },
+ {
+  "name": "C_image_2165_1",
+  "gt": "રથે",
+  "pred": "The text in the image is \"रथे\"."
+ },
+ {
+  "name": "C_image_2165_2",
+  "gt": "સવાર",
+  "pred": "The text in the image is \"सपार\"."
+ },
+ {
+  "name": "C_image_2165_4",
+  "gt": "થઈને",
+  "pred": "The text in the image is \"થ્યંગે\". This appears to be in Gujarati script, which is used in the Indian state of Gujarat and in some neighboring regions. The meaning or context of this word would depend on its usage in a specific sentence or phrase."
+ },
+ {
+  "name": "C_image_2165_5",
+  "gt": "યુનિવર્સિટી",
+  "pred": "The text in the image is \"युनिवर्सिटी\" which translates to \"University\" in English."
+ },
+ {
+  "name": "C_image_2165_6",
+  "gt": "બોર્ડ",
+  "pred": "The text in the image reads \"CHS\"."
+ },
+ {
+  "name": "C_image_2165_3",
+  "gt": "ગ્રંથનિર્માણ",
+  "pred": "The text in the image is \"गँधनिमर्थ\" which is written in Devanagari script. This is a transliteration of the Hindi word \"गँधनिमर्थ\" (Gandh Nimarth)."
+ },
+ {
+  "name": "C_image_2293_0",
+  "gt": "કેરેજ",
+  "pred": "The text in the image is \"कैंडी\" which translates to \"Candy\" in English."
+ },
+ {
+  "name": "C_image_2293_1",
+  "gt": "ગુડઝ",
+  "pred": "The text in the image is \"અયુક્ત\"."
+ },
+ {
+  "name": "C_image_2454_0",
+  "gt": "ની",
+  "pred": "The text in the image reads \"GIL\"."
+ },
+ {
+  "name": "C_image_2454_3",
+  "gt": "બળીયા",
+  "pred": "The text in the image is \"গোল্ড\" which is Bengali for \"Gold\"."
+ },
+ {
+  "name": "C_image_2454_11",
+  "gt": "મેના",
+  "pred": "The text in the image is \"हार्दिक\" which is written in Devanagari script. This script is used for several languages including Hindi and Marathi."
+ },
+ {
+  "name": "C_image_2454_15",
+  "gt": "શંકર",
+  "pred": "The text in the image reads \"2152\"."
+ },
+ {
+  "name": "C_image_2454_16",
+  "gt": "ઓટો",
+  "pred": "The text in the image is \"2412\"."
+ },
+ {
+  "name": "C_image_2459_0",
+  "gt": "બુટ",
+  "pred": "The text in the image is \"हृदय\" which is written in Devanagari script and translates to \"heart\" in English."
+ },
+ {
+  "name": "C_image_2459_1",
+  "gt": "વંદના",
+  "pred": "The text in the image reads \"UEGI\"."
+ },
+ {
+  "name": "C_image_2459_2",
+  "gt": "શ્રી",
+  "pred": "The text in the image is \"యీ\". This appears to be a character from the Telugu script, which is used primarily in the Indian state of Andhra Pradesh and Telangana. The character \"యీ\" is not a common letter and might represent a specific name or a special symbol"
+ },
+ {
+  "name": "C_image_2459_3",
+  "gt": "કૃપા",
+  "pred": "The text in the image is \"541\"."
+ },
+ {
+  "name": "C_image_2459_4",
+  "gt": "પાર્લર",
+  "pred": "The text in the image reads \"Vicis\"."
+ },
+ {
+  "name": "C_image_2459_5",
+  "gt": "વિશ્વપતિ",
+  "pred": "The text in the image is \"वधपति\". This appears to be in Devanagari script, which is used for several languages including Hindi and Marathi. The word \"वधपति\" can be transliterated into English as \"vadhpati\". Without additional context, it's"
+ },
+ {
+  "name": "C_image_2459_6",
+  "gt": "રામ",
+  "pred": "The text in the image reads \"RIP\"."
+ },
+ {
+  "name": "C_image_2459_7",
+  "gt": "હેર",
+  "pred": "The text in the image is \"82\"."
+ },
+ {
+  "name": "C_image_2459_8",
+  "gt": "અ",
+  "pred": "The text in the image is \"21\"."
+ },
+ {
+  "name": "C_image_2588_0",
+  "gt": "ચેરીટેબલ",
+  "pred": "The text in the image is in Gujarati and reads \"બોરીને વાલ.\""
+ },
+ {
+  "name": "C_image_2588_1",
+  "gt": "એન્ડ",
+  "pred": "The text in the image is \"मेरा\" which is in Hindi and translates to \"Mera\" in English, meaning \"my\" or \"mine.\""
+ },
+ {
+  "name": "C_image_2588_10",
+  "gt": "ટ્રસ્ટ",
+  "pred": "The text in the image is \"222\"."
+ },
+ {
+  "name": "C_image_2588_11",
+  "gt": "એજયુકેશન",
+  "pred": "The text in the image is in Gujarati and reads \"અનુભવિત.\" This translates to \"experienced\" or \"experienced person\" in English."
+ },
+ {
+  "name": "C_image_2588_12",
+  "gt": "સુરત",
+  "pred": "The text in the image is \"स्वर\" which is written in Devanagari script. In English, it translates to \"swar,\" which can refer to a sound or a musical note in Sanskrit and Hindi."
+ },
+ {
+  "name": "C_image_2588_13",
+  "gt": "ભીમજીભાઈ",
+  "pred": "The text in the image is written in Gujarati script and reads \"भीमताल\"."
+ },
+ {
+  "name": "C_image_2588_14",
+  "gt": "શ્રીમતિ",
+  "pred": "The text in the image is \"श्रीमति\". This is a Hindi word that translates to \"Mrs.\" or \"Madam\" in English. It is often used as a title for married women, similar to how \"Mrs.\" is used in English-speaking countries."
+ },
+ {
+  "name": "C_image_2588_15",
+  "gt": "રોબાપુ",
+  "pred": "The text in the image is \"বিশ্ব\" which is Bengali for \"World\"."
+ },
+ {
+  "name": "C_image_2588_16",
+  "gt": "ઉતારો.",
+  "pred": "The text in the image reads \"Gali.\""
+ },
+ {
+  "name": "C_image_2588_17",
+  "gt": "શ્યામ",
+  "pred": "The text in the image is \"र्याम\"."
+ },
+ {
+  "name": "C_image_2588_18",
+  "gt": "યજ્ઞવેદી",
+  "pred": "The text in the image is \"ખુબદેલી\". This appears to be in Gujarati script, which is used in the Indian state of Gujarat and in some neighboring regions. The meaning or context of this word would depend on its usage in a specific sentence or phrase"
+ },
+ {
+  "name": "C_image_2588_19",
+  "gt": "ગુ३ગાદી",
+  "pred": "The text in the image is \"સુહાગારી\". This is in Gujarati script, which translates to \"Suhagari\" in English."
+ },
+ {
+  "name": "C_image_2588_2",
+  "gt": "મહાદેવ",
+  "pred": "The text in the image is \"माताजी\"."
+ },
+ {
+  "name": "C_image_2588_3",
+  "gt": "શ્રી",
+  "pred": "The text in the image is not clear or legible, and it appears to be a blurred or pixelated image of a hand. If you have any specific questions about the image or need help with something else, feel free to ask!"
+ },
+ {
+  "name": "C_image_2588_4",
+  "gt": "કાળમંઘનાથ",
+  "pred": "The text in the image is in Gujarati and reads \"અનેક દિવસ.\" This translates to \"Many days\" in English."
+ },
+ {
+  "name": "C_image_2588_5",
+  "gt": "જય",
+  "pred": "The text in the image is \"रू\" which is the Hindi character for \"rupee\"."
+ },
+ {
+  "name": "C_image_2588_6",
+  "gt": "સમાધિ",
+  "pred": "The text in the image reads \"femmes\"."
+ },
+ {
+  "name": "C_image_2588_7",
+  "gt": "મંદિર",
+  "pred": "The text in the image reads \"i&2\"."
+ },
+ {
+  "name": "C_image_2588_8",
+  "gt": "મણીબેન",
+  "pred": "The text in the image is \"भारतीयन\". This appears to be in Devanagari script, which is used for several languages including Hindi and Marathi. The exact meaning or context of this text would depend on the specific language it is written in and the surrounding context. If you need"
+ },
+ {
+  "name": "C_image_2588_9",
+  "gt": "સોજીત્રા",
+  "pred": "The text in the image is \"सोजना\" which is in Devanagari script, commonly used for writing Hindi and other languages of India."
+ },
+ {
+  "name": "C_image_2588_20",
+  "gt": "સૌજન્ય:-",
+  "pred": "The text in the image is \"संयोग\". This is Hindi for \"synergy\" or \"cooperation\"."
+ },
+ {
+  "name": "C_image_2588_21",
+  "gt": "મણી",
+  "pred": "The text in the image is \"मैं\". This is the Hindi word for \"I\" or \"me\"."
+ },
+ {
+  "name": "C_image_2588_22",
+  "gt": "એક્ષપોર્ટસ",
+  "pred": "The text in the image is in Gujarati and reads \"અમેરિકા\". This translates to \"America\" in English."
+ },
+ {
+  "name": "C_image_2588_24",
+  "gt": "રામદેવજી",
+  "pred": "The text in the image is \"અને\" which is in Gujarati script. It translates to \"and\" in English."
+ },
+ {
+  "name": "C_image_2588_25",
+  "gt": "જય",
+  "pred": "The text in the image is \"2021\"."
+ },
+ {
+  "name": "C_image_2588_27",
+  "gt": "ૐ",
+  "pred": "The text in the image is \"2\"."
+ },
+ {
+  "name": "C_image_2588_28",
+  "gt": "જય",
+  "pred": "The text in the image is \"1\"."
+ },
+ {
+  "name": "C_image_2588_30",
+  "gt": "મંદિર",
+  "pred": "The text in the image is \"10\"."
+ },
+ {
+  "name": "C_image_2588_31",
+  "gt": "માં",
+  "pred": "The text in the image is \"w\"."
+ },
+ {
+  "name": "C_image_2588_32",
+  "gt": "પેવર",
+  "pred": "The text in the image is \"22\"."
+ },
+ {
+  "name": "C_image_2588_33",
+  "gt": "શ્રી",
+  "pred": "The text in the image is \"21\"."
+ },
+ {
+  "name": "C_image_2588_34",
+  "gt": "શ્રી",
+  "pred": "The text in the image is \"30\"."
+ },
+ {
+  "name": "C_image_2588_35",
+  "gt": "શ્રી",
+  "pred": "The text in the image is \"20\"."
+ },
+ {
+  "name": "C_image_2588_36",
+  "gt": "શ્રી",
+  "pred": "The text in the image is \"巩\"."
+ },
+ {
+  "name": "C_image_2588_38",
+  "gt": "ભીમજીભાઈ",
+  "pred": "The text in the image is \"இந்திய\". This is the Tamil word for \"India\"."
+ },
+ {
+  "name": "C_image_2588_39",
+  "gt": "સોજીત્રા",
+  "pred": "The text in the image is \"सोलन\"."
+ },
+ {
+  "name": "C_image_2588_40",
+  "gt": "મથુરભાઈ",
+  "pred": "The text in the image is \"મુખ્યમંત્રી\". This is in Gujarati script and translates to \"Chief Minister\" in English."
+ },
+ {
+  "name": "C_image_2588_41",
+  "gt": "ભીમજીભાઈ",
+  "pred": "The text in the image is \"भारत\". This is the Hindi word for \"India\"."
+ },
+ {
+  "name": "C_image_2588_43",
+  "gt": "કાંતિભાઈ",
+  "pred": "The text in the image is \"গোলাম\" which is Bengali for \"Golam\"."
+ },
+ {
+  "name": "C_image_2588_45",
+  "gt": "સોજીત્રા",
+  "pred": "The text in the image is \"सोमा\"."
+ },
+ {
+  "name": "C_image_2588_46",
+  "gt": "સોજીત્રા",
+  "pred": "The text in the image is \"सोधना\" which is in Hindi. It translates to \"research\" or \"investigation\" in English."
+ },
+ {
+  "name": "C_image_2588_47",
+  "gt": "ભીમજીભાઈ",
+  "pred": "The text in the image is in Gujarati and reads \"બીમાર્થ\". This translates to \"Health\" in English."
+ },
+ {
+  "name": "C_image_2588_48",
+  "gt": "બાલુભાઈ",
+  "pred": "The text in the image is \"WIGGLES\"."
+ },
+ {
+  "name": "C_image_2588_49",
+  "gt": "ધારી-",
+  "pred": "The text in the image is \"पारि-\" which appears to be in Hindi script. The word \"पारि\" (pāri) means \"boundary\" or \"limit\" in English."
+ },
+ {
+  "name": "C_image_2588_50",
+  "gt": "હરિપરા",
+  "pred": "The text in the image is \"विश्व\". This is the Hindi word for \"world\" or \"universe\"."
+ },
+ {
+  "name": "C_image_2588_51",
+  "gt": "\"મણી",
+  "pred": "The text in the image is \"11480\"."
+ },
+ {
+  "name": "C_image_2588_52",
+  "gt": "એશપોર્ટસ",
+  "pred": "The text in the image is \"संपूर्ण\". This is in Devanagari script, which is used to write several languages including Hindi and Marathi. The word \"संपूर्ण\" (samprāṇ) means \"complete\" or \"entire"
+ },
+ {
+  "name": "C_image_2588_53",
+  "gt": "સુરત\"",
+  "pred": "The text in the image is \"381\"."
+ },
+ {
+  "name": "C_image_2693_0",
+  "gt": "હરીયા",
+  "pred": "The text in the image is \"देवीय\"."
+ },
+ {
+  "name": "C_image_2693_1",
+  "gt": "લાંવો",
+  "pred": "The text in the image is \"लायो\" which is in Hindi and translates to \"lion\" in English."
+ },
+ {
+  "name": "C_image_2693_10",
+  "gt": "વક્ષ",
+  "pred": "The text in the image is \"48\"."
+ },
+ {
+  "name": "C_image_2693_11",
+  "gt": "વાવોં",
+  "pred": "The text in the image is \"यादवी\"."
+ },
+ {
+  "name": "C_image_2693_12",
+  "gt": "વરસાદ",
+  "pred": "The text in the image is \"31823\"."
+ },
+ {
+  "name": "C_image_2693_13",
+  "gt": "ઝાલાવાડને",
+  "pred": "The text in the image is \"మల్లికర్త\". This appears to be in Telugu script, which is used in the Indian state of Andhra Pradesh and Telangana. The meaning or context of this word would depend on its usage in a specific sentence or phrase"
+ },
+ {
+  "name": "C_image_2693_14",
+  "gt": "સુચના",
+  "pred": "The text in the image is \"सुयना\" (Suyana)."
+ },
+ {
+  "name": "C_image_2693_15",
+  "gt": "ના",
+  "pred": "The text in the image is \"oil\"."
+ },
+ {
+  "name": "C_image_2693_16",
+  "gt": "આપના",
+  "pred": "The text in the image is \"एनिमल\". This is in Devanagari script, which is used to write several languages including Hindi and Marathi. The word \"एनिमल\" translates to \"animal\" in English."
+ },
+ {
+  "name": "C_image_2693_17",
+  "gt": "ઉતરતા",
+  "pred": "The text in the image reads \"Gadell\"."
+ },
+ {
+  "name": "C_image_2693_18",
+  "gt": "ચડતા",
+  "pred": "The text in the image reads \"mpeise\"."
+ },
+ {
+  "name": "C_image_2693_19",
+  "gt": "ડુગર",
+  "pred": "The text in the image reads \"sics\"."
+ },
+ {
+  "name": "C_image_2693_2",
+  "gt": "અહી",
+  "pred": "The text in the image is \"अही\" which is in Devanagari script, used for writing several languages including Hindi and Marathi."
+ },
+ {
+  "name": "C_image_2693_20",
+  "gt": "ચઘલ",
+  "pred": "The text in the image is \"खेल\". This is Hindi for \"game\" or \"play\"."
+ },
+ {
+  "name": "C_image_2693_4",
+  "gt": "નહી",
+  "pred": "The text in the image is \"मंदी\" which translates to \"Market\" or \"Bazaar\" in English."
+ },
+ {
+  "name": "C_image_2693_5",
+  "gt": "બુટ",
+  "pred": "The text in the image is \"35\"."
+ },
+ {
+  "name": "C_image_2693_6",
+  "gt": "બાળકોનું",
+  "pred": "The text in the image appears to be in Telugu, and it reads \"ప్రారంభించిన\". This translates to \"Started\" or \"Commenced\" in English."
+ },
+ {
+  "name": "C_image_2693_7",
+  "gt": "ખાસ",
+  "pred": "The text in the image is \"पारा\". This appears to be in Hindi, and it translates to \"para\" in English."
+ },
+ {
+  "name": "C_image_2693_8",
+  "gt": "રાખો.",
+  "pred": "The text in the image is \"राणी\". This is Hindi for \"Queen\" or \"Rani\"."
+ },
+ {
+  "name": "C_image_2693_9",
+  "gt": "ખાસ",
+  "pred": "The text in the image is \"भारत\". This is the Hindi word for \"India\"."
+ },
+ {
+  "name": "C_image_2693_21",
+  "gt": "દરેક",
+  "pred": "The text in the image is \"कोरोना\"."
+ },
+ {
+  "name": "C_image_2693_22",
+  "gt": "ભડત",
+  "pred": "The text in the image reads \"1950\"."
+ },
+ {
+  "name": "C_image_2693_23",
+  "gt": "જનોને",
+  "pred": "The text in the image is \"जनों\" which is in Hindi and translates to \"people\" or \"persons\" in English."
+ },
+ {
+  "name": "C_image_2693_24",
+  "gt": "ખાસ",
+  "pred": "The text in the image is \"प्रिय\" which is in Hindi and it translates to \"Dear\" in English."
+ },
+ {
+  "name": "C_image_2693_25",
+  "gt": "જણાવવાનું",
+  "pred": "The text in the image is \"जावाप्पारु\". This appears to be in the Malayalam script, which is used for writing the Malayalam language, primarily spoken in the state of Kerala, India. The meaning or context of this text would depend on the specific words and their usage"
+ },
+ {
+  "name": "C_image_2693_26",
+  "gt": "કે",
+  "pred": "The text in the image is \"5\"."
+ },
+ {
+  "name": "C_image_2693_27",
+  "gt": "માતાજીના",
+  "pred": "The text in the image is \"印度尼西亚\". This is the name of Indonesia in Chinese."
+ },
+ {
+  "name": "C_image_2693_28",
+  "gt": "ચાંદ",
+  "pred": "The text in the image is \"कैंसर\". This is the Hindi word for \"cancer\"."
+ },
+ {
+  "name": "C_image_2693_29",
+  "gt": "અ",
+  "pred": "The text in the image is \"20\"."
+ },
+ {
+  "name": "C_image_2693_30",
+  "gt": "છે.",
+  "pred": "The text in the image is \"边\"."
+ },
+ {
+  "name": "C_image_2693_31",
+  "gt": "માટે",
+  "pred": "The text in the image is \"2012\"."
+ },
+ {
+  "name": "C_image_2693_32",
+  "gt": "તેના",
+  "pred": "The text in the image is \"तेजा\" which is in Devanagari script and translates to \"Teja\" in English."
+ },
+ {
+  "name": "C_image_2693_33",
+  "gt": "ધ્વ",
+  "pred": "The text in the image is \"100\"."
+ },
+ {
+  "name": "C_image_2693_34",
+  "gt": "પ",
+  "pred": "The text in the image is \"up\"."
+ },
+ {
+  "name": "C_image_2693_35",
+  "gt": "માનવ",
+  "pred": "The text in the image is \"2010\"."
+ },
+ {
+  "name": "C_image_2693_36",
+  "gt": "ક",
+  "pred": "The text in the image is \"s\"."
+ },
+ {
+  "name": "C_image_2693_37",
+  "gt": "શ્રી",
+  "pred": "The text in the image is \"30\"."
+ },
+ {
+  "name": "C_image_2693_38",
+  "gt": "ચામંડા",
+  "pred": "The text in the image is \"थाम्रो\"."
+ },
+ {
+  "name": "C_image_2693_39",
+  "gt": "પર્વતના",
+  "pred": "The text in the image is \"udam\"."
+ },
+ {
+  "name": "C_image_2693_40",
+  "gt": "પગથીયા",
+  "pred": "The text in the image is \"पंजाबी\". This is written in Devanagari script, which is used to write several languages including Hindi and English. The word \"पंजाबी\" specifically means \"Punjabi\" in English, referring to the language spoken in the Punjab"
+ },
+ {
+  "name": "C_image_2693_41",
+  "gt": "ઉપર.",
+  "pred": "The text in the image is \"पुर\"."
+ },
+ {
+  "name": "C_image_2693_42",
+  "gt": "કે",
+  "pred": "The text in the image is \"$\"."
+ },
+ {
+  "name": "C_image_2693_43",
+  "gt": "દિવા",
+  "pred": "The text in the image reads \"f ∈ Q\". This is a mathematical statement indicating that 'f' is an element of the set of rational numbers, denoted by 'Q'."
+ },
+ {
+  "name": "C_image_2693_44",
+  "gt": "પ્રગટાવવા",
+  "pred": "The text in the image is \"पंजाबी\". This is written in Devanagari script, which is used to write several languages including Hindi and Marathi. The word \"पंजाबी\" translates to \"Punjabi\" in English, referring to the language spoken in Punjab"
+ },
+ {
+  "name": "C_image_2693_45",
+  "gt": "થી",
+  "pred": "The text in the image is \"的\"."
+ },
+ {
+  "name": "C_image_2693_46",
+  "gt": "આ",
+  "pred": "The text in the image is \"201\"."
+ },
+ {
+  "name": "C_image_2693_47",
+  "gt": "પવિત્ર",
+  "pred": "The text in the image is \"पुस्तक\" which is Hindi for \"book\"."
+ },
+ {
+  "name": "C_image_2693_48",
+  "gt": "વસ્તુઓ",
+  "pred": "The text in the image is \"पटडुल\". This appears to be in Hindi, and it translates to \"Patadul\" in English. However, without additional context, it's not clear what \"Patadul\" specifically refers to. It could be a name, a place, or something else"
+ },
+ {
+  "name": "C_image_2693_49",
+  "gt": "આપણા",
+  "pred": "The text in the image is \"हेमंत\". This appears to be in Devanagari script, which is used for several languages including Hindi and Marathi. The word \"हेमंत\" can be transliterated into English as \"Hemant,\" which is a name or a term"
+ },
+ {
+  "name": "C_image_2693_50",
+  "gt": "પગનીચે",
+  "pred": "The text in the image is \"पगनीये\". This appears to be in Devanagari script, which is used for several languages including Hindi and Marathi. The word \"पगनीये\" does not have a direct English translation as it is likely a name or a term specific"
+ },
+ {
+  "name": "C_image_2693_51",
+  "gt": "કચડાય",
+  "pred": "The text in the image is \"54512\"."
+ },
+ {
+  "name": "C_image_2693_52",
+  "gt": "રીતે",
+  "pred": "The text in the image is \"स्वते\" which is in Devanagari script and translates to \"svate\" in English. This could be a name, a word, or part of a phrase in Hindi or another language using the Devanagari script."
+ },
+ {
+  "name": "C_image_2693_53",
+  "gt": "યોગ્ય",
+  "pred": "The text in the image is \"संदेश\"."
+ },
+ {
+  "name": "C_image_2693_54",
+  "gt": "નથી.",
+  "pred": "The text in the image is \"नेपाल\" which translates to \"Nepal\" in English."
+ },
+ {
+  "name": "C_image_2693_55",
+  "gt": "શ્રી",
+  "pred": "The text in the image is \"明\"."
+ },
+ {
+  "name": "C_image_2693_56",
+  "gt": "ચામુંડા",
+  "pred": "The text in the image is \"2019\"."
+ },
+ {
+  "name": "C_image_2693_57",
+  "gt": "માતાજીના",
+  "pred": "The text in the image is \"माताजना\" which is in Devanagari script and translates to \"Mother\" in English."
+ },
+ {
+  "name": "C_image_2693_58",
+  "gt": "સંકેત",
+  "pred": "The text in the image is \"d5\"."
+ },
+ {
+  "name": "C_image_2693_59",
+  "gt": "થી",
+  "pred": "The text in the image is \"zhi\"."
+ },
+ {
+  "name": "C_image_2693_60",
+  "gt": "મુકવામાં",
+  "pred": "The text in the image is \"মুসলিম\" which is Bengali for \"Muslim\"."
+ },
+ {
+  "name": "C_image_2693_61",
+  "gt": "આવેલ",
+  "pred": "The text in the image is \"आदेश\" which is in Hindi and it translates to \"Instruction\" or \"Order\" in English."
+ },
+ {
+  "name": "C_image_2693_62",
+  "gt": "છે",
+  "pred": "The text in the image is \"δ1\"."
+ },
+ {
+  "name": "C_image_2693_63",
+  "gt": "તેથી",
+  "pred": "The text in the image reads \"defi\"."
+ },
+ {
+  "name": "C_image_2693_64",
+  "gt": "ભક્ત",
+  "pred": "The text in the image reads \"@MSD\"."
+ },
+ {
+  "name": "C_image_2693_65",
+  "gt": "જનો",
+  "pred": "The text in the image is \"योगी\" which is written in Devanagari script and transliterated as \"Yogi\" in English."
+ },
+ {
+  "name": "C_image_2693_66",
+  "gt": "માનતા",
+  "pred": "The text in the image is \"HUIHOUJU\"."
+ },
+ {
+  "name": "C_image_2693_67",
+  "gt": "અહીં",
+  "pred": "The text in the image is \"आहे\". This is Marathi, a language spoken primarily in the state of Maharashtra, India. The word \"आहे\" translates to \"is\" or \"are\" in English."
+ },
+ {
+  "name": "C_image_2693_68",
+  "gt": "અલગથી",
+  "pred": "The text in the image is \"संगमरम्भी\" which is in Devanagari script and translates to \"Sangamrambhi\" in English. This could be a name, a place, or a term related to a specific context. If you need more information about this"
+ },
+ {
+  "name": "C_image_2693_69",
+  "gt": "બનાવેલ",
+  "pred": "The text in the image is \"कैंपिंग\". This is Hindi and it translates to \"camping\" in English."
+ },
+ {
+  "name": "C_image_2693_70",
+  "gt": "પાંચ",
+  "pred": "The text in the image is \"प्रिया\" which is written in Devanagari script. This is the name \"Priya\" in Hindi."
+ },
+ {
+  "name": "C_image_2693_71",
+  "gt": "સેવાથી",
+  "pred": "The text in the image is \"पेशावरी\"."
+ },
+ {
+  "name": "C_image_2693_72",
+  "gt": "તેમની",
+  "pred": "The text in the image is \"तेमनी\" which is in Devanagari script and translates to \"temni\" in English."
+ },
+ {
+  "name": "C_image_2693_73",
+  "gt": "માનતા",
+  "pred": "The text in the image is \"周叶(1)\" which appears to be a name or a reference, possibly indicating a person's name or a specific item with the number 1 associated with it."
+ },
+ {
+  "name": "C_image_2693_74",
+  "gt": "પૂર્ણ",
+  "pred": "The text in the image is \"yef\"."
+ },
+ {
+  "name": "C_image_2693_75",
+  "gt": "થયેલી",
+  "pred": "The text in the image is \"खेली\". This appears to be in Devanagari script, which is used for several languages including Hindi and Marathi. The word \"खेली\" can be transliterated into English as \"kheli,\" which means \"game\" or \"play\" in"
+ },
+ {
+  "name": "C_image_2693_76",
+  "gt": "(મહેરબાની",
+  "pred": "The text in the image is \"मेरे दिल में\" which translates to \"In my heart\" in English."
+ },
+ {
+  "name": "C_image_2693_77",
+  "gt": "કરી",
+  "pred": "The text in the image is \"58\"."
+ },
+ {
+  "name": "C_image_2693_78",
+  "gt": "આ",
+  "pred": "The text in the image is \"201\"."
+ },
+ {
+  "name": "C_image_2693_79",
+  "gt": "બાબતની",
+  "pred": "The text in the image is \"গুলোটি\" which is Bengali and translates to \"the ones\" or \"these\" in English."
+ },
+ {
+  "name": "C_image_2693_80",
+  "gt": "કોઈ",
+  "pred": "The text in the image is \"sté\"."
+ },
+ {
+  "name": "C_image_2693_81",
+  "gt": "દલીલ",
+  "pred": "The text in the image is \"cello\"."
+ },
+ {
+  "name": "C_image_2693_82",
+  "gt": "સૌરાષ્ટ્ર",
+  "pred": "The text in the image is \"alum\"."
+ },
+ {
+  "name": "C_image_2693_83",
+  "gt": "દર્પણ",
+  "pred": "The text in the image is \"पंज\" which appears to be in Devanagari script, commonly used for writing several languages including Hindi and Marathi. The meaning or context of this word would depend on the language it is written in. If you need further assistance with translation or understanding, please specify the"
+ },
+ {
+  "name": "C_image_2693_84",
+  "gt": "આમ",
+  "pred": "The text in the image is \"पाक\"."
+ },
+ {
+  "name": "C_image_2693_85",
+  "gt": "સૂચના",
+  "pred": "The text in the image is \"तुम्हारा\" which translates to \"Tumhara\" in English. This is a Hindi word that means \"your\" or \"yours\" in the context of addressing someone directly."
+ },
+ {
+  "name": "C_image_2731_0",
+  "gt": "ઈમરજન્સીમાં",
+  "pred": "The text in the image is in Gujarati and reads \"છેમસ્તરોટીમા.\""
+ },
+ {
+  "name": "C_image_2731_2",
+  "gt": "દ્વારકાધીશ",
+  "pred": "The text in the image is \"প্রকাশনী\" which translates to \"Publication\" or \"Press\" in English."
+ },
+ {
+  "name": "C_image_2731_3",
+  "gt": "જય",
+  "pred": "The text in the image is \"821\"."
+ },
+ {
+  "name": "C_image_2731_4",
+  "gt": "મંદિર",
+  "pred": "The text in the image is \"भारत\". This is the Hindi word for \"India\"."
+ },
+ {
+  "name": "C_image_2731_7",
+  "gt": "ઈમરજન્સી",
+  "pred": "The text in the image is in Gujarati and reads \"મસ્જિદ\". This translates to \"Mosque\" in English."
+ },
+ {
+  "name": "C_image_2731_12",
+  "gt": "અમાનતી",
+  "pred": "The text in the image is \"bWidely\"."
+ },
+ {
+  "name": "C_image_2731_13",
+  "gt": "સામાન",
+  "pred": "The text in the image reads \"2019\"."
+ },
+ {
+  "name": "C_image_2731_14",
+  "gt": "ઘર",
+  "pred": "The text in the image is \"22\"."
+ },
+ {
+  "name": "C_image_2731_20",
+  "gt": "સદ્ઉપયોગ",
+  "pred": "The text in the image is \"संगीत\" which translates to \"Sangeet\" in English. This term is often used in Hindi and other Indian languages to refer to music, particularly classical Indian music."
+ },
+ {
+  "name": "C_image_2902_4",
+  "gt": "કેવડા",
+  "pred": "The text in the image reads \"3451\"."
+ },
+ {
+  "name": "C_image_2902_5",
+  "gt": "મસ્જિદ",
+  "pred": "The text in the image reads \"HROYS.\""
+ },
+ {
+  "name": "C_image_3435_4",
+  "gt": "સંગ્રહાલય",
+  "pred": "The text in the image is in Gujarati and reads \"सावित्री\"."
+ },
+ {
+  "name": "C_image_3435_5",
+  "gt": "અવાજ",
+  "pred": "The text in the image appears to be \"খানা\" which is Bengali for \"house\" or \"home.\""
+ },
+ {
+  "name": "C_image_3435_6",
+  "gt": "નું",
+  "pred": "The text in the image appears to be a stylized or abstract representation of the letter \"F\". It is not a standard, legible text but rather an artistic or decorative form of the letter."
+ },
+ {
+  "name": "C_image_3435_7",
+  "gt": "વાચા",
+  "pred": "The text in the image is \"मेरी\". This is written in Devanagari script, which is used for several languages including Hindi and Marathi. The word \"मेरी\" means \"my\" in English."
+ },
+ {
+  "name": "C_image_3456_0",
+  "gt": "યોજના",
+  "pred": "The text in the image is \"अंग्रेजी\". This is the Hindi word for \"English\"."
+ },
+ {
+  "name": "C_image_3456_1",
+  "gt": "ગ૨ીબ",
+  "pred": "The text in the image is \"मेरी मौत\" which translates to \"My Death\" in English."
+ },
+ {
+  "name": "C_image_3456_4",
+  "gt": "સમૃદ્ધિ",
+  "pred": "The text in the image is \"समृद्धि,\" which is in Devanagari script and translates to \"prosperity\" or \"wealth\" in English."
+ },
+ {
+  "name": "C_image_3456_10",
+  "gt": "ગોલ્ડ",
+  "pred": "The text in the image reads \"WIS\"."
+ },
+ {
+  "name": "C_image_3456_11",
+  "gt": "ગોલ્ડ",
+  "pred": "The text in the image is \"105\"."
+ },
+ {
+  "name": "C_image_3456_12",
+  "gt": "વતન",
+  "pred": "The text in the image reads \"HIGHS.\""
+ },
+ {
+  "name": "C_image_3456_13",
+  "gt": "વતન",
+  "pred": "The text in the image is \"gold\"."
+ },
+ {
+  "name": "C_image_3504_0",
+  "gt": "ધામ",
+  "pred": "The text in the image is \"804\"."
+ },
+ {
+  "name": "C_image_3504_1",
+  "gt": "અંતિમ",
+  "pred": "The text in the image is \"अंतिम\" which translates to \"last\" or \"final\" in English."
+ },
+ {
+  "name": "C_image_3504_2",
+  "gt": "ન્",
+  "pred": "The text in the image is \"2\"."
+ },
+ {
+  "name": "C_image_4145_10",
+  "gt": "અને",
+  "pred": "The text in the image is \"ஆரோ\" which is in Tamil script."
+ },
+ {
+  "name": "C_image_4145_11",
+  "gt": "વર્લ્ડ",
+  "pred": "The text in the image reads \"qcs\"."
+ },
+ {
+  "name": "C_image_4145_13",
+  "gt": "હોવાથી",
+  "pred": "The text in the image is \"होवाठी\". This appears to be in Marathi, a language spoken primarily in the state of Maharashtra, India. The word \"होवाठी\" can be translated as \"Hovathī\" in English."
+ },
+ {
+  "name": "C_image_4145_14",
+  "gt": "મસ્જીદ",
+  "pred": "The text in the image is \"मंडल\" which is written in Devanagari script, commonly used for several languages including Hindi and Marathi."
+ },
+ {
+  "name": "C_image_4145_15",
+  "gt": "પઢવાની",
+  "pred": "The text in the image is \"पटवानी\"."
+ },
+ {
+  "name": "C_image_4145_16",
+  "gt": "મનાઈ",
+  "pred": "The text in the image is \"मनाय\"."
+ },
+ {
+  "name": "C_image_4145_17",
+  "gt": "માં",
+  "pred": "The text in the image is \"भी\". This is a Hindi word that means \"also\" or \"too\"."
+ },
+ {
+  "name": "C_image_4145_18",
+  "gt": "મનાઈ",
+  "pred": "The text in the image is \"મનાય\". This appears to be in the Gujarati script, which is used for the Gujarati language spoken primarily in the Indian state of Gujarat. The word \"મનાય\" can be translated as \"manay\" in English,"
+ },
+ {
+  "name": "C_image_4145_19",
+  "gt": "સેલ્ફી",
+  "pred": "The text in the image is \"सेक्टर\"."
+ },
+ {
+  "name": "C_image_4145_20",
+  "gt": "ભંગ",
+  "pred": "The text in the image is \"भंग\"."
+ },
+ {
+  "name": "C_image_4145_21",
+  "gt": "ભરવામાં",
+  "pred": "The text in the image is \"भरवामं\". This appears to be in Devanagari script, which is used for several languages including Hindi and Marathi. The exact meaning or context of this word would depend on the language it is written in and the specific dialect or usage. If you need"
+ },
+ {
+  "name": "C_image_4145_22",
+  "gt": "રીતે",
+  "pred": "The text in the image is \"तीन\" which is Hindi for \"three\"."
+ },
+ {
+  "name": "C_image_4145_24",
+  "gt": "આનુ",
+  "pred": "The text in the image is \"आनु\"."
+ },
+ {
+  "name": "C_image_4145_25",
+  "gt": "અને",
+  "pred": "The text in the image is \"अने\"."
+ },
+ {
+  "name": "C_image_4145_26",
+  "gt": "જમાતખાના",
+  "pred": "The text in the image is \"भारतामाला\" which is Marathi for \"India\"."
+ },
+ {
+  "name": "C_image_4145_27",
+  "gt": "નમાઝ",
+  "pred": "The text in the image is \"नमस्ते\" which is Hindi for \"Namaste,\" meaning \"Hello\" or \"Greetings.\""
+ },
+ {
+  "name": "C_image_4145_28",
+  "gt": "ઐતિહાસિક",
+  "pred": "The text in the image is \"अतिहासिक\". This is in Devanagari script, which is used to write several languages including Hindi and Marathi. The word \"अतिहासिक\" translates to \"Historical\" or \"Historic\" in English."
+ },
+ {
+  "name": "C_image_4145_36",
+  "gt": "કમિટી",
+  "pred": "The text in the image is \"కృష్ణ\". This is Telugu for \"Krishna\", which is a name and also refers to the Hindu deity Krishna."
+ },
+ {
+  "name": "C_image_4145_37",
+  "gt": "નિભાવ",
+  "pred": "The text in the image is \"নিমায়\"."
+ },
+ {
+  "name": "C_image_4145_44",
+  "gt": "ફંડ",
+  "pred": "The text in the image is \"fs\"."
+ },
+ {
+  "name": "C_image_4145_46",
+  "gt": "શાહી",
+  "pred": "The text in the image reads \"gene\"."
+ },
+ {
+  "name": "C_image_4145_50",
+  "gt": "અહમદાબાદ",
+  "pred": "The text in the image reads \"ENRIQUE\"."
+ },
+ {
+  "name": "C_image_4145_51",
+  "gt": "સૂચના",
+  "pred": "The text in the image is \"सूचना\". This is Marathi, a language spoken primarily in the state of Maharashtra, India. The word \"सूचना\" translates to \"information\" or \"news\" in English."
+ },
+ {
+  "name": "C_image_4145_52",
+  "gt": "પગલા",
+  "pred": "The text in the image is \"पावा\". This is in Devanagari script, which is used for several languages including Hindi and Marathi. The word \"पावा\" can be transliterated into English as \"pāvā\"."
+ },
+ {
+  "name": "C_image_4145_53",
+  "gt": "સાથે",
+  "pred": "The text in the image is \"साथी\"."
+ },
+ {
+  "name": "C_image_4145_54",
+  "gt": "કરનાર",
+  "pred": "The text in the image is \"करेनार\"."
+ },
+ {
+  "name": "C_image_4145_56",
+  "gt": "લેવાની",
+  "pred": "The text in the image is \"देवाली\"."
+ },
+ {
+  "name": "C_image_4145_58",
+  "gt": "પ્રવેશવાની",
+  "pred": "The text in the image is \"प्रवेशवानी\". This appears to be in Devanagari script, which is used for several languages including Hindi and Marathi. The word \"प्रवेशवानी\" translates to \"entry\" or \"admission\" in"
+ },
+ {
+  "name": "C_image_4145_59",
+  "gt": "છે.",
+  "pred": "The text in the image is \"2\"."
+ },
+ {
+  "name": "C_image_4145_60",
+  "gt": "લેડીઝને",
+  "pred": "The text in the image is \"देशभक्ति\" which translates to \"Patriotism\" in English."
+ },
+ {
+  "name": "C_image_4145_61",
+  "gt": "હેરીટેજ",
+  "pred": "The text in the image is \"हेलो टेस्ट\"."
+ },
+ {
+  "name": "C_image_4145_62",
+  "gt": "પવિત્ર",
+  "pred": "The text in the image is \"पवित्र\" which is in Devanagari script and translates to \"pavitra\" in English."
+ },
+ {
+  "name": "C_image_4145_8",
+  "gt": "કાયદે",
+  "pred": "The text in the image is \"कायदे,\" which translates to \"rules\" or \"laws\" in English."
+ },
+ {
+  "name": "C_image_4145_9",
+  "gt": "આવ",
+  "pred": "The text in the image is \"आप\"."
+ },
+ {
+  "name": "C_image_4145_92",
+  "gt": "જામે",
+  "pred": "The text in the image is \"40%\"."
+ },
+ {
+  "name": "C_image_4145_93",
+  "gt": "મસ્જિદ",
+  "pred": "The text in the image reads \"K-POP\"."
+ },
+ {
+  "name": "C_image_4145_94",
+  "gt": "ખિદમત",
+  "pred": "The text in the image reads \"Physics\"."
+ },
+ {
+  "name": "C_image_42487_0",
+  "gt": "ઓડીયાર",
+  "pred": "The text in the image is in Gujarati and reads \"સાંભળો\". This translates to \"Gather\" or \"Collect\" in English."
+ },
+ {
+  "name": "C_image_42487_1",
+  "gt": "આઈ",
+  "pred": "The text in the image reads \"RHIES\"."
+ },
+ {
+  "name": "C_image_42487_2",
+  "gt": "ૐ",
+  "pred": "The text in the image is \"ॐ\". This symbol is known as the Om or Aum symbol, which is significant in Hinduism and other Indian religions. It is often used to represent the sound of the universe and is considered sacred."
+ },
+ {
+  "name": "C_image_42487_3",
+  "gt": "લાભ",
+  "pred": "The text in the image is \"GULH\"."
+ },
+ {
+  "name": "C_image_42487_4",
+  "gt": "ટૂંક",
+  "pred": "The text in the image is \"25\"."
+ },
+ {
+  "name": "C_image_42487_5",
+  "gt": "હેમાભાઈની",
+  "pred": "The text in the image is in Gujarati and reads \"हुमभाईनी\" which translates to \"Humbai\" in English."
+ },
+ {
+  "name": "C_image_42487_6",
+  "gt": "શેઠ",
+  "pred": "The text in the image is \"টিভি\". This is the Bengali word for \"TV\" or \"television\"."
+ },
+ {
+  "name": "C_image_42487_7",
+  "gt": "શુભ",
+  "pred": "The text in the image is \"2103\"."
+ },
+ {
+  "name": "C_image_42487_8",
+  "gt": "શ્રી",
+  "pred": "The text in the image is \"제\"."
+ },
+ {
+  "name": "C_image_42487_9",
+  "gt": "માં",
+  "pred": "The text in the image reads \"ahi\"."
+ },
+ {
+  "name": "C_image_43438_0",
+  "gt": "વડનગર",
+  "pred": "The text in the image is \"पश्चिम\"."
+ },
+ {
+  "name": "C_image_43767_1",
+  "gt": "ગાંધીનગર",
+  "pred": "The text in the image is \"आधी नावे\". This is Marathi, a language spoken primarily in the state of Maharashtra, India. The phrase can be translated to English as \"half an hour\" or \"half past the hour.\""
+ },
+ {
+  "name": "C_image_43767_2",
+  "gt": "કેપિટલ",
+  "pred": "The text in the image reads \"fuzca\"."
+ },
+ {
+  "name": "C_image_44232_0",
+  "gt": "ભાજીના",
+  "pred": "The text in the image reads \"CUZON\"."
+ },
+ {
+  "name": "C_image_44232_1",
+  "gt": "બેકરી",
+  "pred": "The text in the image is \"लेकरी\"."
+ },
+ {
+  "name": "C_image_44232_8",
+  "gt": "પાઉ",
+  "pred": "The text in the image is \"416\"."
+ },
+ {
+  "name": "C_image_44232_11",
+  "gt": "મહેન્દ્ર",
+  "pred": "The text in the image is \"秋水共長天一色\". This is a famous Chinese phrase that translates to \"Autumn water and long sky, one color\" or \"Autumn water and long sky, one color of blue\". It is often used to describe a beautiful scene where the water and the sky"
+ },
+ {
+  "name": "C_image_44232_12",
+  "gt": "મીલ",
+  "pred": "The text in the image is \"Alice\"."
+ },
+ {
+  "name": "C_image_44232_13",
+  "gt": "રોડ-",
+  "pred": "The text in the image is \"क्या\"."
+ },
+ {
+  "name": "C_image_44232_14",
+  "gt": "કલીલ.",
+  "pred": "The text in the image is \"90% off\"."
+ },
+ {
+  "name": "C_image_44232_15",
+  "gt": "સદન",
+  "pred": "The text in the image is \"2EM\"."
+ },
+ {
+  "name": "C_image_44232_16",
+  "gt": "સેવા",
+  "pred": "The text in the image is \"20\"."
+ },
+ {
+  "name": "C_image_44232_17",
+  "gt": "નગર",
+  "pred": "The text in the image is \"风\"."
+ },
+ {
+  "name": "C_image_44232_18",
+  "gt": "કલોલ",
+  "pred": "The text in the image is \"SALO\"."
+ },
+ {
+  "name": "C_image_44550_0",
+  "gt": "કૌ",
+  "pred": "The image contains an orange icon that resembles a stylized tree or plant with a curved trunk and a leafy top. There is no text present in the image."
+ },
+ {
+  "name": "C_image_44550_1",
+  "gt": "કો",
+  "pred": "The image contains an orange line that forms a right angle, but there is no text present in the image."
+ },
+ {
+  "name": "C_image_44550_2",
+  "gt": "કૈ",
+  "pred": "The text in the image is \"orange\"."
+ },
+ {
+  "name": "C_image_44550_3",
+  "gt": "કે",
+  "pred": "The text in the image is not present, as it only contains an orange curved line on a black background. There is no text to read."
+ },
+ {
+  "name": "C_image_44550_5",
+  "gt": "કૂ",
+  "pred": "The text in the image is an orange squiggle, which does not contain any readable text."
+ },
+ {
+  "name": "C_image_44550_6",
+  "gt": "કુ",
+  "pred": "The text in the image is \"c\"."
+ },
+ {
+  "name": "C_image_44550_7",
+  "gt": "કી",
+  "pred": "The image contains an orange, curved line that resembles a hook or a shepherd's crook. There is no text present in the image."
+ },
+ {
+  "name": "C_image_44550_8",
+  "gt": "કિ",
+  "pred": "The image contains an orange, curved shape that resembles a hook or a shepherd's crook. There is no text present in the image."
+ },
+ {
+  "name": "C_image_44550_9",
+  "gt": "કા",
+  "pred": "The text in the image is \"II\"."
+ },
+ {
+  "name": "C_image_44550_10",
+  "gt": "ક",
+  "pred": "The text in the image is:\n\n\"Hello, how are you?\""
+ },
+ {
+  "name": "C_image_44595_0",
+  "gt": "ઝ",
+  "pred": "The text in the image is \"x̅\". This symbol typically represents the mean or average of a set of values in statistics and mathematics."
+ },
+ {
+  "name": "C_image_44615_0",
+  "gt": "ઉ",
+  "pred": "The text in the image is \"G3\"."
+ },
+ {
+  "name": "C_image_44735_0",
+  "gt": "ગ્રંથાલય",
+  "pred": "The text in the image is in Gujarati and reads \"ગ્રંથાલય,\" which translates to \"Library\" in English."
+ },
+ {
+  "name": "C_image_44735_1",
+  "gt": "મંગળદાસ",
+  "pred": "The text in the image is in Gujarati and reads \"મંગળવાર,\" which translates to \"Monday\" in English."
+ },
+ {
+  "name": "C_image_44735_2",
+  "gt": "સાહિત્ય",
+  "pred": "The text in the image reads \"alléret\"."
+ },
+ {
+  "name": "C_image_44735_3",
+  "gt": "અમદાવાદ",
+  "pred": "The text in the image reads \"RHEICIE\"."
+ },
+ {
+  "name": "C_image_44735_4",
+  "gt": "પુસ્તક",
+  "pred": "The text in the image reads \"yeds\"."
+ },
+ {
+  "name": "C_image_44735_5",
+  "gt": "ગુજરાતી",
+  "pred": "The text in the image is \"पुरातत्व\". This is the Hindi word for \"Archaeology\"."
+ },
+ {
+  "name": "C_image_44735_6",
+  "gt": "ગુજરાતી",
+  "pred": "The text in the image reads \"Love Bug.\""
+ },
+ {
+  "name": "C_image_44735_7",
+  "gt": "પરિષદ",
+  "pred": "The text in the image reads \"Ritter.\""
+ },
+ {
+  "name": "C_image_44735_8",
+  "gt": "ચીમનલાલ",
+  "pred": "The text in the image is \"थीमनलाल\"."
+ },
+ {
+  "name": "C_image_44811_0",
+  "gt": "સંમેલન",
+  "pred": "The text in the image is \"संमेलन\" which translates to \"Sammelan\" in English. This word typically refers to a gathering, assembly, or meeting."
+ },
+ {
+  "name": "C_image_44811_1",
+  "gt": "આહિર",
+  "pred": "The text in the image reads \"2011\"."
+ },
+ {
+  "name": "C_image_44811_2",
+  "gt": "ભાટીયા",
+  "pred": "The text in the image is \"સાદીયા\". This appears to be in the Gujarati script, which is used for the Gujarati language spoken primarily in the Indian state of Gujarat and parts of neighboring states. The word \"સાદી�"
+ },
+ {
+  "name": "C_image_44811_3",
+  "gt": "તા.",
+  "pred": "The text in the image is \"cv\"."
+ },
+ {
+  "name": "C_image_44811_4",
+  "gt": "૮/૫/૧૯૫૦",
+  "pred": "The text in the image is \"СИРИЕЦ\"."
+ },
+ {
+  "name": "C_image_44919_0",
+  "gt": "ઓ",
+  "pred": "The text in the image is \"आई\"."
+ },
+ {
+  "name": "C_image_44922_0",
+  "gt": "ૡ",
+  "pred": "The text in the image is \"Ω\". This symbol is commonly used in mathematics and physics to represent an ohm, which is the unit of electrical resistance. It can also be used as a Greek letter omega in various contexts, such as in statistics or thermodynamics."
+ },
+ {
+  "name": "C_image_4593_0",
+  "gt": "વ",
+  "pred": "The text in the image is \"id\"."
+ },
+ {
+  "name": "C_image_4593_1",
+  "gt": "સ્ટ્રેન્થ",
+  "pred": "The text in the image reads \"22.65\"."
+ },
+ {
+  "name": "C_image_4593_2",
+  "gt": "ફી",
+  "pred": "The text in the image is \"5\"."
+ },
+ {
+  "name": "C_image_4593_8",
+  "gt": "અમ",
+  "pred": "The text in the image appears to be \"2018\"."
+ },
+ {
+  "name": "C_image_4593_9",
+  "gt": "અમૂલ",
+  "pred": "The text in the image reads \"2019\"."
+ },
+ {
+  "name": "C_image_4593_10",
+  "gt": "દૂધ",
+  "pred": "The text in the image is \"ES\"."
+ },
+ {
+  "name": "C_image_4593_11",
+  "gt": "દૂધ",
+  "pred": "The text in the image is \"E8\"."
+ },
+ {
+  "name": "C_image_4593_12",
+  "gt": "લ",
+  "pred": "The text in the image is not clear or legible. It appears to be a blue, pixelated image that does not contain any discernible text. If you have a clearer version of the image or another context, please provide it so I can assist you better."
+ },
+ {
+  "name": "C_image_4593_13",
+  "gt": "સ્ટ્રેન્થ",
+  "pred": "The text in the image reads \"Expo 2015\"."
+ },
+ {
+  "name": "C_image_4593_14",
+  "gt": "પ્રેસિવ",
+  "pred": "The text in the image is \"प्रसंद\"."
+ },
+ {
+  "name": "C_image_4593_15",
+  "gt": "સિમેન્ટ",
+  "pred": "The text in the image is \"सिमोंटे\"."
+ },
+ {
+  "name": "C_image_4593_16",
+  "gt": "અંખુજા",
+  "pred": "The text in the image is \"खोलुआ\"."
+ },
+ {
+  "name": "C_image_4598_0",
+  "gt": "પ્રોવિઝન",
+  "pred": "The text in the image reads \"conten\"."
+ },
+ {
+  "name": "C_image_4598_2",
+  "gt": "સ્ટોર્સ",
+  "pred": "The text in the image reads \"2012年\". This translates to \"2012\" in English, indicating the year 2012."
+ },
+ {
+  "name": "C_image_4598_3",
+  "gt": "વિદ્યા",
+  "pred": "The text in the image is \"विद्या\" which translates to \"Vidya\" in English."
+ },
+ {
+  "name": "C_image_4598_4",
+  "gt": "વિકાસ",
+  "pred": "The text in the image is \"विकास\" which translates to \"vikas\" or \"development\" in English."
+ },
+ {
+  "name": "C_image_4598_6",
+  "gt": "અમૂલ",
+  "pred": "The text in the image is in Gujarati and reads \"અમૃતા\"."
+ },
+ {
+  "name": "C_image_4598_7",
+  "gt": "દૂધ",
+  "pred": "The text in the image reads \"GA\"."
+ },
+ {
+  "name": "C_image_4598_1",
+  "gt": "કૃપાલુ",
+  "pred": "The text in the image reads \"Sushi\"."
+ },
+ {
+  "name": "C_image_4598_5",
+  "gt": "સંકુલ",
+  "pred": "The text in the image is \"મધુ\". This appears to be in the Gujarati script, which is used for the Gujarati language spoken primarily in the Indian state of Gujarat. The word \"મધુ\" translates to \"honey\" in English."
+ },
+ {
+  "name": "C_image_4598_8",
+  "gt": "કૃપાલુ",
+  "pred": "The text in the image is \"ప్రభుత్వ\". This is Telugu script, and it translates to \"Government\" in English."
+ },
+ {
+  "name": "C_image_4598_9",
+  "gt": "પ્રોવિઝન",
+  "pred": "The text in the image reads \"bydny\"."
+ },
+ {
+  "name": "C_image_4598_10",
+  "gt": "સ્ટોર્સ",
+  "pred": "The text in the image reads \"Pier\"."
+ },
+ {
+  "name": "C_image_4598_11",
+  "gt": "સંકુલ",
+  "pred": "The text in the image is \"INN\"."
+ },
+ {
+  "name": "C_image_4598_12",
+  "gt": "વિકાસ",
+  "pred": "The text in the image reads \"FUSION\"."
+ },
+ {
+  "name": "C_image_4598_13",
+  "gt": "સંકુલ",
+  "pred": "The text in the image reads \"BISCI\"."
+ },
+ {
+  "name": "C_image_4598_14",
+  "gt": "અમૂલ",
+  "pred": "The text in the image reads \"THE\"."
+ },
+ {
+  "name": "C_image_4598_15",
+  "gt": "મહેતા",
+  "pred": "The text in the image is \"में\"."
+ },
+ {
+  "name": "C_image_4598_16",
+  "gt": "સિમેન્ટ",
+  "pred": "The text in the image reads \"D. D. Koc\"."
+ },
+ {
+  "name": "C_image_4598_17",
+  "gt": "બાંડ",
+  "pred": "The text in the image is \"LIS\"."
+ },
+ {
+  "name": "C_image_4598_18",
+  "gt": "ઘી",
+  "pred": "The text in the image is \"El\"."
+ },
+ {
+  "name": "C_image_4598_19",
+  "gt": "તેલ",
+  "pred": "The text in the image is \"del\"."
+ },
+ {
+  "name": "C_image_4598_20",
+  "gt": "સૂકોમેવો",
+  "pred": "The text in the image reads \"sindai\"."
+ },
+ {
+  "name": "C_image_4598_21",
+  "gt": "અનાજ",
+  "pred": "The text in the image reads \"Math\"."
+ },
+ {
+  "name": "C_image_4598_22",
+  "gt": "કઠોખ",
+  "pred": "The text in the image is \"5510\"."
+ },
+ {
+  "name": "C_image_4598_23",
+  "gt": "કરિયાણું",
+  "pred": "The text in the image is \"521046\"."
+ },
+ {
+  "name": "C_image_4598_24",
+  "gt": "ગોખ",
+  "pred": "The text in the image is \"voice\"."
+ },
+ {
+  "name": "C_image_4617_2",
+  "gt": "દવાખાનું",
+  "pred": "The text in the image is in Gujarati and reads \"પાણી\" which translates to \"water\" in English."
+ },
+ {
+  "name": "C_image_4617_5",
+  "gt": "પ",
+  "pred": "The text in the image is \"2\"."
+ },
+ {
+  "name": "C_image_4617_6",
+  "gt": "શિવ",
+  "pred": "The text in the image reads \"TeiQ\"."
+ },
+ {
+  "name": "C_image_4617_7",
+  "gt": "શ્રી",
+  "pred": "The text in the image is \"30\"."
+ },
+ {
+  "name": "C_image_4617_1",
+  "gt": "સ્ટોર્સ",
+  "pred": "The text in the image reads \"25/15\"."
+ },
+ {
+  "name": "C_image_4620_1",
+  "gt": "સ્ટીલ્સ",
+  "pred": "The text in the image is \"2023\"."
+ },
+ {
+  "name": "C_image_4620_4",
+  "gt": "અલ્ટ્રાટેક",
+  "pred": "The text in the image reads \"2019\"."
+ },
+ {
+  "name": "C_image_4620_5",
+  "gt": "અલ્ટ્રાટેક",
+  "pred": "The text in the image reads \"SHOPIFY\"."
+ },
+ {
+  "name": "C_image_4620_6",
+  "gt": "અલ્ટ્રાટેક",
+  "pred": "The text in the image reads \"angries\"."
+ },
+ {
+  "name": "C_image_4620_7",
+  "gt": "અલ્ટ્રાટેક",
+  "pred": "The text in the image reads \"one2one\"."
+ },
+ {
+  "name": "C_image_4640_0",
+  "gt": "પ્રગતિ",
+  "pred": "The text in the image is \"नागरिक\" which translates to \"Citizen\" in English."
+ },
+ {
+  "name": "C_image_4640_2",
+  "gt": "ગજાનન",
+  "pred": "The text in the image is \"গোলাপ\" which is Bengali for \"rose\"."
+ },
+ {
+  "name": "C_image_4640_3",
+  "gt": "રટીલ",
+  "pred": "The text in the image is \"स्टार्ड\"."
+ },
+ {
+  "name": "C_image_4640_4",
+  "gt": "રાઠી",
+  "pred": "The text in the image is \"राधा\"."
+ },
+ {
+  "name": "C_image_4640_5",
+  "gt": "પવન",
+  "pred": "The text in the image is \"ччч\"."
+ },
+ {
+  "name": "C_image_4640_1",
+  "gt": "રાઠી",
+  "pred": "The text in the image is \"स्वागत\" which is Hindi for \"Welcome\"."
+ },
+ {
+  "name": "C_image_4640_6",
+  "gt": "પુત્ર",
+  "pred": "The text in the image is \"УК\"."
+ },
+ {
+  "name": "C_image_4640_7",
+  "gt": "ટ્રેલ૨",
+  "pred": "The text in the image reads \"1 2\"."
+ },
+ {
+  "name": "C_image_4640_8",
+  "gt": "સિમેન્ટ",
+  "pred": "The text in the image reads \"2014\"."
+ },
+ {
+  "name": "C_image_4640_9",
+  "gt": "ના",
+  "pred": "很"
+ },
+ {
+  "name": "C_image_4640_10",
+  "gt": "પતસ",
+  "pred": "The text in the image is \"utak\"."
+ },
+ {
+  "name": "C_image_4640_11",
+  "gt": "એમ",
+  "pred": "The text in the image is \"欢迎光临\". This is Chinese and translates to \"Welcome\" in English."
+ },
+ {
+  "name": "C_image_4650_0",
+  "gt": "નાણાં",
+  "pred": "The text in the image reads \"gulii\"."
+ },
+ {
+  "name": "C_image_4650_1",
+  "gt": "ધીરનાર",
+  "pred": "The text in the image reads \"TROIIR\"."
+ },
+ {
+  "name": "C_image_4650_6",
+  "gt": "શાહ",
+  "pred": "The text in the image reads \"PLUS\"."
+ },
+ {
+  "name": "C_image_4650_7",
+  "gt": "જસવંતલાલ",
+  "pred": "The text in the image is \"1940\"."
+ },
+ {
+  "name": "C_image_4650_8",
+  "gt": "પોપટલાલ",
+  "pred": "The text in the image is \"w3css\"."
+ },
+ {
+  "name": "C_image_4650_9",
+  "gt": "ણોધીર",
+  "pred": "The text in the image reads \"EN EN\"."
+ },
+ {
+  "name": "C_image_4650_12",
+  "gt": "અઁકુર",
+  "pred": "The text in the image reads \"Rise\"."
+ },
+ {
+  "name": "C_image_4650_13",
+  "gt": "ગુલાબ",
+  "pred": "The text in the image is \"hotel\"."
+ },
+ {
+  "name": "C_image_4650_14",
+  "gt": "રિહર",
+  "pred": "The text in the image is \"282\"."
+ },
+ {
+  "name": "C_image_4650_15",
+  "gt": "સાલા",
+  "pred": "The text in the image is \"सावा\". This appears to be in Devanagari script, which is used for several languages including Hindi and Marathi. The word \"सावा\" does not have a direct English translation as it is a proper noun or a name. It could be a"
+ },
+ {
+  "name": "C_image_4650_16",
+  "gt": "લાલાશ.",
+  "pred": "The text in the image is \"GIRL\"."
+ },
+ {
+  "name": "C_image_4650_17",
+  "gt": "એકસરખી",
+  "pred": "The text in the image is \"100%\"."
+ },
+ {
+  "name": "C_image_4650_18",
+  "gt": "તીખાશમાં",
+  "pred": "The text in the image is \"दी ताला\" which translates to \"Dee Talaa\" in English. This could be a name, a title, or a phrase in Hindi."
+ },
+ {
+  "name": "C_image_4650_19",
+  "gt": "મીઠાશ,",
+  "pred": "The text in the image reads \"100%\"."
+ },
+ {
+  "name": "C_image_4650_20",
+  "gt": "ફોન",
+  "pred": "The text in the image is \"云游\"."
+ },
+ {
+  "name": "C_image_4650_21",
+  "gt": "૫૫૨૧૫૪૮૫",
+  "pred": "The text in the image is \"1985年10月2日\". This translates to \"October 2, 1985\" in English."
+ },
+ {
+  "name": "C_image_4650_22",
+  "gt": "ટ્રેડર્સ",
+  "pred": "The text in the image is \"2023\"."
+ },
+ {
+  "name": "C_image_4650_23",
+  "gt": "રાજહંસ",
+  "pred": "The text in the image is \"Ryder\"."
+ },
+ {
+  "name": "C_image_4650_24",
+  "gt": "મેડીસીન્સ",
+  "pred": "The text in the image is \"1927年\". This translates to \"1927\" in English, indicating the year 1927."
+ },
+ {
+  "name": "C_image_4650_25",
+  "gt": "દવાઓ",
+  "pred": "The text in the image is \"FIRE\"."
+ },
+ {
+  "name": "C_image_4650_26",
+  "gt": "વર્કસ",
+  "pred": "The text in the image is \"1987\"."
+ },
+ {
+  "name": "C_image_4665_25",
+  "gt": "એશીયન",
+  "pred": "The text in the image is \"गंधारा\"."
+ },
+ {
+  "name": "C_image_4665_26",
+  "gt": "વર્કસ",
+  "pred": "The text in the image is \"9581\"."
+ },
+ {
+  "name": "C_image_4665_34",
+  "gt": "રોડવેઝ",
+  "pred": "The text in the image is \"21500\"."
+ },
+ {
+  "name": "C_image_4665_35",
+  "gt": "રોનક",
+  "pred": "The text in the image is \"elezi\"."
+ },
+ {
+  "name": "C_image_4665_36",
+  "gt": "ટાયર્સ",
+  "pred": "The text in the image is \"迎新年\" which translates to \"Welcome New Year\" in English."
+ },
+ {
+  "name": "C_image_4665_37",
+  "gt": "તાજ",
+  "pred": "The text in the image is \"d164\"."
+ },
+ {
+  "name": "C_image_4667_19",
+  "gt": "મીહીર",
+  "pred": "图图店"
+ },
+ {
+  "name": "C_image_4667_20",
+  "gt": "મોટર્સ",
+  "pred": "The text in the image reads \"WINTER\"."
+ },
+ {
+  "name": "C_image_4667_22",
+  "gt": "ઝેરોક્ષ",
+  "pred": "The text in the image is \"मेरोहा\"."
+ },
+ {
+  "name": "C_image_4667_23",
+  "gt": "રોક્ષ",
+  "pred": "The text in the image is \"টোক্র\" which appears to be in Bengali script."
+ },
+ {
+  "name": "C_image_4667_24",
+  "gt": "લર",
+  "pred": "The text in the image is \"32\"."
+ },
+ {
+  "name": "C_image_4667_25",
+  "gt": "શ્રી",
+  "pred": "The text in the image is \"90\"."
+ },
+ {
+  "name": "C_image_4667_26",
+  "gt": "ગણેશ",
+  "pred": "The text in the image is \"गोविन्द\". This is written in Devanagari script, which is used for several languages including Hindi and Marathi. The name \"गोविन्द\" (Gowind) is a common name in these languages, often associated with"
+ },
+ {
+  "name": "C_image_4995_2",
+  "gt": "પરિતોષ",
+  "pred": "The text in the image is \"पाकिस्तान\". This is the name of Pakistan in Hindi, which is one of the official languages of India."
+ },
+ {
+  "name": "C_image_4995_14",
+  "gt": "મહેતા",
+  "pred": "The text in the image reads \"Heall\"."
+ },
+ {
+  "name": "C_image_4995_15",
+  "gt": "ગોળ",
+  "pred": "The text in the image is \"ω̅\". This symbol typically represents the complex conjugate of ω, which is a common notation in mathematics and physics, particularly in the context of complex numbers and their applications in fields such as signal processing, quantum mechanics, and electrical engineering."
+ },
+ {
+  "name": "C_image_4995_16",
+  "gt": "થી",
+  "pred": "The text in the image is \"图\"."
+ },
+ {
+  "name": "C_image_4995_17",
+  "gt": "ગોર",
+  "pred": "The text in the image is \"1/2\"."
+ },
+ {
+  "name": "C_image_4995_18",
+  "gt": "મહારાજ",
+  "pred": "The text in the image is \"bees\"."
+ },
+ {
+  "name": "C_image_4995_20",
+  "gt": "ચરોતર",
+  "pred": "The text in the image is \"कोरोना\" which translates to \"Corona\" in English."
+ },
+ {
+  "name": "C_image_4995_21",
+  "gt": "નીચોળાફળીને",
+  "pred": "The text in the image reads \"Kosmos\"."
+ },
+ {
+  "name": "C_image_4995_22",
+  "gt": "પટલાણીના",
+  "pred": "The text in the image reads \"vaccuplex\"."
+ },
+ {
+  "name": "C_image_4995_23",
+  "gt": "તગરન",
+  "pred": "The text in the image reads \"n>12cm\"."
+ },
+ {
+  "name": "C_image_4995_24",
+  "gt": "સિકંદર",
+  "pred": "The text in the image is \"91562\"."
+ },
+ {
+  "name": "C_image_4995_25",
+  "gt": "ની",
+  "pred": "The text in the image is \"2\"."
+ },
+ {
+  "name": "C_image_4995_26",
+  "gt": "ખારીગીંગ",
+  "pred": "The text in the image reads \"violet\"."
+ },
+ {
+  "name": "C_image_4995_27",
+  "gt": "મુંબઈના",
+  "pred": "The text in the image is \"안녕하세요\" which is Korean for \"Hello\"."
+ },
+ {
+  "name": "C_image_4995_28",
+  "gt": "મસ્ત",
+  "pred": "The text in the image reads \"1974\"."
+ },
+ {
+  "name": "C_image_4995_29",
+  "gt": "મસ્ત",
+  "pred": "The text in the image is \"Web\"."
+ },
+ {
+  "name": "C_image_4995_30",
+  "gt": "મુખવાસ.",
+  "pred": "The text in the image is \"मुंबई\". This is the Hindi name for Mumbai, which is the largest city in India and the capital of the state of Maharashtra."
+ },
+ {
+  "name": "C_image_50_6",
+  "gt": "ભુજ",
+  "pred": "The text in the image is \"মুজ\" which appears to be in Bengali script. The characters can be transliterated as \"muju\" in Roman script."
+ },
+ {
+  "name": "C_image_50_5",
+  "gt": "ભુજ",
+  "pred": "The text in the image is \"মুজ\" which appears to be in Bengali script. The characters can be transliterated as \"muju\" in Roman script."
+ },
+ {
+  "name": "C_image_5005_2",
+  "gt": "કેન્દ્ર",
+  "pred": "The text in the image reads \"50€\"."
+ },
+ {
+  "name": "C_image_5005_3",
+  "gt": "ગીતા",
+  "pred": "The text in the image reads \"flickr\"."
+ },
+ {
+  "name": "C_image_5005_4",
+  "gt": "છાસ",
+  "pred": "The text in the image reads \"1913\"."
+ },
+ {
+  "name": "C_image_5005_11",
+  "gt": "માતાજી",
+  "pred": "The text in the image is \"21d39\"."
+ },
+ {
+  "name": "C_image_5005_12",
+  "gt": "ના",
+  "pred": "The text in the image is \"d\"."
+ },
+ {
+  "name": "C_image_5005_13",
+  "gt": "બહુચર",
+  "pred": "The text in the image is \"029\"."
+ },
+ {
+  "name": "C_image_5014_4",
+  "gt": "જ",
+  "pred": "The text in the image is \"Q\"."
+ },
+ {
+  "name": "C_image_5014_5",
+  "gt": "સેન્ટર",
+  "pred": "The text in the image is \"संदर्भ\" which is Hindi for \"reference\" or \"source\"."
+ },
+ {
+  "name": "C_image_5014_6",
+  "gt": "રાધા",
+  "pred": "The text in the image is \"राधा\"."
+ },
+ {
+  "name": "C_image_5014_0",
+  "gt": "સેન્ટર",
+  "pred": "The text in the image is \"संतर\" which is Hindi for \"mango\"."
+ },
+ {
+  "name": "C_image_5014_1",
+  "gt": "મેયીંગ",
+  "pred": "The text in the image reads \"GIRL\"."
+ },
+ {
+  "name": "C_image_5014_3",
+  "gt": "દિનેશ",
+  "pred": "The text in the image is \"Elena\"."
+ },
+ {
+  "name": "C_image_5014_7",
+  "gt": "વલ્લભજીનું",
+  "pred": "The text in the image is \"वलसु\" which appears to be in Devanagari script, commonly used for writing Hindi and other languages of India."
+ },
+ {
+  "name": "C_image_5014_8",
+  "gt": "મંદિર",
+  "pred": "The text in the image is \"HITZ\"."
+ },
+ {
+  "name": "C_image_5161_1",
+  "gt": "ટ્રસ્ટ",
+  "pred": "The text in the image is \"23\"."
+ },
+ {
+  "name": "C_image_5161_10",
+  "gt": "ભવન",
+  "pred": "The text in the image is \"वन\" which is in Hindi and it translates to \"van\" or \"forest\" in English."
+ },
+ {
+  "name": "C_image_5161_11",
+  "gt": "લાલભાઈ",
+  "pred": "The text in the image is \"EIGEN\"."
+ },
+ {
+  "name": "C_image_5161_12",
+  "gt": "શ્રી",
+  "pred": "The image contains a pair of black boots with laces. There is no text present in the image."
+ },
+ {
+  "name": "C_image_5161_2",
+  "gt": "ગુજરાત",
+  "pred": "The text in the image reads \"ПИСЬМО\"."
+ },
+ {
+  "name": "C_image_5161_3",
+  "gt": "વિશ્વકોશ",
+  "pred": "The text in the image is \"প্রতিষ্ঠা\" which translates to \"establishment\" or \"foundation\" in English."
+ },
+ {
+  "name": "C_image_5161_5",
+  "gt": "સંકુલ",
+  "pred": "The text in the image reads \"visa\"."
+ },
+ {
+  "name": "C_image_5161_6",
+  "gt": "કસ્તૂરભાઈ",
+  "pred": "The text in the image is \"కోటిపాల\"."
+ },
+ {
+  "name": "C_image_5161_7",
+  "gt": "ગુજરાત",
+  "pred": "The text in the image reads \"pistaf\"."
+ },
+ {
+  "name": "C_image_5161_8",
+  "gt": "વિશ્વવિધા",
+  "pred": "The text in the image is \"দিখলায়\" which is Bengali and translates to \"appears\" or \"comes out\" in English."
+ },
+ {
+  "name": "C_image_5161_9",
+  "gt": "વિશ્વકોશ",
+  "pred": "The text in the image is \"বিশ্বকোষ,\" which is Bengali for \"encyclopedia.\""
+ },
+ {
+  "name": "C_image_5162_0",
+  "gt": "ભગવતી-",
+  "pred": "The text in the image is \"গোলাপি.\""
+ },
+ {
+  "name": "C_image_5162_1",
+  "gt": "ભવન",
+  "pred": "The text in the image is \"মেগা\" which is Bengali for \"Mega\"."
+ },
+ {
+  "name": "C_image_5162_2",
+  "gt": "ગુજરાત",
+  "pred": "The text in the image is \"dijrid\"."
+ },
+ {
+  "name": "C_image_5162_3",
+  "gt": "વિશ્વકોશ",
+  "pred": "The text in the image is \"বিশ্বকোষ,\" which is written in Bengali script. It translates to \"Encyclopedia\" in English."
+ },
+ {
+  "name": "C_image_5162_4",
+  "gt": "શ્રી",
+  "pred": "The text in the image is \"ST\"."
+ },
+ {
+  "name": "C_image_5162_5",
+  "gt": "કાર",
+  "pred": "The text in the image is \"S\"."
+ },
+ {
+  "name": "C_image_5162_6",
+  "gt": "પાર્કિંગ",
+  "pred": "The text in the image is \"पार्किंग\"."
+ },
+ {
+  "name": "C_image_5283_0",
+  "gt": "સિમેન્ટ",
+  "pred": "The text in the image is \"संभेद\" which is in Devanagari script and translates to \"samved\" in English."
+ },
+ {
+  "name": "C_image_5283_1",
+  "gt": "લિમિટેડ",
+  "pred": "The text in the image is \"लिमिटेड\"."
+ },
+ {
+  "name": "C_image_5290_10",
+  "gt": "લેખક",
+  "pred": "The text in the image appears to be \"shin\" written in a stylized, possibly ancient or script-like font. The characters seem to be from an East Asian script, potentially Chinese, Japanese, or Korean. However, without more context, it's difficult to determine the exact meaning or origin of the text."
+ },
+ {
+  "name": "C_image_5290_11",
+  "gt": "અને",
+  "pred": "The text in the image reads \"25\"."
+ },
+ {
+  "name": "C_image_5290_12",
+  "gt": "કવિ",
+  "pred": "The text in the image reads \"s9\"."
+ },
+ {
+  "name": "C_image_5290_127",
+  "gt": "હલપતરામ",
+  "pred": "The text in the image reads \"kaph3\"."
+ },
+ {
+  "name": "C_image_5290_132",
+  "gt": "ચોક",
+  "pred": "The text in the image reads \"she\"."
+ },
+ {
+  "name": "C_image_5290_14",
+  "gt": "પિતાએ",
+  "pred": "The text in the image reads \"freddy\"."
+ },
+ {
+  "name": "C_image_5290_15",
+  "gt": "તેમની",
+  "pred": "The text in the image reads \"100\"."
+ },
+ {
+  "name": "C_image_5290_16",
+  "gt": "આ",
+  "pred": "The text in the image is \"15\"."
+ },
+ {
+  "name": "C_image_5290_17",
+  "gt": "કવિ",
+  "pred": "The text in the image reads \"βγ\"."
+ },
+ {
+  "name": "C_image_5290_178",
+  "gt": "છે.",
+  "pred": "The text in the image reads \"13°\"."
+ },
+ {
+  "name": "C_image_5290_18",
+  "gt": "મંદિરમાં",
+  "pred": "The text in the image reads \"jk23jk\"."
+ },
+ {
+  "name": "C_image_5290_180",
+  "gt": "પ્રખ્યાત",
+  "pred": "The text in the image reads \"DINAR\"."
+ },
+ {
+  "name": "C_image_5290_181",
+  "gt": "ખૂબ",
+  "pred": "The text in the image is \"56\"."
+ },
+ {
+  "name": "C_image_5290_182",
+  "gt": "કૃતિઓ",
+  "pred": "The text in the image reads \"sadji\"."
+ },
+ {
+  "name": "C_image_5290_183",
+  "gt": "નિબંધ",
+  "pred": "The text in the image is \"নেতাজি\". This is Bengali and it translates to \"Netaji\" in English, which is a title or honorific used for Subhas Chandra Bose, an Indian nationalist leader."
+ },
+ {
+  "name": "C_image_5290_184",
+  "gt": "અનેક",
+  "pred": "The text in the image reads \"spa\"."
+ },
+ {
+  "name": "C_image_5290_185",
+  "gt": "વગેરે",
+  "pred": "The text in the image reads \"ch2\"."
+ },
+ {
+  "name": "C_image_5290_186",
+  "gt": "ભુત",
+  "pred": "The text in the image is \"গুলি\" which is Bengali for \"গুলি\" (guli)."
+ },
+ {
+  "name": "C_image_5290_187",
+  "gt": "વિરહ",
+  "pred": "The text in the image reads \"fare\"."
+ },
+ {
+  "name": "C_image_5290_188",
+  "gt": "ફાર્બસ્",
+  "pred": "The text in the image reads \"sifari\"."
+ },
+ {
+  "name": "C_image_5290_189",
+  "gt": "હરિલીલામૃત",
+  "pred": "The text in the image reads \"elgato\"."
+ },
+ {
+  "name": "C_image_5290_19",
+  "gt": "જજ",
+  "pred": "The image contains two blue, stylized symbols that resemble the infinity symbol (∞) or a similar shape. There is no text present in the image itself."
+ },
+ {
+  "name": "C_image_5290_192",
+  "gt": "કવીશ્વર",
+  "pred": "The text in the image reads \"s182\"."
+ },
+ {
+  "name": "C_image_5290_193",
+  "gt": "ઇનામો",
+  "pred": "The text in the image reads \"ikigo\"."
+ },
+ {
+  "name": "C_image_5290_194",
+  "gt": "તેમને",
+  "pred": "The text in the image is \"石元\"."
+ },
+ {
+  "name": "C_image_5290_195",
+  "gt": "ઁદર",
+  "pred": "The text in the image reads \"2021\"."
+ },
+ {
+  "name": "C_image_5290_196",
+  "gt": "છે.",
+  "pred": "The image contains a blue icon with a stylized face inside it. There is no text present in the image."
+ },
+ {
+  "name": "C_image_5290_197",
+  "gt": "કરે",
+  "pred": "The text in the image reads \"12 45\"."
+ },
+ {
+  "name": "C_image_5290_198",
+  "gt": "વ્યક્ત",
+  "pred": "The text in the image reads \"caisal\"."
+ },
+ {
+  "name": "C_image_5290_199",
+  "gt": "વિચારો",
+  "pred": "The text in the image reads \"La15\"."
+ },
+ {
+  "name": "C_image_5290_20",
+  "gt": "વર્ષની",
+  "pred": "The text in the image reads \"upah\"."
+ },
+ {
+  "name": "C_image_5290_200",
+  "gt": "વિશેના",
+  "pred": "The text in the image is \"রাজা\" which translates to \"King\" in English."
+ },
+ {
+  "name": "C_image_5290_202",
+  "gt": "તેમના",
+  "pred": "The text in the image reads \"216\"."
+ },
+ {
+  "name": "C_image_5290_203",
+  "gt": "જેટલા",
+  "pred": "The text in the image reads \"1128\"."
+ },
+ {
+  "name": "C_image_5290_204",
+  "gt": "તરીકે",
+  "pred": "The text in the image reads \"d213\"."
+ },
+ {
+  "name": "C_image_5290_205",
+  "gt": "સામયિક",
+  "pred": "The text in the image reads \"stjikir\"."
+ },
+ {
+  "name": "C_image_5290_206",
+  "gt": "ગુજરાતી",
+  "pred": "The text in the image reads \"upside\"."
+ },
+ {
+  "name": "C_image_5290_207",
+  "gt": "વર્નાક્યુલર",
+  "pred": "The text in the image reads \"dalsjälska\"."
+ },
+ {
+  "name": "C_image_5290_208",
+  "gt": "કર્યા",
+  "pred": "The text in the image reads \"jas\"."
+ },
+ {
+  "name": "C_image_5290_209",
+  "gt": "નોકરી",
+  "pred": "The text in the image reads \"q1521\"."
+ },
+ {
+  "name": "C_image_5290_21",
+  "gt": "ઉમરે",
+  "pred": "The text in the image reads \"3+2\"."
+ },
+ {
+  "name": "C_image_5290_210",
+  "gt": "પછી",
+  "pred": "The text in the image is \"134\"."
+ },
+ {
+  "name": "C_image_5290_211",
+  "gt": "તેઓ",
+  "pred": "The text in the image reads \"like\"."
+ },
+ {
+  "name": "C_image_5290_213",
+  "gt": "ગુજરાત",
+  "pred": "The text in the image reads \"pizza\"."
+ },
+ {
+  "name": "C_image_5290_214",
+  "gt": "ભાષા",
+  "pred": "The text in the image is \"元気\"."
+ },
+ {
+  "name": "C_image_5290_215",
+  "gt": "પ્રથમ",
+  "pred": "The text in the image is \"kak\"."
+ },
+ {
+  "name": "C_image_5290_216",
+  "gt": "સાહિત્યિક",
+  "pred": "The text in the image reads \"shajara\"."
+ },
+ {
+  "name": "C_image_5290_217",
+  "gt": "૬૦",
+  "pred": "The text in the image is \"50\"."
+ },
+ {
+  "name": "C_image_5290_218",
+  "gt": "છે,",
+  "pred": "The text in the image is \"13\"."
+ },
+ {
+  "name": "C_image_5290_219",
+  "gt": "જે",
+  "pred": "The text in the image is \"18\"."
+ },
+ {
+  "name": "C_image_5290_22",
+  "gt": "પાસેથી",
+  "pred": "The text in the image reads \"jash\"."
+ },
+ {
+  "name": "C_image_5290_220",
+  "gt": "મુખ્યત્વે",
+  "pred": "The text in the image is \"संतोष\"."
+ },
+ {
+  "name": "C_image_5290_221",
+  "gt": "કુલ",
+  "pred": "The text in the image is \"um\"."
+ },
+ {
+  "name": "C_image_5290_222",
+  "gt": "દલપતરામે",
+  "pred": "The text in the image reads \"kisah\"."
+ },
+ {
+  "name": "C_image_5290_225",
+  "gt": "નીમાયા.",
+  "pred": "The text in the image reads \"iriskip\"."
+ },
+ {
+  "name": "C_image_5290_226",
+  "gt": "પુસ્તકો",
+  "pred": "The text in the image reads \"yazdi\"."
+ },
+ {
+  "name": "C_image_5290_227",
+  "gt": "સમાજ",
+  "pred": "The text in the image reads \"21H2\"."
+ },
+ {
+  "name": "C_image_5290_228",
+  "gt": "રાષ્ટ્રપ્રેમ",
+  "pred": "The text in the image reads \"21-23\"."
+ },
+ {
+  "name": "C_image_5290_229",
+  "gt": "સુધારણા",
+  "pred": "The text in the image is \"jaissell\"."
+ },
+ {
+  "name": "C_image_5290_23",
+  "gt": "સ્વામી",
+  "pred": "The text in the image is \"Uribe\"."
+ },
+ {
+  "name": "C_image_5290_230",
+  "gt": "સરકારી",
+  "pred": "The text in the image reads \"21812\"."
+ },
+ {
+  "name": "C_image_5290_231",
+  "gt": "કાવ્ય",
+  "pred": "The text in the image is \"5124\"."
+ },
+ {
+  "name": "C_image_5290_232",
+  "gt": "થયા.",
+  "pred": "The text in the image reads \"hla\"."
+ },
+ {
+  "name": "C_image_5290_233",
+  "gt": "તેમને",
+  "pred": "The text in the image reads \"10/2\"."
+ },
+ {
+  "name": "C_image_5290_234",
+  "gt": "અને",
+  "pred": "The text in the image appears to be \"おはよう\" (ohayou), which is Japanese for \"good morning.\""
+ },
+ {
+  "name": "C_image_5290_236",
+  "gt": "જેમને",
+  "pred": "The text in the image is \"百鬼\"."
+ },
+ {
+  "name": "C_image_5290_237",
+  "gt": "સમય",
+  "pred": "The text in the image is \"rk2\"."
+ },
+ {
+  "name": "C_image_5290_238",
+  "gt": "દડ",
+  "pred": "The text in the image reads \"qis\"."
+ },
+ {
+  "name": "C_image_5290_239",
+  "gt": "કર્યુલ",
+  "pred": "The text in the image reads \"314159265358979323846264338327950288419716939937510582097"
+ },
+ {
+  "name": "C_image_5290_240",
+  "gt": "સાહિત્ય",
+  "pred": "The text in the image is \"संगीत\" which is written in Devanagari script and translates to \"music\" in English."
+ },
+ {
+  "name": "C_image_5290_241",
+  "gt": "અને",
+  "pred": "The text in the image is \"তুর\"."
+ },
+ {
+  "name": "C_image_5290_242",
+  "gt": "ભાષા",
+  "pred": "The text in the image is \"IRIB\"."
+ },
+ {
+  "name": "C_image_5290_243",
+  "gt": "ગુજરાતી",
+  "pred": "The text in the image reads \"upside\"."
+ },
+ {
+  "name": "C_image_5290_244",
+  "gt": "ફોર્બ્સને",
+  "pred": "The text in the image is \"कौरव\" which is written in Devanagari script. This script is used to write several languages of India, including Hindi and Marathi. The word \"कौरव\" translates to \"Kaurava\" in English, which is a term from"
+ },
+ {
+  "name": "C_image_5290_245",
+  "gt": "કિનલોક",
+  "pred": "The text in the image reads \"Solve This\"."
+ },
+ {
+  "name": "C_image_5290_247",
+  "gt": "દેખાતા",
+  "pred": "The text in the image reads \"Emil3\"."
+ },
+ {
+  "name": "C_image_5290_248",
+  "gt": "મકાનમાં",
+  "pred": "The text in the image reads \"!koish\"."
+ },
+ {
+  "name": "C_image_5290_249",
+  "gt": "નું",
+  "pred": "The text in the image is \"57\"."
+ },
+ {
+  "name": "C_image_5290_25",
+  "gt": "વયે",
+  "pred": "The text in the image is \"ch2\"."
+ },
+ {
+  "name": "C_image_5290_250",
+  "gt": "૧૮૩૪મા",
+  "pred": "The text in the image reads \"1982\"."
+ },
+ {
+  "name": "C_image_5290_251",
+  "gt": "તેઓ",
+  "pred": "The text in the image reads \"היה\" which is Hebrew for \"and it was.\""
+ },
+ {
+  "name": "C_image_5290_253",
+  "gt": "ભૂમાનંદ",
+  "pred": "The text in the image reads \"ghjoi3\"."
+ },
+ {
+  "name": "C_image_5290_254",
+  "gt": "પછી",
+  "pred": "The text in the image reads \"193h\"."
+ },
+ {
+  "name": "C_image_5290_255",
+  "gt": "આવ્યા.",
+  "pred": "The text in the image reads \"like\"."
+ },
+ {
+  "name": "C_image_5290_256",
+  "gt": "પ્રેરણા",
+  "pred": "The text in the image reads \"2021\"."
+ },
+ {
+  "name": "C_image_5290_258",
+  "gt": "તેમણે",
+  "pred": "The text in the image reads \"lake\"."
+ },
+ {
+  "name": "C_image_5290_259",
+  "gt": "અમદાવાદના",
+  "pred": "The text in the image reads \"sklepik\"."
+ },
+ {
+  "name": "C_image_5290_26",
+  "gt": "યુવાન",
+  "pred": "The text in the image reads \"sybil\"."
+ },
+ {
+  "name": "C_image_5290_260",
+  "gt": "સ્વામિનારાયણ",
+  "pred": "The text in the image reads \"sahyadrisi\"."
+ },
+ {
+  "name": "C_image_5290_261",
+  "gt": "તેઓ",
+  "pred": "The text in the image is \"宽\"."
+ },
+ {
+  "name": "C_image_5290_262",
+  "gt": "વિધિસર",
+  "pred": "The text in the image reads \"αβγδεζ\"."
+ },
+ {
+  "name": "C_image_5290_263",
+  "gt": "આસિસ્ટન્ટ",
+  "pred": "The text in the image reads \"2022年1月\". This translates to \"January 2022\" in English."
+ },
+ {
+  "name": "C_image_5290_264",
+  "gt": "રીતે",
+  "pred": "The text in the image reads \"213\"."
+ },
+ {
+  "name": "C_image_5290_265",
+  "gt": "ઇ.સ.",
+  "pred": "The text in the image reads \"ir'ir\"."
+ },
+ {
+  "name": "C_image_5290_266",
+  "gt": "હતા",
+  "pred": "The text in the image reads \"123\"."
+ },
+ {
+  "name": "C_image_5290_267",
+  "gt": "છે",
+  "pred": "The image contains a blue fabric with a circular pattern, but there is no text present in the image."
+ },
+ {
+  "name": "C_image_5290_269",
+  "gt": "તરીકે",
+  "pred": "The text in the image reads \"SIP\"."
+ },
+ {
+  "name": "C_image_5290_27",
+  "gt": "અને",
+  "pred": "The text in the image appears to be \"তু\" which is a Bengali character. It can be transliterated as \"tu\" in Roman script."
+ },
+ {
+  "name": "C_image_5290_270",
+  "gt": "પ્રતિમા",
+  "pred": "The text in the image reads \"IRUK\"."
+ },
+ {
+  "name": "C_image_5290_271",
+  "gt": "તેમના",
+  "pred": "The text in the image is \"六月\". This is Chinese and it translates to \"June\" in English."
+ },
+ {
+  "name": "C_image_5290_272",
+  "gt": "સાહિત્યના",
+  "pred": "The text in the image is in Gujarati and reads \"સ્વાભાવિક\" which translates to \"natural\" in English."
+ },
+ {
+  "name": "C_image_5290_273",
+  "gt": "બિ३દં",
+  "pred": "The text in the image reads \"ch3.\""
+ },
+ {
+  "name": "C_image_5290_274",
+  "gt": "તેઓ",
+  "pred": "The text in the image is \"the\"."
+ },
+ {
+  "name": "C_image_5290_275",
+  "gt": "રહેતા",
+  "pred": "The text in the image reads \"1234\"."
+ },
+ {
+  "name": "C_image_5290_28",
+  "gt": "આપી",
+  "pred": "The text in the image reads \"Unile\"."
+ },
+ {
+  "name": "C_image_5290_29",
+  "gt": "અમદાવાદમાં",
+  "pred": "The text in the image reads \"s13h13b13k1\"."
+ },
+ {
+  "name": "C_image_5290_3",
+  "gt": "વસેલા",
+  "pred": "The text in the image reads \"1929\"."
+ },
+ {
+  "name": "C_image_5290_30",
+  "gt": "આવી",
+  "pred": "The text in the image reads \"upike\"."
+ },
+ {
+  "name": "C_image_5290_31",
+  "gt": "વઢવાણથી",
+  "pred": "The text in the image reads \"ashley\"."
+ },
+ {
+  "name": "C_image_5290_32",
+  "gt": "લખવાની",
+  "pred": "The text in the image reads \"গুলি\" which is Bengali for \"the ones\" or \"the things.\""
+ },
+ {
+  "name": "C_image_5290_33",
+  "gt": "શીખ્યા.",
+  "pred": "The text in the image reads \"shuall.\""
+ },
+ {
+  "name": "C_image_5290_36",
+  "gt": "ગુજરાતી",
+  "pred": "The text in the image reads \"pirate\"."
+ },
+ {
+  "name": "C_image_5290_362",
+  "gt": "સ્પાઈડ",
+  "pred": "The text in the image reads \"reformation\"."
+ },
+ {
+  "name": "C_image_5290_37",
+  "gt": "૧८२०-૧८૯८)",
+  "pred": "The text in the image reads: \"9 < 20 - 9 ∈ G(2)\""
+ },
+ {
+  "name": "C_image_5290_38",
+  "gt": "પ્રેમથી",
+  "pred": "The text in the image reads \"Vak\"."
+ },
+ {
+  "name": "C_image_5290_39",
+  "gt": "લોકોએ",
+  "pred": "The text in the image reads \"Gisela\"."
+ },
+ {
+  "name": "C_image_5290_4",
+  "gt": "દલપતરામ",
+  "pred": "The text in the image reads \"34h21h\"."
+ },
+ {
+  "name": "C_image_5290_40",
+  "gt": "પશ્વાદ્ભૂમાં",
+  "pred": "The text in the image reads \"!Kosh\"."
+ },
+ {
+  "name": "C_image_5290_41",
+  "gt": "કવિતા",
+  "pred": "The text in the image reads \"ipps\"."
+ },
+ {
+  "name": "C_image_5290_42",
+  "gt": "ઈ.સ.",
+  "pred": "The text in the image reads \"i2 β\"."
+ },
+ {
+  "name": "C_image_5290_422",
+  "gt": "ઙ્ક",
+  "pred": "The text in the image is \"60\"."
+ },
+ {
+  "name": "C_image_5290_43",
+  "gt": "તેઓ",
+  "pred": "The text in the image is \"है\" which is in Hindi and means \"is\" or \"are\" in English."
+ },
+ {
+  "name": "C_image_5290_44",
+  "gt": "શાસ્ત્ર",
+  "pred": "The text in the image is \"k213\"."
+ },
+ {
+  "name": "C_image_5290_45",
+  "gt": "અમદાવાદ",
+  "pred": "The text in the image reads \"243913\"."
+ },
+ {
+  "name": "C_image_5290_47",
+  "gt": "એલેકઝાન્ડર",
+  "pred": "The text in the image reads \"31453xios2\"."
+ },
+ {
+  "name": "C_image_5290_48",
+  "gt": "સંસ્કૃત",
+  "pred": "The text in the image reads \"12\"."
+ },
+ {
+  "name": "C_image_5290_49",
+  "gt": "છંદશાસ્ત્ર",
+  "pred": "The text in the image reads \"k211236\"."
+ },
+ {
+  "name": "C_image_5290_5",
+  "gt": "નામાંકિત",
+  "pred": "The text in the image reads \"PSJIKIP\"."
+ },
+ {
+  "name": "C_image_5290_50",
+  "gt": "નાનપણમાં",
+  "pred": "The text in the image reads \"ikiahpol\"."
+ },
+ {
+  "name": "C_image_5290_51",
+  "gt": "જાણીતા",
+  "pred": "The text in the image reads \"ipuor\"."
+ },
+ {
+  "name": "C_image_5290_52",
+  "gt": "અને",
+  "pred": "The text in the image appears to be \"রু\" which is a Bengali character. It can be transliterated as \"ru\" in Roman script."
+ },
+ {
+  "name": "C_image_5290_53",
+  "gt": "શીખવા",
+  "pred": "The text in the image reads \"Ibnu Hajar\"."
+ },
+ {
+  "name": "C_image_5290_54",
+  "gt": "બુધ્ધિપ્રકાશ",
+  "pred": "The text in the image reads \"gjereksig\"."
+ },
+ {
+  "name": "C_image_5290_55",
+  "gt": "સંપાદક",
+  "pred": "The text in the image reads \"shoes\"."
+ },
+ {
+  "name": "C_image_5290_56",
+  "gt": "ના",
+  "pred": "The text in the image is \"云\"."
+ },
+ {
+  "name": "C_image_5290_58",
+  "gt": "લખ્યા",
+  "pred": "The text in the image reads \"CHU\"."
+ },
+ {
+  "name": "C_image_5290_59",
+  "gt": "અને",
+  "pred": "The text in the image is \"তুমি\" which is Bengali and translates to \"you\" in English."
+ },
+ {
+  "name": "C_image_5290_6",
+  "gt": "આપ્યું",
+  "pred": "The text in the image reads \"silly\"."
+ },
+ {
+  "name": "C_image_5290_60",
+  "gt": "જોડાયા",
+  "pred": "The text in the image reads \"isis\"."
+ },
+ {
+  "name": "C_image_5290_61",
+  "gt": "માં",
+  "pred": "The text in the image is \"元\"."
+ },
+ {
+  "name": "C_image_5290_62",
+  "gt": "સોસાયટી",
+  "pred": "The text in the image reads \"ISRIK\"."
+ },
+ {
+  "name": "C_image_5290_63",
+  "gt": "અને",
+  "pred": "The text in the image reads \"7/5\"."
+ },
+ {
+  "name": "C_image_5290_64",
+  "gt": "પોતાના",
+  "pred": "The text in the image reads \"help\"."
+ },
+ {
+  "name": "C_image_5290_65",
+  "gt": "ગુજરાત",
+  "pred": "The text in the image reads \"pie & ice\"."
+ },
+ {
+  "name": "C_image_5290_66",
+  "gt": "પ્રત્યેના",
+  "pred": "The text in the image reads \"1020\"."
+ },
+ {
+  "name": "C_image_5290_67",
+  "gt": "ગૌરવ",
+  "pred": "The text in the image reads \"1524\"."
+ },
+ {
+  "name": "C_image_5290_69",
+  "gt": "કૃતિઓને",
+  "pred": "The text in the image is \"العربية\" which translates to \"Arabic\" in English."
+ },
+ {
+  "name": "C_image_5290_7",
+  "gt": "હતું.",
+  "pred": "The text in the image is \"23\"."
+ },
+ {
+  "name": "C_image_5290_70",
+  "gt": "સહિત્ય",
+  "pred": "The text in the image is \"हाय\" which is Hindi for \"Hey\" or \"Hi\"."
+ },
+ {
+  "name": "C_image_5290_71",
+  "gt": "ભાગની",
+  "pred": "The text in the image reads \"chichi\"."
+ },
+ {
+  "name": "C_image_5290_72",
+  "gt": "મોટા",
+  "pred": "The text in the image reads \"124\"."
+ },
+ {
+  "name": "C_image_5290_73",
+  "gt": "અનેક",
+  "pred": "The text in the image is \"कृत्रिम\" which is in Devanagari script and translates to \"Kritrim\" in English."
+ },
+ {
+  "name": "C_image_5290_74",
+  "gt": "અને",
+  "pred": "The text in the image appears to be \"75\"."
+ },
+ {
+  "name": "C_image_5290_75",
+  "gt": "મળેલાં",
+  "pred": "The text in the image reads \"i5k\"."
+ },
+ {
+  "name": "C_image_5290_76",
+  "gt": "થયેલું",
+  "pred": "The text in the image reads \"गिज\" which is in Hindi and transliterates to \"Giz\" in English."
+ },
+ {
+  "name": "C_image_5290_77",
+  "gt": "પ્રાપ્ત",
+  "pred": "The text in the image reads \"Duk\"."
+ },
+ {
+  "name": "C_image_5290_78",
+  "gt": "ગૌરવ",
+  "pred": "The text in the image reads \"psd\"."
+ },
+ {
+  "name": "C_image_5290_8",
+  "gt": "હતા.",
+  "pred": "The text in the image reads \"gdi.\""
+ },
+ {
+  "name": "C_image_5290_80",
+  "gt": "માન- સન્માનનું",
+  "pred": "The text in the image is \"सार्वभौमिक\". This is a Sanskrit word that translates to \"universal\" or \"common\" in English."
+ },
+ {
+  "name": "C_image_5290_9",
+  "gt": "ડાહ્યાભાઈ",
+  "pred": "The text in the image reads \"Birds\"."
+ },
+ {
+  "name": "C_image_5332_0",
+  "gt": "સહજાનંદ",
+  "pred": "The text in the image reads \"MOMA\"."
+ },
+ {
+  "name": "C_image_5332_1",
+  "gt": "કોલેજ",
+  "pred": "The text in the image is \"की गेय\"."
+ },
+ {
+  "name": "C_image_5332_2",
+  "gt": "શ્રી",
+  "pred": "The text in the image is \"月\"."
+ },
+ {
+  "name": "C_image_5332_5",
+  "gt": "સહજાનંદ",
+  "pred": "The text in the image is in Gujarati and reads \"संप्राणे\"."
+ },
+ {
+  "name": "C_image_5332_6",
+  "gt": "શ્રી",
+  "pred": "The text in the image is \"1\"."
+ },
+ {
+  "name": "C_image_5332_7",
+  "gt": "કાલજ",
+  "pred": "The text in the image reads \"SIGY\"."
+ },
+ {
+  "name": "C_image_5336_0",
+  "gt": "કાલજ",
+  "pred": "The text in the image reads \"SIGY\"."
+ },
+ {
+  "name": "C_image_5336_2",
+  "gt": "શ્રી",
+  "pred": "The text in the image is \"श्री\" which is transliterated as \"Shri\" in English. This is a common term used in India and other parts of South Asia, often used as a respectful title before a person's name or at the beginning of a document to indicate respect."
+ },
+ {
+  "name": "C_image_5336_4",
+  "gt": "સહજાનંદ",
+  "pred": "The text in the image is in Gujarati and reads \"સુંદરનેતૃ\"."
+ },
+ {
+  "name": "C_image_5336_5",
+  "gt": "કોલેજ",
+  "pred": "The text in the image is \"కు లెట్\"."
+ },
+ {
+  "name": "C_image_5336_6",
+  "gt": "શ્રી",
+  "pred": "The text in the image is \"刘\"."
+ },
+ {
+  "name": "C_image_5336_7",
+  "gt": "સહજાનંદ",
+  "pred": "The text in the image reads \"HERMIE\"."
+ },
+ {
+  "name": "C_image_7383_0",
+  "gt": "યુ.ધી.",
+  "pred": "The text in the image is \"24\"."
+ },
+ {
+  "name": "C_image_7383_2",
+  "gt": "પંચાયત",
+  "pred": "The text in the image is \"पंचायत\" which translates to \"Panchayat\" in English. A Panchayat is a form of local self-government in India, typically consisting of elected representatives from villages or communities."
+ },
+ {
+  "name": "C_image_7383_3",
+  "gt": "જિલ્લા",
+  "pred": "The text in the image is \"Green\"."
+ },
+ {
+  "name": "C_image_7383_4",
+  "gt": "અમદાવાદ",
+  "pred": "The text in the image reads \"SAMSUNG\"."
+ },
+ {
+  "name": "C_image_7383_7",
+  "gt": "કિપ્ના",
+  "pred": "The text in the image is \"Gull\"."
+ },
+ {
+  "name": "C_image_8_0",
+  "gt": "આદરણ",
+  "pred": "The text in the image is in Gujarati and reads \"અંગરળ્લો\" which translates to \"Angarallo\" in English."
+ },
+ {
+  "name": "C_image_8_1",
+  "gt": "દાદરા",
+  "pred": "The text in the image is \"EIERL\"."
+ },
+ {
+  "name": "C_image_8_2",
+  "gt": "સંઘ",
+  "pred": "The text in the image is \"संधि\" which is written in Devanagari script and translates to \"sandhi\" in English."
+ },
+ {
+  "name": "C_image_8_3",
+  "gt": "પ્રદેશ",
+  "pred": "The text in the image is \"प्रदेश\" which is written in Devanagari script. In English, it translates to \"State\" or \"Province.\""
+ },
+ {
+  "name": "C_image_8020_0",
+  "gt": "૦૧૩",
+  "pred": "The text in the image is \"093\"."
+ },
+ {
+  "name": "C_image_8020_1",
+  "gt": "ર૧",
+  "pred": "The text in the image is \"29\"."
+ },
+ {
+  "name": "C_image_8020_2",
+  "gt": "ભૂમિપૂજ",
+  "pred": "The text in the image appears to be \"ভারত\" which is Bengali for \"India\"."
+ },
+ {
+  "name": "C_image_8020_3",
+  "gt": "૦",
+  "pred": "The text in the image is \"1\"."
+ },
+ {
+  "name": "C_image_8020_4",
+  "gt": "સમસ્ત",
+  "pred": "The text in the image is \"Dame\"."
+ },
+ {
+  "name": "C_image_8020_5",
+  "gt": "પાટીદાર",
+  "pred": "The text in the image is \"फारिशे\" which is in Hindi and it translates to \"Farish\" in English."
+ },
+ {
+  "name": "C_image_8020_6",
+  "gt": "આરોગ્ય",
+  "pred": "The text in the image is \"에러가 발생했습니다.\" which translates to \"An error has occurred\" in English."
+ },
+ {
+  "name": "C_image_8020_7",
+  "gt": "ટ્રસ્ટ,",
+  "pred": "The text in the image is \"foo,\" which appears to be a placeholder or a variable name, often used in programming contexts."
+ },
+ {
+  "name": "C_image_8020_8",
+  "gt": "સુરત",
+  "pred": "The text in the image appears to be \"बैंक\" which is Hindi for \"Bank\"."
+ },
+ {
+  "name": "C_image_8020_9",
+  "gt": "ભૂમિપુજન",
+  "pred": "The text in the image is \"মুসলিম\" which translates to \"Muslim\" in English."
+ },
+ {
+  "name": "C_image_8020_10",
+  "gt": "સસ્નેહ",
+  "pred": "The text in the image is \"Hello\"."
+ },
+ {
+  "name": "C_image_8020_11",
+  "gt": "અર્પણ",
+  "pred": "The text in the image is \"porus\"."
+ },
+ {
+  "name": "C_image_8020_12",
+  "gt": "ભૂમિપુજનકર્તા",
+  "pred": "The text in the image is \"chrysanth\"."
+ },
+ {
+  "name": "C_image_807_0",
+  "gt": "દ્વારકાધીશ",
+  "pred": "The text in the image is in Gujarati and reads \"પ્રિયાની\"."
+ },
+ {
+  "name": "C_image_807_1",
+  "gt": "મંદિર",
+  "pred": "The text in the image is \"मिर्स\" which is written in Devanagari script, commonly used for several languages including Hindi and Marathi."
+ },
+ {
+  "name": "C_image_807_2",
+  "gt": "જય",
+  "pred": "The text in the image is \"84\"."
+ },
+ {
+  "name": "C_image_832_0",
+  "gt": "કપ્ટભં",
+  "pred": "The text in the image is \"కార్మి\". This appears to be in Telugu script, which is used in the Indian state of Andhra Pradesh and some neighboring regions. The word \"కార్మి\" (kārmi) roughly"
+ },
+ {
+  "name": "C_image_832_1",
+  "gt": "શ્રી",
+  "pred": "The text in the image is \"श्री\" which is in Devanagari script and translates to \"Shri\" in English, meaning \"sir\" or \"mister\" in some contexts, or it can be a respectful title for a deity in Hinduism."
+ },
+ {
+  "name": "C_image_832_10",
+  "gt": "છે.",
+  "pred": "The text in the image is \"30.\""
+ },
+ {
+  "name": "C_image_832_11",
+  "gt": "જનદેવ",
+  "pred": "The text in the image is in Gujarati and reads \"જનદેશ\"."
+ },
+ {
+  "name": "C_image_832_2",
+  "gt": "નં",
+  "pred": "The text in the image is \"ai\"."
+ },
+ {
+  "name": "C_image_832_7",
+  "gt": "ગેટ",
+  "pred": "The text in the image is \"SIC\"."
+ },
+ {
+  "name": "C_image_832_9",
+  "gt": "સત્ય",
+  "pred": "The text in the image is \"सत्य\" which is written in Devanagari script and translates to \"truth\" or \"satya\" in English."
+ },
+ {
+  "name": "C_image_87_2",
+  "gt": "કણકોટ",
+  "pred": "The text in the image reads \"SOLARIS\"."
+ }
+]

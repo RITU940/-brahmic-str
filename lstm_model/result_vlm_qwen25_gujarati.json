@@ -1,0 +1,1 @@
+{"model": "Qwen/Qwen2.5-VL-7B-Instruct", "script": "gujarati", "N": 1015, "WRR": 0.0, "WRR_lenient": 0.39, "CharAcc": -1165.14, "CER": 1265.14, "prompt": "Read the text in the image.", "decoding": "greedy"}

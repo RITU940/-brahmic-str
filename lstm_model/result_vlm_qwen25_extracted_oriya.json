@@ -1,0 +1,12 @@
+{
+ "model": "Qwen/Qwen2.5-VL-7B-Instruct",
+ "script": "oriya",
+ "N": 1044,
+ "WRR_prereg_exact": 0.0,
+ "WRR_prereg_lenient": 0.38,
+ "WRR_extracted": 0.38,
+ "CER_extracted": 116.42,
+ "CharAcc_extracted": -16.42,
+ "pct_quoted_span": 98.9,
+ "extraction": "first double-quoted span; else lead-in strip + first clause"
+}
