@@ -178,6 +178,11 @@ def main():
     eq = [i for i, s in enumerate(SCRIPTS) if s not in TWOX]
     add("spearCovEqual", spearman([cov[i] for i in eq], [wrrB[i] for i in eq]))
 
+    # visual-similarity control (Amendment 2 descriptor, result-blind at filing)
+    vis = json.load(open("visual_similarity_descriptors.json"))["visual_similarity"]
+    vis = {k.lower(): v for k, v in vis.items()}
+    add("spearVissim", spearman([vis[s] for s in SCRIPTS], wrrB))
+
     beta, rmse = ols_two_factor(cov, [1.0 if s in TWOX else 0.0 for s in SCRIPTS], wrrB)
     add("tfIntercept", beta[0])
     add("tfCovCoef", beta[1], 3)
