@@ -660,3 +660,99 @@ else
   exit 1
 fi
 ```
+
+---
+
+## 16. HANDOFF FOR NEXT SESSION (filed 2026-07-22 ~16:30 IST) — WACV SUBMISSION PHASE
+
+**§15 is stale runtime-wise; read this section first. Everything experimental except Khmer and the
+running CRNN test is DONE. The campaign is now a submission project with a hard date: Aug 28.**
+
+### 16.1 What changed since §15 (sessions of Jul 21 and Jul 22)
+1. **Scaling sweep scored 12/12** (`SCALING_SWEEP_SCORING.md`, instrument `analyze_scaling_law.py`,
+   raw in `scaling_sweep_scoring_raw.txt`). Magnitude **MISSED**: common slope **+2.235
+   WRR/doubling** (95% CI [+1.89, +2.58]) vs the preregistered 11.48 — 5.1x outside the CI. But the
+   **form is confirmed**: log-linear in budget (R^2 0.997/0.906/0.999) with a script-invariant slope
+   (F(2,6)=0.92, p=0.45). Low-end collapse **falsified** (transfer is concave); kannada shows
+   top-end saturation. Coverage-offset model does **not** generalize (OOS RMSE 7.29 vs 0.77
+   in-sample; r=+0.03 on the six never-fitted scripts) — the paper must not rest on typology.
+2. **Qwen2.5-VL-7B baseline done + fairly rescored** (`rescore_vlm_extracted.py`,
+   `result_vlm_qwen25_extracted_*.json`): our Rung B beats the 7B VLM on **8/9** (VLM leads only
+   Devanagari).
+3. **Paper reframed** around pivot-mechanism + VLM context; scaling law reported as a prospective
+   result **with its miss**; typology demoted to a disclosed negative. Per-script bootstrap CIs
+   added (`bootstrap_cis.py`, seed 20260721; 6/9 pivot CIs strictly above BPE). Four real figures
+   (`make_wacv_figs.py` -> figs 1-4; Wong colorblind palette + redundant markers, already compliant).
+4. **Khmer prereg filed and PUSHED before any Khmer training** (`d3a3130`,
+   `PROSPECTIVE_PREDICTION_KHMER.md`, point 16.1 WRR) and **KhmerST cloned** (`khmerst_data/repo`,
+   7.7 GB, HEAD ff64017, 1,544 images / 31 jsons). **No Khmer build step has run yet.**
+5. **WACV 2027 process researched from primary sources** ->
+   `WACV2027_SUBMISSION_COMPLIANCE.md`. The four findings that change plans:
+   (a) supplementary **may not contain results on additional datasets**, and R2 has no revision —
+   so **Khmer must be inside the Aug 28 PDF or it ships without Khmer** (Aug 8 drop-dead confirmed);
+   (b) *"you should not cite your public codebase"* — printed commit hashes deanonymize us
+   (repo is public), so the receipts need SHA-256 commitments in the review version;
+   (c) dual submission = 20% overlap with anything submitted elsewhere during Aug 28-Oct 9;
+   (d) **author list is frozen at enrollment, Aug 21, permanently.**
+6. **Track recommendation: Evaluations & Datasets** (new in 2027). Its call explicitly solicits new
+   evaluation protocols, negative results, auditing and systematic analyses — i.e. our receipts and
+   falsifications, which are invisible to the Algorithms rubric. Under Algorithms, "the pivot is
+   precedented, the contribution is empirical" is a legal reject with **no AC backstop and no
+   rebuttal**. Working assumption = E&D; final flip at enrollment (`\usepackage[review,datasets]{wacv}`).
+   **Owner sign-off still needed.**
+7. **Amendment 6 filed + pushed (`2f21868`) before any CRNN trained**
+   (`PROSPECTIVE_PREDICTION_ARCHITECTURE.md`): CRNN_V3 on the same LOSO splits/pivot space/metric,
+   tamil+telugu+oriya x A/B, vocab from TRAIN only, frozen 60-epoch budget. Answers the standing
+   "is it Florence-2-specific?" objection in either direction; a null is declared ambiguous
+   (capacity floor vs architecture-dependence) **in advance**.
+8. **Two correctness fixes (`1860818`):** `\spearVissim` was a stale 6-point -0.14 with a TODO
+   inside the 2312.10806 rebuttal paragraph -> re-derived over all nine points as **-0.12** and
+   added to the verify script (**88 macros, 0 mismatches**). `verify_bib.py` audits every
+   `main.bib` entry against the arXiv API with 429/5xx backoff — **28/28 exist** with matching
+   titles/authors/years (florence2 + univkhmer confirmed on arxiv.org after rate limiting).
+9. **Dual-submission overlap measured (`257b29c`, `overlap_audit.py`): 0.29% / 0.27% directional,
+   0.00% in every WACV section, no shared figures.** Total shared substance = three Paper-A numbers
+   (polarity 8/9, LOSO 90.9%, R^2 0.678) in two sentences. **Both papers can be submitted.**
+   Open item: `sec/2_related.tex` says "Our preliminary study" with NO citation — replace with the
+   author-kit's anonymized parallel-submission citation + anonymized IJDAR PDF in the supp.
+
+### 16.2 What is RUNNING right now
+- `run_crnn_generality.sh` (detached, `crnn_generality.log`), 6 rungs, ~20 min each.
+  **1/6 scored: CRNN Rung A tamil = WRR 0.0 / CharAcc 13.38 / N=513** (prediction 1 holds so far).
+  Rung B tamil training since 16:20. **All six expected by ~18:10 IST 2026-07-22.**
+- Nothing else. GPU otherwise free after that; disk 77 GB free (96% used) — watch before Khmer synth.
+
+### 16.3 Next actions, in priority order
+1. **Score the CRNN rungs against `PROSPECTIVE_PREDICTION_ARCHITECTURE.md`** (all four predictions,
+   hits and misses alike) -> new subsection + macros + extend `verify_wacv_numbers.py`.
+2. **Khmer build** — the only item with a hard external deadline (**Aug 8**): add khmer to
+   `synth_multiscript.py` (raqm env ONLY), render synth, apply `khmer_pivot_map.py`, derive
+   single-word test crops from the line-level polygons, train A+B, score vs 16.1.
+3. **PARSeq (IndicPhotoOCR, env `indicphotoocr`, `eval_indicphotoocr_parseq.py` pattern) on the nine
+   LOSO test sets** = per-script supervised ceiling under OUR metric; then **Tesseract** (not
+   installed; conda-forge, all nine Indic traineddata exist) = the "why not off-the-shelf OCR?"
+   answer. Both inference-only.
+4. **Hash-commitment scheme** for the receipts (SHA-256 + timestamps in supp; real hashes at
+   camera-ready) and the **anonymized parallel-submission citation** for IJDAR.
+5. **Writing surgery** (after the experiments land, so the abstract is written once): reviewer-facing
+   preemption subsections, first-page decisiveness, negatives ordered as rigor, "what we do not
+   claim", data-asset/ethics paragraph, remove the last `\TODO` (khmer slot), `\cref` audit.
+6. **Owner decisions needed:** track sign-off (E&D vs Algorithms) and the **final author list before
+   Aug 21** — irreversible after enrollment.
+
+### 16.4 State-check commands
+```bash
+cd /c/ujjwalb/ritu1/lstm_model
+ls result_crnn_zs_rung*.json | wc -l          # 6 = architecture test complete
+tail -5 crnn_generality.log
+/c/ujjwalb/.conda/envs/ritu_scenetext/bin/python verify_wacv_numbers.py   # must stay 88/88
+/c/ujjwalb/.conda/envs/ritu_scenetext/bin/python overlap_audit.py         # must stay < 20%
+/c/ujjwalb/.conda/envs/ritu_scenetext/bin/python verify_bib.py --quiet    # 28/28
+nvidia-smi; df -h /c; git log --oneline -5
+```
+
+### 16.5 Dates (unchanged, from `WACV2027_SUBMISSION_COMPLIANCE.md`)
+Khmer drop-dead **Aug 8** · internal freeze **Aug 14** · enroll (author list FINAL) **Aug 21** ·
+submit **Aug 28** · supp **Aug 30** · reviews+decisions **Oct 9** (no rebuttal) · camera-ready
+**Nov 2** · author registration recorded by **Nov 17** or the paper is dropped · conference
+**Jan 4-8 2027**, Disney Springs FL (start the US visa process the day acceptance lands).
