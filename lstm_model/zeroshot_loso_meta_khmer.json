@@ -1,0 +1,18 @@
+{
+  "script": "Khmer",
+  "unit": "single-token region crop",
+  "seed": 42,
+  "test_img_frac": 0.5,
+  "n_test": 1252,
+  "n_src_train": 7700,
+  "n_synth": 3240,
+  "n_train_words_unique": 1911,
+  "tokcov_test_by_source_vocab_pct": 88.01,
+  "prereg_tokcov": 89.02,
+  "tokcov_delta_vs_prereg": -1.01,
+  "codepoint_map_rate_test_pct": 94.41,
+  "fonts": [
+    "KhmerOS.ttf",
+    "KhmerOSsys.ttf"
+  ]
+}

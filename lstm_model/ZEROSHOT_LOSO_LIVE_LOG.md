@@ -756,3 +756,39 @@ Khmer drop-dead **Aug 8** · internal freeze **Aug 14** · enroll (author list F
 submit **Aug 28** · supp **Aug 30** · reviews+decisions **Oct 9** (no rebuttal) · camera-ready
 **Nov 2** · author registration recorded by **Nov 17** or the paper is dropped · conference
 **Jan 4-8 2027**, Disney Springs FL (start the US visa process the day acceptance lands).
+
+---
+
+## 17. HANDOFF (2026-07-28) — CRNN scored+in-paper; Khmer BUILT + training armed (GPU-gated)
+
+**Session summary.** Repo had sat idle 6 days. Two things landed:
+
+### 17.1 CRNN architecture generality (Amendment 6) — DONE, pushed `db956b7`
+All 6 rungs (finished 07-22, were unscored) scored vs the frozen prereg → **2 hit / 2 miss**
+(P1 Rung-A floor HIT, P4 ordering HIT; P2 +2.0-lift MISS, P3 ratio-band MISS — only oriya clears
+them). Direction B>A replicates 3/3 but magnitude ~11% of Florence-2, char-acc depressed in step →
+reported as the prereg's pre-declared **ambiguous** verdict (architecture-dependence vs capacity
+floor), backbone-limitation kept. New `\label{sec:crnn}` subsection + 13 `\crnn*` macros +
+`ARCHITECTURE_SCORING.md`; `verify_wacv_numbers.py` now **101 macros, 0 mismatch**.
+
+### 17.2 Khmer (Amendment 4b) — BUILT this session; training GPU-gated and armed
+- **Recognition unit decided by data** (`KHMER_BUILD_DECISIONS.md`): 75% of KhmerST regions
+  (2686/3563) are single-token → those are the word-level test set. Image-level 50/50 split (seed 42).
+- **Built** by `prepare_zeroshot_loso_khmer.py` (raqm env, hard `features.check("raqm")` gate):
+  **N_test = 1,252** word crops (`khmer_test_crops/`, git-excluded), **3,240 synth**
+  (`synth_zeroshot_loso_khmer/`, git-ignored), sources = all 11 Brahmic langs (7,700 train).
+  Splits `splits_zeroshot_loso_rung{A,B}_khmer.json`, vocabs, `zeroshot_loso_meta_khmer.json`.
+- **tok_cov recheck (prereg gate): 88.01% vs 89.02%, Δ−1.01 → instrument point 16.11→15.52
+  (−0.59 WRR, inside ±1 RMSE). NOT material → no re-file; frozen prediction 16.1 stands.**
+- **Training armed, GPU-gated:** `run_khmer_loso.sh` (A+B only, NO BPE; `train_florence2.py`
+  grapheme-injected → `predict_with_conf.py` → `evaluate_corpus`) launched detached; it self-gates on
+  `wait_gpu` (≥12 GB free) so it never preempts labmate `harsh`'s jobs (GPU currently ~3 GB free).
+  Guardian `.monitor/khmer_guardian.sh` (relaunches runner if it dies, retires at 2 results) running
+  + `@reboot` cron added. Watch: `tail -f khmer_loso.log`; results → `result_zs_loso_rung{A,B}_khmer.json`.
+- **When results land:** score vs prereg 16.1 → `KHMER_SCORING.md` + `\khmer*` macros + extend
+  `verify_wacv_numbers.py` + fill `sec/4_experiments.tex` §sec:khmer (remove the `\TODO`) +
+  `numbers.tex` khmer TODO + Fig-4 khmer point. Rung-A prediction: WRR < 5.
+
+### 17.3 Still open (unchanged)
+PARSeq/Tesseract anchors (GPU-gated too), E&D track flip + anonymized artifact mirror + SHA-256
+commitments, 8-page compression/desk-reject surgery. **Owner: track sign-off + author list by Aug 21.**
