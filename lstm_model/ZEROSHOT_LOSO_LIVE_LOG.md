@@ -789,6 +789,21 @@ floor), backbone-limitation kept. New `\label{sec:crnn}` subsection + 13 `\crnn*
   `verify_wacv_numbers.py` + fill `sec/4_experiments.tex` §sec:khmer (remove the `\TODO`) +
   `numbers.tex` khmer TODO + Fig-4 khmer point. Rung-A prediction: WRR < 5.
 
-### 17.3 Still open (unchanged)
-PARSeq/Tesseract anchors (GPU-gated too), E&D track flip + anonymized artifact mirror + SHA-256
-commitments, 8-page compression/desk-reject surgery. **Owner: track sign-off + author list by Aug 21.**
+### 17.3 Anchors (Amendment: supervised ceiling + off-the-shelf floor) — DRAFTED + RUNNING
+- **Tesseract floor** `eval_tesseract_anchor.py` (stock Tesseract 5 LSTM, psm 8; binary in the
+  loca_accnt env, tessdata has all 9 Indic + **khm**): CPU, RUNNING now (`tesseract_anchor.log`,
+  niced). Scored in pivot space (to_pivot / khmer_to_pivot → evaluate_corpus), identical pipeline to
+  our model. Early: tamil 15.4 / telugu 13.76 / kannada 12.08 WRR (off-the-shelf per-script models
+  edge our zero-real-image Rung-B on some scripts — honest reference, frame by the data). Outputs
+  `result_anchor_tesseract_{script}.json` (+khmer).
+- **PARSeq ceiling** `eval_parseq_anchor.py` (IndicPhotoOCR specialist, imports in ritu_scenetext;
+  9 scripts, no khmer; oriya→odia, devanagari→hindi, gurmukhi→punjabi). GPU. Runner
+  `run_parseq_anchor.sh` launched detached, **chained after Khmer** (waits for both khmer results,
+  then GPU≥6GB) so it never contends with our own training. Outputs `result_anchor_parseq_{script}.json`.
+- **When both land:** add `\parseq*`/`\tess*` per-script macros + a floor/ceiling column or table to
+  `sec/4_experiments.tex` (the "why not off-the-shelf OCR?" + supervised-ceiling answer), extend
+  verify, commit results.
+
+### 17.4 Still open
+E&D track flip + anonymized artifact mirror + SHA-256 commitments, 8-page compression/desk-reject
+surgery. **Owner: track sign-off + author list by Aug 21.**
