@@ -223,6 +223,21 @@ def main():
     # declared/statistical macros NOT re-derived here (need scipy dists; verified via
     # analyze_scaling_law.py): scaleSlopeCI, scaleFp, covOOSp, scalePreregC, scaleFaithfulPred.
 
+    # ---- CRNN architecture-generality replication (Amendment 6) ----
+    CRNN_SCRIPTS = ["tamil", "telugu", "oriya"]
+    crnn = {(r, s): json.load(open(f"result_crnn_zs_rung{r}_{s}.json"))
+            for r in ("A", "B") for s in CRNN_SCRIPTS}
+    for s in CRNN_SCRIPTS:
+        add(f"crnnA{s}", crnn[("A", s)]["WRR"])
+        add(f"crnnB{s}", crnn[("B", s)]["WRR"])
+        add(f"crnnChaB{s}", crnn[("B", s)]["CharAcc"])
+    add("crnnAmax", max(crnn[("A", s)]["WRR"] for s in CRNN_SCRIPTS))
+    add("crnnLiftOriya", crnn[("B", "oriya")]["WRR"] - crnn[("A", "oriya")]["WRR"])
+    # ratios are against the Florence-2 Rung-B points (res[("B", .)]) — same splits/metric
+    add("crnnRatioOriya", crnn[("B", "oriya")]["WRR"] / res[("B", "oriya")]["WRR"])
+    add("crnnRatioMean", sum(crnn[("B", s)]["WRR"] / res[("B", s)]["WRR"]
+                             for s in CRNN_SCRIPTS) / len(CRNN_SCRIPTS))
+
     fails = 0
     for name, tex_val, derived, dec in checks:
         if tex_val is None:

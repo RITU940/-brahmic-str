@@ -116,6 +116,36 @@ distinct values) is underdetermined and we disclose it rather than build on it.
   \label{fig:scaling}
 \end{figure}
 
+\subsection{Architecture generality: a preregistered CRNN replication}
+\label{sec:crnn}
+
+Every result above uses one backbone, inviting the objection that the effect is specific to a
+pretrained vision--language model. We preregistered a replication (Amendment~6, filed and committed
+before any CRNN trained) on a \emph{from-scratch} CRNN --- ResNet+BiLSTM, CTC, no large-scale
+pretraining --- over the same LOSO splits, pivot space, and metric, for the three equal-synthetic
+scripts spanning the observed Rung-B range (Tamil, Telugu, Oriya), with the vocabulary built from
+TRAIN records only and a 60-epoch budget fixed in advance. We filed four predictions and score all
+four, hits and misses alike.
+
+The two \emph{structural} predictions hold. Source-only Rung~A stays at the floor on all three
+(WRR $\le\crnnAmax$; predicted $<2.0$), and the held-out ranking is preserved
+($\crnnBtamil<\crnnBtelugu<\crnnBoriya$, matching the Florence-2 order, Spearman~$+1$); the
+direction of the effect replicates, with Rung~B above Rung~A on every script. The two
+\emph{effect-size} predictions miss. The preregistered primary --- a $\ge\!+2.0$ WRR lift on at
+least two of three --- holds only on Oriya ($+\crnnLiftOriya$); Tamil ($+\crnnBtamil$) and Telugu
+($+\crnnBtelugu$) fall short. The CRNN reaches only a $\crnnRatioMean\times$ fraction of the
+Florence-2 transfer level on average (predicted band $[0.15,0.60]$), landing inside the band on
+Oriya alone ($\crnnRatioOriya$). Character accuracy is depressed in step (e.g.\ Tamil
+\crnnChaBtamil\% vs.\ Florence-2's \chaBtamil\%): the small model sees fewer characters, not merely
+fewer whole words.
+
+As stated in the preregistration's declared caveat, this outcome is \emph{ambiguous} and we do not
+resolve it in our favor. An attenuated-but-directional replication on a small from-scratch model is
+consistent both with the pivot mechanism being partly dependent on the backbone's pretraining and
+with a plain capacity floor --- and the depressed character accuracy supports the latter. We report
+the direction as replicated across architectures, leave the magnitude open, and keep the
+backbone-specificity limitation.
+
 \subsection{Out-of-benchmark: Khmer}
 \label{sec:khmer}
 

@@ -1,0 +1,1 @@
+{"backbone": "CRNN_V3", "rung": "B", "script": "oriya", "N": 1044, "WRR": 4.5, "CharAcc": 26.79, "CER": 73.21, "epochs_max": 60, "best_epoch": 60}

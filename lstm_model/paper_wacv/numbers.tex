@@ -165,4 +165,24 @@
 % two-factor coefficient 95% CIs, script-level bootstrap (bootstrap_cis lineage, seed 20260721)
 \newcommand{\ciTfCov}{[-0.48,\,3.49]}   % coverage slope b -- SPANS ZERO (9 points)
 \newcommand{\ciTfTwox}{[0.0,\,16.9]}    % 2x-synthetic bonus c
+% ---- CRNN architecture-generality replication (Amendment 6), 6/6 complete 2026-07-22 ----
+% Preregistration + scoring rule: PROSPECTIVE_PREDICTION_ARCHITECTURE.md; receipt
+% ARCHITECTURE_SCORING.md. Source of truth: result_crnn_zs_rung{A,B}_{tamil,telugu,oriya}.json
+% (CRNN_V3 = ResNet+BiLSTM-512+CTC, vocab from TRAIN only, 60-epoch fixed budget).
+% Scored 2/4 hit: structural predictions (Rung-A floor, held-out ordering) hold; effect-size
+% predictions (primary +2.0 lift, ratio band) miss. Direction B>A replicates on all three.
+\newcommand{\crnnAtamil}{0.0}
+\newcommand{\crnnAtelugu}{0.0}
+\newcommand{\crnnAoriya}{0.67}
+\newcommand{\crnnBtamil}{0.97}
+\newcommand{\crnnBtelugu}{1.1}
+\newcommand{\crnnBoriya}{4.5}
+\newcommand{\crnnChaBtamil}{25.09}
+\newcommand{\crnnChaBtelugu}{31.79}
+\newcommand{\crnnChaBoriya}{26.79}
+\newcommand{\crnnAmax}{0.67}          % max Rung-A across the three (predicted < 2.0: HIT)
+\newcommand{\crnnLiftOriya}{3.83}     % only script clearing the preregistered +2.0 primary
+\newcommand{\crnnRatioOriya}{0.18}    % 4.5/25.38, in the predicted [0.15,0.60] band
+\newcommand{\crnnRatioMean}{0.11}     % mean CRNN-B / Florence-B over the three (predicted 0.35)
+
 % TODO(khmer): prediction + realized (4b)

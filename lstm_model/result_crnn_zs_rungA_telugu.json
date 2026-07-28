@@ -1,0 +1,1 @@
+{"backbone": "CRNN_V3", "rung": "A", "script": "telugu", "N": 545, "WRR": 0.0, "CharAcc": 19.0, "CER": 81.0, "epochs_max": 60, "best_epoch": 57}
