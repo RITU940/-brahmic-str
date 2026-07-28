@@ -1,0 +1,81 @@
+% ==========================================================================
+% E&D-TRACK INTRODUCTION DRAFT (parallel to sec/1_intro.tex; NOT wired into main.tex
+% until the track decision is made — see ED_TRACK_FLIP.md). Uses only existing macros;
+% %TODO markers show where Khmer/anchor numbers fold in. The contribution list is
+% reordered so the evaluation protocol, the prospective-forecast methodology, and the
+% released artifacts are the headline; the pivot is demoted to the mechanism/evidence.
+% ==========================================================================
+\section{Introduction}
+\label{sec:intro}
+
+Modern scene-text recognizers exceed 90\% word accuracy on Latin benchmarks, yet most of the
+world's writing systems remain unreadable to them. Recent audits are stark: across more than a
+hundred Unicode scripts, even frontier vision--language models (VLMs) read fewer than thirty, and
+on unfamiliar scripts they emit garbled or substituted output~\cite{glotocr}. For the Brahmic
+family --- nine major scripts used by over a billion people --- real-image training data exists
+only because of recent, labor-intensive benchmark efforts~\cite{indicstr12,bstd}, and dozens of
+related scripts (Sinhala, Khmer, Myanmar, Tibetan, \dots) have little or none. Collecting and
+annotating real photographs script-by-script is not a scalable path to coverage --- and, crucially,
+\emph{no existing benchmark measures how well a recognizer does when a script's real labeled images
+are absent entirely}. That gap is an evaluation gap before it is a modeling one.
+
+This paper is about closing it. We ask a question existing protocols cannot score --- \emph{can a
+recognizer read a script for which no real labeled image exists, and can we predict, before
+training, how well?} --- and we build the evaluation machinery to answer it honestly: a protocol
+that isolates the zero-real-image condition, a predictive instrument whose forecasts are filed
+before the runs, and a verification chain that lets a reader re-derive every number. The recognizer
+we use to exercise this machinery is a compact open VLM (Florence-2, 0.23B~\cite{florence2})
+fine-tuned in a \emph{shared grapheme pivot space} --- Brahmic scripts descend from a common
+ancestor and share an organizational scheme (consonant bases, vowel signs, virama-formed
+conjuncts), so each script's text decomposes into grapheme clusters that map by structural
+correspondence into one output vocabulary. The pivot is the object the evaluation \emph{measures},
+not the paper's headline claim.
+
+The protocol is leave-one-script-out (LOSO) over all nine scripts of a public real-image
+benchmark~\cite{bstd}. For each held-out script we train a source-only model (Rung~A) and a
+source+synthetic-target model (Rung~B), both evaluated on the held-out script's \emph{real} test
+images; a further out-of-benchmark probe holds out Khmer, whose Unicode block and coeng-based
+stacking sit outside the nine. %TODO(khmer)
+Every quantitative forecast --- per-script points and bands --- was committed and pushed to a
+version-controlled archive \emph{before} the run it predicts, so predictability is tested, not
+asserted after the fact.
+
+\medskip\noindent Our contributions, in the order this paper weights them:
+\begin{enumerate}
+  \item \textbf{A zero-real-image evaluation protocol.} A LOSO scene-text protocol that measures
+  reading an entire writing system --- disjoint Unicode block, disjoint glyph inventory --- from
+  zero real target images, in a shared pivot space with a round-trip-lossless mapping (so pivot-WRR
+  equals target-script WRR), plus an out-of-benchmark generalization probe (Khmer). It surfaces a
+  strong effect existing protocols never test: every held-out script moves from a
+  ${\le}\,\wrrAdevanagari\%$ source-only baseline to \wrrBmin--\wrrBmax\% WRR with zero real target
+  images.
+  \item \textbf{Prospective prediction as an evaluation practice --- audited both ways.} A frozen,
+  version-controlled preregistration with committed-before-run forecasts, and a discipline of
+  scoring every call including its misses. The preregistered primary (tokenizer \emph{fertility}
+  predicts transfer) was \emph{falsified} (Spearman $\spearFert$); a prospectively filed
+  synthetic-exposure study establishes a \emph{script-invariant, log-linear} dose--response
+  (slope $\scaleSlope$ WRR/doubling, common-slope $F$-test $p=\scaleFp$) whose pre-committed
+  \emph{magnitude} missed by $\scaleSlopeRatio\times$ and is scored as a miss; pivot coverage orders
+  scripts in-sample but does not generalize out-of-sample ($r=\covOOSr$), disclosed rather than
+  leaned on. Point forecasts are auditable (Kannada $\predKannada\!\to\!\realKannada$; Gurmukhi
+  \predGurmukhi\ WRR, $\pm2\sigma$ \predGurmukhiTwoSig, filed 3.7\,h pre-training $\to$
+  \realGurmukhi: outer band hit, point under-called).
+  \item \textbf{Controlled attribution of the effect --- the pivot is the mechanism.} A
+  preregistered stock-BPE ablation under identical data, seed, and recipe degrades WRR on all nine
+  scripts ($\bpeRatioMin\times$--$\bpeRatioMax\times$; sign test $p=\bpeSignP$), isolating
+  \emph{output-space structure}, not synthetic fine-tuning per se, as the driver; a from-scratch
+  CRNN replicates the \emph{direction} across an architecture with no large-scale pretraining but
+  not the magnitude, and we report the ambiguity rather than resolve it in our favor.
+  \item \textbf{System analysis on the benchmark, and released resources.} On the identical test
+  crops we situate a prompted 7B frontier VLM (reads two of nine; loses to the compact model on
+  \vlmScriptsWon), off-the-shelf OCR, and a supervised specialist ceiling %TODO(anchors)
+  --- an interpretable floor-to-ceiling context for the zero-real-image numbers. We release the
+  pivot construction, the rendering and verification pipeline, the splits, and the
+  preregistration/prediction chain as a reusable template for prospective empirical evaluation.
+\end{enumerate}
+
+We do not claim per-script state of the art: supervised recognizers trained on real labeled target
+images reach ${\sim}73\%$ on this benchmark~\cite{bstd} and sit on a different axis --- they
+presuppose the data whose absence defines our problem. What we contribute is the protocol that
+measures that absence, the instrument that forecasts within it, and the evidence --- reported with
+its failures intact.
