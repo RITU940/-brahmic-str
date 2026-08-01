@@ -1,0 +1,35 @@
+\begin{abstract}
+Scene-text recognition (STR) is effectively solved for Latin script yet fails for most of the
+world's writing systems, and collecting labeled real images for every script is not a scalable
+answer. We ask whether a recognizer can read a script for which \emph{no real labeled image exists
+at all}. We construct a shared grapheme pivot space spanning nine Brahmic scripts and fine-tune a
+compact open vision--language model in it under a leave-one-script-out protocol: the held-out
+script is seen only as rendered synthetic images, never as a real photograph. On real scene-text
+benchmarks the held-out scripts reach \wrrBmin--\wrrBmax\% word recognition (character accuracy up
+to \chaBbengali\%), from source-only baselines of \wrrAtamil--\wrrAdevanagari\%. To put that on a
+practical rather than an abstract scale, we score stock per-script Tesseract --- which \emph{was}
+trained on real labeled images of each target script --- on the identical crops under the identical
+metric: our zero-real-image model beats it on \tessScriptsWon\ of nine (\wrrBmean\% vs.\
+\tessMean\% macro-average). A prompted frontier VLM (Qwen2.5-VL-7B), scored with every generosity
+--- its prose answers parsed in its favor --- reads only Bengali and Devanagari with any competence
+(\vlmWrrBengali/\vlmWrrDevanagari\% WRR) and loses on \vlmScriptsWon\ of nine, so scale alone does
+not close the gap. Replacing the grapheme pivot with the stock BPE tokenizer under identical data,
+seed and recipe degrades word recognition on all nine scripts
+($\bpeRatioMin\times$--$\bpeRatioMax\times$; exact sign test $p=\bpeSignP$), on three of them
+\emph{despite equal-or-better character accuracy} --- isolating output-space structure, not
+synthetic fine-tuning per se, as what converts character evidence into whole-word reads.
+
+The campaign ran end-to-end under a frozen preregistration, with every quantitative forecast
+committed and pushed before the run it predicted, and we report that record whole --- it is mostly
+a record of misses. The preregistered primary, that tokenizer fertility predicts which scripts
+transfer, was \emph{falsified} (Spearman $\spearFert$). Synthetic exposure yields a clean
+log-linear dose--response with a script-invariant slope ($\scaleSlope$ WRR per doubling, $R^2$ up
+to \scaleRtwoMax), but the pre-committed slope \emph{magnitude} missed by $\scaleSlopeRatio\times$;
+pivot coverage orders scripts in-sample yet does not generalize out-of-sample ($r=\covOOSr$); and
+an out-of-benchmark probe on Khmer, forecast at \khmerPred\% before any Khmer recognizer existed,
+returned \khmerB\% --- a $\khmerResidRMSE\sigma$ miss that also marks where the method stops. We
+therefore claim no predictive law. What we offer is a demonstration, a controlled attribution of
+its mechanism, and a forecasting record scored in public against rules fixed in advance --- the
+failures included. We release the pivot construction, rendering and verification pipeline, the
+zero-real-image evaluation protocol, and the preregistration chain.
+\end{abstract}

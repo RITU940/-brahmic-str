@@ -1,35 +1,39 @@
+% E&D-track abstract (live). Algorithms-track version preserved as 0_abstract_algo.bak;
+% revert with: mv sec/0_abstract_algo.bak sec/0_abstract.tex  (see ED_TRACK_FLIP.md)
 \begin{abstract}
 Scene-text recognition (STR) is effectively solved for Latin script yet fails for most of the
-world's writing systems, and collecting labeled real images for every script is not a scalable
-answer. We ask whether a recognizer can read a script for which \emph{no real labeled image exists
-at all}. We construct a shared grapheme pivot space spanning nine Brahmic scripts and fine-tune a
-compact open vision--language model in it under a leave-one-script-out protocol: the held-out
-script is seen only as rendered synthetic images, never as a real photograph. On real scene-text
-benchmarks the held-out scripts reach \wrrBmin--\wrrBmax\% word recognition (character accuracy up
-to \chaBbengali\%), from source-only baselines of \wrrAtamil--\wrrAdevanagari\%. To put that on a
-practical rather than an abstract scale, we score stock per-script Tesseract --- which \emph{was}
-trained on real labeled images of each target script --- on the identical crops under the identical
-metric: our zero-real-image model beats it on \tessScriptsWon\ of nine (\wrrBmean\% vs.\
-\tessMean\% macro-average). A prompted frontier VLM (Qwen2.5-VL-7B), scored with every generosity
---- its prose answers parsed in its favor --- reads only Bengali and Devanagari with any competence
-(\vlmWrrBengali/\vlmWrrDevanagari\% WRR) and loses on \vlmScriptsWon\ of nine, so scale alone does
-not close the gap. Replacing the grapheme pivot with the stock BPE tokenizer under identical data,
-seed and recipe degrades word recognition on all nine scripts
-($\bpeRatioMin\times$--$\bpeRatioMax\times$; exact sign test $p=\bpeSignP$), on three of them
-\emph{despite equal-or-better character accuracy} --- isolating output-space structure, not
-synthetic fine-tuning per se, as what converts character evidence into whole-word reads.
+world's writing systems, and no benchmark measures the case that matters for the long tail:
+reading a script for which \emph{no real labeled image exists at all}. We contribute an
+\emph{evaluation protocol} for exactly this setting, and we run a forecasting campaign inside it
+that is adversarial to our own hypotheses. The protocol is leave-one-script-out over nine Brahmic
+scripts of a public real-image benchmark: the held-out script is seen only as rendered synthetic
+images, never a real photograph, and is read in a shared grapheme \emph{pivot} space; an
+out-of-benchmark rung extends it to Khmer, a disjoint Unicode block outside the benchmark. Every
+quantitative forecast was filed \emph{prospectively} --- committed and pushed before the run it
+predicts --- and every one is scored here, including the misses.
 
-The campaign ran end-to-end under a frozen preregistration, with every quantitative forecast
-committed and pushed before the run it predicted, and we report that record whole --- it is mostly
-a record of misses. The preregistered primary, that tokenizer fertility predicts which scripts
-transfer, was \emph{falsified} (Spearman $\spearFert$). Synthetic exposure yields a clean
-log-linear dose--response with a script-invariant slope ($\scaleSlope$ WRR per doubling, $R^2$ up
-to \scaleRtwoMax), but the pre-committed slope \emph{magnitude} missed by $\scaleSlopeRatio\times$;
-pivot coverage orders scripts in-sample yet does not generalize out-of-sample ($r=\covOOSr$); and
-an out-of-benchmark probe on Khmer, forecast at \khmerPred\% before any Khmer recognizer existed,
-returned \khmerB\% --- a $\khmerResidRMSE\sigma$ miss that also marks where the method stops. We
-therefore claim no predictive law. What we offer is a demonstration, a controlled attribution of
-its mechanism, and a forecasting record scored in public against rules fixed in advance --- the
-failures included. We release the pivot construction, rendering and verification pipeline, the
-zero-real-image evaluation protocol, and the preregistration chain.
+Under the protocol, a compact open vision--language model reads every held-out script
+(\wrrBmin--\wrrBmax\% word recognition, character accuracy up to \chaBbengali\%) from source-only
+baselines of \wrrAtamil--\wrrAdevanagari\%. We anchor that to interpretable references measured on
+the identical crops under the identical metric: stock per-script Tesseract, trained on real labeled
+target-script images, is beaten on \tessScriptsWon\ of nine (\wrrBmean\% vs.\ \tessMean\%
+macro-average), while a prompted 7B frontier VLM, scored with every generosity, reads only Bengali
+and Devanagari (\vlmWrrBengali/\vlmWrrDevanagari\%) and loses on \vlmScriptsWon\ of nine.
+The benchmark authors' own supervised specialists, trained on real labeled target images, reach
+\parseqMean\% on the same crops, of which we recover \oursOverCeiling.
+A controlled ablation isolates the pivot --- not fine-tuning per se --- as the transfer mechanism:
+replacing it with the stock BPE tokenizer under identical data, seed and recipe degrades all nine
+scripts ($\bpeRatioMin\times$--$\bpeRatioMax\times$; sign test $p=\bpeSignP$), on three despite
+equal-or-better character accuracy.
+
+The forecasting record is where this campaign is most informative, and it is largely negative. The
+preregistered primary hypothesis (tokenizer fertility predicts transfer) is \emph{falsified}
+(Spearman $\spearFert$). A prospectively filed dose--response is \emph{log-linear with a
+script-invariant slope} ($\scaleSlope$ WRR/doubling) but the pre-committed magnitude missed by
+$\scaleSlopeRatio\times$. Pivot-space coverage orders scripts in-sample and fails out-of-sample
+($r=\covOOSr$). Khmer, forecast at \khmerPred\% before any Khmer recognizer existed, returned
+\khmerB\% --- a $\khmerResidRMSE\sigma$ miss that also locates the method's boundary. A
+from-scratch CRNN replicates the direction but not the magnitude. We therefore advance no
+predictive law. The protocol, the fully scored prospective-forecast record, and a machine-checked
+verification chain --- released in full --- are the contribution; the pivot is the evidence.
 \end{abstract}

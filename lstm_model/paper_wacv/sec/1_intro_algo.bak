@@ -1,0 +1,78 @@
+\section{Introduction}
+\label{sec:intro}
+
+Modern scene-text recognizers exceed 90\% word accuracy on Latin benchmarks, yet most of the
+world's writing systems remain unreadable to them. Recent audits are stark: across more than a
+hundred Unicode scripts, even frontier vision--language models (VLMs) read fewer than thirty, and
+on unfamiliar scripts they emit garbled or substituted output~\cite{glotocr}. For the Brahmic
+family --- nine major scripts used by over a billion people --- real-image training data exists
+only because of recent, labor-intensive benchmark efforts~\cite{indicstr12,bstd}, and dozens of
+related scripts (Sinhala, Khmer, Myanmar, Tibetan, \dots) have little or none. Collecting and
+annotating real photographs script-by-script is not a scalable path to coverage.
+
+This paper asks a stronger question than ``how well can script $X$ be read with its training
+set'': \emph{can a recognizer read a script for which no real labeled image exists at all?} We
+answer it, for scene text, at the granularity of an entire writing system --- and we ask, in
+advance and in writing, how well it will read, so that the answer can be scored rather than
+narrated after the fact.
+
+Our approach rests on a structural observation about Brahmic scripts: they descend from a common
+ancestor and share an organizational scheme --- consonant bases, vowel signs, and conjunct
+formation via a virama --- even though their glyphs and Unicode blocks are disjoint. We exploit
+this by constructing a \emph{shared grapheme pivot space}: every script's text is decomposed into
+grapheme clusters and mapped by structural correspondence into a common output vocabulary, so that
+nine visually unrelated scripts write into one label space. A compact open VLM
+(Florence-2, 0.23B parameters~\cite{florence2}) is fine-tuned in this space on real images of
+\emph{source} scripts plus rendered \emph{synthetic} images of the target script --- never a real
+target photograph.
+
+We evaluate with a leave-one-script-out (LOSO) protocol over all nine scripts of a public
+real-image benchmark~\cite{bstd}. For each held-out script we train a source-only model (Rung~A)
+and a source+synthetic-target model (Rung~B), and evaluate both on the held-out script's
+\emph{real} test images. The campaign additionally ran end-to-end under a frozen,
+version-controlled preregistration with an append-only amendment log, its forecasts committed
+\emph{and pushed} before the runs they predict --- a practice we believe is unprecedented in text
+recognition. It cuts both ways, and we report both edges.
+
+\medskip\noindent Our contributions:
+\begin{enumerate}
+  \item \textbf{Zero-real-image cross-script transfer --- and scale is not the shortcut.} The
+  first demonstration, to our knowledge, that real scene text of an entirely unseen script ---
+  disjoint Unicode block, disjoint glyph inventory --- can be read by transferring through a
+  designed structural pivot space, evaluated LOSO across nine Brahmic scripts
+  (\wrrBmin--\wrrBmax\% WRR from ${\le}\,\wrrAdevanagari\%$ baselines). A prompted 7B frontier VLM,
+  scored with every generosity, reads only the two highest-resource scripts and loses to our
+  compact model on \vlmScriptsWon\ of nine --- the problem is not solved by scale.
+  \item \textbf{The pivot is the mechanism.} A preregistered stock-BPE ablation under identical
+  data, seed, and recipe degrades WRR on all nine scripts
+  ($\bpeRatioMin\times$--$\bpeRatioMax\times$; exact sign test $p=\bpeSignP$), isolating
+  \emph{output-space structure} --- not synthetic fine-tuning per se --- as the transfer
+  mechanism; exploratorily, the size of the penalty tracks the script's fertility
+  (Sec.~\ref{sec:fertility-fails}).
+  \item \textbf{A prospective forecasting record, scored in public --- and mostly negative.} A
+  frozen, version-controlled preregistration with committed-and-pushed-before-run forecasts, every
+  one scored against a rule fixed at filing time. The preregistered primary (fertility predicts
+  transfer) was \emph{falsified} (Spearman $\spearFert$). A prospectively filed synthetic-scaling
+  study establishes a \emph{script-invariant, log-linear} dose--response (slope $\scaleSlope$
+  WRR/doubling, common-slope $F$-test $p=\scaleFp$), but its pre-committed magnitude missed by
+  $\scaleSlopeRatio\times$; pivot coverage orders scripts in-sample and fails out-of-sample
+  ($r=\covOOSr$); and the one forecast filed for a script outside the pivot's Unicode blocks
+  (Khmer) missed by $\khmerResidRMSE\sigma$. We therefore advance \emph{no} predictive law --- we
+  advance the record, failures included, and the practice that produced it
+  (Sec.~\ref{sec:experiments}).
+  \item \textbf{Artifacts.} The pivot construction, rendering and verification pipeline,
+  evaluation protocol, and the preregistration/prediction chain itself, released as a reusable
+  template for prospective empirical ML.
+\end{enumerate}
+
+We do not claim per-script state of the art: supervised recognizers trained on real labeled
+target images reach ${\sim}\parseqFinetuned\%$ on this benchmark~\cite{bstd} and sit on a different
+axis --- they presuppose the data whose absence defines our problem. But ``below the supervised
+ceiling'' is not the same as ``below what a practitioner can already deploy.'' Scored on the
+identical crops under the identical metric, stock per-script Tesseract --- an off-the-shelf engine
+that \emph{was} trained on real labeled images of each target script --- reaches \tessMean\%
+macro-average, and our zero-real-image model beats it on \tessScriptsWon\ of the nine
+(\wrrBmean\%, $\tessMarginMean$ points). A recognizer that has never seen a real photograph of a
+script therefore outperforms the tool most practitioners would reach for on that script. The
+comparisons we report are the source-only baseline, the BPE ablation, raw and frontier VLMs, this
+off-the-shelf floor, and our own prospective forecasts.

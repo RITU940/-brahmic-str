@@ -19,12 +19,13 @@ GPU; budgets (700/source, 3{,}240 synthetic) were fixed by preregistration, not 
 \section{Conclusion}
 \label{sec:conclusion}
 
-We showed that real scene text of an entirely unseen Brahmic script can be read --- at
-\wrrBmin--\wrrBmax\% word accuracy across all nine scripts of a public benchmark, ahead of stock
-per-script Tesseract on \tessScriptsWon\ of nine despite never seeing a real image of the target
---- by a small open VLM fine-tuned in a shared grapheme pivot space with only rendered synthetic
-exposure, and that a stock-BPE ablation collapses this transfer, isolating output-space structure
-as the mechanism. The campaign ran under a frozen preregistration, and its forecasting record is
+We built an evaluation protocol for a condition existing benchmarks do not score --- a script with
+no real labeled image at all --- and ran a forecasting campaign inside it. Under that protocol,
+real scene text of an entirely unseen Brahmic script is readable at \wrrBmin--\wrrBmax\% word
+accuracy across all nine scripts of a public benchmark, ahead of stock per-script Tesseract on
+\tessScriptsWon\ of nine despite never seeing a real image of the target, by a small open VLM
+fine-tuned in a shared grapheme pivot space with only rendered synthetic exposure; a stock-BPE
+ablation collapses that transfer, isolating output-space structure as the mechanism. The campaign ran under a frozen preregistration, and its forecasting record is
 mostly a record of misses: the primary hypothesis falsified, the scaling magnitude missed by
 $\scaleSlopeRatio\times$, coverage failing out-of-sample, and the one out-of-block forecast (Khmer)
 missed by $\khmerResidRMSE\sigma$. We advance no predictive law; every call is auditable by commit

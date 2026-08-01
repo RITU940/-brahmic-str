@@ -67,7 +67,7 @@ def fig_scaling():
             "kannada": {6480: 26.9, 12960: 38.4},
             "telugu": {6480: 31.3, 12960: 42.8}}
 
-    fig, ax = plt.subplots(figsize=(3.3, 2.25))
+    fig, ax = plt.subplots(figsize=(3.3, 2.05))
     for s, c in SWEEP.items():
         obs = {b: json.load(open(os.path.join(BASE, f"result_zs_scale{b}_{s}.json")))["WRR"]
                for b in BUD}
@@ -131,7 +131,7 @@ def fig_receipts():
     khmer_pred = 16.1
     khmer_real = json.load(open(os.path.join(BASE, "result_zs_loso_rungB_khmer.json")))["WRR"]
 
-    fig, ax = plt.subplots(figsize=(3.3, 2.35))
+    fig, ax = plt.subplots(figsize=(3.3, 2.0))
     lim = 46
     ax.plot([0, lim], [0, lim], "-", color="#444444", lw=0.9, zorder=1)
     ax.fill_between([0, lim], [-RMSE, lim - RMSE], [RMSE, lim + RMSE],
@@ -166,7 +166,7 @@ def fig_pivot():
     codes already seen from other scripts. Uses romanized labels + hex (no Indic
     shaping) so the numeric alignment -- the actual mechanism -- is explicit."""
     from matplotlib.patches import FancyBboxPatch, FancyArrowPatch
-    fig, ax = plt.subplots(figsize=(3.35, 2.5))
+    fig, ax = plt.subplots(figsize=(3.35, 2.3))
     ax.set_xlim(0, 10); ax.set_ylim(0, 10); ax.axis("off")
 
     # source scripts (top) : (name, KA codepoint, block base, colour, held_out)
