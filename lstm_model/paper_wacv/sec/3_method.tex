@@ -75,7 +75,19 @@ The campaign ran under a frozen preregistration with an append-only amendment lo
 amendment was filed before the results it concerns existed. Descriptors entering the transfer
 horse-race were computed result-blind: fertility and pivot coverage before any Rung-B result;
 a frozen-encoder visual-similarity control before the third. Quantitative forecasts for later
-runs were committed and pushed to a version-controlled archive \emph{before} those runs trained
-(commit hashes in the supplementary material; archive anonymized for review), and are scored
-against a rule fixed at filing time --- hits and misses alike (Sec.~\ref{sec:analysis}).
-% Double-blind note: archive cited via anonymous mirror; hashes verifiable at camera-ready.
+runs were committed and pushed to a version-controlled archive \emph{before} those runs trained,
+and are scored against a rule fixed at filing time --- hits and misses alike
+(Sec.~\ref{sec:analysis}). The archive is anonymized for review: the commit hashes that
+establish filing order would identify us, so the supplement ships the filed documents
+themselves under SHA-256, and the hashes become verifiable at camera-ready.
+
+\paragraph{Released resources.} We release the apparatus, not a description of it: the pivot
+construction and its \pivotTypes-type grapheme vocabulary; the verified rendering pipeline; every
+LOSO split actually used (nine scripts $\times$ rungs A/B/B$_{\mathrm{bpe}}$, plus the Khmer
+rungs); every per-run result file the paper cites, anchors included; the preregistration chain
+with each forecast and its scoring receipt; and \texttt{verify\_wacv\_numbers.py}, which
+re-derives every derivable number in this paper from those result files and exits non-zero on any
+mismatch (\verifyMacros\ macros, zero mismatches at submission). Extending the protocol to a tenth
+script needs only a correspondence map and a font --- the Khmer rung is the worked example, and
+the harness is unchanged.
+% Double-blind note: shipped as anonymous supplementary; public mirror + real hashes at camera-ready.

@@ -1,7 +1,7 @@
 % ==========================================================================
 % E&D-TRACK INTRODUCTION DRAFT (parallel to sec/1_intro.tex; NOT wired into main.tex
 % until the track decision is made — see ED_TRACK_FLIP.md). Uses only existing macros;
-% %TODO markers show where Khmer/anchor numbers fold in. The contribution list is
+% Khmer and the anchors are folded in. The contribution list is
 % reordered so the evaluation protocol, the prospective-forecast methodology, and the
 % released artifacts are the headline; the pivot is demoted to the mechanism/evidence.
 % ==========================================================================
@@ -35,7 +35,8 @@ The protocol is leave-one-script-out (LOSO) over all nine scripts of a public re
 benchmark~\cite{bstd}. For each held-out script we train a source-only model (Rung~A) and a
 source+synthetic-target model (Rung~B), both evaluated on the held-out script's \emph{real} test
 images; a further out-of-benchmark probe holds out Khmer, whose Unicode block and coeng-based
-stacking sit outside the nine. %TODO(khmer)
+stacking sit outside the nine --- and returns \khmerB\% WRR against a \khmerPred\% forecast filed
+before any Khmer recognizer existed, locating the protocol's boundary as sharply as its successes.
 Every quantitative forecast --- per-script points and bands --- was committed and pushed to a
 version-controlled archive \emph{before} the run it predicts, so predictability is tested, not
 asserted after the fact.
@@ -68,8 +69,10 @@ asserted after the fact.
   not the magnitude, and we report the ambiguity rather than resolve it in our favor.
   \item \textbf{System analysis on the benchmark, and released resources.} On the identical test
   crops we situate a prompted 7B frontier VLM (reads two of nine; loses to the compact model on
-  \vlmScriptsWon), off-the-shelf OCR, and a supervised specialist ceiling %TODO(anchors)
-  --- an interpretable floor-to-ceiling context for the zero-real-image numbers. We release the
+  \vlmScriptsWon), off-the-shelf per-script OCR (\tessMean\%, which our zero-real-image model beats
+  on \tessScriptsWon\ of nine), and the benchmark authors' own supervised specialists
+  (\parseqMean\%, of which we recover \oursOverCeiling) --- an interpretable floor-to-ceiling
+  context for the zero-real-image numbers. We release the
   pivot construction, the rendering and verification pipeline, the splits, and the
   preregistration/prediction chain as a reusable template for prospective empirical evaluation.
 \end{enumerate}

@@ -1,0 +1,106 @@
+#!/usr/bin/env bash
+# Build the ANONYMOUS supplementary artifact bundle for WACV submission.
+#
+# WACV 2027 supplementary may contain source code and data, is anonymous, and is
+# available to reviewers (200 MB max, ZIP; R2 deadline Aug 30). That means the
+# paper's release claim can be backed WITHOUT any public mirror -- which also
+# removes the deanonymisation hazard of publishing prereg commit hashes before
+# acceptance. Public release + real hashes happen at camera-ready.
+#
+#   bash build_artifact_bundle.sh
+# Produces artifact_bundle/ and wacv_supplementary.zip, plus a leak report.
+# Publishes nothing. Nothing here is pushed anywhere.
+set -uo pipefail
+cd "$(dirname "$(readlink -f "$0")")" || exit 1
+SRC=$PWD
+OUT=$SRC/artifact_bundle
+ZIP=$SRC/wacv_supplementary.zip
+
+rm -rf "$OUT" "$ZIP"; mkdir -p "$OUT"/{code,splits,results,preregistration}
+
+# ---- 1. WHITELIST what ships. Never blacklist: a missed internal doc is a
+# ---- desk reject, and several docs here discuss review strategy explicitly.
+cp -- *.py "$OUT/code/" 2>/dev/null
+# strategy//internal documents must NEVER reach a reviewer
+rm -f "$OUT"/code/{crop_ritu1_words.py}      2>/dev/null   # renamed below if present
+cp -- splits_zeroshot_loso_*.json "$OUT/splits/" 2>/dev/null
+cp -- result_*.json               "$OUT/results/" 2>/dev/null
+cp -- zeroshot_loso_meta_khmer.json "$OUT/results/" 2>/dev/null
+for f in PREREGISTRATION.md PROSPECTIVE_PREDICTION_*.md PROSPECTIVE_PREDICTIONS_H3.md \
+         SCALING_SWEEP_SCORING.md ARCHITECTURE_SCORING.md KHMER_SCORING.md \
+         KHMER_BUILD_DECISIONS.md ANCHOR_SPLIT_HYGIENE.md; do
+  [ -f "$f" ] && cp -- "$f" "$OUT/preregistration/"
+done
+
+# ---- 2. Anonymise: absolute paths carry the account name; 'ritu1' echoes the
+# ---- author's given name; the prereg docs carry an explicit Owner line.
+find "$OUT" -type f \( -name '*.py' -o -name '*.json' -o -name '*.md' \) -print0 |
+  xargs -0 sed -i \
+    -e 's#/c/ujjwalb/ritu1/lstm_model#.#g' \
+    -e 's#/c/ujjwalb/ritu1#..#g' \
+    -e 's#/c/ujjwalb#/home/anon#g' \
+    -e 's/ujjwalb/anon/gI' \
+    -e 's/ujjwal/anon/gI' \
+    -e 's/ritu1/labset/gI' \
+    -e 's/RITU940/[anonymized]/gI' \
+    -e 's/Ritu Baskey/[anonymized]/gI' \
+    -e 's/baskeyritu@gmail\.com/[anonymized]/gI' \
+    -e 's/Baskey/[anonymized]/gI' \
+    -e 's/server[0-9]\+/hostA/gI' \
+    -e 's/cvpr-gamma/hostA/gI' \
+    -e 's/ritu/anon/gI'          # catches ritu_scenetext etc.; verified no legit word matches
+# any file whose NAME leaks
+for f in $(find "$OUT" -name '*ritu*' 2>/dev/null); do
+  mv -- "$f" "$(dirname "$f")/$(basename "$f" | sed 's/ritu1/labset/g')"
+done
+
+# ---- 2b. Reviewer-facing README.
+cat > "$OUT/README.md" <<'RM'
+# Supplementary artifact: zero-real-image cross-script STR
+
+Anonymous supplement to the submitted paper. Everything the paper claims to release is
+here, except the raw benchmark images (redistributed by their original authors, not us)
+and model checkpoints (size). Nothing here requires network access to inspect.
+
+## Layout
+| path | contents |
+|---|---|
+| `code/` | pivot construction, synthetic rendering, training/eval, the anchors, and `verify_wacv_numbers.py` |
+| `splits/` | every LOSO split actually used: 9 scripts x rungs A / B / B_bpe, plus the Khmer rungs |
+| `results/` | every per-run result JSON the paper cites, including the Tesseract and PARSeq anchors |
+| `preregistration/` | the frozen preregistration, each prospective prediction filed before its run, and the scoring receipts |
+| `SHA256SUMS.txt` | SHA-256 over every file above |
+
+## How to check the paper's numbers
+`code/verify_wacv_numbers.py` re-derives every derivable macro in the paper's
+`numbers.tex` from the result JSONs in `results/` and prints a per-macro pass/fail table.
+It is the same script we run before each build. Point it at a checkout containing
+`paper_wacv/numbers.tex`; it exits non-zero on any mismatch.
+
+## On the preregistration chain
+`preregistration/` contains predictions filed *before* the runs they predict, together
+with the receipts that score them -- hits and misses alike. In the anonymous version the
+commit hashes and repository that establish the filing order are withheld, since they
+would identify the authors. They are verifiable at camera-ready; `SHA256SUMS.txt` lets
+you confirm that the files you are reading are the files we will publish.
+
+## Anonymisation
+Author names, account names, hostnames and repository identifiers were mechanically
+replaced (e.g. paths rewritten to `/home/anon/...`, one dataset tag renamed to
+`labset`). These substitutions affect strings only, never data or numbers.
+RM
+
+# ---- 3. SHA-256 commitments over the preregistration chain + code + splits.
+( cd "$OUT" && find . -type f ! -name SHA256SUMS.txt -print0 | sort -z |
+    xargs -0 sha256sum > SHA256SUMS.txt )
+echo "  $(wc -l < "$OUT/SHA256SUMS.txt") files hashed"
+
+# ---- 4. Leak scan. Fail loudly rather than ship a desk reject.
+echo "=== LEAK SCAN ==="
+LEAKS=$(grep -rniE 'ujjwal|baskey|ritu|server[0-9]|cvpr-gamma|gmail|brahmic-str|RITU940' "$OUT" 2>/dev/null | grep -v SHA256SUMS | head -20)
+if [ -n "$LEAKS" ]; then echo "!! POTENTIAL IDENTITY LEAKS:"; echo "$LEAKS"; else echo "clean: no identity tokens found"; fi
+echo "=== internal strategy docs present? (must be empty) ==="
+find "$OUT" -iname '*STRATEGY*' -o -iname '*COMPETITIVE*' -o -iname '*PROF_REPORT*' -o -iname '*PROGRESS_REPORT*' -o -iname '*HANDOFF*' -o -iname '*LIVE_LOG*'
+
+( cd "$SRC" && zip -qr "$ZIP" artifact_bundle )
+echo "=== bundle: $(du -sh "$OUT" | cut -f1) dir, $(du -h "$ZIP" | cut -f1) zip (limit 200M) ==="

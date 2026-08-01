@@ -276,6 +276,18 @@ def main():
                               for s in SCRIPTS) / len(SCRIPTS))
     tess_won = sum(res[("B", s)]["WRR"] > tess[s]["WRR"] for s in SCRIPTS)
 
+    # ---- supervised specialist ceiling (IndicPhotoOCR PARSeq anchor; no Khmer model) ----
+    pq = {s: json.load(open(f"result_anchor_parseq_{s}.json")) for s in SCRIPTS}
+    for s in SCRIPTS:
+        add(f"parseq{s.capitalize()}", pq[s]["WRR"])
+    pq_mean = sum(pq[s]["WRR"] for s in SCRIPTS) / len(SCRIPTS)
+    add("parseqMean", pq_mean)
+    ours_mean = sum(res[("B", s)]["WRR"] for s in SCRIPTS) / len(SCRIPTS)
+    add("oursOverCeiling", ours_mean / pq_mean)
+    add("ceilingOverOurs", pq_mean / ours_mean, 1)
+    for s in SCRIPTS:
+        add(f"ratio{s.capitalize()}", res[("B", s)]["WRR"] / pq[s]["WRR"])
+
     fails = 0
     for name, tex_val, derived, dec in checks:
         if tex_val is None:
@@ -304,7 +316,14 @@ def main():
     print(f"{'ok  ' if ok else 'FAIL'}  {'tessScriptsWon':22s} tex={tw!s:<10s} derived={tess_word} (count {tess_won}/9)")
     fails += 0 if ok else 1
 
-    print(f"\n{len(checks) + 2} macros checked, {fails} mismatch(es).")
+    # self-check: the paper quotes this script's own coverage, so it must match
+    total = len(checks) + 3
+    vm = tex.get("verifyMacros")
+    ok = vm is not None and vm.isdigit() and int(vm) == total
+    print(f"{'ok  ' if ok else 'FAIL'}  {'verifyMacros':22s} tex={vm!s:<10s} derived={total}")
+    fails += 0 if ok else 1
+
+    print(f"\n{total} macros checked, {fails} mismatch(es).")
     sys.exit(1 if fails else 0)
 
 

@@ -185,6 +185,9 @@
 \newcommand{\crnnRatioOriya}{0.18}    % 4.5/25.38, in the predicted [0.15,0.60] band
 \newcommand{\crnnRatioMean}{0.11}     % mean CRNN-B / Florence-B over the three (predicted 0.35)
 
+\newcommand{\pivotTypes}{1{,}624}   % grapheme-cluster types injected for the source pool
+\newcommand{\verifyMacros}{155}     % macros re-derived by verify_wacv_numbers.py (self-checked)
+
 % ---- Khmer out-of-benchmark probe (Amendment 4b), 2/2 complete 2026-07-31 ----
 % Preregistration PROSPECTIVE_PREDICTION_KHMER.md (filed+pushed 2026-07-22, commit d3a3130,
 % before any Khmer recognizer existed); scoring receipt KHMER_SCORING.md. Source of truth:
@@ -232,3 +235,33 @@
 \newcommand{\wrrBmean}{19.41}            % our macro-avg Rung-B WRR over the nine
 \newcommand{\tessScriptsWon}{eight}      % scripts where our Rung B beats Tesseract (Tamil is the one loss)
 \newcommand{\tessMarginMean}{+5.06}      % our mean minus the Tesseract mean
+
+% ---- supervised specialist ceiling: IndicPhotoOCR PARSeq (anchor), 9/9 2026-08-01 ----
+% The BSTD authors' own per-language recognizers, trained WITH real labeled target images,
+% scored on OUR crops through OUR pivot+metric path. Different axis: they presuppose exactly
+% the data whose absence defines our setting. Not train-on-test: BSTD train/test have zero
+% source-image overlap on all nine scripts (ANCHOR_SPLIT_HYGIENE.md), and the measured mean
+% is in line with the ~73% the BSTD paper reports. No Khmer model exists for this system.
+\newcommand{\parseqTamil}{76.61}
+\newcommand{\parseqTelugu}{55.78}
+\newcommand{\parseqKannada}{59.44}
+\newcommand{\parseqMalayalam}{64.53}
+\newcommand{\parseqOriya}{67.62}
+\newcommand{\parseqGujarati}{57.04}
+\newcommand{\parseqBengali}{72.82}
+\newcommand{\parseqDevanagari}{68.9}
+\newcommand{\parseqGurmukhi}{73.6}
+\newcommand{\parseqMean}{66.26}          % macro-avg over the nine
+\newcommand{\oursOverCeiling}{0.29}      % our macro-avg / the ceiling's
+% per-script ours/ceiling ratios (Table tab:anchors)
+\newcommand{\ratioTamil}{0.12}
+\newcommand{\ratioTelugu}{0.36}
+\newcommand{\ratioKannada}{0.26}
+\newcommand{\ratioMalayalam}{0.15}
+\newcommand{\ratioOriya}{0.38}
+\newcommand{\ratioGujarati}{0.28}
+\newcommand{\ratioBengali}{0.37}
+\newcommand{\ratioDevanagari}{0.44}
+\newcommand{\ratioGurmukhi}{0.30}
+\newcommand{\ceilingOverOurs}{3.4}  % how much more real labels buy
+      % our macro-avg / the supervised ceiling's

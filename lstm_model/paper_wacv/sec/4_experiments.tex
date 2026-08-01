@@ -1,45 +1,31 @@
 \section{Experiments}
 \label{sec:experiments}
 
-Before any absolute number: supervised recognizers fine-tuned on real labeled target images reach
-$\parseqFinetuned\%$ WRR on this benchmark~\cite{bstd}. Those systems answer a different question
---- they presuppose the labeled data whose absence defines our setting. The comparisons that
-match our question are: the source-only baseline (Rung~A), the raw pre-trained VLM (WRR
-$\florenceRawZS$), the stock-BPE ablation, frontier VLMs prompted zero-shot on the same test
-sets, an off-the-shelf OCR floor, and our own forecasts.
-
-We include that floor because distance to the supervised ceiling is, on its own, the wrong
-practical question. Stock Tesseract~5 ships a per-script LSTM model for every script studied here,
-each trained on real labeled images of its script; it is what a practitioner deploys today when a
-script is not otherwise served. Scored on the identical crops through the identical pivot and
-exact-match metric (Table~\ref{tab:main}), it reaches \tessMean\% macro-average against our
-\wrrBmean\% --- we are ahead on \tessScriptsWon\ of nine, by $\tessMarginMean$ points on average,
-losing only on Tamil. Tesseract is a document engine working outside its design domain here, so
-this is not evidence that our model is the better recognizer in general; it is evidence that the
-zero-real-image regime has already passed what a practitioner could obtain off the shelf for these
-scripts.
+The comparisons that match our question are the source-only baseline (Rung~A), the raw
+pre-trained VLM (WRR $\florenceRawZS$), the stock-BPE ablation, the off-the-shelf, frontier-VLM and
+supervised-specialist references of Sec.~\ref{sec:anchors}, and our own forecasts.
 
 \subsection{Main result: every unseen script becomes readable}
 \label{sec:mainresult}
 
 \begin{table}[t]
   \centering\small
-  \setlength{\tabcolsep}{1.5pt}
-  \begin{tabular}{lrrrcrrr}
+  \setlength{\tabcolsep}{2.7pt}
+  \begin{tabular}{lrrrcrr}
     \toprule
-    Script & $N$ & A & B & \scriptsize B 95\% CI & \footnotesize ChAcc & B$_{\mathrm{bpe}}$ & Tess \\
+    Script & $N$ & A & B & \footnotesize B 95\% CI & CharAcc & B$_{\mathrm{bpe}}$ \\
     \midrule
-    Tamil      & \ntamil      & \wrrAtamil      & \textbf{\wrrBtamil}      & {\scriptsize\ciBtamil}      & \chaBtamil      & \wrrPtamil      & \tessTamil \\
-    Telugu     & \ntelugu     & \wrrAtelugu     & \textbf{\wrrBtelugu}     & {\scriptsize\ciBtelugu}     & \chaBtelugu     & \wrrPtelugu     & \tessTelugu \\
-    Kannada    & \nkannada    & \wrrAkannada    & \textbf{\wrrBkannada}    & {\scriptsize\ciBkannada}    & \chaBkannada    & \wrrPkannada    & \tessKannada \\
-    Malayalam  & \nmalayalam  & \wrrAmalayalam  & \textbf{\wrrBmalayalam}  & {\scriptsize\ciBmalayalam}  & \chaBmalayalam  & \wrrPmalayalam  & \tessMalayalam \\
-    Oriya      & \noriya      & \wrrAoriya      & \textbf{\wrrBoriya}      & {\scriptsize\ciBoriya}      & \chaBoriya      & \wrrPoriya      & \tessOriya \\
-    Gujarati   & \ngujarati   & \wrrAgujarati   & \textbf{\wrrBgujarati}   & {\scriptsize\ciBgujarati}   & \chaBgujarati   & \wrrPgujarati   & \tessGujarati \\
-    Bengali    & \nbengali    & \wrrAbengali    & \textbf{\wrrBbengali}    & {\scriptsize\ciBbengali}    & \chaBbengali    & \wrrPbengali    & \tessBengali \\
-    Devanagari & \ndevanagari & \wrrAdevanagari & \textbf{\wrrBdevanagari} & {\scriptsize\ciBdevanagari} & \chaBdevanagari & \wrrPdevanagari & \tessDevanagari \\
-    Gurmukhi   & \ngurmukhi   & \wrrAgurmukhi   & \textbf{\wrrBgurmukhi}   & {\scriptsize\ciBgurmukhi}   & \chaBgurmukhi   & \wrrPgurmukhi   & \tessGurmukhi \\
+    Tamil      & \ntamil      & \wrrAtamil      & \textbf{\wrrBtamil}      & {\footnotesize\ciBtamil}      & \chaBtamil      & \wrrPtamil \\
+    Telugu     & \ntelugu     & \wrrAtelugu     & \textbf{\wrrBtelugu}     & {\footnotesize\ciBtelugu}     & \chaBtelugu     & \wrrPtelugu \\
+    Kannada    & \nkannada    & \wrrAkannada    & \textbf{\wrrBkannada}    & {\footnotesize\ciBkannada}    & \chaBkannada    & \wrrPkannada \\
+    Malayalam  & \nmalayalam  & \wrrAmalayalam  & \textbf{\wrrBmalayalam}  & {\footnotesize\ciBmalayalam}  & \chaBmalayalam  & \wrrPmalayalam \\
+    Oriya      & \noriya      & \wrrAoriya      & \textbf{\wrrBoriya}      & {\footnotesize\ciBoriya}      & \chaBoriya      & \wrrPoriya \\
+    Gujarati   & \ngujarati   & \wrrAgujarati   & \textbf{\wrrBgujarati}   & {\footnotesize\ciBgujarati}   & \chaBgujarati   & \wrrPgujarati \\
+    Bengali    & \nbengali    & \wrrAbengali    & \textbf{\wrrBbengali}    & {\footnotesize\ciBbengali}    & \chaBbengali    & \wrrPbengali \\
+    Devanagari & \ndevanagari & \wrrAdevanagari & \textbf{\wrrBdevanagari} & {\footnotesize\ciBdevanagari} & \chaBdevanagari & \wrrPdevanagari \\
+    Gurmukhi   & \ngurmukhi   & \wrrAgurmukhi   & \textbf{\wrrBgurmukhi}   & {\footnotesize\ciBgurmukhi}   & \chaBgurmukhi   & \wrrPgurmukhi \\
     \midrule
-    \multicolumn{3}{l}{\emph{macro-average}} & \textbf{\wrrBmean} & & & & \tessMean \\
+    \multicolumn{3}{l}{\emph{macro-average}} & \textbf{\wrrBmean} & & & \\
     \bottomrule
   \end{tabular}
   \caption{Zero-real-image transfer across nine held-out Brahmic scripts (real test images).
@@ -47,9 +33,7 @@ scripts.
   (95\% CI = percentile bootstrap over test samples, 5000 resamples). B$_{\mathrm{bpe}}$: Rung~B
   with the grapheme-cluster vocabulary removed (stock tokenizer), identical data and seed. On
   \bpeCIdisjoint/9 scripts the Rung-B CI lies strictly above the B$_{\mathrm{bpe}}$ point.
-  \textbf{Tess}: stock per-script Tesseract~5, which \emph{was} trained on real labeled images of
-  each target script, scored on the identical crops through the identical pivot and metric --- our
-  zero-real-image Rung~B is ahead on \tessScriptsWon\ of nine.}
+  Reference systems on these same crops are in Table~\ref{tab:anchors}.}
   \label{tab:main}
 \end{table}
 
@@ -61,6 +45,52 @@ hardest script (Malayalam, lowest pivot coverage at \covmalayalam\%: still
 $\wrrAmalayalam\!\rightarrow\!\wrrBmalayalam$). Rung-A baselines track incidental pivot-space
 coverage (highest for Devanagari, \wrrAdevanagari\%), confirming the pivot shares structure
 before any target exposure.
+
+\subsection{Floor and ceiling}
+\label{sec:anchors}
+
+\begin{table}[t]
+  \centering\small
+  \setlength{\tabcolsep}{2.6pt}
+  \begin{tabular}{lrrrrr}
+    \toprule
+    Script & \footnotesize Tess. & \footnotesize Qwen & \footnotesize \textbf{Rung~B} & \footnotesize PARSeq & \footnotesize o/c \\
+    \midrule
+    Tamil      & \tessTamil      & \vlmWrrTamil      & \textbf{\wrrBtamil}      & \parseqTamil      & \ratioTamil \\
+    Telugu     & \tessTelugu     & \vlmWrrTelugu     & \textbf{\wrrBtelugu}     & \parseqTelugu     & \ratioTelugu \\
+    Kannada    & \tessKannada    & \vlmWrrKannada    & \textbf{\wrrBkannada}    & \parseqKannada    & \ratioKannada \\
+    Malayalam  & \tessMalayalam  & \vlmWrrMalayalam  & \textbf{\wrrBmalayalam}  & \parseqMalayalam  & \ratioMalayalam \\
+    Oriya      & \tessOriya      & \vlmWrrOriya      & \textbf{\wrrBoriya}      & \parseqOriya      & \ratioOriya \\
+    Gujarati   & \tessGujarati   & \vlmWrrGujarati   & \textbf{\wrrBgujarati}   & \parseqGujarati   & \ratioGujarati \\
+    Bengali    & \tessBengali    & \vlmWrrBengali    & \textbf{\wrrBbengali}    & \parseqBengali    & \ratioBengali \\
+    Devanagari & \tessDevanagari & \vlmWrrDevanagari & \textbf{\wrrBdevanagari} & \parseqDevanagari & \ratioDevanagari \\
+    Gurmukhi   & \tessGurmukhi   & \vlmWrrGurmukhi   & \textbf{\wrrBgurmukhi}   & \parseqGurmukhi   & \ratioGurmukhi \\
+    \midrule
+    \emph{macro-avg} & \tessMean & \vlmMacro & \textbf{\wrrBmean} & \parseqMean & \oursOverCeiling \\
+    \bottomrule
+  \end{tabular}
+  \caption{Every reference system on the \emph{identical} crops, through the identical pivot
+  mapping and exact-match metric. \textbf{Tess.} --- stock per-script Tesseract~5, trained on real
+  labeled images of each target script (off-the-shelf floor). \textbf{Qwen} ---
+  Qwen2.5-VL-7B prompted zero-shot, scored under the disclosed most-favourable extraction.
+  \textbf{PARSeq} --- the benchmark authors' own supervised specialists, also trained on real
+  labeled target images; BSTD train and test share no source image on any script, and the measured
+  mean is in line with the ${\sim}\parseqFinetuned\%$ they report. \textbf{o/c} = ours\,/\,ceiling.
+  Both trained-on-real systems presuppose exactly the data whose absence defines our setting.}
+  \label{tab:anchors}
+\end{table}
+
+Absolute numbers need a scale, and the supervised ceiling alone is the wrong one. Against the
+\textbf{ceiling} we recover \oursOverCeiling\ of the macro-average (\wrrBmean\% vs.\
+\parseqMean\%): real labels remain worth roughly $\ceilingOverOurs\times$ what our synthetic pivot
+buys, and we do not present that as close. Against the \textbf{floor} the picture inverts. Stock
+Tesseract ships a per-script model for every script here, trained on real target images, and is
+what a practitioner deploys today when a script is not otherwise served: it reaches \tessMean\%,
+and our zero-real-image model is ahead on \tessScriptsWon\ of nine, by $\tessMarginMean$ points on
+average, losing only Tamil. Tesseract is a document engine outside its design domain, so this is
+no claim to be the better recognizer in general --- it is evidence that the zero-real-image regime
+has already passed what is obtainable off the shelf. Both hold at once: far from what real labels
+buy, past what is deployable without them.
 
 \subsection{The pivot is the mechanism: BPE ablation}
 \label{sec:ablation}
@@ -198,41 +228,13 @@ We prompt Qwen2.5-VL-7B~\cite{qwen25vl} zero-shot on the same nine real test set
 greedy decoding), preregistered under Amendment~4c. Under the declared primary metric --- exact
 word match on the raw generation, our shared normalization --- it scores $0.0\%$ on all nine: the
 chat model wraps every answer in prose (``The text in the image is~\dots''). We therefore report a
-\emph{disclosed, most-favourable} re-score (Table~\ref{tab:vlm}): we extract the first quoted span
+\emph{disclosed, most-favourable} re-score (Table~\ref{tab:anchors}): we extract the first quoted span
 from each generation and apply the identical metric. Even so, the VLM reads only the two
 highest-resource scripts with any competence --- Bengali \vlmWrrBengali\% and Devanagari
 \vlmWrrDevanagari\% --- and is at or near zero on six of the remaining seven (at most
 \vlmWrrTamil\%, on Tamil), frequently transcribing a wholly different script (Gurmukhi returned in
-Devanagari, Malayalam in Bengali). Our compact pivot model, at a fraction of the parameters, wins
-on \vlmScriptsWon\ of nine, the VLM leading only on Devanagari, the single most-resourced Indic
-script. The comparison is not like-for-like --- the VLM's training data is unknown and it is an
-upper-bound reference for off-the-shelf capability, not a system built for this task --- but it
-establishes that scale alone does not read these scripts; frontier models cover fewer than thirty
-of 100+ writing systems~\cite{glotocr}.
+Devanagari, Malayalam in Bengali). Our compact pivot model wins on \vlmScriptsWon\ of nine at a
+fraction of the parameters, the VLM leading only on Devanagari. The comparison is not like-for-like
+--- the VLM's training data is unknown --- but scale alone does not read these scripts; frontier
+models cover fewer than thirty of 100+ writing systems~\cite{glotocr}.
 
-\begin{table}[t]
-  \centering\small
-  \setlength{\tabcolsep}{6pt}
-  \begin{tabular}{lrr}
-    \toprule
-    Script & Ours (Rung~B) & Qwen2.5-VL-7B \\
-    \midrule
-    Tamil      & \textbf{\wrrBtamil}      & \vlmWrrTamil      \\
-    Telugu     & \textbf{\wrrBtelugu}     & \vlmWrrTelugu     \\
-    Kannada    & \textbf{\wrrBkannada}    & \vlmWrrKannada    \\
-    Malayalam  & \textbf{\wrrBmalayalam}  & \vlmWrrMalayalam  \\
-    Oriya      & \textbf{\wrrBoriya}      & \vlmWrrOriya      \\
-    Gujarati   & \textbf{\wrrBgujarati}   & \vlmWrrGujarati   \\
-    Bengali    & \textbf{\wrrBbengali}    & \vlmWrrBengali    \\
-    Devanagari & \wrrBdevanagari          & \textbf{\vlmWrrDevanagari} \\
-    Gurmukhi   & \textbf{\wrrBgurmukhi}   & \vlmWrrGurmukhi   \\
-    \midrule
-    macro avg  & --                       & \vlmMacro         \\
-    \bottomrule
-  \end{tabular}
-  \caption{Zero-shot WRR (\%) vs.\ a frontier VLM on the same real test images. Qwen2.5-VL scored
-  under a disclosed, most-favourable extraction (its preregistered exact-match primary is $0.0$ on
-  all nine). Our compact model wins on \vlmScriptsWon\ of nine; the VLM leads only on Devanagari,
-  the most-resourced Indic script.}
-  \label{tab:vlm}
-\end{table}

@@ -22,7 +22,8 @@ the identical crops under the identical metric: stock per-script Tesseract, trai
 target-script images, is beaten on \tessScriptsWon\ of nine (\wrrBmean\% vs.\ \tessMean\%
 macro-average), while a prompted 7B frontier VLM, scored with every generosity, reads only Bengali
 and Devanagari (\vlmWrrBengali/\vlmWrrDevanagari\%) and loses on \vlmScriptsWon\ of nine.
-%TODO(anchors): supervised-specialist ceiling sentence when PARSeq lands
+The benchmark authors' own supervised specialists, trained on real labeled target images, reach
+\parseqMean\% on the same crops, of which we recover \oursOverCeiling.
 A controlled ablation isolates the pivot --- not fine-tuning per se --- as the transfer mechanism:
 replacing it with the stock BPE tokenizer under identical data, seed and recipe degrades all nine
 scripts ($\bpeRatioMin\times$--$\bpeRatioMax\times$; sign test $p=\bpeSignP$), on three despite
