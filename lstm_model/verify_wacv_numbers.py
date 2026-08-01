@@ -238,6 +238,39 @@ def main():
     add("crnnRatioMean", sum(crnn[("B", s)]["WRR"] / res[("B", s)]["WRR"]
                              for s in CRNN_SCRIPTS) / len(CRNN_SCRIPTS))
 
+    # ---- Khmer out-of-benchmark probe (Amendment 4b) ----
+    kh = {r: json.load(open(f"result_zs_loso_rung{r}_khmer.json")) for r in ("A", "B")}
+    khmeta = json.load(open("zeroshot_loso_meta_khmer.json"))
+    add("khmerA", kh["A"]["WRR"])
+    add("khmerB", kh["B"]["WRR"])
+    add("khmerChaA", kh["A"]["CharAcc"])
+    add("khmerChaB", kh["B"]["CharAcc"])
+    add("khmerCerB", kh["B"]["CER"])
+    add("khmerN", kh["B"]["N"], 0)
+    add("khmerSynth", khmeta["n_synth"], 0)
+    add("khmerTokCov", khmeta["tokcov_test_by_source_vocab_pct"])
+    add("khmerTokCovPrereg", khmeta["prereg_tokcov"])
+    add("khmerMapRate", khmeta["codepoint_map_rate_test_pct"])
+    add("khmerLift", kh["B"]["WRR"] - kh["A"]["WRR"])
+    add("khmerChaLift", kh["B"]["CharAcc"] - kh["A"]["CharAcc"])
+    # the frozen prediction and RMSE are declared inputs read from numbers.tex; the residual,
+    # its RMSE-scaled form, and the coverage-recheck point are re-derived from them
+    add("khmerResid", kh["B"]["WRR"] - num(tex["khmerPred"]))
+    add("khmerResidRMSE", (kh["B"]["WRR"] - num(tex["khmerPred"])) / num(tex["tfRMSE"]))
+    add("khmerPredRecheck", num(tex["tfIntercept"])
+        + num(tex["tfCovCoef"]) * khmeta["tokcov_test_by_source_vocab_pct"])
+    nineB = [res[("B", s)]["WRR"] for s in SCRIPTS]
+    add("khmerPctOfMeanB", 100 * kh["B"]["WRR"] / (sum(nineB) / len(nineB)), 1)
+    add("khmerPctOfMinB", 100 * kh["B"]["WRR"] / min(nineB), 1)
+
+    # ---- off-the-shelf OCR floor (stock Tesseract 5, psm 8) ----
+    tess = {s: json.load(open(f"result_anchor_tesseract_{s}.json"))
+            for s in SCRIPTS + ["khmer"]}
+    for s in SCRIPTS + ["khmer"]:
+        add(f"tess{s.capitalize()}", tess[s]["WRR"])
+    add("tessMean", sum(tess[s]["WRR"] for s in SCRIPTS) / len(SCRIPTS))
+    add("khmerVsTess", kh["B"]["WRR"] / tess["khmer"]["WRR"])
+
     fails = 0
     for name, tex_val, derived, dec in checks:
         if tex_val is None:

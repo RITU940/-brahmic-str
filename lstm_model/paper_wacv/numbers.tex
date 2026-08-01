@@ -185,4 +185,46 @@
 \newcommand{\crnnRatioOriya}{0.18}    % 4.5/25.38, in the predicted [0.15,0.60] band
 \newcommand{\crnnRatioMean}{0.11}     % mean CRNN-B / Florence-B over the three (predicted 0.35)
 
-% TODO(khmer): prediction + realized (4b)
+% ---- Khmer out-of-benchmark probe (Amendment 4b), 2/2 complete 2026-07-31 ----
+% Preregistration PROSPECTIVE_PREDICTION_KHMER.md (filed+pushed 2026-07-22, commit d3a3130,
+% before any Khmer recognizer existed); scoring receipt KHMER_SCORING.md. Source of truth:
+% result_zs_loso_rung{A,B}_khmer.json; build receipt zeroshot_loso_meta_khmer.json.
+% Scored 1/2 hit: the Rung-A floor holds; the quantitative point prediction MISSES low by
+% 3.66 RMSE, exactly the failure mode the prereg's Caveat 1 declared in advance.
+\newcommand{\khmerN}{1252}
+\newcommand{\khmerSynth}{3240}
+\newcommand{\khmerA}{0.0}
+\newcommand{\khmerB}{0.8}
+\newcommand{\khmerChaA}{3.56}
+\newcommand{\khmerChaB}{9.41}
+\newcommand{\khmerCerB}{90.59}
+\newcommand{\khmerLift}{+0.8}            % Rung B - Rung A (direction replicates, 10/10 overall)
+\newcommand{\khmerChaLift}{+5.85}        % CharAcc B - A
+\newcommand{\khmerPred}{16.1}            % frozen point prediction
+\newcommand{\khmerBandOne}{[11.9,\,20.3]}
+\newcommand{\khmerBandTwo}{[7.8,\,24.5]}
+\newcommand{\khmerResid}{-15.3}          % realized - predicted
+\newcommand{\khmerResidRMSE}{-3.66}      % residual in units of \tfRMSE -> outside +-2 RMSE
+\newcommand{\khmerTokCovPrereg}{89.02}   % coverage at filing (result-blind)
+\newcommand{\khmerTokCov}{88.01}         % coverage after the frozen split was fixed
+\newcommand{\khmerPredRecheck}{15.52}    % instrument re-evaluated at 88.01: miss is not a recheck artifact
+\newcommand{\khmerMapRate}{94.41}        % codepoint map-rate of the pivot extension, test labels
+\newcommand{\khmerPctOfMeanB}{4.1}       % Khmer Rung-B as % of the nine-script Rung-B mean
+\newcommand{\khmerPctOfMinB}{8.7}        % ... and as % of the weakest benchmark script (Tamil)
+
+% ---- off-the-shelf OCR floor: stock Tesseract 5 LSTM, psm 8 (anchor) ----
+% Per-script Tesseract models scored on OUR crops through OUR pivot+metric path (identical
+% to how our recognizer is scored). Source: result_anchor_tesseract_{script}.json.
+% These systems use real labeled target-script data; they sit on a different axis from ours.
+\newcommand{\tessTamil}{15.4}
+\newcommand{\tessTelugu}{13.76}
+\newcommand{\tessKannada}{12.08}
+\newcommand{\tessMalayalam}{5.85}
+\newcommand{\tessOriya}{15.52}
+\newcommand{\tessGujarati}{12.41}
+\newcommand{\tessBengali}{15.32}
+\newcommand{\tessDevanagari}{19.78}
+\newcommand{\tessGurmukhi}{19.03}
+\newcommand{\tessKhmer}{2.16}            % Khmer-specific model, real Khmer training data
+\newcommand{\tessMean}{14.35}            % macro-avg over the nine benchmark scripts
+\newcommand{\khmerVsTess}{0.37}          % our zero-real-image Rung B / the supervised Khmer floor

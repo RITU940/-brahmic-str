@@ -60,22 +60,34 @@ visual-similarity account of~\cite{crosslingstr}.
   \includegraphics{figs/fig4_receipts.pdf}
   \caption{Prospective scorecard: preregistered prediction vs.\ realized WRR for every
   quantitative forecast filed before its run, scored against the rule fixed at filing time (shaded
-  $\pm1$ RMSE of the instrument). The two LOSO point calls land on the diagonal; the scaling rungs
-  fall off it in the two directions the text describes --- under-predicted at low budget (concave
-  transfer), over-predicted at high budget (the magnitude miss). Hits and misses are both shown.}
+  $\pm1$ RMSE of the instrument). The two in-block LOSO point calls land on the diagonal; the
+  scaling rungs fall off it in the two directions the text describes --- under-predicted at low
+  budget (concave transfer), over-predicted at high budget (the magnitude miss). Khmer, the
+  out-of-block call, misses low by $\khmerResidRMSE\cdot$RMSE and is the instrument's decisive
+  failure. Hits and misses are both shown.}
   \label{fig:receipts}
 \end{figure}
 
-Three forecasts were filed before their runs; all are scored (Fig.~\ref{fig:receipts}).
+Four forecasts were filed before their runs; all are scored (Fig.~\ref{fig:receipts}).
 \textbf{Kannada}: exploratory point $\predKannada$ WRR, filed with two scripts observed;
 realized \realKannada. \textbf{Devanagari}: directional call (high, ${\sim}25+$) committed before
 the result existed but pushed after --- we therefore label it only weakly prospective and lean on
 it for nothing. \textbf{Gurmukhi} (final script): point \predGurmukhi\ WRR, bands
 $\pm1\sigma$ \predGurmukhiOneSig\ / $\pm2\sigma$ \predGurmukhiTwoSig, committed \emph{and pushed}
 3.7 hours before training began; realized \realGurmukhi\ --- outside the $\pm1\sigma$ band
-(under-called by $1.5\sigma$), inside $\pm2\sigma$. The declared rank bet between the two
-preregistered predictors resolved for coverage over fertility ($\rho$ $+0.32$ vs.\ $-0.71$ on the
-seven forecast scripts), with neither ranking alone significant --- which is why the two-factor
-account, not a single-predictor law, is our claim. The model's honest summary: transfer is
-forecastable to roughly $\pm\tfRMSE$ WRR ($1\sigma$) from two quantities computable
-\emph{before} training --- and the misses are part of the record.
+(under-called by $1.5\sigma$), inside $\pm2\sigma$. \textbf{Khmer} (Sec.~\ref{sec:khmer}), the one
+call filed for a script outside the pivot's Unicode blocks: point \khmerPred\ WRR, realized
+\khmerB\ --- a $\khmerResidRMSE\sigma$ miss, below even the $\pm2\sigma$ band. The declared rank
+bet between the two preregistered predictors resolved for coverage over fertility ($\rho$ $+0.32$
+vs.\ $-0.71$ on the seven forecast scripts), with neither ranking alone significant --- which is
+why the two-factor account, not a single-predictor law, is our claim.
+
+The model's honest summary is therefore bounded. \emph{Within} the ISCII-aligned blocks it was fit
+on, transfer is forecastable to roughly $\pm\tfRMSE$ WRR ($1\sigma$) from two quantities computable
+\emph{before} training --- but even there the coverage term does not survive out-of-sample
+($r=\covOOSr$ on the six held-out scripts) and the transported slope magnitude missed by
+$\scaleSlopeRatio\times$. The single call we filed for a script outside those blocks missed by
+$\khmerResidRMSE\sigma$. We therefore report the instrument as a scored, partly-failed forecast
+rather than as a contribution, and decline to extend it past the blocks it was fit on: one
+out-of-block script shows that it failed there, not that it must fail everywhere outside. The
+misses are part of the record.

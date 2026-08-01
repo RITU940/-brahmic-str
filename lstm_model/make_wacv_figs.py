@@ -126,6 +126,10 @@ def fig_receipts():
             sy.append(json.load(open(os.path.join(BASE, f"result_zs_scale{b}_{s}.json")))["WRR"])
     # LOSO point calls filed before their rung trained
     loso = [("Kannada", 15.0, 15.42), ("Gurmukhi", 16.2, 22.16)]
+    # Khmer is the out-of-block call (Amendment 4b) and the instrument's decisive miss:
+    # plotted apart from the in-block LOSO calls so the failure is not read as one of them.
+    khmer_pred = 16.1
+    khmer_real = json.load(open(os.path.join(BASE, "result_zs_loso_rungB_khmer.json")))["WRR"]
 
     fig, ax = plt.subplots(figsize=(3.3, 3.0))
     lim = 46
@@ -138,10 +142,14 @@ def fig_receipts():
                    edgecolor="k", linewidth=0.4)
         ax.annotate(name, (px, py), textcoords="offset points", xytext=(6, -2), fontsize=6.5)
     ax.scatter([], [], s=44, color=ORANGE, marker="D", label="LOSO point calls")
+    ax.scatter([khmer_pred], [khmer_real], s=52, color=GREEN, marker="v", zorder=5,
+               edgecolor="k", linewidth=0.4, label="Khmer (out-of-block)")
+    ax.annotate("Khmer", (khmer_pred, khmer_real), textcoords="offset points",
+                xytext=(7, -1), fontsize=6.5)
     ax.set_xlim(0, lim); ax.set_ylim(0, lim)
     ax.set_xlabel("preregistered prediction (WRR %)")
     ax.set_ylabel("realized WRR (%)")
-    ax.text(24, 6, "over-predicted\n(slope miss)", fontsize=6, color="#555555", ha="center")
+    ax.text(28, 8, "over-predicted\n(slope miss)", fontsize=6, color="#555555", ha="center")
     ax.text(9, 20, "under-predicted\n(concave low end)", fontsize=6, color="#555555", ha="center")
     ax.legend(loc="upper left", fontsize=6.5)
     for sp in ("top", "right"):

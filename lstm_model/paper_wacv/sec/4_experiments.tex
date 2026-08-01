@@ -149,11 +149,42 @@ backbone-specificity limitation.
 \subsection{Out-of-benchmark: Khmer}
 \label{sec:khmer}
 
-\TODO{Preregistered Amendment 4b: train on all nine benchmark scripts + synthetic Khmer
-(different Unicode block, coeng-based stacking, outside the benchmark and outside India);
-evaluate on KhmerST~\cite{khmerst}. PROSPECTIVE\_PREDICTION\_KHMER filed from the frozen
-two-factor model before training. Timeboxed; paper stands without it if the segmenter/crop
-engineering misses the freeze date.}
+Every script above shares the ISCII-aligned Brahmic design the pivot was built around. To find
+where the method stops, we ran it somewhere it should struggle: Khmer, a disjoint Unicode block
+with coeng-based stacking, outside the benchmark and outside India. Reaching it required a
+hand-curated extension of the pivot (\khmerMapRate\% of test codepoints map; the remainder are
+approximated or dropped, and counted as misses). Under Amendment~4b we hold Khmer out entirely and
+evaluate on \khmerN\ KhmerST~\cite{khmerst} word crops: Rung~A trains on the nine benchmark scripts
+with no Khmer of any kind, Rung~B adds \khmerSynth\ synthetic Khmer words and still no real Khmer
+image. Before any Khmer recognizer existed we filed, committed and pushed a point prediction from
+the frozen two-factor model --- \khmerPred\ WRR, $\pm1\cdot$RMSE \khmerBandOne --- together with a
+written caveat that we expected it to be fragile.
+
+It was. Rung~B reaches \khmerB\% WRR against a predicted \khmerPred: a residual of \khmerResid,
+or $\khmerResidRMSE\cdot$RMSE, below even the $\pm2\cdot$RMSE band \khmerBandTwo. The miss is not
+an artifact of the coverage recheck disclosed at build time --- re-evaluating the same instrument
+at the realized token coverage (\khmerTokCov\% rather than the filed \khmerTokCovPrereg\%) moves
+the point only to \khmerPredRecheck. Only the structural prediction survives: Rung~A sits at
+\khmerA\ (predicted $<5$). The instrument had already lost its slope magnitude in block
+(Sec.~\ref{sec:scaling}); this is the first script we asked it to predict outside the blocks it
+was fit on, and it failed there too. We do not carry it forward as a contribution.
+
+Two things nonetheless hold. The \emph{direction} replicates: synthetic target-script exposure
+through the pivot beats the no-target-data control here as everywhere ($\khmerLift$ WRR,
+$\khmerChaLift$ character accuracy), so the mechanism is not inert out of block. But the
+\emph{magnitude} collapses --- \khmerB\ is \khmerPctOfMeanB\% of the nine-script Rung-B mean and
+\khmerPctOfMinB\% of the weakest benchmark script. For calibration, stock Tesseract's
+\emph{Khmer-specific} model, trained on real Khmer and scored on the identical crops through the
+identical pivot and metric, reaches only \tessKhmer\% here against \tessMean\% across the nine
+benchmark scripts: these crops are far harder than the benchmark for a supervised system too, and
+our zero-real-image model recovers \khmerVsTess\ of that floor. We report this as context, not as
+a rescue --- both numbers are near the floor, and \khmerB\% is a failure to transfer usefully.
+
+We draw the boundary claim narrowly. Khmer received the same $1\times$ synthetic budget and
+comparable nominal token coverage (\khmerTokCov\%) that yield double-digit WRR in block, and still
+returned \khmerB. Volume and coverage were held up; typological proximity was not; the transfer
+collapsed. That is the cleanest evidence we have that relatedness, not synthetic volume, carries
+the effect --- but it is a single script, and we state it as suggestive rather than decisive.
 
 \subsection{Frontier-VLM reference}
 \label{sec:vlm}

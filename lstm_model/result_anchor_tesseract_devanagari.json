@@ -1,0 +1,1 @@
+{"tool": "tesseract5_lstm", "psm": 8, "script": "devanagari", "N": 6042, "WRR": 19.78, "CharAcc": 43.24, "CER": 56.76}
