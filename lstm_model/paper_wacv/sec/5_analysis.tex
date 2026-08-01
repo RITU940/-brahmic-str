@@ -1,8 +1,7 @@
 \section{What Predicts Transfer?}
 \label{sec:analysis}
 
-This section reports the campaign's confirmatory analysis exactly as preregistered, including the
-falsification of our own primary hypothesis.
+We report the confirmatory analysis exactly as preregistered, our own primary hypothesis included.
 
 \subsection{The preregistered primary fails}
 \label{sec:fertility-fails}
@@ -17,20 +16,16 @@ falsification, consistent with fertility skepticism in the LLM-tokenizer
 literature~\cite{beyondfertility} and with the data-centric view of STR
 transfer~\cite{crosslingstr}.
 
-\paragraph{What fertility does predict (exploratory).} A post-hoc analysis --- not
-preregistered, and labeled accordingly --- shows that while fertility fails to predict
-\emph{who transfers}, it predicts \emph{who needs the pivot}: across the nine scripts, the
-BPE-ablation penalty ratio $\mathrm{B}/\mathrm{B}_{\mathrm{bpe}}$ correlates with fertility at
-Spearman $\rho=\spearFertPenalty$ (exact permutation $p=\spearFertPenaltyP$). The
-lowest-fertility script (Devanagari) is precisely where BPE comes closest to parity
-($\bpeRatioMin\times$), and the highest-fertility scripts (Tamil, Malayalam) are where it
-collapses ($\bpeRatioMax\times$, $2.31\times$). This mirrors, in the zero-real-image regime,
-the supervised relationship between fertility and grapheme advantage that motivated the pivot
-(Sec.~\ref{sec:method}). Two cautions: the ratio shares a denominator with absolute transfer
-(high-fertility scripts also transfer worst, so small denominators inflate ratios --- on the
-absolute difference $\mathrm{B}-\mathrm{B}_{\mathrm{bpe}}$ the correlation drops to
-$\rho=\spearFertPenaltyDiff$), and with $n=9$ this is a candidate regularity for confirmatory
-testing on new scripts, not a law.
+\paragraph{What fertility does predict (exploratory).} A post-hoc analysis --- not preregistered,
+and labeled accordingly --- shows that while fertility fails to predict \emph{who transfers}, it
+predicts \emph{who needs the pivot}: the BPE-ablation penalty ratio
+$\mathrm{B}/\mathrm{B}_{\mathrm{bpe}}$ correlates with fertility at Spearman
+$\rho=\spearFertPenalty$ (exact permutation $p=\spearFertPenaltyP$), lowest-fertility Devanagari
+being where BPE comes closest to parity ($\bpeRatioMin\times$) and highest-fertility Tamil and
+Malayalam where it collapses ($\bpeRatioMax\times$, $2.31\times$). Two cautions: the ratio shares a
+denominator with absolute transfer (on the absolute difference the correlation drops to
+$\rho=\spearFertPenaltyDiff$), and at $n=9$ this is a candidate regularity for confirmatory testing,
+not a law.
 
 \subsection{The two-factor account}
 \label{sec:twofactor}
@@ -70,9 +65,9 @@ visual-similarity account of~\cite{crosslingstr}.
 
 Four forecasts were filed before their runs; all are scored (Fig.~\ref{fig:receipts}).
 \textbf{Kannada}: exploratory point $\predKannada$ WRR, filed with two scripts observed;
-realized \realKannada. \textbf{Devanagari}: directional call (high, ${\sim}25+$) committed before
-the result existed but pushed after --- we therefore label it only weakly prospective and lean on
-it for nothing. \textbf{Gurmukhi} (final script): point \predGurmukhi\ WRR, bands
+realized \realKannada. \textbf{Devanagari}: directional call (high, ${\sim}25+$) committed before the result existed but
+pushed after --- only weakly prospective, and we lean on it for nothing.
+\textbf{Gurmukhi} (final script): point \predGurmukhi\ WRR, bands
 $\pm1\sigma$ \predGurmukhiOneSig\ / $\pm2\sigma$ \predGurmukhiTwoSig, committed \emph{and pushed}
 3.7 hours before training began; realized \realGurmukhi\ --- outside the $\pm1\sigma$ band
 (under-called by $1.5\sigma$), inside $\pm2\sigma$. \textbf{Khmer} (Sec.~\ref{sec:khmer}), the one
@@ -82,12 +77,10 @@ bet between the two preregistered predictors resolved for coverage over fertilit
 vs.\ $-0.71$ on the seven forecast scripts), with neither ranking alone significant --- which is
 why the two-factor account, not a single-predictor law, is our claim.
 
-The model's honest summary is therefore bounded. \emph{Within} the ISCII-aligned blocks it was fit
-on, transfer is forecastable to roughly $\pm\tfRMSE$ WRR ($1\sigma$) from two quantities computable
-\emph{before} training --- but even there the coverage term does not survive out-of-sample
-($r=\covOOSr$ on the six held-out scripts) and the transported slope magnitude missed by
-$\scaleSlopeRatio\times$. The single call we filed for a script outside those blocks missed by
-$\khmerResidRMSE\sigma$. We therefore report the instrument as a scored, partly-failed forecast
-rather than as a contribution, and decline to extend it past the blocks it was fit on: one
-out-of-block script shows that it failed there, not that it must fail everywhere outside. The
-misses are part of the record.
+The summary is therefore bounded. In-block, transfer is forecastable to roughly $\pm\tfRMSE$ WRR
+($1\sigma$) from two pre-training quantities --- but even there the coverage term fails
+out-of-sample ($r=\covOOSr$) and the transported slope magnitude missed by
+$\scaleSlopeRatio\times$; the single out-of-block call missed by $\khmerResidRMSE\sigma$. We report
+the instrument as a scored, partly-failed forecast rather than as a contribution, and decline to
+extend it past the blocks it was fit on: one out-of-block script shows it failed there, not that it
+must fail everywhere outside.

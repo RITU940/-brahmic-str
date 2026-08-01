@@ -6,34 +6,50 @@ $\parseqFinetuned\%$ WRR on this benchmark~\cite{bstd}. Those systems answer a d
 --- they presuppose the labeled data whose absence defines our setting. The comparisons that
 match our question are: the source-only baseline (Rung~A), the raw pre-trained VLM (WRR
 $\florenceRawZS$), the stock-BPE ablation, frontier VLMs prompted zero-shot on the same test
-sets, and our own forecasts.
+sets, an off-the-shelf OCR floor, and our own forecasts.
+
+We include that floor because distance to the supervised ceiling is, on its own, the wrong
+practical question. Stock Tesseract~5 ships a per-script LSTM model for every script studied here,
+each trained on real labeled images of its script; it is what a practitioner deploys today when a
+script is not otherwise served. Scored on the identical crops through the identical pivot and
+exact-match metric (Table~\ref{tab:main}), it reaches \tessMean\% macro-average against our
+\wrrBmean\% --- we are ahead on \tessScriptsWon\ of nine, by $\tessMarginMean$ points on average,
+losing only on Tamil. Tesseract is a document engine working outside its design domain here, so
+this is not evidence that our model is the better recognizer in general; it is evidence that the
+zero-real-image regime has already passed what a practitioner could obtain off the shelf for these
+scripts.
 
 \subsection{Main result: every unseen script becomes readable}
 \label{sec:mainresult}
 
 \begin{table}[t]
   \centering\small
-  \setlength{\tabcolsep}{2.7pt}
-  \begin{tabular}{lrrrcrr}
+  \setlength{\tabcolsep}{1.5pt}
+  \begin{tabular}{lrrrcrrr}
     \toprule
-    Script & $N$ & A & B & \footnotesize B 95\% CI & CharAcc & B$_{\mathrm{bpe}}$ \\
+    Script & $N$ & A & B & \scriptsize B 95\% CI & \footnotesize ChAcc & B$_{\mathrm{bpe}}$ & Tess \\
     \midrule
-    Tamil      & \ntamil      & \wrrAtamil      & \textbf{\wrrBtamil}      & {\footnotesize\ciBtamil}      & \chaBtamil      & \wrrPtamil \\
-    Telugu     & \ntelugu     & \wrrAtelugu     & \textbf{\wrrBtelugu}     & {\footnotesize\ciBtelugu}     & \chaBtelugu     & \wrrPtelugu \\
-    Kannada    & \nkannada    & \wrrAkannada    & \textbf{\wrrBkannada}    & {\footnotesize\ciBkannada}    & \chaBkannada    & \wrrPkannada \\
-    Malayalam  & \nmalayalam  & \wrrAmalayalam  & \textbf{\wrrBmalayalam}  & {\footnotesize\ciBmalayalam}  & \chaBmalayalam  & \wrrPmalayalam \\
-    Oriya      & \noriya      & \wrrAoriya      & \textbf{\wrrBoriya}      & {\footnotesize\ciBoriya}      & \chaBoriya      & \wrrPoriya \\
-    Gujarati   & \ngujarati   & \wrrAgujarati   & \textbf{\wrrBgujarati}   & {\footnotesize\ciBgujarati}   & \chaBgujarati   & \wrrPgujarati \\
-    Bengali    & \nbengali    & \wrrAbengali    & \textbf{\wrrBbengali}    & {\footnotesize\ciBbengali}    & \chaBbengali    & \wrrPbengali \\
-    Devanagari & \ndevanagari & \wrrAdevanagari & \textbf{\wrrBdevanagari} & {\footnotesize\ciBdevanagari} & \chaBdevanagari & \wrrPdevanagari \\
-    Gurmukhi   & \ngurmukhi   & \wrrAgurmukhi   & \textbf{\wrrBgurmukhi}   & {\footnotesize\ciBgurmukhi}   & \chaBgurmukhi   & \wrrPgurmukhi \\
+    Tamil      & \ntamil      & \wrrAtamil      & \textbf{\wrrBtamil}      & {\scriptsize\ciBtamil}      & \chaBtamil      & \wrrPtamil      & \tessTamil \\
+    Telugu     & \ntelugu     & \wrrAtelugu     & \textbf{\wrrBtelugu}     & {\scriptsize\ciBtelugu}     & \chaBtelugu     & \wrrPtelugu     & \tessTelugu \\
+    Kannada    & \nkannada    & \wrrAkannada    & \textbf{\wrrBkannada}    & {\scriptsize\ciBkannada}    & \chaBkannada    & \wrrPkannada    & \tessKannada \\
+    Malayalam  & \nmalayalam  & \wrrAmalayalam  & \textbf{\wrrBmalayalam}  & {\scriptsize\ciBmalayalam}  & \chaBmalayalam  & \wrrPmalayalam  & \tessMalayalam \\
+    Oriya      & \noriya      & \wrrAoriya      & \textbf{\wrrBoriya}      & {\scriptsize\ciBoriya}      & \chaBoriya      & \wrrPoriya      & \tessOriya \\
+    Gujarati   & \ngujarati   & \wrrAgujarati   & \textbf{\wrrBgujarati}   & {\scriptsize\ciBgujarati}   & \chaBgujarati   & \wrrPgujarati   & \tessGujarati \\
+    Bengali    & \nbengali    & \wrrAbengali    & \textbf{\wrrBbengali}    & {\scriptsize\ciBbengali}    & \chaBbengali    & \wrrPbengali    & \tessBengali \\
+    Devanagari & \ndevanagari & \wrrAdevanagari & \textbf{\wrrBdevanagari} & {\scriptsize\ciBdevanagari} & \chaBdevanagari & \wrrPdevanagari & \tessDevanagari \\
+    Gurmukhi   & \ngurmukhi   & \wrrAgurmukhi   & \textbf{\wrrBgurmukhi}   & {\scriptsize\ciBgurmukhi}   & \chaBgurmukhi   & \wrrPgurmukhi   & \tessGurmukhi \\
+    \midrule
+    \multicolumn{3}{l}{\emph{macro-average}} & \textbf{\wrrBmean} & & & & \tessMean \\
     \bottomrule
   \end{tabular}
   \caption{Zero-real-image transfer across nine held-out Brahmic scripts (real test images).
   Rung~A: source scripts only. Rung~B: + synthetic target renderings, zero real target images
   (95\% CI = percentile bootstrap over test samples, 5000 resamples). B$_{\mathrm{bpe}}$: Rung~B
   with the grapheme-cluster vocabulary removed (stock tokenizer), identical data and seed. On
-  \bpeCIdisjoint/9 scripts the Rung-B CI lies strictly above the B$_{\mathrm{bpe}}$ point.}
+  \bpeCIdisjoint/9 scripts the Rung-B CI lies strictly above the B$_{\mathrm{bpe}}$ point.
+  \textbf{Tess}: stock per-script Tesseract~5, which \emph{was} trained on real labeled images of
+  each target script, scored on the identical crops through the identical pivot and metric --- our
+  zero-real-image Rung~B is ahead on \tessScriptsWon\ of nine.}
   \label{tab:main}
 \end{table}
 
@@ -45,17 +61,6 @@ hardest script (Malayalam, lowest pivot coverage at \covmalayalam\%: still
 $\wrrAmalayalam\!\rightarrow\!\wrrBmalayalam$). Rung-A baselines track incidental pivot-space
 coverage (highest for Devanagari, \wrrAdevanagari\%), confirming the pivot shares structure
 before any target exposure.
-
-% Fig 2: grouped bars A/B/Bbpe per script
-\begin{figure}[t]
-  \centering
-  \includegraphics[width=\linewidth]{figs/fig2_bars.pdf}
-  \caption{Transfer by script (ascending by Rung~B). Source-only baselines (grey) sit near the
-  floor; the grapheme pivot (blue) beats the stock-BPE tokenizer (orange) on every one of the nine
-  scripts under identical data and seed. Generated from the result JSONs by
-  \texttt{make\_wacv\_figs.py}.}
-  \label{fig:bars}
-\end{figure}
 
 \subsection{The pivot is the mechanism: BPE ablation}
 \label{sec:ablation}

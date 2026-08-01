@@ -1,31 +1,33 @@
 \section{Limitations}
 \label{sec:limitations}
 
-\textbf{Absolute accuracy.} \wrrBmin--\wrrBmax\% WRR reads many words but is far below the
-supervised ceiling ($\parseqFinetuned\%$ with real labeled data~\cite{bstd}); the synthetic
-$\rightarrow$ real domain gap is the dominant residual, and our training loss reaching
-${\sim}0.06$ on synthetic data while real-image WRR stays modest quantifies it. \textbf{One
-architecture.} All transfer results use Florence-2; the supervised granularity study spans 12
-runs of a second architecture family, but architecture-generality of \emph{transfer} is untested.
-\textbf{One family.} Nine scripts, one benchmark, one script family whose shared structure the
-pivot exploits by design; Khmer (Sec.~\ref{sec:khmer}) probes the boundary, and non-Brahmic
-generalization is open. \textbf{Model imperfections.} Gujarati underperforms its coverage
-(highest coverage, mid-table transfer), one Rung-A baseline breaches the predicted $<5$ line by
-0.46 (Devanagari, \wrrAdevanagari), and the final-script forecast under-called by $1.5\sigma$;
-all are reported, none are explained away. \textbf{Compute.} Single 24\,GB GPU; budgets
-(700/source, 3{,}240 synthetic) were fixed by preregistration, not tuned.
+\textbf{Absolute accuracy.} \wrrBmin--\wrrBmax\% WRR clears an off-the-shelf per-script OCR floor
+(\tessMean\%) but remains far below the supervised ceiling ($\parseqFinetuned\%$ with real labeled
+data~\cite{bstd}); the synthetic $\rightarrow$ real domain gap is the dominant residual, quantified
+by training loss reaching ${\sim}0.06$ on synthetic data while real-image WRR stays modest.
+\textbf{One family, and a located boundary.} Nine scripts, one benchmark, one family whose shared
+structure the pivot exploits by design. Khmer (Sec.~\ref{sec:khmer}) does not merely leave
+non-Brahmic generalization open --- it shows the method \emph{failing} there (\khmerB\% WRR), and
+we make no claim beyond the family. \textbf{One architecture.} All transfer results use
+Florence-2; a from-scratch CRNN replicates the direction but at ${\sim}\crnnRatioMean$ of the
+magnitude (Sec.~\ref{sec:crnn}), so backbone-independence of the effect size is untested.
+\textbf{Model imperfections.} Gujarati underperforms its coverage, one Rung-A baseline breaches
+the predicted $<5$ line by 0.46 (Devanagari, \wrrAdevanagari), and the final-script forecast
+under-called by $1.5\sigma$; all reported, none explained away. \textbf{Compute.} Single 24\,GB
+GPU; budgets (700/source, 3{,}240 synthetic) were fixed by preregistration, not tuned.
 
 \section{Conclusion}
 \label{sec:conclusion}
 
 We showed that real scene text of an entirely unseen Brahmic script can be read --- at
-\wrrBmin--\wrrBmax\% word accuracy across all nine scripts of a public benchmark --- by a small
-open VLM fine-tuned in a shared grapheme pivot space with only rendered synthetic exposure to the
-target, and that a stock-BPE ablation collapses this transfer, isolating output-space structure
-as the mechanism. The campaign ran under a frozen preregistration whose primary hypothesis we
-falsified and report; the surviving two-factor account --- synthetic budget plus pivot coverage
---- forecasts transfer to ${\sim}\pm\tfRMSE$ WRR from quantities available before training, with
-its record of committed-in-advance hits and misses auditable by commit hash. Beyond the specific
-results, we offer the recipe --- structural pivot, verified rendering, prospective evaluation ---
-as a template: for the long tail of the world's scripts, predictable zero-real-image transfer
-may matter more than another point of accuracy on scripts that are already read.
+\wrrBmin--\wrrBmax\% word accuracy across all nine scripts of a public benchmark, ahead of stock
+per-script Tesseract on \tessScriptsWon\ of nine despite never seeing a real image of the target
+--- by a small open VLM fine-tuned in a shared grapheme pivot space with only rendered synthetic
+exposure, and that a stock-BPE ablation collapses this transfer, isolating output-space structure
+as the mechanism. The campaign ran under a frozen preregistration, and its forecasting record is
+mostly a record of misses: the primary hypothesis falsified, the scaling magnitude missed by
+$\scaleSlopeRatio\times$, coverage failing out-of-sample, and the one out-of-block forecast (Khmer)
+missed by $\khmerResidRMSE\sigma$. We advance no predictive law; every call is auditable by commit
+hash, and the failures locate the method's boundary rather than leaving it for someone else to
+find. Beyond the specific results we offer the recipe --- structural pivot, verified rendering,
+forecast-before-you-run --- as a template for the long tail of the world's writing systems.

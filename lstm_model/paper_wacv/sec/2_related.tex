@@ -2,37 +2,33 @@
 \label{sec:related}
 
 \paragraph{Multilingual STR and Indic benchmarks.}
-STR is mature for Latin script~\cite{parseq}, but coverage collapses elsewhere.
-IndicSTR12~\cite{indicstr12} and the Bharat Scene Text Dataset~\cite{bstd} established real-image
-benchmarks for Indian languages; on the latter, PARSeq reaches $\parseqSynth\%$ average WRR
-trained on synthetic data only and $\parseqFinetuned\%$ after fine-tuning on real labeled images
---- numbers that presuppose labeled target data. GlotOCR~\cite{glotocr} quantifies the wider
-problem: frontier VLMs read fewer than thirty of 100+ scripts. Synthetic-data engines for STR
-remain Latin-centric~\cite{unionst}, and fine-tuning VLMs on synthetic renderings has been shown
-for a single low-resource script with real-data validation~\cite{manchu}. Our work targets the
-regime where no real labeled target image exists, and asks not only whether such scripts can be
-read but how well, predicted in advance.
+STR is mature for Latin script~\cite{parseq} but collapses elsewhere. IndicSTR12~\cite{indicstr12}
+and the Bharat Scene Text Dataset~\cite{bstd} established real-image benchmarks for Indian
+languages; on the latter, PARSeq reaches $\parseqSynth\%$ average WRR from synthetic data alone and
+$\parseqFinetuned\%$ fine-tuned on real labeled images --- numbers that presuppose labeled target
+data. GlotOCR~\cite{glotocr} quantifies the wider problem: frontier VLMs read fewer than thirty of
+100+ scripts. Synthetic-data engines remain Latin-centric~\cite{unionst}, and synthetic-rendering
+fine-tuning has been shown for a single low-resource script with real-data
+validation~\cite{manchu}. We target the regime where no real labeled target image exists at all.
 
 \paragraph{Tokenization granularity for complex scripts.}
-MGP-STR~\cite{mgpstr} fuses character, BPE, and WordPiece streams within one Latin recognizer;
-grapheme-level tokenization beats byte-BPE for Bengali handwriting~\cite{gradet}. In the LLM
-literature, fertility's value as a tokenizer metric is contested~\cite{beyondfertility}. Our
-preliminary study (Sec.~\ref{sec:method}) makes the supervised grapheme-vs-BPE choice
-\emph{predictable} across nine scripts (polarity \lawPolarity, leave-one-script-out
-$\lawLoso\%$), and this paper then tests --- and refutes --- the natural conjecture that the same
-property predicts transfer.
+MGP-STR~\cite{mgpstr} fuses character, BPE and WordPiece streams in one Latin recognizer;
+grapheme tokenization beats byte-BPE for Bengali handwriting~\cite{gradet}; and fertility's value
+as a tokenizer metric is contested in the LLM literature~\cite{beyondfertility}. Our preliminary
+study (Sec.~\ref{sec:method}) makes the supervised grapheme-vs-BPE choice \emph{predictable} across
+nine scripts (polarity \lawPolarity, leave-one-script-out $\lawLoso\%$); this paper tests --- and
+refutes --- the conjecture that the same property predicts transfer.
 
 \paragraph{Unseen units vs.\ unseen scripts.}
 A substantial line reads unseen \emph{characters within a known script} by decomposition into
 shared sub-units: stroke- and radical-based zero-shot Chinese
-recognition~\cite{strokezs,star,hiercode}, and open-set recognition of novel
+recognition~\cite{strokezs,star,hiercode} and open-set recognition of novel
 characters~\cite{openset1,openset2,moose}. Zero-shot \emph{detection} of unseen scripts localizes
-but does not read~\cite{unseendet}. Byte-level pivots let ASR cover languages with unseen scripts
-in speech~\cite{maestrou}, and task-arithmetic analogies achieve zero-real-data synthetic-to-real
-HTR --- for five \emph{Latin-script} languages, with unseen writing systems explicitly left
-open~\cite{taskanalogies}. To our knowledge, no prior system reads real scene text of an entirely
-unseen script --- different Unicode block, different glyphs --- from zero real target images, let
-alone with accuracy forecast beforehand.
+but does not read~\cite{unseendet}. Byte-level pivots let ASR cover unseen-script
+languages~\cite{maestrou}, and task-arithmetic analogies achieve zero-real-data synthetic-to-real
+HTR for five \emph{Latin-script} languages, leaving unseen writing systems explicitly
+open~\cite{taskanalogies}. To our knowledge no prior system reads real scene text of an entirely
+unseen script --- different Unicode block, different glyphs --- from zero real target images.
 
 \paragraph{What predicts cross-lingual transfer.}
 In NLP, transfer tracks lexical and subword overlap rather than language

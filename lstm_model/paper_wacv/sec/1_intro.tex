@@ -11,9 +11,10 @@ related scripts (Sinhala, Khmer, Myanmar, Tibetan, \dots) have little or none. C
 annotating real photographs script-by-script is not a scalable path to coverage.
 
 This paper asks a stronger question than ``how well can script $X$ be read with its training
-set'': \emph{can a recognizer read a script for which no real labeled image exists at all --- and
-can we predict, before training, how well?} We answer both, for scene text, at the granularity of
-an entire writing system.
+set'': \emph{can a recognizer read a script for which no real labeled image exists at all?} We
+answer it, for scene text, at the granularity of an entire writing system --- and we ask, in
+advance and in writing, how well it will read, so that the answer can be scored rather than
+narrated after the fact.
 
 Our approach rests on a structural observation about Brahmic scripts: they descend from a common
 ancestor and share an organizational scheme --- consonant bases, vowel signs, and conjunct
@@ -26,34 +27,12 @@ nine visually unrelated scripts write into one label space. A compact open VLM
 target photograph.
 
 We evaluate with a leave-one-script-out (LOSO) protocol over all nine scripts of a public
-real-image benchmark~\cite{bstd}. For each held-out script we train two models: a source-only
-model (Rung~A), and a source+synthetic-target model (Rung~B); both are evaluated on the held-out
-script's \emph{real} test images. Transfer is substantial and universal: every script improves
-from a \wrrAtamil--\wrrAdevanagari\% baseline to \wrrBmin--\wrrBmax\% word recognition rate
-(WRR), with character accuracy up to \chaBbengali\% --- using zero real target images. An
-ablation that swaps the grapheme pivot for the stock BPE tokenizer, all else identical, degrades
-transfer on all nine scripts ($\bpeRatioMin\times$--$\bpeRatioMax\times$; exact sign test
-$p=\bpeSignP$);
-strikingly, on Telugu the BPE model matches the pivot model's \emph{character} accuracy
-(\chaPtelugu\% vs.\ \chaBtelugu\%) while halving \emph{word} accuracy --- the pivot is what
-converts character evidence into whole-word reads.
-
-The second contribution is epistemic, and to our knowledge unprecedented in text recognition: the
-campaign was run under a frozen, version-controlled preregistration with an append-only amendment
-log, and its predictions were filed \emph{prospectively} --- committed and pushed before the runs
-they predict. This cuts both ways, and we report both edges. Our preregistered primary hypothesis
---- that tokenizer \emph{fertility}, the property that governs the supervised grapheme-vs-BPE
-trade-off (Sec.~\ref{sec:method}), also predicts which scripts transfer --- was \emph{falsified}
-(Spearman $\spearFert$ across nine scripts). What survived is a scaling account: synthetic-exposure
-\emph{budget} dominates, and its effect is a \emph{script-invariant, log-linear} dose--response
-($\scaleSlope$ WRR per doubling, common-slope $F$-test $p=\scaleFp$; the pre-committed slope
-\emph{magnitude} missed by $\scaleSlopeRatio\times$ and is scored as such). We do \emph{not} claim
-typology as the driver: pivot-space coverage orders the swept scripts in-sample but does not
-generalize out-of-sample ($r=\covOOSr$ across the six held-out scripts), which we disclose rather
-than lean on. The forecasting record is auditable: a point forecast of $\predKannada$ WRR for
-Kannada (realized \realKannada); a final-script forecast for Gurmukhi of \predGurmukhi\ WRR with
-$\pm2\sigma$ band \predGurmukhiTwoSig, filed and pushed 3.7 hours before training began (realized
-\realGurmukhi: outer band hit, point under-called --- reported as the miss it is).
+real-image benchmark~\cite{bstd}. For each held-out script we train a source-only model (Rung~A)
+and a source+synthetic-target model (Rung~B), and evaluate both on the held-out script's
+\emph{real} test images. The campaign additionally ran end-to-end under a frozen,
+version-controlled preregistration with an append-only amendment log, its forecasts committed
+\emph{and pushed} before the runs they predict --- a practice we believe is unprecedented in text
+recognition. It cuts both ways, and we report both edges.
 
 \medskip\noindent Our contributions:
 \begin{enumerate}
@@ -70,14 +49,16 @@ $\pm2\sigma$ band \predGurmukhiTwoSig, filed and pushed 3.7 hours before trainin
   \emph{output-space structure} --- not synthetic fine-tuning per se --- as the transfer
   mechanism; exploratorily, the size of the penalty tracks the script's fertility
   (Sec.~\ref{sec:fertility-fails}).
-  \item \textbf{Predictability, tested prospectively --- audited both ways.} A frozen,
-  version-controlled preregistration with committed-before-run forecasts. The preregistered primary
-  (fertility predicts transfer) was \emph{falsified} (Spearman $\spearFert$) and reported in full.
-  A prospectively filed synthetic-scaling study establishes a \emph{script-invariant, log-linear}
-  dose--response (slope $\scaleSlope$ WRR/doubling, common-slope $F$-test $p=\scaleFp$); the
-  pre-committed slope magnitude missed by $\scaleSlopeRatio\times$ and is scored as a miss. We
-  decline the typology-as-driver claim: pivot coverage orders scripts in-sample but does not
-  generalize out-of-sample ($r=\covOOSr$), disclosed rather than buried
+  \item \textbf{A prospective forecasting record, scored in public --- and mostly negative.} A
+  frozen, version-controlled preregistration with committed-and-pushed-before-run forecasts, every
+  one scored against a rule fixed at filing time. The preregistered primary (fertility predicts
+  transfer) was \emph{falsified} (Spearman $\spearFert$). A prospectively filed synthetic-scaling
+  study establishes a \emph{script-invariant, log-linear} dose--response (slope $\scaleSlope$
+  WRR/doubling, common-slope $F$-test $p=\scaleFp$), but its pre-committed magnitude missed by
+  $\scaleSlopeRatio\times$; pivot coverage orders scripts in-sample and fails out-of-sample
+  ($r=\covOOSr$); and the one forecast filed for a script outside the pivot's Unicode blocks
+  (Khmer) missed by $\khmerResidRMSE\sigma$. We therefore advance \emph{no} predictive law --- we
+  advance the record, failures included, and the practice that produced it
   (Sec.~\ref{sec:experiments}).
   \item \textbf{Artifacts.} The pivot construction, rendering and verification pipeline,
   evaluation protocol, and the preregistration/prediction chain itself, released as a reusable
@@ -85,7 +66,13 @@ $\pm2\sigma$ band \predGurmukhiTwoSig, filed and pushed 3.7 hours before trainin
 \end{enumerate}
 
 We do not claim per-script state of the art: supervised recognizers trained on real labeled
-target images reach ${\sim}73\%$ on this benchmark~\cite{bstd} and sit on a different axis ---
-they presuppose the data whose absence defines our problem. The relevant comparisons, which we
-report, are source-only baselines, the BPE ablation, raw and frontier VLMs on the same test sets,
-and our own prospective forecasts.
+target images reach ${\sim}\parseqFinetuned\%$ on this benchmark~\cite{bstd} and sit on a different
+axis --- they presuppose the data whose absence defines our problem. But ``below the supervised
+ceiling'' is not the same as ``below what a practitioner can already deploy.'' Scored on the
+identical crops under the identical metric, stock per-script Tesseract --- an off-the-shelf engine
+that \emph{was} trained on real labeled images of each target script --- reaches \tessMean\%
+macro-average, and our zero-real-image model beats it on \tessScriptsWon\ of the nine
+(\wrrBmean\%, $\tessMarginMean$ points). A recognizer that has never seen a real photograph of a
+script therefore outperforms the tool most practitioners would reach for on that script. The
+comparisons we report are the source-only baseline, the BPE ablation, raw and frontier VLMs, this
+off-the-shelf floor, and our own prospective forecasts.

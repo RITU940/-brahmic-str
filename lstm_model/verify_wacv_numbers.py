@@ -270,6 +270,11 @@ def main():
         add(f"tess{s.capitalize()}", tess[s]["WRR"])
     add("tessMean", sum(tess[s]["WRR"] for s in SCRIPTS) / len(SCRIPTS))
     add("khmerVsTess", kh["B"]["WRR"] / tess["khmer"]["WRR"])
+    # head-to-head against the off-the-shelf per-script OCR floor
+    add("wrrBmean", sum(res[("B", s)]["WRR"] for s in SCRIPTS) / len(SCRIPTS))
+    add("tessMarginMean", sum(res[("B", s)]["WRR"] - tess[s]["WRR"]
+                              for s in SCRIPTS) / len(SCRIPTS))
+    tess_won = sum(res[("B", s)]["WRR"] > tess[s]["WRR"] for s in SCRIPTS)
 
     fails = 0
     for name, tex_val, derived, dec in checks:
@@ -292,7 +297,14 @@ def main():
     print(f"{'ok  ' if ok else 'FAIL'}  {'vlmScriptsWon':22s} tex={tv!s:<10s} derived={won_word} (count {scripts_won}/9)")
     fails += 0 if ok else 1
 
-    print(f"\n{len(checks) + 1} macros checked, {fails} mismatch(es).")
+    # word-valued macro: scripts where our Rung-B beats the off-the-shelf OCR floor
+    tess_word = NUMWORD.get(tess_won, str(tess_won))
+    tw = tex.get("tessScriptsWon")
+    ok = tw == tess_word
+    print(f"{'ok  ' if ok else 'FAIL'}  {'tessScriptsWon':22s} tex={tw!s:<10s} derived={tess_word} (count {tess_won}/9)")
+    fails += 0 if ok else 1
+
+    print(f"\n{len(checks) + 2} macros checked, {fails} mismatch(es).")
     sys.exit(1 if fails else 0)
 
 
