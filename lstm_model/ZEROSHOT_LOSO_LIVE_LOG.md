@@ -942,3 +942,22 @@ we were fixing. The zip is now a gitignored build product; re-run the script aft
 supp; `\wacvPaperID`; rebuild `wacv_supplementary.zip`; advisor track sign-off and the **Aug 21**
 author freeze. Optional: `fig2_bars.pdf` is orphaned (dropped in the 8-page fit) and there is now
 ~1 page of headroom to reinstate it.
+
+### 19.1 Fig. 2 reinstated (2026-08-04, owner request)
+The per-script A/B$_{\mathrm{bpe}}$/B bar chart is back as **Fig. 2** (numbering now: 1 pivot,
+2 bars, 3 scaling, 4 receipts). It ships as a **`figure*`** (full width): the PDF is 6.9 in natural
+and `\textwidth` is 6.875 in, so the old single-column `figure` was scaling it to ~47% and rendering
+the tick labels at ~3 pt — that, not the page budget alone, is why it read badly before.
+
+**It did not fit for free.** A full-width float cost more than the page had spare: content ran to
+p9. Reclaimed by (a) `fig_bars` figsize 2.5 → **1.4 in** (bars stay legible; fonts are absolute, so
+only the plot area compresses), (b) a 2-line caption, and (c) cutting eight passages that each
+**duplicate a statement kept elsewhere** — 4.1 "Table 1 is the campaign's core"; 4.2's "Both hold at
+once" flourish; 4.3's fertility-margin sentence (now carried by 5.1's post-hoc line); 4.5's CRNN
+closing restatement; 4.7's repeat of the GlotOCR count from the intro; §2's near-verbatim copy of
+3.3's opening; 5.3's closing paragraph compressed (its three miss figures are restated in the
+conclusion); and the conclusion's "we offer the recipe" line (duplicates the abstract's last
+sentence). No evidence, number or caveat was removed — only restatement.
+
+**Content now ends exactly at the bottom of p8, refs p9–10: ZERO slack left.** Any future addition
+must be paid for by a cut. verify 158/158, 0 overfull, 0 undefined.

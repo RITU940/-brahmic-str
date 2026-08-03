@@ -37,7 +37,7 @@ supervised-specialist references of Sec.~\ref{sec:anchors}, and our own forecast
   \label{tab:main}
 \end{table}
 
-Table~\ref{tab:main} is the campaign's core. Every one of the nine scripts moves from a
+Every one of the nine scripts moves from a
 near-floor source-only baseline (\wrrAtamil--\wrrAdevanagari\% WRR; the raw pre-trained model
 reads none of them) to \wrrBmin--\wrrBmax\% WRR with character accuracy \chaBmalayalam--%
 \chaBbengali\% --- without a single real target image. Transfer does not collapse even on the
@@ -45,6 +45,17 @@ script with least to borrow (Malayalam, lowest pivot coverage at \covmalayalam\%
 $\wrrAmalayalam\!\rightarrow\!\wrrBmalayalam$). Rung-A baselines track incidental pivot-space
 coverage (highest for Devanagari, \wrrAdevanagari\%), confirming the pivot shares structure
 before any target exposure.
+
+% Fig 2: grouped bars A/Bbpe/B per script -- full width; the PDF is 6.9in natural, so a
+% single-column \figure would shrink it to 47% and make the tick labels unreadable.
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=\textwidth]{figs/fig2_bars.pdf}
+  \caption{Transfer by script, ordered by Rung~B. Source-only baselines (grey) sit at the floor;
+  the grapheme pivot (blue) lifts all nine, and the stock BPE tokenizer (orange) recovers less on
+  every one under identical data, seed and recipe (Sec.~\ref{sec:ablation}).}
+  \label{fig:bars}
+\end{figure*}
 
 \subsection{Floor and ceiling}
 \label{sec:anchors}
@@ -89,14 +100,13 @@ what a practitioner deploys today when a script is not otherwise served: it reac
 and our zero-real-image model is ahead on \tessScriptsWon\ of nine, and ahead by $\tessMarginMean$
 points on macro-average, losing only Tamil. Tesseract is a document engine outside its design domain, so this is
 no claim to be the better recognizer in general --- it is evidence that the zero-real-image regime
-has already passed what is obtainable off the shelf. Both hold at once: far from what real labels
-buy, past what is deployable without them.
+has already passed what is obtainable off the shelf.
 
 \subsection{The pivot is the mechanism: BPE ablation}
 \label{sec:ablation}
 
 Removing the grapheme-cluster vocabulary --- same pivot strings, same images, same seed ---
-degrades all nine scripts (Table~\ref{tab:main}), from $\bpeRatioMin\times$ (Devanagari,
+degrades all nine scripts (Table~\ref{tab:main}, Fig.~\ref{fig:bars}), from $\bpeRatioMin\times$ (Devanagari,
 \wrrBdevanagari\ $\rightarrow$ \wrrPdevanagari\ WRR) to $\bpeRatioMax\times$ (Tamil,
 \wrrBtamil\ $\rightarrow$ \wrrPtamil): the margin varies, the direction never does (exact
 two-sided sign test, $p=\bpeSignP$). The bootstrap makes the per-script margin concrete: on
@@ -106,10 +116,7 @@ near-parity scripts ($\bpeRatioMin$--$\bpeRatioNearParity\times$), consistent wi
 magnitude shrinking as fertility falls. The character-accuracy pattern is diagnostic: on Telugu,
 Kannada and Devanagari the BPE model \emph{equals or exceeds} the pivot model's character accuracy
 (Telugu \chaPtelugu\% vs.\ \chaBtelugu\%), yet word accuracy drops in every case. Synthetic fine-tuning alone teaches the model to see the characters; the
-cluster-level output space is what assembles them into correct whole words. The margin itself
-is not noise: it grows with the held-out script's fertility, largest exactly on the
-high-fertility Dravidian scripts where transfer is hardest
-(Sec.~\ref{sec:fertility-fails}).
+cluster-level output space is what assembles them into correct whole words.
 
 \subsection{Dose--response: synthetic budget}
 \label{sec:scaling}
@@ -176,9 +183,8 @@ fewer whole words.
 As stated in the preregistration's declared caveat, this outcome is \emph{ambiguous} and we do not
 resolve it in our favor. An attenuated-but-directional replication on a small from-scratch model is
 consistent both with the pivot mechanism being partly dependent on the backbone's pretraining and
-with a plain capacity floor --- and the depressed character accuracy supports the latter. We report
-the direction as replicated across architectures, leave the magnitude open, and keep the
-backbone-specificity limitation.
+with a plain capacity floor --- and the depressed character accuracy supports the latter. The direction replicates across architectures; the magnitude stays
+open, and the backbone-specificity limitation stands.
 
 \subsection{Out-of-benchmark: Khmer}
 \label{sec:khmer}
@@ -234,6 +240,5 @@ highest-resource scripts with any competence --- Bengali \vlmWrrBengali\% and De
 \vlmWrrTamil\%, on Tamil), frequently transcribing a wholly different script (Gurmukhi returned in
 Devanagari, Malayalam in Bengali). Our compact pivot model wins on \vlmScriptsWon\ of nine at a
 fraction of the parameters, the VLM leading only on Devanagari. The comparison is not like-for-like
---- the VLM's training data is unknown --- but scale alone does not read these scripts; frontier
-models cover fewer than thirty of 100+ writing systems~\cite{glotocr}.
+--- the VLM's training data is unknown --- but scale alone does not read these scripts~\cite{glotocr}.
 

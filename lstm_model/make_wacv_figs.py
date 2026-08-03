@@ -41,7 +41,7 @@ def fig_bars():
     B = [wrr("B", s) for s in order]
     x = range(len(order))
     w = 0.27
-    fig, ax = plt.subplots(figsize=(6.9, 2.5))
+    fig, ax = plt.subplots(figsize=(6.9, 1.4))
     ax.bar([i - w for i in x], A, w, label="Rung A (source only)", color=GREY)
     ax.bar([i for i in x], P, w, label=r"Rung B$_{\mathrm{bpe}}$ (stock tokenizer)", color=ORANGE)
     ax.bar([i + w for i in x], B, w, label="Rung B (grapheme pivot)", color=BLUE)
