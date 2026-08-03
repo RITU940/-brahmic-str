@@ -14,10 +14,11 @@ validation~\cite{manchu}. We target the regime where no real labeled target imag
 \paragraph{Tokenization granularity for complex scripts.}
 MGP-STR~\cite{mgpstr} fuses character, BPE and WordPiece streams in one Latin recognizer;
 grapheme tokenization beats byte-BPE for Bengali handwriting~\cite{gradet}; and fertility's value
-as a tokenizer metric is contested in the LLM literature~\cite{beyondfertility}. Our preliminary
-study (Sec.~\ref{sec:method}) makes the supervised grapheme-vs-BPE choice \emph{predictable} across
-nine scripts (polarity \lawPolarity, leave-one-script-out $\lawLoso\%$); this paper tests --- and
-refutes --- the conjecture that the same property predicts transfer.
+as a tokenizer metric is contested in the LLM literature~\cite{beyondfertility}. A companion
+manuscript by the same authors~\cite{parallelsub}, anonymized in the supplement, makes the
+\emph{supervised} grapheme-vs-BPE choice predictable across nine scripts (polarity \lawPolarity,
+leave-one-script-out $\lawLoso\%$); the present paper shares no experiment with it and tests ---
+and refutes --- the conjecture that the same property predicts zero-real-image transfer.
 
 \paragraph{Unseen units vs.\ unseen scripts.}
 A substantial line reads unseen \emph{characters within a known script} by decomposition into

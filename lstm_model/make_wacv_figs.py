@@ -67,7 +67,7 @@ def fig_scaling():
             "kannada": {6480: 26.9, 12960: 38.4},
             "telugu": {6480: 31.3, 12960: 42.8}}
 
-    fig, ax = plt.subplots(figsize=(3.3, 2.05))
+    fig, ax = plt.subplots(figsize=(3.3, 2.3))
     for s, c in SWEEP.items():
         obs = {b: json.load(open(os.path.join(BASE, f"result_zs_scale{b}_{s}.json")))["WRR"]
                for b in BUD}
@@ -91,17 +91,13 @@ def fig_scaling():
     ax.set_xticklabels(["810", "1.6k", "3.2k", "6.5k", "13k"])
     ax.set_xlabel("synthetic images (log scale)")
     ax.set_ylabel("WRR (%)")
-    ax.set_ylim(0, 46)
-    # two mini-legends: scripts (colors) and marker meanings
-    leg1 = ax.legend(loc="upper left", fontsize=7, title="held-out script", title_fontsize=7)
-    ax.add_artist(leg1)
-    from matplotlib.lines import Line2D
-    marks = [Line2D([], [], marker="o", color="k", ls="", ms=4.5, label="observed"),
-             Line2D([], [], marker="D", color="k", ls="", ms=4.5, mfc="w", label="Rung-B anchor"),
-             Line2D([], [], marker="s", color="k", ls="", ms=4.5, mfc="none", label="preregistered")]
-    ax.legend(handles=marks, loc="lower right", fontsize=6.5)
-    ax.text(0.03, 0.62, "slope: pre-reg $+11.5$,\nobserved $+2.2$/doubling",
-            transform=ax.transAxes, fontsize=6.5, color="#333333")
+    ax.set_ylim(0, 50)
+    # One compact horizontal legend along the top; marker meanings live in the caption,
+    # which keeps the plotting area free of overlapping text at final print size.
+    ax.legend(loc="upper center", bbox_to_anchor=(0.5, 1.16), ncol=3, fontsize=6.8,
+              handletextpad=0.3, columnspacing=1.0, borderpad=0.2)
+    ax.text(0.97, 0.05, "slope: pre-reg $+11.5$, observed $+2.2$/doubling",
+            transform=ax.transAxes, fontsize=6.3, color="#333333", ha="right")
     for sp in ("top", "right"):
         ax.spines[sp].set_visible(False)
     fig.tight_layout(pad=0.3)
@@ -131,7 +127,7 @@ def fig_receipts():
     khmer_pred = 16.1
     khmer_real = json.load(open(os.path.join(BASE, "result_zs_loso_rungB_khmer.json")))["WRR"]
 
-    fig, ax = plt.subplots(figsize=(3.3, 2.0))
+    fig, ax = plt.subplots(figsize=(3.3, 2.3))
     lim = 46
     ax.plot([0, lim], [0, lim], "-", color="#444444", lw=0.9, zorder=1)
     ax.fill_between([0, lim], [-RMSE, lim - RMSE], [RMSE, lim + RMSE],
@@ -150,8 +146,11 @@ def fig_receipts():
     ax.set_xlabel("preregistered prediction (WRR %)")
     ax.set_ylabel("realized WRR (%)")
     ax.text(28, 8, "over-predicted\n(slope miss)", fontsize=6, color="#555555", ha="center")
-    ax.text(9, 20, "under-predicted\n(concave low end)", fontsize=6, color="#555555", ha="center")
-    ax.legend(loc="upper left", fontsize=6.5)
+    # Sits in the empty wedge between the low-budget cluster and the legend above it;
+    # checked against the legend bbox at final print size, not at draft size.
+    ax.text(1.5, 26.0, "under-predicted\n(concave low end)", fontsize=6, color="#555555",
+            ha="left", va="top")
+    ax.legend(loc="upper left", fontsize=6.5, borderpad=0.3, labelspacing=0.35)
     for sp in ("top", "right"):
         ax.spines[sp].set_visible(False)
     fig.tight_layout(pad=0.3)

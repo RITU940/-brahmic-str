@@ -807,3 +807,86 @@ floor), backbone-limitation kept. New `\label{sec:crnn}` subsection + 13 `\crnn*
 ### 17.4 Still open
 E&D track flip + anonymized artifact mirror + SHA-256 commitments, 8-page compression/desk-reject
 surgery. **Owner: track sign-off + author list by Aug 21.**
+
+---
+
+## 18. SESSIONS 2026-08-01 and 2026-08-03 — CAMPAIGN CLOSED; REVIEWER-RISK PASS
+
+Filed 2026-08-03. §18.1–18.3 reconstruct the 08-01 session (which shipped five commits but no log
+entry); §18.4–18.6 are the 08-03 reviewer-risk pass.
+
+### 18.1 Khmer scored — Amendment 4b closed (commit `e3a0904`)
+Trained 07-28 → 07-31 on the GPU-gated runner. N=1252. **Rung A 0.00 / Rung B 0.80 WRR**
+(+5.85 CharAcc). Prereg point 16.1 → **miss at −3.66·RMSE**; Rung-A<5 → **hit**. Re-evaluating the
+frozen instrument at the realized coverage (88.01 vs filed 89.02) moves the point to 15.52, so the
+miss is not an artifact of the disclosed recheck. Receipt: `KHMER_SCORING.md`. Reported as a miss;
+the instrument is **not carried forward as a contribution**. What survives: direction replicates
+**10/10**, and the magnitude collapse locates the method's boundary. Doubles as the campaign's
+cleanest counter to "data size beats typology" (same 1× budget, 88% coverage, still 0.80; n=1).
+
+### 18.2 Anchors landed + contamination checked (`e3a0904`, `557ea38`, `5a5d8a2`)
+Tesseract off-the-shelf floor (10 scripts incl. Khmer; macro-avg **14.35**, we win **8/9**, losing
+only Tamil) and IndicPhotoOCR PARSeq supervised ceiling (macro-avg **66.26**; we recover **0.29**,
+i.e. real labels buy **3.4×**). Merged with the VLM into one reference table. **`ANCHOR_SPLIT_HYGIENE.md`**
+answers the train-on-test objection before it is raised: **0 source-image overlap** between BSTD
+`Recognition/{train,test}` on all nine scripts, and our measured Tamil 76.61 sits at the published
+~73 rather than far above it.
+
+### 18.3 E&D flip + supplement (`7d340b4`, `26d2c0b`)
+`\usepackage[review,datasets]{wacv}`; E&D abstract/intro swapped in with `*_algo.bak` kept for a
+one-command revert (`ED_TRACK_FLIP.md`). `build_artifact_bundle.sh` → anonymised
+`wacv_supplementary.zip` (6.2 MB, whitelist-not-blacklist, paths/owner scrubbed, `SHA256SUMS.txt`),
+which backs the release claim **inside the supplement** and removes the need for a public mirror.
+**Not logged at the time and left uncommitted for two days:** retitle, abstract rewrite, §3.4
+honesty paragraph, §5 hedging, rebuilt figures. Folded into this session's commit.
+
+### 18.4 ⚠ THE REPO IS PRIVATE — the prospectivity receipt is weaker than the paper claimed
+Verified 08-03: `RITU940/-brahmic-str` returns **404 anonymously** (API and web); the account's 8
+public repos do not include it; **GH Archive** (which records events only for public repos) has
+**zero** events in the ±2 h window around the 07-22 prereg push, so it was private then too; and
+`git log --format=%G?` returns **N** — the commits are **unsigned**. Software Heritage has never
+archived it. Consequences: (a) printed hashes could not have deanonymised us anyway; (b) **no third
+party ever observed the filings**, and git author/committer dates are settable, so publishing at
+camera-ready yields provenance, **not proof**. `sec/3_method.tex` previously claimed order "becomes
+independently verifiable against the public archive at camera-ready" — unsupportable, now rewritten
+to state the limit and to name the fix a future campaign should use. **Nothing can be repaired
+retroactively**: every run finished by 07-31, so an OSF/OpenTimestamps stamp made now proves
+existence *after* the runs. Owner decision 08-03: **honest disclosure only**, no public mirror.
+
+### 18.5 Reviewer-risk pass (owner's seven-item list)
+1. **Title** → "Reading Unseen Scripts: A Zero-Real-Image Evaluation Protocol and a Scored
+   Forecasting Campaign for Brahmic Scene Text" (the old "Predictable…" contradicted our own
+   negative record).
+2. **Abstract** 378 → 347 words; defense (protocol, released harness, "a tenth script needs a
+   correspondence map and a font") fully established in ¶1, misses confined to ¶3.
+3. **"Is this a dataset paper?"** preempted in three places: title, abstract ¶1 ("not a new
+   dataset"), and the intro's contribution-class paragraph citing the track charter.
+5. **§5 compressed**: printed correlations 12 → 9; the exploratory fertility→BPE-penalty ρ=+0.73
+   paragraph cut to one sentence marked unregistered and "used for nothing here". The two-factor
+   **fit equation is deliberately kept** — every later forecast was drawn from it, so removing it
+   would make the scorecard unauditable — but is now printed "for audit" and then discounted.
+6. Tamil losing to Tesseract is stated outright in §4.6 ("losing only Tamil"); family and CRNN
+   caveats already in Limitations. No change.
+7. **Figures, all four checked at final print size**: committed `fig3_scaling.pdf` printed the slope
+   annotation **through** the Telugu legend entry (fixed: horizontal legend on top, annotation
+   bottom-right, marker meanings moved to the caption); the same edit had moved fig4's
+   "under-predicted" label into *its* legend (fixed); both figures overran the column by 1.35 pt
+   (now `width=\linewidth`); and the scorecard figure was floating onto the **references page**
+   (float moved earlier in `sec/5_analysis.tex`).
+
+### 18.6 Dual-submission disclosure closed
+`sec/2_related.tex` no longer says "Our preliminary study" with no citation. It now cites
+`\cite{parallelsub}` — the author kit's prescribed anonymous form ("Authors. … Anonymized copy
+supplied as supplemental material") — and states that the two papers share no experiment.
+**`main.bib` is 29 entries now (was 28).**
+
+### 18.7 State and what is still open
+Build: **0 overfull, 0 errors, verify 155/155 macros, references start p8** (content fits with ~1
+page of headroom regained). Nothing of ours is running; the GPU is the labmate's.
+**Open, all owner-side or submission-day:**
+- **Aug 21 enrollment** — author list frozen permanently; advisor sign-off on the E&D track (the tex
+  is already flipped, and the OpenReview track must match); real paper ID replaces `\wacvPaperID`.
+- **`\textcolor{red}{TBD}`** in the `parallelsub` bib note — fill the IJDAR submission ID, and add
+  the anonymised Paper-A PDF to the supplement as `parallel_submission.pdf`.
+- **Rebuild `wacv_supplementary.zip`** at submission (the current one predates these edits).
+- Confirm Paper-A's actual submission status before Aug 28 (the 20% rule binds Aug 28 – Oct 9).

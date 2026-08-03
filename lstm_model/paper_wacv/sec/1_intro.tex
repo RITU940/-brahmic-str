@@ -31,6 +31,13 @@ an organizational scheme (consonant bases, vowel signs, virama-formed conjuncts)
 text decomposes into grapheme clusters mapping by structural correspondence into one output
 vocabulary. The pivot is the object the evaluation \emph{measures}, not the headline claim.
 
+Our contribution class is an \emph{evaluation protocol plus verification infrastructure}, not a
+data release: we collect no new photographs, instead repurposing two public
+benchmarks~\cite{bstd,khmerst} under a new held-out condition and adding verified synthetic
+renderings. This is squarely what this track solicits --- new evaluation protocols, rigorous
+auditing and stress-testing, and negative results --- which it invites independently of new
+datasets.
+
 \medskip\noindent Our contributions, in the order this paper weights them:
 \begin{enumerate}
   \item \textbf{A zero-real-image evaluation protocol.} A LOSO scene-text protocol that measures
@@ -62,10 +69,7 @@ vocabulary. The pivot is the object the evaluation \emph{measures}, not the head
   \vlmScriptsWon), off-the-shelf per-script OCR (\tessMean\%, which our zero-real-image model beats
   on \tessScriptsWon\ of nine), and the benchmark authors' own supervised specialists
   (\parseqMean\%, of which we recover \oursOverCeiling) --- an interpretable floor-to-ceiling
-  context. We release the pivot construction, the rendering and verification pipeline, the splits,
-  and the preregistration chain as a reusable template for prospective empirical evaluation.
+  context --- alongside the released protocol, harness and preregistration chain
+  (Sec.~\ref{sec:prereg}).
 \end{enumerate}
 
-We do not claim per-script state of the art: supervised specialists trained on real labeled target
-images reach \parseqMean\% on these very crops, on a different axis --- they presuppose the data
-whose absence defines our problem.

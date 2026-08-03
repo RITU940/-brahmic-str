@@ -77,9 +77,16 @@ horse-race were computed result-blind: fertility and pivot coverage before any R
 a frozen-encoder visual-similarity control before the third. Quantitative forecasts for later
 runs were committed and pushed to a version-controlled archive \emph{before} those runs trained,
 and are scored against a rule fixed at filing time --- hits and misses alike
-(Sec.~\ref{sec:analysis}). The archive is anonymized for review: the commit hashes that
-establish filing order would identify us, so the supplement ships the filed documents
-themselves under SHA-256, and the hashes become verifiable at camera-ready.
+(Sec.~\ref{sec:analysis}). We state the limit of this plainly, because it is the weakest link in
+the design. The archive is a version-controlled repository that was \emph{private} during the
+campaign: no third party observed the commits as they were made, and git's own timestamps are
+settable by the author. The supplement therefore ships the filed documents themselves under
+SHA-256, which establishes that they are unaltered --- not when they were written. At review time,
+filing order rests on our attestation; publishing the repository at camera-ready adds provenance
+but not proof, and we do not offer it as proof. A campaign starting today should anchor each
+filing, at the moment it is filed, in a timestamp no author controls --- an anonymized preregistration
+or a blockchain-anchored hash. Ours predates that decision, and we ask the reader to discount the
+prospectivity claim accordingly rather than to assume it.
 
 \paragraph{Released resources.} We release the apparatus, not a description of it: the pivot
 construction and its \pivotTypes-type grapheme vocabulary; the verified rendering pipeline; every

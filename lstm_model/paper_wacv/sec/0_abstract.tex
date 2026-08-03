@@ -1,39 +1,33 @@
 % E&D-track abstract (live). Algorithms-track version preserved as 0_abstract_algo.bak;
 % revert with: mv sec/0_abstract_algo.bak sec/0_abstract.tex  (see ED_TRACK_FLIP.md)
 \begin{abstract}
-Scene-text recognition (STR) is effectively solved for Latin script yet fails for most of the
-world's writing systems, and no benchmark measures the case that matters for the long tail:
-reading a script for which \emph{no real labeled image exists at all}. We contribute an
-\emph{evaluation protocol} for exactly this setting, and we run a forecasting campaign inside it
-that is adversarial to our own hypotheses. The protocol is leave-one-script-out over nine Brahmic
-scripts of a public real-image benchmark: the held-out script is seen only as rendered synthetic
-images, never a real photograph, and is read in a shared grapheme \emph{pivot} space; an
-out-of-benchmark rung extends it to Khmer, a disjoint Unicode block outside the benchmark. Every
-quantitative forecast was filed \emph{prospectively} --- committed and pushed before the run it
-predicts --- and every one is scored here, including the misses.
+Scene-text recognition is solved for Latin script and fails for most of the world's writing
+systems, yet no benchmark scores the case that decides the long tail: a script for which \emph{no
+real labeled image exists at all}. We contribute a protocol for that case and the infrastructure to
+audit it --- not a new dataset. It is leave-one-script-out over nine Brahmic scripts of a public
+benchmark: the held-out script appears only as rendered synthetic images, never a photograph, and
+is read in a round-trip-lossless shared grapheme \emph{pivot} space, so pivot accuracy is
+target-script accuracy. An out-of-benchmark rung extends it to Khmer, a disjoint Unicode block. We
+release the pivot construction, the rendering pipeline, every split and result, and a harness that
+re-derives all \verifyMacros\ numbers here and fails on mismatch; a tenth script needs only a
+correspondence map and a font.
 
-Under the protocol, a compact open vision--language model reads every held-out script
-(\wrrBmin--\wrrBmax\% word recognition, character accuracy up to \chaBbengali\%) from source-only
-baselines of \wrrAtamil--\wrrAdevanagari\%. We anchor that to interpretable references measured on
-the identical crops under the identical metric: stock per-script Tesseract, trained on real labeled
-target-script images, is beaten on \tessScriptsWon\ of nine (\wrrBmean\% vs.\ \tessMean\%
-macro-average), while a prompted 7B frontier VLM, scored with every generosity, reads only Bengali
-and Devanagari (\vlmWrrBengali/\vlmWrrDevanagari\%) and loses on \vlmScriptsWon\ of nine.
-The benchmark authors' own supervised specialists, trained on real labeled target images, reach
-\parseqMean\% on the same crops, of which we recover \oursOverCeiling.
-A controlled ablation isolates the pivot --- not fine-tuning per se --- as the transfer mechanism:
-replacing it with the stock BPE tokenizer under identical data, seed and recipe degrades all nine
-scripts ($\bpeRatioMin\times$--$\bpeRatioMax\times$; sign test $p=\bpeSignP$), on three despite
-equal-or-better character accuracy.
+Applied to a compact open vision--language model, the protocol makes every held-out script readable
+--- \wrrBmin--\wrrBmax\% word recognition from source-only baselines of
+\wrrAtamil--\wrrAdevanagari\% --- and scales it against three reference systems on the identical
+crops under the identical metric: stock per-script Tesseract, trained on real target-script
+images, loses on \tessScriptsWon\ of nine (\wrrBmean\% vs.\ \tessMean\%); a prompted
+7B VLM loses on \vlmScriptsWon\ of nine; the benchmark authors' supervised specialists reach
+\parseqMean\%, of which we recover \oursOverCeiling. Swapping the pivot for a stock BPE tokenizer
+under identical data, seed and recipe degrades all nine scripts (sign test $p=\bpeSignP$),
+isolating output-space structure as the mechanism.
 
-The forecasting record is where this campaign is most informative, and it is largely negative. The
-preregistered primary hypothesis (tokenizer fertility predicts transfer) is \emph{falsified}
-(Spearman $\spearFert$). A prospectively filed dose--response is \emph{log-linear with a
-script-invariant slope} ($\scaleSlope$ WRR/doubling) but the pre-committed magnitude missed by
-$\scaleSlopeRatio\times$. Pivot-space coverage orders scripts in-sample and fails out-of-sample
-($r=\covOOSr$). Khmer, forecast at \khmerPred\% before any Khmer recognizer existed, returned
-\khmerB\% --- a $\khmerResidRMSE\sigma$ miss that also locates the method's boundary. A
-from-scratch CRNN replicates the direction but not the magnitude. We therefore advance no
-predictive law. The protocol, the fully scored prospective-forecast record, and a machine-checked
-verification chain --- released in full --- are the contribution; the pivot is the evidence.
+Every forecast was committed before the run it predicts, and scoring them is what makes such an
+apparatus informative rather than decorative --- it rules things out. The preregistered primary,
+that tokenizer fertility predicts transfer, is \emph{falsified} ($\rho=\spearFert$); a filed
+dose--response is log-linear with a script-invariant slope but missed its committed magnitude by
+$\scaleSlopeRatio\times$; Khmer, forecast before any Khmer recognizer existed, returned \khmerB\%,
+a $\khmerResidRMSE\sigma$ miss that locates the method's boundary. We advance no predictive law --- we advance the
+protocol that refuted these claims, the infrastructure to check it, and a scored record of what it
+ruled out.
 \end{abstract}
