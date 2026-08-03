@@ -1,8 +1,9 @@
 \section{Limitations}
 \label{sec:limitations}
 
-\textbf{Absolute accuracy.} \wrrBmin--\wrrBmax\% WRR clears an off-the-shelf per-script OCR floor
-(\tessMean\%) but remains far below the supervised ceiling ($\parseqFinetuned\%$ with real labeled
+\textbf{Absolute accuracy.} Our macro-average (\wrrBmean\%) clears the off-the-shelf per-script OCR
+floor (\tessMean\%), but the weakest script does not --- Tamil (\wrrBtamil\%) falls below it --- and
+all nine remain far below the supervised ceiling ($\parseqFinetuned\%$ with real labeled
 data~\cite{bstd}); the synthetic $\rightarrow$ real domain gap is the dominant residual, quantified
 by training loss reaching ${\sim}0.06$ on synthetic data while real-image WRR stays modest.
 \textbf{One family, and a located boundary.} Nine scripts, one benchmark, one family whose shared
@@ -12,9 +13,9 @@ we make no claim beyond the family. \textbf{One architecture.} All transfer resu
 Florence-2; a from-scratch CRNN replicates the direction but at ${\sim}\crnnRatioMean$ of the
 magnitude (Sec.~\ref{sec:crnn}), so backbone-independence of the effect size is untested.
 \textbf{Model imperfections.} Gujarati underperforms its coverage, one Rung-A baseline breaches
-the predicted $<5$ line by 0.46 (Devanagari, \wrrAdevanagari), and the final-script forecast
-under-called by $1.5\sigma$; all reported, none explained away. \textbf{Compute.} Single 24\,GB
-GPU; budgets (700/source, 3{,}240 synthetic) were fixed by preregistration, not tuned.
+the predicted $<5$ line (Devanagari, \wrrAdevanagari), and the final-script forecast
+under-called by $\gurmukhiSigma\sigma$; all reported, none explained away. \textbf{Compute.} Single 24\,GB
+GPU; budgets (700/source, 3240 synthetic) were fixed by preregistration, not tuned.
 
 \section{Conclusion}
 \label{sec:conclusion}
@@ -28,7 +29,8 @@ fine-tuned in a shared grapheme pivot space with only rendered synthetic exposur
 ablation collapses that transfer, isolating output-space structure as the mechanism. The campaign ran under a frozen preregistration, and its forecasting record is
 mostly a record of misses: the primary hypothesis falsified, the scaling magnitude missed by
 $\scaleSlopeRatio\times$, coverage failing out-of-sample, and the one out-of-block forecast (Khmer)
-missed by $\khmerResidRMSE\sigma$. We advance no predictive law; every call is auditable by commit
-hash, and the failures locate the method's boundary rather than leaving it for someone else to
-find. Beyond the specific results we offer the recipe --- structural pivot, verified rendering,
+missed by $\khmerResidRMSE\sigma$. We advance no predictive law; every call ships in the
+supplement with its scoring receipt, under the provenance limits stated in
+Sec.~\ref{sec:prereg}, and the failures locate the method's boundary rather than leaving it for
+someone else to find. Beyond the specific results we offer the recipe --- structural pivot, verified rendering,
 forecast-before-you-run --- as a template for the long tail.

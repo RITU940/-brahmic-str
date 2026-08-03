@@ -154,6 +154,10 @@ def main():
     ratios = [b / p for b, p in zip(wrrB, wrrP)]
     add("bpeRatioMin", min(ratios))
     add("bpeRatioMax", max(ratios))
+    # upper end of the near-parity band named in Sec. 4.3 (the three scripts whose Rung-B CI
+    # does not clear the BPE point); kept as a macro so the prose carries no loose literal
+    near = ["devanagari", "kannada", "gujarati"]
+    add("bpeRatioNearParity", max(res[("B", s)]["WRR"] / res[("P", s)]["WRR"] for s in near))
     n_pos = sum(1 for b, p in zip(wrrB, wrrP) if b > p)
     assert n_pos == 9, f"sign test premise violated: only {n_pos}/9 positive"
     add("bpeSignP", 2 * 0.5 ** 9, 4)
@@ -191,6 +195,11 @@ def main():
 
     # ---- Qwen2.5-VL-7B extraction re-score (Amendment 4c, disclosed secondary) ----
     vlm = {s: json.load(open(f"result_vlm_qwen25_extracted_{s}.json")) for s in SCRIPTS}
+    # the preregistered primary metric on the RAW generations, quoted in Sec. 4.7: assert it is
+    # the same value on all nine rather than leaving the 0.0 as a loose literal in the prose
+    vlmraw = {s: json.load(open(f"result_vlm_qwen25_{s}.json"))["WRR"] for s in SCRIPTS}
+    assert len(set(vlmraw.values())) == 1, f"VLM raw primary not uniform: {vlmraw}"
+    add("vlmRawPrimary", next(iter(vlmraw.values())), 1)
     vw = {s: vlm[s]["WRR_extracted"] for s in SCRIPTS}
     vn = {s: vlm[s]["N"] for s in SCRIPTS}
     for s in SCRIPTS:
@@ -259,6 +268,11 @@ def main():
     add("khmerResidRMSE", (kh["B"]["WRR"] - num(tex["khmerPred"])) / num(tex["tfRMSE"]))
     add("khmerPredRecheck", num(tex["tfIntercept"])
         + num(tex["tfCovCoef"]) * khmeta["tokcov_test_by_source_vocab_pct"])
+    # Gurmukhi was filed with an explicit +-1 sigma band; sigma is half that band's width, so the
+    # miss size quoted in Sec. 5.3 and the Limitations is re-derived rather than asserted
+    glo, ghi = [float(v) for v in tex["predGurmukhiOneSig"].strip("[]").split(",")]
+    add("gurmukhiSigma", (res[("B", "gurmukhi")]["WRR"] - num(tex["predGurmukhi"])) / ((ghi - glo) / 2), 1)
+
     nineB = [res[("B", s)]["WRR"] for s in SCRIPTS]
     add("khmerPctOfMeanB", 100 * kh["B"]["WRR"] / (sum(nineB) / len(nineB)), 1)
     add("khmerPctOfMinB", 100 * kh["B"]["WRR"] / min(nineB), 1)

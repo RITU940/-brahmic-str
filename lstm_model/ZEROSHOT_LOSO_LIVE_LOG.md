@@ -890,3 +890,55 @@ page of headroom regained). Nothing of ours is running; the GPU is the labmate's
   the anonymised Paper-A PDF to the supplement as `parallel_submission.pdf`.
 - **Rebuild `wacv_supplementary.zip`** at submission (the current one predates these edits).
 - Confirm Paper-A's actual submission status before Aug 28 (the 20% rule binds Aug 28 – Oct 9).
+
+---
+
+## 19. SESSION 2026-08-04 — FULL-PAPER AUDIT (15 findings, all fixed)
+
+Owner asked for a whole-paper recheck. Read every section against the result JSONs. Four were real
+errors, not polish:
+
+1. **Conclusion contradicted §3.3.** It still read "every call is auditable by commit hash" — the
+   claim §3.3 had just retracted (private repo, unsigned commits). Now: "every call ships in the
+   supplement with its scoring receipt, under the provenance limits stated in Sec.~3.3."
+2. **Limitations was false at the low end.** "\wrrBmin--\wrrBmax\% clears the OCR floor
+   (\tessMean\%)" — Tamil (9.16) is *below* 14.35, which the paper admits two pages earlier. Now
+   scoped to the macro-average with Tamil named as the exception.
+3. **§4.3 mis-stated the character-accuracy pattern.** Claimed BPE "matches" pivot CharAcc on
+   Telugu; it exceeds it (55.10 vs 54.43). Checked all nine: BPE ≥ pivot on exactly Telugu,
+   Kannada, Devanagari. Reworded to "equals or exceeds" over those three.
+4. **Table 1 caption vs §4.3 disagreed** on what \bpeCIdisjoint means — caption said the Rung-B CI
+   clears the BPE *point*, text said the *interval*. `bootstrap_cis.py` computes `blo > phi`
+   (interval disjointness), so the caption was understating the measurement. Caption corrected.
+
+Typos/rendering: intro contribution 4 was missing "of nine" after \vlmScriptsWon; Table 2's caption
+printed **"~~73%"** (`${\sim}\parseqFinetuned\%$` where the macro already carries `{\sim}`);
+"most-favourable" ×2 normalised to US spelling.
+
+Precision: "hardest script (Malayalam)" → "script with least to borrow" (Tamil actually scores
+lower, 9.16 < 9.69); three bare correlations in §2 given their $\rho=$ labels; thousands separators
+made uniform (comma-free, matching the verified N macros); "effectively solved" hedge restored in
+the abstract.
+
+**Verification-claim integrity — the important one.** §3.3 promises the harness re-derives *every
+derivable number*, but four derived values sat in the prose as literals the harness never checked:
+the 1.16× near-parity ceiling, the 0.46 Rung-A breach, the 1.5σ Gurmukhi miss and the 0.0% VLM raw
+primary. All four macro-ised; `verify_wacv_numbers.py` extended with a near-parity check, a
+Gurmukhi-σ derivation from the filed ±1σ band, and a VLM raw-primary check that *asserts*
+uniformity across all nine rather than trusting the literal. **155 → 158 macros, 0 mismatches.**
+
+Clean on inspection: anonymity (no name/affiliation/repo URL/local path in any .tex or .bib), all 28
+real bib entries verified against arXiv (`parallelsub` flagged MANUAL by design), no
+cited-but-undefined keys, no repeated words, no unbalanced math, 0 overfull boxes, 0 undefined refs.
+CRNN lifts re-checked against the raw JSONs (Rung A is exactly 0.0 on Tamil/Telugu, so reusing the
+Rung-B macro as the lift is arithmetically correct; Oriya has its own \crnnLiftOriya). Rung-A really
+does track coverage (Spearman +0.68, computed this session). Content ends p8, refs p8–10.
+
+`make_overleaf_zip.sh` added: the committed `wacv_paper_overleaf.zip` had been **stale since Aug 1
+17:55** — old title, 28-entry bib, the colliding fig3 — so uploading it would have shipped the draft
+we were fixing. The zip is now a gitignored build product; re-run the script after any edit.
+
+**Still open (owner/submission-day):** red `TBD` submission ID + `parallel_submission.pdf` in the
+supp; `\wacvPaperID`; rebuild `wacv_supplementary.zip`; advisor track sign-off and the **Aug 21**
+author freeze. Optional: `fig2_bars.pdf` is orphaned (dropped in the 8-page fit) and there is now
+~1 page of headroom to reinstate it.

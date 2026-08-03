@@ -3,3 +3,6 @@
 # anonymous supplementary bundle (regenerate with build_artifact_bundle.sh)
 artifact_bundle/
 wacv_supplementary.zip
+
+# Overleaf upload bundle: build product of make_overleaf_zip.sh, rebuilt on demand
+wacv_paper_overleaf.zip

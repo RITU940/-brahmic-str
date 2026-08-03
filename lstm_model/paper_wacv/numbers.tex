@@ -66,6 +66,7 @@
 % ---- ablation summary statistics (all nine scripts) ----
 \newcommand{\bpeRatioMin}{1.08}       % Devanagari: 30.09/27.99
 \newcommand{\bpeRatioMax}{3.91}       % Tamil: 9.16/2.34
+\newcommand{\bpeRatioNearParity}{1.16} % upper end of the near-parity band (Kannada/Gujarati)
 \newcommand{\bpeSignP}{0.0039}        % exact two-sided sign test, 9/9 same direction
 % exploratory (post hoc, NOT preregistered): fertility vs BPE-penalty ratio B/Bbpe
 \newcommand{\spearFertPenalty}{+0.73}     % Spearman(fertility, B/Bbpe), n=9
@@ -90,6 +91,8 @@
 
 % ---- prospective predictions (filed, committed and pushed before each run) ----
 \newcommand{\predKannada}{{\sim}15}\newcommand{\realKannada}{15.42}
+\newcommand{\gurmukhiSigma}{1.5}      % (realized - filed) / half the filed +-1 sigma band
+\newcommand{\vlmRawPrimary}{0.0}      % preregistered primary metric on raw generations, all nine
 \newcommand{\predGurmukhi}{16.2}
 \newcommand{\predGurmukhiOneSig}{[12.2, 20.2]}
 \newcommand{\predGurmukhiTwoSig}{[8.2, 24.1]}
@@ -185,8 +188,8 @@
 \newcommand{\crnnRatioOriya}{0.18}    % 4.5/25.38, in the predicted [0.15,0.60] band
 \newcommand{\crnnRatioMean}{0.11}     % mean CRNN-B / Florence-B over the three (predicted 0.35)
 
-\newcommand{\pivotTypes}{1{,}624}   % grapheme-cluster types injected for the source pool
-\newcommand{\verifyMacros}{155}     % macros re-derived by verify_wacv_numbers.py (self-checked)
+\newcommand{\pivotTypes}{1624}   % grapheme-cluster types injected for the source pool
+\newcommand{\verifyMacros}{158}     % macros re-derived by verify_wacv_numbers.py (self-checked)
 
 % ---- Khmer out-of-benchmark probe (Amendment 4b), 2/2 complete 2026-07-31 ----
 % Preregistration PROSPECTIVE_PREDICTION_KHMER.md (filed+pushed 2026-07-22, commit d3a3130,

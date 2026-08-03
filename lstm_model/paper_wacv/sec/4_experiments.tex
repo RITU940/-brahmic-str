@@ -32,7 +32,7 @@ supervised-specialist references of Sec.~\ref{sec:anchors}, and our own forecast
   Rung~A: source scripts only. Rung~B: + synthetic target renderings, zero real target images
   (95\% CI = percentile bootstrap over test samples, 5000 resamples). B$_{\mathrm{bpe}}$: Rung~B
   with the grapheme-cluster vocabulary removed (stock tokenizer), identical data and seed. On
-  \bpeCIdisjoint/9 scripts the Rung-B CI lies strictly above the B$_{\mathrm{bpe}}$ point.
+  \bpeCIdisjoint/9 scripts the Rung-B CI lies strictly above the B$_{\mathrm{bpe}}$ 95\% CI.
   Reference systems on these same crops are in Table~\ref{tab:anchors}.}
   \label{tab:main}
 \end{table}
@@ -41,7 +41,7 @@ Table~\ref{tab:main} is the campaign's core. Every one of the nine scripts moves
 near-floor source-only baseline (\wrrAtamil--\wrrAdevanagari\% WRR; the raw pre-trained model
 reads none of them) to \wrrBmin--\wrrBmax\% WRR with character accuracy \chaBmalayalam--%
 \chaBbengali\% --- without a single real target image. Transfer does not collapse even on the
-hardest script (Malayalam, lowest pivot coverage at \covmalayalam\%: still
+script with least to borrow (Malayalam, lowest pivot coverage at \covmalayalam\%: still
 $\wrrAmalayalam\!\rightarrow\!\wrrBmalayalam$). Rung-A baselines track incidental pivot-space
 coverage (highest for Devanagari, \wrrAdevanagari\%), confirming the pivot shares structure
 before any target exposure.
@@ -72,10 +72,10 @@ before any target exposure.
   \caption{Every reference system on the \emph{identical} crops, through the identical pivot
   mapping and exact-match metric. \textbf{Tess.} --- stock per-script Tesseract~5, trained on real
   labeled images of each target script (off-the-shelf floor). \textbf{Qwen} ---
-  Qwen2.5-VL-7B prompted zero-shot, scored under the disclosed most-favourable extraction.
+  Qwen2.5-VL-7B prompted zero-shot, scored under the disclosed most-favorable extraction.
   \textbf{PARSeq} --- the benchmark authors' own supervised specialists, also trained on real
   labeled target images; BSTD train and test share no source image on any script, and the measured
-  mean is in line with the ${\sim}\parseqFinetuned\%$ they report. \textbf{o/c} = ours\,/\,ceiling.
+  mean is in line with the $\parseqFinetuned\%$ they report. \textbf{o/c} = ours\,/\,ceiling.
   Both trained-on-real systems presuppose exactly the data whose absence defines our setting.}
   \label{tab:anchors}
 \end{table}
@@ -86,8 +86,8 @@ Absolute numbers need a scale, and the supervised ceiling alone is the wrong one
 buys, and we do not present that as close. Against the \textbf{floor} the picture inverts. Stock
 Tesseract ships a per-script model for every script here, trained on real target images, and is
 what a practitioner deploys today when a script is not otherwise served: it reaches \tessMean\%,
-and our zero-real-image model is ahead on \tessScriptsWon\ of nine, by $\tessMarginMean$ points on
-average, losing only Tamil. Tesseract is a document engine outside its design domain, so this is
+and our zero-real-image model is ahead on \tessScriptsWon\ of nine, and ahead by $\tessMarginMean$
+points on macro-average, losing only Tamil. Tesseract is a document engine outside its design domain, so this is
 no claim to be the better recognizer in general --- it is evidence that the zero-real-image regime
 has already passed what is obtainable off the shelf. Both hold at once: far from what real labels
 buy, past what is deployable without them.
@@ -102,11 +102,10 @@ degrades all nine scripts (Table~\ref{tab:main}), from $\bpeRatioMin\times$ (Dev
 two-sided sign test, $p=\bpeSignP$). The bootstrap makes the per-script margin concrete: on
 \bpeCIdisjoint\ of nine the Rung-B 95\% CI clears the B$_{\mathrm{bpe}}$ interval outright
 (Table~\ref{tab:main}); the three exceptions --- Devanagari, Kannada, Gujarati --- are exactly the
-near-parity scripts ($\bpeRatioMin$--$1.16\times$), consistent with the direction holding but the
-magnitude shrinking as fertility falls. The character-accuracy pattern is diagnostic: on Telugu
-the BPE model \emph{matches} the pivot model's character accuracy (\chaPtelugu\% vs.\
-\chaBtelugu\%), and on Kannada and Devanagari slightly exceeds it, yet word accuracy drops in
-every case. Synthetic fine-tuning alone teaches the model to see the characters; the
+near-parity scripts ($\bpeRatioMin$--$\bpeRatioNearParity\times$), consistent with the direction holding but the
+magnitude shrinking as fertility falls. The character-accuracy pattern is diagnostic: on Telugu,
+Kannada and Devanagari the BPE model \emph{equals or exceeds} the pivot model's character accuracy
+(Telugu \chaPtelugu\% vs.\ \chaBtelugu\%), yet word accuracy drops in every case. Synthetic fine-tuning alone teaches the model to see the characters; the
 cluster-level output space is what assembles them into correct whole words. The margin itself
 is not noise: it grows with the held-out script's fertility, largest exactly on the
 high-fertility Dravidian scripts where transfer is hardest
@@ -226,9 +225,9 @@ the effect --- but it is a single script, and we state it as suggestive rather t
 
 We prompt Qwen2.5-VL-7B~\cite{qwen25vl} zero-shot on the same nine real test sets (fixed prompt,
 greedy decoding), preregistered under Amendment~4c. Under the declared primary metric --- exact
-word match on the raw generation, our shared normalization --- it scores $0.0\%$ on all nine: the
+word match on the raw generation, our shared normalization --- it scores $\vlmRawPrimary\%$ on all nine: the
 chat model wraps every answer in prose (``The text in the image is~\dots''). We therefore report a
-\emph{disclosed, most-favourable} re-score (Table~\ref{tab:anchors}): we extract the first quoted span
+\emph{disclosed, most-favorable} re-score (Table~\ref{tab:anchors}): we extract the first quoted span
 from each generation and apply the identical metric. Even so, the VLM reads only the two
 highest-resource scripts with any competence --- Bengali \vlmWrrBengali\% and Devanagari
 \vlmWrrDevanagari\% --- and is at or near zero on six of the remaining seven (at most

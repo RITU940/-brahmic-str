@@ -29,7 +29,7 @@ structurally corresponding syllables become \emph{identical} strings.
 
 \paragraph{Grapheme-cluster vocabulary.} Within pivot space we segment text into grapheme
 clusters (consonant--virama conjuncts kept whole, dependent signs attached) and inject the
-resulting cluster inventory (1{,}624 types for the source pool) as dedicated tokens into the
+resulting cluster inventory (\pivotTypes\ types for the source pool) as dedicated tokens into the
 recognizer's tokenizer. The alternative --- letting the stock byte-BPE tokenizer segment
 pivot-space text --- is the ablation of Sec.~\ref{sec:experiments}: it sees the same pivot
 strings but fragments clusters into sub-syllabic pieces. Fertility (mean clusters per word)
@@ -51,7 +51,7 @@ language contributes exactly 700 train / 90 val real images (seed 42), giving ba
 exposure by construction; source-side data size is therefore controlled, unlike prior
 cross-lingual STR studies~\cite{crosslingstr}.
 
-\noindent\textbf{Synthetic target.} 3{,}240 images per target language: benchmark-vocabulary
+\noindent\textbf{Synthetic target.} 3240 images per target language: benchmark-vocabulary
 words rendered in fontconfig-verified fonts (multiple faces per script, libraqm shaping), each
 render checked non-blank; the rendered word enters training as its pivot transcription. No real
 photograph of $S$ is ever seen. Scripts written by two source languages receive two languages'
@@ -97,4 +97,6 @@ re-derives every derivable number in this paper from those result files and exit
 mismatch (\verifyMacros\ macros, zero mismatches at submission). Extending the protocol to a tenth
 script needs only a correspondence map and a font --- the Khmer rung is the worked example, and
 the harness is unchanged.
-% Double-blind note: shipped as anonymous supplementary; public mirror + real hashes at camera-ready.
+% Double-blind note: shipped as the anonymous supplementary ZIP. Owner decided 2026-08-03: NO public
+% mirror before submission -- see the prospectivity paragraph above and live log s18.4 (the archive
+% repo is private and its commits unsigned, so a mirror would add provenance, not proof).
