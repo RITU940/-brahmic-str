@@ -322,6 +322,7 @@ def main():
     add("parseqMean", pq_mean)
     ours_mean = sum(res[("B", s)]["WRR"] for s in SCRIPTS) / len(SCRIPTS)
     add("oursOverCeiling", ours_mean / pq_mean)
+    add("oursOverCeilingPct", 100.0 * ours_mean / pq_mean, 0)
     add("ceilingOverOurs", pq_mean / ours_mean, 1)
     for s in SCRIPTS:
         add(f"ratio{s.capitalize()}", res[("B", s)]["WRR"] / pq[s]["WRR"])

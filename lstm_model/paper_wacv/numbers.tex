@@ -189,7 +189,7 @@
 \newcommand{\crnnRatioMean}{0.11}     % mean CRNN-B / Florence-B over the three (predicted 0.35)
 
 \newcommand{\pivotTypes}{1624}   % grapheme-cluster types injected for the source pool
-\newcommand{\verifyMacros}{168}     % macros re-derived by verify_wacv_numbers.py (self-checked)
+\newcommand{\verifyMacros}{169}     % macros re-derived by verify_wacv_numbers.py (self-checked)
 
 % ---- Khmer out-of-benchmark probe (Amendment 4b), 2/2 complete 2026-07-31 ----
 % Preregistration PROSPECTIVE_PREDICTION_KHMER.md (filed+pushed 2026-07-22, commit d3a3130,
@@ -256,6 +256,9 @@
 \newcommand{\parseqGurmukhi}{73.6}
 \newcommand{\parseqMean}{66.26}          % macro-avg over the nine
 \newcommand{\oursOverCeiling}{0.29}      % our macro-avg / the ceiling's
+% Same quantity as a percentage. A bare 0.29 right after a percentage reads as
+% 0.29 percent at a glance, understating the result by two orders of magnitude.
+\newcommand{\oursOverCeilingPct}{29}     % ... as a percentage of the ceiling
 % per-script ours/ceiling ratios (Table tab:anchors)
 \newcommand{\ratioTamil}{0.12}
 \newcommand{\ratioTelugu}{0.36}
