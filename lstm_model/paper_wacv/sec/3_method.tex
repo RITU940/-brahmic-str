@@ -66,17 +66,17 @@ For each held-out script $S$ of the nine in the benchmark~\cite{bstd}:
 \noindent\textbf{Sources.} All benchmark languages whose script is not $S$ (languages sharing
 $S$, e.g.\ Assamese for Bengali script, are excluded, so $S$ is genuinely unseen). Each source
 language contributes exactly 700 train / 90 val real images (seed 42), giving balanced source
-exposure by construction; source-side data size is therefore controlled, unlike prior
+exposure by construction. Source-side data size is therefore controlled, unlike prior
 cross-lingual STR studies~\cite{crosslingstr}.
 
 \noindent\textbf{Synthetic target.} 3240 images per target language: benchmark-vocabulary
 words rendered in fontconfig-verified fonts (multiple faces per script, libraqm shaping), each
-render checked non-blank; the rendered word enters training as its pivot transcription. No real
+render checked non-blank, and the rendered word enters training as its pivot transcription. No real
 photograph of $S$ is ever seen. Scripts written by two source languages receive two languages'
 worth of renderings ($2\times$ budget), a covariate disclosed at preregistration time that
 becomes central in Sec.~\ref{sec:analysis}.
 
-\noindent\textbf{Rungs.} Rung~A trains on sources only; Rung~B adds the synthetic target set;
+\noindent\textbf{Rungs.} Rung~A trains on sources only. Rung~B adds the synthetic target set, and
 Rung~B$_{\mathrm{bpe}}$ repeats Rung~B with the grapheme-cluster injection removed (stock
 tokenizer), identical data, seed, and recipe. All rungs fine-tune Florence-2
 (0.23B)~\cite{florence2} with LoRA ($r\!=\!16$, $\alpha\!=\!32$, dropout 0.05), lr $10^{-4}$,
@@ -89,9 +89,9 @@ protocol~\cite{bstd,indicstr12}, plus character accuracy ($1-\mathrm{CER}$).
 \subsection{Preregistration and prospective predictions}
 \label{sec:prereg}
 
-The campaign ran under a frozen preregistration with an append-only amendment log; every
+The campaign ran under a frozen preregistration with an append-only amendment log --- every
 amendment was filed before the results it concerns existed. Descriptors entering the transfer
-horse-race were computed result-blind: fertility and pivot coverage before any Rung-B result;
+horse-race were computed result-blind: fertility and pivot coverage before any Rung-B result, and
 a frozen-encoder visual-similarity control before the third. Quantitative forecasts for later
 runs were committed and pushed to a version-controlled archive \emph{before} those runs trained,
 and are scored against a rule fixed at filing time, hits and misses alike
@@ -107,12 +107,12 @@ value is in the supplement and checkable against the results, so a reader can co
 is scored by the rule filed with it rather than one chosen later. The shape of the record is itself
 evidence: documents written after the fact would not have produced a falsified primary hypothesis, a
 $\scaleSlopeRatio\times$ magnitude miss and a $\khmerResidRMSE\sigma$ out-of-block miss. Backdating
-buys hits, not this. The forecasts are genuine; their \emph{timing} is unwitnessed.
+buys hits, not this. The forecasts are genuine. Their \emph{timing} is unwitnessed.
 
 The general lesson is a protocol one, and it may be the more useful contribution. A campaign can be
 run honestly and still end up unverifiable, which is the exact failure this apparatus exists to
 prevent. Anchor each filing, as it is filed, in a timestamp no author controls: an anonymized
-public preregistration, or a hash on an append-only ledger. Ours predates that decision; anyone
+public preregistration, or a hash on an append-only ledger. Ours predates that decision. Anyone
 building on this protocol should not repeat it.
 
 \paragraph{Released resources.} We release the apparatus, not a description of it: the pivot

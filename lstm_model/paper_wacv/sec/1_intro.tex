@@ -23,7 +23,7 @@ reader re-derive every number. The protocol is leave-one-script-out (LOSO) over 
 a public real-image benchmark~\cite{bstd}: for each held-out script we train a source-only model
 (Rung~A) and a source+synthetic-target model (Rung~B), both evaluated on the held-out script's
 \emph{real} test images. A further out-of-benchmark probe holds out Khmer, whose Unicode block and
-coeng-based stacking sit outside the nine; it returns \khmerB\% WRR against a \khmerPred\% forecast
+coeng-based stacking sit outside the nine. It returns \khmerB\% WRR against a \khmerPred\% forecast
 filed before we had trained one, locating the protocol's boundary as sharply as its
 successes. The recognizer exercising this machinery is a compact open VLM (Florence-2,
 0.23B~\cite{florence2}) fine-tuned in a \emph{shared grapheme pivot space}: Brahmic scripts share
@@ -50,7 +50,7 @@ datasets.
   images.
   \item \textbf{Prospective prediction as an evaluation practice --- and a mostly negative
   record.} A frozen, version-controlled preregistration with committed-before-run forecasts, and a
-  discipline of scoring every call including its misses. We advance no predictive law; the record
+  discipline of scoring every call including its misses. We advance no predictive law --- the record
   is the contribution, and it is largely one of failures. The preregistered primary (tokenizer
   \emph{fertility} predicts transfer) was \emph{falsified} (Spearman $\spearFert$); a prospectively
   filed synthetic-exposure study gives a \emph{script-invariant, log-linear} dose--response

@@ -29,6 +29,12 @@ cp -- zeroshot_loso_meta_khmer.json "$OUT/results/" 2>/dev/null
 # verify_wacv_numbers.py reads this for the \rt* macros; without it the shipped
 # harness cannot re-derive the pivot round-trip numbers the paper quotes.
 cp -- pivot_roundtrip_audit.json  "$OUT/results/" 2>/dev/null
+# The paper claims a harness that re-derives every result number and fails on
+# mismatch. A reviewer must be able to RUN it from this zip, so ship its two
+# remaining inputs and numbers.tex itself -- without them it dies on import.
+cp -- law_fit_results_brahmic.json      "$OUT/results/" 2>/dev/null
+cp -- visual_similarity_descriptors.json "$OUT/results/" 2>/dev/null
+cp -- paper_wacv/numbers.tex            "$OUT/" 2>/dev/null
 # The \parallelsub reference promises this file by name. Built by anonymising
 # paper/main.tex (authors, emails, affiliation); checked to contain no identity
 # string in rendered text or raw bytes. Without it the citation points at nothing.
@@ -81,15 +87,26 @@ and model checkpoints (size). Nothing here requires network access to inspect.
 ## How to check the paper's numbers
 `code/verify_wacv_numbers.py` re-derives every derivable macro in the paper's
 `numbers.tex` from the result JSONs in `results/` and prints a per-macro pass/fail table.
-It is the same script we run before each build. Point it at a checkout containing
-`paper_wacv/numbers.tex`; it exits non-zero on any mismatch.
+It is the same script we run before each build, and it runs from this zip with no
+setup and no network:
+
+    cd code && python3 verify_wacv_numbers.py
+
+It needs only the standard library. Expect a per-macro table ending in
+`168 macros checked, 0 mismatch(es)` and exit status 0; it exits non-zero on any
+mismatch. `numbers.tex` (the paper's single source for every quoted number) sits at
+the top of this bundle so the check is self-contained.
 
 ## On the preregistration chain
 `preregistration/` contains predictions filed *before* the runs they predict, together
-with the receipts that score them -- hits and misses alike. In the anonymous version the
-commit hashes and repository that establish the filing order are withheld, since they
-would identify the authors. They are verifiable at camera-ready; `SHA256SUMS.txt` lets
-you confirm that the files you are reading are the files we will publish.
+with the receipts that score them -- hits and misses alike. Read Sec. 3.3 of the paper
+for the limit on this: the archive was a private repository, so no third party observed
+the commits as they were made and git's own timestamps are settable by the author.
+`SHA256SUMS.txt` establishes that these files are unaltered, not when they were written.
+Filing order is attested here, not proven, and we do not present it as proven. What you
+can check directly is that every forecast is scored by the rule filed with it: the bands
+and point values are in these documents, and the results they are scored against are in
+`results/`.
 
 ## Anonymisation
 Author names, account names, hostnames and repository identifiers were mechanically

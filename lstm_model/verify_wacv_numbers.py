@@ -12,9 +12,33 @@ Sources of truth:
 Coverage macros (\cov*) are declared result-blind inputs (computed 2026-06-25);
 they are read from numbers.tex and used as inputs to the correlation/fit checks.
 """
-import json, re, sys, math, itertools
+import json, re, sys, math, itertools, os
 
-TEX = "paper_wacv/numbers.tex"
+
+def _locate():
+    """Find numbers.tex and the result JSONs in either layout.
+
+    Two callers matter and they see different trees: we run this from the repo
+    root, and a reviewer runs it from the anonymous supplement, where the code
+    sits in code/ and the data in ../results/. Resolving both means the harness
+    the paper advertises actually executes for the person being asked to trust it.
+    """
+    here = os.path.dirname(os.path.abspath(__file__))
+    probe = "result_zs_loso_rungB_tamil.json"
+    for data, tex in [
+            (os.getcwd(), os.path.join(os.getcwd(), "paper_wacv", "numbers.tex")),
+            (here, os.path.join(here, "paper_wacv", "numbers.tex")),
+            (os.path.join(here, os.pardir, "results"),
+             os.path.join(here, os.pardir, "numbers.tex")),
+    ]:
+        if os.path.isfile(tex) and os.path.isfile(os.path.join(data, probe)):
+            return os.path.abspath(data), os.path.abspath(tex)
+    sys.exit("could not locate numbers.tex and the result JSONs; run this from the "
+             "repository root, or from code/ inside the supplementary bundle")
+
+
+_DATA, TEX = _locate()
+os.chdir(_DATA)          # every result file below is opened relative to the data root
 SCRIPTS = ["tamil", "telugu", "kannada", "malayalam", "oriya",
            "gujarati", "bengali", "devanagari", "gurmukhi"]
 TWOX = {"bengali", "devanagari"}  # disclosed 2x synthetic budget

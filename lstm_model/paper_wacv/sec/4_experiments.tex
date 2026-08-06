@@ -101,14 +101,14 @@ shelf.
 Removing the grapheme-cluster vocabulary, with the same pivot strings, images and seed,
 degrades all nine scripts (Table~\ref{tab:main}), from $\bpeRatioMin\times$ (Devanagari,
 \wrrBdevanagari\ $\rightarrow$ \wrrPdevanagari\ WRR) to $\bpeRatioMax\times$ (Tamil,
-\wrrBtamil\ $\rightarrow$ \wrrPtamil): the margin varies, the direction never does (exact
+\wrrBtamil\ $\rightarrow$ \wrrPtamil). The margin varies, the direction never does (exact
 two-sided sign test, $p=\bpeSignP$). The bootstrap makes the per-script margin concrete: on
 \bpeCIdisjoint/9 scripts the Rung-B 95\% CI clears the B$_{\mathrm{bpe}}$ interval outright
 (Table~\ref{tab:main}); the three exceptions, Devanagari, Kannada and Gujarati, are exactly the
-near-parity scripts ($\bpeRatioMin$--$\bpeRatioNearParity\times$), consistent with the direction holding but the
+near-parity scripts ($\bpeRatioMin$--$\bpeRatioNearParity\times$) --- consistent with the direction holding but the
 magnitude shrinking as fertility falls. The character-accuracy pattern is diagnostic: on Telugu,
 Kannada and Devanagari the BPE model \emph{equals or exceeds} the pivot model's character accuracy
-(Telugu \chaPtelugu\% vs.\ \chaBtelugu\%), yet word accuracy drops in every case. Synthetic fine-tuning alone teaches the model to see the characters; the
+(Telugu \chaPtelugu\% vs.\ \chaBtelugu\%), yet word accuracy drops in every case. Synthetic fine-tuning alone teaches the model to see the characters. The
 cluster-level output space is what assembles them into correct whole words.
 
 \subsection{Dose--response: synthetic budget}
@@ -124,7 +124,7 @@ $p=\scaleFp$; Fig.~\ref{fig:scaling}). This is the preregistered \emph{form}, an
 
 The preregistered \emph{magnitude} does not. The frozen instrument projected $+\tfTwoxBonus$ WRR
 per doubling, transported from the in-script $2\times$-synthetic experiment that fit the two-factor
-model (Sec.~\ref{sec:analysis}); the swept slope excludes that by a factor of $\scaleSlopeRatio$,
+model (Sec.~\ref{sec:analysis}). The swept slope excludes that by a factor of $\scaleSlopeRatio$,
 with the faithful doubling step ($3240\!\rightarrow\!6480$) gaining $\scaleFaithfulObs$ WRR against
 a predicted $\scaleFaithfulPred$, outside the $\pm2$\,RMSE band and reported as filed (open
 squares, Fig.~\ref{fig:scaling}). Two further preregistered edges resolve the same way: the
