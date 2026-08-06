@@ -1,9 +1,9 @@
 \section{Experiments}
 \label{sec:experiments}
 
-The comparisons that match our question are the source-only baseline (Rung~A), the raw
-pre-trained VLM (WRR $\florenceRawZS$), the stock-BPE ablation, the off-the-shelf, frontier-VLM and
-supervised-specialist references of Sec.~\ref{sec:anchors}, and our own forecasts.
+Our comparisons are the source-only baseline (Rung~A), the raw pre-trained VLM
+(WRR $\florenceRawZS$), the stock-BPE ablation, the reference systems of
+Sec.~\ref{sec:anchors}, and our own forecasts.
 
 \subsection{Main result: every unseen script becomes readable}
 \label{sec:mainresult}
@@ -37,25 +37,18 @@ supervised-specialist references of Sec.~\ref{sec:anchors}, and our own forecast
   \label{tab:main}
 \end{table}
 
-Every one of the nine scripts moves from a
-near-floor source-only baseline (\wrrAtamil--\wrrAdevanagari\% WRR; the raw pre-trained model
-reads none of them) to \wrrBmin--\wrrBmax\% WRR with character accuracy \chaBmalayalam--%
-\chaBbengali\% --- without a single real target image. Transfer does not collapse even on the
-script with least to borrow (Malayalam, lowest pivot coverage at \covmalayalam\%: still
-$\wrrAmalayalam\!\rightarrow\!\wrrBmalayalam$). Rung-A baselines track incidental pivot-space
-coverage (highest for Devanagari, \wrrAdevanagari\%), confirming the pivot shares structure
-before any target exposure.
+Every one of the nine moves from a near-floor source-only baseline
+(\wrrAtamil--\wrrAdevanagari\% WRR; the raw pre-trained model reads none of them) to
+\wrrBmin--\wrrBmax\% WRR at \chaBmalayalam--\chaBbengali\% character accuracy, without a single
+real target image. Transfer holds even where there is least to borrow: Malayalam has the lowest
+pivot coverage (\covmalayalam\%) and still goes
+$\wrrAmalayalam\!\rightarrow\!\wrrBmalayalam$. Rung~A tracks incidental pivot-space coverage,
+highest for Devanagari, so the pivot shares structure before any target exposure.
 
-% Fig 2: grouped bars A/Bbpe/B per script -- full width; the PDF is 6.9in natural, so a
-% single-column \figure would shrink it to 47% and make the tick labels unreadable.
-\begin{figure*}[t]
-  \centering
-  \includegraphics[width=\textwidth]{figs/fig2_bars.pdf}
-  \caption{Transfer by script, ordered by Rung~B. Source-only baselines (grey) sit at the floor;
-  the grapheme pivot (blue) lifts all nine, and the stock BPE tokenizer (orange) recovers less on
-  every one under identical data, seed and recipe (Sec.~\ref{sec:ablation}).}
-  \label{fig:bars}
-\end{figure*}
+% The per-script A/Bbpe/B bar chart lived here. Dropped: Table 1 carries the same three
+% series per script AND the bootstrap CIs and character accuracy, so the figure was strictly
+% redundant, and its full-width float cost ~38 column-lines. fig2_bars.pdf is still built by
+% make_wacv_figs.py; it is simply not included. Numbering below shifted down by one.
 
 \subsection{Floor and ceiling}
 \label{sec:anchors}
@@ -96,22 +89,22 @@ Absolute numbers need a scale, and the supervised ceiling alone is the wrong one
 \parseqMean\%): real labels remain worth roughly $\ceilingOverOurs\times$ what our synthetic pivot
 buys, and we do not present that as close. Against the \textbf{floor} the picture inverts. Stock
 Tesseract ships a per-script model for every script here, trained on real target images, and is
-what a practitioner deploys today when a script is not otherwise served: it reaches \tessMean\%,
-and our zero-real-image model is ahead on \tessScriptsWon\ of nine, and ahead by $\tessMarginMean$
-points on macro-average, losing only Tamil. Tesseract is a document engine outside its design domain, so this is
-no claim to be the better recognizer in general --- it is evidence that the zero-real-image regime
-has already passed what is obtainable off the shelf.
+what a practitioner deploys today: it reaches \tessMean\%,
+and our zero-real-image model is ahead by $\tessMarginMean$ points on macro-average, losing only
+Tamil. It is a document engine outside its design domain, so this is no claim to be the better
+recognizer, only evidence that the zero-real-image regime has passed what is obtainable off the
+shelf.
 
 \subsection{The pivot is the mechanism: BPE ablation}
 \label{sec:ablation}
 
-Removing the grapheme-cluster vocabulary --- same pivot strings, same images, same seed ---
-degrades all nine scripts (Table~\ref{tab:main}, Fig.~\ref{fig:bars}), from $\bpeRatioMin\times$ (Devanagari,
+Removing the grapheme-cluster vocabulary, with the same pivot strings, images and seed,
+degrades all nine scripts (Table~\ref{tab:main}), from $\bpeRatioMin\times$ (Devanagari,
 \wrrBdevanagari\ $\rightarrow$ \wrrPdevanagari\ WRR) to $\bpeRatioMax\times$ (Tamil,
 \wrrBtamil\ $\rightarrow$ \wrrPtamil): the margin varies, the direction never does (exact
 two-sided sign test, $p=\bpeSignP$). The bootstrap makes the per-script margin concrete: on
-\bpeCIdisjoint\ of nine the Rung-B 95\% CI clears the B$_{\mathrm{bpe}}$ interval outright
-(Table~\ref{tab:main}); the three exceptions --- Devanagari, Kannada, Gujarati --- are exactly the
+\bpeCIdisjoint/9 scripts the Rung-B 95\% CI clears the B$_{\mathrm{bpe}}$ interval outright
+(Table~\ref{tab:main}); the three exceptions, Devanagari, Kannada and Gujarati, are exactly the
 near-parity scripts ($\bpeRatioMin$--$\bpeRatioNearParity\times$), consistent with the direction holding but the
 magnitude shrinking as fertility falls. The character-accuracy pattern is diagnostic: on Telugu,
 Kannada and Devanagari the BPE model \emph{equals or exceeds} the pivot model's character accuracy
@@ -122,29 +115,26 @@ cluster-level output space is what assembles them into correct whole words.
 \label{sec:scaling}
 
 We hold the recipe fixed and vary only the number of synthetic target images, for the three
-scripts whose held-out budget we can grow --- Malayalam, Kannada, Telugu --- across
+scripts whose held-out budget we can grow (Malayalam, Kannada, Telugu) across
 $\{810, 1620, 6480, 12960\}$ renderings; the external Rung-B point (3240) anchors each curve.
 Word recognition is cleanly log-linear in synthetic exposure ($R^2$ from \scaleRtwoMin\ to
 \scaleRtwoMax\ per script), and the slope is \emph{script-invariant}: a single shared
 $\scaleSlope$ WRR per doubling fits all three, with no evidence of differing slopes ($F$-test
 $p=\scaleFp$; Fig.~\ref{fig:scaling}). This is the preregistered \emph{form}, and it holds.
 
-The preregistered \emph{magnitude} does not. The frozen instrument projected
-$+\tfTwoxBonus$ WRR per doubling --- transported from the in-script $2\times$-synthetic experiment
-that fit the two-factor model (Sec.~\ref{sec:analysis}) --- which the swept slope excludes by a
-factor of $\scaleSlopeRatio$: the faithful doubling step ($3240\!\rightarrow\!6480$) gained
-$\scaleFaithfulObs$ WRR on average against a predicted $\scaleFaithfulPred$, a miss outside the
-$\pm2$\,RMSE band and reported as filed (open squares, Fig.~\ref{fig:scaling}). Two further
-preregistered edges resolve the same way. The low-budget prediction of near-collapse toward the
-Rung-A floor is \emph{falsified} --- Kannada and Telugu already reach double digits at 810 images,
-so transfer is concave, not linear, in log-budget --- while the top step
-($6480\!\rightarrow\!12960$), which adds renderings at near-fixed lexicon, gains little on Kannada
-(onset of lexicon saturation) but keeps pace on Malayalam and Telugu. Synthetic scaling is thus
-real and orderly, but far shallower than an in-script extrapolation predicts; we report the
-confirmed form and the missed coefficient together. We do \emph{not} promote pivot-space coverage
-to a cross-script driver: it orders the three swept scripts in-sample, but across the six scripts
-never used in the fit it is uncorrelated with transfer ($r=\covOOSr$), so the coverage axis (three
-distinct values) is underdetermined and we disclose it rather than build on it.
+The preregistered \emph{magnitude} does not. The frozen instrument projected $+\tfTwoxBonus$ WRR
+per doubling, transported from the in-script $2\times$-synthetic experiment that fit the two-factor
+model (Sec.~\ref{sec:analysis}); the swept slope excludes that by a factor of $\scaleSlopeRatio$,
+with the faithful doubling step ($3240\!\rightarrow\!6480$) gaining $\scaleFaithfulObs$ WRR against
+a predicted $\scaleFaithfulPred$, outside the $\pm2$\,RMSE band and reported as filed (open
+squares, Fig.~\ref{fig:scaling}). Two further preregistered edges resolve the same way: the
+low-budget prediction of near-collapse toward the Rung-A floor is \emph{falsified} (Kannada and
+Telugu already reach double digits at 810 images, so transfer is concave in log-budget), and the
+top step ($6480\!\rightarrow\!12960$), which adds renderings at near-fixed lexicon, gains little on
+Kannada but keeps pace on Malayalam and Telugu. Synthetic scaling is real and orderly, then, but
+far shallower than an in-script extrapolation predicts. We do \emph{not} promote pivot-space
+coverage to a cross-script driver: it orders the three swept scripts in-sample, but across the six
+never used in the fit it is uncorrelated with transfer ($r=\covOOSr$).
 
 \begin{figure}[t]
   \centering
@@ -161,84 +151,76 @@ distinct values) is underdetermined and we disclose it rather than build on it.
 \label{sec:crnn}
 
 Every result above uses one backbone, inviting the objection that the effect is specific to a
-pretrained vision--language model. We preregistered a replication (Amendment~6, filed and committed
-before any CRNN trained) on a \emph{from-scratch} CRNN --- ResNet+BiLSTM, CTC, no large-scale
-pretraining --- over the same LOSO splits, pivot space, and metric, for the three equal-synthetic
-scripts spanning the observed Rung-B range (Tamil, Telugu, Oriya), with the vocabulary built from
-TRAIN records only and a 60-epoch budget fixed in advance. We filed four predictions and score all
-four, hits and misses alike.
+pretrained vision--language model. We preregistered a replication (Amendment~6, committed before
+any CRNN trained) on a \emph{from-scratch} CRNN (ResNet+BiLSTM, CTC, no large-scale pretraining)
+over the same LOSO splits, pivot space and metric, for the three equal-synthetic scripts
+spanning the observed Rung-B range (Tamil, Telugu, Oriya), vocabulary from TRAIN records only and a
+60-epoch budget fixed in advance. Four predictions were filed; all four are scored.
 
-The two \emph{structural} predictions hold. Source-only Rung~A stays at the floor on all three
-(WRR $\le\crnnAmax$; predicted $<2.0$), and the held-out ranking is preserved
-($\crnnBtamil<\crnnBtelugu<\crnnBoriya$, matching the Florence-2 order, Spearman~$+1$); the
-direction of the effect replicates, with Rung~B above Rung~A on every script. The two
-\emph{effect-size} predictions miss. The preregistered primary --- a $\ge\!+2.0$ WRR lift on at
-least two of three --- holds only on Oriya ($+\crnnLiftOriya$); Tamil ($+\crnnBtamil$) and Telugu
-($+\crnnBtelugu$) fall short. The CRNN reaches only a $\crnnRatioMean\times$ fraction of the
-Florence-2 transfer level on average (predicted band $[0.15,0.60]$), landing inside the band on
-Oriya alone ($\crnnRatioOriya$). Character accuracy is depressed in step (e.g.\ Tamil
-\crnnChaBtamil\% vs.\ Florence-2's \chaBtamil\%): the small model sees fewer characters, not merely
-fewer whole words.
-
-As stated in the preregistration's declared caveat, this outcome is \emph{ambiguous} and we do not
-resolve it in our favor. An attenuated-but-directional replication on a small from-scratch model is
-consistent both with the pivot mechanism being partly dependent on the backbone's pretraining and
-with a plain capacity floor --- and the depressed character accuracy supports the latter. The direction replicates across architectures; the magnitude stays
-open, and the backbone-specificity limitation stands.
+The two \emph{structural} predictions hold: source-only Rung~A stays at the floor on all three
+(WRR $\le\crnnAmax$, predicted $<2.0$), and the held-out ranking is preserved
+($\crnnBtamil<\crnnBtelugu<\crnnBoriya$, matching the Florence-2 order), with Rung~B above Rung~A
+everywhere. The two \emph{effect-size} predictions miss. The preregistered primary, a
+$\ge\!+2.0$ WRR lift on at least two of three, holds only on Oriya ($+\crnnLiftOriya$). The CRNN
+reaches a $\crnnRatioMean\times$ fraction of the Florence-2 transfer level on average (predicted
+band $[0.15,0.60]$), inside the band on Oriya alone, and character accuracy is depressed in step
+(Tamil \crnnChaBtamil\% vs.\ \chaBtamil\%): the small model sees fewer characters, not merely fewer
+whole words. Per the preregistration's declared caveat we call this \emph{ambiguous} rather than
+resolve it in our favour: an attenuated directional replication fits both a backbone-dependent
+mechanism and a plain capacity floor, and the character accuracy supports the latter. The
+direction replicates across architectures; the magnitude stays open.
 
 \subsection{Out-of-benchmark: Khmer}
 \label{sec:khmer}
 
-Every script above shares the ISCII-aligned Brahmic design the pivot was built around. To find
-where the method stops, we ran it somewhere it should struggle: Khmer, a disjoint Unicode block
-with coeng-based stacking, outside the benchmark and outside India. Reaching it required a
-hand-curated extension of the pivot (\khmerMapRate\% of test codepoints map; the remainder are
-approximated or dropped, and counted as misses). Under Amendment~4b we hold Khmer out entirely and
-evaluate on \khmerN\ KhmerST~\cite{khmerst} word crops: Rung~A trains on the nine benchmark scripts
-with no Khmer of any kind, Rung~B adds \khmerSynth\ synthetic Khmer words and still no real Khmer
-image. Before any Khmer recognizer existed we filed, committed and pushed a point prediction from
-the frozen two-factor model --- \khmerPred\ WRR, $\pm1\cdot$RMSE \khmerBandOne --- together with a
-written caveat that we expected it to be fragile.
+Every script above shares the ISCII-aligned Brahmic design the pivot was built around, so to find
+where the method stops we ran it somewhere it should struggle: Khmer, a disjoint Unicode block with
+coeng-based stacking, outside the benchmark and outside India. Reaching it needed a hand-curated
+pivot extension (\khmerMapRate\% of test codepoints map; the rest are approximated or dropped and
+counted as misses). Under Amendment~4b, Rung~A trains on the nine benchmark scripts with no Khmer
+of any kind and Rung~B adds \khmerSynth\ synthetic Khmer words, still with no real Khmer image;
+both are evaluated on \khmerN\ KhmerST~\cite{khmerst} word crops. Khmer recognition is an active
+area, but its systems train on real Khmer~\cite{univkhmer}, exactly the data this rung withholds. Before any Khmer
+recognizer of ours existed we filed a point prediction from the frozen two-factor model,
+\khmerPred\ WRR at $\pm1\cdot$RMSE \khmerBandOne, with a written caveat that we expected it to be
+fragile.
 
 It was. Rung~B reaches \khmerB\% WRR against a predicted \khmerPred: a residual of \khmerResid,
 or $\khmerResidRMSE\cdot$RMSE, below even the $\pm2\cdot$RMSE band \khmerBandTwo. The miss is not
-an artifact of the coverage recheck disclosed at build time --- re-evaluating the same instrument
+an artifact of the coverage recheck disclosed at build time: re-evaluating the same instrument
 at the realized token coverage (\khmerTokCov\% rather than the filed \khmerTokCovPrereg\%) moves
 the point only to \khmerPredRecheck. Only the structural prediction survives: Rung~A sits at
 \khmerA\ (predicted $<5$). The instrument had already lost its slope magnitude in block
 (Sec.~\ref{sec:scaling}); this is the first script we asked it to predict outside the blocks it
 was fit on, and it failed there too. We do not carry it forward as a contribution.
 
-Two things nonetheless hold. The \emph{direction} replicates: synthetic target-script exposure
-through the pivot beats the no-target-data control here as everywhere ($\khmerLift$ WRR,
-$\khmerChaLift$ character accuracy), so the mechanism is not inert out of block. But the
-\emph{magnitude} collapses --- \khmerB\ is \khmerPctOfMeanB\% of the nine-script Rung-B mean and
-\khmerPctOfMinB\% of the weakest benchmark script. For calibration, stock Tesseract's
-\emph{Khmer-specific} model, trained on real Khmer and scored on the identical crops through the
-identical pivot and metric, reaches only \tessKhmer\% here against \tessMean\% across the nine
-benchmark scripts: these crops are far harder than the benchmark for a supervised system too, and
-our zero-real-image model recovers \khmerVsTess\ of that floor. We report this as context, not as
-a rescue --- both numbers are near the floor, and \khmerB\% is a failure to transfer usefully.
+Two things nonetheless hold. The \emph{direction} replicates ($\khmerLift$ WRR, $\khmerChaLift$
+character accuracy over the no-target-data control), so the mechanism is not inert out of block;
+the \emph{magnitude} collapses to \khmerPctOfMeanB\% of the nine-script Rung-B mean. For
+calibration, stock Tesseract's \emph{Khmer-specific} model, trained on real Khmer and scored on
+the identical crops, reaches only \tessKhmer\% here against \tessMean\% across the nine: these
+crops are hard for a supervised system too. That is context, not a rescue. Both numbers sit
+near the floor, and \khmerB\% is a failure to transfer usefully.
 
 We draw the boundary claim narrowly. Khmer received the same $1\times$ synthetic budget and
 comparable nominal token coverage (\khmerTokCov\%) that yield double-digit WRR in block, and still
 returned \khmerB. Volume and coverage were held up; typological proximity was not; the transfer
 collapsed. That is the cleanest evidence we have that relatedness, not synthetic volume, carries
-the effect --- but it is a single script, and we state it as suggestive rather than decisive.
+the effect, but it is a single script, and we state it as suggestive rather than decisive.
 
 \subsection{Frontier-VLM reference}
 \label{sec:vlm}
 
 We prompt Qwen2.5-VL-7B~\cite{qwen25vl} zero-shot on the same nine real test sets (fixed prompt,
-greedy decoding), preregistered under Amendment~4c. Under the declared primary metric --- exact
-word match on the raw generation, our shared normalization --- it scores $\vlmRawPrimary\%$ on all nine: the
-chat model wraps every answer in prose (``The text in the image is~\dots''). We therefore report a
-\emph{disclosed, most-favorable} re-score (Table~\ref{tab:anchors}): we extract the first quoted span
-from each generation and apply the identical metric. Even so, the VLM reads only the two
-highest-resource scripts with any competence --- Bengali \vlmWrrBengali\% and Devanagari
-\vlmWrrDevanagari\% --- and is at or near zero on six of the remaining seven (at most
-\vlmWrrTamil\%, on Tamil), frequently transcribing a wholly different script (Gurmukhi returned in
-Devanagari, Malayalam in Bengali). Our compact pivot model wins on \vlmScriptsWon\ of nine at a
-fraction of the parameters, the VLM leading only on Devanagari. The comparison is not like-for-like
---- the VLM's training data is unknown --- but scale alone does not read these scripts~\cite{glotocr}.
+greedy decoding), preregistered under Amendment~4c. Under the declared primary metric, exact
+word match on the raw generation, it scores $\vlmRawPrimary\%$ on all nine, because the chat
+model wraps every answer in prose (``The text in the image is~\dots''). We therefore report a
+\emph{disclosed, most-favorable} re-score (Table~\ref{tab:anchors}): the first quoted span from
+each generation, under the identical metric. Even so the VLM reads only the two highest-resource
+scripts with any competence (Bengali \vlmWrrBengali\%, Devanagari \vlmWrrDevanagari\%), sits at or
+near zero on six of the remaining seven, and often returns a wholly different script: Gurmukhi
+in Devanagari, Malayalam in Bengali. Our compact pivot model leads on \vlmScriptsWon\ of nine at a
+fraction of the parameters. This is one open model under one prompt and the comparison is not
+like-for-like, its training data being unknown; the broader audit of \cite{glotocr}, over 100+
+scripts and many models, is the load-bearing evidence that scale alone does not read these scripts.
 

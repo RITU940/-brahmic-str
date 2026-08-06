@@ -16,22 +16,40 @@
 \subsection{A shared grapheme pivot space for Brahmic scripts}
 \label{sec:pivot}
 
-Brahmic scripts encode the same phonological skeleton --- consonant bases, dependent vowel signs,
-and conjunct formation through a virama --- and Unicode preserves this: corresponding letters sit
+Brahmic scripts encode the same phonological skeleton (consonant bases, dependent vowel signs,
+and conjunct formation through a virama), and Unicode preserves this: corresponding letters sit
 at the same offset within each script's block. We exploit both layers.
 
 \paragraph{Structural pivot.} A mapping $\pi$ sends any Brahmic codepoint to a pivot codepoint by
-its within-block offset ($\pi(c) = \mathrm{0x0900} + (c - \mathrm{base}(c))$); shared punctuation
-that is not offset-safe is excluded by construction. Because $\pi$ is a per-script bijective
-shift, it is exactly invertible: a hypothesis decoded in pivot space is read back into the target
-script deterministically. Text from nine scripts thereby writes into one label space in which
-structurally corresponding syllables become \emph{identical} strings.
+its within-block offset (Fig.~\ref{fig:method};
+$\pi(c) = \mathrm{0x0900} + (c - \mathrm{base}(c))$); anything outside the
+Brahmic blocks (Latin, ASCII digits, punctuation, zero-width joiners) passes through
+untouched. Two script-neutral marks encoded inside the Devanagari block, the danda and double
+danda, also pass through unshifted, since their offsets are unassigned in every other Brahmic
+block and cannot collide. The OM and abbreviation signs deliberately do not get that treatment:
+their offsets carry real letters elsewhere (Assamese RA, Gurmukhi TIPPI), so they are shifted like
+any other letter. Because $\pi$ is a per-script bijective shift, it is exactly invertible: a
+hypothesis decoded in pivot space is read back into the target script deterministically. Text from
+nine scripts thereby writes into one label space in which structurally corresponding syllables
+become \emph{identical} strings.
+
+\paragraph{The round trip, measured.} Invertibility is a property of the construction, so we
+checked it against the data rather than asserting it. Mapping all \rtTestN\ scored test labels into
+pivot space and back recovers \rtCharPooled\% of characters and \rtWordPooled\% of words; on labels
+written wholly in the script they are filed under, recovery is \rtWordPure\% for all nine. The
+whole residual is \rtCrossN\ labels (\rtCrossPct\%, \rtCrossGurmukhi\ of them Gurmukhi) mixing two
+Brahmic blocks: \rtCrossWhole\ words typed in the wrong script, and \rtCrossMixed\ where a homoglyph
+was substituted inside a correct one, such as a Devanagari digit for its Gujarati twin. These are
+benchmark annotation faults, invisible in the rendered image, and they are unwinnable under exact
+match rather than merely hard: our Rung~B, the Tesseract floor and the supervised PARSeq ceiling
+each score \rtCrossSolved\ of \rtCrossN\ on them. We leave them in and count them as errors, keeping
+our numbers conservative and comparable with published ones.
 
 \paragraph{Grapheme-cluster vocabulary.} Within pivot space we segment text into grapheme
 clusters (consonant--virama conjuncts kept whole, dependent signs attached) and inject the
 resulting cluster inventory (\pivotTypes\ types for the source pool) as dedicated tokens into the
-recognizer's tokenizer. The alternative --- letting the stock byte-BPE tokenizer segment
-pivot-space text --- is the ablation of Sec.~\ref{sec:experiments}: it sees the same pivot
+recognizer's tokenizer. The alternative, letting the stock byte-BPE tokenizer segment
+pivot-space text, is the ablation of Sec.~\ref{sec:experiments}: it sees the same pivot
 strings but fragments clusters into sub-syllabic pieces. Fertility (mean clusters per word)
 governs when grapheme tokenization beats BPE in \emph{supervised} training: in a 12-run
 balanced-budget study across the same nine scripts, fertility predicts the winning branch with
@@ -46,7 +64,7 @@ Sec.~\ref{sec:analysis}.
 For each held-out script $S$ of the nine in the benchmark~\cite{bstd}:
 
 \noindent\textbf{Sources.} All benchmark languages whose script is not $S$ (languages sharing
-$S$, e.g.\ Assamese for Bengali script, are excluded --- $S$ is genuinely unseen). Each source
+$S$, e.g.\ Assamese for Bengali script, are excluded, so $S$ is genuinely unseen). Each source
 language contributes exactly 700 train / 90 val real images (seed 42), giving balanced source
 exposure by construction; source-side data size is therefore controlled, unlike prior
 cross-lingual STR studies~\cite{crosslingstr}.
@@ -55,7 +73,7 @@ cross-lingual STR studies~\cite{crosslingstr}.
 words rendered in fontconfig-verified fonts (multiple faces per script, libraqm shaping), each
 render checked non-blank; the rendered word enters training as its pivot transcription. No real
 photograph of $S$ is ever seen. Scripts written by two source languages receive two languages'
-worth of renderings ($2\times$ budget) --- a covariate disclosed at preregistration time that
+worth of renderings ($2\times$ budget), a covariate disclosed at preregistration time that
 becomes central in Sec.~\ref{sec:analysis}.
 
 \noindent\textbf{Rungs.} Rung~A trains on sources only; Rung~B adds the synthetic target set;
@@ -65,8 +83,8 @@ tokenizer), identical data, seed, and recipe. All rungs fine-tune Florence-2
 batch size 4, 15 epochs, validation-selected checkpoint, beam-search decoding at test.
 
 \noindent\textbf{Evaluation.} The held-out script's real test split, WRR = exact match after NFC
-normalization, zero-width-character removal, and whitespace collapse --- the benchmark's own
-protocol~\cite{bstd,indicstr12} --- plus character accuracy ($1-\mathrm{CER}$).
+normalization, zero-width-character removal, and whitespace collapse, which is the benchmark's own
+protocol~\cite{bstd,indicstr12}, plus character accuracy ($1-\mathrm{CER}$).
 
 \subsection{Preregistration and prospective predictions}
 \label{sec:prereg}
@@ -76,17 +94,26 @@ amendment was filed before the results it concerns existed. Descriptors entering
 horse-race were computed result-blind: fertility and pivot coverage before any Rung-B result;
 a frozen-encoder visual-similarity control before the third. Quantitative forecasts for later
 runs were committed and pushed to a version-controlled archive \emph{before} those runs trained,
-and are scored against a rule fixed at filing time --- hits and misses alike
+and are scored against a rule fixed at filing time, hits and misses alike
 (Sec.~\ref{sec:analysis}). We state the limit of this plainly, because it is the weakest link in
 the design. The archive is a version-controlled repository that was \emph{private} during the
 campaign: no third party observed the commits as they were made, and git's own timestamps are
-settable by the author. The supplement therefore ships the filed documents themselves under
-SHA-256, which establishes that they are unaltered --- not when they were written. At review time,
-filing order rests on our attestation; publishing the repository at camera-ready adds provenance
-but not proof, and we do not offer it as proof. A campaign starting today should anchor each
-filing, at the moment it is filed, in a timestamp no author controls --- an anonymized preregistration
-or a blockchain-anchored hash. Ours predates that decision, and we ask the reader to discount the
-prospectivity claim accordingly rather than to assume it.
+settable by the author. The supplement ships the filed documents under SHA-256, which establishes
+that they are unaltered --- not when they were written. Filing order is therefore attested rather
+than proven, and we do not present it as proven.
+
+What survives that limit is worth separating from what does not. Every scoring rule, band and point
+value is in the supplement and checkable against the results, so a reader can confirm each forecast
+is scored by the rule filed with it rather than one chosen later. The shape of the record is itself
+evidence: documents written after the fact would not have produced a falsified primary hypothesis, a
+$\scaleSlopeRatio\times$ magnitude miss and a $\khmerResidRMSE\sigma$ out-of-block miss. Backdating
+buys hits, not this. The forecasts are genuine; their \emph{timing} is unwitnessed.
+
+The general lesson is a protocol one, and it may be the more useful contribution. A campaign can be
+run honestly and still end up unverifiable, which is the exact failure this apparatus exists to
+prevent. Anchor each filing, as it is filed, in a timestamp no author controls: an anonymized
+public preregistration, or a hash on an append-only ledger. Ours predates that decision; anyone
+building on this protocol should not repeat it.
 
 \paragraph{Released resources.} We release the apparatus, not a description of it: the pivot
 construction and its \pivotTypes-type grapheme vocabulary; the verified rendering pipeline; every
@@ -95,7 +122,7 @@ rungs); every per-run result file the paper cites, anchors included; the preregi
 with each forecast and its scoring receipt; and \texttt{verify\_wacv\_numbers.py}, which
 re-derives every derivable number in this paper from those result files and exits non-zero on any
 mismatch (\verifyMacros\ macros, zero mismatches at submission). Extending the protocol to a tenth
-script needs only a correspondence map and a font --- the Khmer rung is the worked example, and
+script needs only a correspondence map and a font; the Khmer rung is the worked example, and
 the harness is unchanged.
 % Double-blind note: shipped as the anonymous supplementary ZIP. Owner decided 2026-08-03: NO public
 % mirror before submission -- see the prospectivity paragraph above and live log s18.4 (the archive

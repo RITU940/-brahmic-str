@@ -1,0 +1,102 @@
+{
+  "per_script": [
+    {
+      "script": "tamil",
+      "target": "Tamil",
+      "n": 513,
+      "char_rt": 100.0,
+      "word_rt": 100.0,
+      "n_cross": 0,
+      "pure_rt": 100.0
+    },
+    {
+      "script": "telugu",
+      "target": "Telugu",
+      "n": 545,
+      "char_rt": 99.90717103736365,
+      "word_rt": 99.81651376146789,
+      "n_cross": 1,
+      "pure_rt": 100.0
+    },
+    {
+      "script": "kannada",
+      "target": "Kannada",
+      "n": 720,
+      "char_rt": 99.94038155802862,
+      "word_rt": 99.72222222222223,
+      "n_cross": 2,
+      "pure_rt": 100.0
+    },
+    {
+      "script": "malayalam",
+      "target": "Malayalam",
+      "n": 547,
+      "char_rt": 100.0,
+      "word_rt": 100.0,
+      "n_cross": 0,
+      "pure_rt": 100.0
+    },
+    {
+      "script": "oriya",
+      "target": "Oriya",
+      "n": 1044,
+      "char_rt": 99.94147768836869,
+      "word_rt": 99.90421455938697,
+      "n_cross": 1,
+      "pure_rt": 100.0
+    },
+    {
+      "script": "gujarati",
+      "target": "Gujarati",
+      "n": 1015,
+      "char_rt": 99.84825493171472,
+      "word_rt": 99.60591133004927,
+      "n_cross": 4,
+      "pure_rt": 100.0
+    },
+    {
+      "script": "bengali",
+      "target": "Bengali",
+      "n": 2873,
+      "char_rt": 100.0,
+      "word_rt": 100.0,
+      "n_cross": 0,
+      "pure_rt": 100.0
+    },
+    {
+      "script": "devanagari",
+      "target": "Devanagari",
+      "n": 6042,
+      "char_rt": 99.98455312181409,
+      "word_rt": 99.9172459450513,
+      "n_cross": 5,
+      "pure_rt": 100.0
+    },
+    {
+      "script": "gurmukhi",
+      "target": "Gurmukhi",
+      "n": 2879,
+      "char_rt": 99.87688718978812,
+      "word_rt": 99.40951719346995,
+      "n_cross": 17,
+      "pure_rt": 100.0
+    }
+  ],
+  "pooled": {
+    "n": 16178,
+    "char_rt": 99.95457282609844,
+    "word_rt": 99.81456298677216,
+    "n_cross": 30,
+    "cross_pct": 0.18543701322784029,
+    "worst_char": 99.84825493171472,
+    "worst_word": 99.40951719346995,
+    "worst_pure": 100.0,
+    "cross_wholly_foreign": 7,
+    "cross_mixed": 23,
+    "cross_solved": {
+      "parseq": 0,
+      "tesseract": 0,
+      "ours": 0
+    }
+  }
+}

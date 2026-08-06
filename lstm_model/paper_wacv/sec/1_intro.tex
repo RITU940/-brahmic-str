@@ -8,15 +8,15 @@ Modern scene-text recognizers exceed 90\% word accuracy on Latin benchmarks, yet
 world's writing systems remain unreadable to them. Recent audits are stark: across more than a
 hundred Unicode scripts, even frontier vision--language models (VLMs) read fewer than thirty, and
 on unfamiliar scripts they emit garbled or substituted output~\cite{glotocr}. For the Brahmic
-family --- nine major scripts used by over a billion people --- real-image training data exists
+family, nine major scripts used by over a billion people, real-image training data exists
 only because of recent, labor-intensive benchmark efforts~\cite{indicstr12,bstd}, and dozens of
 related scripts (Sinhala, Khmer, Myanmar, Tibetan, \dots) have little or none. Collecting and
-annotating real photographs script-by-script is not a scalable path to coverage --- and, crucially,
+annotating real photographs script-by-script is not a scalable path to coverage, and, crucially,
 \emph{no existing benchmark measures how well a recognizer does when a script's real labeled images
 are absent entirely}. That gap is an evaluation gap before it is a modeling one.
 
-This paper is about closing it. We ask a question existing protocols cannot score --- \emph{can a
-recognizer read a script for which no real labeled image exists at all?} --- and build the
+This paper is about closing it. We ask a question existing protocols cannot score, \emph{can a
+recognizer read a script for which no real labeled image exists at all?}, and build the
 machinery to answer it honestly: a protocol isolating the zero-real-image condition, a forecasting
 discipline that commits every prediction before its run, and a verification chain that lets a
 reader re-derive every number. The protocol is leave-one-script-out (LOSO) over all nine scripts of
@@ -24,7 +24,7 @@ a public real-image benchmark~\cite{bstd}: for each held-out script we train a s
 (Rung~A) and a source+synthetic-target model (Rung~B), both evaluated on the held-out script's
 \emph{real} test images. A further out-of-benchmark probe holds out Khmer, whose Unicode block and
 coeng-based stacking sit outside the nine; it returns \khmerB\% WRR against a \khmerPred\% forecast
-filed before any Khmer recognizer existed, locating the protocol's boundary as sharply as its
+filed before we had trained one, locating the protocol's boundary as sharply as its
 successes. The recognizer exercising this machinery is a compact open VLM (Florence-2,
 0.23B~\cite{florence2}) fine-tuned in a \emph{shared grapheme pivot space}: Brahmic scripts share
 an organizational scheme (consonant bases, vowel signs, virama-formed conjuncts), so each script's
@@ -34,22 +34,23 @@ vocabulary. The pivot is the object the evaluation \emph{measures}, not the head
 Our contribution class is an \emph{evaluation protocol plus verification infrastructure}, not a
 data release: we collect no new photographs, instead repurposing two public
 benchmarks~\cite{bstd,khmerst} under a new held-out condition and adding verified synthetic
-renderings. This is squarely what this track solicits --- new evaluation protocols, rigorous
-auditing and stress-testing, and negative results --- which it invites independently of new
+renderings. This is squarely what this track solicits: new evaluation protocols, rigorous
+auditing and stress-testing, and negative results, all of which it invites independently of new
 datasets.
 
 \medskip\noindent Our contributions, in the order this paper weights them:
 \begin{enumerate}
   \item \textbf{A zero-real-image evaluation protocol.} A LOSO scene-text protocol that measures
-  reading an entire writing system --- disjoint Unicode block, disjoint glyph inventory --- from
-  zero real target images, in a shared pivot space with a round-trip-lossless mapping (so pivot-WRR
-  equals target-script WRR), plus an out-of-benchmark generalization probe (Khmer). It surfaces a
+  reading an entire writing system, disjoint Unicode block and disjoint glyph inventory, from
+  zero real target images, in a shared pivot space whose inverse mapping we audit rather than
+  assume (\rtWordPure\% exact recovery on single-script labels, so pivot-WRR equals target-script
+  WRR), plus an out-of-benchmark generalization probe (Khmer). It surfaces a
   strong effect existing protocols never test: every held-out script moves from a
   ${\le}\,\wrrAdevanagari\%$ source-only baseline to \wrrBmin--\wrrBmax\% WRR with zero real target
   images.
   \item \textbf{Prospective prediction as an evaluation practice --- and a mostly negative
   record.} A frozen, version-controlled preregistration with committed-before-run forecasts, and a
-  discipline of scoring every call including its misses. We advance no predictive law --- the record
+  discipline of scoring every call including its misses. We advance no predictive law; the record
   is the contribution, and it is largely one of failures. The preregistered primary (tokenizer
   \emph{fertility} predicts transfer) was \emph{falsified} (Spearman $\spearFert$); a prospectively
   filed synthetic-exposure study gives a \emph{script-invariant, log-linear} dose--response
@@ -68,8 +69,9 @@ datasets.
   crops we situate a prompted 7B frontier VLM (reads two of nine; loses to the compact model on
   \vlmScriptsWon\ of nine), off-the-shelf per-script OCR (\tessMean\%, which our zero-real-image model beats
   on \tessScriptsWon\ of nine), and the benchmark authors' own supervised specialists
-  (\parseqMean\%, of which we recover \oursOverCeiling) --- an interpretable floor-to-ceiling
-  context --- alongside the released protocol, harness and preregistration chain
-  (Sec.~\ref{sec:prereg}).
+  (\parseqMean\%, of which we recover \oursOverCeiling), giving an interpretable floor-to-ceiling
+  context, alongside the released protocol, harness and preregistration chain
+  (Sec.~\ref{sec:prereg}). Auditing the benchmark's labels in passing turns up \rtCrossN\ test
+  items that mix two Brahmic blocks; all three systems above score \rtCrossSolved\ on them.
 \end{enumerate}
 

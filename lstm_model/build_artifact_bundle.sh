@@ -26,6 +26,13 @@ rm -f "$OUT"/code/{crop_ritu1_words.py}      2>/dev/null   # renamed below if pr
 cp -- splits_zeroshot_loso_*.json "$OUT/splits/" 2>/dev/null
 cp -- result_*.json               "$OUT/results/" 2>/dev/null
 cp -- zeroshot_loso_meta_khmer.json "$OUT/results/" 2>/dev/null
+# verify_wacv_numbers.py reads this for the \rt* macros; without it the shipped
+# harness cannot re-derive the pivot round-trip numbers the paper quotes.
+cp -- pivot_roundtrip_audit.json  "$OUT/results/" 2>/dev/null
+# The \parallelsub reference promises this file by name. Built by anonymising
+# paper/main.tex (authors, emails, affiliation); checked to contain no identity
+# string in rendered text or raw bytes. Without it the citation points at nothing.
+cp -- parallel_submission.pdf     "$OUT/" 2>/dev/null
 for f in PREREGISTRATION.md PROSPECTIVE_PREDICTION_*.md PROSPECTIVE_PREDICTIONS_H3.md \
          SCALING_SWEEP_SCORING.md ARCHITECTURE_SCORING.md KHMER_SCORING.md \
          KHMER_BUILD_DECISIONS.md ANCHOR_SPLIT_HYGIENE.md; do
@@ -99,6 +106,16 @@ echo "  $(wc -l < "$OUT/SHA256SUMS.txt") files hashed"
 echo "=== LEAK SCAN ==="
 LEAKS=$(grep -rniE 'ujjwal|baskey|ritu|server[0-9]|cvpr-gamma|gmail|brahmic-str|RITU940' "$OUT" 2>/dev/null | grep -v SHA256SUMS | head -20)
 if [ -n "$LEAKS" ]; then echo "!! POTENTIAL IDENTITY LEAKS:"; echo "$LEAKS"; else echo "clean: no identity tokens found"; fi
+# ---- credential scan. This bundle ships every *.py to reviewers, so an API key
+# ---- pasted into a script would be published to strangers. Hard-fail, don't warn.
+echo "=== CREDENTIAL SCAN ==="
+CREDS=$(grep -rniE 'sk-ant-[a-z0-9-]{8}|sk-[a-zA-Z0-9]{32}|AIza[0-9A-Za-z_-]{20}|ghp_[A-Za-z0-9]{20}|xox[baprs]-[A-Za-z0-9-]{10}|AKIA[0-9A-Z]{12}|BEGIN [A-Z ]*PRIVATE KEY' \
+  "$OUT" 2>/dev/null | grep -v SHA256SUMS | head -10)
+if [ -n "$CREDS" ]; then
+  echo "!! CREDENTIALS FOUND IN BUNDLE -- refusing to build:"; echo "$CREDS"
+  rm -f "$ZIP"; exit 1
+fi
+echo "clean: no credentials found"
 echo "=== internal strategy docs present? (must be empty) ==="
 find "$OUT" -iname '*STRATEGY*' -o -iname '*COMPETITIVE*' -o -iname '*PROF_REPORT*' -o -iname '*PROGRESS_REPORT*' -o -iname '*HANDOFF*' -o -iname '*LIVE_LOG*'
 

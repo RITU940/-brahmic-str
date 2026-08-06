@@ -189,7 +189,7 @@
 \newcommand{\crnnRatioMean}{0.11}     % mean CRNN-B / Florence-B over the three (predicted 0.35)
 
 \newcommand{\pivotTypes}{1624}   % grapheme-cluster types injected for the source pool
-\newcommand{\verifyMacros}{158}     % macros re-derived by verify_wacv_numbers.py (self-checked)
+\newcommand{\verifyMacros}{168}     % macros re-derived by verify_wacv_numbers.py (self-checked)
 
 % ---- Khmer out-of-benchmark probe (Amendment 4b), 2/2 complete 2026-07-31 ----
 % Preregistration PROSPECTIVE_PREDICTION_KHMER.md (filed+pushed 2026-07-22, commit d3a3130,
@@ -268,3 +268,18 @@
 \newcommand{\ratioGurmukhi}{0.30}
 \newcommand{\ceilingOverOurs}{3.4}  % how much more real labels buy
       % our macro-avg / the supervised ceiling's
+
+% ── pivot round-trip audit (audit_pivot_roundtrip.py -> pivot_roundtrip_audit.json)
+% Measured, not argued: map every scored test label into pivot space and back.
+% Word-level fidelity is EXACTLY 100% on all nine scripts once the benchmark's own
+% cross-script labels are set aside; those 30 labels are the entire residual.
+\newcommand{\rtTestN}{16178}          % scored test labels pooled over the nine
+\newcommand{\rtCharPooled}{99.955}    % pooled character round-trip
+\newcommand{\rtWordPooled}{99.815}    % pooled word round-trip
+\newcommand{\rtWordPure}{100.000}     % word round-trip, single-script labels, worst script
+\newcommand{\rtCrossN}{30}            % labels mixing two Brahmic blocks
+\newcommand{\rtCrossPct}{0.19}        % ... as a share of the test pool
+\newcommand{\rtCrossGurmukhi}{17}     % the worst-affected script
+\newcommand{\rtCrossWhole}{7}         % ... word typed entirely in the wrong script
+\newcommand{\rtCrossMixed}{23}        % ... homoglyph substituted inside a correct word
+\newcommand{\rtCrossSolved}{0}        % ours / Tesseract floor / PARSeq ceiling each win this many

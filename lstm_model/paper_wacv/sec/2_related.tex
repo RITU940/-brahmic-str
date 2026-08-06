@@ -5,11 +5,19 @@
 STR is mature for Latin script~\cite{parseq} but collapses elsewhere. IndicSTR12~\cite{indicstr12}
 and the Bharat Scene Text Dataset~\cite{bstd} established real-image benchmarks for Indian
 languages; on the latter, PARSeq reaches $\parseqSynth\%$ average WRR from synthetic data alone and
-$\parseqFinetuned\%$ fine-tuned on real labeled images --- numbers that presuppose labeled target
-data. GlotOCR~\cite{glotocr} quantifies the wider problem: frontier VLMs read fewer than thirty of
-100+ scripts. Synthetic-data engines remain Latin-centric~\cite{unionst}, and synthetic-rendering
-fine-tuning has been shown for a single low-resource script with real-data
-validation~\cite{manchu}. We target the regime where no real labeled target image exists at all.
+$\parseqFinetuned\%$ fine-tuned on real labeled images, and in-the-wild collections keep growing
+the real-image supply one language at a time~\cite{banglawild}. All of it presupposes labeled
+target data. Transfer \emph{between} Indian languages is established practice: Gunna et
+al.~\cite{indictransfer} show that transferring among Indic scripts beats transferring from
+English, exploiting the shared vowels and conjuncts our pivot formalizes, and follow-up work adds
+font diversity to that recipe~\cite{indicfonts}. Both fine-tune on real images of the target
+language; the target is never absent. GlotOCR~\cite{glotocr} measures the wider problem at scale,
+finding that frontier VLMs read fewer than thirty of 100+ scripts, but it scores pretrained models
+on rendered text. That leaves the training-side question open: not what a model already knows, but
+what it can be \emph{taught} about a script of which no real image exists. Synthetic-data engines
+remain Latin-centric~\cite{unionst}, and synthetic-rendering fine-tuning has been shown for a
+single low-resource script with real-data validation~\cite{manchu}. We target the regime where no
+real labeled target image exists at all.
 
 \paragraph{Tokenization granularity for complex scripts.}
 MGP-STR~\cite{mgpstr} fuses character, BPE and WordPiece streams in one Latin recognizer;
@@ -17,8 +25,8 @@ grapheme tokenization beats byte-BPE for Bengali handwriting~\cite{gradet}; and 
 as a tokenizer metric is contested in the LLM literature~\cite{beyondfertility}. A companion
 manuscript by the same authors~\cite{parallelsub}, anonymized in the supplement, makes the
 \emph{supervised} grapheme-vs-BPE choice predictable across nine scripts (polarity \lawPolarity,
-leave-one-script-out $\lawLoso\%$); the present paper shares no experiment with it and tests ---
-and refutes --- the conjecture that the same property predicts zero-real-image transfer.
+leave-one-script-out $\lawLoso\%$); the present paper shares no experiment with it, and tests, then
+refutes, the conjecture that the same property predicts zero-real-image transfer.
 
 \paragraph{Unseen units vs.\ unseen scripts.}
 A substantial line reads unseen \emph{characters within a known script} by decomposition into
@@ -36,11 +44,11 @@ In NLP, transfer tracks lexical and subword overlap rather than language
 relatedness~\cite{subwordoverlap,overlap2}. For STR specifically, Ref.~\cite{crosslingstr}
 concludes that source dataset size and visual similarity, not linguistic typology, drive
 cross-lingual transfer. Our findings sharpen rather than contradict this, in a regime that work
-did not study (zero real target images): (i) a typology-adjacent structural property ---
-fertility --- indeed fails as a transfer predictor ($\rho=\spearFert$), as a data-centric view
-expects; (ii) \emph{synthetic target exposure} dominates --- a target-side data-size effect;
+did not study (zero real target images): (i) a typology-adjacent structural property, fertility,
+indeed fails as a transfer predictor ($\rho=\spearFert$), as a data-centric view expects;
+(ii) \emph{synthetic target exposure} dominates, which is a target-side data-size effect;
 (iii) within a fixed budget, coverage of the shared grapheme space orders transfer
-($\rho=\spearCovEqual$ among equal-budget scripts) --- an OCR instantiation of the subword-overlap
+($\rho=\spearCovEqual$ among equal-budget scripts), an OCR instantiation of the subword-overlap
 principle in a \emph{designed} output space; and (iv) a frozen-encoder visual-similarity control
 predicts nothing in our data ($\rho=\spearVissim$). Because LOSO balances source data by construction,
 the confound identified by~\cite{crosslingstr} is controlled by design.

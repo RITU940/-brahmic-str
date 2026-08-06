@@ -1,35 +1,33 @@
 \section{Limitations}
 \label{sec:limitations}
 
-\textbf{Absolute accuracy.} Our macro-average (\wrrBmean\%) clears the off-the-shelf per-script OCR
-floor (\tessMean\%), but the weakest script does not --- Tamil (\wrrBtamil\%) falls below it --- and
-all nine remain far below the supervised ceiling ($\parseqFinetuned\%$ with real labeled
-data~\cite{bstd}); the synthetic $\rightarrow$ real domain gap is the dominant residual, quantified
-by training loss reaching ${\sim}0.06$ on synthetic data while real-image WRR stays modest.
+\textbf{Absolute accuracy.} Our macro-average (\wrrBmean\%) clears the off-the-shelf OCR floor
+(\tessMean\%), though the weakest script does not: Tamil (\wrrBtamil\%) falls below it, and all
+nine sit far under the supervised ceiling ($\parseqFinetuned\%$ with real labels~\cite{bstd}). The
+synthetic$\rightarrow$real domain gap is the dominant residual: training loss reaches ${\sim}0.06$
+while real-image WRR stays modest. \textbf{The target script must be known.} $\pi^{-1}$ resolves a
+pivot string into one script, so the protocol assumes script identity is fixed before decoding.
+That is given for a held-out-script benchmark, and an extra component for mixed-script scenes.
 \textbf{One family, and a located boundary.} Nine scripts, one benchmark, one family whose shared
-structure the pivot exploits by design. Khmer (Sec.~\ref{sec:khmer}) does not merely leave
-non-Brahmic generalization open --- it shows the method \emph{failing} there (\khmerB\% WRR), and
-we make no claim beyond the family. \textbf{One architecture.} All transfer results use
-Florence-2; a from-scratch CRNN replicates the direction but at ${\sim}\crnnRatioMean$ of the
+structure the pivot exploits by design; Khmer (Sec.~\ref{sec:khmer}) shows the method
+\emph{failing} outside it (\khmerB\% WRR). \textbf{One architecture.} All transfer results use
+Florence-2; a from-scratch CRNN replicates the direction at ${\sim}\crnnRatioMean$ of the
 magnitude (Sec.~\ref{sec:crnn}), so backbone-independence of the effect size is untested.
 \textbf{Model imperfections.} Gujarati underperforms its coverage, one Rung-A baseline breaches
 the predicted $<5$ line (Devanagari, \wrrAdevanagari), and the final-script forecast
-under-called by $\gurmukhiSigma\sigma$; all reported, none explained away. \textbf{Compute.} Single 24\,GB
-GPU; budgets (700/source, 3240 synthetic) were fixed by preregistration, not tuned.
+under-called by $\gurmukhiSigma\sigma$; all reported, none explained away. \textbf{Compute.} One
+24\,GB GPU; budgets were fixed by preregistration, not tuned.
 
 \section{Conclusion}
 \label{sec:conclusion}
 
-We built an evaluation protocol for a condition existing benchmarks do not score --- a script with
-no real labeled image at all --- and ran a forecasting campaign inside it. Under that protocol,
-real scene text of an entirely unseen Brahmic script is readable at \wrrBmin--\wrrBmax\% word
-accuracy across all nine scripts of a public benchmark, ahead of stock per-script Tesseract on
-\tessScriptsWon\ of nine despite never seeing a real image of the target, by a small open VLM
-fine-tuned in a shared grapheme pivot space with only rendered synthetic exposure; a stock-BPE
-ablation collapses that transfer, isolating output-space structure as the mechanism. The campaign ran under a frozen preregistration, and its forecasting record is
-mostly a record of misses: the primary hypothesis falsified, the scaling magnitude missed by
-$\scaleSlopeRatio\times$, coverage failing out-of-sample, and the one out-of-block forecast (Khmer)
-missed by $\khmerResidRMSE\sigma$. We advance no predictive law; every call ships in the
-supplement with its scoring receipt, under the provenance limits stated in
-Sec.~\ref{sec:prereg}, and the failures locate the method's boundary rather than leaving it for
-someone else to find.
+We built an evaluation protocol for a condition existing benchmarks do not score, a script with
+no real labeled image at all, and ran a forecasting campaign inside it. Under it, a small open
+VLM fine-tuned in a shared grapheme pivot space on rendered synthetic text alone reads real
+photographs of all nine unseen Brahmic scripts at \wrrBmin--\wrrBmax\% word accuracy, and a
+stock-BPE ablation collapses that transfer, isolating output-space structure as the mechanism. The
+forecasting record is mostly one of misses: primary hypothesis falsified, scaling magnitude
+missed by $\scaleSlopeRatio\times$, coverage failing out-of-sample, the one out-of-block call
+(Khmer) missed by $\khmerResidRMSE\sigma$. We advance no predictive law. Every call ships in the
+supplement with its receipt, and the failures locate the method's boundary rather than leave it
+for someone else to find.

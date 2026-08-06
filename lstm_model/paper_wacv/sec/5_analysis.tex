@@ -17,9 +17,9 @@ We report the confirmatory analysis exactly as preregistered, our own primary hy
 \subsection{The preregistered primary fails}
 \label{sec:fertility-fails}
 
-Fertility --- the property that governs the supervised grapheme-vs-BPE trade-off
-(Sec.~\ref{sec:pivot}) --- was preregistered as the primary transfer predictor (H3). It is
-refuted: Spearman $\rho=\spearFert$ across the nine Rung-B results --- directionally
+Fertility, the property that governs the supervised grapheme-vs-BPE trade-off
+(Sec.~\ref{sec:pivot}), was preregistered as the primary transfer predictor (H3). It is
+refuted: Spearman $\rho=\spearFert$ across the nine Rung-B results, directionally
 \emph{opposite} to the hypothesis. The flagship case was called in advance by the declared
 competitor: our prospective prediction file ranked Malayalam best under fertility (P1) and worst
 under coverage (P2); it realized bottom-tier (\wrrBmalayalam\ WRR). We report this as a genuine
@@ -27,10 +27,9 @@ falsification, consistent with fertility skepticism in the LLM-tokenizer
 literature~\cite{beyondfertility} and with the data-centric view of STR
 transfer~\cite{crosslingstr}.
 
-Post-hoc, fertility instead tracks \emph{who needs the pivot} --- BPE comes closest to parity on
-the lowest-fertility script (Devanagari, $\bpeRatioMin\times$) and collapses on the highest
-(Tamil, $\bpeRatioMax\times$) --- but that is an unregistered observation at $n=9$, offered as a
-candidate for confirmatory testing and used for nothing here.
+Post-hoc, fertility instead tracks \emph{who needs the pivot}: BPE comes closest to parity on the
+lowest-fertility script and collapses on the highest ($\bpeRatioMin\times$ Devanagari,
+$\bpeRatioMax\times$ Tamil). That is unregistered, $n=9$, and used for nothing here.
 
 \subsection{The two-factor account}
 \label{sec:twofactor}
@@ -43,7 +42,7 @@ second-\emph{lowest} coverage. Coverage orders the seven equal-budget scripts
 ($\rho=\spearCovEqual$). The joint fit
 $\mathrm{WRR} = \tfIntercept + \tfCovCoef\cdot\mathrm{cov} + \tfTwoxBonus\cdot\mathbb{1}[2\times]$
 (RMSE \tfRMSE\ WRR) is the instrument every later forecast was drawn from, so we print it for
-audit --- and then discount it ourselves: a script-level bootstrap puts its coverage slope at
+audit, and then discount it ourselves: a script-level bootstrap puts its coverage slope at
 \ciTfCov, \emph{spanning zero}, and that term fails out-of-sample outright ($r=\covOOSr$,
 Sec.~\ref{sec:scaling}). Coverage is an in-sample ordering and nothing more. One control stands on
 its own: rendered glyphs embedded by the recognizer's own frozen vision encoder predict transfer
@@ -53,20 +52,18 @@ visual-similarity account of~\cite{crosslingstr}.
 \subsection{Prospective scorecard}
 \label{sec:scorecard}
 
-Four forecasts were filed before their runs; all are scored (Fig.~\ref{fig:receipts}).
-\textbf{Kannada}: exploratory point $\predKannada$ WRR, filed with two scripts observed;
-realized \realKannada. \textbf{Devanagari}: directional call (high, ${\sim}25+$) committed before the result existed but
-pushed after --- only weakly prospective, and we lean on it for nothing.
-\textbf{Gurmukhi} (final script): point \predGurmukhi\ WRR, bands
-$\pm1\sigma$ \predGurmukhiOneSig\ / $\pm2\sigma$ \predGurmukhiTwoSig, committed \emph{and pushed}
-3.7 hours before training began; realized \realGurmukhi\ --- outside the $\pm1\sigma$ band
-(under-called by $\gurmukhiSigma\sigma$), inside $\pm2\sigma$. \textbf{Khmer} (Sec.~\ref{sec:khmer}), the one
-call filed for a script outside the pivot's Unicode blocks: point \khmerPred\ WRR, realized
-\khmerB\ --- a $\khmerResidRMSE\sigma$ miss, below even the $\pm2\sigma$ band. The declared rank bet
-between the two preregistered predictors resolved for coverage over fertility, neither ranking
-alone significant at $n=7$.
+Four forecasts were filed before their runs and all four are scored in
+Fig.~\ref{fig:receipts}. Two are in-block point calls: \textbf{Kannada} ($\predKannada$ WRR, filed
+with two scripts observed, realized \realKannada) and \textbf{Gurmukhi}, the final script
+(\predGurmukhi\ WRR with $\pm1\sigma$ \predGurmukhiOneSig, committed \emph{and pushed} 3.7 hours
+before training began, realized \realGurmukhi, under-called by $\gurmukhiSigma\sigma$ but inside
+$\pm2\sigma$). A third, \textbf{Devanagari}, was a directional call committed before the result
+existed but pushed after; it is only weakly prospective and we lean on it for nothing. The fourth
+is \textbf{Khmer} (Sec.~\ref{sec:khmer}), the one call filed outside the pivot's Unicode blocks,
+which missed by $\khmerResidRMSE\sigma$. The declared rank bet between the two preregistered
+predictors resolved for coverage over fertility, neither ranking alone significant at $n=7$.
 
 The summary is bounded: in-block, transfer is forecastable to roughly $\pm\tfRMSE$ WRR
 ($1\sigma$) from two pre-training quantities, but the instrument missed out of block and we decline
-to extend it past the blocks it was fit on --- one script shows it failed there, not that it must
+to extend it past the blocks it was fit on: one script shows it failed there, not that it must
 fail everywhere outside.

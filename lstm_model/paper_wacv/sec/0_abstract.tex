@@ -4,30 +4,29 @@
 Scene-text recognition is effectively solved for Latin script and fails for most of the world's writing
 systems, yet no benchmark scores the case that decides the long tail: a script for which \emph{no
 real labeled image exists at all}. We contribute a protocol for that case and the infrastructure to
-audit it --- not a new dataset. It is leave-one-script-out over nine Brahmic scripts of a public
+audit it, rather than a new dataset. It is leave-one-script-out over nine Brahmic scripts of a public
 benchmark: the held-out script appears only as rendered synthetic images, never a photograph, and
-is read in a round-trip-lossless shared grapheme \emph{pivot} space, so pivot accuracy is
-target-script accuracy. An out-of-benchmark rung extends it to Khmer, a disjoint Unicode block. We
+is read in a shared grapheme \emph{pivot} space whose inverse we audit rather than assume
+(\rtWordPure\% exact recovery on single-script labels), so pivot accuracy is target-script accuracy. An out-of-benchmark rung extends it to Khmer, a disjoint Unicode block. We
 release the pivot construction, the rendering pipeline, every split and result, and a harness that
-re-derives all \verifyMacros\ numbers here and fails on mismatch; a tenth script needs only a
-correspondence map and a font.
+re-derives all \verifyMacros\ result numbers here and fails on mismatch; a tenth script needs only
+a correspondence map and a font.
 
 Applied to a compact open vision--language model, the protocol makes every held-out script readable
---- \wrrBmin--\wrrBmax\% word recognition from source-only baselines of
-\wrrAtamil--\wrrAdevanagari\% --- and scales it against three reference systems on the identical
-crops under the identical metric: stock per-script Tesseract, trained on real target-script
-images, loses on \tessScriptsWon\ of nine (\wrrBmean\% vs.\ \tessMean\%); a prompted
-7B VLM loses on \vlmScriptsWon\ of nine; the benchmark authors' supervised specialists reach
-\parseqMean\%, of which we recover \oursOverCeiling. Swapping the pivot for a stock BPE tokenizer
+at \wrrBmin--\wrrBmax\% word recognition, from source-only baselines of
+\wrrAtamil--\wrrAdevanagari\%, and places it against three reference systems on the identical
+crops under the identical metric: stock per-script Tesseract, trained on real images of each
+target script (\tessMean\%); a prompted 7B VLM (\vlmMacro\%); and the benchmark authors'
+supervised specialists (\parseqMean\%), of which we recover \oursOverCeiling. Swapping the pivot for a stock BPE tokenizer
 under identical data, seed and recipe degrades all nine scripts (sign test $p=\bpeSignP$),
 isolating output-space structure as the mechanism.
 
 Every forecast was committed before the run it predicts, and scoring them is what makes such an
-apparatus informative rather than decorative --- it rules things out. The preregistered primary,
+apparatus informative rather than decorative: it rules things out. The preregistered primary,
 that tokenizer fertility predicts transfer, is \emph{falsified} ($\rho=\spearFert$); a filed
 dose--response is log-linear with a script-invariant slope but missed its committed magnitude by
-$\scaleSlopeRatio\times$; Khmer, forecast before any Khmer recognizer existed, returned \khmerB\%,
-a $\khmerResidRMSE\sigma$ miss that locates the method's boundary. We advance no predictive law --- we advance the
-protocol that refuted these claims, the infrastructure to check it, and a scored record of what it
-ruled out.
+$\scaleSlopeRatio\times$; Khmer, forecast before we had trained any Khmer recognizer, returned \khmerB\%,
+a $\khmerResidRMSE\sigma$ miss that locates the method's boundary. We advance no predictive law. We
+advance the protocol that refuted these claims, the infrastructure to check it, and a scored record
+of what it ruled out.
 \end{abstract}

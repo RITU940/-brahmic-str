@@ -302,6 +302,22 @@ def main():
     for s in SCRIPTS:
         add(f"ratio{s.capitalize()}", res[("B", s)]["WRR"] / pq[s]["WRR"])
 
+    # pivot round-trip audit: the paper's "pivot-WRR is target-script WRR" claim
+    rt = json.load(open("pivot_roundtrip_audit.json"))["pooled"]
+    add("rtTestN", rt["n"], 0)
+    add("rtCharPooled", rt["char_rt"], 3)
+    add("rtWordPooled", rt["word_rt"], 3)
+    add("rtWordPure", rt["worst_pure"], 3)
+    add("rtCrossN", rt["n_cross"], 0)
+    add("rtCrossPct", rt["cross_pct"])
+    rt_ps = json.load(open("pivot_roundtrip_audit.json"))["per_script"]
+    add("rtCrossGurmukhi",
+        next(r["n_cross"] for r in rt_ps if r["script"] == "gurmukhi"), 0)
+    add("rtCrossWhole", rt["cross_wholly_foreign"], 0)
+    add("rtCrossMixed", rt["cross_mixed"], 0)
+    # the paper says no reported system wins any of them; assert that, don't quote it
+    add("rtCrossSolved", max(rt["cross_solved"].values()), 0)
+
     fails = 0
     for name, tex_val, derived, dec in checks:
         if tex_val is None:
