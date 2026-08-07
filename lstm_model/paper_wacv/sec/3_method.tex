@@ -70,7 +70,8 @@ exposure by construction. Source-side data size is therefore controlled, unlike 
 cross-lingual STR studies~\cite{crosslingstr}.
 
 \noindent\textbf{Synthetic target.} 3240 images per target language: benchmark-vocabulary
-words rendered in fontconfig-verified fonts (multiple faces per script, libraqm shaping), each
+words taken from that language's \emph{train} split only, never the test split, rendered in
+fontconfig-verified fonts (multiple faces per script, libraqm shaping), each
 render checked non-blank, and the rendered word enters training as its pivot transcription. No real
 photograph of $S$ is ever seen. Scripts written by two source languages receive two languages'
 worth of renderings ($2\times$ budget), a covariate disclosed at preregistration time that
@@ -112,8 +113,8 @@ buys hits, not this. The forecasts are genuine. Their \emph{timing} is unwitness
 The general lesson is a protocol one, and it may be the more useful contribution. A campaign can be
 run honestly and still end up unverifiable, which is the exact failure this apparatus exists to
 prevent. Anchor each filing, as it is filed, in a timestamp no author controls: an anonymized
-public preregistration, or a hash on an append-only ledger. Ours predates that decision. Anyone
-building on this protocol should not repeat it.
+public preregistration, or a hash on an append-only ledger. Ours predates that decision; anyone
+building on this protocol should anchor their filings from the start.
 
 \paragraph{Released resources.} We release the apparatus, not a description of it: the pivot
 construction and its \pivotTypes-type grapheme vocabulary; the verified rendering pipeline; every
@@ -122,8 +123,8 @@ rungs); every per-run result file the paper cites, anchors included; the preregi
 with each forecast and its scoring receipt; and \texttt{verify\_wacv\_numbers.py}, which
 re-derives every derivable number in this paper from those result files and exits non-zero on any
 mismatch (\verifyMacros\ macros, zero mismatches at submission). Extending the protocol to a tenth
-script needs only a correspondence map and a font; the Khmer rung is the worked example, and
-the harness is unchanged.
+script needs only a correspondence map, a word list and a font; the Khmer rung is the worked
+example, and the harness is unchanged.
 % Double-blind note: shipped as the anonymous supplementary ZIP. Owner decided 2026-08-03: NO public
 % mirror before submission -- see the prospectivity paragraph above and live log s18.4 (the archive
 % repo is private and its commits unsigned, so a mirror would add provenance, not proof).

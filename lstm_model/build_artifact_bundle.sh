@@ -90,10 +90,11 @@ and model checkpoints (size). Nothing here requires network access to inspect.
 It is the same script we run before each build, and it runs from this zip with no
 setup and no network:
 
-    cd code && python3 verify_wacv_numbers.py
+    unzip wacv_supplementary.zip
+    cd artifact_bundle/code && python3 verify_wacv_numbers.py
 
 It needs only the standard library. Expect a per-macro table ending in
-`168 macros checked, 0 mismatch(es)` and exit status 0; it exits non-zero on any
+`@@VERIFYN@@ macros checked, 0 mismatch(es)` and exit status 0; it exits non-zero on any
 mismatch. `numbers.tex` (the paper's single source for every quoted number) sits at
 the top of this bundle so the check is self-contained.
 
@@ -113,6 +114,14 @@ Author names, account names, hostnames and repository identifiers were mechanica
 replaced (e.g. paths rewritten to `/home/anon/...`, one dataset tag renamed to
 `labset`). These substitutions affect strings only, never data or numbers.
 RM
+
+# The expected macro count is read from numbers.tex rather than hardcoded: it has gone
+# stale before (the README promised 168 after the paper had moved to 169), and a README
+# that disagrees with the harness undermines the one artifact meant to settle disputes.
+VERIFYN=$(grep -oP '\\newcommand\{\\verifyMacros\}\{\K[^}]*' "$SRC/paper_wacv/numbers.tex")
+if [ -z "$VERIFYN" ]; then echo "!! could not read verifyMacros from numbers.tex"; exit 1; fi
+sed -i "s/@@VERIFYN@@/$VERIFYN/" "$OUT/README.md"
+echo "  README expects $VERIFYN macros"
 
 # ---- 3. SHA-256 commitments over the preregistration chain + code + splits.
 ( cd "$OUT" && find . -type f ! -name SHA256SUMS.txt -print0 | sort -z |
